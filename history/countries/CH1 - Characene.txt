@@ -1,0 +1,9 @@
+government = despotic_monarchy
+government_rank = 3
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = babylonian
+religion = zurvanism
+capital = 1930
+historical_rival = MDI
+	

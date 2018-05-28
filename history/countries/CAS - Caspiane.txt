@@ -1,0 +1,7 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = caspian
+religion = mitraism
+

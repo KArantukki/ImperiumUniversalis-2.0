@@ -1,0 +1,149 @@
+government = despotic_monarchy
+government_rank = 3
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = persian
+religion = mitraism
+capital = 1967
+
+historical_rival = BAB
+historical_rival = LYD
+
+195.1.1 = {
+		add_liberty_desire = 100
+		add_ruler_personality = the_great_personality
+monarch = {
+		name = "Kyros the Great"
+		dynasty = "Achaemenid"
+		birth_date = 178.1.1
+		dip = 6
+		adm = 6
+		mil = 6
+		leader = {	name = "Kyros the Great"  type = general	fire = 8	shock = 8	manuever = 4	siege = 4 }
+	}
+queen = {
+        country_of_origin = PSE
+        name = "Cassandane"
+		birth_date = 180.1.1
+        dynasty = "of Persia"
+        death_date = 224.1.1
+        female = yes
+        adm = 3
+        dip = 3
+        mil = 2
+    }
+}
+204.1.1 = { 
+			government_rank = 5
+			add_country_modifier = {
+				name = slavery_abolished
+				duration = -1	}		
+			leader = {
+					name = "Harpagus" 
+					type = general
+					fire = 3
+					shock = 6
+					manuever = 2
+					siege = 1
+					death_date = 204.1.1
+					}
+			}
+	leader = {
+		name = "Harpagus" 
+		type = general	
+		fire = 3
+		shock = 6
+		manuever = 2
+		siege = 1
+		death_date = 204.1.1
+	}
+}
+224.1.1 = {
+	religion = zoroastrianism
+	clear_scripted_personalities = yes
+	capital = 1933
+	add_accepted_culture = babylonian
+	add_accepted_culture = syriac
+	
+monarch = {
+		name = "Cambyses"
+		dynasty = "Achaemenid"
+		dip = 4
+		adm = 4
+		mil = 5
+	}
+}
+232.1.1 = {
+		add_ruler_personality = legendary_leader_personality
+		capital = 1968
+		
+			add_country_modifier = {
+				name = administration_reform_of_dareos
+				duration = -1	
+			}
+			change_government = oriental_monarchy
+			
+monarch = {
+		name = "Darius I"
+		dynasty = "Achaemenid"
+		dip = 5
+		adm = 6
+		mil = 5
+	}
+}
+269.1.1 = {
+	clear_scripted_personalities = yes
+monarch = {
+		name = "Xerxes I"
+		dynasty = "Achaemenid"
+		dip = 5
+		adm = 4
+		mil = 4
+	}
+}
+289.1.1 = {
+monarch = {
+		name = "Artaxerxes I"
+		dynasty = "Achaemenid"
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+330.1.1 = {
+monarch = {
+		name = "Darius II"
+		dynasty = "Achaemenid"
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+350.1.1 = {
+	religion = zurvanism
+monarch = {
+		name = "Artaxerxes II"
+		dynasty = "Achaemenid"
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+416.1.1 = {
+monarch = {
+		name = "Artaxerxes III"
+		dynasty = "Achaemenid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+418.1.1 = {
+monarch = {
+		name = "Darius III"
+		dynasty = "Achaemenid"
+		dip = 4
+		adm = 4
+		mil = 2
+	}
+}

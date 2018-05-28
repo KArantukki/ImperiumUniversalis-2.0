@@ -1,0 +1,78 @@
+#Country Name: Please see filename.
+
+graphical_culture = hellenicgfx
+
+color = { 135 176 211 }
+
+revolutionary_colors = { 5  13  0 }
+
+
+historical_idea_groups = {
+	
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Lyndus" = 20
+	"Mysus" = 20
+	"Nastes" = 20
+	"Amphimachos" = 20
+	"Dares" = 20
+	"Tantalus" = 20
+	"Pelops" = 20
+	"Broteas" = 20
+	"Ardys" = 20
+	"Gyges" = 20
+	"Alyattes" = 20
+	"Croesus" = 20
+	"Sadyattes" = 20
+	"Candaules" = 20
+	"Agron" = 20
+	"Alulis" = 5
+	"Argys" = 5
+	"Arma" = 5
+	"Ata" = 5
+	"Atelis" = 5
+	"Atrastal" = 5
+	"Bartaras" = 5
+	"Gugisa" = 5
+	"Isas" = 5
+	"Kadoas" = 5
+	"Kavdaules" = 5
+	"Kitwa" = 5
+	"Kukas" = 5
+	"Kumlis" = 5
+	"Manes" = 5
+	"Mitridashtas" = 5
+	"Nannas" = 5
+	"Silukas" = 5
+	"Srkastus" = 5
+	"Timles" = 5
+	"Titis" = 5
+	"Tiwdas" = 5
+	"Walwes" = 5
+	
+	"Aryenis" = -1
+	"Lyde" = -1
+	"Athaliah" = -1               
+}
+
+leader_names = {
+					"of Sardes" "of Lydia" "the Wise" "the Older" "the Younger" "the Grey" "" "" "" "" "" "" "" "" "" "" "" ""
+					Caroi Lyndae Darae Agroi Pelopai Melae Gygeoi
+}
+
+ship_names = {
+	Afala Artimus Bakivalis Kandaules Kowe Kulumsis Lametru Lews Sareta Sawtaar Siuwali Siwralmn Tansa Tawsew Walve
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

@@ -1,0 +1,351 @@
+
+namespace = religion_china
+
+########################################################################################
+# confucius
+########################################################################################
+country_event = {
+	id = religion_china.1
+	title = "religion_china.1.t"
+	desc = "religion_china.1.d"
+	picture = ruler
+	major = yes
+	
+	trigger = {
+		culture_group = chinese_group
+		religion = chinese_religion
+		NOT = { has_global_flag = confucianism_happened }
+		is_year = 240
+		NOT = { started_in = 240.1.1 }
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+				factor = 0.75
+				TAG = LUU
+			}
+	}
+	
+	option = {
+		name = "religion_china.1.a"
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				unlock_cult = confucianism
+			}
+				define_advisor = {
+					type = scholar_advisor
+					name = "Confucius"
+					skill = 3
+					discount = yes
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				set_global_flag = confucianism_happened
+			
+	}
+}
+country_event = {
+	id = religion_china.100
+	title = "religion_china.1.t"
+	desc = "religion_china.1.d"
+	picture = ruler
+	
+	trigger = {
+		has_global_flag = confucianism_happened
+		religion = chinese_religion
+		NOT = { has_unlocked_cult = confucianism }
+		NOT = { started_in = 240.1.1 }
+		OR = {
+			any_neighbor_country = { has_unlocked_cult = confucianism }
+			any_ally = { has_unlocked_cult = confucianism }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "religion_china.1.a"
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				unlock_cult = confucianism
+			}
+				add_adm_power = 25
+				add_dip_power = 25
+				add_mil_power = 25
+	}
+}
+########################################################################################
+# taoism
+########################################################################################
+country_event = {
+	id = religion_china.2
+	title = "religion_china.2.t"
+	desc = "religion_china.2.d"
+	picture = ruler
+	major = yes
+	
+	trigger = {
+		culture_group = chinese_group
+		religion = chinese_religion
+		is_year = 400
+		NOT = { started_in = 400.1.1 }
+		NOT = { has_global_flag = taoism_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+	}
+	
+	option = {
+		name = "religion_china.2.a"
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				unlock_cult = taoism
+			}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				set_global_flag = taoism_happened
+	}
+}
+country_event = {
+	id = religion_china.200
+	title = "religion_china.2.t"
+	desc = "religion_china.2.d"
+	picture = ruler
+	major = yes
+	
+	trigger = {
+		has_global_flag = taoism_happened
+		religion = chinese_religion
+		NOT = { started_in = 400.1.1 }
+		NOT = { has_unlocked_cult = taoism }
+		OR = {
+			any_neighbor_country = { has_unlocked_cult = taoism }
+			any_ally = { has_unlocked_cult = taoism }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "religion_china.2.a"
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				unlock_cult = taoism
+			}
+				add_adm_power = 25
+				add_dip_power = 25
+				add_mil_power = 25
+	}
+}
+
+########################################################################################
+# legalism
+########################################################################################
+country_event = {
+	id = religion_china.3
+	title = "religion_china.3.t"
+	desc = "religion_china.3.d"
+	picture = ruler
+	major = yes
+	
+	trigger = {
+		culture_group = chinese_group
+		religion = chinese_religion
+		is_year = 400
+		NOT = { started_in = 400.1.1 }
+		NOT = { has_global_flag = legalism_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+				factor = 0.75
+				TAG = QIN
+			}
+	}
+	
+	option = {
+		name = "religion_china.3.a"
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				unlock_cult = legalism
+			}
+				define_advisor = {
+					type = statesman_adv
+					name = "Shang Yang"
+					skill = 3
+					discount = yes
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				set_global_flag = legalism_happened
+			
+	}
+}
+country_event = {
+	id = religion_china.300
+	title = "religion_china.3.t"
+	desc = "religion_china.3.d"
+	picture = ruler
+	
+	trigger = {
+		has_global_flag = legalism_happened
+		religion = chinese_religion
+		NOT = { has_unlocked_cult = legalism }
+		NOT = { started_in = 400.1.1 }
+		OR = {
+			any_neighbor_country = { has_unlocked_cult = legalism }
+			any_ally = { has_unlocked_cult = legalism }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "religion_china.3.a"
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				unlock_cult = legalism
+			}
+				add_adm_power = 25
+				add_dip_power = 25
+				add_mil_power = 25
+	}
+}
+
+########################################################################################
+# mohism
+########################################################################################
+country_event = {
+	id = religion_china.4
+	title = "religion_china.4.t"
+	desc = "religion_china.4.d"
+	picture = ruler
+	major = yes
+	
+	trigger = {
+		culture_group = chinese_group
+		religion = chinese_religion
+		is_year = 300
+		NOT = { started_in = 300.1.1 }
+		NOT = { has_global_flag = mohism_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+				factor = 0.75
+				TAG = QII
+			}
+	}
+	
+	option = {
+		name = "religion_china.4.a"
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				unlock_cult = mohism
+			}
+				define_advisor = {
+					type = philosopher_adv
+					name = "Mo Tzu"
+					skill = 3
+					discount = yes
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				set_global_flag = mohism_happened
+			
+	}
+}
+country_event = {
+	id = religion_china.400
+	title = "religion_china.4.t"
+	desc = "religion_china.4.d"
+	picture = ruler
+	
+	trigger = {
+		has_global_flag = mohism_happened
+		religion = chinese_religion
+		NOT = { has_unlocked_cult = mohism }
+		NOT = { started_in = 300.1.1 }
+		OR = {
+			any_neighbor_country = { has_unlocked_cult = mohism }
+			any_ally = { has_unlocked_cult = mohism }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "religion_china.4.a"
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				unlock_cult = mohism
+			}
+				add_adm_power = 25
+				add_dip_power = 25
+				add_mil_power = 25
+		}
+}
+
+########################################################################################
+# shenism spreads
+########################################################################################
+province_event = {
+	id = religion_china.5
+	title = "religion_china.5.t"
+	desc = "religion_china.5.d"
+	picture = religious
+	
+	trigger = {
+		religion = wuism
+		OR = {	
+			culture_group = chinese_group
+			any_neighbor_province = { religion = chinese_religion }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+				factor = 0.66
+				any_neighbor_province = { religion = chinese_religion }
+			}
+		modifier = {
+				factor = 0.75
+				owner = { religion = chinese_religion }
+			}
+		modifier = {
+				factor = 3.0
+				owner = { NOT = { culture_group = chinese_group } }
+				NOT = { culture_group = chinese_group }
+			}
+		modifier = {
+				factor = 1.25
+				owner = { NOT = { adm_tech = 4 } }
+			}
+		modifier = {
+				factor = 0.8
+				owner = { adm_tech = 9 }
+			}
+	}
+	
+	option = {
+		name = "religion_china.5.a"
+			change_religion = chinese_religion	
+	}
+}

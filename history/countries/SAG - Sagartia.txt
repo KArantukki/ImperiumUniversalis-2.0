@@ -1,0 +1,24 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = sagartian
+religion = mesopotamian_religion
+religious_school = semitic_type
+capital = 1868
+
+195.1.1 = {
+	monarch = {
+		name = "Gobryas I"
+		dynasty = "of Sagartia"
+		birth_date = 167.1.1
+		death_date = 210.1.1
+		dip = 3
+		adm = 2
+		mil = 4
+		leader = {	name = "Gobryas I."  type = general		fire = 3	shock = 4	manuever = 1	siege = 1 }
+	}
+}
+250.1.1 = {
+	religion = zoroastrianism
+}

@@ -1,0 +1,45 @@
+
+elp_1 = {
+	trade_goods_size_modifier = -0.9
+	
+	picture = "elp_1"
+}
+elp_2 = {
+	trade_goods_size_modifier = -0.5
+	
+	picture = "elp_2"
+}
+elp_3 = {
+	trade_goods_size_modifier = -0.1
+	picture = "elp_3"
+}
+elp_4 = {
+	trade_goods_size_modifier = 0.2
+	local_build_cost = -0.05
+	local_build_time = -0.05
+	
+	picture = "elp_4"
+}
+elp_5 = {
+	trade_goods_size_modifier = 0.5
+	local_build_cost = -0.1
+	local_build_time = -0.1
+	
+	picture = "elp_5"
+}
+
+elephant_work = {
+	local_production_efficiency = 0.2
+	local_ship_cost = -0.1
+	local_ship_repair = 0.1
+	local_build_cost = -0.1
+	local_build_time = -0.1
+	
+	picture = "elephants_for_work"
+}
+
+elephant_games = {
+	local_unrest = -3
+	local_tax_modifier = 0.2
+	province_trade_power_modifier = 0.1
+}

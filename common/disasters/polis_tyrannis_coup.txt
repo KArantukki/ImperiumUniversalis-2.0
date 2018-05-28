@@ -1,0 +1,181 @@
+polis_tyrannis_coup_disaster = {
+	potential = {
+		OR = {
+			government = greek_polis
+			government = greek_polis_democracy
+		}
+		
+		faction_influence = {
+			faction = fac_monarchists
+			influence = 30
+		}
+	}
+
+
+	can_start = {
+		faction_in_power = fac_monarchists
+	}
+	
+	can_stop = {
+		NOT = { faction_in_power = fac_monarchists }	
+	}
+	
+	
+	
+	progress = {
+		
+		modifier = {
+			factor = 2
+			faction_influence = {
+				faction = fac_monarchists
+				influence = 50
+			}
+		}
+		modifier = {
+			factor = 2
+			faction_influence = {
+				faction = fac_democrats
+				influence = 50
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {	devotion = 90 }
+					devotion = 80
+			government = greek_polis
+		}	
+		modifier = {
+			factor = 1
+			NOT = {	devotion = 80 }
+					devotion = 70
+			government = greek_polis
+		}		
+		modifier = {
+			factor = 1.5
+			NOT = {	devotion = 70 }
+					devotion = 60
+			government = greek_polis
+		}
+		modifier = {
+			factor = 2
+			NOT = {	devotion = 60 }
+					devotion = 50
+			government = greek_polis
+		}	
+		modifier = {
+			factor = 2.5
+			NOT = {	devotion = 50 }
+					devotion = 40
+			government = greek_polis
+		}
+		modifier = {
+			factor = 3
+			NOT = {	devotion = 40 }
+					devotion = 30
+			government = greek_polis
+		}
+		modifier = {
+			factor = 3.5
+			NOT = {	devotion = 30 }
+					devotion = 20
+			government = greek_polis
+		}
+		modifier = {
+			factor = 4
+			NOT = {	devotion = 20 }
+					devotion = 10
+			government = greek_polis
+		}
+		modifier = {
+			factor = 4.5
+			NOT = {	devotion = 10 }
+			government = greek_polis
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {	republican_tradition = 90 }
+					republican_tradition = 80
+			government = greek_polis_democracy
+		}	
+		modifier = {
+			factor = 1
+			NOT = {	republican_tradition = 80 }
+					republican_tradition = 70
+			government = greek_polis_democracy
+		}		
+		modifier = {
+			factor = 1.5
+			NOT = {	republican_tradition = 70 }
+					republican_tradition = 60
+			government = greek_polis_democracy
+		}
+		modifier = {
+			factor = 2
+			NOT = {	republican_tradition = 60 }
+					republican_tradition = 50
+			government = greek_polis_democracy
+		}	
+		modifier = {
+			factor = 2.5
+			NOT = {	republican_tradition = 50 }
+					republican_tradition = 40
+			government = greek_polis_democracy
+		}
+		modifier = {
+			factor = 3
+			NOT = {	republican_tradition = 40 }
+					republican_tradition = 30
+			government = greek_polis_democracy
+		}
+		modifier = {
+			factor = 3.5
+			NOT = {	republican_tradition = 30 }
+					republican_tradition = 20
+			government = greek_polis_democracy
+		}
+		modifier = {
+			factor = 4
+			NOT = {	republican_tradition = 20 }
+					republican_tradition = 10
+			government = greek_polis_democracy
+		}
+		modifier = {
+			factor = 5.5
+			NOT = {	republican_tradition = 10 }
+			government = greek_polis_democracy
+		}
+		modifier = {
+			factor = 2.5
+			NOT = { stability = 1 }
+					stability = 0
+		}	
+		modifier = {
+			factor = 5
+			NOT = { stability = 0 }
+					stability = -1
+		}
+		modifier = {
+			factor = 7.5
+			NOT = { stability = -1 }
+					stability = -2
+		}	
+		modifier = {
+			factor = 10
+			NOT = { stability = -2 }
+		}	
+	}
+	
+	can_end = {
+		
+	}
+	
+	modifier = {	
+	}
+
+	on_start = greek_polis.3
+	on_end = xxx
+	
+	on_monthly = {
+	}
+}
+

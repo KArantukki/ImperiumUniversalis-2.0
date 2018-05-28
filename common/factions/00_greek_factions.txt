@@ -1,0 +1,39 @@
+########################################
+# greek polis
+########################################
+fac_democrats =
+{
+	monarch_power = ADM
+	always = yes
+	
+	modifier = 
+	{
+		idea_cost = -0.1
+		global_unrest = -1
+		yearly_corruption = -0.05
+	}
+}
+fac_oligarchs =
+{
+	monarch_power = DIP
+	always = yes
+	
+	modifier = 
+	{
+		diplomats = 1
+		global_ship_trade_power = 0.15
+		production_efficiency = 0.1
+	}
+}
+fac_monarchists =
+{
+	monarch_power = MIL
+	always = yes
+	
+	modifier = 
+	{
+		discipline = 0.05
+		land_forcelimit_modifier = 0.1
+		global_regiment_cost = -0.2
+	}
+}

@@ -1,0 +1,12 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = magadhi
+add_accepted_culture = gangaridinite
+religion = brahmin
+capital = 2693
+historical_rival = MAU
+
+290.1. = { government = despotic_monarchy }
+550.1.1 = { religion = buddhism }

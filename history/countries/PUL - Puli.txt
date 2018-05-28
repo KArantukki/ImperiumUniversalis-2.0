@@ -1,0 +1,7 @@
+government = tribal_despotism
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = kambojas
+religion = bon_religion
+capital = 3346
+technology_group = central_asian

@@ -1,0 +1,16 @@
+name = "Ionian Revolt"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = PER
+}
+
+255.1.1 = {
+	add_attacker = PER
+	add_defender = PSE
+}
+261.1.1 = {
+	rem_attacker = PER
+	rem_defender = PSE
+}
+

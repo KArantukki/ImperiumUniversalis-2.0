@@ -1,0 +1,9 @@
+government = pastoral_tribe
+government_rank = 2
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = moabite
+religion = punic_religion
+religious_school = semitic_type
+capital = 1797
+

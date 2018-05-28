@@ -1,0 +1,62 @@
+europe = {
+
+}
+
+
+north_america = {
+	
+}
+
+south_america = {
+	
+}
+
+oceania = {
+	
+}
+
+###############
+
+europe = {
+		
+		
+			
+}
+
+africa = {
+		
+}
+
+asia = {
+		
+			
+			
+}	
+
+sarmatia = {
+		
+}
+
+iran = {
+		
+			
+}
+
+china = {
+		
+		
+		}
+ 
+india = {
+		
+}
+
+wasteland_continent = {
+	
+}	
+
+island_check_provinces = {
+}
+
+new_world = {
+}

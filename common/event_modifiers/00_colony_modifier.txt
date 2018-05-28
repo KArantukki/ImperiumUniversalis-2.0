@@ -1,0 +1,7 @@
+
+building_colony = {
+	local_unrest = 3
+	local_state_maintenance_modifier = 10.0
+	picture = "colony_1"
+}
+

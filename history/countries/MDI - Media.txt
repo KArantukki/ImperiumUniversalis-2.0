@@ -1,0 +1,50 @@
+government = despotic_monarchy
+government_rank = 3
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = medians
+religion = zoroastrianism
+capital = 1941
+historical_rival = SUS
+historical_rival = LYD
+historical_rival = EGY
+historical_friend = MD1
+historical_friend = MD2
+historical_friend = MD3
+historical_friend = MD4
+historical_friend = MD5
+historical_friend = MD6
+
+195.1.1 = {
+add_absolutism = 20
+add_stability = 1
+infantry = capital
+infantry = capital
+infantry = capital
+infantry = capital
+infantry = capital
+infantry = capital
+infantry = capital
+infantry = capital
+infantry = capital
+infantry = capital
+
+add_ruler_personality = benevolent_personality
+monarch = {
+		name = "Astyages"
+		dynasty = "of Media"
+		birth_date = 155.1.1
+		dip = 1
+		adm = 1
+		mil = 3
+	}
+leader = {
+		name = "Harpagus" 
+		type = general	
+		fire = 3
+		shock = 6
+		manuever = 2
+		siege = 1
+		death_date = 204.1.1
+	}
+}

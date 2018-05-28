@@ -1,0 +1,36 @@
+alliance = {
+	first = LUS
+	second = ZE8
+	start_date = 599.1.1
+	end_date = 615.1.1
+}
+alliance = {
+	first = LUS
+	second = TO8
+	start_date = 599.1.1
+	end_date = 615.1.1
+}
+alliance = {
+	first = LUS
+	second = CCQ
+	start_date = 599.1.1
+	end_date = 615.1.1
+}
+alliance = {
+	first = LUS
+	second = CVQ
+	start_date = 599.1.1
+	end_date = 615.1.1
+}
+alliance = {
+	first = LUS
+	second = VT8
+	start_date = 599.1.1
+	end_date = 615.1.1
+}
+alliance = {
+	first = LUS
+	second = CLQ
+	start_date = 599.1.1
+	end_date = 615.1.1
+}

@@ -1,0 +1,10 @@
+government = tribal_federation
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iberian
+primary_culture = talaiotic
+religion = nuragic_religion
+religious_school = north_pagan_type
+capital = 28
+	
+

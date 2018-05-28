@@ -1,0 +1,65 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 131 62 159 }
+
+
+historical_idea_groups = {
+	cavalry_ideas
+	economy_ideas
+	trade_ideas
+	administrative_ideas
+	quantity_ideas
+	imperial_government_ideas
+	influence_ideas
+	offensive_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {  
+
+	"Asina" = 15
+	"Atamaita" = 15
+	"Chishpish" = 15
+	"Indabigash" = 15
+	"Kabujia" = 15
+	"Kambarma" = 15
+	"Khallashu" = 15
+	"Kurash" = 15
+	"Martiya" = 15
+	"Parnaka" = 15
+	"Tammaritu" = 15
+	"Umamaita" = 15
+	"Upadarma" = 15
+	"Urtaki" = 15
+	
+	"Anzaze" = -1
+	"Irtashduna" = -1
+	"Zhaleh" = -1
+	"Nahid" = -1
+	"Banu" = -1
+	"Esta #1" = -1
+	"Jaleh #1" = -1
+}
+
+leader_names = {
+		"the Wise" "the Older" "the Younger" "of Susa" "of Susa" "of Susa" "of Susa" "of Sitacus" "of Mesambria" "of Soloke" "of Shushan"
+		"" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

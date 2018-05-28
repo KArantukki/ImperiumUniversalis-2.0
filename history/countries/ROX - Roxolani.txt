@@ -1,0 +1,12 @@
+government = tribal_horde
+government_rank = 2
+#mercantilism = 0.25
+technology_group = scythian
+primary_culture = sarmatian
+religion = sarmatian
+religious_school = nomad_type
+capital = 1150
+
+270.1.1 = { capital = 1149 }
+320.1.1 = { capital = 1156 }
+815.1.1 = { capital = 1085 }

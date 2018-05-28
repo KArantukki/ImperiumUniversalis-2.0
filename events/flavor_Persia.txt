@@ -1,0 +1,250 @@
+namespace = persia
+
+########################################################################################
+# fall of ecbatana
+########################################################################################
+country_event = {
+	id = persia.1
+	title = "persia.1.t"
+	desc = "persia.1.d"
+	picture = siege_picture
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					primary_culture = medians
+					is_subject_of = MDI
+				}
+				set_country_flag = subject_of_media
+			}
+		}
+	}
+	
+	option = {
+		name = "persia.1.a"
+		ai_chance = { factor = 100 }
+			hidden_effect = {
+				MDI = {
+					release_all_subjects = yes
+				}
+			}
+			add_stability = -1
+			change_government = despotic_monarchy
+			inherit = MDI
+			media_region = {
+				add_claim = ROOT
+			}
+		if = {
+			limit = { ai = yes }
+				every_country = {
+					limit = { has_country_flag = subject_of_media }
+						ROOT = { inherit = PREV }
+				}
+			}
+	}
+	option = {
+		name = "persia.1.b"
+			add_stability = 1
+	}
+}
+########################################################################################
+# deserter army
+########################################################################################
+country_event = {
+	id = persia.2
+	title = "persia.2.t"
+	desc = "persia.2.d"
+	picture = generals
+	
+	trigger = {
+		OR = {
+			TAG = ANH
+			TAG = PSE
+		}
+		war_with = MDI
+		MDI = { 
+			ai = yes 
+			has_leader = "Harpagus"
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "persia.2.a"
+			hidden_effect = {
+			MDI = {
+				kill_leader = { type = Harpagus }
+				}
+			}
+			define_general = {
+					name = "Harpagus" 
+					fire = 3
+					shock = 6
+					manuever = 2
+					siege = 1
+			}
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			artillery = capital 
+	}
+}
+########################################################################################
+# throne of persia
+########################################################################################
+country_event = {
+	id = persia.3
+	title = "persia.3.t"
+	desc = "persia.3.d"
+	picture = ruler
+	
+	trigger = {
+		TAG = ANH
+		exists = PRS
+		alliance_with = PRS
+		is_subject = no
+		owns = 1941
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "persia.3.a"
+		ai_chance = { factor = 100 }
+			change_tag = PSE
+			inherit = PRS
+			set_capital = 1967 
+	}
+	option = {
+		name = "persia.3.b"
+		ai_chance = { factor = 0 }
+			add_prestige = -10
+	}
+}
+########################################################################################
+# Scylax of Caryanda
+########################################################################################
+country_event = {
+	id = persia.4
+	title = "persia.4.t"
+	desc = "persia.4.d"
+	picture = navy2
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = PSE
+		is_year = 235
+		NOT = { is_year = 250 }
+		total_development = 900
+		num_of_ports = 9
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		
+	}
+	option = {
+		name = "persia.4.a"
+		ai_chance = { factor = 100 }
+			define_explorer = {
+				name = "Scylax of Caryanda"
+				fire = 1
+				shock = 1
+				manuever = 4
+				siege = 0
+			}
+	}
+}
+
+########################################################################################
+# Chapar Khaneh
+########################################################################################
+country_event = {
+	id = persia.5
+	title = "persia.5.t"
+	desc = "persia.5.d"
+	picture = ruler
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = PSE
+		NOT = { has_country_flag = chapar_khaneh_flag }
+		is_year = 210
+		total_development = 650
+	}
+	
+	mean_time_to_happen = {
+		months = 48	
+	}
+	
+	option = {
+		name = "persia.5.a"
+		ai_chance = { factor = 100 }
+			add_adm_power = -50
+			set_country_flag = chapar_khaneh_flag
+			add_country_modifier = {
+					name = chapar_khaneh
+					duration = -1
+				}
+	}
+	option = {
+		name = "persia.5.b"
+		ai_chance = { factor = 0 }
+			set_country_flag = chapar_khaneh_flag
+			add_adm_power = 50
+	}
+}
+
+########################################################################################
+# House of Egibi
+########################################################################################
+country_event = {
+	id = persia.9
+	title = "persia.9.t"
+	desc = "persia.9.d"
+	picture = family
+	
+	trigger = {
+		owns = 1882
+		OR = {
+			culture_group = akkadian_group
+			culture_group = semitic
+			culture_group = western_iranian
+		}
+		is_year = 200
+		NOT = { is_year = 350 }
+		NOT = {
+			has_country_modifier = house_of_egibi
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		
+	}
+	option = {
+		name = "persia.9.a"
+			add_country_modifier = {
+				name = house_of_egibi
+				duration = -1
+			}
+			add_adm_power = 100
+	}
+}

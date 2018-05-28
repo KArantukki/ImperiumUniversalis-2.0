@@ -1,0 +1,1696 @@
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   LEVEL 1                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+entity = {
+	name = "hellenicgfx_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield"
+	}
+}
+
+entity = {
+	name = "SP1_INFANTRY_3"
+	pdxmesh = "SP1_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "spartan_spear" 
+		CATRigRArm2 = "hoplite_shield_sp1"
+	}
+}
+
+entity = {
+	name = "ATH_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_ath"
+	}
+}
+
+entity = {
+	name = "MAC_INFANTRY_3"
+	pdxmesh = "macedon_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "macedon_spear" 
+		CATRigRArm2 = "hoplite_shield_mac2"
+	}
+}
+entity = {
+	name = "macedon_INFANTRY_3"
+	pdxmesh = "macedon_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "macedon_spear" 
+		CATRigRArm2 = "macedon_shield"
+	}
+}
+entity = {
+	name = "BSL_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "EMT_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "MGD_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "KRS_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "LNK_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "ORE_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "ALM_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "ELM_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "EOR_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "THR_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "PTO_INFANTRY_3"
+	pdxmesh = "macedon_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "macedon_spear" 
+		CATRigRArm2 = "ptolemic_shield"
+	}
+}
+entity = {
+	name = "GBK_INFANTRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+
+entity = {
+	name = "COR_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_cor"
+	}
+}
+
+entity = {
+	name = "SYR_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_syr"
+	}
+}
+
+entity = {
+	name = "EPH_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_eph"
+	}
+}
+
+entity = {
+	name = "EPI_INFANTRY_3"
+	pdxmesh = "macedon_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_epi"
+	}
+}
+
+entity = {
+	name = "MOL_INFANTRY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "THP_INFANTRY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "CHC_INFANTRY_3"
+	clone = "EPI_INFANTRY_3"
+}
+
+entity = {
+	name = "ACH_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_ach"
+	}
+}
+
+entity = {
+	name = "ELI_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_eli"
+	}
+}
+
+entity = {
+	name = "RHO_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_rho"
+	}
+}
+
+entity = {
+	name = "SEL_INFANTRY_3"
+	pdxmesh = "macedon_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_sel"
+	}
+}
+
+entity = {
+	name = "TAR_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_tar"
+	}
+}
+
+entity = {
+	name = "ARG_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_arg"
+	}
+}
+
+entity = {
+	name = "ARC_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_arc"
+	}
+}
+
+entity = {
+	name = "EBO_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_ebo"
+	}
+}
+
+entity = {
+	name = "MSZ_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_msz"
+	}
+}
+
+entity = {
+	name = "PHC_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_phc"
+	}
+}
+
+entity = {
+	name = "AET_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_aet"
+	}
+}
+
+entity = {
+	name = "BOE_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_boe"
+	}
+}
+
+entity = {
+	name = "THH_INFANTRY_3"
+	clone = "BOE_INFANTRY_3"
+}
+
+entity = {
+	name = "ACR_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_acr"
+	}
+}
+
+entity = {
+	name = "SIC_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_sic"
+	}
+}
+
+entity = {
+	name = "BYS_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_byz"
+	}
+}
+
+entity = {
+	name = "KYR_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_kyr"
+	}
+}
+
+entity = {
+	name = "LES_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_les"
+	}
+}
+
+entity = {
+	name = "CHI_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_chi"
+	}
+}
+
+entity = {
+	name = "CLK_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_clk"
+	}
+}
+
+entity = {
+	name = "MIL_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_mil"
+	}
+}
+
+entity = {
+	name = "PNK_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_pnk"
+	}
+}
+entity = {
+	name = "SCI_INFANTRY_3"
+	clone = "SYR_INFANTRY_3"
+}
+entity = {
+	name = "THE_INFANTRY_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_the"
+	}
+}
+entity = {
+	name = "LYD_INFANTRY_3"
+	pdxmesh = "macedon_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.4 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.7	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.7	}
+
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield"
+	}
+}
+entity = {
+	name = "PHE_INFANTRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "PLG_INFANTRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "HES_INFANTRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "TES_INFANTRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "MGN_INFANTRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "PHT_INFANTRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "DLP_INFANTRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "hellenicgfx_INFANTRY_alt_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+	
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_alt1"
+	}
+}
+entity = {
+	name = "hellenicgfx_INFANTRY_alt_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+	
+	attach = { 
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "hoplite_shield_alt2"
+	}
+}
+entity = {
+	name = "hellenicgfx_INFANTRY_alt_3"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+	
+	attach = { 
+		spear_bone = "punic_spear" 
+		CATRigRArm2 = "hoplite_shield_alt3"
+	}
+}
+entity = {
+	name = "hellenicgfx_INFANTRY_alt_4"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+	
+	attach = { 
+		spear_bone = "scythian_spear" 
+		CATRigRArm2 = "hoplite_shield_alt4"
+	}
+}
+entity = {
+	name = "hellenicgfx_INFANTRY_alt_5"
+	pdxmesh = "hellenicgfx_INFANTRY_2"
+
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+	
+	attach = { 
+		spear_bone = "scythian_spear" 
+		CATRigRArm2 = "hoplite_shield_alt5"
+	}
+}
+entity = {
+	name = "AIG_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ORC_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ADR_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ERR_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "CRO_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "PHA_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "DYM_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "RHE_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ILV_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "GOR_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "EPD_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ML2_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ABD_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "AP1_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "LAM_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "NPL_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "NIC_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "AMC_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "NXS_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "HIE_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "IAL_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "KYM_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "BTT_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "TNS_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ANT_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "TYR_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "KMR_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "MET_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "COC_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "PAT_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "ERT_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "KME_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "POL_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "DEL_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "RHH_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "NYM_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "MHE_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "POS_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "AKR_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "MEG_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "KSS_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "CYC_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "OLB_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "THD_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "HRC_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+
+entity = {
+	name = "LCS_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+
+entity = {
+	name = "PER_INFANTRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   CAVALRY                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "AIG_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ORC_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ADR_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ERR_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "CRO_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "AP1_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "PHA_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "DYM_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "RHE_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ILV_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "GOR_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "EPD_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ML2_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ABD_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "AP1_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "LAM_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "NPL_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "NIC_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "AMC_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "NXS_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "HIE_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "IAL_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "KYM_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "BTT_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "TNS_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ANT_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "TYR_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "KMR_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "MET_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "COC_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "PAT_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "ERT_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "KME_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "POL_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "DEL_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "RHH_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "NYM_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "MHE_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "POS_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "AKR_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "MEG_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "KSS_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "CYC_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "OLB_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "THD_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "HRC_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+
+entity = {
+	name = "LCS_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+
+entity = {
+	name = "PER_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "hellenicgfx_CAVALRY_3"
+	clone = "hellenicgfx_INFANTRY_3"
+}
+entity = {
+	name = "SP1_CAVALRY_3"
+	clone = "SP1_INFANTRY_3"
+}
+entity = {
+	name = "ATH_CAVALRY_3"
+	clone = "ATH_INFANTRY_3"
+}
+entity = {
+	name = "MAC_CAVALRY_3"
+	clone = "MAC_INFANTRY_3"
+}
+entity = {
+	name = "BSL_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "EMT_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "MGD_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "KRS_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "LNK_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "ORE_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "ALM_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "ELM_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "EOR_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "THR_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "PTO_CAVALRY_3"
+	clone = "PTO_INFANTRY_3"
+}
+entity = {
+	name = "GBK_CAVALRY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "COR_CAVALRY_3"
+	clone = "COR_INFANTRY_3"
+}
+entity = {
+	name = "SYR_CAVALRY_3"
+	clone = "SYR_INFANTRY_3"
+}
+entity = {
+	name = "EPH_CAVALRY_3"
+	clone = "EPH_INFANTRY_3"
+}
+entity = {
+	name = "EPI_CAVALRY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "ELI_CAVALRY_3"
+	clone = "ELI_INFANTRY_3"
+}
+entity = {
+	name = "ACH_CAVALRY_3"
+	clone = "ACH_INFANTRY_3"
+}
+entity = {
+	name = "RHO_CAVALRY_3"
+	clone = "RHO_INFANTRY_3"
+}
+entity = {
+	name = "SEL_CAVALRY_3"
+	clone = "SEL_INFANTRY_3"
+}
+entity = {
+	name = "TAR_CAVALRY_3"
+	clone = "TAR_INFANTRY_3"
+}
+entity = {
+	name = "ARG_CAVALRY_3"
+	clone = "ARG_INFANTRY_3"
+}
+entity = {
+	name = "ARC_CAVALRY_3"
+	clone = "ARC_INFANTRY_3"
+}
+entity = {
+	name = "EBO_CAVALRY_3"
+	clone = "EBO_INFANTRY_3"
+}
+entity = {
+	name = "MSZ_CAVALRY_3"
+	clone = "MSZ_INFANTRY_3"
+}
+entity = {
+	name = "PHC_CAVALRY_3"
+	clone = "PHC_INFANTRY_3"
+}
+entity = {
+	name = "AET_CAVALRY_3"
+	clone = "AET_INFANTRY_3"
+}
+entity = {
+	name = "BOE_CAVALRY_3"
+	clone = "BOE_INFANTRY_3"
+}
+
+entity = {
+	name = "THH_CAVALRY_3"
+	clone = "BOE_INFANTRY_3"
+}
+
+entity = {
+	name = "ACR_CAVALRY_3"
+	clone = "ACR_INFANTRY_3"
+}
+entity = {
+	name = "SIC_CAVALRY_3"
+	clone = "SIC_INFANTRY_3"
+}
+entity = {
+	name = "BYS_CAVALRY_3"
+	clone = "BYS_INFANTRY_3"
+}
+entity = {
+	name = "KYR_CAVALRY_3"
+	clone = "KYR_INFANTRY_3"
+}
+entity = {
+	name = "CHI_CAVALRY_3"
+	clone = "CHI_INFANTRY_3"
+}
+entity = {
+	name = "LES_CAVALRY_3"
+	clone = "LES_INFANTRY_3"
+}
+entity = {
+	name = "CLK_CAVALRY_3"
+	clone = "CLK_INFANTRY_3"
+}
+entity = {
+	name = "MIL_CAVALRY_3"
+	clone = "MIL_INFANTRY_3"
+}
+entity = {
+	name = "PNK_CAVALRY_3"
+	clone = "PNK_INFANTRY_3"
+}
+entity = {
+	name = "SCI_CAVALRY_3"
+	clone = "SYR_INFANTRY_3"
+}
+entity = {
+	name = "THE_CAVALRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "PHE_CAVALRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "PLG_CAVALRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "HES_CAVALRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "TES_CAVALRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "MGN_CAVALRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "PHT_CAVALRY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "DLP_CAVALRY_3"
+	clone = "THE_INFANTRY_3"
+}
+
+entity = {
+	name = "MOL_CAVALRY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "THP_CAVALRY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "CHC_CAVALRY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "LYD_CAVALRY_3"
+	clone = "LYD_INFANTRY_3"
+}
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   ARTILLERY                                             #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "AIG_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ORC_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ADR_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ERR_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "CRO_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "AP1_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "PHA_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "DYM_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "RHE_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ILV_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "GOR_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "EPD_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ML2_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ABD_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "AP1_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "LAM_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "NPL_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "NIC_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "AMC_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "NXS_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "HIE_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "IAL_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "KYM_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "BTT_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "TNS_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "ANT_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "TYR_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_3"
+}
+entity = {
+	name = "KMR_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "MET_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "COC_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "PAT_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "ERT_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "KME_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "POL_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "DEL_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "RHH_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "NYM_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_4"
+}
+entity = {
+	name = "MHE_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "POS_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "AKR_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "MEG_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "KSS_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "CYC_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "OLB_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "THD_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "HRC_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+
+entity = {
+	name = "LCS_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+
+entity = {
+	name = "PER_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_alt_5"
+}
+entity = {
+	name = "hellenicgfx_ARTILLERY_3"
+	clone = "hellenicgfx_INFANTRY_3"	
+}
+entity = {
+	name = "SP1_ARTILLERY_3"
+	clone = "SP1_INFANTRY_3"
+}
+entity = {
+	name = "ATH_ARTILLERY_3"
+	clone = "ATH_INFANTRY_3"
+}
+entity = {
+	name = "MAC_ARTILLERY_3"
+	clone = "MAC_INFANTRY_3"
+}
+entity = {
+	name = "BSL_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "EMT_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "MGD_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "KRS_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "LNK_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "ORE_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "ALM_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "ELM_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "EOR_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "THR_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "PTO_ARTILLERY_3"
+	clone = "PTO_INFANTRY_3"
+}
+entity = {
+	name = "GBK_ARTILLERY_3"
+	clone = "macedon_INFANTRY_3"
+}
+entity = {
+	name = "COR_ARTILLERY_3"
+	clone = "COR_INFANTRY_3"
+}
+entity = {
+	name = "SYR_ARTILLERY_3"
+	clone = "SYR_INFANTRY_3"
+}
+entity = {
+	name = "EPI_ARTILLERY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "EPH_ARTILLERY_3"
+	clone = "EPH_INFANTRY_3"
+}
+entity = {
+	name = "ELI_ARTILLERY_3"
+	clone = "ELI_INFANTRY_3"
+}
+entity = {
+	name = "ACH_ARTILLERY_3"
+	clone = "ACH_INFANTRY_3"
+}
+entity = {
+	name = "RHO_ARTILLERY_3"
+	clone = "RHO_INFANTRY_3"
+}
+entity = {
+	name = "SEL_ARTILLERY_3"
+	clone = "SEL_INFANTRY_3"
+}
+entity = {
+	name = "TAR_ARTILLERY_3"
+	clone = "TAR_INFANTRY_3"
+}
+entity = {
+	name = "ARG_ARTILLERY_3"
+	clone = "ARG_INFANTRY_3"
+}
+entity = {
+	name = "ARC_ARTILLERY_3"
+	clone = "ARC_INFANTRY_3"
+}
+entity = {
+	name = "EBO_ARTILLERY_3"
+	clone = "EBO_INFANTRY_3"
+}
+entity = {
+	name = "MSZ_ARTILLERY_3"
+	clone = "MSZ_INFANTRY_3"
+}
+entity = {
+	name = "PHC_ARTILLERY_3"
+	clone = "PHC_INFANTRY_3"
+}
+entity = {
+	name = "AET_ARTILLERY_3"
+	clone = "AET_INFANTRY_3"
+}
+entity = {
+	name = "BOE_ARTILLERY_3"
+	clone = "BOE_INFANTRY_3"
+}
+entity = {
+	name = "THH_ARTILLERY_3"
+	clone = "BOE_INFANTRY_3"
+}
+entity = {
+	name = "ACR_ARTILLERY_3"
+	clone = "ACR_INFANTRY_3"
+}
+entity = {
+	name = "SIC_ARTILLERY_3"
+	clone = "SIC_INFANTRY_3"
+}
+entity = {
+	name = "BYS_ARTILLERY_3"
+	clone = "BYS_INFANTRY_3"
+}
+entity = {
+	name = "KYR_ARTILLERY_3"
+	clone = "KYR_INFANTRY_3"
+}
+entity = {
+	name = "CHI_ARTILLERY_3"
+	clone = "CHI_INFANTRY_3"
+}
+entity = {
+	name = "LES_ARTILLERY_3"
+	clone = "LES_INFANTRY_3"
+}
+entity = {
+	name = "CLK_ARTILLERY_3"
+	clone = "CLK_INFANTRY_3"
+}
+entity = {
+	name = "MIL_ARTILLERY_3"
+	clone = "MIL_INFANTRY_3"
+}
+entity = {
+	name = "PNK_ARTILLERY_3"
+	clone = "PNK_INFANTRY_3"
+}
+entity = {
+	name = "SCI_ARTILLERY_3"
+	clone = "SYR_INFANTRY_3"
+}
+entity = {
+	name = "THE_ARTILLERY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "PHE_ARTILLERY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "PLG_ARTILLERY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "HES_ARTILLERY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "TES_ARTILLERY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "MGN_ARTILLERY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "PHT_ARTILLERY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "DLP_ARTILLERY_3"
+	clone = "THE_INFANTRY_3"
+}
+entity = {
+	name = "MOL_ARTILLERY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "THP_ARTILLERY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "CHC_ARTILLERY_3"
+	clone = "EPI_INFANTRY_3"
+}
+entity = {
+	name = "LYD_ARTILLERY_3"
+	clone = "LYD_INFANTRY_3"
+}

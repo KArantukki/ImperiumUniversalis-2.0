@@ -1,0 +1,540 @@
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   LEVEL 1                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+entity = {
+	name = "thraciangfx_INFANTRY_1"
+	pdxmesh = "thraciangfx_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		CATRigLArmPalm = "thracian_sword" 
+		CATRigRArmPalm = "thracian_shield"
+	}
+}
+entity = {
+	name = "illyrian_INFANTRY_1"
+	pdxmesh = "illyrian_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "illyrian_spear" 
+		CATRigRArmPalm = "illyrian_shield"
+		CATRigHub003 = "illyrian_helmet_1"
+	}
+}
+entity = {
+	name = "illyrian_INFANTRY_2"
+	pdxmesh = "illyrian_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "illyrian_spear" 
+		CATRigRArmPalm = "illyrian_shield"
+		CATRigHub003 = "illyrian_helmet_2"
+	}
+}
+entity = {
+	name = "AR1_INFANTRY_1"
+	pdxmesh = "illyrian_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "illyrian_spear" 
+		CATRigRArm2 = "hoplite_shield_ar1"
+		CATRigHub003 = "illyrian_helmet_2"
+	}
+}
+entity = {
+	name = "ILY_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "TL1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "DAU_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "LI1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "AB1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "POA_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "PL1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "PE1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "OX1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "CA1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "BR1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "CE1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "SE1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "HE1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "GL1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "DU1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DS1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DR1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DI1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DE1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DD1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DA1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "ME1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "LE1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "IS1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "IA1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "MSS_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AT1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AN1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AI1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AH1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "EN1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AM1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "BY1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "LA1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "HI1_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "SE3_INFANTRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   CAVALRY                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+entity = {
+	name = "thraciangfx_CAVALRY_1"
+	clone = "thraciangfx_INFANTRY_1"
+}
+entity = {
+	name = "ILY_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "TL1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "DAU_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "LI1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "AB1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "POA_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "PL1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "PE1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "OX1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "CA1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "BR1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "CE1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "SE1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "HE1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "GL1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "DU1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DS1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DR1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DI1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DE1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DD1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DA1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "ME1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "LE1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "IS1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "IA1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "MSS_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AT1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AN1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AI1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AH1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "EN1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AM1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "BY1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AR1_CAVALRY_1"
+	clone = "AR1_INFANTRY_1"
+}
+entity = {
+	name = "LA1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "HI1_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "SE3_CAVALRY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   ARTILLERY                                             #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "thraciangfx_ARTILLERY_1"
+	clone = "thraciangfx_INFANTRY_1"
+}
+entity = {
+	name = "ILY_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "TL1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "DAU_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "LI1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "AB1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "POA_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "PL1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "PE1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "OX1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "CA1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "BR1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "CE1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "SE1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "HE1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "GL1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_1"
+}
+entity = {
+	name = "DU1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DS1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DR1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DI1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DE1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DD1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "DA1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "ME1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "LE1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "IS1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "IA1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "MSS_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AT1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AN1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AI1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AH1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "EN1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AM1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "BY1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "AR1_ARTILLERY_1"
+	clone = "AR1_INFANTRY_1"
+}
+entity = {
+	name = "LA1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "HI1_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}
+entity = {
+	name = "SE3_ARTILLERY_1"
+	clone = "illyrian_INFANTRY_2"
+}

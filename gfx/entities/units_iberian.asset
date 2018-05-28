@@ -1,0 +1,76 @@
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   LEVEL 1                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+entity = {
+	name = "iberiangfx_INFANTRY_1"
+	pdxmesh = "iberiangfx_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "iberian_spear" 
+		CATRigRArmPalm = "iberian_shield" 
+	}
+}
+entity = {
+	name = "AEQ_INFANTRY_1"
+	pdxmesh = "iberiangfx_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "iberian_spear" 
+		CATRigRArmPalm = "celtic_shield" 
+	}
+}
+entity = {
+	name = "CLI_INFANTRY_1"
+	clone = "AEQ_INFANTRY_1"
+}
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   CAVALRY                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+entity = {
+	name = "iberiangfx_CAVALRY_1"
+	clone = "iberiangfx_INFANTRY_1"
+}
+entity = {
+	name = "CLI_CAVALRY_1"
+	clone = "AEQ_INFANTRY_1"
+}
+entity = {
+	name = "AEQ_CAVALRY_1"
+	clone = "AEQ_INFANTRY_1"
+}
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   ARTILLERY                                             #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "iberiangfx_ARTILLERY_1"
+	clone = "iberiangfx_INFANTRY_1"
+}
+entity = {
+	name = "CLI_ARTILLERY_1"
+	clone = "AEQ_INFANTRY_1"
+}
+entity = {
+	name = "AEQ_ARTILLERY_1"
+	clone = "AEQ_INFANTRY_1"
+}

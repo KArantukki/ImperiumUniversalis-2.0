@@ -1,0 +1,13 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = medians
+religion = mitraism
+capital = 1971
+
+historical_friend = MDI
+
+250.1.1 = {
+	religion = zoroastrianism
+}

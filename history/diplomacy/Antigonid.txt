@@ -1,0 +1,42 @@
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = ANE
+	second = CRI
+	start_date = 431.1.1
+	end_date = 453.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = ANE
+	second = PHR
+	start_date = 431.1.1
+	end_date = 453.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = ANE
+	second = LYD
+	start_date = 431.1.1
+	end_date = 453.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = ANE
+	second = LYC
+	start_date = 431.1.1
+	end_date = 453.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = ANE
+	second = KIL
+	start_date = 431.1.1
+	end_date = 453.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = ANE
+	second = BIT
+	start_date = 431.1.1
+	end_date = 453.1.1
+}

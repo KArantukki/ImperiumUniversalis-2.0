@@ -1,0 +1,10 @@
+government = tribal_kingdom 
+government_rank = 3
+#mercantilism = 0.25
+technology_group = caucaso_anatolian
+primary_culture = lazi
+religion = skneli
+religious_school = semitic_type
+capital = 1176
+
+400.1.1 = { government = despotic_monarchy }

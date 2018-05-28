@@ -1,0 +1,8 @@
+government = vedic_kingdom
+government_rank = 3
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = kambojas
+religion = brahmin
+capital = 2603
+300.1. = { government = despotic_monarchy }

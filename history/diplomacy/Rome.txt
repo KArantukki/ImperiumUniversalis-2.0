@@ -1,0 +1,134 @@
+
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = ROM
+	second = AET
+	start_date = 565.1.1
+	end_date = 606.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = ROM
+	second = EUB
+	start_date = 556.1.1
+	end_date = 606.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = ROM
+	second = BOS
+	start_date = 691.1.1
+	end_date = 727.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = ROI
+	second = BOS
+	start_date = 727.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = ROM
+	second = PON
+	start_date = 690.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = ROI
+	second = PON
+	start_date = 727.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = ROM
+	second = JUD
+	start_date = 691.1.1
+	end_date = 714.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = ROM
+	second = MRT
+	start_date = 721.1.1
+	end_date = 727.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = ROI
+	second = MRT
+	start_date = 727.1.1
+	end_date = 1024.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = ROM
+	second = ARM
+	start_date = 688.1.1
+	end_date = 722.1.1
+}
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = ROM
+	second = LYC
+	start_date = 708.1.1
+	end_date = 727.1.1
+}
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = ROI
+	second = LYC
+	start_date = 727.1.1
+	end_date = 797.1.1
+}
+
+
+
+#################### CIVIL WAR
+dependency = {
+	subject_type = "triumvir"
+	first = ROM
+	second = R1C
+	start_date = 705.1.1
+	end_date = 709.3.17
+}
+dependency = {
+	subject_type = "triumvir"
+	first = ROM
+	second = RRO
+	start_date = 705.1.1
+	end_date = 709.3.17
+}
+dependency = {
+	subject_type = "triumvir"
+	first = ROM
+	second = R1A
+	start_date = 712.10.23
+	end_date = 727.1.1
+}
+dependency = {
+	subject_type = "triumvir"
+	first = ROM
+	second = R1O
+	start_date = 712.10.23
+	end_date = 727.1.1
+}
+dependency = {
+	subject_type = "triumvir"
+	first = ROM
+	second = R1L
+	start_date = 712.10.23
+	end_date = 727.1.1
+}
+dependency = {
+	subject_type = "triumvir"
+	first = ROM
+	second = RRS
+	start_date = 711.1.1
+	end_date = 727.1.1
+}
+alliance = {
+	first = R1A
+	second = PTO
+	start_date = 713.1.1
+	end_date = 727.1.1
+}

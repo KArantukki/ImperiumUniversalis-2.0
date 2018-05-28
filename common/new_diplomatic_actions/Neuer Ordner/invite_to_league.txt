@@ -1,0 +1,265 @@
+
+
+invite_to_league = {
+	category = influence
+	alert_index = 2
+	alert_tooltip = invite_to_leage_tt
+	require_acceptance = yes 
+	is_visible = {
+		is_subject = no
+		government = league
+		FROM = { is_subject = no	}
+	}
+	is_allowed = {
+			government = league
+			is_at_war = no
+			FROM = { is_subject = no	}
+			FROM = {is_at_war = no }
+			FROM = { NOT = { num_of_cities = 4 }  }
+	}
+	on_accept = {
+		hidden_effect = {
+			ROOT = {
+					country_event = {
+						id = diplomacy.10
+					}
+				}
+			FROM = { set_country_flag = will_be_annexed_into_league }
+		}
+	}
+	on_decline = {
+		# No Effect
+	}
+	ai_acceptance = {
+		# Development Value
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = { which = ai_value value = 10.1 }
+		}
+		
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 0.5 }
+		}
+	
+		add_entry = {
+			name = PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 0.1 }
+		}
+		
+		add_entry = {
+			name = HAS_FRIENDLY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_friendly }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = HAS_THREATENED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_threatened }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+		}
+		add_entry = {
+			name = HAS_ALLIED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_allied }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+		}
+		add_entry = {
+			name = MILITARY_STRENGHT_ROOT
+			
+			export_to_variable = {
+				which = ai_value
+				value = army_size
+			}
+			multiply_variable = { which = ai_value value = 0.15 }
+		}
+		
+		add_entry = {
+			name = SAME_CULTURE
+			limit = {
+				FROM = {
+					primary_culture = ROOT
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 15
+			}
+		}
+
+		
+		
+		# Negative Values ##########################################
+		
+		
+		add_entry = {
+			name = HAS_NEUTRAL_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_neutral }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.75 }
+		}
+		
+		add_entry = {
+			name = MILITARY_STRENGHT_SUBJECT
+			export_to_variable = {
+				which = ai_value
+				value = army_size
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.75 }
+		}
+		
+		add_entry = {
+			name = BORDER_DISTANCE
+			export_to_variable = {
+				which = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+		
+		add_entry = {
+			name = BASE_REJECTION
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		
+		add_entry = {
+			name = NOT_SAME_CULTURE
+			limit = {
+				FROM = {
+					culture_group = ROOT
+					NOT = { primary_culture = ROOT }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = DIFFERENT_CULTURE_GROUP
+			limit = {
+				FROM = {
+					NOT = { culture_group = ROOT }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = IS_LEAGUE
+			limit = {
+				FROM = {
+					government = league
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+	}
+	ai_will_do = {
+		always = no
+	}
+}

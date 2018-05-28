@@ -1,0 +1,43 @@
+#Country Name: Please see filename.
+
+graphical_culture = hellenicgfx
+
+color = { 133 61 79 }
+
+
+historical_idea_groups = {
+	
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+
+	"Mithridates #7" = 60
+	"Ariobarzanes #6" = 10
+	"Pharnaces #6" = 40
+	"Darius #6" = 15
+	"Arsaces #6" = 10
+	"Polemon #6" = 10
+
+
+}
+
+leader_names = {
+			Diogenes Bion Heraclides Strabo Philetaerus Mithridates Memnon Marcion Aquila Evagrius Athanasius 
+			Ariobarzanes Pharnakes Dareios Arsakes Polemon Pythordoris Clearchus Timotheus Oxyathres
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

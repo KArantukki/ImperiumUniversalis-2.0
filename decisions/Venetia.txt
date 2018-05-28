@@ -1,0 +1,50 @@
+country_decisions = {
+	
+	 form_venetia_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = VNT }
+			primary_culture = veneti
+		}
+		allow = {
+			is_at_war =  no
+			
+			owns_core_province = 192
+			owns_core_province = 186
+			owns_core_province = 189
+			owns_core_province = 196
+			owns_core_province = 190
+			
+		}
+		effect = {
+			change_tag = VNT
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }		
+				}
+				set_government_rank = 3
+			}
+			
+				eastern_venetia_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = VNT
+				}
+				western_venetia_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = VNT
+				}
+
+			}
+		ai_importance = 50	
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+}
+
+	

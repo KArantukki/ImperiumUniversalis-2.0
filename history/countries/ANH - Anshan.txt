@@ -1,0 +1,36 @@
+government = tribal_kingdom
+government_rank = 3
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = persian
+religion = mitraism
+capital = 3724
+
+historical_friend = PRS
+
+195.1.1 = {
+		add_ruler_personality = the_great_personality
+monarch = {
+		name = "Kyros the Great"
+		dynasty = "Achaemenid"
+		birth_date = 178.1.1
+		dip = 6
+		adm = 6
+		mil = 6
+		leader = {	name = "Kyros the Great"  type = general	fire = 8	shock = 8	manuever = 4	siege = 4 }
+	}
+queen = {
+        country_of_origin = PSE
+        name = "Cassandane"
+		birth_date = 180.1.1
+        dynasty = "of Persia"
+        death_date = 224.1.1
+        female = yes
+        adm = 3
+        dip = 3
+        mil = 2
+    }
+}	
+300.1.1 = { religion = zurvanism 
+			government = despotic_monarchy
+}

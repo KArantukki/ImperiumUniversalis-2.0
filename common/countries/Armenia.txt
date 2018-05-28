@@ -1,0 +1,62 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 188 183 183 }
+
+historical_idea_groups = {
+	cavalry_ideas
+	economy_ideas
+	trade_ideas
+	administrative_ideas
+	quantity_ideas
+	imperial_government_ideas
+	influence_ideas
+	offensive_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Orontes #4" = 50
+	"Mithranes #2" = 30
+	"Perdiccas #2" = 30
+	"Neoptolemus #2" = 30
+	"Eumenes #2" = 30
+	"Mihran #2" = 30
+	"Sames #2" = 30
+	"Arsames #2" = 30
+	"Charaspes" = 20
+	"Xerxes #2" = 10
+	"Abdissares #2" = 30
+	"Darius #2" = 30
+	
+	"Yesfir #1" = -1
+	"Zareen #1" = -1
+	"Zhaleh #1" = -1
+	"Nahid #1" = -1
+	"Banu #1" = -1
+	"Esta #1" = -1
+	"Jaleh #1" = -1
+
+}
+
+leader_names = {
+			"the Armenian" "of Armavir" "of Oromantide" "of Tigranocerbi" "the One-Eyed" "the Wise" "the Black" "the Older" "the Strong" "Raven" "the Eagle" "the Lion"
+			"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

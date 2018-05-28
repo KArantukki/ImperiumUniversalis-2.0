@@ -1,0 +1,143 @@
+spriteTypes = {
+	spriteType = {
+		name = "iraniangfx_city"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/city.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_forum_picture"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/forum_picture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_rich_woman"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/rich_woman.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_temple"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/temple.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_tradecity"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/tradecity.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_ruler"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/ruler.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_military_parade"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/military_parade.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_plundering"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/plundering.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_culture"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/culture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_raid_on_romans"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/raid_on_romans.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_cavalry"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/cavalry.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_peasant_woman"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/peasant_woman.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_mad_emperor"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/mad_emperor.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_siege_picture"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/siege_picture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_generals"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/generals.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_battle"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/battle.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_death"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/death.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_crucify"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/crucify.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_religious"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/religious.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_libary"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/libary.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_food_supplies"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/food_supplies.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_harvest"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/harvest.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_family"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/family.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_guard"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/guard.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_naval_battle"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/naval_battle.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_fire"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/fire.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_rivercrossing"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/rivercrossing.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iraniangfx_rivercrossing"
+		texturefile = "gfx/event_pictures/event_pictures_IRANIAN/rivercrossing.dds"
+		allwaystransparent = yes
+	}
+}
+

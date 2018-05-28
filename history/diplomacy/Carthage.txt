@@ -1,0 +1,162 @@
+
+alliance = {
+	first = PHO
+	second = ZY2
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = CAR
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = MLE
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = TRP
+	start_date = 195.1.1
+	end_date = 250.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = LYL
+	start_date = 195.1.1
+	end_date = 250.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = MLA
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = GDR
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = CRT
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = THA
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = HAD
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = UTI
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PHO
+	second = UBO
+	start_date = 195.1.1
+	end_date = 215.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = TRP
+	start_date = 215.1.1
+	end_date = 250.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = LYL
+	start_date = 215.1.1
+	end_date = 250.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = MLA
+	start_date = 215.1.1
+	end_date = 250.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = MLE
+	start_date = 215.1.1
+	end_date = 250.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = CAR
+	second = MLE
+	start_date = 250.1.1
+	end_date = 350.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = GDR
+	start_date = 215.1.1
+	end_date = 250.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = CRT
+	start_date = 215.1.1
+	end_date = 380.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = THA
+	start_date = 215.1.1
+	end_date = 450.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = HAD
+	start_date = 215.1.1
+	end_date = 450.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = UTI
+	start_date = 215.1.1
+	end_date = 250.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = CAR
+	second = UBO
+	start_date = 215.1.1
+	end_date = 350.1.1
+}

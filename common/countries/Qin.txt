@@ -1,0 +1,60 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 114 63 49 }
+
+historical_idea_groups = {
+	
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Zao" = 40
+	"Huai" = 40
+	"Chuzi" = 40
+	"Xian" = 40
+	"Xiao" = 40
+	"Huiwen" = 40
+	"Wu" = 40
+	"Zhaoxiang" = 40
+	"Xiaowen" = 40
+	"Ling" = 40
+	"Dao" = 40
+	
+	"Sun" = 1
+	"Sima" = 1
+	"Shang" = 1
+	"Mo" = 1
+	"Meng" = 1
+	"Xun" = 1
+	"Han" = 1
+	"Liu" = 1
+	
+	"Zhao" = -1
+	"Xia" = -1
+	"Lu Zhi" = -1
+	"Bo" = -1
+	"Guan" = -1
+	"Cao" = -1
+
+}
+
+leader_names = {
+			Wu Tzu Yang Qian Chien Xian Chi Qi Liao Rangju Di Ke Kuang Zi Feizi Shan
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

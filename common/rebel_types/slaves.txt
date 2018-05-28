@@ -1,0 +1,145 @@
+######################################################################
+# slave_rebels
+######################################################################
+slave_rebels = {
+
+	area = nation 					# Stays within the nation
+	government = any				# Don't care about gov type				
+	defection = none				# Will not defect
+	independence = none				# Does not strive for independence
+	gfx_type = culture_province
+	
+	resilient = yes					# Can retreat
+	reinforcing = yes				# Can reinforce
+	general = no					# Does use generals
+	smart = yes						# Do assault forts, tactically withdraw from battle, etc.
+	unit_transfer = no				# Units do not remain after enforcing demands.
+	
+	artillery = 0.2
+	infantry = 0.8
+	cavalry = 0.0
+	morale = 0.8
+	
+	# Possible handle actions
+	handle_action_stability = yes
+	
+	
+	# The rebel type with the highest modifier for this province gets picked
+	spawn_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+				owner = { has_country_modifier = slavery_abolished }
+		}
+		modifier = {
+			factor = 3
+			owner = {
+				estate_influence = { estate = estate_heilotes influence = 40 }
+			}
+		}
+		modifier = {
+			factor = 3
+			owner = {
+				estate_influence = { estate = estate_heilotes influence = 60 }
+			}
+		}
+		modifier = {
+			factor = 3
+			owner = {
+				estate_influence = { estate = estate_heilotes influence = 80 }
+			}
+		}
+		modifier = {
+			factor = 3
+			has_estate = estate_heilotes
+		}
+		modifier = {
+			factor = 0.1
+				owner = { 
+					NOT = { check_variable = { which = slaves value = 500 } } 
+				}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				check_variable = { which = slaves value = 7500 }
+			}
+		}
+		modifier = {
+			factor = 4
+			owner = {
+				check_variable = { which = slaves value = 15000 }
+			}
+		}
+		modifier = {
+			factor = 6
+			owner = {
+				check_variable = { which = slaves value = 25000 }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_overseas = yes
+		}
+	}
+ 
+ 	# This is checked for EACH province in the Area of Operations
+	movement_evaluation = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			units_in_province = 1
+		}
+		modifier = {
+			factor = 0.001
+			controlled_by = REB
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 4
+		}
+		modifier = {
+			factor = 1.5
+			unrest = 6
+		}
+	}
+ 
+ 	# Province Scope
+ 	siege_won_trigger = {
+	}
+	siege_won_effect = {
+		add_local_autonomy = 5
+	}
+	
+	# Country scope
+	can_negotiate_trigger = {
+		
+	}
+	
+	# Country scope
+	can_enforce_trigger = {
+		
+	}
+	
+	# Localisation for their demands
+	demands_description = "slave_rebels_demand"
+	
+	# Country Scope	
+	demands_enforced_effect = {
+		multiply_variable = { which = slaves value = 0.75 }
+		add_prestige = -25
+		if = {
+			limit = { has_estate = estate_heilotes }
+			add_estate_influence_modifier = {
+				estate = estate_heilotes
+				desc = EST_VAL_SUCCESSFUL_SLAVE_REVOLT
+				influence = 20
+				duration = 3650
+			}
+		}
+	}
+}

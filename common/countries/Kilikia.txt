@@ -1,0 +1,54 @@
+#Country Name: Please see filename.
+
+graphical_culture = hellenicgfx
+
+color = { 181 121 57 }
+
+revolutionary_colors = { 5  13  0 }
+
+
+historical_idea_groups = {
+	
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Lyndus" = 20
+	"Mysus" = 20
+	"Nastes" = 20
+	"Amphimachos" = 20
+	"Dares" = 20
+	"Tantalus" = 20
+	"Pelops" = 20
+	"Broteas" = 20
+	"Ardys" = 20
+	"Gyges" = 20
+	"Alyattes" = 20
+	"Croesus" = 20
+	"Sadyattes" = 20
+	"Candaules" = 20
+	"Agron" = 20
+
+	
+}
+
+leader_names = {
+					Car Lyndus Mysus Atys Nastes Amphimachos Nomion Dares Mycale Tantalus Pelops Broteas 
+					Gyges Ardys Alyattes Croesus Sadyattes Meles Candaules Agron Omphale Timolus
+					Manes 
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

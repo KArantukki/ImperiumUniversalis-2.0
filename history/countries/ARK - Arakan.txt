@@ -1,0 +1,8 @@
+government = tribal_kingdom
+government_rank = 3
+#mercantilism = 0.25
+primary_culture = arakan
+religion = sramana
+capital = 3258
+technology_group = south_east_asian
+	

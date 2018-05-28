@@ -1,0 +1,9 @@
+government = tribal_horde  #tribal_federation
+government_rank = 2
+#mercantilism = 0.25
+technology_group = north_african
+primary_culture = numidian
+religion = numidian_religion
+religious_school = nomad_type
+capital = 464
+	

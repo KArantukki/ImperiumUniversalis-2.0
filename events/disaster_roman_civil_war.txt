@@ -1,0 +1,647 @@
+namespace = roman_civil_war
+
+########################################################################################
+# Civil War Start
+########################################################################################
+country_event = {
+	id = roman_civil_war.1
+	title = "roman_civil_war.1.t"
+	desc = "roman_civil_war.1.d"
+	picture = civilwar
+	is_triggered_only = yes
+
+	major = yes
+	
+	trigger = {
+
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+
+	immediate = {
+		hidden_effect = {
+		change_government = roman_senate
+		remove_faction = optimates
+		remove_faction = populares
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { region = gallia_cisalpina }
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { region = gallia_cisalpina }
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { region = sardinia_corsica_region }
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { region = sardinia_corsica_region }
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { region = magna_graecia }
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { region = magna_graecia }
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = gallia_narbonensis 
+									region = aquitania_region
+									region = belgica_region
+									region = celtica_area }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = gallia_narbonensis 
+									region = aquitania_region
+									region = belgica_region
+									region = celtica_area }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = hispania_baetica 
+									region = lusitania
+									region = cartaginensis_region
+									region = hispania_citerior
+									region = gallaecia }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = hispania_baetica 
+									region = lusitania
+									region = cartaginensis_region
+									region = hispania_citerior
+									region = gallaecia }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = raetia_et_noricum 
+									region = germania_region
+									region = suebia_region }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = raetia_et_noricum 
+									region = germania_region
+									region = suebia_region }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = germani_cisrhenani  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = germani_cisrhenani  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = britannia_inferior
+									region = britannia_superior
+									region = caledonia
+									region = hibernia  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = britannia_inferior
+									region = britannia_superior
+									region = caledonia
+									region = hibernia  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = illyria_region
+									region = pannonia_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = illyria_region
+									region = pannonia_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = thracia_region
+									region = dacia_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = thracia_region
+									region = dacia_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = greek_region
+									region = macedonia_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = greek_region
+									region = macedonia_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = mare_aegaeum_islands_region
+									region = ionia_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = mare_aegaeum_islands_region
+									region = ionia_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = bithynia_et_pontus
+									region = asia_minor  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = bithynia_et_pontus
+									region = asia_minor  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = canaan_region
+									region = syria_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = canaan_region
+									region = syria_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = lower_egypt_region
+									region = upper_egypt_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = lower_egypt_region
+									region = upper_egypt_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = nubia_region
+									region = aethiops  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = nubia_region
+									region = aethiops  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = arabia_petrea_region
+									region = arabia_felix_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = arabia_petrea_region
+									region = arabia_felix_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = africa_region
+									region = lybia_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = africa_region
+									region = lybia_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = mauretania_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = mauretania_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = sarmatia_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = sarmatia_region  }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = armenia_region 
+									region = mesopotamia_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = armenia_region
+									region = mesopotamia_region }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = media_region 
+									region = persis_region
+									region = parthia_region
+									region = arachosia_region
+									region = transoxiana_region
+									region = baktria_region  }
+						}
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { 
+							OR = { 	region = media_region
+									region = persis_region
+									region = parthia_region
+									region = arachosia_region
+									region = transoxiana_region
+									region = baktria_region }
+							}
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { continent = china  }
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { continent = china  }
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			random_list = {
+					50 = { 
+					every_owned_province = {
+						limit = { continent = india  }
+						#cede_province = R1C
+						add_core = R1C
+						}
+					}
+					50 = { 
+					every_owned_province = {
+						limit = { continent = india  }
+						#cede_province = RRO
+						add_core = RRO
+						}
+					}
+				}
+			}
+				release = RRO
+				release = R1C
+	}
+	
+	
+	
+	# Populares
+	option = {
+		name = "roman_civil_war.1.a"
+		hidden_effect = {
+		RRO = { change_government = triumvirate_government 
+				add_manpower = 20
+				add_treasury = 500
+				}
+		R1C = { change_government = triumvirate_government 
+				add_manpower = 20
+				add_treasury = 500
+				}
+				change_government = roman_senate
+				create_subject = {
+					who = RRO
+					subject_type = triumvir
+				}
+				create_subject = {
+					who = R1C
+					subject_type = triumvir
+				}
+		R1C = {
+			declare_war_with_cb = {
+					who = RRO
+					casus_belli = cb_roman_civil_war
+				}
+			}
+		}
+		switch_tag = R1C
+	}
+	
+	
+	
+	# Optimates
+	option = {
+		name = "roman_civil_war.1.b"
+		hidden_effect = {
+		RRO = { change_government = triumvirate_government 
+				add_manpower = 20
+				add_treasury = 500
+				}
+		R1C = { change_government = triumvirate_government 
+				add_manpower = 20
+				add_treasury = 500
+				}
+				change_government = roman_senate^
+				create_subject = {
+					who = RRO
+					subject_type = triumvir
+				}
+				create_subject = {
+					who = R1C
+					subject_type = triumvir
+				}
+		RRO = {
+			declare_war_with_cb = {
+					who = R1C
+					casus_belli = cb_roman_civil_war
+				}
+			}
+		}
+		switch_tag = RRO
+		}
+}
+########################################################################################
+# Civil War End
+########################################################################################
+country_event = {
+	id = roman_civil_war.2	
+	title = "roman_civil_war.2.t"
+	desc = "roman_civil_war.2.d"
+	picture = civilwar
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "roman_civil_war.2.a"
+			add_stability = 1
+	}
+
+}

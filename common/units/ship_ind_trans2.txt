@@ -1,0 +1,9 @@
+#Galley
+type = transport
+unit_type = indian
+
+hull_size = 25
+base_cannons = 20
+sail_speed = 9
+
+sprite_level = 1

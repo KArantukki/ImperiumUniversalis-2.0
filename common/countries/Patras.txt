@@ -1,0 +1,86 @@
+#Country Name: Please see filename.
+
+graphical_culture = hellenicgfx
+
+color = { 39 90 114 }
+
+
+historical_idea_groups = {
+	quality_ideas
+	scholars_ideas
+	imperial_government_ideas
+	infantry_ideas
+	administrative_ideas
+	quantity_ideas
+	expansion_ideas
+	defensive_ideas
+	
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Margos" = 20
+	"Aratus #6" = 70
+	"Aegiales" = 20
+	"Dioedas" = 20
+	"Aristomachos" = 20
+	"Hyperbatas" = 20
+	"Timoxenos" = 20
+	"Epiratos" = 20
+	"Cycliadas" = 20
+	"Philopoemen #4" = 30
+	"Lycortas #2" = 20
+	"Xenarchos" = 20
+	"Diaeos #3" = 20
+	"Critolaos" = 20
+	
+	"Achaia" = -1
+	"Agapia" = -1
+	"Anteia" = -1
+	"Basiane" = -1
+	"Caleope" = -1
+	"Chione" = -1
+	"Demophile" = -1
+	"Dynamene" = -1
+	"Harmonia" = -1
+	"Heliodora" = -1
+	"Hyrmina" = -1
+	"Ione" = -1
+	"Kassandra" = -1
+	"Kleopatra" = -1
+	"Klymene" = -1
+	"Lasthena" = -1
+	"Marpessa" = -1
+	"Nikaia" = -1
+	"Pelopia" = -1
+	"Rhea" = -1
+	"Rhodope" = -1
+	"Sophia" = -1
+	"Thaleia" = -1
+	"Zita" = -1
+
+
+}
+
+
+leader_names = {
+			"of Abonuteichos" "Socraticus" "Tacticus" "Aristides" "of Aphrodisias" "of Pherae" "Grammaticus" "Rhodius" "of Cyrrhus" "of Tralles" "of Carystus" 
+			"of Ascalon" "of Sidon" "of Tyre" "Diogenes" "Liberalis" "of Phaleron" "of Tyana" "of Telmessus" "of Samos" "of Phlius" "Indicopleustes" "of Rhodes" 
+			"Pedanius" "of Lesbos" "Ponticus" "Andronicus" "of Chios" "Alexandrinus" "the Younger" "Scholasticus" "of Aphrodisias" 
+			"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

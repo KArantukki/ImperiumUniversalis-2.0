@@ -1,0 +1,7 @@
+2570 = "Adummatu"
+1941 = "A-Gam-Ta-Nu"
+1813 = "Surru"
+1815 = "Berytus"
+1793 = "Uru-Salim"
+1816 = "Dimasqa"
+1818 = "Mahallata"

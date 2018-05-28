@@ -1,0 +1,957 @@
+
+mac_missions_expansion_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+			tag = MAC
+	}
+	has_country_shield = yes
+	mac_chalcidice = {
+		position = 2
+		icon = mission_siege
+		completed_by = 406.1.1
+		required_missions = { mac_unite_the_macedons }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+				area = chalcidice_area
+		}
+		trigger = {
+			chalcidice_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_mil_power = 250
+				thasus = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				thracia_west = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				thracia_east = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_propontis = {
+		position = 4
+		icon = mission_propontis
+		completed_by = 416.1.1
+		required_missions = { mac_chalcidice }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+				OR = {
+					area = thasus
+					area = thracia_west
+					area = thracia_east
+				}
+		}
+		trigger = {
+			thasus = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			thracia_west = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			thracia_east = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_mil_power = 250
+				thracian_cost = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				odrysia = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				dardania = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				moesia_inferior = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				ionia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				asia_minor = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				bithynia_et_pontus = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				mare_aegaeum_islands_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				if = {
+					limit = {
+						any_country = {
+							owns = 747
+							owns = 816
+							owns = 839
+							num_of_cities = 40
+						}
+					}
+					random_country = {
+						limit = {
+							owns = 747
+							owns = 816
+							owns = 839
+							num_of_cities = 40 }
+						reverse_add_casus_belli = {
+							target = MAC
+							type = cb_mission_invasion
+						}
+					}
+				}
+		}
+	}
+	mac_thracia = {
+		icon = mission_large_army
+		required_missions = { mac_propontis }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+				OR = {
+					area = thracian_cost
+					area = odrysia
+					area = dardania
+					area = moesia_inferior
+				}
+		}
+		trigger = {
+			thracian_cost = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			odrysia = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dardania = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			moesia_inferior = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_country_modifier = {
+					name = "conquered_thracia_modifier"
+					duration = 9125 #25 years
+				}
+				dacia_maluensis = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				dacia_inferior = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				montes_serrorum = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_armenia = {
+		icon = mission_raider
+		required_missions = { mac_anatolia }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+				region = armenia_region
+		}
+		trigger = {
+			armenia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_prestige = 25
+				add_army_tradition = 15
+		}
+	}
+	mac_egypt = {
+		icon = mission_egypt
+		required_missions = { mac_mesopotamia }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+					region = lower_egypt_region
+		}
+		trigger = {
+			lower_egypt_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				1752 = {
+					change_province_name = "Alexandreia"
+					rename_capital = "Alexandreia"
+					change_culture = ROOT
+					change_religion = ROOT
+					add_base_tax = 2
+					add_base_production = 4
+				}
+				lybia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_westwards = {
+		icon = mission_soldiers
+		required_missions = { mac_egypt }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+				OR = {
+					area = east_cyrene
+					area = west_cyrene
+					province_id = 1744
+					province_id = 490
+				}
+		}
+		trigger = {
+			east_cyrene = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_cyrene = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 1744
+			owns = 490
+		}
+		effect = {
+				add_army_tradition = 10
+				africa_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+}
+mac_missions_expansion_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+			tag = MAC
+	}
+	has_country_shield = yes
+	mac_unite_the_macedons = {
+		icon = mission_macedons
+		completed_by = 397.1.1
+		required_missions = { }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				culture = old_macedon
+				culture = macedon
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = mac_unite_the_macedons.tooltip	
+				macedonia_region = {
+					type = all
+					OR = {
+						owned_by = MAC
+						AND = {
+							NOT = { culture = old_macedon }
+							NOT = { culture = macedon }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+				add_prestige = 25
+				add_country_modifier = {
+					name = "united_macedon_modifier"
+					duration = 9125 #25 years
+				}
+				chalcidice_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				thessalia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				larisa_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				phthiotis_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_conquer_thessalia = {
+		icon = mission_raider
+		completed_by = 416.1.1
+		required_missions = { mac_unite_the_macedons }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = thessalia_area
+				area = larisa_area
+				area = phthiotis_area
+			}
+		}
+		trigger = {
+			thessalia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			larisa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			phthiotis_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_country_modifier = {
+					name = "thessalian_horses_modifier"
+					duration = 9125 #25 years
+				}
+				euboea_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				south_euboea_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				greek_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				northern_epirus_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				southern_epirus_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_greek_hegemon = {
+		position = 4
+		icon = mission_greece
+		completed_by = 416.1.1
+		required_missions = { mac_conquer_thessalia }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = euboea_area
+				area = south_euboea_area
+				region = greek_region
+			}
+		}
+		trigger = {
+			euboea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_euboea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			greek_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_country_modifier = {
+					name = "hegemon_of_greece"
+					duration = 36500
+				}
+				add_prestige = 50
+		}
+	}
+	mac_anatolia = {
+		icon = mission_asia
+		completed_by = 422.1.1
+		required_missions = { mac_greek_hegemon 
+							  mac_propontis	}
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				region = ionia_region
+				region = asia_minor
+				region = bithynia_et_pontus
+			}
+		}
+		trigger = {
+			ionia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			asia_minor = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bithynia_et_pontus = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_adm_power = 500
+				add_prestige = 25
+				syria_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				mesopotamia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				armenia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_mesopotamia = {
+		icon = mission_babylon
+		completed_by = 422.1.1
+		required_missions = { mac_anatolia	}
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				region = syria_region
+				region = mesopotamia_region
+			}
+		}
+		trigger = {
+			syria_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mesopotamia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_adm_power = 600
+				add_dip_power = 600
+				add_mil_power = 600
+				add_prestige = 50
+				3124 = {
+					change_culture = ROOT
+					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+				}
+				1930 = {
+					change_culture = ROOT
+					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+				}
+				canaan_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				lower_egypt_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				upper_egypt_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				arabia_petrea_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				media_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				persis_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_arabia = {
+		icon = mission_desert
+		required_missions = { mac_mesopotamia	}
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+				region = arabia_petrea_region
+		}
+		trigger = {
+			arabia_petrea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_adm_power = 250
+				add_prestige = 25
+				arabia_felix_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+}
+mac_missions_expansion_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+			tag = MAC
+	}
+	has_country_shield = yes
+	mac_epirus = {
+		position = 3
+		icon = mission_soldiers
+		required_missions = { mac_conquer_thessalia }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = northern_epirus_area
+				area = southern_epirus_area
+			}
+		}
+		trigger = {
+			northern_epirus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_epirus_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_mil_power = 250
+				illyria_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				magna_graecia = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_illyria = {
+		icon = mission_large_army
+		required_missions = { mac_epirus }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			region = illyria_region
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = mac_illyria.tooltip
+					calc_true_if = {
+						all_owned_province = {
+							region = illyria_region
+						}
+						amount = 16
+					}
+			}
+		}
+		effect = {
+				add_dip_power = 250
+				add_navy_tradition = 25
+		}
+	}
+	mac_aegaean_sea = {
+		icon = mission_ship
+		required_missions = { mac_greek_hegemon }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			region = mare_aegaeum_islands_region
+		}
+		trigger = {
+			mare_aegaeum_islands_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_dip_power = 300
+				1555 = {
+					add_trade_modifier = {
+							who = CAR
+							duration = -1
+							power = 20
+							key = MAC_INFLUENCE
+						}
+				}
+		}
+	}
+	mac_iran = {
+		position = 7
+		icon = mission_eastern_soldiers
+		completed_by = 422.1.1
+		required_missions = { mac_mesopotamia }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				region = media_region
+				region = persis_region
+			}
+		}
+		trigger = {
+			persis_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			media_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_mil_power = 250
+				add_prestige = 25
+				parthia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				arachosia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				baktria_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_eastern_expansion = {
+		icon = mission_zoroastrian
+		completed_by = 422.1.1
+		required_missions = { mac_iran }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				region = parthia_region
+				region = arachosia_region
+				region = baktria_region
+			}
+		}
+		trigger = {
+			baktria_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			arachosia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			parthia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				2407 = {
+					change_province_name = "Baktria"
+					rename_capital = "Baktria"
+					change_culture = ROOT
+					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+				}
+				2397 = {
+					change_province_name = "Alexandria Margiane"
+					rename_capital = "Alexandria Margiane"
+					change_culture = ROOT
+					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+				}
+				transoxiana_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				gandhara = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				pattala_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	mac_indus_mission = {
+		icon = mission_elephant
+		completed_by = 422.1.1
+		required_missions = { mac_eastern_expansion }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				province_id = 2061
+				province_id = 2063
+				province_id = 2621
+				province_id = 2620
+				province_id = 2614
+				province_id = 2612
+				province_id = 2611
+				province_id = 2608
+				province_id = 2606
+				province_id = 2607
+				province_id = 2603
+				province_id = 2610
+				province_id = 2602
+				province_id = 2601
+				province_id = 2604
+				province_id = 2605
+				province_id = 112
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = pse_conquer_indus.tooltip
+				owns = 2061
+				owns = 2063
+				owns = 2621
+				owns = 2620
+				owns = 2614
+				owns = 2612
+				owns = 2611
+				owns = 2608
+				owns = 2606
+				owns = 2607
+				owns = 2603
+				owns = 2610
+				owns = 2602
+				owns = 2601
+				owns = 2604
+				owns = 2605
+				owns = 112
+			}
+		}
+		effect = {
+				2614 = {
+					change_culture = ROOT
+					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+				}
+				2608 = {
+					change_culture = ROOT
+					change_religion = ROOT
+					add_base_tax = 1
+					add_base_production = 1
+				}
+				western_india_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				northern_india_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+}

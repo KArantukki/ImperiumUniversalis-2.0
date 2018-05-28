@@ -1,0 +1,133 @@
+namespace = illyrian
+
+
+
+########################################################################################
+# illyrian federation
+########################################################################################
+country_event = {
+	id = illyrian.1
+	title = "illyrian.1.t"
+	desc = "illyrian.1.d"
+	picture = battle
+	major = yes
+	
+	trigger = {
+		culture_group = illyrian_group
+		capital_scope = { region = illyria_region }
+		is_subject = no
+		is_at_war = no
+		
+		NOT = { exists = ILY }
+		NOT = {
+			any_country = { 
+				culture_group = illyrian_group
+				capital_scope = { region = illyria_region	}
+				total_development = ROOT
+			}
+		}
+		NOT = {
+			any_country = { 
+				culture_group = illyrian_group
+				ai = no
+			}
+		}
+		NOT = {
+			any_country = { 
+				culture_group = illyrian_group
+				total_development = 100
+			}
+		}
+		
+		any_country = { 
+				NOT = { culture_group = illyrian_group }
+				any_owned_province = { 
+					region = illyria_region	
+				}
+				total_development = 200
+			}
+		
+		calc_true_if = {
+			all_country = {
+				culture_group = illyrian_group
+				capital_scope = { region = illyria_region	}
+				is_subject = no
+			}
+			amount = 4
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "illyrian.1.a"
+			hidden_effect = {
+			
+			add_country_modifier = {
+				name = illyrian_confederacy
+				duration = 7300
+			}
+			every_country = {
+					limit = {
+						culture_group = illyrian_group
+						capital_scope = { region = illyria_region	}
+						is_subject = no
+						NOT = { TAG = ROOT }
+					}
+					country_event = {
+						id = illyrian.2
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = illyrian_confederacy_opinion
+					}
+				}
+			}
+			
+	}
+}
+
+########################################################################################
+# illyrian federation
+########################################################################################
+country_event = {
+	id = illyrian.2
+	title = "illyrian.1.t"
+	desc = "illyrian.1.d"
+	picture = battle
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		
+	}
+	
+	option = {
+		name = "illyrian.1.a"
+			hidden_effect = {
+			add_country_modifier = {
+				name = illyrian_confederacy
+				duration = 7300
+			}
+			every_country = {
+					limit = {
+						culture_group = illyrian_group
+						capital_scope = { region = illyria_region	}
+						is_subject = no
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = illyrian_confederacy_opinion
+					}
+				}
+			}
+			
+	}
+}
+
+

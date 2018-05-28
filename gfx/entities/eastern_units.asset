@@ -1,0 +1,33 @@
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   LEVEL 1                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "easterngfx_INFANTRY_1"
+	pdxmesh = "eastern_generic_01_type1"
+
+	state = { name = "idle" 		animation = "idle" }
+	state = { name = "walk" 		animation = "walk" }
+	state = { name = "attack"		animation = "attack" }
+	state = { name = "retreat"		animation = "retreat" }
+	#state = { name = "death"		animation = "death" }
+	#state = { name = "extra_state_1"		animation = "extra_state_1" }
+	#state = { name = "extra_state_2"		animation = "extra_state_2" }
+	#state = { name = "extra_state_3"		animation = "extra_state_3" }
+
+	attach = { 
+		Right_hand_node = "muslim_spear" 
+	}
+}
+
+entity = {
+	clone = "easterngfx_INFANTRY_1"
+	name = "easterngfx_CAVALRY_1"
+}
+
+entity = {
+	clone = "easterngfx_INFANTRY_1"
+	name = "easterngfx_ARTILLERY_1"
+}

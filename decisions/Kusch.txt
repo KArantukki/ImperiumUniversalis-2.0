@@ -1,0 +1,32 @@
+country_decisions = {
+	
+	 move_capital_to_meroe = {
+		major = yes
+		potential = {
+			NOT = { has_global_flag = meroe_flag }
+			tag = KUS
+			NOT = { capital = 2522 }
+		}
+		allow = {
+			is_at_war =  no
+			owns_core_province = 2522
+			adm_tech = 20
+			adm_power = 100
+		}
+		effect = {
+			set_capital = 2522
+			set_global_flag = meroe_flag
+			add_adm_power = -100
+			2522 = {
+				add_base_manpower = -1
+				add_base_production = 1
+			}
+		}	
+		
+		ai_importance = 50	
+		ai_will_do = {
+			factor = 200
+			}
+	}	
+}
+	

@@ -1,0 +1,9 @@
+government = iberian_monarchy
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iberian
+primary_culture = edetanian
+religion = iberian_religion
+capital = 19
+religious_school = semitic_type
+	

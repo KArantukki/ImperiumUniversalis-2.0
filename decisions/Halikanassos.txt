@@ -1,0 +1,28 @@
+country_decisions = {
+	 build_the_mausoleum = {
+		potential = {
+			owns = 753
+			753 = {
+				NOT = { has_great_project = great_mausoleum }
+			}
+			NOT = { has_global_flag = mausoleum_built }
+			
+		}
+		allow = {
+			treasury = 400
+			adm_tech = 3
+			753 = {
+			NOT = { has_construction = building } }
+		}
+		effect = {
+			add_treasury = -400
+			set_global_flag = mausoleum_built
+			753 = {
+				add_great_project = great_mausoleum
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

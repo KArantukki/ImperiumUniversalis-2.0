@@ -1,0 +1,229 @@
+namespace = greek_polis
+
+########################################################################################
+# democrats in power
+########################################################################################
+country_event = {
+	id = greek_polis.1
+	title = "greek_polis.1.t"
+	desc = "greek_polis.1.d"
+	picture = senat_conflict
+	is_triggered_only = yes
+
+	
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	option = {
+		name = "greek_polis.1.a"
+		if = {
+			limit = { ai = no	}
+			add_stability = -1
+		}
+		hidden_effect = { end_disaster = polis_democratic_coup_disaster }
+		change_government = greek_polis_democracy
+	}
+}
+########################################################################################
+# oligarchs in power
+########################################################################################
+country_event = {
+	id = greek_polis.2
+	title = "greek_polis.2.t"
+	desc = "greek_polis.2.d"
+	picture = senat_conflict
+	is_triggered_only = yes
+
+	
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	
+	option = {
+		name = "greek_polis.1.a"
+		if = {
+			limit = { ai = no	}
+			add_stability = -1
+		}
+		hidden_effect = { end_disaster = polis_oligarchic_coup_disaster }
+		change_government = greek_polis
+	}
+}
+########################################################################################
+# monarchists in power
+########################################################################################
+country_event = {
+	id = greek_polis.3
+	title = "greek_polis.3.t"
+	desc = "greek_polis.3.d"
+	picture = senat_conflict
+	is_triggered_only = yes
+
+	
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	
+	option = {
+		name = "greek_polis.1.a"
+		if = {
+			limit = { ai = no	}
+			add_stability = -1
+		}
+		hidden_effect = { end_disaster = polis_tyrannis_coup_disaster }
+		change_government = greek_polis_tyrannis
+	}
+}
+
+########################################################################################
+# democrats gain power
+########################################################################################
+country_event = {
+	id = greek_polis.6
+	title = "greek_polis.6.t"
+	desc = "greek_polis.6.d"
+	picture = senat
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	OR = {
+		government = greek_polis	
+		#government = greek_polis_democracy	
+		government = greek_polis_tyrannis	
+	}	
+		NOT = { faction_in_power = fac_democrats }
+		has_global_flag = birth_of_democracy
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "greek_polis.6.a"
+		add_faction_influence = { faction = fac_democrats influence = 10 }
+	}
+}
+########################################################################################
+# oligarchs gain power
+########################################################################################
+country_event = {
+	id = greek_polis.7
+	title = "greek_polis.7.t"
+	desc = "greek_polis.7.d"
+	picture = senat
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	OR = {
+		#government = greek_polis	
+		government = greek_polis_democracy	
+		government = greek_polis_tyrannis	
+	}	
+		NOT = { faction_in_power = fac_oligarchs }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "greek_polis.6.a"
+		add_faction_influence = { faction = fac_oligarchs influence = 10 }
+	}
+}
+########################################################################################
+# monarchists gain power
+########################################################################################
+country_event = {
+	id = greek_polis.8
+	title = "greek_polis.8.t"
+	desc = "greek_polis.8.d"
+	picture = senat
+	is_triggered_only = yes
+	
+	trigger = {	
+	OR = {
+		government = greek_polis	
+		government = greek_polis_democracy	
+		#government = greek_polis_tyrannis	
+	}		
+		NOT = { faction_in_power = fac_monarchists }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "greek_polis.6.a"
+		add_faction_influence = { faction = fac_monarchists influence = 10 }
+	}
+}
+########################################################################################
+# oligarchs bribed the oracle of delphi
+########################################################################################
+country_event = {
+	id = greek_polis.9
+	title = "greek_polis.9.t"
+	desc = "greek_polis.9.d"
+	picture = oracle
+	is_triggered_only = yes
+	
+	trigger = {
+	OR = {
+		#government = greek_polis	
+		government = greek_polis_democracy	
+		government = greek_polis_tyrannis	
+	}	
+		NOT = { faction_in_power = fac_oligarchs }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "greek_polis.9.a"
+		add_faction_influence = { faction = fac_oligarchs influence = 5 }
+	}
+}
+########################################################################################
+# citizens demand more power
+########################################################################################
+country_event = {
+	id = greek_polis.10
+	title = "greek_polis.10.t"
+	desc = "greek_polis.10.d"
+	picture = plebs
+	is_triggered_only = yes
+	
+	trigger = {
+	OR = {
+		government = greek_polis	
+		#government = greek_polis_democracy	
+		government = greek_polis_tyrannis	
+	}	
+		NOT = { faction_in_power = fac_democrats }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "greek_polis.10.a"
+		add_faction_influence = { faction = fac_democrats influence = 5 }
+	}
+}

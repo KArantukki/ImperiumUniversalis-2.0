@@ -1,0 +1,11 @@
+government = pastoral_tribe
+government_rank = 2
+#mercantilism = 0.25
+technology_group = afro_arabian
+primary_culture = habesha
+religion = east_african
+religious_school = semitic_type
+capital = 2568
+	
+		add_stability = -1
+	

@@ -1,0 +1,63 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 65 84 74 }
+
+historical_idea_groups = {
+	
+	cavalry_ideas
+	economy_ideas
+	trade_ideas
+	administrative_ideas
+	quantity_ideas
+	imperial_government_ideas
+	influence_ideas
+	offensive_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	
+}
+
+
+monarch_names = {
+	"Mithradates" = 20
+	"Dareios" = 20
+	"Ariobarzanes" = 30
+	"Pakoros" = 10
+	"Arsakes" = 10
+	"Artabarzana" = 10
+	"Fravartish" = 10
+	"Harpag" = 10
+	"Hvakhshathra" = 10
+	"Istovigu" = 10
+
+	"Yesfir" = -1
+	"Zareen" = -1
+	"Zhaleh" = -1
+	"Nahid" = -1
+	"Banu" = -1
+	"Esta" = -1
+	"Jaleh" = -1
+	"Kassandane" = -1
+	"Mandane" = -1
+} 
+
+leader_names = {
+		"of Media" "the Medes" "the Medes" "the Wise" "One-Eye" "the Older" "the Black" "the Yellow"
+		"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

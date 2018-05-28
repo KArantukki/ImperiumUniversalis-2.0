@@ -1,0 +1,356 @@
+#These are Generic missions, available to all tags that don't have an override.
+
+#Below are mission series, within them are the actual missions.
+
+
+bab_missions_expansion_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+			tag = BAB
+	}
+	has_country_shield = yes
+	bab_conquer_kilikia = {
+		icon = mission_soldiers
+		completed_by = 199.1.1
+		required_missions = { }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = cilicia_area
+				owned_by = KIL
+			}
+		}
+		trigger = {
+			NOT = { exists = KIL }
+			cilicia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_prestige = 15
+				if = {
+					limit = {
+						LYD = { total_development = 400 }
+					}
+					add_casus_belli = {
+						target = LYD
+						type = cb_mission_invasion
+					}
+				}
+				ionia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				asia_minor = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				bithynia_et_pontus = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	bab_conquer_asia = {
+		icon = mission_asia
+		required_missions = { bab_conquer_kilikia }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				region = ionia_region
+				region = asia_minor
+				region = bithynia_et_pontus
+			}
+		}
+		trigger = {
+			ionia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			asia_minor = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bithynia_et_pontus = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_prestige = 25
+				greek_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				macedonia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				mare_aegaeum_islands_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	bab_conquer_greece = {
+		icon = mission_greece
+		required_missions = { bab_conquer_asia }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				region = greek_region
+				region = macedonia_region
+				region = mare_aegaeum_islands_region
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = pse_foothold_in_aegaean_sea.tooltip
+					calc_true_if = {
+						all_owned_province = {
+							region = mare_aegaeum_islands_region
+						}
+						amount = 10
+					}
+			}
+			greek_region = {
+				type = any
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			macedonia_region = {
+				type = any
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_adm_power = 250
+				add_dip_power = 250
+		}
+	}
+	bab_conquer_sinai = {
+		icon = mission_desert
+		required_missions = { }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = philistia_area
+				area = saracenea
+				area = biau
+			}
+		}
+		trigger = {
+			philistia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			biau = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			saracenea = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				lower_egypt_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	bab_conquer_nile_delta = {
+		icon = mission_egypt
+		required_missions = { bab_conquer_sinai }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = alexandria
+				area = south_nile_delta
+				area = north_nile_delta
+				area = east_nile_delta
+			}
+		}
+		trigger = {
+			alexandria = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_nile_delta = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_nile_delta = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_nile_delta = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_adm_power = 500
+				lybia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				upper_egypt_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+}
+bab_missions_expansion_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+			tag = BAB
+	}
+	has_country_shield = yes
+	bab_conquer_armenia = {
+		icon = mission_raider
+		required_missions = { }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = sophene_area
+				area = corduene_area
+				area = western_armenia_area
+				area = eastern_armenia_area
+			}
+		}
+		trigger = {
+			sophene_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			corduene_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_armenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			eastern_armenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_mil_power = 250
+				armenia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	bab_conquer_elam = {
+		icon = mission_large_army
+		required_missions = { }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = susiane_area
+				owned_by = SUS
+			}
+		}
+		trigger = {
+			NOT = { exists = SUS }
+			susiane_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				1933 = {
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+				add_prestige = 25
+				media_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				persis_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	bab_conquer_media = {
+		icon = mission_eastern_soldiers
+		required_missions = { bab_conquer_elam }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			region = media_region
+		}
+		trigger = {
+			media_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_prestige = 25
+		}
+	}
+}

@@ -1,0 +1,64 @@
+country_decisions = {
+	
+	 abolish_solons_reforms = {
+		potential = {
+			has_country_modifier = solons_reform
+		}
+		allow = {
+			is_at_war =  no
+			NOT = { 
+				faction_influence = {
+				faction = fac_democrats
+				influence = 20
+				}
+			}
+		}
+		effect = {
+				remove_country_modifier = solons_reform
+				add_estate_loyalty = {
+					estate = estate_citizens
+					loyalty = -10
+				}
+			}
+		ai_importance = 5	
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	 expend_the_silver_mines = {
+		potential = {
+			TAG = ATH
+			owns = 503
+			NOT = { has_global_flag = expanded_silver_mines_flag }
+		NOT = { started_in = 250.1.1 }
+		}
+		allow = {
+			is_at_war =  no
+			adm_power = 100
+			503 = {
+				OR = {
+					has_building = quarry 
+					has_building = small_mine 
+					has_building = big_mine 
+				}
+				
+			}
+		}
+		effect = {
+				set_global_flag = expanded_silver_mines_flag
+				add_adm_power = -100
+				503 = {
+					add_province_modifier = {
+						name = "expanded_silver_mines"
+						duration = 36500
+					}
+				}
+			}
+		ai_importance = 250
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	 
+}
+	

@@ -1,0 +1,49 @@
+1.1.2
+
+- New slave estate
+- Coring is now all the time possible
+- provinces cant be turned into a state if there is seperatism in a province
+- new Yi culture group and nations for southern china
+- new macedonian model
+- colonies will now change culture and religion when 100% progress is reached
+- added new caucaso-anatolian tech groups and units
+
+1.2
+
+- reduced cost for changing culture
+- new unit types for the indian tech group
+- new Ideas for Kalinga, Dravidian Countries and Kuru
+- New countries on Sri Lanka and new events for the indo aryan invasion there
+- Reworked coastlines and lakes in India, China and Korea
+- New 3D models for Babylon
+- new provinces, countries and cultures in Indochina
+- new tech-group: South-East Asian
+- new government form for countries in northern India: Vedic Monarchy
+- new 'tribal federation' mechanic for the Vedic Monarchy
+- Indian cultures reworked
+- Indian religions reworked
+- new government form for middle eastern empires: Oriental Monarchy
+- The polis government forms dont switch with a new faction in power, the government changes over time under certain circumstances.
+
+1.2.2
+
+- Added new events
+- changed some old events
+- reduced the speed of pop grow rate
+- Added the greek colony of "Naucratis" in egypt with own modifier
+- Removed city walls in Pydna in early startdates
+- moved Pella from Thessalia to Propantis node
+- Added new eventframe
+- added and edited some areas in Greece and Egypt
+
+1.3
+
+- New wasteland mountains in several regions
+- New areas in several regions (most in in the middle east)
+- New provinces in Mesopotamia, Syria, Egypt and Arabia
+- New Ideas for Elam and Liburnia
+- Hyrcania now starts as median vassal in 195
+- New decisions for Babylon
+- New and reworked Rivers
+- New generic Missions
+- New missions for Rome, Athens, Carthage, Anshan/Persia, Babylon and Macedonia

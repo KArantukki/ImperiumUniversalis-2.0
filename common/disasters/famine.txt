@@ -1,0 +1,69 @@
+famine_disaster = {
+	potential = {
+		has_global_flag = food_active
+		had_country_flag = { flag = game_start_flag days = 365 }
+		any_owned_province = {
+					OR = {
+						base_production = 1
+						base_tax = 1
+					}
+		}
+	}
+	
+	can_start = {
+			NOT = { check_variable = { which = food_supplies value = 1 } }
+		}
+	
+	
+	can_stop = {
+			check_variable = { which = food_supplies value = 1 }
+			NOT = { has_disaster_progress = { disaster = famine_disaster value = 1 } }
+		}
+		
+	
+	
+	progress = {
+		modifier = {
+			factor = 15
+			NOT = { check_variable = { which = food_supplies value = 1 } }
+		}		
+		modifier = {
+			factor = -15
+					check_variable = { which = food_supplies value = 1 }
+		}
+	}
+	
+	
+	
+	can_end = {
+		check_variable = { which = food_supplies value = 1 }
+		custom_trigger_tooltip = {
+			tooltip = famine_active_for_1_years_tooltip
+			had_country_flag = { flag = famine_active_flag days = 365 }
+		}
+	}
+	
+
+	modifier = {
+		manpower_recovery_speed = -0.50
+		global_unrest = 5
+		land_attrition = 0.25
+	}	
+	
+	
+	on_start = famine_disaster.1
+	on_end = famine_disaster.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			500 = 0
+			250 = famine_disaster.3
+			250 = famine_disaster.4
+			250 = famine_disaster.5
+			250 = famine_disaster.6
+		}
+	}
+}
+

@@ -1,0 +1,128 @@
+country_decisions = {
+	
+	restore_old_temples = {
+		potential = {
+			TAG = BAB
+			religion = mesopotamian_religion
+			NOT = { has_country_flag = restore_old_temple_flag }
+		}
+		
+		allow = {
+			is_at_war =  no
+			treasury = 100
+			manpower = 3
+			owns = 1838
+			owns = 1879
+			adm_tech = 2
+			dip = 4
+		}
+		
+		effect = {
+				add_manpower = -3
+				add_treasury = -100
+				add_prestige = 10
+				set_country_flag = restore_old_temple_flag
+				add_estate_loyalty = {
+					estate = estate_priests
+					loyalty = 5
+				}
+				1838 = {
+					if = {
+						limit = { 
+							1838 = {
+							NOT = { has_building = shrine }
+							NOT = { has_building = small_temple }
+							NOT = { has_building = great_temple }
+							}
+						}
+						add_building = shrine
+					}
+				}
+				1879 = {
+					if = {
+						limit = { 
+							1838 = {
+							NOT = { has_building = shrine }
+							NOT = { has_building = small_temple }
+							NOT = { has_building = great_temple }
+							}
+						}
+						add_building = shrine
+					}
+				}
+			}
+			
+		ai_importance = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 #revived the ancient Sargonid practice
+	 
+	revive_the_sargonid_practice = {
+		potential = {
+			TAG = BAB
+			religion = mesopotamian_religion
+			NOT = { has_country_flag = sargonid_practice_flag }
+		}
+		
+		allow = {
+			is_at_war =  no
+			adm_tech = 2
+		}
+		
+		effect = {
+				set_country_flag = sargonid_practice_flag
+				add_estate_loyalty = {
+					estate = estate_priests
+					loyalty = -10
+				}
+				add_patriarch_authority = 0.2
+			}
+			
+		ai_importance = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	agricultural_and_tenancy_system = {
+		potential = {
+			TAG = BAB
+			NOT = { has_country_flag = agricultural_and_tenancy_system_flag }
+		}
+		
+		allow = {
+			is_at_war =  no
+			adm_tech = 3
+			adm_power = 50
+		}
+		
+		effect = {
+				set_country_flag = agricultural_and_tenancy_system_flag
+				add_estate_loyalty = {
+					estate = estate_priests
+					loyalty = -10
+				}
+				add_estate_loyalty = {
+					estate = estate_citizens
+					loyalty = 5
+				}
+				add_estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 5
+				}
+				add_country_modifier = {
+					name = agricultural_and_tenancy_system_modifier
+					duration = -1
+				}
+				add_adm_power = -50
+			}
+			
+		ai_importance = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+	

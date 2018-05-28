@@ -1,0 +1,1051 @@
+namespace = diadochi
+
+########################################################################################
+# end of thracia
+########################################################################################
+country_event = {
+	id = diadochi.3
+	title = "diadochi.3.t"
+	desc = "diadochi.3.d"
+	picture = lostbattle
+	
+	trigger = {
+		owns = 633
+		any_owned_province = { is_core = THR }
+		NOT = { exists = THR }
+		NOT = { has_global_flag = end_of_thracia }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+	}
+	option = {
+		name = "diadochi.3.a"
+		set_global_flag = end_of_thracia
+		every_province = {
+				limit = {	is_core = THR
+				}
+							remove_core = THR
+			}
+			
+	}
+}
+########################################################################################
+# end of seleucids
+########################################################################################
+country_event = {
+	id = diadochi.4
+	title = "diadochi.4.t"
+	desc = "diadochi.4.d"
+	picture = lostbattle
+	
+	trigger = {
+		owns = 1825
+		any_owned_province = { is_core = SEL }
+		NOT = { exists = SEL }
+		NOT = { has_global_flag = end_of_seleucids }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		
+	}
+	option = {
+		name = "diadochi.4.a"
+		set_global_flag = end_of_seleucids
+		every_province = {
+				limit = {	is_core = SEL
+				}
+							remove_core = SEL
+			}
+			
+	}
+}
+########################################################################################
+# natives for the army
+########################################################################################
+country_event = {
+	id = diadochi.5
+	title = "diadochi.5.t"
+	desc = "diadochi.5.d"
+	picture = alexander
+	
+	trigger = {
+		government = diadochi_monarchy
+		OR = {
+			TAG = SEL
+			TAG = PTO
+			TAG = GBK
+			TAG = ANE
+		}
+		army_professionalism = 0.5
+		NOT = { religious_unity = 0.7 }
+		NOT = {  manpower = 1 }
+		NOT = { has_country_modifier = natives_for_the_army }
+		war_exhaustion = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+				factor = 0.75
+				war_exhaustion = 3
+			}
+		modifier = {
+				factor = 0.5
+				war_exhaustion = 6
+			}
+		
+	}
+	option = {
+		name = "diadochi.5.a"
+			add_yearly_manpower = 3.0
+			add_country_modifier = {
+				name = "natives_for_the_army"
+				duration = 3650
+			}
+			add_militarised_society = 10
+	}
+	option = {
+		name = "diadochi.5.a"
+			add_war_exhaustion = 1
+	}
+}
+########################################################################################
+# unloyal satraps
+########################################################################################
+country_event = {
+	id = diadochi.6
+	title = "diadochi.6.t"
+	desc = "diadochi.6.d"
+	picture = mad_emperor
+	is_triggered_only = yes
+	
+	trigger = {
+		government = diadochi_monarchy
+		any_country = { is_subject_of = ROOT }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+	option = {
+		name = "diadochi.6.a"
+			every_country = {
+					limit = { is_subject_of = ROOT }
+						add_liberty_desire = 10
+				}
+	}
+	option = {
+		name = "diadochi.6.a"
+			add_prestige = -10
+			add_legitimacy = -10
+			every_country = {
+					limit = { is_subject_of = ROOT }
+						add_liberty_desire = -10
+				}
+	}
+}
+########################################################################################
+# land litigation
+########################################################################################
+country_event = {
+    id = diadochi.7
+    title = "diadochi.7.t"
+    desc = "diadochi.7.d"
+    picture = city
+    
+    trigger = {
+		government = diadochi_monarchy
+        OR = {
+            TAG = SEL
+            TAG = GBK
+			culture_group =  hellenic
+        }
+        OR = {
+           any_owned_province = { culture_group =  western_iranian }
+           any_owned_province = { culture_group =  eastern_iranian_group }
+        }
+		
+    }
+	
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+    option = {
+        name = "diadochi.7.a"
+                add_mil_power = 50
+            
+    }
+    option = {
+        name = "diadochi.7.b"
+                        add_years_of_income = 0.15
+            add_corruption = 1
+                        add_mil_power = -25
+    }
+        option = {
+        name = "diadochi.7.c"
+                trigger = {
+                ruler_has_personality = righteous_personality
+				}
+        required_personality = righteous_personality
+        add_prestige = 10
+
+		}
+        option = {
+        name = "diadochi.7.e"
+		highlight = yes
+                trigger = {
+                ruler_has_personality = greedy_personality
+                }
+        required_personality = greedy_personality
+				add_prestige = -10
+                add_years_of_income = 0.25
+                add_mil_power = -25
+       }
+}
+########################################################################################
+# Kassandros
+########################################################################################
+country_event = {
+    id = diadochi.8
+    title = "diadochi.8.t"
+    desc = "diadochi.8.d"
+    picture = alexander
+
+    trigger = {
+		started_in = 439.1.1
+		NOT = { started_in = 457.1.1 }
+        tag = MAC
+        has_ruler = "Kassandros Antipatrid"
+        NOT = { has_ruler_modifier = kassandros }
+		NOT = { has_country_flag = kassandros_happened }
+    }
+    mean_time_to_happen = {
+        months = 3
+    }
+	
+    option = {
+        name = "diadochi.8.a"
+        add_ruler_modifier = {
+                name = "kassandros"
+            }
+        add_prestige = -10
+        add_legitimacy = -20
+        add_militarised_society = 20
+        set_country_flag = kassandros_happened   }
+}
+########################################################################################
+# Death of Alexander
+########################################################################################
+country_event = {
+    id = diadochi.9
+    title = "diadochi.9.t"
+    desc = "diadochi.9.d"
+    picture = alexander
+	is_triggered_only = yes
+	fire_only_once = yes
+
+
+    trigger = {
+        tag = MAC
+        NOT = { has_ruler = "Alexander III the Great" }
+		has_new_dynasty = yes
+		has_country_flag = alexander_is_ruler
+		total_development = 2500
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+    option = {
+        name = "diadochi.9.a"
+			clr_country_flag = alexander_is_ruler
+			define_ruler = {
+				name = "Perdikkas"
+				dynasty = "of Orestis"
+				age = 35
+				adm = 4
+				dip = 4
+				mil = 5
+				fixed = yes
+			}
+			define_heir = {
+				claim = 50
+				name = "Philipp III Arrhidaios"
+				dynasty = "Argead"
+				max_random_adm = 1
+				max_random_dip = 1
+				max_random_mil = 1
+			}
+			hidden_effect = { every_owned_province = { add_local_autonomy = 25 } }
+			custom_tooltip = diadochi.9.tt.b
+			set_country_flag = partition_of_babylon
+        }
+}
+########################################################################################
+# Second partition
+########################################################################################
+country_event = {
+    id = diadochi.10
+    title = "diadochi.10.t"
+    desc = "diadochi.10.d"
+    picture = alexander
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    trigger = {
+        tag = MAC
+		NOT = { legitimacy = 100 }
+		has_country_flag = partition_of_babylon
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+    option = {
+        name = "diadochi.10.a"
+			clr_country_flag = partition_of_babylon
+			###### Macedonia ##########
+				if = { limit = { 	has_dlc = "Rights of Man"  }
+							change_government = diadochi_monarchy }
+				define_ruler = {
+					name = "Antipatros"
+					dynasty = "Antipatrid"
+					age = 75
+					adm = 4
+					dip = 4
+					mil = 4
+				}
+				define_heir = {
+					claim = 75
+					name = "Alexander IV"
+					dynasty = "Argead"
+					age = 2
+					adm = 1
+					dip = 1
+					mil = 1
+				}
+				set_capital = 616
+			hidden_effect = { 
+			###### Thracia ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = thracia_region
+							region = dacia_region
+						}
+						owned_by = MAC
+					}
+					cede_province = THR
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				THR = {
+					if = { limit = { 	has_dlc = "Rights of Man"  }
+							change_government = diadochi_monarchy }
+					change_primary_culture = macedon
+					change_religion = greek_religion
+					change_technology_group = greek
+					define_ruler = {
+						name = "Lysimachos"
+						dynasty = "Lysimachid"
+						age = 35
+						adm = 3
+						dip = 3
+						mil = 4
+						fixed = yes
+					}
+				}
+			###### Phrygia ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = phrygia_area
+							area = galatia_area
+							area = pamphylia_area
+							area = lycaonia_area
+							area = lycia_area
+							area = pisidia_area
+							area = aeolis_area
+							area = troad_area
+							area = mysia_area
+							region = bithynia_et_pontus
+						}
+						owned_by = MAC
+					}
+					cede_province = ANE
+					add_core = ANE
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				ANE = {
+					if = { limit = { 	has_dlc = "Rights of Man"  }
+							change_government = diadochi_monarchy }
+					define_ruler = {
+						name = "Antigonus I Monophthalmus"
+						dynasty = "Antigonid"
+						age = 50
+						dip = 5
+						adm = 4
+						mil = 4
+					}
+				}	
+			if = {
+				limit = { 
+					has_leader = "Antigonos" 
+				}
+				PTO = {
+					define_ruler = {
+						name = "Antigonus I Monophthalmus"
+						dynasty = "Antigonid"
+						dip = 5
+						adm = 4
+						mil = 4
+					}
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { has_leader = "Antigonos"  }
+				}
+				PTO = {
+					define_ruler = {
+						name = "Demetrius"
+						dynasty = "Antigonid"
+						dip = 3
+						adm = 5
+						mil = 5
+					}
+				}
+			}
+			###### lydia ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = lydia_area
+							area = ionia_area
+						}
+						owned_by = MAC
+					}
+					cede_province = LYD
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				LYD = {
+					define_ruler = {
+						name = "Kleitos the Wise"
+						dynasty = "Kleitoid"
+						dip = 5
+						adm = 3
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### caria ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = caria_area
+							area = doris_area
+						}
+						owned_by = MAC
+					}
+					cede_province = CRI
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				CRI = {
+					define_ruler = {
+						name = "Asandros"
+						dynasty = "of Caria"
+						dip = 4
+						adm = 4
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### cappadocia ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = cappadocia_area
+						}
+						owned_by = MAC
+					}
+					cede_province = KPP
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				KPP = {
+					define_ruler = {
+						name = "Nikanor"
+						dynasty = "of Kappadokia"
+						dip = 3
+						adm = 3
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### cilicia ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = cilicia_area
+						}
+						owned_by = MAC
+					}
+					cede_province = KIL
+				}
+				KIL = {
+					define_ruler = {
+						name = "Philoxenos"
+						dynasty = "of Kilikia"
+						dip = 3
+						adm = 3
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### armenia ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = armenia_region
+						}
+						NOT = { area = caspiane_area }
+						owned_by = MAC
+					}
+					cede_province = ARM
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				ARM = {
+					define_ruler = {
+						name = "Orontes II"
+						dynasty = "Orontid"
+						dip = 4
+						adm = 4
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### syria ##########
+				every_province = {
+					limit = {
+						region = syria_region
+						owned_by = MAC
+					}
+					cede_province = SYI
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				SYI = {
+					define_ruler = {
+						name = "Laomedon"
+						dynasty = "of Mytilene"
+						dip = 3
+						adm = 4
+						mil = 4
+						fixed = yes
+					}
+				}
+			###### mesopotamia ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = assyria_area
+							area = euphrates_area
+						}
+						owned_by = MAC
+					}
+					cede_province = ASY
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				ASY = {
+					define_ruler = {
+						name = "Amphimachos"
+						dynasty = "Amphimachid"
+						dip = 3
+						adm = 3
+						mil = 4
+						fixed = yes
+					}
+				}
+			###### arabia ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = amir
+							area = maain
+							area = saba_area
+							area = himjar_area
+							area = qataban_area
+							area = hadramaut_area
+							area = mazun_area
+						}
+						owned_by = MAC
+					}
+					cede_province = ARB
+					add_core = ARB
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+			###### seleucids ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = seleukia_area
+							area = ctesiphon_area
+							area = upper_babylon_area
+							area = lower_babylon_area
+							area = arabian_desert
+							area = gerrah_area
+						}
+						owned_by = MAC
+					}
+					cede_province = SEL
+					add_core = SEL
+					remove_core = MAC
+				}
+				SEL = {
+					if = { limit = { 	has_dlc = "Rights of Man"  }
+							change_government = diadochi_monarchy }
+				}
+				if = {
+				limit = { 
+					has_leader = "Seleukos" 
+				}
+				SEL = {
+					define_ruler = {
+						name = "Seleukos I Nikator"
+						dynasty = "Seleucidae"
+						age = 35
+						dip = 4
+						adm = 4
+						mil = 5
+						fixed = yes
+					}
+				}
+			}
+				if = {
+				limit = { 
+					NOT = {has_leader = "Seleukos" } 
+				}
+				SEL = {
+					define_ruler = {
+						name = "Antiochus I Soter"
+						dynasty = "Seleucidae"
+						dip = 3
+						adm = 3
+						mil = 4
+						fixed = yes
+					}
+				}
+			}
+			###### egypt ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = lower_egypt_region
+							region = upper_egypt_region
+							region = nubia_region
+							region = aethiops
+							region = canaan_region 
+							region = lybia_region 
+							area = saracenea
+							area = biau
+							area = petrea
+							area = nabatea
+						}
+						owned_by = MAC
+					}
+					cede_province = PTO
+					add_core = PTO
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				PTO = {
+				
+					if = { limit = { 	has_dlc = "Rights of Man"  }
+							change_government = diadochi_monarchy }
+				
+				}
+				
+			if = {
+				limit = { 
+					has_leader = "Ptolemaios" 
+				}
+				PTO = {
+					define_ruler = {
+						name = "Ptolemy I Soter"
+						dynasty = "Ptolemoi"
+						age = 40
+						dip = 4
+						adm = 5
+						mil = 5
+						fixed = yes
+					}
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { has_leader = "Ptolemaios"  }
+				}
+				PTO = {
+					define_ruler = {
+						name = "Ptolemy II"
+						dynasty = "Ptolemoi"
+						age = 20
+						dip = 4
+						adm = 4
+						mil = 4
+						fixed = yes
+					}
+				}
+			}
+			###### susia ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = susiane_area
+							area = charax_spasinu_area
+						}
+						owned_by = MAC
+					}
+					cede_province = SUS
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				SUS = {
+					define_ruler = {
+						name = "Antigenes"
+						dynasty = "Antigenid"
+						dip = 3
+						adm = 4
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### media ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = ecbatana_area
+							area = arsacia_area
+						}
+						owned_by = MAC
+					}
+					cede_province = MDI
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				MDI = {
+					define_ruler = {
+						name = "Peithon"
+						dynasty = "Kratea"
+						dip = 3
+						adm = 3
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### atropatene ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = west_hyrkania_area
+							area = atropatene_area
+							area = caspiane_area
+						}
+						owned_by = MAC
+					}
+					cede_province = ATR
+					add_core = ATR
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				ATR = {
+					define_ruler = {
+						name = "Atropates"
+						dynasty = "Atropatenid"
+						dip = 5
+						adm = 5
+						mil = 4
+						fixed = yes
+					}
+				}
+			###### persis ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = persis_region
+						}
+						owned_by = MAC
+					}
+					cede_province = PRS
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				PRS = {
+					define_ruler = {
+						name = "Peukestas"
+						dynasty = "Peukestid"
+						dip = 3
+						adm = 3
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### parthia ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = parthia_region
+						}
+						owned_by = MAC
+					}
+					cede_province = PRT
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				PRT = {
+					define_ruler = {
+						name = "Philippos"
+						dynasty = "Philippid"
+						dip = 3
+						adm = 3
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### aria ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = aria_area
+							area = drangiana_area
+						}
+						owned_by = MAC
+					}
+					cede_province = ARI
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				ARI = {
+					define_ruler = {
+						name = "Stasandros"
+						dynasty = "of Soloi"
+						dip = 4
+						adm = 3
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### baktria ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = baktria_area
+							region = transoxiana_region
+						}
+						owned_by = MAC
+					}
+					cede_province = GBK
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				every_province = {
+					limit = {
+						area = baktria_area
+					}					
+					add_core = GBK
+				}
+				GBK = {
+					define_ruler = {
+						name = "Stasanor"
+						dynasty = "Stasanid"
+						dip = 4
+						adm = 4
+						mil = 5
+						fixed = yes
+					}
+				}
+			###### kypros ##########
+				every_province = {
+					limit = {
+						OR = {
+							area = kypros_area
+						}
+						owned_by = MAC
+					}
+					cede_province = ZYP
+					add_core = ZYP
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				
+			###### Arachosia ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = arachosia_region
+						}
+						owned_by = MAC
+					}
+					cede_province = ARA
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				ARA = {
+					define_ruler = {
+						name = "Sibyrtios"
+						dynasty = "Sibyrtid"
+						dip = 3
+						adm = 3
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### gandhara ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = gandhara
+							region = northern_india_region
+						}
+						owned_by = MAC
+					}
+					cede_province = GAN
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				GAN = {
+					define_ruler = {
+						name = "Taxiles"
+						dynasty = "Taxilid"
+						dip = 3
+						adm = 4
+						mil = 4
+						fixed = yes
+					}
+				}
+			###### western_india_region ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = western_india_region
+						}
+						owned_by = MAC
+					}
+					cede_province = ABH
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				ABH = {
+					define_ruler = {
+						name = "Peithon"
+						dynasty = "Peithonid"
+						dip = 3
+						adm = 3
+						mil = 3
+						fixed = yes
+					}
+				}
+			###### northern_india_region ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = northern_india_region
+						}
+						owned_by = MAC
+					}
+					cede_province = MAU
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				MAU = {
+					
+				}
+			###### eastern_india_region ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = eastern_india_region
+						}
+						owned_by = MAC
+					}
+					cede_province = KAL
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+			###### southern_india_region ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = southern_india_region
+						}
+						owned_by = MAC
+					}
+					cede_province = ANX
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+			###### silkroad_region ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = silkroad_region
+						}
+						owned_by = MAC
+					}
+					cede_province = TOC
+					add_core = TOC
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+			###### bosporus ##########
+				every_province = {
+					limit = {
+						OR = {
+							region = sarmatia_region
+						}
+						NOT = { area = mardi_area }
+						owned_by = MAC
+					}
+					cede_province = BOS
+					add_local_autonomy = -50
+					remove_core = MAC
+				}
+				BOS = {
+					
+				}
+				################
+				release_all_subjects = yes
+				if = {
+					limit = { any_owned_province = { is_core = RHO } }
+					release = RHO
+					release = KAR
+				}
+				if = {
+					limit = { NOT = { any_owned_province = { is_core = RHO } } }
+					release = IAL
+					release = LIN
+					release = KME
+					release = KAR
+				}
+				
+					release = LES
+					release = CHI
+					release = SAM
+					
+				
+				
+			}
+			custom_tooltip = diadochi.10.tt.a
+        }
+}

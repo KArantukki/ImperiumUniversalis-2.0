@@ -1,0 +1,72 @@
+namespace = babylon
+
+########################################################################################
+# maintanance for babylon
+########################################################################################
+country_event = {
+	id = babylon.1
+	title = "babylon.1.t"
+	desc = "babylon.1.d"
+	picture = babylon
+	is_triggered_only = yes
+	
+	trigger = {
+		owns_or_vassal_of = 1882
+		is_subject = no
+		1882 = { has_province_modifier = gardens_of_babylon }
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	# expand them
+	option = {
+		name = "babylon.1.a"
+		ai_chance = { 
+		factor = 10 
+				modifier = {
+					factor = 2.0
+					owner = { treasury = 250 }
+					}
+				modifier = {
+					factor = 5.0
+					owner = { treasury = 500 }
+					}
+		}
+			add_treasury = -250
+			add_prestige = 10
+	}
+	# ...
+	option = {
+		name = "babylon.1.b"	
+		ai_chance = { factor = 90 }
+		add_treasury = -100
+		add_prestige = 5
+	}
+	# no more maintanance
+	option = {
+		name = "babylon.2.c"	
+		ai_chance = { 
+		factor = 1 
+				modifier = {
+					factor = 2.0
+					owner = { num_of_loans = 1 }
+					}
+				modifier = {
+					factor = 5.0
+					owner = { num_of_loans = 2 }
+					}
+				modifier = {
+					factor = 25.0
+					owner = { num_of_loans = 5 }
+					}
+				modifier = {
+					factor = 50.0
+					owner = { num_of_loans = 10 }
+					}
+		}
+		1882 = { remove_province_modifier = gardens_of_babylon }
+		add_prestige = -20
+		hidden_effect = { hide_ambient_object = babylon }
+	}
+}

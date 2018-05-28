@@ -1,0 +1,197 @@
+country_decisions = {
+	#Annex Italian Territories
+	 annex_italia = {
+		major = yes
+		potential = {
+			government = triumvirate_government
+			italian_region = { type = all owned_by = ROM }
+		}
+		allow = {
+			owns = 178
+			owns = 192
+			owns = 182
+			owns = 251
+			owns = 255
+		}
+		effect = {
+			hidden_effect = {
+			every_province = {
+					limit = {
+						owned_by = ROM
+						NOT = { is_capital = yes }
+					}
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			every_country = {
+				limit = { government = triumvirate_government }
+				add_opinion = {
+				who = ROOT
+					modifier = annexed_italia
+				}
+			}
+			custom_tooltip = annex_italia.tt
+		}
+		
+		ai_importance = 500	
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	 form_roman_empire = {
+		major = yes
+		potential = {
+			government = triumvirate_government
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = form_roman_empire_tooltip
+				OR = {
+							TAG = R1O
+					NOT = { exists = R1O }
+					R1O = {
+						all_owned_province = {
+							NOT = { controlled_by = R1O }
+						}
+					}
+				}
+				OR = {
+							TAG = R1A
+					NOT = { exists = R1A }
+				}
+				OR = {
+							TAG = RRS
+					NOT = { exists = RRS }
+					RRS = {
+						all_owned_province = {
+							NOT = { controlled_by = RRS }
+						}
+					}
+				}
+				OR = {
+							TAG = R1L
+					NOT = { exists = R1L }
+					R1L = {
+						all_owned_province = {
+							NOT = { controlled_by = R1L }
+						}
+					}
+				}
+				OR = {
+							TAG = R1C
+					NOT = { exists = R1C }
+					R1C = {
+						all_owned_province = {
+							NOT = { controlled_by = R1C }
+						}
+					}
+				}
+				OR = {
+							TAG = RRO
+					NOT = { exists = RRO }
+					RRO = {
+						all_owned_province = {
+							NOT = { controlled_by = RRO }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			inherit = ROM
+			change_tag = ROI
+			set_government_rank = 5
+			change_government = principate
+			set_capital = 219
+		}
+		
+		ai_importance = 200	
+		ai_will_do = {
+			factor = 0.75
+		}
+	}
+	 restore_the_republic = {
+		major = yes
+		potential = {
+			government = triumvirate_government
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = form_roman_empire_tooltip
+				OR = {
+							TAG = R1O
+					NOT = { exists = R1O }
+					R1O = {
+						all_owned_province = {
+							NOT = { controlled_by = R1O }
+						}
+					}
+				}
+				OR = {
+							TAG = R1A
+					NOT = { exists = R1A }
+				}
+				OR = {
+							TAG = RRS
+					NOT = { exists = RRS }
+					RRS = {
+						all_owned_province = {
+							NOT = { controlled_by = RRS }
+						}
+					}
+				}
+				OR = {
+							TAG = R1L
+					NOT = { exists = R1L }
+					R1L = {
+						all_owned_province = {
+							NOT = { controlled_by = R1L }
+						}
+					}
+				}
+				OR = {
+							TAG = R1C
+					NOT = { exists = R1C }
+					R1C = {
+						all_owned_province = {
+							NOT = { controlled_by = R1C }
+						}
+					}
+				}
+				OR = {
+							TAG = RRO
+					NOT = { exists = RRO }
+					RRO = {
+						all_owned_province = {
+							NOT = { controlled_by = RRO }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			switch_tag = ROM
+			change_government = classic_republic
+			set_capital = 219
+			hidden_effect = {
+				every_province = {
+					limit = { 
+						OR = {
+							owned_by = R1O
+							owned_by = R1A
+							owned_by = RRS
+							owned_by = R1L
+						}
+					}
+					cede_province = ROM
+				}
+			}
+		}
+		
+		ai_importance = 200	
+		ai_will_do = {
+			factor = 0.25
+		}
+	}
+}

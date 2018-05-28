@@ -1,0 +1,87 @@
+
+focus_trade_expansion = {
+	monarch_power = DIP
+
+	potential = {
+		
+	}
+	
+	allow = {
+		NOT = { has_active_policy = focus_culture }
+		NOT = { has_active_policy = focus_military }
+		
+	}
+	
+	caravan_power = 0.15
+	global_trade_power = 0.15
+	merchants = 1
+	
+	ai_will_do = {
+		factor = 1
+			modifier = {
+					factor = 0
+					OR = {
+						NOT = { full_idea_group = trade_ideas }
+						NOT = { trade_income_percentage = 0.33 }
+						NOT = { TAG = CAR }
+						}
+				}
+	}
+}
+focus_culture = {
+	monarch_power = DIP
+
+	potential = {
+		
+	}
+	
+	allow = {
+		NOT = { has_active_policy = focus_trade_expansion }
+		NOT = { has_active_policy = focus_military }
+		is_tribal = no
+	}
+	
+	culture_conversion_cost = -0.15
+	global_missionary_strength = 0.01
+	missionaries = 1
+	
+	ai_will_do = {
+		factor = 1
+			modifier = {
+					factor = 0
+					OR = {
+						NOT = { full_idea_group = superior_religious_ideas }
+						NOT = { total_development = 800 }
+						NOT = { TAG = ROM }
+					}
+				}
+	}
+}
+focus_military = {
+	monarch_power = DIP
+
+	potential = {
+		
+	}
+	
+	allow = {
+		NOT = { has_active_policy = focus_culture }
+		NOT = { has_active_policy = focus_trade }
+	}
+	
+	manpower_recovery_speed = 0.25
+	core_creation = -0.15
+	free_leader_pool = 1
+	
+	ai_will_do = {
+		factor = 1
+			modifier = {
+					factor = 0
+					TAG = CAR
+				}
+			modifier = {
+					factor = 0
+					TAG = ROM
+				}
+	}
+}

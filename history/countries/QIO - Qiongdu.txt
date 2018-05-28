@@ -1,0 +1,7 @@
+government = pastoral_tribe
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = shu
+religion = white_tiger_religion
+capital = 3358
+technology_group = far_eastern

@@ -1,0 +1,1309 @@
+namespace = slaves
+
+########################################################################################
+# slaves imported
+########################################################################################
+country_event = {
+	id = slaves.1
+	title = "slaves.1.t"
+	desc = "slaves.1.d"
+	picture = trade
+	is_triggered_only = yes
+	
+	trigger = {
+				NOT = { has_country_modifier = slavery_abolished }
+				is_tribal = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "slaves.1.a"
+		ai_chance = { factor = 60 }
+			change_variable = { which = slaves value = 1000 }
+			add_treasury = -15
+	}
+	option = {
+		name = "slaves.1.b"
+		ai_chance = { factor = 40 }
+			add_prestige = 1
+			
+	}
+}
+########################################################################################
+# pirates
+########################################################################################
+country_event = {
+	id = slaves.2
+	title = "slaves.2.t"
+	desc = "slaves.2.d"
+	picture = naval_battle
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = slavery_abolished }
+		any_owned_province = { has_port = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+	option = {
+		name = "slaves.2.a"
+		ai_chance = { factor = 30 }
+			change_variable = { which = slaves value = 1000 }
+			add_treasury = -5
+			add_prestige = -5
+				
+				random_owned_province = {
+					limit = { has_port = yes }
+					add_province_modifier = {
+							name = slave_market
+							duration = 730
+						}
+				}
+	}
+	option = {
+		name = "slaves.2.b"
+		ai_chance = { factor = 70 }
+			add_prestige = 5
+			
+	}
+}
+########################################################################################
+# slave market in capital
+########################################################################################
+country_event = {
+	id = slaves.3
+	title = "slaves.3.t"
+	desc = "slaves.3.d"
+	picture = tradecity
+	is_triggered_only = yes
+	
+	trigger = {
+				NOT = { has_country_modifier = slavery_abolished }
+				capital_scope = { NOT = { has_province_modifier = slave_market } }
+				check_variable = { which = slaves value = 1000 }
+				
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+	option = {
+		name = "slaves.3.a"
+			change_variable = { which = slaves value = -1000 }
+			add_years_of_income = 0.10
+			capital_scope = { 
+					add_province_modifier = {
+							name = slave_market
+							duration = 730
+						}
+				}
+	}
+}
+########################################################################################
+# mine collapsed
+########################################################################################
+country_event = {
+	id = slaves.4
+	title = "slaves.4.t"
+	desc = "slaves.4.d"
+	picture = slaves
+	is_triggered_only = yes
+	
+	trigger = {
+				NOT = { has_country_modifier = slavery_abolished }
+				check_variable = { which = slaves value = 2500 }
+		any_owned_province = { 
+			OR = {
+				trade_goods = copper
+				trade_goods = gold
+				trade_goods = iron
+				trade_goods = silver
+				trade_goods = lead
+				} 
+			}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+	option = {
+		name = "slaves.4.a"
+		ai_chance = { factor = 50 }
+			change_variable = { which = slaves value = -2500 }
+				random_owned_province = {
+				limit = { 
+					OR = {
+						trade_goods = copper
+						trade_goods = gold
+						trade_goods = iron
+						trade_goods = silver
+						trade_goods = lead
+						trade_goods = tin
+						trade_goods = jade
+						trade_goods = gems
+						} 
+					}
+				
+				add_province_modifier = {
+						name = "mine_collapsed"
+						duration = 1825
+					}
+				}
+
+	}
+	option = {
+		name = "slaves.4.b"
+		ai_chance = { factor = 50 }
+			change_variable = { which = slaves value = -2500 }
+			add_years_of_income = -0.15
+	}
+}
+########################################################################################
+# slaves ran away
+########################################################################################
+country_event = {
+	id = slaves.5
+	title = "slaves.5.t"
+	desc = "slaves.5.d"
+	picture = slaves
+	is_triggered_only = yes
+	
+	trigger = {
+				NOT = { has_country_modifier = slavery_abolished }
+				check_variable = { which = slaves value = 2000 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+	option = {
+		name = "slaves.5.a"
+		ai_chance = { factor = 50 }
+			change_variable = { which = slaves value = -1000 }
+				random_owned_province = {
+				limit = { is_capital = no }
+				add_local_autonomy = 5
+				}
+	}
+	option = {
+		name = "slaves.5.b"
+		ai_chance = { factor = 50 }
+			change_variable = { which = slaves value = -500 }
+			add_years_of_income = -0.1
+	}
+	option = {
+		name = "slaves.5.c"
+		ai_chance = { factor = 50 }
+			trigger = { manpower = 1.0 }
+			change_variable = { which = slaves value = -500 }
+			add_manpower = -1
+	}
+}
+########################################################################################
+# slave revolt
+########################################################################################
+country_event = {
+	id = slaves.6
+	title = "slaves.6.t"
+	desc = "slaves.6.d"
+	picture = civilwar
+	is_triggered_only = yes
+	
+	trigger = {
+				check_variable = { which = slaves value = 5000 }
+				NOT = { has_country_modifier = slavery_abolished }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+			modifier = {
+				factor = 1.25
+				has_country_modifier = 150_slaves_modifier
+			}
+			modifier = {
+				factor = 1.5
+				has_country_modifier = 200_slaves_modifier
+			}
+	}
+	option = {
+		name = "slaves.6.a"
+		ai_chance = { factor = 50 }
+			change_variable = { which = slaves value = -3000 }
+				random_owned_province = {
+					spawn_rebels = {
+						type = 	slave_rebels
+						size = 1
+						win = yes
+					}
+				}
+	}
+}
+########################################################################################
+# prosperity
+########################################################################################
+country_event = {
+	id = slaves.7
+	title = "slaves.7.t"
+	desc = "slaves.7.d"
+	picture = forum_picture
+	is_triggered_only = yes
+	
+	trigger = {
+				check_variable = { which = slaves value = 10000 }
+				NOT = { has_country_modifier = slavery_abolished }
+				is_at_war = no
+				any_owned_province = {
+					has_owner_culture = yes
+				}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+			modifier = {
+				factor = 1.25
+				has_country_modifier = 150_slaves_modifier
+			}
+			modifier = {
+				factor = 1.5
+				has_country_modifier = 200_slaves_modifier
+			}
+		
+	}
+	option = {
+		name = "slaves.7.a"
+				change_variable = { which = slaves value = -10000 }
+				random_owned_province = {
+					limit = { has_owner_culture = yes }
+					add_base_production = 1
+				}
+	}
+}
+########################################################################################
+# debt_slavery
+########################################################################################
+country_event = {
+	id = slaves.8
+	title = "slaves.8.t"
+	desc = "slaves.8.d"
+	picture = slaves
+	is_triggered_only = yes
+	
+	trigger = {
+				NOT = { has_country_modifier = slavery_abolished }
+				NOT = { has_country_modifier = debt_bondage_banned }
+				is_tribal = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+	option = {
+		name = "slaves.8.a"
+		ai_chance = { factor = 50 }
+			if = {
+				limit = { NOT = { total_development = 100 }  }
+				change_variable = { which = slaves value = 500 }
+			}
+			if = {
+				limit = { 			total_development = 100
+							NOT = { total_development = 300 }  }
+				change_variable = { which = slaves value = 1000 }
+			}
+			if = {
+				limit = { 			total_development = 300
+							NOT = { total_development = 600 }  }
+				change_variable = { which = slaves value = 1500 }
+			}
+			if = {
+				limit = { 			total_development = 600
+							NOT = { total_development = 900 }  }
+				change_variable = { which = slaves value = 2000 }
+			}
+			if = {
+				limit = { 			total_development = 900  }
+				change_variable = { which = slaves value = 2500 }
+			}
+				
+	}
+}
+
+########################################################################################
+# boom of local economy
+########################################################################################
+country_event = {
+	id = slaves.9
+	title = "slaves.9.t"
+	desc = "slaves.9.d"
+	picture = harvest
+	is_triggered_only = yes
+	
+	trigger = {
+				NOT = { has_country_modifier = slavery_abolished }
+				check_variable = { which = slaves value = 2500 }
+				any_owned_province = { has_estate = estate_slaves }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+	option = {
+		name = "slaves.9.a"
+		ai_chance = { factor = 50 }
+				change_variable = { which = slaves value = -2500 }
+				random_owned_province = {
+					limit = { has_estate = estate_slaves }
+					add_province_modifier = {
+							name = economic_boost
+							duration = 1095
+						}
+				}
+				
+	}
+}
+
+########################################################################################
+# slaves help at the harvest
+########################################################################################
+country_event = {
+	id = slaves.10
+	title = "slaves.10.t"
+	desc = "slaves.10.d"
+	picture = harvest
+	is_triggered_only = yes
+	
+	trigger = {
+				is_tribal = no
+				NOT = { has_country_modifier = slavery_abolished }
+				check_variable = { which = slaves value = 100 }
+				any_owned_province = {
+					has_owner_culture = yes
+					OR = {
+						trade_goods = grain
+						trade_goods = rice
+						trade_goods = fruits
+					}
+				}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+	option = {
+		name = "slaves.10.a"
+		ai_chance = { factor = 50 }
+				change_variable = { which = slaves value = -1000 }
+				if = {
+							limit = { has_global_flag = food_active }
+								change_variable = { which = food_supplies value = 25 }
+								while = {
+									limit = { NOT = { check_variable = { which = food_supplies value = 0 } } }
+									set_variable = { which = food_supplies value = 0 }
+								}
+								else = {
+										add_years_of_income = 0.07
+								}
+							}
+			
+				
+	}
+}
+########################################################################################
+# no slaves to work
+########################################################################################
+country_event = {
+	id = slaves.12
+	title = "slaves.12.t"
+	desc = "slaves.12.d"
+	picture = city
+	is_triggered_only = yes
+	
+	trigger = {
+				NOT = { has_country_modifier = slavery_abolished }
+				NOT = { check_variable = { which = slaves value = 2500 } }
+				any_owned_province = { development = 12 }
+				num_of_cities = 4
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+			
+		
+	}
+	option = {
+		name = "slaves.12.a"
+		ai_chance = { factor = 60 }
+			add_years_of_income = -0.05
+	}
+}
+########################################################################################
+# siege won
+########################################################################################
+country_event = {
+	id = slaves.13
+	title = "slaves.13.t"
+	desc = "slaves.13.d"
+	picture = plundering
+	is_triggered_only = yes
+	
+	trigger = {
+			
+			FROM = {
+						NOT = { has_province_modifier = was_plundered }
+						base_production = 1
+						owner = { war_with = ROOT } 
+						NOT = {	is_core = ROOT  }
+			}
+			
+		NOT = { government = triumvirate_government }	
+		NOT = { has_country_modifier = slavery_abolished }
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	################################### ENSLAVE ################################################
+	option = {
+		name = "slaves.13.a"
+		ai_chance = { 
+				factor = 50
+				modifier = {
+					factor = 2.0
+					FROM = {
+						owner = { is_rival = ROOT }
+						}
+					} 
+				modifier = {
+					factor = 1.25
+						NOT = { check_variable = { which = slaves value = 9000 } }
+					}
+				modifier = {
+					factor = 1.25
+						NOT = { check_variable = { which = slaves value = 15000 } }
+					}
+				modifier = {
+					factor = 1.25
+						NOT = { check_variable = { which = slaves value = 25000 } }
+					}
+				modifier = {
+					factor = 0.75
+								check_variable = { which = slaves value = 35000 } 
+					}
+				modifier = {
+					factor = 0.1
+						FROM = { 
+							owner = { reverse_has_opinion = { who = ROOT value = 5 } }
+						}
+					}
+				modifier = {
+					factor = 0.5
+						FROM = { 
+							owner = { reverse_has_opinion = { who = ROOT value = -25 } }
+						}
+					}
+				modifier = {
+					factor = 1.25
+						NOT = {
+						FROM = { 
+							owner = { reverse_has_opinion = { who = ROOT value = -190 } }
+							}
+						}
+					}
+				}
+			change_variable = { which = slaves value = 5000 }
+			add_mil_power = -10
+			custom_tooltip = slaves.13.tt
+			hidden_effect = {
+			FROM = {
+				add_devastation = 10
+				add_province_modifier = {
+						name = was_plundered
+						duration = 1825
+				}
+				if = {
+					limit = { base_tax = 1 }
+					add_base_tax = -1
+					ELSE = { add_base_production = -1 }
+				}
+							owner = {
+									add_opinion = {
+										who = ROOT
+										modifier = opinion_plundering
+									}
+								}
+			}
+		}
+	}
+	################################################ RANSOM POPULATION #########################
+	option = {
+		name = "slaves.13.b"
+		ai_chance = { 
+				factor = 50 
+				modifier = {
+					factor = 2.0
+					FROM = {
+						culture_group = ROOT
+						}
+					} 
+				modifier = {
+					factor = 1.25
+						DIP = 4
+					}
+				modifier = {
+					factor = 1.5
+						num_of_loans = 1
+					}
+			
+			}
+			add_mil_power = -10
+			hidden_effect = {
+			FROM = {
+					add_devastation = 5
+					add_province_modifier = {
+							name = was_plundered
+							duration = 1825
+						}
+				}
+			}
+			if = {
+				limit = {
+					FROM = { 
+							NOT = { development = 12  } }
+							}
+				add_treasury = 5
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 12 
+							NOT = { development = 15  } }
+							}
+				add_treasury = 10
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 15 
+							NOT = { development = 18  } }
+							}
+				add_treasury = 15
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 18 
+							NOT = { development = 21  } }
+							}
+				add_treasury = 20
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 21 
+							NOT = { development = 24  } }
+							}
+				add_treasury = 25
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 24 
+							NOT = { development = 27  } }
+							}
+				add_treasury = 30
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 27 
+							NOT = { development = 30  } }
+							}
+				add_treasury = 35
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 30 
+							NOT = { development = 33  } }
+							}
+				add_treasury = 40
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 33 
+							NOT = { development = 36  } }
+							}
+				add_treasury = 45
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 36 
+								}
+							}
+				add_treasury = 50
+			}
+	}
+	############################## NOTHING ###################
+	option = {
+		name = "slaves.13.c"
+		ai_chance = { 
+				factor = 10 
+					modifier = {
+						factor = 2.0
+						NOT = { num_of_loans = 1 }
+					} 
+					modifier = {
+						factor = 2.0
+						check_variable = { which = slaves value = 15000 } 
+					}
+					modifier = {
+						factor = 4.0
+						check_variable = { which = slaves value = 30000 } 
+					}
+				}
+			add_prestige = 2
+	}
+}
+########################################################################################
+# sacking of ...
+########################################################################################
+country_event = {
+	id = slaves.14
+	title = "slaves.14.t"
+	desc = "slaves.14.d"
+	picture = looting
+	is_triggered_only = yes
+	
+	trigger = {
+		
+		FROM = { 
+			owner = {	war_with = ROOT }
+			NOT = {		is_core = ROOT }
+			NOT = { has_province_modifier = was_plundered }
+			base_tax = 2
+			base_production = 3
+		}
+		NOT = { government = triumvirate_government }
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	############################################## ENSLAVE #####################################
+	option = {
+		name = "slaves.14.a"
+		ai_chance = { 
+				factor = 50
+				modifier = {
+					factor = 2.0
+					FROM = {
+						owner = { is_rival = ROOT }
+						}
+					} 
+				modifier = {
+					factor = 1.25
+						NOT = { check_variable = { which = slaves value = 9000 } }
+					}
+				modifier = {
+					factor = 1.25
+						NOT = { check_variable = { which = slaves value = 15000 } }
+					}
+				modifier = {
+					factor = 1.25
+						NOT = { check_variable = { which = slaves value = 25000 } }
+					}
+				modifier = {
+					factor = 0.75
+								check_variable = { which = slaves value = 35000 } 
+					}
+				modifier = {
+					factor = 0.05
+						FROM = { 
+							owner = { reverse_has_opinion = { who = ROOT value = 5 } }
+						}
+					}
+				modifier = {
+					factor = 0.4
+						FROM = { 
+							owner = { reverse_has_opinion = { who = ROOT value = -25 } }
+						}
+					}
+				modifier = {
+					factor = 1.6
+						NOT = {
+						FROM = { 
+							owner = { reverse_has_opinion = { who = ROOT value = -190 } }
+							}
+						}
+					}
+				}
+		
+		
+			trigger = { NOT = { has_country_modifier = slavery_abolished } }
+			add_mil_power = -20
+			change_variable = { which = slaves value = 10000 }
+			FROM = {
+							add_base_tax = -1
+							add_base_production = -1
+						}
+				hidden_effect = {
+					FROM = {
+							add_devastation = 15
+							add_province_modifier = {
+									name = was_plundered
+									duration = 1825
+								}
+					}
+				}
+							
+			if = {
+				limit = {
+					FROM = {
+									development = 9 
+							NOT = { development = 12  } }
+							}
+				add_treasury = 5
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 12 
+							NOT = { development = 15  } }
+							}
+				add_treasury = 10
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 15 
+							NOT = { development = 18  } }
+							}
+				add_treasury = 15
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 18 
+							NOT = { development = 21  } }
+							}
+				add_treasury = 20
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 21 
+							NOT = { development = 24  } }
+							}
+				add_treasury = 25
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 24 
+							NOT = { development = 27  } }
+							}
+				add_treasury = 30
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 27 
+							NOT = { development = 30  } }
+							}
+				add_treasury = 35
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 30 
+							NOT = { development = 33  } }
+							}
+				add_treasury = 40
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 33 
+							NOT = { development = 36  } }
+							}
+				add_treasury = 45
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 36 
+								}
+							}
+				add_treasury = 50
+			}
+			hidden_effect = {
+				FROM = {
+					province_event = {
+						id = slaves.15
+						days = 1
+					}
+				}
+			}
+	}
+	###################################################### PLUNDER ###############
+	option = {
+		name = "slaves.14.b"
+		ai_chance = { 
+				factor = 50 
+				modifier = {
+					factor = 2.0
+					FROM = {
+						culture_group = ROOT
+						}
+					} 
+				modifier = {
+					factor = 1.25
+						DIP = 4
+					}
+				modifier = {
+					factor = 1.5
+						num_of_loans = 1
+					}
+				modifier = {
+					factor = 0.1
+						FROM = { 
+							owner = { reverse_has_opinion = { who = ROOT value = 5 } }
+						}
+					}
+				modifier = {
+					factor = 0.5
+						FROM = { 
+							owner = { reverse_has_opinion = { who = ROOT value = -25 } }
+						}
+					}
+				modifier = {
+					factor = 1.5
+						NOT = {
+						FROM = { 
+							owner = { reverse_has_opinion = { who = ROOT value = -190 } }
+							}
+						}
+					}
+			
+			}
+			trigger = { has_country_modifier = slavery_abolished }
+			add_mil_power = -10
+			FROM = { 
+							add_base_tax = -1
+							add_base_production = -1
+							}
+				hidden_effect = {
+					FROM = {
+							add_devastation = 10
+							add_province_modifier = {
+									name = was_plundered
+									duration = 1825
+								}
+					}
+				}
+							
+			if = {
+				limit = {
+					FROM = {
+									development = 3
+							NOT = { development = 6  } }
+							}
+				add_treasury = 5
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 6 
+							NOT = { development = 9  } }
+							}
+				add_treasury = 10
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 9 
+							NOT = { development = 12  } }
+							}
+				add_treasury = 15
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 12 
+							NOT = { development = 15  } }
+							}
+				add_treasury = 20
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 15 
+							NOT = { development = 18  } }
+							}
+				add_treasury = 25
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 18 
+							NOT = { development = 21  } }
+							}
+				add_treasury = 30
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 21 
+							NOT = { development = 24  } }
+							}
+				add_treasury = 35
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 24 
+							NOT = { development = 27  } }
+							}
+				add_treasury = 40
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 27 
+							NOT = { development = 30  } }
+							}
+				add_treasury = 45
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 30 
+								}
+							}
+				add_treasury = 50
+			}
+							
+							
+			hidden_effect = {
+				FROM = {
+							province_event = {
+								id = slaves.15
+								days = 2
+							}
+							owner = {
+									add_opinion = {
+										who = ROOT
+										modifier = opinion_plundering
+									}
+								}
+							add_province_modifier = {
+									name = was_plundered
+									duration = 1825
+								}
+				}
+			}
+	}
+	##################################### ONLY TAKE MONEY #######################
+	option = {
+		name = "slaves.14.c"
+		ai_chance = { factor = 50 }
+			add_mil_power = -5
+			
+				hidden_effect = {
+					add_devastation = 5
+					FROM = {
+							add_province_modifier = {
+									name = was_plundered
+									duration = 1825
+								}
+					}
+				}
+			if = {
+				limit = {
+					FROM = {
+									development = 9 
+							NOT = { development = 12  } }
+							}
+				add_treasury = 5
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 12 
+							NOT = { development = 15  } }
+							}
+				add_treasury = 10
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 15 
+							NOT = { development = 18  } }
+							}
+				add_treasury = 15
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 18 
+							NOT = { development = 21  } }
+							}
+				add_treasury = 20
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 21 
+							NOT = { development = 24  } }
+							}
+				add_treasury = 25
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 24 
+							NOT = { development = 27  } }
+							}
+				add_treasury = 30
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 27 
+							NOT = { development = 30  } }
+							}
+				add_treasury = 35
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 30 
+							NOT = { development = 33  } }
+							}
+				add_treasury = 40
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 33 
+							NOT = { development = 36  } }
+							}
+				add_treasury = 45
+			}
+			if = {
+				limit = {
+					FROM = {
+									development = 36 
+								}
+							}
+				add_treasury = 50
+			}
+	}
+	################################### NONE #####################
+	option = {
+		name = "slaves.14.e"
+		ai_chance = { factor = 10 }
+			add_prestige = 5
+	}
+}
+########################################################################################
+# temple of
+########################################################################################
+country_event = {
+	id = slaves.16
+	title = "slaves.16.t"
+	desc = "slaves.16.d"
+	picture = looting
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { 
+			owner = {	war_with = ROOT }
+			NOT = {		religion_group = ROOT
+			}
+			OR = {
+					has_building = shrine
+					has_building = small_temple
+					has_building = great_temple
+			}
+		}
+		NOT = { government = triumvirate_government }
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	
+	option = {
+		name = "slaves.16.a"
+		ai_chance = { factor = 33 }
+			highlight = yes
+			trigger = {
+				has_country_modifier = disrespect_other_gods_modifier
+			}
+			custom_tooltip = slaves.16.tt
+			add_mil_power = -5
+			if = {
+				limit = { FROM = { has_building = shrine } }
+				FROM = { remove_building = shrine }
+			}
+			if = {
+				limit = { FROM = { has_building = small_temple } }
+				FROM = { remove_building = small_temple }
+			}
+			if = {
+				limit = { FROM = { has_building = great_temple } }
+				FROM = { remove_building = great_temple }
+			}
+			
+			if = {
+				limit = { uses_patriarch_authority = yes }
+				add_patriarch_authority = 0.05
+			}
+			if = {
+				limit = { uses_patriarch_authority = no }
+				add_prestige = 5
+			}
+			
+	}
+	option = {
+		name = "slaves.16.b"
+		ai_chance = { factor = 33 }
+			add_mil_power = -5
+			add_treasury = 20
+			
+			if = {
+				limit = { NOT = { has_country_modifier = disrespect_other_gods_modifier } }
+				random = {
+					chance = 10
+					add_country_modifier = {
+							name = "disrespect_other_gods_modifier"
+							duration = 3650
+						}
+				}
+			}
+	}
+	option = {
+		name = "slaves.16.c"
+		ai_chance = { factor = 33 }
+			
+	}
+}
+########################################################################################
+# tribal plundering
+########################################################################################
+country_event = {
+	id = slaves.17
+	title = "slaves.17.t"
+	desc = "slaves.17.d"
+	picture = looting
+	is_triggered_only = yes
+	
+	trigger = {
+			owner = { is_tribal = yes }
+			owner = { war_with = ROOT }
+			NOT = {	is_core = ROOT	}
+		FROM = { 
+			development = 3
+			NOT = { has_province_modifier = was_plundered }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	
+	option = {
+		name = "slaves.17.a"
+		ai_chance = { factor = 33 }
+				change_variable = { which = slaves value = 2000 }
+				hidden_effect = {
+					FROM = {
+							add_province_modifier = {
+									name = was_plundered
+									duration = 1825
+								}
+					}
+				}
+			
+	}
+}
+
+########################################################################################
+# slaves
+########################################################################################
+country_event = {
+	id = slaves.18
+	title = "slaves.18.t"
+	desc = "slaves.18.d"
+	picture = looting
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = slavery_abolished }
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	
+	###############################################
+	immediate = { 
+	
+	export_to_variable = {
+		which = 25_developmentVar
+		value = states_development
+	}
+	multiply_variable = { which = 25_developmentVar value = 25 }
+	
+	export_to_variable = {
+		which = 50_developmentVar
+		value = states_development
+	}
+	multiply_variable = { which = 50_developmentVar value = 50 }
+	
+	export_to_variable = {
+		which = 100_developmentVar
+		value = states_development
+	}
+	multiply_variable = { which = 100_developmentVar value = 100 }
+	
+	export_to_variable = {
+		which = 150_developmentVar
+		value = states_development
+	}
+	multiply_variable = { which = 150_developmentVar value = 150 }
+	
+	export_to_variable = {
+		which = 200_developmentVar
+		value = states_development
+	}
+	multiply_variable = { which = 200_developmentVar value = 200 }
+	
+	set_variable  = {
+		which = slaves_modif
+		which = slaves
+	}
+	multiply_variable = { which = slaves_modif value = 0.01 }
+	
+	set_country_flag = slave_amount_flag
+	}
+	###############################################
+	option = {
+		name = "slaves.18.a"
+			
+	}
+}

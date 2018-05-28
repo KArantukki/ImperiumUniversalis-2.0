@@ -1,0 +1,45 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 255 123 0 }
+
+revolutionary_colors = { 5  13  0 }
+
+
+historical_idea_groups = {
+	
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Aryu" = 40
+	"Abdu #4" = 80
+	"Barku # 7" = 70
+	"Manu" = 40
+	"Paqor" = 40
+	"Sanatruk" = 40
+
+
+}
+
+leader_names = {
+			Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
+			Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
+			Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur 
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

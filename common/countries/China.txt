@@ -1,0 +1,77 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 219 183 133 }
+
+preferred_religion = chinese_religion
+
+historical_idea_groups = {
+	offensive_ideas
+	infantry_ideas
+	economy_ideas
+	imperial_government_ideas
+	engineering_ideas
+	expansion_ideas
+	quality_ideas
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Gaozu" = 50
+	"Huidi" = 50
+	"Shaodi" = 50
+	"Wendi" = 50
+	"Jingdi" = 50
+	"Wudi" = 50
+	"Zhaodi" = 50
+	"Xuandi" = 50
+	"Yuandi" = 50
+	"Chengdi" = 50
+	"Aidi" = 50
+	"Pingdi" = 50
+	"Ruzi" = 50
+	"Gengshi-di" = 50
+	"Shangdi" = 40
+	"Shundi" = 30
+	"Chongdi" = 30
+	"Zhidi" = 30
+	"Mingdi" = 30
+	"Lingdi" = 30
+	
+	"Sun" = 1
+	"Sima" = 1
+	"Shang" = 1
+	"Mo" = 1
+	"Meng" = 1
+	"Xun" = 1
+	"Han" = 1
+	"Liu" = 1
+	
+	"Zhao" = -1
+	"Xia" = -1
+	"Lu Zhi" = -1
+	"Bo" = -1
+	"Guan" = -1
+	"Cao" = -1
+
+}
+
+leader_names = {
+			Wu Tzu Yang Qian Chien Xian Chi Qi Liao Rangju Di Ke Kuang Zi Feizi Shan
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

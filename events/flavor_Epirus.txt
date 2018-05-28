@@ -1,0 +1,162 @@
+namespace = epirus
+
+########################################################################################
+# phyros i
+########################################################################################
+country_event = {
+	id = epirus.1
+	title = "epirus.1.t"
+	desc = "epirus.1.d"
+	picture = guard
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		TAG = EPI
+		has_ruler = "Neoptolemos II"
+		exists = PTO
+		exists = SEL
+		exists = MAC
+		started_in = 451.1.1
+		NOT = { is_subject = yes }
+		NOT = { started_in = 456.1.1 }
+		NOT = {
+		has_global_flag = phyros }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "epirus.1.a"
+			add_prestige = 15
+			add_army_tradition = 15
+			define_ruler = {
+				name = "Pyrrhos I"
+				dynasty = "Aeacidae"
+				DIP = 5
+				ADM = 5
+				MIL = 6
+				
+			}
+			define_ruler_to_general = {
+				fire = 8
+				shock = 8
+				manuever = 2
+				siege = 2
+			}
+			add_faction_influence = { faction = molossians influence = 10 }	
+			set_global_flag = phyros
+			cavalry = capital
+			cavalry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+	}
+
+}
+########################################################################################
+# ruler election
+########################################################################################
+country_event = {
+	id = epirus.2
+	title = "epirus.2.t"
+	desc = "epirus.2.d"
+	picture = senat_conflict
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = epirote_monarchy
+		num_of_cities = 3
+		TAG = EPI
+		NOT = {
+			has_ruler = "Pyrrhos I"
+			DIP = 5
+			ADM = 5
+			MIL = 6
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "epirus.2.a"
+			trigger = { faction_influence = {
+							faction = molossians
+							influence = 1
+						} 
+					}
+			add_faction_influence = { faction = molossians influence = 30 }		
+			IF = {
+				limit = { has_country_flag = molossian_ruler }
+				add_legitimacy = 5
+			}
+			IF = {
+				limit = { NOT = { has_country_flag = molossian_ruler } }
+				add_legitimacy = -20
+				define_ruler = {
+					dynasty = "Aeacidae"	
+				}
+				hidden_effect = { kill_heir = yes }
+				set_country_flag = molossian_ruler
+				clr_country_flag = chaonian_ruler
+				clr_country_flag = thesprotian_ruler
+			}
+			
+	}
+	option = {
+		name = "epirus.2.b"
+			trigger = { faction_influence = {
+							faction = thesprotians
+							influence = 1
+						} 
+					}
+			add_faction_influence = { faction = thesprotians influence = 30 }		
+			IF = {
+				limit = { has_country_flag = thesprotian_ruler }
+				add_legitimacy = 5
+			}
+			IF = {
+				limit = { NOT = { has_country_flag = thesprotian_ruler } }
+				add_legitimacy = -20
+				define_ruler = {
+					dynasty = "Aidonae"	
+				}
+				set_country_flag = thesprotian_ruler
+				clr_country_flag = chaonian_ruler
+				clr_country_flag = molossian_ruler
+				hidden_effect = { kill_heir = yes }
+			}
+			
+			
+	}
+	option = {
+		name = "epirus.2.c"
+			trigger = { faction_influence = {
+							faction = chaonians
+							influence = 1
+						} 
+					}
+			add_faction_influence = { faction = chaonians influence = 30 }		
+			IF = {
+				limit = { has_country_flag = chaonian_ruler }
+				add_legitimacy = 5
+			}
+			IF = {
+				limit = { NOT = { has_country_flag = chaonian_ruler } }
+				add_legitimacy = -20
+				define_ruler = {
+					dynasty = "Chaonae"	
+				}
+				hidden_effect = { kill_heir = yes }
+				set_country_flag = chaonian_ruler
+				clr_country_flag = thesprotian_ruler
+				clr_country_flag = molossian_ruler
+			}	
+			
+	}
+
+}

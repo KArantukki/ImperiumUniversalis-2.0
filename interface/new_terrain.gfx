@@ -1,0 +1,72 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_combat_terrain_oasis"
+		texturefile = "gfx/interface/combat_terrain_oasis.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_combat_terrain_desert_mountain"
+		texturefile = "gfx/interface/combat_terrain_desert_mountain.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_fertile_highlands"
+		texturefile = "gfx/interface/combat_terrain_fertile_highlands.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_wetlands"
+		texturefile = "gfx/interface/combat_terrain_wetlands.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_floodplains"
+		texturefile = "gfx/interface/combat_terrain_floodplains.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_salt_desert"
+		texturefile = "gfx/interface/combat_terrain_salt_desert.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_combat_terrain_forest_steppe"
+		texturefile = "gfx/interface/combat_terrain_forest_steppe.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_oasis"
+		texturefile = "gfx/interface/colony_terrain_oasis.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_colony_terrain_desert_mountain"
+		texturefile = "gfx/interface/colony_terrain_desert_mountain.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_colony_terrain_fertile_highlands"
+		texturefile = "gfx/interface/colony_terrain_fertile_highlands.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_colony_terrain_wetlands"
+		texturefile = "gfx/interface/colony_terrain_wetlands.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_colony_terrain_floodplains"
+		texturefile = "gfx/interface/colony_terrain_floodplains.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_colony_terrain_salt_desert"
+		texturefile = "gfx/interface/colony_terrain_salt_desert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_forest_steppe"
+		texturefile = "gfx/interface/colony_terrain_forest_steppe.dds"
+	}
+	
+}

@@ -1,0 +1,80 @@
+
+focus_tax = {
+	monarch_power = ADM
+
+	potential = {
+		
+	}
+	
+	allow = {
+		NOT = { has_active_policy = focus_trade }
+		NOT = { has_active_policy = focus_producion }	
+    
+	}
+	
+	global_tax_modifier = 0.1
+
+	
+	ai_will_do = {
+		factor = 0
+			modifier = {
+					factor = 1
+					full_idea_group = administrative_ideas
+				}
+	}
+}
+focus_producion = {
+	monarch_power = ADM
+
+	potential = {
+		
+	}
+	
+	allow = {
+		NOT = { has_active_policy = focus_trade }
+		NOT = { has_active_policy = focus_tax }
+	}
+	
+
+	production_efficiency = 0.1
+
+	
+	ai_will_do = {
+		factor = 0
+			modifier = {
+					factor = 1
+					full_idea_group = economy_ideas
+				}
+	}
+}
+focus_trade = {
+	monarch_power = ADM
+
+	potential = {
+		
+	}
+	
+	allow = {
+		NOT = { has_active_policy = focus_producion }
+		NOT = { has_active_policy = focus_tax }
+	}
+	
+
+	trade_efficiency = 0.1
+	
+	ai_will_do = {
+		factor = 0 
+			modifier = {
+					factor = 1
+					full_idea_group = trade_ideas
+				}
+			modifier = {
+					factor = 1
+					trade_income_percentage = 0.33
+				}
+			modifier = {
+					factor = 1
+					TAG = CAR
+				}
+	}
+}

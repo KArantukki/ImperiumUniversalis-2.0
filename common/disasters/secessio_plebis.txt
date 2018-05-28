@@ -1,0 +1,93 @@
+secessio_plebis_disaster = {
+	potential = {
+		TAG = ROM
+		has_dlc = "The Cossacks"
+		has_estate = estate_citizens
+		government = republic
+		NOT = { has_country_flag = secessio_plebis_happened }
+		NOT = { started_in = 250.1.1 }
+	}
+
+
+	can_start = {
+		has_any_disaster = no
+		NOT = {
+			estate_influence = {
+				estate = estate_citizens
+				influence = 30
+			}
+		}
+	}
+	
+	can_stop = {
+			estate_influence = {
+				estate = estate_citizens
+				influence = 30
+			}		
+	}
+	
+	down_progress = {
+		factor = 1
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			estate_influence = {
+				estate = estate_citizens
+				influence = 10
+			}
+			hidden_trigger = {
+				NOT = {
+					estate_influence = {
+						estate = estate_citizens
+						influence = 20
+					}			
+				}			
+			}
+		}
+		modifier = {
+			factor = 2
+			estate_influence = {
+				estate = estate_citizens
+				influence = 20
+			}
+			hidden_trigger = {
+				NOT = {
+					estate_influence = {
+						estate = estate_citizens
+						influence = 30
+					}			
+				}			
+			}
+		}
+		modifier = {
+			factor = 1
+			unrest = 1
+		}		
+	}
+	
+	can_end = {
+		custom_trigger_tooltip = {
+			NOT = {
+				estate_influence = {
+				estate = estate_citizens
+				influence = 30
+				}
+			}						
+		}
+	}
+	
+	modifier = {	
+		global_tax_modifier = -0.5
+		production_efficiency = -0.5
+		manpower_recovery_speed = -0.5
+	}
+
+	on_start = rome.22
+	on_end = rome.23
+	
+	on_monthly = {
+	}
+}
+

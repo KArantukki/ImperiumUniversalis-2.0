@@ -1,0 +1,107 @@
+country_decisions = {
+	 build_the_coloss = {
+		potential = {
+			NOT = { has_global_flag = coloss_built }
+			owns = 728
+			728 = {
+				NOT = { has_great_project = coloss }
+			}
+			
+		}
+		allow = {
+			treasury = 300
+			adm_tech = 12
+			728 = {
+			NOT = { has_construction = building } }
+		}
+		effect = {
+			add_treasury = -300
+			set_global_flag = coloss_built
+			add_prestige = 10
+			728 = {
+				add_great_project = coloss
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	 form_rhodos_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = RHO }
+			NOT = { TAG = HEL }
+			NOT = { TAG = ZYP }
+			NOT = { TAG = KRT }
+			NOT = { TAG = CYC}
+			OR = {
+				primary_culture = greek
+				primary_culture = doric
+			}
+			capital_scope = { area = rhodiorum_area	}
+		}
+		allow = {
+			is_at_war =  no
+			owns_or_vassal_of = 728
+			owns_or_vassal_of = 726
+			owns_or_vassal_of = 727
+		}
+		effect = {
+					change_tag = RHO
+					if = {
+						limit = { NOT = { owns = 728 } }
+						728 = { cede_province = RHO }
+					}
+					if = {
+						limit = { NOT = { owns = 727 } }
+						727 = { cede_province = RHO }
+					}
+					if = {
+						limit = { NOT = { owns = 726 } }
+						726 = { cede_province = RHO }
+					}
+					set_capital = 728
+					728 = {
+						rename_capital = Rhodos
+						change_province_name = Rhodos
+						add_base_production = 2
+					}
+					727 = {
+						add_base_production = -1
+					}
+					726 = {
+						add_base_production = -1
+					}
+					
+				}
+		ai_importance = 100	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lex_rhodia = {
+		potential = {
+			NOT = { has_country_modifier = lex_rhodia_modifier }
+			OR = {
+				TAG = RHO
+				TAG = IAL
+				TAG = LIN
+				TAG = KME
+			}
+		}
+		allow = {
+			dip_power = 50
+			dip_tech = 4
+		}
+		effect = {
+			add_dip_power = -50
+			add_country_modifier = {
+					name = lex_rhodia_modifier
+					duration = -1
+				}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

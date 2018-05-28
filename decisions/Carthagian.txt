@@ -1,0 +1,64 @@
+country_decisions = {
+	
+	 spartan_mercenaries = {
+		potential = {
+			TAG = CAR
+			NOT = { has_country_flag = spartan_mercs_flag }
+			NOT = { has_country_modifier = spartan_mercs }
+			is_year = 450
+			NOT = { is_year = 500 }
+		}
+		allow = {
+			treasury = 100
+			is_at_war = yes
+		}
+		effect = {
+			add_treasury = -100
+			add_country_modifier = {
+					name = spartan_mercs
+					duration = 730
+				}
+				define_general = {
+					name = "Xanthippus"
+					fire = 6
+					shock = 6
+					manuever = 2
+					siege = 2
+				}
+				mercenary_infantry = capital
+				mercenary_infantry = capital
+				mercenary_infantry = capital
+				mercenary_infantry = capital
+				mercenary_infantry = capital
+				set_country_flag = spartan_mercs_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 punic_government = {
+		potential = {
+			NOT = { government = punic_republic }
+			primary_culture = punic
+		}
+		allow = {
+			is_at_war = no
+			trade_income_percentage = 0.33
+			OR = {
+				total_development = 300
+				full_idea_group = trade_ideas
+			}
+			OR = {
+				government = oligarchic_monarchy
+				government = classic_republic
+			}
+		}
+		effect = {
+			change_government = punic_republic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

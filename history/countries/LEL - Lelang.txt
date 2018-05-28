@@ -1,0 +1,8 @@
+government = tribal_federation
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = gojoseon
+religion = muism
+capital = 3465
+technology_group = korean
+	

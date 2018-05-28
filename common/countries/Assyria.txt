@@ -1,0 +1,46 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 175 175 100 }
+
+historical_idea_groups = {
+	
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Mazaios #3" = 10
+	"Stamenes" = 10
+	"Sardanapalos" = 10
+	"Kambyses #4" = 10
+	"Gobryas #4" = 10
+	"Hystanes" = 10
+	"Zopyros #2" = 30
+	"Nabonid" = 30
+	"Nebukadnezar #6" = 30
+	"Aracha" = 30
+
+
+}
+
+leader_names = {
+			Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
+			Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
+			Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur 
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

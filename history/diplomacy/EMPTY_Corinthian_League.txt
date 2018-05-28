@@ -1,0 +1,163 @@
+#Greeks become vassals of MAcedon
+
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = ATH
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = BOE
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = PHC
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = LCS
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = COR
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = MEG
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = MLS
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = ELA
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = PHC
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = ELI
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = MES
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = ARC
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = EPD
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = ARG
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = KEP
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = AET
+	start_date = 416.1.1
+	end_date = 432.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = AIN
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = SIC
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = ACR
+	start_date = 416.1.1
+	end_date = 432.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = AIG
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = PAT
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = DYM
+	start_date = 416.1.1
+	end_date = 550.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = DAL
+	start_date = 416.1.1
+	end_date = 550.1.1
+}

@@ -1,0 +1,306 @@
+
+
+buy_food = {
+	category = economy
+	alert_index = 22
+	alert_tooltip = buy_food_tt
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	is_visible = {
+		has_global_flag = food_active
+		any_owned_province = { 
+			OR = {
+				base_tax = 1
+				base_production = 1
+			}
+		}
+		FROM = {
+			any_owned_province = { 
+				OR = {
+					base_tax = 1
+					base_production = 1
+				}
+			}
+			any_owned_province = { 
+				OR = {
+						trade_goods = fish
+						trade_goods = meat_animals
+						trade_goods = honey
+						trade_goods = grain
+						trade_goods = wine
+						trade_goods = spices
+						trade_goods = fruits
+						trade_goods = olive
+						trade_goods = rice
+						trade_goods = tea_good
+				}
+			}
+			NOT = { border_distance = { who = ROOT  distance = 600 } }
+		}
+	}
+	is_allowed = {
+			NOT = { war_with = FROM }
+			NOT = { trade_embargo_by = FROM }
+			FROM = { 
+				check_variable = { which = food_supplies value = 50 }  
+			}
+	}
+	on_accept = {
+		hidden_effect = {	# Just to be sure that flags are removed, before event triggers
+			FROM = {
+					change_variable = { which = food_supplies value = -50 }
+					add_treasury = 15
+								while = {
+									limit = {
+											check_variable = { which = food_supplies which = storage_capacity } 
+									}
+									set_variable = { which = food_supplies which = storage_capacity }
+								}
+			}
+					change_variable = { which = food_supplies value = 50 }
+					add_treasury = -15
+								while = {
+									limit = {
+											check_variable = { which = food_supplies which = storage_capacity } 
+									}
+									set_variable = { which = food_supplies which = storage_capacity }
+								}
+		}
+	}
+	on_decline = {
+			FROM = {
+					add_opinion = { who = ROOT modifier = food_not_sold }
+			}
+	}
+	ai_acceptance = {
+	
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 0.5 }
+		}
+		
+		add_entry = {
+			name = AMOUNT_FOOD
+			limit = {
+				FROM = {
+							check_variable = { which = food_supplies which = storage_25 } 
+					NOT = { check_variable = { which = food_supplies which = storage_50 }  }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+		
+		add_entry = {
+			name = AMOUNT_FOOD
+			limit = {
+				FROM = {
+							check_variable = { which = food_supplies which = storage_50 } 
+					NOT = { check_variable = { which = food_supplies which = storage_75 }  }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 60
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+		
+		add_entry = {
+			name = AMOUNT_FOOD
+			limit = {
+				FROM = {
+							check_variable = { which = food_supplies which = storage_75 } 
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+		
+		add_entry = {
+			name = ALLIED_NATION
+			limit = {
+				FROM = {
+					alliance_with = ROOT
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { which = ai_value value = 1 }
+		}
+		
+		
+		
+		# Negative Values ##########################################
+			
+		add_entry = {
+			name = HAS_RIVALRY_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = atittude_rivalry }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = HAS_HOSTILE_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_hostile }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = HAS_OUTRAGED_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_outraged }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = AMOUNT_FOOD
+			limit = {
+				FROM = { 
+					NOT = { check_variable = { which = food_supplies which = storage_25 }  }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = BASE_REJECTION
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		
+	}
+	
+	###################
+	
+	ai_will_do = {
+			factor = 1	
+				
+				modifier = {
+					factor = 2.0
+					NOT = { check_variable = { which = food_supplies which = storage_25 }
+				}
+				modifier = {
+					factor = 1.25
+							check_variable = { which = food_supplies which = storage_25 } 
+					NOT = { check_variable = { which = food_supplies which = storage_50 } }
+				}
+				modifier = {
+					factor = 0.0
+							check_variable = { which = food_supplies which = storage_50 } 
+					NOT = { check_variable = { which = food_supplies which = storage_75 } }
+				}
+				modifier = {
+					factor = 0.0
+							check_variable = { which = food_supplies which = storage_75 } 
+				}
+				
+				modifier = {
+					factor = 1.25
+					all_owned_province = { has_province_modifier = weather_dry } 
+				}
+				modifier = {
+					factor = 1.5
+						has_disaster_progress = { disaster = famine_disaster value = 1 }
+				}
+				modifier = {
+					factor = 2.0
+						has_disaster_progress = { disaster = famine_disaster value = 25 }
+				}
+				modifier = {
+					factor = 2.0
+						has_disaster_progress = { disaster = famine_disaster value = 50 }
+				}
+				modifier = {
+					factor = 5.0
+						has_disaster = famine_disaster
+				}
+				modifier = {
+					factor = 1.5
+						treasury = 80
+				}
+				modifier = {
+					factor = 0.75
+						NOT = { treasury = 40 }
+				}
+				modifier = {
+					factor = 0.5
+						NOT = { treasury = 10 }
+				}
+				modifier = {
+					factor = 0.5
+						num_of_loans = 2
+				}
+				modifier = {
+					factor = 0.5
+						num_of_loans = 5
+				}
+				modifier = {
+					factor = 0.5
+						num_of_loans = 10
+				}
+				modifier = {
+					factor = 1.5
+						is_month = 8
+						NOT = { is_month = 3 }
+				}
+				modifier = {
+					factor = 1.25
+						is_month = 3
+						NOT = { is_month = 6 }
+				}
+				modifier = {
+					factor = 0.5
+						FROM = { ai = no }
+				}
+				modifier = {
+					factor = 0.5
+						FROM = { ai = yes }
+						NOT = {
+							has_opinion = {
+								who = FROM
+								value = 25
+							}
+						}
+				}
+		}
+}

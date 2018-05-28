@@ -1,0 +1,9 @@
+government = league
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek
+primary_culture = ionic
+religion = greek_religion
+capital = 604
+religious_school = hellenic_type
+	

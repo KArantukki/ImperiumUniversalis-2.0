@@ -1,0 +1,120 @@
+ancestor_worship =
+{
+	prestige_decay = -0.025
+	global_unrest = -2
+	
+	allow = {
+		OR = {
+			religion = chinese_religion
+		}
+	}
+	sprite = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+heaven_worship =
+{
+	tolerance_own = 1
+	land_morale = 0.05
+	
+	allow = {
+		OR = {
+			religion = chinese_religion
+		}
+	}
+	sprite = 2
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+###### later ####
+
+confucianism =
+{
+	all_power_cost = -0.02
+	administrative_efficiency = 0.1
+	
+	allow = {
+		OR = {
+			has_unlocked_cult = confucianism
+			started_in = 240.1.1
+		}
+	}
+	sprite = 3
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+taoism =
+{
+	global_unrest = -2
+	yearly_corruption = -0.05
+	
+	allow = {
+		OR = {
+			has_unlocked_cult = taoism
+			started_in = 400.1.1
+		}
+	}
+	sprite = 4
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+legalism = 
+{
+	discipline = 0.05
+	stability_cost_modifier = -0.2
+	
+	allow = {
+		OR = {
+			has_unlocked_cult = legalism
+			started_in = 400.1.1
+		}
+	}
+	sprite = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+mohism =
+{
+	institution_spread_from_true_faith = 0.5
+	defensiveness = 0.25
+	
+	allow = {
+		OR = {
+			has_unlocked_cult = mohism
+			started_in = 300.1.1
+		}
+	}
+	sprite = 6
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+celestial_masters =
+{
+	global_unrest = -1
+	global_regiment_cost = -0.2
+	
+	allow = {
+		OR = {
+			has_unlocked_cult = celestial_masters
+			started_in = 800.1.1
+			has_country_flag = yellow_turban_revolt_flag
+		}
+	}
+	sprite = 7
+
+	ai_will_do = {
+		factor = 1
+	}
+}

@@ -1,0 +1,7 @@
+
+alliance = {
+	first = ANH
+	second = PRS
+	start_date = 195.1.1
+	end_date = 204.1.1
+}

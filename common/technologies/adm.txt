@@ -1,0 +1,391 @@
+monarch_power = ADM
+
+# applied when a country is ahead of time in this technology
+ahead_of_time = {
+	production_efficiency = 0.2
+	yearly_corruption = -0.05
+}
+
+# Pre-era techs
+technology = {
+	# Tech 0
+	year = 180 # 574 BC 
+	cattle_flock = yes
+	horse_breeder = yes
+	tribal_gathering = yes
+	warrior_tents = yes
+	despotic_monarchy = yes
+	oligarchic_monarchy = yes
+	classic_republic = yes
+}
+
+technology = {
+	# Tech 1
+	year = 190 # 564 BC  
+	production_efficiency 	=	0.05
+	gravel_road = yes
+}
+
+technology = {
+	# Tech 2
+	year = 205 
+	shrine = yes
+	allowed_idea_groups = 1
+}
+
+technology = {
+	# Tech 3
+	year = 220
+	max_states = 5
+	administrative_efficiency = 0.025
+}
+
+technology = {
+	# Tech 4
+	year = 235
+	production_efficiency 	=	0.05
+	small_water_irrigation = yes
+	quarry = yes
+	craftsman = yes
+	
+}
+
+technology = {
+	# Tech 5
+	year = 250
+	#development_efficiency = 0.025
+	may_support_rebels = yes
+	herbalist = yes
+	small_grain_depot = yes
+	
+
+}
+
+technology = {
+	# Tech 6
+	year = 265
+	allowed_idea_groups = 2
+	max_states = 5
+	library = yes
+}
+
+technology = {
+	# Tech 7
+	year = 280
+	administrative_efficiency = 0.025
+	#development_efficiency = 0.025
+	taxman = yes
+	goldsmith = yes
+}
+
+technology = {
+	# Tech 8
+
+	year = 295
+	small_temple = yes
+	small_townhall = yes
+}
+
+technology = {
+	# Tech 9
+	year = 310
+	dyer = yes
+	max_states = 5
+}
+
+technology = {
+	# Tech 10
+	year = 325
+	paved_road = yes
+	imperial_palace = yes
+	allowed_idea_groups = 3
+}
+
+technology = {
+	# Tech 11
+	year = 340
+	#development_efficiency = 0.025
+	big_water_irrigation = yes
+	small_mine = yes
+	small_workshop = yes
+}
+
+technology = {
+	# Tech 12
+	year = 355
+	production_efficiency 	=	0.05
+	max_states = 5
+}
+
+technology = {
+	# Tech 13
+	year = 370
+	administrative_efficiency = 0.025
+	medicus = yes
+}
+
+technology = {
+	# Tech 14
+	year = 385
+	great_temple = yes
+	allowed_idea_groups = 4
+}
+
+technology = {
+	# Tech 15
+	year = 400
+	big_townhall = yes
+	great_library = yes
+}
+
+technology = {
+	# Tech 16
+	year = 415
+	may_force_march = yes
+	mathematician_academy = yes
+	
+}
+
+technology = {
+	# Tech 17
+	year = 430
+	allowed_idea_groups = 5
+	max_states = 5
+}
+
+technology = {
+	# Tech 18
+	year = 445
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 19
+	year = 460	
+	tax_collector = yes
+}
+
+technology = {
+	# Tech 20
+	year = 475
+	big_grain_depot = yes
+	
+}
+
+technology = {
+	# Tech 21
+	year = 490
+	government_palace = yes
+	artisan_district = yes
+	big_mine = yes
+	big_estate = yes
+	allowed_idea_groups = 6
+}
+
+technology = {
+	# Tech 22
+	year = 520
+	max_states = 5
+
+}
+
+technology = {
+	# Tech 23
+	year = 535
+	administrative_efficiency = 0.025
+	#development_efficiency = 0.025
+	max_states = 5
+}
+
+technology = {
+	# Tech 24
+	year = 550
+	hospital = yes
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 25
+	year = 565
+	imperial_road = yes
+	allowed_idea_groups = 7
+}
+
+technology = {
+	# Tech 26
+	year = 580
+	government_district = yes
+	max_states = 5
+
+}
+
+technology = {
+	# Tech 27
+	year = 595
+	production_efficiency 	=	0.05
+}
+
+technology = {
+	# Tech 28
+	year = 610
+	#development_efficiency = 0.025
+	max_states = 5
+}
+
+technology = {
+	# Tech 29
+	year = 625
+	allowed_idea_groups = 8
+
+}
+
+technology = {
+	# Tech 30
+	year = 640
+	production_efficiency 	=	0.05
+
+}
+
+technology = {
+	# Tech 31
+	year = 655
+	administrative_efficiency = 0.025
+
+}
+
+technology = {
+	# Tech 32
+	year = 670
+	#development_efficiency = 0.025
+
+}
+
+technology = {
+	# Tech 33
+	year = 685
+	allowed_idea_groups = 9
+
+}
+
+technology = {
+	# Tech 34
+	year = 700
+	max_states = 5
+
+}
+
+technology = {
+	# Tech 35
+	year = 715
+	#development_efficiency = 0.05
+
+}
+
+technology = {
+	# Tech 36
+	year = 730
+	production_efficiency 	=	0.05
+
+}
+
+technology = {
+	# Tech 37
+	year = 745
+	administrative_efficiency = 0.025
+	allowed_idea_groups = 10
+
+}
+
+technology = {
+	# Tech 38
+	year = 760
+	#development_efficiency = 0.05
+	max_states = 5
+
+}
+
+technology = {
+	# Tech 39
+	year = 775
+	production_efficiency 	=	0.05
+
+}
+
+technology = {
+	# Tech 40
+	year = 790
+
+}
+
+technology = {
+	# Tech 41
+	year = 805
+	production_efficiency 	=	0.1
+	administrative_efficiency = 0.025
+
+}
+
+technology = {
+	# Tech 42
+	year = 820
+	max_states = 5
+
+}
+
+technology = {
+	# Tech 43
+	year = 835
+	#development_efficiency = 0.025
+
+}
+
+technology = {
+	# Tech 44
+	year = 850
+	#development_efficiency = 0.025
+
+}
+
+technology = {
+	# Tech 45
+	year = 865
+	administrative_efficiency = 0.025
+
+}
+
+technology = {
+	# Tech 46
+	year = 880
+	#development_efficiency = 0.05
+	max_states = 5
+
+}
+
+technology = {
+	# Tech 47
+	year = 895
+	production_efficiency 	=	0.05
+
+}
+
+technology = {
+	# Tech 48
+	year = 910
+
+}
+
+technology = {
+	# Tech 49
+	year = 925
+	#development_efficiency = 0.05
+
+}
+
+technology = {
+	# Tech 50
+	year = 940
+	production_efficiency 	=	0.15
+	administrative_efficiency = 0.025
+	#development_efficiency = 0.0255
+
+}

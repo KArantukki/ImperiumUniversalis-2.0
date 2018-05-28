@@ -1,0 +1,104 @@
+country_decisions = {
+	 build_the_pharos = {
+		potential = {
+			culture_group = hellenic
+			owns = 1752
+			1752 = {
+				NOT = { has_great_project = pharos }
+			}
+			NOT = { started_in = 460.1.1 }
+			NOT = { has_global_flag = alexandria_pharos_built }
+		}
+		allow = {
+			treasury = 800
+			OR = {
+				full_idea_group = engineering_ideas
+				dip_tech = 18
+			}
+			1752 = {
+			NOT = { has_construction = building } } 
+		}
+		effect = {
+			#set_global_flag = alexandria_pharos_built
+			add_treasury = -800
+			1752 = {
+				add_great_project = pharos
+			}
+		}
+		ai_importance = 100	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	 build_the_libary = {
+		potential = {
+			TAG = PTO
+			NOT = { started_in = 460.1.1 }
+			NOT = { has_global_flag = libary_of_alexandria_built }
+			NOT = { 1752 = { 
+							has_province_modifier = alexandria_libary
+							} } 
+			NOT = {
+					1752 = { 
+							has_building = great_library
+							} 
+			}				
+			owns = 1752
+		}
+		allow = {
+			treasury = 350
+			OR = {
+				full_idea_group = scholars_ideas
+				adm_tech = 16
+			}
+			1752 = {
+			NOT = { has_construction = building } 
+			}
+			
+		}
+		effect = {
+			add_treasury = -350
+			set_global_flag = libary_of_alexandria_built
+			add_prestige = 50
+				1752 = {
+					add_province_modifier = {
+						name = alexandria_libary
+						duration = -1
+					}
+				add_building_construction = {
+						building = great_library
+						speed = 1 # 100% of original speed
+						cost = 0 # 100% of original cost
+					}
+				}
+		}
+		ai_importance = 200	
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+	 form_egypt_nation = {
+		major = yes
+		potential = {
+			OR = {
+			TAG = MEM
+			TAG = THB
+			}
+		}
+		allow = {
+			NOT = { exists = EGY }
+			is_at_war =  no
+			
+			lower_egypt_region = { type = all owned_by = ROOT }
+			upper_egypt_region = { type = all owned_by = ROOT }
+		}
+		effect = {
+			change_tag = EGY
+			}
+		ai_importance = 500	
+		ai_will_do = {
+			factor = 400
+			}
+		}
+}

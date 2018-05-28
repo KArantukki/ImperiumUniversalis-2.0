@@ -1,0 +1,94 @@
+lack_of_control = {
+	potential = {
+		num_of_cities = 25
+		NOT = { has_any_disaster = yes }
+		government_rank = 2
+	}
+
+	
+	
+	can_start = {
+			average_autonomy = 50
+			NOT = { manpower_percentage = 0.5 }
+			NOT = { stability = 0 }
+		}
+	
+	
+	can_stop = {
+		NOT = { average_autonomy = 50 }
+		manpower_percentage = 0.5
+		stability = 1
+		}
+		
+	
+	
+	progress = {
+		
+		
+		modifier = {
+			factor = 1
+			average_autonomy = 50
+		}		
+		modifier = {
+			factor = 1
+			average_autonomy = 53
+		}		
+		modifier = {
+			factor = 1
+			average_autonomy = 56
+		}
+		modifier = {
+			factor = 1
+			average_autonomy = 59
+		}
+		modifier = {
+			factor = 2
+			average_autonomy = 62
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}	
+		modifier = {
+			factor = 1
+			NOT = { manpower_percentage = 0.25 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { manpower_percentage = 0.1 }
+		}			
+	}
+	
+	
+	
+	can_end = {
+		NOT = { average_autonomy = 33 }
+		manpower_percentage = 0.5
+		stability = 1
+		custom_trigger_tooltip = {
+			tooltip = disaster_active_for_10_years_tooltip
+			had_country_flag = { flag = had_lack_of_control days = 3650 }
+		}
+	}
+	
+
+	modifier = {	
+		global_unrest = 2
+		stability_cost_modifier = 0.25
+		garrison_size = -0.50
+	}	
+	
+	
+	on_start = lack_of_control.1
+	on_end = lack_of_control.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			
+		}
+	}
+}
+

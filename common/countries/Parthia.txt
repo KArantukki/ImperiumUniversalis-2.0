@@ -1,0 +1,69 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 142 86 47 }
+
+historical_idea_groups = {
+	cavalry_ideas
+	economy_ideas
+	trade_ideas
+	administrative_ideas
+	quantity_ideas
+	imperial_government_ideas
+	influence_ideas
+	offensive_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Tiridates" = 30
+	"Arsaces" = 30
+	"Phriapatius" = 30
+	"Phraates" = 40
+	"Mithridates" = 40
+	"Bacasis" = 40
+	"Artabanus" = 40
+	"Artabanus" = 40
+	"Gotarzes" = 40
+	"Orodes" = 40
+	"Sanatruces" = 40
+	"Pacorus" = 40
+	"Farhad" = 15
+	"Godarz" = 15
+	"Mermer" = 15
+	"Pakor" = 15
+	"Surena" = 15
+	"Tiridata" = 15
+	"Walagash" = 15
+	      
+	
+	"Yesfir #1" = -1
+	"Zareen #1" = -1
+	"Zhaleh #1" = -1
+	"Nahid #1" = -1
+	"Banu #1" = -1
+	"Esta #1" = -1
+	"Jaleh #1" = -1
+}
+
+leader_names = {
+		 	"of Canatha" "of Qumis" "of Simpsimidi" "of Tabus" "of Semina" "of Apamea" "of Choana" "of Darium" "of Parthia" "the Wise" 
+			"the Strong" "of Ispahbudhan" "of Varaz" "of Karen" "of Mihran" "of Spandiyadh" "of Zik" "of Surek" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Golden Riders" "Sun Warriors" "Black Warband" "Army of $PROVINCE$" 
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

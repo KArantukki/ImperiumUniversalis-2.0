@@ -1,0 +1,120 @@
+
+dependency = {
+	subject_type = "tributary_state"
+	first = MDI
+	second = SAG
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MDI
+	second = PRT
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MDI
+	second = ARI
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MDI
+	second = DRN
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MDI
+	second = KRM
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MDI
+	second = PRS
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MDI
+	second = ANH
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = MDI
+	second = MD1
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = MDI
+	second = MD2
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = MDI
+	second = MD3
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = MDI
+	second = MD4
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = MDI
+	second = MD5
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = MDI
+	second = MD6
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MDI
+	second = CH2
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MDI
+	second = MNN
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MDI
+	second = ARM
+	start_date = 190.1.1
+	end_date = 204.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MDI
+	second = SUS
+	start_date = 190.1.1
+	end_date = 204.1.1
+}

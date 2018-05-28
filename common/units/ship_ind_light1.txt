@@ -1,0 +1,9 @@
+#Galley
+type = galley
+unit_type = indian
+
+hull_size = 20
+base_cannons = 30 
+sail_speed = 9
+
+sprite_level = 1

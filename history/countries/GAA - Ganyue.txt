@@ -1,0 +1,7 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = ganyue
+religion = wuism
+capital = 2954
+technology_group = far_eastern

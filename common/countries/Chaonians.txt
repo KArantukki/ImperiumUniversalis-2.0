@@ -1,0 +1,74 @@
+#Country Name: Please see filename.
+
+graphical_culture = hellenicgfx
+
+color = { 163 116 145 }
+
+historical_idea_groups = {
+	
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+
+	"Admetus" = 20
+	"Tharrhypas" = 20
+	"Alcetas" = 20
+	"Neoptolemos" = 20
+	"Arybbas" = 20
+	"Alexander" = 20
+	"Aeacides" = 20
+	"Alcetas" = 15
+	"Pyrrhus" = 10
+	"Neoptolemus" = 5
+	"Molossus" = 5
+	"Alcon" = 5
+	"Eidymmas" = 5
+	"Arybbas" = 5
+	"Alexander" = 5
+	"Kephalos" = 5
+	"Photius" = 5
+	"Doropsos" = 5
+	"Antanor" = 5
+	"Peukestos" = 5
+	"Myrtilos" = 5
+	"Boiskos" = 5
+	"Lykidas" = 5
+	"Charops" = 5
+	"Poionos" = 5
+	"Xenarchos" = 5
+	"Milon" = 5
+	"Alkimos" = 5
+	"Simakos" = 5
+	"Alkemachos" = 5
+	"Eucharon" = 5
+	"Gallithos" = 5
+
+	"Olympias" = -1
+	"Deidamia" = -1
+	"Laodamia" = -1
+	"Kallidike" = -1
+	"Echenika" = -1
+	"Sokratis" = -1
+
+
+}
+
+leader_names = {
+		"of Chaonia" "the Chaonian" "of Epirus" "of Phoenice" "of Passaron" "the Old" "of Dodona" "" "" "" "" "" "" ""		
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

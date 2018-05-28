@@ -1,0 +1,825 @@
+archaic_age = {
+	start = 150
+	
+	can_start = {
+		always = yes
+	}
+	
+	religious_conflicts = yes
+	
+	absolutism = {
+		stability = 1
+		strengthen_government = 2
+		
+		debase_currency = -1
+		war_exhaustion = -1
+	}
+
+	objectives = {		
+		obj_metallurgy_embraced = {
+			has_institution = metallurgy
+		}	
+		obj_large_city = {
+			any_owned_province = {
+				has_owner_culture = yes
+				base_production = 8
+			}
+		}	
+		obj_gold_and_silver = {
+			any_owned_province = {
+				OR = {
+					trade_goods = gold
+					trade_goods = silver
+				}
+			}
+			gold_income = 2
+		}
+		obj_zoroastrianism = {
+			allow = { NOT = { culture_group = hellenic } }
+			OR = {
+				religion = zurvanism
+				secondary_religion = zurvanism
+				religion = zoroastrianism
+				secondary_religion = zoroastrianism
+			}
+		}
+		obj_olympic_winner = {
+			allow = { culture_group = hellenic }
+			custom_trigger_tooltip = {
+				tooltip = won_1_olympic_game
+				has_country_flag = won_olympics_1_times
+			}
+			custom_trigger_tooltip = {
+				tooltip = won_2_olympic_game
+				has_country_flag = won_olympics_2_times
+			}
+			custom_trigger_tooltip = {
+				tooltip = won_3_olympic_game
+				has_country_flag = won_olympics_3_times
+			}
+		}
+		obj_democracy = {
+			republican_tradition = 95
+			OR = {
+				government = greek_polis_democracy
+				government = punic_republic
+				government = classic_republic
+				government = league
+			}
+		}
+		obj_big_fleet = {
+			num_of_heavy_ship = 100
+		}
+		obj_pile_of_gold = {
+			treasury = 2500
+			monthly_income = 50
+		}
+	}	
+
+	abilities = {
+	ab_urbanization = {
+			modifier = {
+				global_tax_modifier = 0.15
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_archaic_architecture = {
+			modifier = {
+				build_cost = -0.15
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_advanced_production = {
+			modifier = {
+				global_trade_goods_size_modifier = 0.15
+			}
+			ai_will_do = {
+				factor = 2.5
+			}			
+		}
+	ab_trade_ships = {
+			modifier = {
+				global_ship_trade_power = 0.33
+			}
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					NOT = {	num_of_ports = 5 }
+						}
+				modifier = {
+					factor = 0
+					NOT = {	trade_income_percentage = 0.33 }
+						}
+					}			
+		}
+	ab_citizen_army = {
+			modifier = {
+				amount_of_banners = 0.33
+			}
+			ai_will_do = {
+				factor = 5
+					}			
+		}
+	ab_chariots = {
+			modifier = {
+				cavalry_power = 0.15
+			}
+			ai_will_do = {
+				factor = 5
+				modifier = {
+					factor = 0.25
+						NOT = {	
+								has_global_modifier_value = {
+									which = cavalry_power
+									value = 0.1
+								}
+							}
+						}
+					}			
+		}
+	ab_peloponnesian_league = {
+			allow = {
+				tag = SP1
+			}
+			modifier = {
+				diplomatic_reputation = 2
+				diplomatic_upkeep = 8
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_persian_empire = {
+			allow = {
+				tag = PSE
+			}
+			modifier = {
+				years_of_nationalism = -20
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_athenian_democracy = {
+			allow = {
+				tag = ATH
+			}
+			modifier = {
+				stability_cost_modifier = -0.33
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_syracusian_tyrannis = {
+			allow = {
+				tag = SYR
+			}
+			modifier = {
+				core_creation = -0.25
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_southern_border = {
+			allow = {
+				tag = CHU
+			}
+			modifier = {
+				global_regiment_cost = -0.2
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+		
+	}
+}
+
+classical_age = {
+	start = 290
+	
+	religious_conflicts = yes
+	
+	absolutism = {
+		stability = 1
+		strengthen_government = 2
+		
+		debase_currency = -1
+		war_exhaustion = -1
+	}
+	
+	can_start = {
+		any_country = {
+			has_institution = law_system
+		}
+	}
+	
+	
+	objectives = {		
+		obj_physical_science_embraced = {
+			has_institution = physical_science
+		}			
+		obj_great_ruler = {
+			has_regency = no
+			ADM = 5
+			DIP = 5
+			MIL = 5
+		}		
+		obj_philosopher = {
+			philosopher_adv = 3
+		}	
+		obj_trade_power = {
+			home_trade_node = { 	highest_value_trade_node = yes  }
+			home_trade_node = { 	is_strongest_trade_power = ROOT }
+		}	
+		obj_scholars_ideas = {
+			full_idea_group = scholars_ideas
+		}	
+		obj_indian_religion = {
+			allow = {
+				capital_scope = {
+					OR = {
+						continent = india
+						continent = china
+					}
+				}
+			}
+			OR = {
+				religion = buddhism
+				secondary_religion = buddhism
+				religion = jain
+				secondary_religion = jain
+				religion = ajivika
+				secondary_religion = ajivika
+			}
+		}
+		obj_rule_over_greece = {
+			allow = {
+				capital_scope = {
+					OR = {
+						continent = sarmatia
+						continent = persia
+						continent = asia
+						continent = africa
+						continent = europe
+					}
+				}
+			}
+			greek_region = { type = all country_or_subject_holds = ROOT }
+			macedonia_region = { type = all country_or_subject_holds = ROOT }
+		}
+		obj_academic_master = {
+			capital_scope = { has_building = mathematician_academy }
+			capital_scope = { has_building = philosophers_academy }
+			capital_scope = { has_building = military_academy }
+		}
+	}	
+
+	abilities = {
+	ab_famous_court = {
+			modifier = {
+				advisor_cost = -0.33
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_melting_pot = {
+			modifier = {
+				technology_cost = -0.1
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_army_reforms = {
+			modifier = {
+				yearly_army_professionalism = 0.01
+			}
+			ai_will_do = {
+				factor = 10
+			}			
+		}
+	ab_promote_traders = {
+			modifier = {
+				trade_efficiency = 0.15
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_mercenary_warfare = {
+			modifier = {
+				mercenary_cost = -0.2
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_land_reforms = {
+			modifier = {
+				state_maintenance_modifier = -0.5
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_roman_ambitions = {
+			allow = {
+				tag = ROM
+			}
+			modifier = {
+				core_creation = -0.5
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_mauryan_ambitions = {
+			allow = {
+				tag = MAU
+			}
+			effect = {
+				if = {
+					limit = { 
+						NOT = { started_in = 432.1.1 } 
+						government = monarchy
+					}
+					define_ruler = {
+						name = "Chandragupta"
+						dynasty = "Maurya"
+						adm = 5
+						dip = 5
+						mil = 5
+						fixed = yes
+					}
+					define_heir = {
+						claim = 90
+						dynasty = Maurya
+						name = "Bindusara"
+						adm = 4
+						dip = 4
+						mil = 4
+					}
+				}
+			}
+			modifier = {
+				all_power_cost = -0.05
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_rise_of_macedon = {
+			allow = {
+				tag = MAC
+			}
+			effect = {
+				set_country_flag = rise_of_macedon_ability
+			}
+			modifier = {
+				shock_damage = 0.15
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_carthagian_fleet = {
+			allow = {
+				tag = CAR
+			}
+			modifier = {
+				ship_power_propagation = 0.25
+				placed_merchant_power = 5.0
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_patronize_scholars = {
+			allow = {
+				tag = QII
+			}
+			modifier = {
+				idea_cost = -0.25
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	}
+}
+
+
+
+
+hellenistic_age = {
+	start = 420
+	
+	can_start = {
+		any_country = {
+			has_institution = classical_philosophy
+		}
+	}
+	religious_conflicts = yes
+	
+	absolutism = {
+		stability = 1
+		strengthen_government = 2
+		
+		debase_currency = -1
+		war_exhaustion = -1
+	}
+
+	objectives = {
+		obj_total_development_1000 = {
+			total_development = 800
+		}
+		obj_world_wonder = {
+			OR = {
+				any_owned_province = { has_great_project = zeus_statue }
+				any_owned_province = { has_great_project = coloss }
+				any_owned_province = { has_great_project = pharos }
+				any_owned_province = { has_great_project = artemis_temple }
+				any_owned_province = { has_great_project = great_mausoleum }
+				any_owned_province = { has_province_modifier = gizeh }
+				any_owned_province = { has_province_modifier = gardens_of_babylon }
+			}
+		}
+		obj_rich_in_tradition = {
+			OR = {
+				army_tradition = 90
+				navy_tradition = 90
+			}
+		}
+		obj_luxury_goods = {
+			OR = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = { 
+							trade_goods = marble
+							trade_goods = dyes
+							trade_goods = pearls
+							trade_goods = jade }
+					}
+					amount = 8
+				}
+			}
+		}
+		obj_beacon_of_science = {
+			capital_scope = { development = 30 }
+			capital_scope = { has_building = great_library }
+		}
+		obj_full_authority = {
+			absolutism = 50
+		}
+		obj_loyal_ally = {
+			num_of_trusted_allies = 1
+		}
+	}	
+
+	abilities = {
+	ab_enforced_authority = {
+			modifier = {
+				autonomy_change_time = -0.75
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_organized_army = {
+			modifier = {
+				discipline = 0.05
+				army_tradition_decay = -0.01
+			}
+			ai_will_do = {
+				factor = 10
+			}			
+		}
+	ab_armored_cavalry = {
+			modifier = {
+				cav_to_inf_ratio = 0.15
+				cavalry_power = 0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}			
+		}
+	ab_benevolent_overlord = {
+			modifier = {
+				reduced_liberty_desire = 25
+			}
+			ai_will_do = {
+				factor = 0
+			}			
+		}
+	ab_satrapies = {
+			modifier = {
+				vassal_forcelimit_bonus = 1.0
+			}
+			rule = {
+				can_transfer_vassal_wargoal = yes
+			}
+			ai_will_do = {
+				factor = 0
+			}			
+		}
+	ab_greek_settlers = {
+			allow = {
+				OR = {
+					TAG = SEL
+					TAG = PTO
+					TAG = GBK
+					TAG = IGK
+					TAG = ANE
+				}
+			}
+			effect = {
+				capital_scope = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+			modifier = {
+				manpower_recovery_speed = 0.33
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_return_of_pyrrhus = {
+			allow = {
+				TAG = EPI
+			}
+			effect = {
+				if = {
+					limit = { 
+						NOT = { started_in = 451.1.1 } 
+						government = monarchy
+					}
+					define_ruler = {
+						name = "Pyrrhus I"
+						adm = 4
+						dip = 4
+						mil = 6
+						fixed = yes
+					}
+					define_ruler_to_general = {
+						fire = 6
+						shock = 6
+						manuever = 3
+						siege = 3
+					}
+				}
+			}
+			modifier = {
+				global_regiment_cost = -0.1
+				reinforce_cost_modifier = -0.50
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_unification_wars = {
+			allow = {
+				TAG = QIN
+			}
+			modifier = {
+				land_morale = 0.2
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_mithridatic_dynasty = {
+			allow = {
+				TAG = PON
+			}
+			modifier = {
+				fort_maintenance_modifier = -0.5
+				defensiveness = 0.25
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_king_of_numidia = {
+			allow = {
+				OR = {
+					TAG = MYL
+					TAG = NUM
+				}
+				
+			}
+			effect = {
+				if = {
+					limit = { is_tribal = yes }
+					change_government = despotic_monarchy
+				}
+			}
+			modifier = {
+				movement_speed = 0.05
+				cavalry_flanking = 0.15
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	ab_hellenization_of_odrysia = {
+			allow = {
+				OR = {
+					TAG = ODR
+					AND = {
+						TAG = THR
+						primary_culture = odrysian
+					}
+				}
+			}
+			effect = {
+				if = {
+					limit = { is_tribal = yes }
+					change_government = despotic_monarchy
+				}
+			}
+			modifier = {
+				technology_cost = -0.1
+			}
+			ai_will_do = {
+				factor = 25
+			}			
+		}
+	}
+	
+}
+
+imperial_age = {
+	start = 710
+	
+	can_start = {
+		is_year = 650
+	}
+	
+	religious_conflicts = yes
+	
+	absolutism = {
+		stability = 1
+		strengthen_government = 2
+		
+		debase_currency = -1
+		war_exhaustion = -1
+	}
+	
+	objectives = {		
+		obj_empire_rank = {
+			government_rank = 5
+		}	
+		obj_unwavering = {
+			NOT = { num_of_loans = 1 }
+			NOT = { corruption = 1 }
+			has_any_disaster = no
+			OR = {
+				legitimacy = 100
+				republican_tradition = 100
+			}
+		}	
+		obj_greatpower = {
+			is_great_power = yes
+		}
+		obj_great_capital = {
+			capital_scope = { has_building = imperial_palace }
+			capital_scope = { has_building = palace_garden }
+			OR = {
+				capital_scope = { has_building = military_monument }
+				capital_scope = { has_building = naval_monument }
+			}
+		}
+		obj_megacity = {
+			any_owned_province = { development = 50 }
+		}
+		obj_christian = {
+			religion = christian
+		}
+		obj_huge_army = {
+			army_size = 1000
+		}
+	}	
+
+	abilities = {
+	ab_imperial_government = {
+			modifier = {
+				yearly_absolutism = 0.2
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_testudo_formation = {
+			modifier = {
+				fire_damage_received = -0.1
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_garrison_towns = {
+			modifier = {
+				fort_maintenance_modifier = -0.1
+				garrison_size = 0.25
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_grand_fleet = {
+			modifier = {
+				global_naval_engagement_modifier = 0.2
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_expanded_trade_policy = {
+			modifier = {
+				merchants = 1
+				global_trade_power = 0.05
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_cultural_assimilation = {
+			modifier = {
+				culture_conversion_cost = -0.2
+				global_missionary_strength = 0.01
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_army_engineers = {
+			modifier = {
+				siege_ability = 0.2
+			}
+			ai_will_do = {
+				factor = 5
+			}			
+		}
+	ab_parthian_horsemanship = {
+			allow = {
+				tag = PRT
+			}
+			modifier = {
+				cavalry_flanking = 0.1
+				cavalry_power = 0.1
+			}
+			ai_will_do = {
+				factor = 15
+			}			
+		}
+	ab_dacian_army = {
+			allow = {
+				tag = DAC
+			}
+			modifier = {
+				global_regiment_cost = -0.15
+				global_manpower_modifier = 0.25
+			}
+			ai_will_do = {
+				factor = 15
+			}			
+		}
+	ab_kushan_empire = {
+			allow = {
+				tag = TOC
+			}
+			modifier = {
+				tolerance_heathen = 3
+				tolerance_heretic = 3
+				tolerance_own = 2
+			}
+			ai_will_do = {
+				factor = 15
+			}			
+		}
+	ab_son_of_heaven = {
+			allow = {
+				tag = ICH
+			}
+			modifier = {
+				yearly_absolutism = 0.25
+				legitimacy = 1
+			}
+			ai_will_do = {
+				factor = 15
+			}			
+		}
+	}
+}

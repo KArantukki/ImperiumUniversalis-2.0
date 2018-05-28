@@ -1,0 +1,92 @@
+country_decisions = {
+	 
+	 form_sicily_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = SCI }
+			NOT = { TAG = MHE }
+			NOT = { TAG = HEL }
+			primary_culture = italiote
+			OR = {
+				capital_scope = { area = western_sicilia_area	}
+				capital_scope = { area = northern_sicilia_area	}
+				capital_scope = { area = eastern_sicilia_area	}
+			}
+		}
+		allow = {
+			is_at_war =  no
+			western_sicilia_area = { type = all owned_by = ROOT }
+			northern_sicilia_area = { type = all owned_by = ROOT }
+			eastern_sicilia_area = { type = all owned_by = ROOT }
+		}
+		effect = {
+			change_tag = SCI
+			add_prestige = 50
+			every_province = {
+						limit = {	is_core = CAR
+									OR = {
+									area = western_sicilia_area
+									area = northern_sicilia_area
+									area = eastern_sicilia_area
+									}
+						}
+									remove_core = CAR
+					}
+				if = {
+					limit = { NOT = { government = monarchy }
+					}
+					change_government = league
+					else = { change_government = oligarchic_monarchy }
+				}
+				if = {
+					limit = { NOT = { government_rank = 3 } }
+					set_government_rank = 3
+				}
+			}
+		ai_importance = 100	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	 form_greater_greece_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = MHE }
+			NOT = { TAG = HEL }
+			primary_culture = italiote
+		}
+		allow = {
+			is_at_war =  no
+			owns_core_province = 251
+			owns_core_province = 245
+			owns_core_province = 244
+			owns_core_province = 242
+			owns_core_province = 238
+		}
+		effect = {
+				change_tag = MHE
+				add_prestige = 50
+				magna_graecia = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = MHE
+				}
+				if = {
+					limit = { NOT = { government = monarchy }
+					}
+					change_government = league
+					else = { change_government = oligarchic_monarchy }
+				}
+				if = {
+					limit = { NOT = { government_rank = 3 } }
+					set_government_rank = 3
+				}
+			}
+			
+		ai_importance = 20
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

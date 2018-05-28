@@ -1,0 +1,439 @@
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   LEVEL 1                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+
+entity = {
+	name = "italicgfx_INFANTRY_2"
+	pdxmesh = "italicgfx_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+
+	attach = { 
+		CATRigRArmPalm = "samnite_shield" 
+		spear_bone = "samnite_spear" 
+	}
+}
+entity = {
+	name = "alt_italic_INFANTRY_2"
+	pdxmesh = "italicgfx_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "illyrian_spear" 
+		CATRigRArmPalm = "italic_shield" 
+	}
+}
+entity = {
+	name = "ROM_INFANTRY_2"
+	pdxmesh = "ROM_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+
+	attach = { 
+		CATRigRArmPalm = "rep_shield" 
+		CATRigLArmPalm = "gladius" 
+	}
+}
+entity = {
+	name = "ETR_INFANTRY_2"
+	pdxmesh = "ETR_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "punic_spear" 
+		CATRigRArm2 = "etruscan_shield"
+	}
+}
+
+entity = {
+	name = "CPU_INFANTRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "SAB_INFANTRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "PIC_INFANTRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "VOL_INFANTRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "IAU_INFANTRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "NUA_INFANTRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "SII_INFANTRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "SCC_INFANTRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "BRV_INFANTRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+
+entity = {
+	name = "ETR_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZTA_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVE_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVL_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVZ_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZPU_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZPE_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVT_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZRI_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZAR_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "PSA_INFANTRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+
+entity = {
+	name = "RRS_INFANTRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1C_INFANTRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1O_INFANTRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1R_INFANTRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1A_INFANTRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1L_INFANTRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "LAT_INFANTRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "RRO_INFANTRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "ROI_INFANTRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   CAVALRY                                               #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "italicgfx_CAVALRY_2"
+	clone = "italicgfx_INFANTRY_2"
+}
+entity = {
+	name = "CPU_CAVALRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "SAB_CAVALRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "PIC_CAVALRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "VOL_CAVALRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "IAU_CAVALRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "NUA_CAVALRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "SII_CAVALRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "SCC_CAVALRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "BRV_CAVALRY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "ROM_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "RRS_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1C_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1O_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1R_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1A_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1L_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "LAT_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "RRO_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "ROI_CAVALRY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "ETR_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZTA_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVE_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVL_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVZ_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZPU_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZPE_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVT_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZRI_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZAR_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "PSA_CAVALRY_2"
+	clone = "ETR_INFANTRY_2"
+}
+###################################################################################################################
+#####                                                                                                         #####
+#####                                                   ARTILLERY                                             #####
+#####                                                                                                         #####
+###################################################################################################################
+
+entity = {
+	name = "italicgfx_ARTILLERY_2"
+	clone = "italicgfx_INFANTRY_2"
+}
+entity = {
+	name = "CPU_ARTILLERY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "SAB_ARTILLERY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "PIC_ARTILLERY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "VOL_ARTILLERY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "IAU_ARTILLERY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "NUA_ARTILLERY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "SII_ARTILLERY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "SCC_ARTILLERY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "BRV_ARTILLERY_2"
+	clone = "alt_italic_INFANTRY_2"
+}
+entity = {
+	name = "ROM_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "RRS_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1C_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1O_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1R_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1A_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "R1L_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "ROI_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "LAT_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "RRO_ARTILLERY_2"
+	clone = "ROM_INFANTRY_2"
+}
+entity = {
+	name = "ETR_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZTA_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVE_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVL_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVZ_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZPU_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZPE_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZVT_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZRI_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "ZAR_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}
+entity = {
+	name = "PSA_ARTILLERY_2"
+	clone = "ETR_INFANTRY_2"
+}

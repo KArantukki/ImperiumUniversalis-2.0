@@ -1,0 +1,10 @@
+government = tribal_federation
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = drangian
+religion = zoroastrianism
+capital = 2073
+	
+add_liberty_desire = -25
+300.1.1 = { government = despotic_monarchy}

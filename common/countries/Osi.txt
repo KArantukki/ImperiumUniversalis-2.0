@@ -1,0 +1,154 @@
+#Country Name: Please see filename.
+
+graphical_culture = celticgfx
+
+color = { 5 130 130 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	superior_religious_ideas
+	economy_ideas
+	domestic_government_ideas
+	scholars_ideas
+	spy_ideas
+}
+}
+
+
+monarch_names = { 
+"Monunios" = 10
+"Mytilos" = 10
+"Ballaios" = 10
+"Genthios" = 10
+"Bardylis" = 10
+"Acco" = 10
+"Ambiorix" = 10
+"Cassivellaunus" = 10
+"Cavarinus" = 10
+"Cingetorix" = 10
+"Commius" = 10
+"Convictolitavis" = 10
+"Critognatus" = 10
+"Diviciacus" = 10
+"Eporedorix" = 10
+"Indutiomarus" = 10
+"Litavicus" = 10
+"Orgetorix" = 10
+"Tasgetius" = 10
+"Vercingetorix" = 10
+"Viridomarus" = 10
+"Luerius" = 10
+"Bituitus" = 10
+"Caltillus" = 10
+"Gobannito" = 10
+"Congentiatus" = 10
+"Vercassivellaunos" = 10
+"Epasnactus" = 10
+"Camulogenus" = 10
+"Catuvolcus" = 10
+"Sedullos" = 10
+"Divicus" = 10
+"Dumnorix" = 10
+"Cotus" = 10
+"Liscus" = 10
+"Cavarillus" = 10
+"Valetiacus" = 10
+"Catamantaloedes" = 10
+"Casticus" = 10
+"Galat" = 10
+"Tasius" = 10
+"Cesarus" = 10
+"Caucenus" = 10
+"Viriathus" = 10
+"Tautalus" = 10
+"Minurus" = 10
+"Audax" = 10
+"Ditaclus" = 10
+"Boduognatus" = 10
+"Tasgetius" = 10
+"Conconnetodumnus" = 10
+"Cotuarus" = 10
+"Lucterius" = 10
+}
+
+ship_names = {
+Andastra
+Arawn
+Ardan
+Arianrhod
+Badb
+Balor
+Beowulf 
+Casnar Wledig
+Cathbad
+Grendel
+Gronw Pebr
+Medb
+Melusine
+Oger
+Orlam
+Rosmerta
+Uisneach
+Sul
+Ethlinn
+Ethnea
+Hafgan
+Hefaidd Hen
+}
+
+leader_names = { 
+Arthmael
+Arto
+Belenus
+Biorach
+Bran
+Breanainn
+Briano
+Brog
+Cadan
+Caradoc
+Ceallair
+Chadh
+Cionnaith
+Deoradhan
+Donaghy
+Dorran
+Drausus
+Dubno
+Eburacon
+Edgan
+Egan
+Eirdirsceol
+Fal
+Faol
+Ferghus
+Kirran
+Kirwin
+Laogh
+Lorcc
+Lugubelenus
+Lugus
+Maccus
+Maoilios
+Nuireadhach
+Phelan
+Seaghdh
+Seoc
+Siridean
+Teigen
+Tremaine
+Tristian
+Tristram
+Asterix
+Obelix
+}
+
+army_names = {
+	"Army of $PROVINCE$" 
+}
+
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}

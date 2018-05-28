@@ -1,0 +1,523 @@
+
+
+increase_half_autonomous_vassal = {
+	category = influence
+	alert_index = 4
+	alert_tooltip = increase_half_autonomous_vassal_tt
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	is_visible = {
+		is_subject = no
+		FROM = {
+			is_subject_of_type = vassal
+			is_subject_of = ROOT
+		}
+	}
+	is_allowed = {
+			dip_power = 100
+			FROM = {
+				is_subject_of_type = vassal
+				is_subject_of = ROOT
+			}
+			FROM = {	is_at_war = no }				
+	}
+	on_accept = {
+		add_dip_power = -100
+		hidden_effect = {	# Just to be sure that flags are removed, before event triggers
+			FROM = {
+					release_all_subjects = yes
+			}
+			ROOT = {
+				create_subject = {
+					who = FROM
+					subject_type = half_autonomous_vassal
+				}
+			}
+			FROM = {
+					add_opinion = { who = ROOT modifier = decreased_autonomy_opinion }
+			}
+		}
+	}
+	on_decline = {
+		add_dip_power = -100
+		# No Effect
+	}
+	ai_acceptance = {
+	
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1.0 }
+		}
+		add_entry = {
+			name = BORDER_DISTANCE
+			export_to_variable = {
+				which = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+		
+		add_entry = {
+			name = BASE_REJECTION
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		
+		# Development Value
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+			}
+			multiply_variable = { which = ai_value value = 0.25 }
+		}
+	
+		add_entry = {
+			name = PRESTIGE_OF_ROOT
+			export_to_variable = {
+				which = ai_value
+				value = prestige
+			}
+			multiply_variable = { which = ai_value value = 0.25 }
+		}
+		
+		add_entry = {
+			name = HAS_LOYAL_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_loyal }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+		}
+		add_entry = {
+			name = MILITARY_STRENGHT_OVERLORD
+			
+			export_to_variable = {
+				which = ai_value
+				value = army_size
+			}
+			multiply_variable = { which = ai_value value = 0.25 }
+		}
+
+		
+		
+		# Negative Values ##########################################
+		
+		add_entry = {
+			name = IS_GREEK_POLIS
+			limit = {
+				FROM = {
+					OR = {
+						government = greek_polis	
+						government = greek_polis_democracy	
+						government = greek_polis_tyrannis	
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 20
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = IS_TRIBAL
+			limit = {
+				FROM = {
+					OR = {
+						government = tribal_horde	
+						is_tribal = yes
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = HAS_DISLOYAL_ATTITUDE
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_disloyal }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		
+		add_entry = {
+			name = DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+		
+		add_entry = {
+			name = MILITARY_STRENGHT_SUBJECT
+			export_to_variable = {
+				which = ai_value
+				value = army_size
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -0.5 }
+		}
+		
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 5
+					NOT = {	liberty_desire = 10 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 5
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 10
+					NOT = {	liberty_desire = 15 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 15
+					NOT = {	liberty_desire = 20 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 15
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 20
+					NOT = {	liberty_desire = 25 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 20
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 25
+					NOT = {	liberty_desire = 30 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 30
+					NOT = {	liberty_desire = 35 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 35
+					NOT = {	liberty_desire = 40 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 35
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 40
+					NOT = {	liberty_desire = 45 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 40
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 45
+					NOT = {	liberty_desire = 50 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 45
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 50
+					NOT = {	liberty_desire = 55 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 55
+					NOT = {	liberty_desire = 60 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 60
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 60
+					NOT = {	liberty_desire = 65 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 70
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 65
+					NOT = {	liberty_desire = 70 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 80
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 70
+					NOT = {	liberty_desire = 75 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 90
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 75
+					NOT = {	liberty_desire = 80 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 80
+					NOT = {	liberty_desire = 85 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 120
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 85
+					NOT = {	liberty_desire = 90 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 140
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 90
+					NOT = {	liberty_desire = 95 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 160
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 95
+					NOT = {	liberty_desire = 100 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 180
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+		add_entry = {
+			name = LIBERTY_DESIRE_OPT
+			limit = {
+				FROM = {	
+							liberty_desire = 100
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 200
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}	
+	}
+	ai_will_do = {
+			factor = 1	
+				modifier = {
+					factor = 0
+					FROM = { liberty_desire = 50 }
+				}
+				modifier = {
+					factor = 0.25
+					FROM = { liberty_desire = 35 }
+					FROM = { NOT = { liberty_desire = 50 } }
+					
+				}
+				modifier = {
+					factor = 0
+						NOT = { stability = 0 }
+				}
+				modifier = {
+					factor = 0
+						NOT = { num_of_free_diplomatic_relations = 1 }
+				}
+				modifier = {
+					factor = 1.5
+						num_of_free_diplomatic_relations = 3
+				}
+				modifier = {
+					factor = 0.5
+						NOT = { DIP = 3 }
+				}
+				modifier = {
+					factor = 1.5
+						DIP = 4
+				}
+				modifier = {
+					factor = 0.5
+						NOT = { dip_power = 300 }
+				}
+				modifier = {
+					factor = 1.25
+						NOT = { dip_power = 400 }
+				}
+				modifier = {
+					factor = 1.25
+						NOT = { dip_power = 600 }
+				}
+				modifier = {
+					factor = 1.25
+						NOT = { dip_power = 850 }
+				}
+				modifier = {
+					factor = 0.5
+						FROM = { ai = no }
+				}
+		}
+}

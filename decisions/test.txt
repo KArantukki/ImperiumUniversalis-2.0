@@ -1,0 +1,23 @@
+country_decisions = {
+	 test1 = {
+		major = yes
+		potential = {
+			ai = no
+			ai = yes
+		}
+		allow = {
+			ai = no
+			1 = { check_variable = { which = testvar value = 0 } }
+		}
+		effect = {
+			every_country = {
+				1 {
+					change_variable = { which = testvar value = 1 }
+				}
+			}
+		}	
+	}
+}
+	
+	
+	

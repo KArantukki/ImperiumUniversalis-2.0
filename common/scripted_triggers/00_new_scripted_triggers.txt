@@ -1,0 +1,216 @@
+#GENERAL TRIGGERS
+is_subject_other_than_tributary_trigger = { #Ie Tags that cannot conduct independent diplomacy
+	custom_trigger_tooltip = {
+		tooltip = is_subject_other_than_tributary_trigger_tooltip
+		is_subject = yes
+		NOT = { is_subject_of_type = tributary_state }
+	}
+}
+
+is_free_or_tributary_trigger = { #I.e. Tags that can conduct independent diplomacy
+	custom_trigger_tooltip = {
+		tooltip = is_free_or_tributary_trigger_tooltip
+		OR = {
+			is_subject = no
+			is_subject_of_type = tributary_state
+		}
+	}
+}
+is_in_cultural_sphere = {
+	OR = {
+		AND = {
+				culture_group = akkadian_group
+			owner = {
+				culture_group = akkadian_group
+			}
+		}
+		AND = {
+				culture_group = italic
+			owner = {
+				culture_group = italic
+			}
+		}
+		AND = {
+				culture_group = illyrian_group
+			owner = {
+				culture_group = illyrian_group
+			}
+		}
+		AND = {
+				OR = {
+				culture_group = germanic_group
+				culture_group = balto_slavic_group
+				}
+			owner = {
+				OR = {
+				culture_group = germanic_group
+				culture_group = balto_slavic_group
+				}
+			}
+		}
+		AND = {
+				culture_group = arabic_group
+			owner = {
+				culture_group = arabic_group
+			}
+		}
+		AND = {
+				culture_group = cushitic_group
+			owner = {
+				culture_group = cushitic_group
+			}
+		}
+		AND = {
+				culture_group = north_african_group
+			owner = {
+				culture_group = north_african_group
+			}
+		}
+		AND = {
+				culture_group = egyptian_group
+			owner = {
+				culture_group = egyptian_group
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = macedon_group
+					culture_group = hellenic }
+			owner = {
+				OR = {
+					culture_group = macedon_group
+					culture_group = hellenic }
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = gaulish_group
+					culture_group = eastern_celtic
+					culture_group = raeti_group
+					culture_group = aquitani_group
+					culture_group = britannic_group
+					culture_group = ibero_celtic_group
+					culture_group = ligures_group
+					culture_group = veneti_group }
+			owner = {
+				OR = {
+					culture_group = gaulish_group
+					culture_group = eastern_celtic
+					culture_group = raeti_group
+					culture_group = aquitani_group
+					culture_group = britannic_group
+					culture_group = ibero_celtic_group
+					culture_group = ligures_group
+					culture_group = veneti_group }
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = iberian_group
+					culture_group = turdetani_group }
+			owner = {
+				OR = {
+					culture_group = iberian_group
+					culture_group = turdetani_group }
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = armenian_group
+					culture_group = caucasian_group }
+			owner = {
+				OR = {
+					culture_group = armenian_group
+					culture_group = caucasian_group }
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = anatolian_group
+					culture_group = thraco_phrygian_group }
+			owner = {
+				OR = {
+					culture_group = anatolian_group
+					culture_group = thraco_phrygian_group }
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = chinese_group
+					culture_group = viet_group
+					culture_group = yue_group
+					culture_group = korean_group
+					culture_group = malay_group
+					culture_group = nanman_group
+					culture_group = tungusic_group }
+			owner = {
+				OR = {
+					culture_group = chinese_group
+					culture_group = viet_group
+					culture_group = yue_group
+					culture_group = korean_group
+					culture_group = nanman_group
+					culture_group = malay_group
+					culture_group = tungusic_group }
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = dravidian_group
+					culture_group = indian_group
+					culture_group = non_vedic_group
+					culture_group = tibetan_group }
+			owner = {
+				OR = {
+					culture_group = dravidian_group
+					culture_group = indian_group
+					culture_group = maharashtri
+					culture_group = shauraseni
+					culture_group = tibetan_group }
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = western_iranian
+					culture_group = eastern_iranian_group }
+			owner = {
+				OR = {
+					culture_group = western_iranian
+					culture_group = eastern_iranian_group }
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = steppe_people
+					culture_group = xiongnu_group }
+			owner = {
+				OR = {
+					culture_group = steppe_people
+					culture_group = xiongnu_group }
+			}
+		}
+		AND = {
+				OR = {
+					culture_group = semitic
+					culture_group = caanan_group }
+			owner = {
+				OR = {
+					culture_group = semitic
+					culture_group = caanan_group }
+			}
+		}
+	}
+}
+
+no_religious_school_modifier = { 
+	custom_trigger_tooltip = {
+		tooltip = has_no_religious_school_modifier
+		NOT = { has_country_modifier = hellenic_type }
+		NOT = { has_country_modifier = north_pagan_type }
+		NOT = { has_country_modifier = semitic_type_modifier }
+		NOT = { has_country_modifier = nomad_type_modifier }
+		NOT = { has_country_modifier = sun_type_modifier }
+		NOT = { has_country_modifier = balkan_type_modifier }
+		NOT = { has_country_modifier = egyptian_type_modifier }
+	}
+}

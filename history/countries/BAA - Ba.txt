@@ -1,0 +1,11 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = shu
+religion = white_tiger_religion
+capital = 3261
+technology_group = far_eastern
+	
+300.1.1 = { 
+	government = despotic_monarchy 
+}

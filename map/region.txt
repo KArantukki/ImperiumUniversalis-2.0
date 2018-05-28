@@ -1,0 +1,1028 @@
+# A province can belong to several regions.
+
+test_region = { }
+
+gallia_cisalpina = {
+
+	areas = {
+	aemilia_area
+	transpadana_area
+	eastern_venetia_area
+	western_venetia_area
+	western_liguria_area
+	eastern_liguria_area
+	}
+}
+
+italian_region = {
+
+	areas = {
+	lucania_area
+	campania_area
+	samnium_area
+	latium_area
+	picenum_area
+	umbria_area
+	etruria_area
+	apulia_area
+	}
+}
+
+sardinia_corsica_region = {
+	areas = {
+	sardinia_area
+	corsica_area
+	western_sardinia_area
+	}
+}
+
+magna_graecia = {
+	areas = {
+	western_sicilia_area
+	northern_sicilia_area
+	eastern_sicilia_area
+	calabria_area
+	bruttium_area
+	}
+}
+
+
+gallia_narbonensis = {
+
+	areas = {
+	massilia_area
+	narbonensis_east
+	narbonensis_west
+	ruscino_area
+	tolosa_area
+	}
+}
+
+aquitania_region = {
+	areas = {
+	northern_aquitania
+	southern_aquitania
+	}
+}
+
+celtica_area = {
+	areas = {
+	arvernia_area
+	avaricum_area
+	aedui_area
+	vienne_area
+	pictones_area
+	curiosolites_area
+	lutetia_area
+	north_gallia
+	}
+}
+
+belgica_region = {
+	areas = {
+	northern_belgica
+	central_belgica
+	southern_belgica
+	}
+}
+
+hispania_baetica = {
+	areas = {
+	hispalis_area
+	gadir_area
+	tartessos_area
+	malaca_area
+	urci_area
+	corduba_area
+	}
+}
+
+lusitania = {
+	areas = {
+	ossonoba_area
+	celtici_area
+	northern_lusitania
+	southern_lusitania
+	capara_area
+	}
+}
+
+cartaginensis_region = {
+	areas = {
+	carthago_nova
+	lucentum_area
+	libisona_area
+	castulo_area
+	toletum_area
+	}
+}
+
+gallaecia = {
+	areas = {
+	northern_gallaecia
+	southern_gallaecia
+	austures_area
+	cantabri_area
+	austurian_coast
+	}
+}
+
+hispania_citerior = {
+	areas = {
+	numantia_area
+	balearen_area
+	segobriga_area
+	lutibilis_area
+	hiber_area
+	pyrenaei_area
+	hispania_iberia
+	}
+}
+
+raetia_et_noricum = {
+	areas = {
+	west_raetia
+	east_raetia
+	noricum
+	}
+}
+
+germania_region = {
+
+	areas = {
+	frisia
+	west_moenus
+	east_moenus
+	scandiae
+	scandza_area
+	south_visurgis
+	north_visurgis
+	rugia
+	north_albis
+	central_albis
+	}
+}
+
+suebia_region = {
+
+	areas = {
+	boiohaemum_west
+	boiohaemum_east
+	suevus
+	amber_coast
+	visula_south
+	visula_north
+	suebia_area
+	south_albis
+	pannonian_plains
+	aesti_area
+	germano_sarmatia
+	}
+}
+
+germani_cisrhenani = {
+
+	areas = {
+	germania_inferior
+	germania_superior
+	colonia_area
+	helvetia_area
+	}
+}
+
+britannia_inferior = {
+	areas = {
+	eboracum_area
+	luguvallium_area
+	}
+}
+
+britannia_superior = {
+	areas = {
+	iceni_area
+	londinium_area
+	dumnonium_area
+	britannia_superior_area
+	isca_solurum
+	corieltauvium_area
+	viroconium
+	}
+}
+
+caledonia = {
+	areas = {
+	caledonia_superior
+	caledonia_inferior
+	}
+}
+
+hibernia = {
+	areas = {
+	east_hibernia
+	south_hibernia
+	north_hibernia
+	west_hibernia
+	central_hibernia
+	}
+}
+
+illyria_region = {
+	areas = {
+	liburnia_west
+	dalmatia_north
+	dalmatia_south
+	praevalitana
+	liburnia_east
+	}
+}
+
+pannonia_region = {
+	areas = {
+	pannonia_superior
+	pannonia_inferior
+	}
+}
+
+thracia_region = {
+	areas = {
+	moesia_superior
+	dardania
+	odrysia
+	thracia_east
+	thracia_west
+	thracian_cost
+	moesia_inferior
+	}
+}
+
+dacia_region = {
+	areas = {
+	dacia_maluensis
+	dacia_inferior
+	dacia_apulensis
+	montes_serrorum
+	dacia_superior
+	dacian_plains
+	}
+}
+
+greek_region = {
+
+	areas = {
+	attica_area
+	boeotia_area
+	aetolia_area
+	acarnania_area
+	phthiotis_area
+	laconia_area
+	messenia_area
+	arcadia_area
+	elis_area
+	achaea_area
+	argolis_area
+	phocis_area
+	corinthia
+	}
+}
+
+
+macedonia_region = {
+
+	areas = {
+	thasus
+	western_macedonia_area
+	eastern_macedonia_area
+	northern_epirus_area
+	southern_epirus_area	
+	chalcidice_area
+	thessalia_area
+	larisa_area
+	}
+}
+
+mare_aegaeum_islands_region = {
+	areas = {
+	creta_area
+	west_creta_area
+	cyclades_area
+	rhodiorum_area
+	chios_area
+	northern_aegean_islands
+	euboea_area
+	south_euboea_area
+	}
+}
+
+
+asia_minor = {
+
+	areas = {
+	
+	lydia_area
+	caria_area
+	lycia_area
+	western_lycia_area
+	pamphylia_area
+	cilicia_area
+	pisidia_area
+	phrygia_area
+	galatia_area
+	lycaonia_area
+	cappadocia_area
+	kypros_area
+	east_kypros_area
+	}
+}
+
+ionia_region = {
+
+	areas = {
+		doris_area
+		ionia_area
+		aeolis_area
+		troad_area
+		mysia_area
+		ionian_coast_area
+		mysian_coast_area
+		pergamon_area
+	}
+}
+
+bithynia_et_pontus = {
+
+	areas = {
+		bithynia_area
+		bithynia_east_area
+		pontus_area
+		paphlagonia_area
+		nikaia_area
+	}
+}
+
+canaan_region = {
+
+	areas = {
+	judah_area
+	upper_israel
+	lower_israel
+	ammon_area
+	philistia_area
+	}
+}
+
+syria_region = {
+
+	areas = {
+	damascus_area
+	phoenicia_area
+	antioch_area
+	palmyra_area
+	osroene_area
+	upper_euphrates_area
+	}
+}
+
+
+lower_egypt_region = {
+
+	areas = {
+	alexandria
+	memphis_area
+	south_nile_delta
+	north_nile_delta
+	lower_nile
+	bahriia_oasis
+	egyptian_desert
+	moeris_area
+	east_nile_delta
+	eastern_nile
+	}
+}
+
+upper_egypt_region = {
+	areas = {
+	waset
+	middle_nile
+	hibeos
+	leukos_limen_area
+	berenike_area
+	}
+}
+
+nubia_region = {
+	areas = {
+	blemmyes_area
+	nubia
+	meroe_area
+	napata_area
+	upper_nile
+	}
+}
+
+aethiops = {
+	areas = {
+	daamot_area
+	kassala_area
+	axum_area
+	astabaras
+	aethiops_west
+	aethiops_east
+	punt_area
+	elephant_cape
+	aethiopian_highlands_area
+	cyeneum_area
+	zankor_area
+	aethiops_south
+	malao_area
+	spice_cape_area
+	}
+} 
+
+arabia_petrea_region = {
+
+	areas = {
+		saracenea
+		biau
+		petrea
+		nabatea
+		lihyan
+		arabian_desert
+		dumata_desert
+		gerrah_area
+		central_desert_area
+	}
+} 
+
+arabia_felix_region = {
+
+	areas = {
+		amir
+		maain
+		saba_area
+		himjar_area
+		qataban_area
+		hadramaut_area
+		mazun_area
+		south_mazun_area
+		west_saba_area
+		thomala_area
+		east_hadramaut_area
+	}
+}
+
+africa_region = {
+
+	areas = {
+	mediterranean_islands_area
+	karthago_area
+	aspis_area
+	hadrumetum_area
+	thapsus_area
+	usilla_area
+	northern_byzacena
+	southern_byzacena
+	tecape_area
+	hippo_regius
+	sava_area
+	cirta_area
+	naraggara_area
+	igilgili
+	vegesela_area
+	lamasba_area
+	numidian_desert
+	sicilliba_area
+	}
+}
+
+lybia_region = {
+
+	areas = {
+	west_tripolitania
+	east_tripolitania
+	northern_garamantum
+	soutern_garamantum
+	nasamonea
+	west_cyrene
+	east_cyrene
+	west_lybia
+	east_lybia
+	lybian_coast
+	gichtis_area
+	leptis_area
+	}
+}
+
+mauretania_region = {
+
+	areas = {
+	iomnium_area
+	bida_area
+	supasa_area
+	cartenna_area
+	portus_magnus_area
+	eastern_gaetulia
+	western_gaetulia
+	tingis_area
+	acrath_area
+	lemnis_area
+	atlas_area
+	banasa_area
+	rutubis_area
+	masath_area
+	}
+}
+
+sarmatia_region = {
+
+	areas = {
+	tyras_area
+	borysthenes_area
+	taurica_area
+	cimmerian_bosporus_area
+	southern_taurica_area
+	tanais_area
+	rha_area
+	hypanis_area
+	terek_area
+	mardi_area
+	west_sarmatia
+	east_sarmatia
+	northern_sarmatia
+	}
+}
+
+armenia_region = {
+
+	areas = {
+	southern_colchis_area
+	northern_colchis_area
+	kartli_area
+	albania_area
+	sophene_area
+	corduene_area
+	western_armenia_area
+	eastern_armenia_area
+	caspiane_area
+	armavir_area
+	}
+}
+
+mesopotamia_region = {
+
+	areas = {
+	euphrates_area
+	seleukia_area
+	assyria_area
+	ctesiphon_area
+	upper_babylon_area
+	lower_babylon_area
+	charax_spasinu_area
+	susiane_area
+	sagartia_area
+	hira_area
+	}
+}
+
+media_region = {
+
+	areas = {
+	west_hyrkania_area
+	atropatene_area
+	ecbatana_area
+	arsacia_area
+	lower_zargos_area
+	}
+}
+
+persis_region = {
+
+	areas = {
+	anshan_area
+	persepolis_area
+	pasargadae_area
+	persis_area
+	carmania_area
+	lut_area
+	}
+}
+parthia_region = {
+
+	areas = {
+	east_hyrkania_area
+	parthia_area
+	dahae_area
+	}
+}
+arachosia_region = {
+
+	areas = {
+	gedrosia_area
+	east_arachosia
+	arachosia_area
+	}
+}
+
+transoxiana_region = {
+
+	areas = {
+	west_sogdia
+	east_sogdia
+	fergana_area
+	chorasamia_area
+	massagetae_area
+	amyrgoi_west
+	amyrgoi_east
+	}
+}
+
+baktria_region = {
+	areas = {
+	aria_area
+	drangiana_area
+	baktria_area
+	paropamisadae
+	margiana_area
+	}
+}
+
+silkroad_region = {
+	areas = {
+		taklamakan_area
+		hexi_corridor_area
+		kashgar_area
+	}
+}
+
+northern_steppes = {
+	areas = {
+		east_yan_area
+		west_yan_area
+		xiongnu_area
+		he_tau_area
+		donghu_area
+		western_zhao_area
+		west_qin_area
+		altai_area
+		xianbei_area
+	}
+}
+
+north_china = {
+	areas = {
+		central_qin_area
+		east_qin_area
+		zhou_area
+		song_area
+		lu_area
+		wei_area
+		west_qi_area
+		east_qi_area
+		jin_area
+		eastern_zhao_area
+	}
+}
+central_china = {
+	areas = {
+		ying_area
+		east_chu_area
+		west_chu_state
+		north_wu_area
+		chen_area
+		south_wu_area
+		gusu_area
+	}
+}
+west_china = {
+	areas = {
+		shu_area
+		ba_area
+		bi_area
+		qiongdu_area
+		yelang_area
+	}
+}
+south_china = {
+	areas = {
+		yue_area
+		yuan_area
+		dong_yue_area
+		jiangxi_area
+		southern_hills_area
+	}
+}
+lingnan_region = {
+	areas = {
+		dian_yue_area
+		dian_area	
+		southern_nan_yue
+		northern_nan_yue
+		nan_hai_area
+		namcuong_area
+		vanlang_area
+	}
+}
+south_east_asia = {
+	areas = {
+		langkasuka_area
+		dany_whadi_area
+		funan_coast_area
+		funan_area
+		lamap_area
+		arakan_area
+		shan_area
+		irrawady_area
+		xianluo_area
+		central_highlands
+		mekong_area
+		ailao_area
+		}
+}
+korea_region = {
+	areas = {
+		jinhan_area
+		byeonhan_area
+		mahan_area
+		baekje_area
+		lelang_area
+		dongye_area
+		dongokjeo_area
+		buyeo_area
+		goguryeo_area
+		shushen_area
+	}
+}
+
+southern_india_region = {
+	areas = {
+		ceylon_area
+		chola_area
+		kantala_area
+		andhra_area
+		chera_area
+		pandya_area
+	}
+}
+western_india_region = {
+	areas = {
+		thar_desert_area
+		pattala_area
+		surashtra_area
+		ujjain_area
+		matsya_area
+		eastern_ashmaka_area
+		western_ashmaka_area
+	}
+}
+eastern_india_region = {
+	areas = {
+		northern_kalinga_area
+		southern_kalinga_area
+		gangaridai_area
+		pundra_area
+		kamarupa_area
+	}
+}
+northern_india_region = {
+	areas = {
+		magadha_area
+		vrji_area
+		surasena_area
+		pancala_area
+		kuru_area
+	}
+}
+gandhara = {
+	areas = {
+		kamboja_area
+		taxila_area
+		maiiusthan_area
+		trigarta_area
+	}
+}
+
+tibetan_highland = {
+	areas = {
+		tibet_area
+		zhangzhung_area
+		tuyuhun_area
+	}
+}
+
+
+mare_suebicum_region = {
+	areas = {
+		mare_suebicum
+	}
+}
+
+oceanus_germanicus_region = {
+	areas = {
+		oceanus_germanicus
+	}
+}
+
+oceanus_britannicus_region = {
+	areas = {
+		oceanus_britannicus
+		mare_britannicum
+	}
+}
+mare_gallaecum_region = {
+	areas = {
+		mare_gallaecum
+	}
+}
+oceanus_atlanticus_region = {
+	areas = {
+		oceanus_atlanticus
+	}
+}
+mare_ibericum_region = {
+	areas = {
+		columnae_herculis
+		mare_ibericum
+	}
+}
+mare_ligusticum_region = {
+	areas = {
+		mare_ligusticum
+		mare_sardoum
+	}
+}
+mare_tyrrhenum_region = {
+	areas = {
+		mare_tyrrhenum
+	}
+}
+mare_africum_region = {
+	areas = {
+		mare_africum
+	}
+}
+mare_libycum_region = {
+	areas = {
+		mare_libycum
+		syrtis_minor
+		syrtis_maior
+	}
+}
+mare_siculum_region = {
+
+	areas = {
+		mare_siculum
+		fretum_siculum
+	}
+}
+mare_ionium_region = {
+
+	areas = {
+		mare_ionium
+	}
+}
+mare_creticum_region = {
+
+	areas = {
+		mare_creticum
+	}
+}
+mare_myrtoum_region = {
+
+	areas = {
+		mare_myrtoum
+	}
+}
+mare_adriaticum_region = {
+
+	areas = {
+		mare_adriaticum_south
+		mare_adriaticum_north
+	}
+}
+mare_aegaeum_region = {
+
+	areas = {
+		mare_aegaeum
+		mare_thracium
+	}
+}
+mare_levantinum_region = {
+
+	areas = {
+		mare_aegyptum
+		mare_phoenicum
+		pamphylion_pelagos
+	}
+}
+propontis_region = {
+
+	areas = {
+		propontis
+	}
+}
+pontos_euxeinos_region = {
+
+	areas = {
+		pontos_euxeinos_east
+		pontos_euxeinos_west
+		danube_area
+	}
+}
+mare_erythraeum_region = {
+
+	areas = {
+		southern_mare_erythraeum
+		mare_erythraeum
+		western_mare_arabicum
+		eastern_mare_arabicum
+	}
+}
+mare_india_region = {
+
+	areas = {
+		northwestern_mare_india
+		southwestern_mare_india
+		eastern_mare_india
+	}
+}
+mare_persicus_region = {
+
+	areas = {
+		sinus_persicus
+		mare_persicus
+	}
+}
+yellow_sea_region = {
+
+	areas = {
+		yellow_sea
+		
+		huanghe_area
+		korean_sea
+	}
+}
+southern_chinese_sea_region = {
+
+	areas = {
+		southern_chinese_sea
+	}
+}
+
+vietnamese_sea_region = {
+
+	areas = {
+		vietnamese_sea
+		southern_asian_sea
+	}
+}
+
+arabian_sea_region = {
+	areas = {
+	
+	}
+}
+
+yangtze_region = {
+	areas = {
+	yangtze_area
+	}
+}
+
+indos_region = {
+	areas = {
+	indos_area
+	}
+}
+
+rhenus_region = {
+	areas = {
+	rhenus_area
+	}
+}
+
+ganges_region = {
+	areas = {
+	ganges_area
+	}
+}
+
+oxus_region = {
+	areas = {
+		oxus_area
+	}
+}
+albis_region = {
+	areas = {
+		albis_area
+	}
+}
+
+wasteland_ocean = {
+	areas = {
+		south_atlantic_ocean_wasteland
+		middle_atlantic_ocean_wasteland
+		north_atlantic_ocean_wasteland
+	}
+}
+
+
+

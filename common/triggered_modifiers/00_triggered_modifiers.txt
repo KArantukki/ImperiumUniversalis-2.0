@@ -1,0 +1,298 @@
+
+###########################################
+# controller of the panionion
+###########################################
+
+controller_of_the_panionion = {
+	potential = {
+		OR = {
+				TAG = CHI
+				TAG = KLA
+				TAG = ERR
+				TAG = EPH
+				TAG = MIL
+				TAG = SAM
+			}
+	}
+
+	trigger = {
+			owns_or_vassal_of = 751
+	}
+
+	diplomatic_upkeep = 8
+	diplomatic_reputation = 1
+}
+
+###########################################
+# tribal
+###########################################
+
+tribal_society = {
+	potential = {
+		is_tribal = yes
+	}
+
+	trigger = {
+		is_tribal = yes
+	}
+	drill_gain_modifier = -0.25
+	administrative_efficiency = -0.5
+	stability_cost_modifier = 0.15
+	culture_conversion_cost = 0.5
+	amount_of_banners = -1
+	
+}
+
+###########################################
+# reb
+###########################################
+
+rebel_buff = {
+	potential = {
+		TAG = REB
+	}
+
+	trigger = {
+		TAG = REB
+	}
+	cav_to_inf_ratio = 0.7
+}
+
+
+
+
+###########################################
+# Pillars of Hercules
+###########################################
+
+pillars_of_hercules = {
+	potential = {
+		OR = {
+			has_discovered = 4
+			has_discovered = 5
+			has_discovered = 301
+			has_discovered = 302
+			has_discovered = 303
+			}
+	}
+
+	trigger = {
+			is_subject = no
+			owns_or_vassal_of = 4
+			owns_or_vassal_of = 5
+			owns_or_vassal_of = 301
+			owns_or_vassal_of = 302
+			owns_or_vassal_of = 303
+	}
+
+	trade_efficiency = 0.05	
+}
+
+
+###########################################
+# Strait of Messana
+###########################################
+
+strait_of_messana = {
+	potential = {
+		OR = {
+			has_discovered = 249
+			has_discovered = 245
+			}
+	}
+
+	trigger = {
+			is_subject = no	
+			owns_or_vassal_of = 245
+			owns_or_vassal_of = 249
+	}
+
+	trade_efficiency = 0.05	
+}
+###########################################
+# Hellespont
+###########################################
+
+controll_the_hellespont = {
+	potential = {
+		OR = {
+			has_discovered = 633
+			has_discovered = 634
+			has_discovered = 734
+			has_discovered = 735
+			}
+	}
+
+	trigger = {
+			is_subject = no	
+			owns_or_vassal_of = 633
+			owns_or_vassal_of = 634
+			owns_or_vassal_of = 734
+			owns_or_vassal_of = 735
+	}
+
+	trade_efficiency = 0.05	
+	global_tax_income = 3
+}
+###########################################
+# Olymp
+###########################################
+
+owns_olymp = {
+	potential = {
+		religion = greek_religion
+	}
+
+	trigger = {
+		owns = 602
+	}
+	prestige = 0.25
+	
+}
+###########################################
+# Silkroad trade
+###########################################
+
+silkroad_trade = {
+	potential = {
+		
+	}
+
+	trigger = {
+		is_tribal = no
+		any_active_trade_node = {
+			OR = {
+				province_id = 2403 # samarkand
+				province_id = 2776 # Silkroad
+			}
+		}
+	}
+	caravan_power = 0.25
+	trade_efficiency = 0.1
+	
+}
+###########################################
+# Tarde buff
+###########################################
+
+trade_buff = {
+	potential = {
+		
+	}
+
+	trigger = {
+		home_trade_node = { highest_value_trade_node = yes }
+	}
+	embracement_cost = -0.1
+	global_institution_spread = 0.1
+}
+###########################################
+# strong human neighbor 
+###########################################
+
+strong_human_neighbor = {
+	potential = {
+		ai = yes
+	}
+
+	trigger = {
+			is_subject = no
+			any_neighbor_country = {  
+				ai = no
+				NOT = { alliance_with = ROOT }
+				total_development = 100
+				NOT = { total_development = 250 }
+			}
+	}
+	global_manpower_modifier = 0.1
+	land_forcelimit_modifier = 0.1
+	land_maintenance_modifier = -0.1
+	diplomatic_upkeep = 1
+}
+strong_human_neighbor_2 = {
+	potential = {
+		ai = yes
+	}
+
+	trigger = {
+			is_subject = no
+			any_neighbor_country = {  
+				ai = no
+				NOT = { alliance_with = ROOT }
+				total_development = 250
+				NOT = { total_development = 450 }
+			}
+	}
+	global_manpower_modifier = 0.2
+	land_forcelimit_modifier = 0.2
+	land_maintenance_modifier = -0.2
+	diplomatic_upkeep = 1
+}
+strong_human_neighbor_3 = {
+	potential = {
+		ai = yes
+	}
+
+	trigger = {
+			is_subject = no
+			any_neighbor_country = {  
+				ai = no
+				NOT = { alliance_with = ROOT }
+				total_development = 450
+				NOT = { total_development = 650 }
+			}
+	}
+	global_manpower_modifier = 0.3
+	land_forcelimit_modifier = 0.3
+	land_maintenance_modifier = -0.3
+	diplomatic_upkeep = 2
+}
+strong_human_neighbor_4 = {
+	potential = {
+		ai = yes
+	}
+
+	trigger = {
+			is_subject = no
+			any_neighbor_country = {  
+				ai = no
+				NOT = { alliance_with = ROOT }
+				total_development = 650
+			}
+	}
+	global_manpower_modifier = 0.4
+	land_forcelimit_modifier = 0.4
+	land_maintenance_modifier = -0.4
+	diplomatic_upkeep = 2
+}
+
+
+###########################################
+# Pagan Religion
+###########################################
+
+unorganized_religion= {
+	potential = {
+	}
+
+	trigger = {
+			uses_patriarch_authority = yes
+	}
+	global_missionary_strength = -0.01
+	stability_cost_modifier = 0.25
+	warscore_cost_vs_other_religion = 0.1
+	tolerance_heathen = 1
+	tolerance_heretic = 1
+}
+
+
+#############################
+submission_to_emperor = {
+   potential = {
+       always = no
+   }
+
+   trigger = {
+       always = no
+   }
+}

@@ -1,0 +1,49 @@
+country_decisions = {
+	
+	 form_israel_nation = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = hebrew
+				primary_culture = samaritan
+			}
+		}
+		allow = {
+			NOT = { exists = ISR }
+			is_at_war =  no
+			is_subject = no
+			owns_core_province = 1793
+			total_development = 150
+		}
+		effect = {
+			change_tag = ISR
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+				judah_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ISR
+				}
+				upper_israel = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ISR
+				}
+				lower_israel = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ISR
+				}
+			}
+		ai_importance = 300	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+	

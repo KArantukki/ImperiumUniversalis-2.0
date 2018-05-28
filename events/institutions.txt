@@ -1,0 +1,570 @@
+##################################################
+# Institutions 
+##################################################
+
+
+namespace = iu_institution_events
+
+
+#######################################
+# Advanced Metallurgy
+#######################################
+country_event = {
+	id = iu_institution_events.1
+	title = iu_institution_events.1.t
+	desc = iu_institution_events.1.d
+	picture = city
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10
+
+		
+		hidden_effect = {
+			
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+				}
+				country_event = { id = iu_institution_events.100 }
+			}
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = iu_institution_events.100
+	title = iu_institution_events.1.t
+	desc = iu_institution_events.1.d
+	picture = city
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.100.a
+		
+	}
+}
+
+#######################################
+# Code of law
+#######################################
+country_event = {
+	id = iu_institution_events.2
+	title = iu_institution_events.2.t
+	desc = iu_institution_events.2.d
+	picture = ruler
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10
+
+		
+		hidden_effect = {
+			
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+				}
+				country_event = { id = iu_institution_events.200 }
+			}
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = iu_institution_events.200
+	title = iu_institution_events.2.t
+	desc = iu_institution_events.2.d
+	picture = ruler
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.100.a
+		
+	}
+}
+
+#######################################
+# Physical Science
+#######################################
+country_event = {
+	id = iu_institution_events.3
+	title = iu_institution_events.3.t
+	desc = iu_institution_events.3.d
+	picture = archemedis
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10
+
+		
+		hidden_effect = {
+			
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+				}
+				country_event = { id = iu_institution_events.300 }
+			}
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = iu_institution_events.300
+	title = iu_institution_events.3.t
+	desc = iu_institution_events.3.d
+	picture = archemedis
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.100.a
+		
+	}
+}
+
+#######################################
+# Classical Philosophy
+#######################################
+country_event = {
+	id = iu_institution_events.4
+	title = iu_institution_events.4.t
+	desc = iu_institution_events.4.d
+	picture = culture
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10
+
+		
+		hidden_effect = {
+			
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+				}
+				country_event = { id = iu_institution_events.400 }
+			}
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = iu_institution_events.400
+	title = iu_institution_events.4.t
+	desc = iu_institution_events.4.d
+	picture = culture
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.100.a
+		
+	}
+}
+#######################################
+# Military science
+#######################################
+country_event = {
+	id = iu_institution_events.5
+	title = iu_institution_events.5.t
+	desc = iu_institution_events.5.d
+	picture = spartans
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10
+
+		
+		hidden_effect = {
+			
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+				}
+				country_event = { id = iu_institution_events.500 }
+			}
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = iu_institution_events.500
+	title = iu_institution_events.5.t
+	desc = iu_institution_events.5.d
+	picture = spartans
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.100.a
+		
+	}
+}
+#######################################
+# Geometry
+#######################################
+country_event = {
+	id = iu_institution_events.6
+	title = iu_institution_events.6.t
+	desc = iu_institution_events.6.d
+	picture = archemedis
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10
+
+		
+		hidden_effect = {
+			
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+				}
+				country_event = { id = iu_institution_events.600 }
+			}
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = iu_institution_events.600
+	title = iu_institution_events.6.t
+	desc = iu_institution_events.6.d
+	picture = archemedis
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.100.a
+		
+	}
+}
+
+#######################################
+# observational astronomy
+#######################################
+country_event = {
+	id = iu_institution_events.7
+	title = iu_institution_events.7.t
+	desc = iu_institution_events.7.d
+	picture = archemedis
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10
+
+		
+		hidden_effect = {
+			
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+				}
+				country_event = { id = iu_institution_events.700 }
+			}
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = iu_institution_events.700
+	title = iu_institution_events.7.t
+	desc = iu_institution_events.7.d
+	picture = archemedis
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.100.a
+		
+	}
+}
+#######################################
+# siege weapons
+#######################################
+country_event = {
+	id = iu_institution_events.8
+	title = iu_institution_events.8.t
+	desc = iu_institution_events.8.d
+	picture = siege_picture
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10
+
+		
+		hidden_effect = {
+			
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+				}
+				country_event = { id = iu_institution_events.800 }
+			}
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = iu_institution_events.800
+	title = iu_institution_events.8.t
+	desc = iu_institution_events.8.d
+	picture = siege_picture
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.100.a
+		
+	}
+}
+#######################################
+# advanced iron plow
+#######################################
+country_event = {
+	id = iu_institution_events.9
+	title = iu_institution_events.9.t
+	desc = iu_institution_events.9.d
+	picture = harvest
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.1.a
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10
+
+		
+		hidden_effect = {
+			
+			every_country = {
+				limit = {
+					ai = no
+					NOT = { tag = ROOT }
+				}
+				country_event = { id = iu_institution_events.900 }
+			}
+		}
+		
+	}
+}
+
+
+country_event = {
+	id = iu_institution_events.900
+	title = iu_institution_events.9.t
+	desc = iu_institution_events.9.d
+	picture = harvest
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = yes			#
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = iu_institution_events.100.a
+		
+	}
+}

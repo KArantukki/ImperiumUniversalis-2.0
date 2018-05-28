@@ -1,0 +1,305 @@
+estate_slaves = {
+	icon = 29
+	
+	color = { 80 50 20 }
+	
+	# Is estate kept in control of province on conquest?
+	keep_on_conquest = no
+	
+	# Estate will always be removed when conquered by a different religion than previous owner
+	always_remove_on_religious_conquest = no
+	
+	# They want to control at least this % of the country's non-overseas development, if # of home provinecs is above set amount
+	min_territory = 0
+	min_provinces_to_want_territory = 0
+	
+
+	# If true, country will get estate
+	trigger = {
+		check_variable = { which = slaves value = 1 }
+		NOT = { government = tribal_horde }
+		NOT = { government = tribal_despotism }
+		NOT = { has_country_modifier = slavery_abolished }
+		NOT = { government = spartan_monarchy }
+	}
+	
+	# If true, province can be granted to estate
+	province_trigger = {
+		always = no
+	}
+	
+	# Min autonomy in estate provinces
+	min_autonomy = 0
+	
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		global_unrest = -1
+	}
+	country_modifier_neutral = {
+		
+	}	
+	country_modifier_angry = {
+		global_unrest = 1
+	}	
+	
+	# These do not scale, but only applied in provinces owned by the estate
+	province_modifier_happy = {
+		local_production_efficiency = 0.4
+		local_build_cost = -0.1
+	}
+	province_modifier_neutral = {
+		local_production_efficiency = 0.2
+		local_build_cost = -0.05
+		local_unrest = 1
+	}	
+	province_modifier_angry = {
+		local_production_efficiency = -0.2
+		local_unrest = 2
+	}	
+	
+	# Influence modifiers##############################################
+	base_influence = 0
+	influence_modifier = {
+		desc = EST_VAL_SLAVES
+		trigger = {
+					has_country_modifier = 25_slaves_modifier
+		}	
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_SLAVES
+		trigger = {
+					has_country_modifier = 50_slaves_modifier
+		}	
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_SLAVES
+		trigger = {
+					has_country_modifier = 100_slaves_modifier
+		}	
+		influence = 15
+	}
+	influence_modifier = {
+		desc = EST_VAL_SLAVES
+		trigger = {
+					has_country_modifier = 150_slaves_modifier
+		}	
+		influence = 20
+	}
+	influence_modifier = {
+		desc = EST_VAL_SLAVES
+		trigger = {
+					has_country_modifier = 200_slaves_modifier
+		}	
+		influence = 25
+	}
+	
+	# Loyalty modifiers ##############################################
+
+	
+	#################################################################################
+	
+	custom_name = {
+		desc = estate_demosioi
+		trigger = {
+				culture_group = hellenic
+		}
+	}
+	custom_name = {
+		desc = estate_ardu
+		trigger = {
+				TAG = BAB
+		}
+	}
+	custom_name = {
+		desc = estate_slaves
+		trigger = {
+			
+		}
+	}
+	
+	# For province assignment ########################################################
+	ai_grant_province = {
+		factor = 0	
+	}
+	
+	# Does the AI want to give any extra territory beyond the minimum?
+	ai_territory_modifier = {
+		trigger = {
+			always = no
+		}	
+		value = 0
+	}		
+	
+	
+	# Special interactions ########################################
+	interaction = {
+		name = "HARSH_TREATMENT_HELIOTS"
+		icon = 9
+		
+		years_between_use = 10
+		
+		trigger = {		
+					
+		}
+		
+		effect = {		
+			add_estate_loyalty = {
+				estate = estate_slaves
+				loyalty = -20
+			}
+			add_estate_influence_modifier = {
+				estate = estate_slaves
+				desc = EST_VAL_HARSH_TREATMENT
+				duration = 3650
+				influence = -10
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+					factor = 0
+					NOT = {
+						estate_influence = {
+							estate = estate_slaves
+							influence = 80
+						}
+					}
+				}	
+		}
+	}
+	# Special interactions ########################################
+	interaction = {
+		name = "IMPROVE_CONDITIONS"
+		icon = 18
+		
+		years_between_use = 20
+		
+		trigger = {		
+						estate_influence = {
+							estate = estate_slaves
+							influence = 20
+						}
+		}
+		
+		effect = {
+			add_estate_loyalty = {
+				estate = estate_slaves
+				loyalty = 15
+			}
+			add_estate_influence_modifier = {
+				estate = estate_slaves
+				desc = EST_VAL_IMPROVED_CONDITIONS
+				duration = 7300
+				influence = 10
+			}
+			add_dip_power = -50
+			add_years_of_income = -0.1
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+					factor = 0
+						estate_loyalty = {
+							estate = estate_slaves
+							loyalty = 50
+						}
+				}	
+			modifier = {
+					factor = 0
+					NOT = {
+						estate_influence = {
+							estate = estate_slaves
+							influence = 75
+						}
+					}
+				}	
+		}
+	}
+	# Special interactions ########################################
+	interaction = {
+		name = "RECRUIT_FOR_ARMY"
+		icon = 12
+		
+		years_between_use = 10
+		
+		trigger = {		
+						estate_influence = {
+							estate = estate_slaves
+							influence = 5
+						}
+						check_variable = { which = slaves value = 3000 }
+		}
+		
+		effect = {
+			add_estate_influence_modifier = {
+				estate = estate_slaves
+				desc = EST_VAL_RECRUITED_FOR_ARMY
+				duration = 3650
+				influence = 10
+			}
+			change_variable = { which = slaves value = -3000 }
+			add_manpower = 3
+			add_army_professionalism = -0.03
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+					factor = 0
+						manpower_percentage = 0.1
+				}	
+			modifier = {
+					factor = 0
+					is_at_war = no
+				}	
+		}
+	}
+	# Special interactions ########################################
+	interaction = {
+		name = "RECRUIT_FOR_NAVY"
+		icon = 12
+		
+		years_between_use = 10
+		
+		trigger = {		
+						estate_influence = {
+							estate = estate_slaves
+							influence = 20
+						}
+						check_variable = { which = slaves value = 1000 }
+		}
+		
+		effect = {
+			add_estate_influence_modifier = {
+				estate = estate_slaves
+				desc = EST_VAL_RECRUITED_FOR_NAVY
+				duration = 3650
+				influence = 5
+			}
+			change_variable = { which = slaves value = -1000 }
+			add_sailors = 1000
+			add_navy_tradition = -5
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+					factor = 0
+						NOT = { sailors = 200 }
+				}	
+			modifier = {
+					factor = 0
+					NOT = { num_of_ports = 5 }
+				}
+			modifier = {
+					factor = 0
+					is_tribal = yes
+				}		
+		}
+	}
+}

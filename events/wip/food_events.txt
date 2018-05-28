@@ -1,0 +1,452 @@
+namespace = food_event
+
+########################################################################################
+# Add Food Monthly
+########################################################################################
+country_event = {
+	id = food_event.1
+	title = "food_event.1.t"
+	desc = "food_event.1.d"
+	picture = rich_woman
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = food_active
+		any_owned_province = {
+					OR = {
+						trade_goods = fish
+						trade_goods = meat_animals
+						trade_goods = honey
+					}
+		}
+		any_owned_province = {
+					OR = {
+						base_production = 1
+						base_tax = 1
+					}
+		}
+		OR = {
+			had_country_flag = { flag = food_gained_monthly days = 90 }
+			NOT = { has_country_flag = food_gained_monthly }
+		}			
+	}
+	
+	
+	immediate = {
+			set_country_flag = food_gained_monthly
+						every_owned_province = {
+							limit = {
+								OR = {
+									trade_goods = fish
+									trade_goods = meat_animals
+									trade_goods = honey
+								}
+							}
+							
+							export_to_variable = {
+								which = food_supplies_var
+								value = modifier:trade_goods_size
+							}
+							export_to_variable = {
+								which = multiplied_food
+								value = modifier:trade_goods_size
+							}
+							export_to_variable = {
+								which = trade_goods_size_modifier_var
+								value = modifier:trade_goods_size_modifier
+							}
+							
+							multiply_variable = { which = multiplied_food which = trade_goods_size_modifier_var }
+							change_variable = { which = food_supplies_var which = multiplied_food }
+							####
+							
+							multiply_variable = { which = food_supplies_var value = 15 }
+							
+							
+							set_variable = { which = food_supplies which = food_supplies_var }
+							owner = { change_variable = { which = food_supplies which = PREV } }
+						}
+						
+								while = {
+									limit = {
+											check_variable = { which = food_supplies which = storage_capacity } 
+									}
+									set_variable = { which = food_supplies which = storage_capacity }
+								}
+										
+	}
+	
+	option = {
+		name = "food_event.1.a"
+			
+	}
+}
+
+########################################################################################
+# Show Food
+########################################################################################
+country_event = {
+	id = food_event.2
+	title = "food_event.2.t"
+	desc = "food_event.2.d"
+	picture = food_supplies
+	#hidden = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = "food_event.2.a"
+			
+	}
+}
+
+########################################################################################
+# Add Food Yearly
+########################################################################################
+country_event = {
+	id = food_event.3
+	title = "food_event.3.t"
+	desc = "food_event.3.d"
+	picture = rich_woman
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = food_active
+		any_owned_province = {
+		OR = {
+						trade_goods = grain
+						trade_goods = wine
+						trade_goods = spices
+						trade_goods = fruits
+						trade_goods = olive
+						trade_goods = rice
+						trade_goods = tea_good
+					}
+			}
+		any_owned_province = {
+					OR = {
+						base_production = 1
+						base_tax = 1
+					}
+		}
+		OR = {
+			had_country_flag = { flag = food_gained_yearly days = 350 }
+			NOT = { has_country_flag = food_gained_yearly }
+		}
+		is_month = 7
+		NOT = { is_month = 8 }
+		
+	}
+	
+	
+	immediate = {
+			set_country_flag = food_gained_yearly
+						every_owned_province = {
+							limit = {
+								OR = {
+									trade_goods = grain
+									trade_goods = wine
+									trade_goods = spices
+									trade_goods = fruits
+									trade_goods = olive
+									trade_goods = rice
+									trade_goods = tea_good
+								}
+							}
+							
+							export_to_variable = {
+								which = food_supplies_var
+								value = modifier:trade_goods_size
+							}
+							export_to_variable = {
+								which = multiplied_food
+								value = modifier:trade_goods_size
+							}
+							export_to_variable = {
+								which = trade_goods_size_modifier_var
+								value = modifier:trade_goods_size_modifier
+							}
+							
+							multiply_variable = { which = multiplied_food which = trade_goods_size_modifier_var }
+							change_variable = { which = food_supplies_var which = multiplied_food }
+							####
+							
+							multiply_variable = { which = food_supplies_var value = 60 }
+							
+							
+							set_variable = { which = food_supplies which = food_supplies_var }
+							owner = { change_variable = { which = food_supplies which = PREV } }
+						}
+								
+								
+								while = {
+									limit = {
+											check_variable = { which = food_supplies which = storage_capacity } 
+									}
+									set_variable = { which = food_supplies which = storage_capacity }
+								}
+							
+			
+							
+	}
+	
+	option = {
+		name = "food_event.1.a"
+			
+	}
+}
+########################################################################################
+# comsumption
+########################################################################################
+country_event = {
+	id = food_event.4
+	title = "food_event.4.t"
+	desc = "food_event.4.d"
+	picture = rich_woman
+	hidden = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+					base_tax = 1
+					base_production = 1
+				}
+		}
+		OR = {
+			had_country_flag = { flag = food_consumed days = 90 }
+			NOT = { has_country_flag = food_consumed }
+		}
+		has_global_flag = food_active
+	}
+	
+	
+	immediate = { 
+			set_country_flag = food_consumed
+			every_owned_province = {
+				limit = {
+					OR = {
+						base_tax = 1
+						base_production = 1
+					}
+				}
+							export_to_variable = {
+								which = commoners_in_prov
+								value = modifier:base_production
+							}
+							export_to_variable = {
+								which = uppers_in_prov
+								value = modifier:base_tax
+							}
+							change_variable = { which = population_in_prov which = commoners_in_prov }
+							change_variable = { which = population_in_prov which = uppers_in_prov }
+							
+							set_variable = { which = total_population which = population_in_prov }
+							owner = { 	
+										change_variable = { which = total_population which = PREV }
+										subtract_variable = { which = food_supplies which = total_population }
+										set_variable = { which = total_population value = 0 }
+									 }
+							set_variable = { which = population_in_prov value = 0 }
+							}
+								
+								while = {
+									limit = {
+										NOT = { check_variable = { which = food_supplies value = 0 } }
+									}
+									set_variable = { which = food_supplies value = 0 }
+								}
+	}
+	
+	option = {
+		name = "food_event.1.a"
+			
+	}
+}
+
+########################################################################################
+# Food active or not
+########################################################################################
+country_event = {
+	id = food_event.5
+	title = "food_event.5.t"
+	desc = "food_event.5.d"
+	picture = food_supplies
+	is_triggered_only = yes
+	
+	trigger = { NOT = { has_global_flag = food_question } }
+	
+	immediate = { set_global_flag = food_question }
+
+	option = {
+		name = "food_event.5.a"
+		highlight = yes
+			set_global_flag = food_active
+			
+			hidden_effect = {
+				every_country = {
+					country_event = { id = food_event.6 }
+				}
+			}
+			
+	}
+	option = {
+		name = "food_event.5.b"
+			
+	}
+}
+
+########################################################################################
+# storage_capacity
+########################################################################################
+country_event = {
+	id = food_event.6
+	title = "food_event.6.t"
+	desc = "food_event.6.d"
+	picture = rich_woman
+	hidden = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+					base_tax = 1
+					base_production = 1
+				}
+		}
+		OR = {
+			had_country_flag = { flag = storage_capacity_flag days = 365 }
+			NOT = { has_country_flag = storage_capacity_flag }
+		}
+		has_global_flag = food_active
+	}
+	
+	
+	immediate = { 
+			set_country_flag = storage_capacity_flag
+			
+			export_to_variable = {
+				which = storage_capacity
+				value = modifier:states_development
+			}
+			multiply_variable = { which = storage_capacity value = 10 }				
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_building = small_grain_depot
+						has_building = big_grain_depot
+					}
+				}
+				if = {
+					limit = { has_building = small_grain_depot }
+						set_variable = { which = storage_capacity_local value = 20 }
+					}
+				if = {
+					limit = { has_building = big_grain_depot }
+						set_variable = { which = storage_capacity_local value = 40 }
+					}
+					
+							set_variable = { which = storage_capacity which = storage_capacity_local }
+							owner = { 
+								change_variable = { which = storage_capacity which = PREV } 
+							}
+				}
+								set_variable = { which = storage_25 which = storage_capacity }
+								set_variable = { which = storage_50 which = storage_capacity }
+								set_variable = { which = storage_75 which = storage_capacity }
+					
+								multiply_variable = { which = storage_25 value = 0.25 } 
+								
+								multiply_variable = { which = storage_50 value = 0.5 } 
+								
+								multiply_variable = { which = storage_75 value = 0.75 } 
+				
+	}
+	
+	option = {
+		name = "food_event.1.a"
+			
+	}
+}
+########################################################################################
+# Add Food Monthly capital
+########################################################################################
+country_event = {
+	id = food_event.7
+	title = "food_event.7.t"
+	desc = "food_event.7.d"
+	picture = rich_woman
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = food_active
+		NOT = {
+			any_owned_province = {
+						OR = {
+							trade_goods = fish
+							trade_goods = meat_animals
+							trade_goods = honey
+							trade_goods = grain
+							trade_goods = wine
+							trade_goods = spices
+							trade_goods = fruits
+							trade_goods = olive
+							trade_goods = rice
+							trade_goods = tea_good
+						}
+			}
+		}
+		any_owned_province = {
+					OR = {
+						base_production = 1
+						base_tax = 1
+					}
+		}
+		OR = {
+			had_country_flag = { flag = food_gained_monthly days = 60 }
+			NOT = { has_country_flag = food_gained_monthly }
+		}			
+	}
+	
+	
+	immediate = {
+			set_country_flag = food_gained_monthly
+						capital_scope = {
+							
+							
+							export_to_variable = {
+								which = food_supplies_var
+								value = modifier:trade_goods_size
+							}
+							export_to_variable = {
+								which = multiplied_food
+								value = modifier:trade_goods_size
+							}
+							export_to_variable = {
+								which = trade_goods_size_modifier_var
+								value = modifier:trade_goods_size_modifier
+							}
+							
+							multiply_variable = { which = multiplied_food which = trade_goods_size_modifier_var }
+							change_variable = { which = food_supplies_var which = multiplied_food }
+							####
+							
+							multiply_variable = { which = food_supplies_var value = 10 }
+							
+							
+							set_variable = { which = food_supplies which = food_supplies_var }
+							owner = { change_variable = { which = food_supplies which = PREV } }
+						}
+						
+								while = {
+									limit = {
+											check_variable = { which = food_supplies which = storage_capacity } 
+									}
+									set_variable = { which = food_supplies which = storage_capacity }
+								}
+										
+	}
+	
+	option = {
+		name = "food_event.1.a"
+			
+	}
+}

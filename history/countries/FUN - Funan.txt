@@ -1,0 +1,9 @@
+government = pastoral_tribe
+government_rank = 3
+#mercantilism = 0.25
+primary_culture = funanese
+religion = southern_mythology
+capital = 3754
+technology_group = south_east_asian
+
+500.1.1 = { government = tribal_kingdom }

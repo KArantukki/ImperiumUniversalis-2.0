@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_holy_site_default"
+		texturefile = "gfx//interface//holy_sites//delphi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_holy_site_2407"
+		texturefile = "gfx//interface//holy_sites//baktra.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_3052"
+		texturefile = "gfx//interface//holy_sites//chorasmia.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_2397"
+		texturefile = "gfx//interface//holy_sites//merw.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_2003"
+		texturefile = "gfx//interface//holy_sites//yazd.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_3031"
+		texturefile = "gfx//interface//holy_sites//asnavant.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_holy_site_1945"
+		texturefile = "gfx//interface//holy_sites//alborz.dds"
+		loadType = "INGAME"
+	}
+	
+}

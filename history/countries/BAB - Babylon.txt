@@ -1,0 +1,46 @@
+government = oriental_monarchy
+government_rank = 4
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = babylonian
+religion = mesopotamian_religion
+religious_school = semitic_type
+capital = 1882
+
+historical_rival = EGY
+historical_rival = LYD
+historical_rival = PSE
+
+change_statists_vs_orangists = 0.75
+	add_army_professionalism = 0.05
+
+194.1.1 = {
+	add_ruler_personality = calm_personality
+	add_absolutism = 20
+	monarch = {
+		name = "Neriglissar"
+		dynasty = "of Babylon"
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+198.1.1 = {
+	clear_scripted_personalities = yes
+	monarch = {
+		name = "Labashi-Marduk"
+		dynasty = "of Babylon"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+199.1.1 = {
+	monarch = {
+		name = "Nabonidus"
+		dynasty = "of Babylon"
+		dip = 2
+		adm = 1
+		mil = 4
+	}
+}

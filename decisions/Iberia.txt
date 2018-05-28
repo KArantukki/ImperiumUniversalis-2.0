@@ -1,0 +1,150 @@
+country_decisions = {
+	
+	 form_iberian_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = IBB }
+			culture_group = iberian_group
+			OR = {
+				capital_scope = { region = hispania_baetica }
+				capital_scope = { region = lusitania }
+				capital_scope = { region = cartaginensis_region }
+				capital_scope = { region = gallaecia }
+				capital_scope = { region = hispania_citerior }
+			}
+		}
+		allow = {
+			is_at_war =  no
+			is_subject = no
+			owns_core_province = 34
+			owns_core_province = 25
+			owns_core_province = 19
+			owns_core_province = 36
+		}
+		effect = {
+			change_tag = IBB
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			hidden_effect = {
+				every_province = {
+					limit = { culture_group = iberian_group }
+					add_permanent_claim = IBB
+				}
+			}	
+		}
+		
+		ai_importance = 0
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	 form_lusitania_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = LUS }
+			primary_culture = lusitani
+			capital_scope = {
+				OR = {
+					area = northern_lusitania
+					area = southern_lusitania
+				}
+			}
+		}
+		allow = {
+			is_at_war =  no
+			is_subject = no
+			total_development = 65
+		}
+		effect = {
+			change_tag = LUS
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+				northern_lusitania = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = LUS
+				}
+				southern_lusitania = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = LUS
+				}
+
+			}
+		ai_importance = 25	
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	 form_celtiberia_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = CLI }
+			primary_culture = celtiberian
+			
+		}
+		allow = {
+			is_at_war =  no
+			is_subject = no
+			total_development = 85
+		}
+		effect = {
+			change_tag = CLI
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+				hispania_citerior = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = CLI
+				}
+				hispania_citerior = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = CLI
+				}
+
+			}
+		ai_importance = 0
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	abolish_the_senate = {
+		potential = {
+			government = iberian_monarchy
+		}
+		allow = {
+			is_at_war = no
+			has_any_disaster = no
+			legitimacy = 100
+			adm_tech = 8
+				NOT = {
+					estate_influence = {
+						estate = estate_clans
+						influence = 25
+					}
+				}
+		}
+		effect = {
+			change_government = despotic_monarchy
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -25
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+}

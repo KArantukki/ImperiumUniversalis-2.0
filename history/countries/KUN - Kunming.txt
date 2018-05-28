@@ -1,0 +1,8 @@
+government = pastoral_tribe
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = kunming
+religion = southern_mythology
+capital = 3382
+technology_group = south_east_asian
+	

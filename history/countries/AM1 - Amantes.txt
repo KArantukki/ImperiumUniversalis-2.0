@@ -1,0 +1,10 @@
+
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = balkan
+primary_culture = dardani
+religious_school = balkan_type
+religion = illyrian_religion
+capital = 650
+	

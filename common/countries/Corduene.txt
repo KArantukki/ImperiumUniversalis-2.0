@@ -1,0 +1,63 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 73 99 52 }
+
+historical_idea_groups = {
+	cavalry_ideas
+	economy_ideas
+	trade_ideas
+	administrative_ideas
+	quantity_ideas
+	imperial_government_ideas
+	influence_ideas
+	offensive_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Tiridates #1" = 40
+	"Arsaces #1" = 40
+	"Phriapatius #1" = 40
+	"Phraates #1" = 40
+	"Mithridates #1" = 40
+	"Bacasis #1" = 40
+	"Artabanus #1" = 40
+	"Artabanus #1" = 40
+	"Gotarzes #1" = 40
+	"Orodes #1" = 40
+	"Sanatruces #1" = 40
+	"Pacorus #1" = 40
+	
+	"Yesfir #1" = -1
+	"Zareen #1" = -1
+	"Zhaleh #1" = -1
+	"Nahid #1" = -1
+	"Banu #1" = -1
+	"Esta #1" = -1
+	"Jaleh #1" = -1
+}
+
+leader_names = {
+			Orontes Tigranes Vahagn Hidarnes Ardashir Darius Mithranes Perdiccas Neoptolemus 
+			Sames Arsames Xerxes Abdisares Artaxias Tigranes Artavasdes Ariobarzanes Vonones 
+			Rhadamistus Tiridates Sanatruces Axidares Parthamasiris Khosrov Tigranes Arsaces 
+			Varasdates
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

@@ -1,0 +1,2251 @@
+italic = {
+	graphical_culture = italicgfx
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	
+		
+	lucani   = {
+		primary = LCA
+		}
+	umbri = {
+		primary = UMB
+	}
+	piceni = {
+		primary = PIC
+	}
+	samnitic  = {
+		primary = PTR
+		dynasty_names = { 
+					Pontius Egnatius Mutilus Auruncius Calavius Caracenius Caudinius Herpidius Hirpinius Magius Marrucinius Martsius Pelignius Penthrius Sidicinius Varrianius Versidius Vestinius Vibieis  }
+	}
+	oscan = {
+		primary = VOL
+		}
+	latin = {
+		primary = ROM
+	}
+	bruttii   = {
+		primary = BRV
+		}
+	etruscan  = {
+		primary = ETR
+		
+		country = { female_advisor_chance = 0.25 }
+		
+		dynasty_names = { 	Lausa Luchre Matuna Melacinas Porsenna Pulenas Rumulna Spedo Thelesa Titie Tlesnasa Velianas Vipinas  }
+		male_names = {	Aivas Arnth Arruns Artile Aule Cacu Cae Caeles Caile Cinna Cneve Cuinte Fufluns Hamphiare Herecele Karcuna Lar Larce 
+							Laris Larth Lucie Mamarce Marce Menle Metie Palmithe Pavle Pele Puplie Rumate Sethre Spurie Spurinna Sulla Tages Thefarie Thocero Tite 
+							Uchtave Uthste Vel Velthur Vipie }
+	} 
+	ilienses  = {
+		#primary = 
+	}
+	mamertini  = {
+		#primary = 
+	}
+	sicani = {
+		primary = SII
+	}
+	sicels = {
+		primary = SCC
+	}
+	gallo_roman = {
+		#primary = 
+				male_names = {	
+						Appius Aulus Decimus Gaius Gnaeus Kaeso Lucius Mamercus Manius Mercus Numerius Publius Quintus Servius Sextus
+						Spurius Tiberius Titus Agrippa Ancus Caesar Faustus Hostus Opiter Postumus Proculus Sertor Statius Tullus Volero 
+						Vopiscus Adaryn Abenzio Abhann Allan "Ap Owen" Arthmeal Arto 
+						Belenus Biorach Bran Breanainn Briano Brigh Brog Bruaich
+						Cadan Caol Caradoc Carden Ceall Ceallair Cearbh Chadh Cionnaith
+						Craeg Deoradhan Donaghy Dorran Dougal Drausus Drest Dubno
+						Eburacon Edgan Egan Eimh Eirdirsceaol Ferghus Fear Faol
+						Keeland Kegan Laogh Lorcc Lugubelenus Lugus Maccus Maoilios 
+						Nuireadhach Phelan Raigan Seaghdh Teigen Trahern Tremaine 
+						Tristian Tristram Aius Amaina Amia Avaro Bilinos }
+		
+	}
+	
+	
+	male_names = {	
+			# Patrizier
+			Appius Aulus Decimus Gaius Gnaeus Kaeso Lucius Mamercus Manius Mercus Numerius Publius Quintus Servius Sextus
+			Spurius Tiberius Titus Agrippa Ancus Caesar Faustus Hostus Opiter Postumus Proculus Sertor Statius Tullus Volero 
+			Vopiscus 
+			
+			#Plebejer
+			Novius Occius Paquius Salvius Statius Trebius Vibius
+			
+		}
+	female_names = {
+		Aeliana Albia Antonia Aquilia Argentia Camilla Cassia Clemensia Decima Flavia Florentina Fortunata Gaia Galle
+		Drusilla Dulcia Fabia Faustina Flavia Hilaria Horatia Julia Junia Laelia Laurentia Mercella Marilla 
+		Martia Maxima Mila Nerilla Octavia Prima Priscilla Quintia Sabina Septima Sergia Tanaquil Tatana
+		Tauria Tertia Tullia Urbana Valentina Varinia Vita
+	}
+	dynasty_names = {
+		Aebutius Aemilius Aquillius Atilius Claudius Cloelius Cornelius Curtius Fabius Foslius Furius Geganius Herminus
+		Julius Lartius Lucretius Manlius Marcius Menenius Minucius Mucius Numicius Papirius Pinarius Pollius Postumius
+		Potitius Quinctius Quinctilius Romilius Sempronius Sergius Servilius Sestius Siccius Sulpicius Tarquinius Tullius
+		Valerius Verginius Veturius Vitellius Volumnius Octavius
+		
+		
+	}
+}
+
+hellenic = {
+	graphical_culture = hellenicgfx
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	
+	#### early geek dialects
+	
+	northwest_doric = {
+		dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai Alcmaeonidae Peisistratidae
+			}
+	}
+	doric = {
+		primary = SP1
+		dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai Alcmaeonidae Peisistratidae
+			}
+	}
+	achaean = {
+		primary = ACH
+		dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai Alcmaeonidae Peisistratidae
+			}
+	}
+	aeolic = {
+		primary = BOE
+		dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai Alcmaeonidae Peisistratidae
+			}
+	}
+	arcadian = {
+		primary = ARC
+		dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai Alcmaeonidae Peisistratidae
+			}
+	}
+	ionic = {
+		primary = ATH
+		dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai Alcmaeonidae Peisistratidae
+			}
+	}
+	
+	
+	
+	
+	####
+	
+	
+	greek = {
+		dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai Alcmaeonidae Peisistratidae
+			}
+	}
+	
+	italiote = {
+		primary = SYR
+		dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+			}
+	}
+	
+	kyrenaikian = {
+		primary = KYR
+		dynasty_names = {
+							Battiadai Hieronidai "of Kyrene"
+			}
+	}
+	
+	cimmerian_greek = {
+		primary = BOS
+		dynasty_names = {
+							Spartocidai Satyrai Leuconai Prytanoi "of Agri" "of Arrechi" "of Aspurgianoi" "of Dandarioi" "of Doscai" "of Maiotai" "of Obidiacenoi" "of Psessoi" "of Sindoi" "of Sittacenoi" "of Tarpetes" "of Toretai"
+			}
+	}
+	
+	greco_bactrian = {	
+		primary = GBK
+		dynasty_names = {
+							Diodotid Argeadai Antipatridai Antigonidai Stasanid Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+						}
+						
+			male_names = {	
+							Aristonous Arybbas Balacrus Demetrius Hephaestion Leonnatus Lysmachus Menes Pausanias
+							Peithon Peucestas Ptolemy Philotas Cleitus Sopolis Heraclides Peroidas Socrates Pantordanus
+							Hegelochus Calas Philip Agathon Parmenion Attalus Seleucus Coenus Craterus Gorgias Meleager Menander
+							Polyperchon Simmias Proteas Nearchus Amphoterus Eudemus Iollas Lagus Nicanor Polemon Teutamus Tlepolemus
+							Alexander Archelaos Bubalus Lampos Belistiche Adaios Antipater Alexarchus Leon Marsyas Amerias Oikiades Samus
+							Epigonus Archias Perses Stobaeus Criton Macedonius Parmenion Evander Herophon Adymus Menelaus
+		}	
+			female_names = {
+							Berenike Cleopatra Stratonice Laodice Tryphaena
+		}
+	}
+	greco_indian = {
+		primary = IGK		
+		dynasty_names = {
+							Diodotid Argeadai Antipatridai Antigonidai Stasanid Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+						}
+						
+			male_names = {	
+							Aristonous Arybbas Balacrus Demetrius Hephaestion Leonnatus Lysmachus Menes Pausanias
+							Peithon Peucestas Ptolemy Philotas Cleitus Sopolis Heraclides Peroidas Socrates Pantordanus
+							Hegelochus Calas Philip Agathon Parmenion Attalus Seleucus Coenus Craterus Gorgias Meleager Menander
+							Polyperchon Simmias Proteas Nearchus Amphoterus Eudemus Iollas Lagus Nicanor Polemon Teutamus Tlepolemus
+							Alexander Archelaos Bubalus Lampos Belistiche Adaios Antipater Alexarchus Leon Marsyas Amerias Oikiades Samus
+							Epigonus Archias Perses Stobaeus Criton Macedonius Parmenion Evander Herophon Adymus Menelaus
+		}	
+			female_names = {
+							Berenike Cleopatra Stratonice Laodice Tryphaena
+		}
+	}
+	
+	macedon = {
+		primary = MAC		
+		dynasty_names = {
+							Argeadai Antipatridai Ptolemaioi Antigonidai Seleucidae Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+						}
+						
+			male_names = {	
+							Aristonous Arybbas Balacrus Demetrius Hephaestion Leonnatus Lysmachus Menes Pausanias
+							Peithon Peucestas Ptolemy Philotas Cleitus Sopolis Heraclides Peroidas Socrates Pantordanus
+							Hegelochus Calas Philip Agathon Parmenion Attalus Seleucus Coenus Craterus Gorgias Meleager Menander
+							Polyperchon Simmias Proteas Nearchus Amphoterus Eudemus Iollas Lagus Nicanor Polemon Teutamus Tlepolemus
+							Alexander Archelaos Bubalus Lampos Belistiche Adaios Antipater Alexarchus Leon Marsyas Amerias Oikiades Samus
+							Epigonus Archias Perses Stobaeus Criton Macedonius Parmenion Evander Herophon Adymus Menelaus
+		}	
+		female_names = {
+			Achaia Achradina Agape Agapia Alcippe Alcmene Althea Althaia Amphitrite Antehe Anteia Arete Apseudes
+			Barbara Basiane Baucis Berenike Canace Caenis Caleope Callianeira Callianessa Chione Charis Slio Clymene
+			Damia Delias Demophile Doris Dirce Dione Dynamene Egeria Egina Endeis Eriopis Euodias Eurynome Glyke Gorgo
+			Harmonia Hecuba Hekabe Hellanike Heliodora Helike Hesione Hyrmina Hypsipyle Hippolyta Ianthe Ino Iola Ione
+			Irene Iris Iphigenia Isadora Kallisto Kallixeina Kassandra Kleio Kleopatra Klymene Klytemnestra Kore Koritto
+			Leda Latona Lanike Lasthena Maia Maianria Marpessa Melanie Megare Melite Milto Neaera Nemerte Nikaia Oitane Olympias
+			Orthia Otonia Pales Pelopia Periboea Pasiphae Parthenope Pervica Phaedra Phoebe Phylo Polydora Polymede Polyxena
+			Raisa Rhea Sappho Roxane Rhodope Sophia Sotera Speio Thais Thalassa Thaleia Thebe Theophano Xene Zoe Zita Tyro Thyia
+		}	
+	}
+	seleucid = {
+		primary = SEL		
+		dynasty_names = {
+							Argeadai Antipatridai Antigonidai Seleucidae Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+						}
+						
+			male_names = {	
+							Aristonous Arybbas Balacrus Demetrius Hephaestion Leonnatus Lysmachus Menes Pausanias
+							Peithon Peucestas Ptolemy Philotas Cleitus Sopolis Heraclides Peroidas Socrates Pantordanus
+							Hegelochus Calas Philip Agathon Parmenion Attalus Seleucus Coenus Craterus Gorgias Meleager Menander
+							Polyperchon Simmias Proteas Nearchus Amphoterus Eudemus Iollas Lagus Nicanor Polemon Teutamus Tlepolemus
+							Alexander Archelaos Bubalus Lampos Belistiche Adaios Antipater Alexarchus Leon Marsyas Amerias Oikiades Samus
+							Epigonus Archias Perses Stobaeus Criton Macedonius Parmenion Evander Herophon Adymus Menelaus
+		}	
+			female_names = {
+							Berenike Cleopatra Stratonice Laodice Tryphaena
+		}
+	}
+	ptolemaic = {
+				primary = PTO
+		dynasty_names = {
+							Argeadai Antipatridai Antigonidai Ptolemaioi Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+						}
+						
+			male_names = {	
+							Aristonous Arybbas Balacrus Demetrius Hephaestion Leonnatus Lysmachus Menes Pausanias
+							Peithon Peucestas Ptolemy Philotas Cleitus Sopolis Heraclides Peroidas Socrates Pantordanus
+							Hegelochus Calas Philip Agathon Parmenion Attalus Seleucus Coenus Craterus Gorgias Meleager Menander
+							Polyperchon Simmias Proteas Nearchus Amphoterus Eudemus Iollas Lagus Nicanor Polemon Teutamus Tlepolemus
+							Alexander Archelaos Bubalus Lampos Belistiche Adaios Antipater Alexarchus Leon Marsyas Amerias Oikiades Samus
+							Epigonus Archias Perses Stobaeus Criton Macedonius Parmenion Evander Herophon Adymus Menelaus
+				}
+			female_names = {
+							Berenike Cleopatra 
+			}		
+	}
+	epirot = {
+			primary = EPI
+			dynasty_names = {
+							Aeaci Aeacidae Parauaea Tharrhypaea Pelignaea
+						}
+			male_names = {	
+							Admetus Tharrhypas Alcetas Neoptolemos Arybbas Alexander Aeacides Alcetas Ptolemy Beroea Oroedus
+							Antiochus Amyntas Attalus Polyperchon Polemon Simmias Epigonus Nicocles Hippasus Silanus Pelignas Philagrius
+							Epicrates Nicolaus Glaucus
+			}
+			female_names = {
+							Olympias Deidamia Cleopatra
+			}
+	}
+	
+	massaliote  = {
+		primary = MSZ
+		dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+			}
+	}
+	
+	pontic_greek = {
+			dynasty_names = {
+							Arsakai Mithriadatai Pithodoridai Heraclidae Lacedaemonidai
+						}
+			male_names = {	
+							Diogenes Bion Heraclides Strabo Philetaerus Mithridates Memnon Marcion Aquila Evagrius Athanasius 
+							Ariobarzanes Pharnakes Dareios Arsakes Polemon Pythordoris Clearchus Dionysius Oxyathres
+			}
+			female_names = {
+							Olympias Deidamia Antonia Amastrine
+			}
+	}
+	
+	pergamonite = {
+			primary = PER
+			dynasty_names = {
+							Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+						}
+			male_names = {	
+							Diogenes Bion Heraclides Strabo Philetaerus Mithridates Memnon Marcion Aquila Evagrius Athanasius 
+							Ariobarzanes Pharnakes Dareios Arsakes Polemon Pythordoris Clearchus Dionysius Oxyathres
+			}
+			female_names = {
+							Olympias Deidamia Antonia Amastrine
+			}
+	}
+	
+	greco_semitic = {
+			primary = ATO
+			dynasty_names = {
+							Argeadai Antipatridai Antigonidai Seleucidae Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+						}
+						
+			male_names = {	
+							Aristonous Arybbas Balacrus Demetrius Hephaestion Leonnatus Lysmachus Menes Pausanias
+							Peithon Peucestas Ptolemy Philotas Cleitus Sopolis Heraclides Peroidas Socrates Pantordanus
+							Hegelochus Calas Philip Agathon Parmenion Attalus Seleucus Coenus Craterus Gorgias Meleager Menander
+							Polyperchon Simmias Proteas Nearchus Amphoterus Eudemus Iollas Lagus Nicanor Polemon Teutamus Tlepolemus
+							Alexander Archelaos Bubalus Lampos Belistiche Adaios Antipater Alexarchus Leon Marsyas Amerias Oikiades Samus
+							Epigonus Archias Perses Stobaeus Criton Macedonius Parmenion Evander Herophon Adymus Menelaus
+		}	
+			female_names = {
+							Berenike Cleopatra Stratonice Laodice Tryphaena
+		}
+	}
+	
+	greco_persian = {
+			dynasty_names = {
+							Argeadai Antipatridai Antigonidai Seleucidae Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+						}
+						
+			male_names = {	
+							Aristonous Arybbas Balacrus Demetrius Hephaestion Leonnatus Lysmachus Menes Pausanias
+							Peithon Peucestas Ptolemy Philotas Cleitus Sopolis Heraclides Peroidas Socrates Pantordanus
+							Hegelochus Calas Philip Agathon Parmenion Attalus Seleucus Coenus Craterus Gorgias Meleager Menander
+							Polyperchon Simmias Proteas Nearchus Amphoterus Eudemus Iollas Lagus Nicanor Polemon Teutamus Tlepolemus
+							Alexander Archelaos Bubalus Lampos Belistiche Adaios Antipater Alexarchus Leon Marsyas Amerias Oikiades Samus
+							Epigonus Archias Perses Stobaeus Criton Macedonius Parmenion Evander Herophon Adymus Menelaus
+		}	
+			female_names = {
+							Berenike Cleopatra Stratonice Laodice Tryphaena
+		}
+	}
+	
+	
+	male_names = {	
+			Abantes Abas Abascantus Abreas Acestes Adeimanthos Adelphius Ademetos Adrastos Aeaces Aegaeon Aegicoros
+			Aegon Adrastus Aesepus Aetios Agastrophos Agetos Airopos Aigeus Alcinous Alcmaion Alexandros Aleuas Alkiphron
+			Altes Alphios Alkmaion Amompharetos Amphimnestus Amphinomous Amyntor Alexias Alexarchos Alexander Aloeus Alphaeus
+			Anytos Anytus Apollodoros Apollophanes Atrometos Athenades Athenaeus Asopodoros Asteropaeus Athenaeus Attaginos
+			Bacis Baerius Balius Barates Basilides Bathyaes Belos Biton Bisaltes Boter Borus Bulis Burrhus Butacidas Belos
+			Bendis Bianor Boethus Brygos Brison Butacidas Bacchios Bacchylides Bacenor Bucoli Bulis Briareus Burrhus 
+			Carenos Carneades Carpophorus Celas Cebriones Ceas Chaeremon Choeros Choerilos Cilix Cineas Chryses Chremes
+			Coeranus Cordylion Copreus Cöon Codros Crios Croesus Cronos Cylon Cycnus Cyniscus Cyrenios Cois Conon Cobon Clinias
+			Chromis Chilon Charmides Charillos Chileos Chrysogones Cisses Cnoethos Crethon Ctesippus Cyncus Cyneas Cuphagoras
+			Daetor Damasippus Damasithymos Damoetas Dardanus Daphnis Daphis Deinokrates Deinomenes Deiotones Demarmenos
+			Democedes Demonous Demophlos Demosthenes Deon Diactorides Dexios Dieneces Dicaeus Diocles Dionysophanes Diotrephes
+			Dolops Doreios Doreius Duris Demeas Deiphonous Davos Danaos Damian Daedalos Dadaces Deinias Deipylus Demetrios Deukalion
+			Echekrates Echelaos Echemmon Eioneus Elephenor Eleon Endios Empedocles Ennomus Ennychus Enops Epiphanes Eratosthenes 
+			Euaemon Erysichton Euhemenis Euippus Eukles Euenus Eumolpus Euphorbos Euryanax Eurybates Eutychus Evaenetos Evelthon Evenus Evios
+			Hagnon Halisthertes Halius Harpalion Harpagos Harmon Hegesandros Hegesistratos Helicaon Herakleitos Herakleides Hephaestos 
+			Hero Herodes Herodianus Hiero Hieronymus Hippoklides Hippokratiedes Hippon Hipponax Hippotion Hioples Homeros Hyllus Hypatius
+			Hermon Helios Helle Hermeros Hermotimos Hippias Hyllos Hyperion Hermeias Hippasus Hagias Harmodios Hecataeus Hektor
+			Iambulus Iamus Iasos Iatragoras Icarus Icarius Icarion Ibykos Idas Imbrus Inachos Inachus Ion Iolaos Iphitos Iphitus Isocrates
+			Iakchos Ialmenes Idaios Ilus Idaeus Iobates Iphikrates Isagoras Ismaros Itylus Itheus Ision Irus Iphicrates Itheus
+			Kaletor Kalliaros Kallias Kandaules Karopophores Kasos Kassandros Kephalon Kimon Keos Kekrops Keteus Kleomenes Kosmas Krantor
+			Labdacus Labotas Lampon Lampus Laphanes Learchos Leodes Leonidas Leo Leagros Laogonus Leonitiades Leontis Lemnus Laodocus Lycophron
+			Loxias Lukus Lycophon Lysanios Lygdamis Lysias Lysis Leucippus Lamachos Lagos Lasos Leicritus Leon Leotychides Linus
+			Macarias Machaon Maeon Maron Marsyas Mastor Medus Medon Medios Megakreon Melanthos Melas Menalcas Menandros Menesthes Menestas Mentes 
+			Metron Metrophanes Mikon Mikkos Mnasyllus Mnesiphilos Mnester Monomachus Monoecus Morys Moschion Mulius Myrto Myrsinus Mygdon
+			Naubolus Naukles Nausithous Neoptolemos Neokles Nelpus Nicandros Kikias Nikomachos Nomion Noemon Nisos Nymphicus Nymphodrorus 
+			Odaenathus Odius Odysseus Oenomaus Olus Oliatos Onesilos Onomastos Ophelestes Opites Ops Orges Oresus Orpheus Orsilchus Otus
+			Paios Pallans Pallas Palmys Panares Pandaros Pantites Parthenopaeus Patron Peiros Pelias Pentheus Periclymenus Periandros Perdix
+			Pedocles Patrobus Parmenion Panthous Pantares Peukestes Peteos Periphas Perikles Perieeres Penthylos Paios Palaechthon Palaemon Panaetius
+			Pharnaces Phausius Phaestus Periumus Philoetius Philomen Philostratos Philopoemon Philpoemon Phoenix Phoibus Phorbas Phorcys
+			Priam Pratinos Praxilaus Prinetadas Prokopios Prothous Ptolemaios Pylas Pythes Pythagoras Pytheas Pylaeus Prymneus Pyrrhus Pyris
+			Ribes Rizon Sabas Sabyllos Scamandius Scaios Scythas Scyllias Sicinnos Simonides Skiron Sisyphus Siromos Sophanes Sosilus Sosimenes
+			Speudon Speritas Sostratos Stichius Stolos Strabo Strymon Straton Stachys Sostratos Sosthenes Sinon Syennesis Syagros Stratios
+			Tenes Temenos Elys Terillos Teucer Teukros Tharybis Theas Theasides Theodotus Theodoros Theodekles Thero Theron Theras
+			Thersites Thorax Thrasidaios Thrasilaus Thyrsos Thyrsis Thymotes Timasion Timasitheus Timoxenos Tisias Tisandros Timon Timonax
+			Vettias Xanthippos Xanthippus Xanthos Xenophon Zagreus Zamolxis Zeuxis Zosimus	
+		}
+		female_names = {
+			Achaia Achradina Agape Agapia Alcippe Alcmene Althea Althaia Amphitrite Antehe Anteia Arete Apseudes
+			Barbara Basiane Baucis Berenike Canace Caenis Caleope Callianeira Callianessa Chione Charis Slio Clymene
+			Damia Delias Demophile Doris Dirce Dione Dynamene Egeria Egina Endeis Eriopis Euodias Eurynome Glyke Gorgo
+			Harmonia Hecuba Hekabe Hellanike Heliodora Helike Hesione Hyrmina Hypsipyle Hippolyta Ianthe Ino Iola Ione
+			Irene Iris Iphigenia Isadora Kallisto Kallixeina Kassandra Kleio Kleopatra Klymene Klytemnestra Kore Koritto
+			Leda Latona Lanike Lasthena Maia Maianria Marpessa Melanie Megare Melite Milto Neaera Nemerte Nikaia Oitane Olympias
+			Orthia Otonia Pales Pelopia Periboea Pasiphae Parthenope Pervica Phaedra Phoebe Phylo Polydora Polymede Polyxena
+			Raisa Rhea Sappho Roxane Rhodope Sophia Sotera Speio Thais Thalassa Thaleia Thebe Theophano Xene Zoe Zita Tyro Thyia
+		}
+	dynasty_names = {
+		
+		
+	}
+	
+}
+
+illyrian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = thraciangfx
+	
+	iapyges = {
+		primary = MSS
+		
+	}
+	illyrian = {
+		primary = DE1
+	}
+	ardiaei = {
+		primary = AR1
+	}
+	dardani = {
+		primary = EN1
+	}
+	pannonian = {
+		
+	}
+	
+	male_names = {	
+			Cadmus Hyllus Galatea Encheleus Autarieus Dardanus Maedus Taulas Perrhaebus Triballus Sirras Bardylis Pleuratus
+			Cleitus Monunius Mytilus Agron Scerdilaidas Pinnes Gentius Galaurus Gentius Epulon Opis Bato Baton Astius Nicetas 
+			Decius Probus Diocletian Jovian Scordiscus Triballus 
+			
+		}
+	female_names = {
+			Teuta Partho Daortho Dassaro
+	}
+	dynasty_names = {
+			Cadmio Hyllio Galatea Enchelea Dardanea Taulai Epuloi Batoi Batonoi Astinoi Nicetai Cadmusai Hyllusai Pinnai Batoai Batonai 
+			Deciu Diocletiai Joviae Triballai Agronai Mytilai Maedai 
+		
+	}
+}
+
+dacothracian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = thraciangfx
+	
+	#thracian
+	odrysian = {   
+		primary = ODR
+		dynasty_names = {	Odryssia Sapaea Paitoi Ciconea
+				}
+	}
+	dacian = {
+		primary = DAC
+		
+	}
+	getean = {
+		primary = GET
+		
+	}
+	paeonian = {
+		dynasty_names = {	 Sapaea Paitoi Ciconea Thyni
+				}
+	}
+
+	
+	
+	male_names = {		Abendeinos Abezelmis Agatho Aulousoukos Aulouzenis Bergoule Bithys Bitoulousos Byzantas Dorpanas Drakolas Dromichaites Dyntas Dyrpanais Ebruzelmis Keilaebithys Koseitrales Kozeimases Mokapores Mokasos Mucatra Pulpu Sadalas Sese Seuthes Scoris Scorinis Teres Tyrimmas Zeilas
+		}
+	female_names = {	Elpinike Hegesipyle
+	}
+	dynasty_names = {	Rhaskuporae Emolpoe Maroi Spartacusae Sosiai Antisthenea Rhaskoi Kotyai Sadalae Terai Teresae Zibelmoi
+						Diedyloi Charaspesoi Lysimachoi Lysimachai Kavaroi Seuthoi Syrmoi Patraoi Theroi Kersebleptoi 
+	}
+}
+
+
+gaulish_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+		
+	graphical_culture = celticgfx
+	
+	tylian = {
+		primary = TYL
+	}
+	galatian = {
+		primary = GAL
+	}
+	cisalpine_gaul = {
+		primary = SE2
+	}
+	
+	gaul = {
+		primary = GLI
+	}
+	belgae = {
+		primary = BEL
+	}
+	armorican = {
+		primary = VE3
+	}
+
+	
+	male_names = {		Adaryn Abenzio Abhann Allan "Ap Owen" Arthmeal Arto 
+						Belenus Biorach Bran Breanainn Briano Brigh Brog Bruaich
+						Cadan Caol Caradoc Carden Ceall Ceallair Cearbh Chadh Cionnaith
+						Craeg Deoradhan Donaghy Dorran Dougal Drausus Drest Dubno
+						Eburacon Edgan Egan Eimh Eirdirsceaol Ferghus Fear Faol
+						Keeland Kegan Laogh Lorcc Lugubelenus Lugus Maccus Maoilios 
+						Nuireadhach Phelan Raigan Seaghdh Teigen Trahern Tremaine 
+						Tristian Tristram Aius Amaina Amia Avaro Bilinos
+		}
+	female_names = {	Aingeal Allium Aoibh Arely Brianda Caol Cessily Eimh Kiarra
+						Sabia Seang Shanell Aunia
+	}
+	dynasty_names = {	Adari Biorachae Brani Breanai Brigh Maccae Faoli Chadhi Artoi
+						Craegoi Cadi Caoli Brani Brianoi Brighoi Chadhoi Faoli Fearoi 
+						Keelandoi Edganoi Eganoi Eimhi Dorranoi Dougalae Lugoi Maccui 
+						Raigoi Seaghoi Teigoi 
+	}
+}
+
+
+iberian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = iberiangfx
+	
+	ilercavonian = {
+		primary = ILQ
+	}
+	bastetanian = {
+		primary = BAQ
+	}
+	oretanian = {
+		primary = ORQ
+	}
+	edetanian = {
+		primary = EDQ
+	}
+	
+	male_names = {		
+				Abadutiker Abaraban Abargitibasar Ablon Aibekeres Alorildui Alucio Arbiskar
+				Bagarok Bailar Balceadin Balkar Babpo Binturke Biurbetin Boutintibas Buntalos Busadines Caikonbe
+				Cesaro Edecon Edereta Eterindu Gargoris Habis Iceatin Ieorbeles Indo Iscerebeles Katulatin
+				Korbis Korribilo Lagunas Luxino Mandonio Nisunin Nabarsosin Orison Orisos Sakabik Selgiterar Situbolai
+				Sosain Sosinbiuru Talskubilos Teitebas Tibaste Ultidikan Unibelos Urcetices
+		}
+	female_names = {	
+				Ama Aretaunin Aunia Auruningica Canine Daleninar Himilce Sicounin Stena
+	}
+	dynasty_names = {	Abarabani Abloi Aibekerai Orisoi Indoi Buntaloi Nisunai Indoi Orisoi Luxoi Bailoi Gargoi
+						Edecoi Korbai Lagunae Mandonoi Babpoi Habae Alucoi
+	}
+}
+
+
+	
+
+	
+	
+	
+germanic_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = celticgfx
+	
+	# Nordsee germanen
+	ingaevones = {
+		
+	}
+	# Westrhein germanen
+	istvaeonic = {
+		
+	}
+	# Sueben
+	irminonic = {
+		
+	}
+	# Lugi
+	lugian = {
+		primary = LGI
+	}
+	# Gotones
+	gotones = {
+		primary = GOT
+	}
+	# Northern Germanic
+	nordic = {
+	}
+	male_names = {	
+			Agilaz Agithewaz Alariks Albigaizaz Albiharjaz Andaswaraz Ansulaibaz Audariks Audawarduz Audawiniz Athalaberhtaz Athalagaizaz Athalawulfaz
+			Erknabalthaz Frithugaizaz Frithuriks Frodo Gaizaharduz Gaizariks Gautafrithuz Grimaz Gunthilaibaz Gunthiwulfaz Haimariks Harjamodaz Harjawaldaz
+			Helpariks Hildiriks Hludawiga Hrothiberhtaz Hrothigaizaz Hrothilanda Hrothiriks Hrothiwulfaz Kunjamunduz Merijawiga Raginaharduz Raginaharjaz
+			Raginawalda Redawulfaz Rikaharduz Sigiwarduz Stainawarjaz Uzdagaizaz Uzdawulfaz Waldaharjaz Wiljahelmaz Theudariks Theudobalthaz Theudoberhtaz
+			Wulfagangaz Othalariks Wulfariks Karlaz Karilaz Widuhundaz Wulthuthuwaz Welahanduz Sawiligaz Laguthewaz Halethewaz Harkilaz Hagiradaz Harjabokiz
+			Hadaz Habukaz Gabaharjaz Bidawarjiaz Akaz Aniwulfaz Audagisilaz Wagagastiz Widuhundaz Karlaz Hugiberhtaz
+			Ado Adujislu Aebi Aeko Aeniwulf Aib Aigil Akaz Arogisl Arwi Awimund Bekka Bera Bidawarijaz
+			Boso Dado Danilo Datha Eda Epa Gabar Habukaz Hada Haeriboki Hagiradaz Hahwar Hamal Hariso
+			Hariuha Harkilaz Halethewaz Kolo Laguthewa Lamo Lethro Leubo Liano Ludda Muha
+			Nithijo Noru Oka Pada Rasuwamund Sawilagaz Segalo Sekka Sigibald Sigimer Siethaebald
+			Skanomodu Swarta Taepa Tuda Ura Wagagastiz Wagnijo Wekka Welandu Widuhundaz Witro
+			Wiwogan Wolthuthewaz
+	}
+	female_names = {
+			Hathuwiga Thusnelda Athalahaiduz Berhta Brunahilda Theudolinda Linda Thrutha Albithrutha Ermana Ermagarda Erthomoda Aizariko Frithuriko Rikahardo
+			Raginawalda Frawjo Berhta Hiltjagardaz Gaizathruthitho Grewahildiz Sigifridaz Ingwifridaz Linthiz Frithulinthiz Ermulinthiz Theudalinthiz Sigilinthiz
+			Agilathruth Alagunth Aergunth Agilathruth Aielrun Alagunth Arsiboda Awa Awijabirg Bada
+			Birgina Blithgunth Buriso Eho Feha Fiaginth Goda Godahild Haribrig Hiba Idda Iduni Imuba
+			Jisuhild Leuba Thuruthhild Winka Brunjahildiz Ermunagardaz Ermunahildiz Gundagebo Kunjagunthiz
+	}
+	dynasty_names = {
+			Beroning Theuding Audaring Frithing Hrothing Amal Terving Greuthung Aizarikijaz Ermunasunuz Ermuning Agilwulfing 
+	}
+}	
+	
+# Vedic
+indian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = indiangfx
+	# ceylon
+		magadhi = {
+			primary = MAU
+		}
+		kosalanite = {
+			primary = KOS
+		}
+		vatsanite = {
+			primary = VAT
+		}
+		kambojas = {
+			primary = KAM
+		}
+		gandharan = {
+			primary = GAN
+		}
+		abhiran = {
+			primary = ABH
+		}
+		pulindan = {
+			primary = PLI
+		}
+		kurunite = {
+			primary = KUR
+		}
+		matsyanite = {
+			primary = MAT
+		}
+		saurashtranite = {
+			primary = SUR
+		}
+		nishadan = {
+			primary = NIS
+		}
+		sinhala = {
+			primary = ANJ
+		}
+	
+	male_names = {	
+					Agnimitra Ananta Añjana Arjunadatta Aryabhata Bahasati Bramhadatta Bhadrasala Bhumimitra Brahmamitra Brihadratha Chanakya Chanda 
+					Chandrasena Chitraratha Devadahasakka Dhadhivahana Dhatarattha Guna Hastisaha Ikshvaku Indragnimitra Jambuka Jayasena Jyeshtha Kalpaka 
+					Karna Katyayana Kharavela Khema Kosiki Lalaka Lomapada Mandhata Manudeva Mathrvara Narayana Nimi Okkamukha Pabbata Paniyatappa Parvataka 
+					Prabhanjana Pushpakumar Rahula Sagara Sakatala Samudrasena Shankara Sihahanu Sihassara Sivisamjaya Suddhodana 
+					Susharman Tamralipta Tekicchakani Tivala Uma Vadukha Vakradeva Vasishti Vasu Vasudeva Vasuhoma Vishakha Vrihadratha Vrishasena Vudha
+				}
+	female_names = {
+					Amrapali Anjana Chandana Chellana Durdhara Kaccana Karuvaki Khema Kumaradevi Kurangi Malavika Mallika Maya Nagadevi Nagamunda Prajapati Sanghamitta 
+					Shakata Sita Subandhu Sutanu Tishyaraksha Vajira Yashodhara
+	}
+	dynasty_names = {
+			Abro Deswali Dero Dibla Johiya Joyo Kutchi Channa Bijarani Bhil Bhel Aila Andhaka Ashmaka Bhoja Chedi Jñatrika Kanva Kukura Licchavi Mathara Pitrbhakta Satvata Shainya Shakya Shunga Vasishtha Vidarbha Videha Vrishni
+	}
+}
+	
+
+non_vedic_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = indiangfx
+
+		kalinganite = {
+			primary = KAL
+		}
+		gangaridinite = {
+			primary = GAG
+		}
+		odranite = {
+			primary = ODA
+		}
+	
+	male_names = {	
+					Agnimitra Ananta Añjana Arjunadatta Aryabhata Bahasati Bramhadatta Bhadrasala Bhumimitra Brahmamitra Brihadratha Chanakya Chanda 
+					Chandrasena Chitraratha Devadahasakka Dhadhivahana Dhatarattha Guna Hastisaha Ikshvaku Indragnimitra Jambuka Jayasena Jyeshtha Kalpaka 
+					Karna Katyayana Kharavela Khema Kosiki Lalaka Lomapada Mandhata Manudeva Mathrvara Narayana Nimi Okkamukha Pabbata Paniyatappa Parvataka 
+					Prabhanjana Pushpakumar Rahula Sagara Sakatala Samudrasena Shankara Sihahanu Sihassara Sivisamjaya Suddhodana 
+					Susharman Tamralipta Tekicchakani Tivala Uma Vadukha Vakradeva Vasishti Vasu Vasudeva Vasuhoma Vishakha Vrihadratha Vrishasena Vudha
+				}
+	female_names = {
+					Amrapali Anjana Chandana Chellana Durdhara Kaccana Karuvaki Khema Kumaradevi Kurangi Malavika Mallika Maya Nagadevi Nagamunda Prajapati Sanghamitta 
+					Shakata Sita Subandhu Sutanu Tishyaraksha Vajira Yashodhara
+	}
+	dynasty_names = {
+			Abro Deswali Dero Dibla Johiya Joyo Kutchi Channa Bijarani Bhil Bhel Aila Andhaka Ashmaka Bhoja Chedi Jñatrika Kanva Kukura Licchavi Mathara Pitrbhakta Satvata Shainya Shakya Shunga Vasishtha Vidarbha Videha Vrishni
+	}
+}
+
+anatolian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = punicgfx
+	
+	carian = {
+		primary = CRI
+		male_names = {	
+					Hecatomnus Hidrieus Mausolus Pixodarus
+		}
+	}
+	lycian = {
+		primary = LYC
+	}
+	lydian = {
+		primary = LYD
+		male_names = {	
+					Alulis Argys Arma Ata Atelis Atrastal Bartaras Gugisa Isas Kadoas Kavdaules Kitwa Kukas Kumlis Manes Mitridashtas Nannas Silukas Srkastus Timles Titis Tiwdas Walwes
+		}
+	}
+	paphlagonian  = {
+	
+	}
+	kilikian  = {
+		primary = KIL
+	}
+	kappadokian  = {
+		primary = KPP
+	}
+	pontic  = {
+		primary = PON
+	}
+	
+	male_names = {	
+					Car Lyndus Mysus Atys Nastes Amphimachos Nomion Dares Mycale Tantalus Pelops Broteas 
+					Gyges Ardys Alyattes Croesus Sadyattes Meles Candaules Agron Tantalus Omphale Timolus
+					Manes 
+		}
+		
+	female_names = {
+					Niobe Dione Mysia Atyia Arachne
+	}
+	
+	dynasty_names = {
+					Caria Atyad Tylonid Mermnad Croesiad Meliad Caroi Lyndae Darae Agroi Pelopai Melae Gygeoi
+	}
+	
+}
+
+armenian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = iraniangfx
+	
+	armenian = {
+		primary = ARM
+	}
+	chaldoian = {
+		primary = CH2
+	}
+	mannean = {
+		primary = MNN
+	}
+		
+	
+	male_names = {	
+				Orontes Tigranes Vahagn Hidarnes Ardashir Darius Mithranes Perdiccas Neoptolemus 
+				Sames Arsames Xerxes Abdisares Artaxias Tigranes Artavasdes Ariobarzanes Vonones 
+				Rhadamistus Tiridates Sanatruces Axidares Parthamasiris Khosrov Tigranes Arsaces 
+				Varasdates	
+		}
+		
+	female_names = {
+				Iotapa Isias Antiochis Rodogune Erato Zenobia Ashkhen Pharantzem Zarmandukht
+	}
+	
+	dynasty_names = {
+				Yervanduni Artashesai Arshakuni Mirioi Artaxoi Archilae Dachoi 
+	}
+	
+}	
+	
+semitic = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = punicgfx
+	
+	syriac = {
+			primary = SYI
+			male_names = {	
+						Abdalonymus Abimiki Achololim Admago Agbal Anysus Arabo Asdrubal Astegal Baalhaan Bomilcar Boodes Bostar
+						Carthalo Eshmunazar Fierelus Fuabal Fuano Haggith Hamilax Hamilcar Hamiscora Hampsicora Hannibal Hanno Hannon
+						Hasdrubal Himilco Hiram Jabnit Kandaulo Luli Mago Maharbal Mapen Mathos Merbal Metallo Mintho Muttines Salicar
+						Shipitbaal Sirom Tendao Tetramnestus Zaracas Zinnridi
+			}
+			female_names = {
+						Ayzebel Dido Jezebel Similce Sophoniba Sophonisba Sophonisiba Yzebel
+			}
+			
+			dynasty_names = {
+							Barca Didonia Mago Hannonia
+			}
+	}
+	palmyrian = {
+			primary = PLM
+			male_names = {	
+						Abdalonymus Abimiki Achololim Admago Agbal Anysus Arabo Asdrubal Astegal Baalhaan Bomilcar Boodes Bostar
+						Carthalo Eshmunazar Fierelus Fuabal Fuano Haggith Hamilax Hamilcar Hamiscora Hampsicora Hannibal Hanno Hannon
+						Hasdrubal Himilco Hiram Jabnit Kandaulo Luli Mago Maharbal Mapen Mathos Merbal Metallo Mintho Muttines Salicar
+						Shipitbaal Sirom Tendao Tetramnestus Zaracas Zinnridi
+			}
+			female_names = {
+						Ayzebel Dido Jezebel Similce Sophoniba Sophonisba Sophonisiba Yzebel
+			}
+			
+			dynasty_names = {
+							"of Palmyra"
+			}
+	}
+
+	phoenician = {
+		primary = PHO
+		male_names = {	
+					Abdalonymus Abimiki Achololim Admago Agbal Anysus Arabo Asdrubal Astegal Baalhaan Bomilcar Boodes Bostar
+					Carthalo Eshmunazar Fierelus Fuabal Fuano Haggith Hamilax Hamilcar Hamiscora Hampsicora Hannibal Hanno Hannon
+					Hasdrubal Himilco Hiram Jabnit Kandaulo Luli Mago Maharbal Mapen Mathos Merbal Metallo Mintho Muttines Salicar
+					Shipitbaal Sirom Tendao Tetramnestus Zaracas Zinnridi
+		}
+		female_names = {
+					Ayzebel Dido Jezebel Similce Sophoniba Sophonisba Sophonisiba Yzebel
+		}
+		
+		dynasty_names = {
+						Barca Didonia Mago Hannonia
+		}
+	}
+	punic = {
+		primary = CAR
+		male_names = {	
+					Abdalonim Abdeshmun "Abdi-Milki" Abdmelqart Abdosir Aderbaal Adonibaal Ahiram Akbar Aqhat Ashtartyaton Ashtzaph Azemilk Baalhanno Baalshillek Bodashtart Bodeshmun Bodinelqart 
+					Bodmelqart Danel Elulaios Eshmunamash Germelqart Kanmi Khilletzbaal Maharbaal Melqartpilles Milkherem Milkpilles Milkyaton Philosir Poumyathon "Rib-Addi" Sakarbaal Tabnit 
+					Yehawwielon Yutpan Zimrida
+		}
+		female_names = {
+					Ayzebel Dido Jezebel Similce Sophoniba Sophonisba Sophonisiba Yzebel
+		}
+		
+		dynasty_names = {
+						Barca Didonia Mago Hannonia
+		}
+	}
+	ibero_phoenician = {
+		male_names = {	
+					Abdalonymus Abimiki Achololim Admago Agbal Anysus Arabo Asdrubal Astegal Baalhaan Bomilcar Boodes Bostar
+					Carthalo Eshmunazar Fierelus Fuabal Fuano Haggith Hamilax Hamilcar Hamiscora Hampsicora Hannibal Hanno Hannon
+					Hasdrubal Himilco Hiram Jabnit Kandaulo Luli Mago Maharbal Mapen Mathos Merbal Metallo Mintho Muttines Salicar
+					Shipitbaal Sirom Tendao Tetramnestus Zaracas Zinnridi
+					Abadutiker Abaraban Abargitibasar Ablon Aibekeres Alorildui Alucio Arbiskar
+					Bagarok Bailar Balceadin Balkar Babpo Binturke Biurbetin Boutintibas Buntalos Busadines Caikonbe
+					Cesaro Edecon Edereta Eterindu Gargoris Habis Iceatin Ieorbeles Indo Iscerebeles Katulatin
+					Korbis Korribilo Lagunas Luxino Mandonio Nisunin Nabarsosin Orison Orisos Sakabik Selgiterar Situbolai
+					Sosain Sosinbiuru Talskubilos Teitebas Tibaste Ultidikan Unibelos Urcetices
+		}
+		female_names = {
+					Ayzebel Dido Jezebel Similce Sophoniba Sophonisba Sophonisiba Yzebel
+		}
+		
+		dynasty_names = {
+						Barca Didonia Mago Hannonia
+		}
+	}
+	
+	hebrew = {
+		country = { global_missionary_strength = -0.01 }
+		province = { local_missionary_strength = -0.01 }
+		primary = JUD
+					male_names = {		Reuben Simeon Levi Judah Issachar Zebulun Joseph Benjamin Dan Naphtali Gad Asher David
+										Jacob Jethro Moses Aaron Noah Shem Ham Japheth Terah Abram Nahor Haran Ishmeal Zimran 
+										Jokshan Medan Midian Ishbak Kesed Hazo Jidlaph Bethuel Buz Uz Kesed Kemuel Milcah 
+										Lot Moab Isaac Esau Eliphaz Amalek Amnon Chileab Absalom Shephatiah Itheam Shobab Nathan
+										Ibhar Nepheg Japhia Eliada Saul Solomon Jesse Simri
+										}	
+					female_names = {	Leah Rachel Bilhah Zilpah Sarah Rebekah
+										}
+					dynasty_names = {	Reubenoi Levai Judahai Josephai Benjaminoi Davidoi Jacobi Aaronoi Jehu Omri Simri
+										}
+	}
+	
+	samaritan = {
+		country = { global_missionary_strength = -0.01 }
+		province = { local_missionary_strength = -0.01 }
+		primary = ISR
+					male_names = {		Reuben Simeon Levi Judah Issachar Zebulun Joseph Benjamin Dan Naphtali Gad Asher David
+										Jacob Jethro Moses Aaron Noah Shem Ham Japheth Terah Abram Nahor Haran Ishmeal Zimran 
+										Jokshan Medan Midian Ishbak Kesed Hazo Jidlaph Bethuel Buz Uz Kesed Kemuel Milcah 
+										Lot Moab Isaac Esau Eliphaz Amalek Amnon Chileab Absalom Shephatiah Itheam Shobab Nathan
+										Ibhar Nepheg Japhia Eliada Saul Solomon Jesse Simri
+										}	
+					female_names = {	Leah Rachel Bilhah Zilpah Sarah Rebekah
+										}
+					dynasty_names = {	Reubenoi Levai Judahai Josephai Benjaminoi Davidoi Jacobi Aaronoi Jehu Omri Simri
+										}
+	}
+	
+	moabite = {
+		primary = MOA
+					male_names = {		Reuben Simeon Levi Judah Issachar Zebulun Joseph Benjamin Dan Naphtali Gad Asher David
+										Jacob Jethro Moses Aaron Noah Shem Ham Japheth Terah Abram Nahor Haran Ishmeal Zimran 
+										Jokshan Medan Midian Ishbak Kesed Hazo Jidlaph Bethuel Buz Uz Kesed Kemuel Milcah 
+										Lot Moab Isaac Esau Eliphaz Amalek Amnon Chileab Absalom Shephatiah Itheam Shobab Nathan
+										Ibhar Nepheg Japhia Eliada Saul Solomon Jesse Simri
+										}	
+					female_names = {	Leah Rachel Bilhah Zilpah Sarah Rebekah
+										}
+					dynasty_names = {	Reubenoi Levai Judahai Josephai Benjaminoi Davidoi Jacobi Aaronoi Jehu Omri Simri
+										}
+	}
+	
+	ammonite = {
+		primary = AMM
+					male_names = {		Reuben Simeon Levi Judah Issachar Zebulun Joseph Benjamin Dan Naphtali Gad Asher David
+										Jacob Jethro Moses Aaron Noah Shem Ham Japheth Terah Abram Nahor Haran Ishmeal Zimran 
+										Jokshan Medan Midian Ishbak Kesed Hazo Jidlaph Bethuel Buz Uz Kesed Kemuel Milcah 
+										Lot Moab Isaac Esau Eliphaz Amalek Amnon Chileab Absalom Shephatiah Itheam Shobab Nathan
+										Ibhar Nepheg Japhia Eliada Saul Solomon Jesse Simri
+										}	
+					female_names = {	Leah Rachel Bilhah Zilpah Sarah Rebekah
+										}
+					dynasty_names = {	Reubenoi Levai Judahai Josephai Benjaminoi Davidoi Jacobi Aaronoi Jehu Omri Simri
+										}
+	}
+	
+	idumean = {
+		#primary = 
+					male_names = {		"Baal-hanan" Bela Hadad Husham Jobab "Kaus-gabri" "Kaus-malaka" "Malik-rammu" Samlah Saul
+										}	
+					female_names = {	Leah Rachel Bilhah Zilpah Sarah Rebekah
+										}
+					dynasty_names = {	"Ben Beor" "Ben Zerah" "Ben Bedad" "of Masrekah" "of Rehoboth"
+										}
+	}
+	
+	philistia = {
+		primary = PHI
+					male_names = {		Reuben Simeon Levi Judah Issachar Zebulun Joseph Benjamin Dan Naphtali Gad Asher David
+										Jacob Jethro Moses Aaron Noah Shem Ham Japheth Terah Abram Nahor Haran Ishmeal Zimran 
+										Jokshan Medan Midian Ishbak Kesed Hazo Jidlaph Bethuel Buz Uz Kesed Kemuel Milcah 
+										Lot Moab Isaac Esau Eliphaz Amalek Amnon Chileab Absalom Shephatiah Itheam Shobab Nathan
+										Ibhar Nepheg Japhia Eliada Saul Solomon Jesse
+										}	
+					female_names = {	Leah Rachel Bilhah Zilpah Sarah Rebekah
+										}
+					dynasty_names = {	Reubenoi Levai Judahai Josephai Benjaminoi Davidoi Jacobi Aaronoi
+										}
+	}
+	
+	
+	male_names = {	}	
+	female_names = {	}
+	dynasty_names = {	}	
+}
+
+
+ north_african_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = berbergfx
+	
+	numidian = {
+		primary = MAA
+	}
+	gaetuli = {
+		primary = GaT
+	}
+	lybian = {
+		primary = LYB
+	}
+	mauretanian  = {
+		primary = MRT
+	}
+	garamantes  = {
+		primary = GAR
+	}
+	nasamones  = {
+		primary = NAS
+	}
+	
+	male_names = {	
+			Gala Massinissa Micipsa Adherbal Hiempsal Jugurtha Gauda Masteabar Arabion Juba Gaya
+			Awzal Aylal Azenkwed Cicungh Ikken Cucunq Mass Izri Zacfin Tacfin Ugwistan Usadden Uzza
+			Yuba Zaidren Tagwizult 
+	}
+	female_names = {
+			Illi Tafukt Tasa Tanirt Taylalt Tayri
+	}
+	dynasty_names = {
+			Galai Massinissae Hiepsai Gaudai Tacfinai Usaddai
+	}
+}	
+
+western_iranian = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = iraniangfx
+	
+	medians = {
+		primary = MDI
+	}
+	amard = {
+		primary = HYR	
+	}
+	baloch = {
+		primary = GED
+	}
+	caspian = {
+		primary = CAS
+	}
+	cadusian = {
+		primary = CDS
+	}
+	persian = {
+		primary = PRS
+	}
+	sagartian = {
+		primary = SAG
+	}
+	parthian = {
+		primary = PRT
+	}
+	oreitian = {
+		#primary = 
+	}
+	karamanian = {
+		primary = KRM
+	}
+	
+	
+	male_names = {	
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+	female_names = {
+			Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+	}
+	dynasty_names = {
+			 Bahmanid Jahanid Casid Cyrid Jasid Shapurid Sargonid Payamid Sassanid Pharnacid Sargonid Shapurid 
+			 "of Ispahbudhan" "of Varaz" "of Karen" "of Mihran" "of Spandiyadh" "of Zik" "of Surek"
+	}
+}
+
+steppe_people = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = scythiangfx
+	
+	scythian = {
+		primary = SCY
+		male_names = {	
+				Ishpaka Partatua Madea Eruvand Tigran Tar Torram Tarem Tiermes Terem Tarsua Sco Ra Pada Ada
+		}
+		female_names = {
+					Amage Tabiti "P'ha" Anya Ana
+		}
+	}
+	sarmatian = {
+		male_names = {	
+				Ishpaka Partatua Madea Eruvand Tigran Tar Torram Tarem Tiermes Terem Tarsua Sco Ra Pada Ada
+		}
+		female_names = {
+					Amage Tabiti "P'ha" Anya Ana
+		}
+	}
+	saka = {
+		primary = SK1
+		male_names = {	
+				Ishpaka Partatua Madea Eruvand Tigran Tar Torram Tarem Tiermes Terem Tarsua Sco Ra Pada Ada
+		}
+		female_names = {
+					Amage Tabiti "P'ha" Anya Ana
+		}
+	}
+	massagetean = {
+		primary = MAS
+		male_names = {	
+				Ishpaka Partatua Madea Eruvand Tigran Tar Torram Tarem Tiermes Terem Tarsua Sco Ra Pada Ada
+		}
+		female_names = {
+					Amage Tabiti "P'ha" Anya Ana
+		}
+	}
+	maeotian = {
+		primary = MAI
+		male_names = {	
+				Ishpaka Partatua Madea Eruvand Tigran Tar Torram Tarem Tiermes Terem Tarsua Sco Ra Pada Ada
+		}
+		female_names = {
+					Amage Tabiti "P'ha" Anya Ana
+		}
+	}
+	parni = {
+		primary = PRT
+		male_names = {	
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+				Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+		dynasty_names = {
+					Arsakid
+		}
+	}
+	chorasmian = {
+		primary = KHR
+		male_names = {	
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+				Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+	}
+	finno_ugric = {
+		#primary = TAC
+		male_names = {	
+			Oksi Otso Oftanj Köndös Udmurt Zangari Arvo Bajan Chotkar Ensio Peer Lembit Keljgan Shemvyu Kaisa Raido Oftnja Tansari
+		}
+		female_names = {
+			Bisultan Ulpu Aino Ivy Jesha 
+		}
+	}
+	tauri = {
+		primary = TAC
+		male_names = {	
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+				Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+	}
+	
+	
+	dynasty_names = {
+				Ishpakai Partatuai Madeai Eruvandai Tigranoi Tarai Tarai Torramai Tiermeoi
+	}
+	
+}
+
+
+caucasian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = iraniangfx
+	
+	kartvelian = {
+		primary = ALB
+		male_names = {	
+						Pharnavaz Sauromaces Mirian Pharnajom Artaxias Artoces Mirian Arshak
+						Mihrdat Amazasp Pharasmanes Ghadam Vache Bacurius Trdat Aspacures Dachi 
+						Vakhatang Archil }
+		dynasty_names = {
+						Pharnavai Sauromacai Mirai Pharnajoi Artaxai Dachoi Vachoi }
+	}
+	lazi = {
+		primary = COL
+		male_names = {	
+						Pharnavaz Sauromaces Mirian Pharnajom Artaxias Artoces Mirian Arshak
+						Mihrdat Amazasp Pharasmanes Ghadam Vache Bacurius Trdat Aspacures Dachi 
+						Vakhatang Archil }
+		dynasty_names = {
+						Pharnavai Sauromacai Mirai Pharnajoi Artaxai Dachoi Vachoi }
+	}
+	
+	svan = {
+		male_names = {	
+						Pharnavaz Sauromaces Mirian Pharnajom Artaxias Artoces Mirian Arshak
+						Mihrdat Amazasp Pharasmanes Ghadam Vache Bacurius Trdat Aspacures Dachi 
+						Vakhatang Archil }
+		dynasty_names = {
+						Pharnavai Sauromacai Mirai Pharnajoi Artaxai Dachoi Vachoi }
+	}
+	
+	albanian = {
+		primary = ALB
+		male_names = {	
+						Pharnavaz Sauromaces Mirian Pharnajom Artaxias Artoces Mirian Arshak
+						Mihrdat Amazasp Pharasmanes Ghadam Vache Bacurius Trdat Aspacures Dachi 
+						Vakhatang Archil }
+		dynasty_names = {
+						Pharnavai Sauromacai Mirai Pharnajoi Artaxai Dachoi Vachoi }
+		
+	}	
+		
+	female_names = {
+				Iotapa Isias Antiochis Rodogune Erato Zenobia Ashkhen Pharantzem Zarmandukht
+	}
+	
+	dynasty_names = {
+				Yervanduni Artashesai Arshakuni Mirioi Artaxoi Archilae Dachoi 
+	}
+	
+}
+cushitic_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = berbergfx
+	
+	axumite = {
+		primary = AXU
+		male_names = {	
+			Zoskales Gadarat Adhebah Azaba Datawnas Mehadeyis "Wa`zeb" Ousana Saifu Hataz Ioel Hataz Wazena "Alla Amidas" Nezool Ebana Eon
+		}
+	}
+	habesha = {
+		primary = CYE
+		male_names = {	
+			Zoskales Gadarat Adhebah Azaba Datawnas Mehadeyis "Wa`zeb" Ousana Saifu Hataz Ioel Hataz Wazena "Alla Amidas" Nezool Ebana Eon
+		}
+	}
+	somali = {
+		male_names = {	
+			Zoskales Gadarat Adhebah Azaba Datawnas Mehadeyis "Wa`zeb" Ousana Saifu Hataz Ioel Hataz Wazena "Alla Amidas" Nezool Ebana Eon
+		}
+	}
+	blemmyes = {
+		primary = BLE
+		male_names = {	
+			Kaa Teriahi Awawa Utatrerses Nedjeh Kandake Makeda Aserkamani Seb Alara Kashta Piye Shabaka Taharqa Tantamani Atlanersa Senkamanisken
+			Anlamani Aspelta Malonaqen Analmaye Karkamani Amaniastabarqa Siaspiqa Nasakhma Talakhamani Baskakeren Akhraten Amanibakhi Nastasen 
+		}
+	}
+	nubian = {
+		primary = KUS
+		male_names = {	
+			Kaa Teriahi Awawa Utatrerses Nedjeh Kandake Makeda Aserkamani Seb Alara Kashta Piye Shabaka Taharqa Tantamani Atlanersa Senkamanisken
+			Anlamani Aspelta Malonaqen Analmaye Karkamani Amaniastabarqa Siaspiqa Nasakhma Talakhamani Baskakeren Akhraten Amanibakhi Nastasen 
+			Tamelerdeamani Adeqatali Takideamani Aritenyesbokhe 
+		}
+	}
+	
+	female_names = {
+			Kadimalo Pelkha Atasamale Tagtal Henuttakhebit Mediken Qalhata Piankharty
+	}
+	dynasty_names = {
+			Kaaoi Awawai Nedjehoi Makedai Sebai Alarai Pyoi Shabakai 
+	}
+}
+
+dravidian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = berbergfx
+	
+	tamil = {
+		
+		dynasty_names = {
+			Chola Adityai Parantakai Uttamai
+		}
+	}
+	telugu = {
+		primary = AND
+	}
+	kannada = {
+		primary = KAN
+	}
+	naga = {
+		primary = NAG
+	}
+	ashmakan = {
+		primary = ASH
+	}
+	
+	male_names = {
+		Vijayalaya Aditya Parantaka Gandaraditya Arinjaya Sundara Uttama Rajendra Virarajendra Athirajendra
+		Kulothunga Vikrama Kulothunga Rajaraja Rajadhiraja Kulothunga Ellalan Kulakkottan Ilamcetcenni Karikala Nedunkilli Nalankilli
+		Killivalavan Kopperuncholan Kocengannan Perunarkilli	
+	}
+	female_names = {
+		Abha Afra Ghazi Ganjan Kamil Nabil Nuri Oja Oorja
+	}
+	dynasty_names = {
+		 Ellai Adityai Vikramai Vijai Rajai
+	}
+}
+xiongnu_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = asiangfx
+	
+	xiongnu = {
+		primary = XIO
+	}
+	tocharian = {
+		primary = TOC
+	}
+	wusun = {
+		primary = WUS
+	}
+	donghu = {
+		primary = DON
+	}
+	altaic = {
+		primary = ASC
+	}
+	xianbei = {
+		primary = XIX
+	}
+	
+	male_names = {
+			Touman Modu Laoshang Gunchen Ichise Uwei Ushylu Guilihu Chedi Hulugu Huandi "Uyan-Guidi" Fujulei Seuxie Yui
+	}
+	female_names = {
+			Toumai Moda Laoi
+	}
+	dynasty_names = {
+			Toumanai Modai Gunchenai Ichisai Uwai Chedai Fujuai
+	}
+}
+chinese_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = asiangfx
+	
+	qin = {
+		primary = QIN
+		dynasty_names = {
+				Qin Ying
+		}
+	}
+	shu = {
+		primary = SHU
+		dynasty_names = {
+				Shu Ba
+		}
+	}
+	wei = {
+		primary = WEI
+		dynasty_names = {
+				Wei
+		}
+	}
+	zhao = {
+		primary = ZHA
+		dynasty_names = {
+				Zhao Dai
+		}
+	}
+	yan = {
+		primary = YAN
+		dynasty_names = {
+				Yan
+		}
+	}
+	qi = {
+		primary = QII
+		dynasty_names = {
+				Qi
+		}
+	}
+	song = {
+		primary = SON
+		dynasty_names = {
+				Song Xu Cao
+		}
+	}
+	chu = {
+		primary = CHU
+		dynasty_names = {
+				Chu
+		}
+	}
+	wu = {
+		primary = WUU
+		dynasty_names = {
+				Wu
+		}
+	}
+	han = {
+		primary = HAN
+		dynasty_names = {
+				Han
+		}
+	}
+	male_names = {
+			Zhaoxiang Xiaowen Zhuangxiang "Shi Huangdi" Xian Lie Cheng Huiwen Youmiu Youmiu Youmiu Wen Wu Anxi "Li Kui" 
+			Quan Shen Xi Deng Huang Dao Jiang Liao Ruo Sui Xu Chen Qi Cai Ju Zuo Yue Yingbo "Xiong Li"
+	}
+	female_names = {
+			"Jiang Yuan" Jiang Yuan Jiandi Qingdu  Changyi
+	}
+	dynasty_names = {
+			
+	}
+}
+viet_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = asiangfx
+	
+	au_viet = {
+		primary = NAM
+	}
+	lac_viet = {
+		primary = VAL
+	}
+	funanese = {
+		primary = FUN
+	}
+	mon_culture = {
+	
+	}
+	
+	male_names = {
+			Duong Dien Lan Hy Huy Chieu Vy Dinh Trinh Vo Viet Anh Trieu Tao Nghi Due Minh
+	}
+	female_names = {
+			Cong Dung Hanh Ly
+	}
+	dynasty_names = {
+			"Hong Bang" Ngo Tran Ho Thuc Dinh
+	}
+}
+
+yue_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = asiangfx
+	
+	yue = {
+		primary = YUE
+		dynasty_names = {
+				Yue Qu Xin
+		}
+	}
+	yelang = {
+		primary = YEL
+		dynasty_names = {
+				"Ye Lang"
+		}
+	}
+	ganyue = {
+		primary = GAA
+		dynasty_names = {
+				Yue "Ganyue"
+		}
+	}
+	nanyue = {
+		primary = NAN
+		dynasty_names = {
+				Yue "Nanyue"
+		}
+	}
+	
+	male_names = {
+			Zhaoxiang Xiaowen Zhuangxiang "Shi Huangdi" Xian Lie Cheng Huiwen Youmiu Youmiu Youmiu Wen Wu Anxi "Li Kui" 
+			Quan Shen Xi Deng Huang Dao Jiang Liao Ruo Sui Xu Chen Qi Cai Ju Zuo Yue Yingbo "Xiong Li"
+	}
+	female_names = {
+			"Jiang Yuan" Jiang Yuan Jiandi Qingdu  Changyi
+	}
+	dynasty_names = {
+			
+	}
+}
+tibetan_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = asiangfx
+
+	
+	kiratan = {
+		primary = KIR
+	}
+	tibetan = {
+		primary = ZHN
+	}
+	kunming = {
+		primary = KUN
+	}
+	dian = {
+		primary = DIA
+	}
+	arakan = {
+		primary = ARK
+	}
+	qiang = {
+		primary = QUU
+	}
+	pyu = {
+		
+	}
+	shan = {
+		primary = SHN
+	}
+	
+	male_names = {	
+					Ali Abid Adib Amin Amar Badr Baha Binod Bishr Barkat Bilal Chain Chinmay
+					Divit Dinar Dhaval Esh Eikram Faris Farid Faraz Farhan Gopi Gulzar Girish
+					Hanif Hiran Hilal Ish Izz Ikrya Indra Jad Jai Jap Kishor Khaleel Khaleed
+					Lavin Latif Laiq Manu Majd Manav Malik Najib Nooh Naqi Omprakash Parth Pawan
+					Pranay Qamar Rabee Rabah Ramesh Rajesh Sagar Saeed Samit Suwaybit Tahir Taj
+					Taqiyy Ulfat Umarah Veenu Vivek Vinod Wadi Wafiq Wajeeh Xavi Yar Yathrib Zul
+				}
+	female_names = {
+			Abha Afra Ghazi Ganjan Kamil Nabil Nuri Oja Oorja
+	}
+	dynasty_names = {
+			Abro Deswali Dero Dibla Johiya Joyo Kutchi Channa Bijarani Bhil Bhel
+	}
+}	
+
+
+
+eastern_iranian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = iraniangfx
+
+	sogdian = {
+		primary = SOG
+		male_names = {	
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+				Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+	}
+	pashtuns = {
+		primary = ARA
+		male_names = {	
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+				Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+	}
+	bactrian = {
+		primary = BAK
+		male_names = {	
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+				Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+	}
+	drangian = {
+		primary = DRN
+		male_names = {	
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+				Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+	}
+	arian = {
+		#primary = BAK
+		male_names = {	
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+				Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+	}
+	parikanian = {
+		#primary = 
+	}
+	
+}
+egyptian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = punicgfx
+
+		
+	egyptian = {
+		primary = EGY
+		male_names = {	
+			Ramsses Setnakhte Khaemwaset Amenhirkhepeshef Itamun Amenhirkhepeshef Ammeris Stephinates Nechepsos Necho Wahibre Wehemibre
+			Neferibre Haaibre Khnemibre Ankhkaenre Apries Psamtik Takhuit Khedebneithirbinet Mehytenweskhet Tentkheta Nakhtubasterau Manetho
+			
+		}
+		female_names = {
+			Tyti Baketwernel Tentamun Nubkhesbed
+		}
+		dynasty_names = {
+			Ramssesoi Itamunoi Ammeroi Nechoi Apriesoi
+		
+		}
+	}
+	wasetic {
+		primary = THB
+		male_names = {	
+			Ramsses Setnakhte Khaemwaset Amenhirkhepeshef Itamun Amenhirkhepeshef Ammeris Stephinates Nechepsos Necho Wahibre Wehemibre
+			Neferibre Haaibre Khnemibre Ankhkaenre Apries Psamtik Takhuit Khedebneithirbinet Mehytenweskhet Tentkheta Nakhtubasterau Manetho
+			
+		}
+		female_names = {
+			Tyti Baketwernel Tentamun Nubkhesbed
+		}
+		dynasty_names = {
+			Ramssesoi Itamunoi Ammeroi Nechoi Apriesoi
+		
+		}
+	}
+}
+
+
+akkadian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = iraniangfx
+
+		assyrian = {
+			primary = ASY
+				male_names = {		Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
+									Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
+									Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur
+								}	
+				female_names = {	Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu	}				
+		}
+		babylonian = {
+			primary = BAB
+				male_names = {		Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
+									Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
+									Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur
+								}	
+				female_names = {	Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu	}	
+		}
+		elamite = {
+			primary = SUS
+				male_names = {		Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
+									Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
+									Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur
+								}	
+				female_names = {	Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu	}	
+		}
+		gutian = {
+			
+		}
+		dynasty_names = {	Hormuzdai Asmaroi Amiroi Eshoi Haloi Arseenoi Yaloi
+										}
+	}
+	
+
+aquitani_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = celticgfx
+
+	aquitani = {
+		
+	}
+	vascones = {
+		primary = VAQ
+	}
+		
+		male_names = {		Adaryn Abenzio Abhann Allan "Ap Owen" Arthmeal Arto 
+							Belenus Biorach Bran Breanainn Briano Brigh Brog Bruaich
+							Cadan Caol Caradoc Carden Ceall Ceallair Cearbh Chadh Cionnaith
+							Craeg Deoradhan Donaghy Dorran Dougal Drausus Drest Dubno
+							Eburacon Edgan Egan Eimh Eirdirsceaol Ferghus Fear Faol
+							Keeland Kegan Laogh Lorcc Lugubelenus Lugus Maccus Maoilios 
+							Nuireadhach Phelan Raigan Seaghdh Teigen Trahern Tremaine 
+							Tristian Tristram Aius Amaina Amia Avaro Bilinos
+			}
+		female_names = {	Aingeal Allium Aoibh Arely Brianda Caol Cessily Eimh Kiarra
+							Sabia Seang Shanell Aunia
+		}
+		dynasty_names = {	Adari Biorachae Brani Breanai Brigh Maccae Faoli Chadhi Artoi
+							Craegoi Cadi Caoli Brani Brianoi Brighoi Chadhoi Faoli Fearoi 
+							Keelandoi Edganoi Eganoi Eimhi Dorranoi Dougalae Lugoi Maccui 
+							Raigoi Seaghoi Teigoi 
+		}
+	}
+	
+
+eastern_celtic = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+		
+	graphical_culture = celticgfx
+	
+
+	vindelici = {
+		primary = VIN
+	}
+	noric = {
+		primary = NOR
+	}
+	boiian = {
+		primary = BOI
+	}
+	volci ={
+		primary = VAZ
+	}
+	helvetii ={
+		primary = HEV
+	}
+	lepontic = {
+		primary = LEP
+	}
+	
+	male_names = {		Adaryn Abenzio Abhann Allan "Ap Owen" Arthmeal Arto 
+						Belenus Biorach Bran Breanainn Briano Brigh Brog Bruaich
+						Cadan Caol Caradoc Carden Ceall Ceallair Cearbh Chadh Cionnaith
+						Craeg Deoradhan Donaghy Dorran Dougal Drausus Drest Dubno
+						Eburacon Edgan Egan Eimh Eirdirsceaol Ferghus Fear Faol
+						Keeland Kegan Laogh Lorcc Lugubelenus Lugus Maccus Maoilios 
+						Nuireadhach Phelan Raigan Seaghdh Teigen Trahern Tremaine 
+						Tristian Tristram Aius Amaina Amia Avaro Bilinos
+		}
+	female_names = {	Aingeal Allium Aoibh Arely Brianda Caol Cessily Eimh Kiarra
+						Sabia Seang Shanell Aunia
+	}
+	dynasty_names = {	Adari Biorachae Brani Breanai Brigh Maccae Faoli Chadhi Artoi
+						Craegoi Cadi Caoli Brani Brianoi Brighoi Chadhoi Faoli Fearoi 
+						Keelandoi Edganoi Eganoi Eimhi Dorranoi Dougalae Lugoi Maccui 
+						Raigoi Seaghoi Teigoi 
+	}
+}
+veneti_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+		
+	graphical_culture = celticgfx
+	
+	liburni = {
+		primary = LI1
+	}
+	veneti = {
+		primary = VE2
+	}
+	
+	male_names = {		Adaryn Abenzio Abhann Allan "Ap Owen" Arthmeal Arto 
+						Belenus Biorach Bran Breanainn Briano Brigh Brog Bruaich
+						Cadan Caol Caradoc Carden Ceall Ceallair Cearbh Chadh Cionnaith
+						Craeg Deoradhan Donaghy Dorran Dougal Drausus Drest Dubno
+						Eburacon Edgan Egan Eimh Eirdirsceaol Ferghus Fear Faol
+						Keeland Kegan Laogh Lorcc Lugubelenus Lugus Maccus Maoilios 
+						Nuireadhach Phelan Raigan Seaghdh Teigen Trahern Tremaine 
+						Tristian Tristram Aius Amaina Amia Avaro Bilinos
+		}
+	female_names = {	Aingeal Allium Aoibh Arely Brianda Caol Cessily Eimh Kiarra
+						Sabia Seang Shanell Aunia
+	}
+	dynasty_names = {	Adari Biorachae Brani Breanai Brigh Maccae Faoli Chadhi Artoi
+						Craegoi Cadi Caoli Brani Brianoi Brighoi Chadhoi Faoli Fearoi 
+						Keelandoi Edganoi Eganoi Eimhi Dorranoi Dougalae Lugoi Maccui 
+						Raigoi Seaghoi Teigoi 
+	}
+}
+
+arabic_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = berbergfxgfx
+
+			qedarite  = {
+				primary = QED
+			}
+			nabataean  = {
+				primary = NAB
+			}
+			saracenean  = {
+				primary = SRC
+			}			
+			sabaean  = {
+				primary = ASA
+
+			}
+			
+			minaean  = {
+				primary = MIN
+
+			}
+			
+			qatabanian  = {
+				primary = QAT
+
+			}
+			
+			hadramitic  = {
+				primary = HAT
+
+			}
+			
+			mykians  = {
+				primary = KUZ
+
+			}
+			
+			gerrhan  = {
+				primary = HAJ
+
+			}
+			daamat = {
+				primary = DAA
+				male_names = {	
+					Zoskales Gadarat Adhebah Azaba Datawnas Mehadeyis "Wa`zeb" Ousana Saifu Hataz Ioel Hataz Wazena "Alla Amidas" Nezool Ebana Eon
+				}
+			}
+			
+			arab  = {
+					male_names = {	Haritat Abadat Rabbil Maliku Natnu Nuhuru Nebajot Harthah Obodas
+									Abdharetat Abdmaliku Afsa "An'am" Ayshu Fara Haddanu Hagay Haniu
+									Huru Kaddu Karibu Malikat Obeyshat Quasijju Rabbu Ruma Shudu Taymu Udaino 
+									Wahballahi Wahbu Zaidelos Zaybu	}	
+					female_names = {	Uzza Abazu Rabuzzat	}
+					dynasty_names = {	Hariatoi Abadatoi Rabbiloi Natnuoi Hajr	}	
+				
+			}
+	
+		male_names = {	Haritat Abadat Rabbil Maliku Natnu Nuhuru Nebajot Harthah Obodas
+							Abdharetat Abdmaliku Afsa "An'am" Ayshu Fara Haddanu Hagay Haniu
+							Huru Kaddu Karibu Malikat Obeyshat Quasijju Rabbu Ruma Shudu Taymu Udaino 
+							Wahballahi Wahbu Zaidelos Zaybu	}	
+			female_names = {	Uzza Abazu Rabuzzat	}
+			dynasty_names = {	Hariatoi Abadatoi Rabbiloi Natnuoi	}
+	}
+
+britannic_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+		
+	graphical_culture = celticgfx
+	
+	
+	britannic = {
+		primary = BRT
+	}
+	caledonian = {
+		primary = CLD
+	}
+	hibernian = {
+		
+	}
+	
+	male_names = {		Adaryn Abenzio Abhann Allan "Ap Owen" Arthmeal Arto 
+						Belenus Biorach Bran Breanainn Briano Brigh Brog Bruaich
+						Cadan Caol Caradoc Carden Ceall Ceallair Cearbh Chadh Cionnaith
+						Craeg Deoradhan Donaghy Dorran Dougal Drausus Drest Dubno
+						Eburacon Edgan Egan Eimh Eirdirsceaol Ferghus Fear Faol
+						Keeland Kegan Laogh Lorcc Lugubelenus Lugus Maccus Maoilios 
+						Nuireadhach Phelan Raigan Seaghdh Teigen Trahern Tremaine 
+						Tristian Tristram Aius Amaina Amia Avaro Bilinos
+		}
+	female_names = {	Aingeal Allium Aoibh Arely Brianda Caol Cessily Eimh Kiarra
+						Sabia Seang Shanell Aunia
+	}
+	dynasty_names = {	Adari Biorachae Brani Breanai Brigh Maccae Faoli Chadhi Artoi
+						Craegoi Cadi Caoli Brani Brianoi Brighoi Chadhoi Faoli Fearoi 
+						Keelandoi Edganoi Eganoi Eimhi Dorranoi Dougalae Lugoi Maccui 
+						Raigoi Seaghoi Teigoi 
+	}
+}
+ibero_celtic_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+		
+	graphical_culture = celticgfx
+	
+	
+	lusitani = {
+		primary = LUS
+	}
+	celtiberian = {
+		primary = CLI
+	}
+	vettones = {
+		primary = CVQ
+	}
+	cantabri = {
+		
+	}
+	celtici = {
+		primary = CLQ
+	}
+	callaeci = {
+		
+	}
+	
+	male_names = {		Adaryn Abenzio Abhann Allan "Ap Owen" Arthmeal Arto 
+						Belenus Biorach Bran Breanainn Briano Brigh Brog Bruaich
+						Cadan Caol Caradoc Carden Ceall Ceallair Cearbh Chadh Cionnaith
+						Craeg Deoradhan Donaghy Dorran Dougal Drausus Drest Dubno
+						Eburacon Edgan Egan Eimh Eirdirsceaol Ferghus Fear Faol
+						Keeland Kegan Laogh Lorcc Lugubelenus Lugus Maccus Maoilios 
+						Nuireadhach Phelan Raigan Seaghdh Teigen Trahern Tremaine 
+						Tristian Tristram Aius Amaina Amia Avaro Bilinos
+		}
+	female_names = {	Aingeal Allium Aoibh Arely Brianda Caol Cessily Eimh Kiarra
+						Sabia Seang Shanell Aunia
+	}
+	dynasty_names = {	Adari Biorachae Brani Breanai Brigh Maccae Faoli Chadhi Artoi
+						Craegoi Cadi Caoli Brani Brianoi Brighoi Chadhoi Faoli Fearoi 
+						Keelandoi Edganoi Eganoi Eimhi Dorranoi Dougalae Lugoi Maccui 
+						Raigoi Seaghoi Teigoi 
+	}
+}
+ligures_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+		
+	graphical_culture = celticgfx
+
+	ligures = {
+		primary = GE2
+	}
+	corsi  = {
+		primary = CRS
+	}
+	
+	male_names = {		Adaryn Abenzio Abhann Allan "Ap Owen" Arthmeal Arto 
+						Belenus Biorach Bran Breanainn Briano Brigh Brog Bruaich
+						Cadan Caol Caradoc Carden Ceall Ceallair Cearbh Chadh Cionnaith
+						Craeg Deoradhan Donaghy Dorran Dougal Drausus Drest Dubno
+						Eburacon Edgan Egan Eimh Eirdirsceaol Ferghus Fear Faol
+						Keeland Kegan Laogh Lorcc Lugubelenus Lugus Maccus Maoilios 
+						Nuireadhach Phelan Raigan Seaghdh Teigen Trahern Tremaine 
+						Tristian Tristram Aius Amaina Amia Avaro Bilinos
+		}
+	female_names = {	Aingeal Allium Aoibh Arely Brianda Caol Cessily Eimh Kiarra
+						Sabia Seang Shanell Aunia
+	}
+	dynasty_names = {	Adari Biorachae Brani Breanai Brigh Maccae Faoli Chadhi Artoi
+						Craegoi Cadi Caoli Brani Brianoi Brighoi Chadhoi Faoli Fearoi 
+						Keelandoi Edganoi Eganoi Eimhi Dorranoi Dougalae Lugoi Maccui 
+						Raigoi Seaghoi Teigoi 
+	}
+}	
+nuragic_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+		
+	graphical_culture = celticgfx
+
+	sardinian   = {
+		primary = SAR
+	}
+	talaiotic   = {
+		primary = GYM
+	}
+	
+	male_names = {		
+				Abadutiker Abaraban Abargitibasar Ablon Aibekeres Alorildui Alucio Arbiskar
+				Bagarok Bailar Balceadin Balkar Babpo Binturke Biurbetin Boutintibas Buntalos Busadines Caikonbe
+				Cesaro Edecon Edereta Eterindu Gargoris Habis Iceatin Ieorbeles Indo Iscerebeles Katulatin
+				Korbis Korribilo Lagunas Luxino Mandonio Nisunin Nabarsosin Orison Orisos Sakabik Selgiterar Situbolai
+				Sosain Sosinbiuru Talskubilos Teitebas Tibaste Ultidikan Unibelos Urcetices
+		}
+	female_names = {	
+				Ama Aretaunin Aunia Auruningica Canine Daleninar Himilce Sicounin Stena
+	}
+	dynasty_names = {	Abarabani Abloi Aibekerai Orisoi Indoi Buntaloi Nisunai Indoi Orisoi Luxoi Bailoi Gargoi
+						Edecoi Korbai Lagunae Mandonoi Babpoi Habae Alucoi
+	}
+}	
+raeti_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+		
+	graphical_culture = celticgfx
+	
+	
+	raeti = {
+		primary = RAE
+	}
+	
+	male_names = {		Adaryn Abenzio Abhann Allan "Ap Owen" Arthmeal Arto 
+						Belenus Biorach Bran Breanainn Briano Brigh Brog Bruaich
+						Cadan Caol Caradoc Carden Ceall Ceallair Cearbh Chadh Cionnaith
+						Craeg Deoradhan Donaghy Dorran Dougal Drausus Drest Dubno
+						Eburacon Edgan Egan Eimh Eirdirsceaol Ferghus Fear Faol
+						Keeland Kegan Laogh Lorcc Lugubelenus Lugus Maccus Maoilios 
+						Nuireadhach Phelan Raigan Seaghdh Teigen Trahern Tremaine 
+						Tristian Tristram Aius Amaina Amia Avaro Bilinos
+		}
+	female_names = {	Aingeal Allium Aoibh Arely Brianda Caol Cessily Eimh Kiarra
+						Sabia Seang Shanell Aunia
+	}
+	dynasty_names = {	Adari Biorachae Brani Breanai Brigh Maccae Faoli Chadhi Artoi
+						Craegoi Cadi Caoli Brani Brianoi Brighoi Chadhoi Faoli Fearoi 
+						Keelandoi Edganoi Eganoi Eimhi Dorranoi Dougalae Lugoi Maccui 
+						Raigoi Seaghoi Teigoi 
+	}
+}	
+macedon_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+		
+	graphical_culture = hellenicgfx
+	
+	
+	old_macedon = {
+		primary = MAC
+		dynasty_names = {
+							Argeadai Antipatridai Ptolemaioi Antigonidai Seleucidae Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+						}
+						
+			male_names = {	
+							Aristonous Arybbas Balacrus Demetrius Hephaestion Leonnatus Lysmachus Menes Pausanias
+							Peithon Peucestas Ptolemy Philotas Cleitus Sopolis Heraclides Peroidas Socrates Pantordanus
+							Hegelochus Calas Philip Agathon Parmenion Attalus Seleucus Coenus Craterus Gorgias Meleager Menander
+							Polyperchon Simmias Proteas Nearchus Amphoterus Eudemus Iollas Lagus Nicanor Polemon Teutamus Tlepolemus
+							Alexander Archelaos Bubalus Lampos Belistiche Adaios Antipater Alexarchus Leon Marsyas Amerias Oikiades Samus
+							Epigonus Archias Perses Stobaeus Criton Macedonius Parmenion Evander Herophon Adymus Menelaus
+		}	
+		female_names = {
+			Achaia Achradina Agape Agapia Alcippe Alcmene Althea Althaia Amphitrite Antehe Anteia Arete Apseudes
+			Barbara Basiane Baucis Berenike Canace Caenis Caleope Callianeira Callianessa Chione Charis Slio Clymene
+			Damia Delias Demophile Doris Dirce Dione Dynamene Egeria Egina Endeis Eriopis Euodias Eurynome Glyke Gorgo
+			Harmonia Hecuba Hekabe Hellanike Heliodora Helike Hesione Hyrmina Hypsipyle Hippolyta Ianthe Ino Iola Ione
+			Irene Iris Iphigenia Isadora Kallisto Kallixeina Kassandra Kleio Kleopatra Klymene Klytemnestra Kore Koritto
+			Leda Latona Lanike Lasthena Maia Maianria Marpessa Melanie Megare Melite Milto Neaera Nemerte Nikaia Oitane Olympias
+			Orthia Otonia Pales Pelopia Periboea Pasiphae Parthenope Pervica Phaedra Phoebe Phylo Polydora Polymede Polyxena
+			Raisa Rhea Sappho Roxane Rhodope Sophia Sotera Speio Thais Thalassa Thaleia Thebe Theophano Xene Zoe Zita Tyro Thyia
+		}	
+	}
+}
+
+
+korean_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = asiangfx
+	
+	gojoseon = {
+		primary = GOJ
+	}
+	dongye = {
+		primary = YEE
+	}
+	okjeo = {
+		primary = OKJ
+	}
+	baekje = {
+		primary = BAE
+	}
+	buyeo = {
+		primary = BUY
+	}
+	sillan = {
+		primary = SLL
+	}
+	
+	male_names = {
+			Silla Gaya Daegaya Balhae Baekje Goguryeo Goryeo Buyeo Gojoseon Wanggeom
+	}
+	female_names = {
+			Ye Soseono Yuhwa
+	}
+	dynasty_names = {
+			Silla Gaya Daegaya Balhae Baekje Goguryeo Goryeo Buyeo Gojoseon Wanggeom
+	}
+}
+
+turdetani_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = iberiangfx
+	
+	
+	turdetani = {
+		primary = TRQ
+	}
+	
+	male_names = {		
+				Abadutiker Abaraban Abargitibasar Ablon Aibekeres Alorildui Alucio Arbiskar
+				Bagarok Bailar Balceadin Balkar Babpo Binturke Biurbetin Boutintibas Buntalos Busadines Caikonbe
+				Cesaro Edecon Edereta Eterindu Gargoris Habis Iceatin Ieorbeles Indo Iscerebeles Katulatin
+				Korbis Korribilo Lagunas Luxino Mandonio Nisunin Nabarsosin Orison Orisos Sakabik Selgiterar Situbolai
+				Sosain Sosinbiuru Talskubilos Teitebas Tibaste Ultidikan Unibelos Urcetices
+		}
+	female_names = {	
+				Ama Aretaunin Aunia Auruningica Canine Daleninar Himilce Sicounin Stena
+	}
+	dynasty_names = {	Abarabani Abloi Aibekerai Orisoi Indoi Buntaloi Nisunai Indoi Orisoi Luxoi Bailoi Gargoi
+						Edecoi Korbai Lagunae Mandonoi Babpoi Habae Alucoi
+	}
+}
+
+	
+
+thraco_phrygian_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = hellenicgfx
+	
+
+	phrygian  = {
+		primary = PHR
+	}
+	bithynian  = {
+		primary = BIT
+	}
+	mysian  = {
+		#primary = 
+	}
+	
+	
+	male_names = {		Rhaskuporis Orpheus Emolpos Maron Spartacus Sosias Thukydides Antisthenes Rhoimetlkes 
+						Rhaskos Kotys Rhaskuporis Sadales Teres Amatokos Zibelmios Barsabas Diedylis Charaspes
+						Lysimachos Arsinoe Kavaros Skostokos Seuthes Syrmos Patraios Theres Kersebleptes Berisades
+						Maisades Medokos Sitalkes Sparadokos Oloros
+		}
+	female_names = {	Elpinike Hegesipyle
+	}
+	dynasty_names = {	Rhaskuporae Emolpoe Maroi Spartacusae Sosiai Antisthenea Rhaskoi Kotyai Sadalae Terai Teresae Zibelmoi
+						Diedyloi Charaspesoi Lysimachoi Lysimachai Kavaroi Seuthoi Syrmoi Patraoi Theroi Kersebleptoi 
+	}
+}
+
+tungusic_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = asiangfx
+	
+
+	sushen = {
+		primary = SSH
+	}
+	yilou = {
+		primary = YIL
+	}
+	
+	male_names = {
+			Silla Gaya Daegaya Balhae Baekje Goguryeo Goryeo Buyeo Gojoseon Wanggeom
+	}
+	female_names = {
+			Ye Soseono Yuhwa
+	}
+	dynasty_names = {
+			Silla Gaya Daegaya Balhae Baekje Goguryeo Goryeo Buyeo Gojoseon Wanggeom
+	}
+}
+
+balto_slavic_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = scythiangfx
+	
+
+	baltic = {
+		primary = AES
+		male_names = {
+				Aigolas Daugomantas Gietaras Meirovaltas Mintidaugas Ramunas
+		}
+		female_names = {
+				Austeia Daina Edli Migla Rasa
+		}
+		dynasty_names = {
+				Austei Aigolid Gietarid Ramunid
+		}
+	}
+	slavic = {
+		male_names = {
+				Bagadonu Bojomeiras Bornimeiros Budegostis Gostislovu Izeslovu Mojoslovu Mistoslovu Mistovoju Xodovoju
+		}
+		female_names = {
+				Nadezhda Mistislava Gostislava
+		}
+		dynasty_names = {
+				Medestei Wilkas Slovu Antei Vunedei
+		}
+	}
+	
+	male_names = {
+			
+	}
+	female_names = {
+			
+	}
+}
+
+nanman_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = asiangfx
+	
+
+	nanman = {
+		primary = NNM
+	}
+	
+	dongyi = {
+		primary = GUM
+	}
+	
+	male_names = {
+			Zhaoxiang Xiaowen Zhuangxiang "Shi Huangdi" Xian Lie Cheng Huiwen Youmiu Youmiu Youmiu Wen Wu Anxi "Li Kui" 
+			Quan Shen Xi Deng Huang Dao Jiang Liao Ruo Sui Xu Chen Qi Cai Ju Zuo Yue Yingbo "Xiong Li"
+	}
+	female_names = {
+			"Jiang Yuan" Jiang Yuan Jiandi Qingdu  Changyi
+	}
+	dynasty_names = {
+			Xi Pa Ba Xin Qing Jan Yi
+	}
+}
+
+malay_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = indiangfx
+	
+	malay = {
+		primary = LGK
+	}
+	chamic = {
+		primary = CHP
+	}
+	
+	male_names = {
+			Duong Dien Lan Hy Huy Chieu Vy Dinh Trinh Vo Viet Anh Trieu Tao Nghi Due Minh
+	}
+	female_names = {
+			Cong Dung Hanh Ly
+	}
+	dynasty_names = {
+			"Hong Bang" Ngo Tran Ho Thuc Dinh
+	}
+}

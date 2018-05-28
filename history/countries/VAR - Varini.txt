@@ -1,0 +1,8 @@
+government = germanic_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = germanic
+primary_culture = ingaevones
+religion = germanic_religion
+religious_school = north_pagan_type
+capital = 917

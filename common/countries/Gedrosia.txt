@@ -1,0 +1,62 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 0 129 181 }
+
+
+historical_idea_groups = {
+	cavalry_ideas
+	economy_ideas
+	trade_ideas
+	administrative_ideas
+	quantity_ideas
+	imperial_government_ideas
+	influence_ideas
+	offensive_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	
+}
+monarch_names = {
+	"Dareios #1" = 40
+	"Achaimenes #1" = 30
+	"Teispes #1" = 15
+	"Ariaramna #1" = 15
+	"Kyros #2" = 20
+	"Arschama #1" = 15
+	"Kamyses #1" = 15
+	"Bardiya #1" = 20
+	"Kambyses #1" = 20
+	"Xerxes #1" = 30
+	"Sogdianos #1" = 20
+	"Arses #1" = 20
+	"Yesfir #1" = -1
+	"Zareen #1" = -1
+	"Zhaleh #1" = -1
+	"Nahid #1" = -1
+	"Banu #1" = -1
+	"Esta #1" = -1
+	"Jaleh #1" = -1
+
+}
+
+leader_names = {
+		Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+		Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+		Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 	
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

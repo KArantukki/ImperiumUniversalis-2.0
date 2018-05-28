@@ -1,0 +1,9 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = greek
+primary_culture = arcadian
+religion = greek_religion
+religious_school = hellenic_type
+capital = 717
+

@@ -1,0 +1,36 @@
+namespace = startup
+
+########################################################################################
+# startup
+########################################################################################
+country_event = {
+	id = startup.1
+	title = "startup.1.t"
+	desc = "startup.1.d"
+	picture = culture
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_global_flag = game_start_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+			every_country = { 
+				country_event = {
+					id = slaves.18
+					days = 1
+				}
+			}
+			set_global_flag = game_start_flag
+	}
+	
+	option = {
+		name = "startup.1.a"	
+			
+	}
+}

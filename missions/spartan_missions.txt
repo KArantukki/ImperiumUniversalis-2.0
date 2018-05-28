@@ -1,0 +1,329 @@
+#These are Generic missions, available to all tags that don't have an override.
+
+#Below are mission series, within them are the actual missions.
+
+
+sp1_missions_expansion_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+			tag = SP1
+	}
+	has_country_shield = yes
+	sp1_defeat_argos = {
+		icon = mission_soldiers
+		completed_by = 208.1.1
+		required_missions = { }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			province_id = 516
+		}
+		trigger = {
+			army_size = ARG
+			516 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_prestige = 20
+				arcadia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	sp1_arcadia = {
+		icon = mission_macedons
+		required_missions = { sp1_defeat_argos }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = arcadia_area
+		}
+		trigger = {
+			arcadia_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = { alliance_with = ROOT }
+					}
+			}
+		}
+		effect = {
+				add_army_tradition = 10
+				add_prestige = 10
+				achaea_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				elis_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				argolis_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				corinthia = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	sp1_peloponnes = {
+		icon = mission_great_leader
+		required_missions = { sp1_arcadia }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = achaea_area
+				area = elis_area
+				area = argolis_area
+				area = corinthia
+			}
+		}
+		trigger = {
+			achaea_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = { alliance_with = ROOT }
+					}
+			}
+			elis_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = { alliance_with = ROOT }
+					}
+			}
+			argolis_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = { alliance_with = ROOT }
+					}
+			}
+			corinthia = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = { alliance_with = ROOT }
+					}
+			}
+		}
+		effect = {	
+			add_country_modifier = {
+				name = "peloponnes_mission"
+				duration = 9125 #25 years
+			}
+				attica_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				boeotia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				aetolia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				acarnania_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	sp1_aetolia = {
+		icon = mission_invasion
+		required_missions = { sp1_peloponnes }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = aetolia_area
+				area = acarnania_area
+			}
+		}
+		trigger = {
+			aetolia_area = {
+				type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			acarnania_area = {
+				type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_years_of_income = 0.25
+				add_adm_power = 100
+				calabria_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				bruttium_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	sp1_magna_greicia = {
+		icon = mission_s_italy
+		required_missions = { sp1_aetolia }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				area = calabria_area
+				area = bruttium_area
+			}
+		}
+		trigger = {
+			aetolia_area = {
+				type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+			acarnania_area = {
+				type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_prestige = 25
+				add_adm_power = 250
+				western_sicilia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				northern_sicilia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				eastern_sicilia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+}
+sp1_missions_expansion_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+			tag = SP1
+	}
+	has_country_shield = yes
+	sp1_athens = {
+		position = 4
+		icon = mission_siege
+		required_missions = { sp1_peloponnes }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = attica_area
+		}
+		trigger = {
+			attica_area = {
+				type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_prestige = 25
+				euboea_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				south_euboea_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+	sp1_boeotia = {
+		icon = mission_soldiers
+		required_missions = { sp1_athens }
+		provinces_to_highlight = {
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = boeotia_area
+		}
+		trigger = {
+			boeotia_area = {
+				type = all
+					country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+				add_mil_power = 300
+				phocis_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+		}
+	}
+}

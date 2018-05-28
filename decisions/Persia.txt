@@ -1,0 +1,352 @@
+country_decisions = {
+	
+	 ai_war_media = {
+		major = yes
+		potential = {
+			tag = ANH
+			ai = yes
+			is_subject_of = MDI
+			NOT = { has_country_flag = persian_ind_war_flag }
+		}
+		allow = {
+			is_at_war =  no
+			is_subject_of = MDI
+			is_year = 197
+		}
+		effect = {
+			set_country_flag = persian_ind_war_flag
+				declare_war_with_cb = {
+					who = MDI
+					casus_belli = cb_independence_war
+				}
+			add_prestige = 25
+			add_army_tradition = 25
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			artillery = capital
+			artillery = capital
+			artillery = capital
+			artillery = capital
+			artillery = capital
+			artillery = capital
+			}
+		ai_importance = 50	
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	 form_persia_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = PSE }
+			primary_culture = persian
+			NOT = { TAG = SAP }
+		}
+		allow = {
+			is_at_war =  no
+			is_subject = no
+			is_tribal = no
+			owns_core_province = 1967
+			owns_core_province = 1968
+			owns_core_province = 3724
+		}
+		effect = {
+			change_tag = PSE
+				persis_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = PSE
+				}
+			}
+		ai_importance = 50	
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	 form_media_nation = {
+		major = yes
+		potential = {
+			NOT = { TAG = MDI }
+			NOT = { TAG = SAP }
+			primary_culture = medians
+		}
+		allow = {
+			is_at_war =  no
+			media_region = { type = all owned_by = ROOT }
+			owns_core_province = 1941
+		}
+		effect = {
+			change_tag = MDI
+				media_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = MDI
+				}
+				
+			}
+		ai_importance = 250	
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	
+	join_zurvanism = {
+		potential = {
+			religion = armenian_religion
+			any_owned_province = { religion = zurvanism }
+		}
+		allow = {
+			is_at_war =  no
+			any_owned_province = { religion = zurvanism }
+		}
+		effect = {
+				change_religion = zurvanism
+				
+			}
+			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+					factor = 0
+						religious_unity = 0.6
+				}
+		}
+		
+	}
+	the_king_of_kings = {
+		potential = {
+			NOT = { government_rank = 5 }
+			OR = {
+				culture_group = western_iranian
+				culture_group = eastern_iranian_group
+			}
+		}
+		allow = {
+			is_subject = no
+			government_rank = 3
+			owns_core_province = 1967
+			owns_core_province = 1968
+			owns_core_province = 1940
+			owns_core_province = 1941
+			owns_core_province = 2046
+			owns_core_province = 2038
+			total_development = 650
+		}
+		effect = {
+			set_government_rank = 5
+			add_prestige = 50
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	build_persepolis = {
+		potential = {
+			TAG = PSE
+			NOT = { has_global_flag = persepolis_built }
+		}
+		allow = {
+			is_at_war =  no
+			owns_core_province = 1968
+			is_subject = no
+			adm_tech = 6
+			years_of_income = 1.0
+		}
+		effect = {
+				set_capital = 1968
+				set_global_flag = persepolis_built
+				add_years_of_income = -1.0
+				1968 = {
+					add_base_manpower = -2
+					add_base_production = 1
+					add_base_tax = 1
+				}
+			}
+		ai_importance = 50	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	edict_of_cyrus = {
+		potential = {
+			TAG = PSE
+			NOT = { has_global_flag = edict_of_cyrus }
+			NOT = { started_in = 225.1.1 }
+		}
+		allow = {
+			is_at_war =  no
+			is_subject = no
+			ADM = 5
+			adm_tech = 3
+		}
+		effect = {
+				set_global_flag = edict_of_cyrus
+				add_stability = 1
+				add_legitimacy = 10
+			}
+		ai_importance = 150	
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	 build_gate_of_nations = {
+		potential = {
+			owns = 1968
+			1968 = {
+				NOT = { has_great_project = gate_of_nations }
+			}
+			NOT = { has_global_flag = gate_of_nations_built }
+		}
+		allow = {
+			treasury = 300
+			capital = 1968
+			dip_tech = 6
+			1968 = {
+			NOT = { has_construction = building } }
+		}
+		effect = {
+			add_treasury = -300
+			set_global_flag = gate_of_nations_built
+			
+			add_country_modifier = {
+					name = gate_of_nations_built
+					duration = -1
+				}
+			1968 = {
+				add_great_project = gate_of_nations
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	 form_iran_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = SAP }
+			NOT = { TAG = PSE }
+			NOT = { TAG = MDI }
+			OR = {
+				culture_group = western_iranian
+				culture_group = eastern_iranian_group
+			}
+		}
+		allow = {
+			is_at_war =  no
+			is_subject = no
+			is_tribal = no
+			owns_core_province = 1967
+			owns_core_province = 1968
+			owns_core_province = 1940
+			owns_core_province = 1941
+			owns_core_province = 2046
+			owns_core_province = 2038
+			num_of_cities = 75
+		}
+		effect = {
+			change_tag = SAP
+				persis_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = SAP
+				}
+				media_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = SAP
+				}
+				parthia_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = SAP
+				}
+				arachosia_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = SAP
+				}
+			}
+		ai_importance = 50	
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	
+	 reforms_of_darius = {
+		potential = {
+			government = despotic_monarchy
+			OR = {
+				TAG = PSE
+				TAG = ASN }
+			NOT = { has_country_modifier = administration_reform_of_dareos }
+		}
+		allow = {
+			is_at_war = no
+			has_any_disaster = no
+			adm_tech = 8
+			ADM = 5
+		}
+		effect = {
+			change_government = oriental_monarchy
+			hidden_effect = { change_statists_vs_orangists = -0.25 }
+			add_country_modifier = {
+				name = administration_reform_of_dareos
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	 adopt_oriental_monarchy = {
+		potential = {
+			government = despotic_monarchy
+			OR = {
+					culture_group = western_iranian
+					culture_group = eastern_iranian_group
+				}
+		}
+		allow = {
+			is_at_war = no
+			adm_tech = 10
+			ADM = 5
+		}
+		effect = {
+			change_government = oriental_monarchy
+			hidden_effect = { change_statists_vs_orangists = 0.10 }
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 0.25
+		}
+	}
+}
+	

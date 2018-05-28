@@ -1,0 +1,175 @@
+polis_democratic_coup_disaster = {
+	potential = {
+		OR = {
+			government = greek_polis
+			government = greek_polis_tyrannis
+		}
+		
+		faction_influence = {
+			faction = fac_democrats
+			influence = 30
+		}
+	}
+
+
+	can_start = {
+		faction_in_power = fac_democrats
+	}
+	
+	can_stop = {
+		NOT = { faction_in_power = fac_democrats }	
+	}
+	
+	
+	
+	progress = {
+		
+		modifier = {
+			factor = 2
+			faction_influence = {
+				faction = fac_democrats
+				influence = 50
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {	devotion = 90 }
+					devotion = 80
+			government = greek_polis
+		}	
+		modifier = {
+			factor = 1
+			NOT = {	devotion = 80 }
+					devotion = 70
+			government = greek_polis
+		}		
+		modifier = {
+			factor = 1.5
+			NOT = {	devotion = 70 }
+					devotion = 60
+			government = greek_polis
+		}
+		modifier = {
+			factor = 2
+			NOT = {	devotion = 60 }
+					devotion = 50
+			government = greek_polis
+		}	
+		modifier = {
+			factor = 2.5
+			NOT = {	devotion = 50 }
+					devotion = 40
+			government = greek_polis
+		}
+		modifier = {
+			factor = 3
+			NOT = {	devotion = 40 }
+					devotion = 30
+			government = greek_polis
+		}
+		modifier = {
+			factor = 3.5
+			NOT = {	devotion = 30 }
+					devotion = 20
+			government = greek_polis
+		}
+		modifier = {
+			factor = 4
+			NOT = {	devotion = 20 }
+					devotion = 10
+			government = greek_polis
+		}
+		modifier = {
+			factor = 4.5
+			NOT = {	devotion = 10 }
+			government = greek_polis
+		}
+		
+		modifier = {
+			factor = 0.5
+			NOT = {	legitimacy = 90 }
+					legitimacy = 80
+			government = greek_polis_tyrannis
+		}	
+		modifier = {
+			factor = 1
+			NOT = {	legitimacy = 80 }
+					legitimacy = 70
+			government = greek_polis_tyrannis
+		}		
+		modifier = {
+			factor = 1.5
+			NOT = {	legitimacy = 70 }
+					legitimacy = 60
+			government = greek_polis_tyrannis
+		}
+		modifier = {
+			factor = 2
+			NOT = {	legitimacy = 60 }
+					legitimacy = 50
+			government = greek_polis_tyrannis
+		}	
+		modifier = {
+			factor = 2.5
+			NOT = {	legitimacy = 50 }
+					legitimacy = 40
+			government = greek_polis_tyrannis
+		}
+		modifier = {
+			factor = 3
+			NOT = {	legitimacy = 40 }
+					legitimacy = 30
+			government = greek_polis_tyrannis
+		}
+		modifier = {
+			factor = 3.5
+			NOT = {	legitimacy = 30 }
+					legitimacy = 20
+			government = greek_polis_tyrannis
+		}
+		modifier = {
+			factor = 4
+			NOT = {	legitimacy = 20 }
+					legitimacy = 10
+			government = greek_polis_tyrannis
+		}
+		modifier = {
+			factor = 4.5
+			NOT = {	legitimacy = 10 }
+			government = greek_polis_tyrannis
+		}
+		modifier = {
+			factor = 2.5
+			NOT = { stability = 1 }
+					stability = 0
+		}	
+		modifier = {
+			factor = 5
+			NOT = { stability = 0 }
+					stability = -1
+		}
+		modifier = {
+			factor = 7.5
+			NOT = { stability = -1 }
+					stability = -2
+		}	
+		modifier = {
+			factor = 10
+			NOT = { stability = -2 }
+		}	
+	}
+	
+	can_end = {
+		
+	}
+	
+	modifier = {	
+	}
+
+	on_start = greek_polis.1
+	on_end = xxx
+	
+	on_monthly = {
+	}
+}
+

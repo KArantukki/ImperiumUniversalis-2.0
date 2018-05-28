@@ -1,0 +1,14 @@
+government = despotic_monarchy
+government_rank = 1
+#mercantilism = 0.25
+technology_group = roman
+primary_culture = italiote
+religion = greek_religion
+religious_school = hellenic_type
+capital = 249
+	
+
+490.1.1 = {
+primary_culture = mamertini
+religion = roman_religion
+}

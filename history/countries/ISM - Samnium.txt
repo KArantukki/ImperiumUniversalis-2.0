@@ -1,0 +1,27 @@
+government = league
+government_rank = 2
+#mercantilism = 0.25
+technology_group = roman
+primary_culture = samnitic
+religion = roman_religion
+religious_school = hellenic_type
+capital = 1783
+
+	historical_friend = HIR
+	historical_friend = CAU
+	
+
+450.1.1 = {	
+	historical_rival = ROM
+	historical_friend = ETR
+	government = league
+	leader = { 
+		name = "Gellius Egnatius"	
+		type = general	
+		fire = 4
+		shock = 4
+		manuever = 1	
+		siege = 1	
+		death_date = 455.1.1
+	}
+}
