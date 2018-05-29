@@ -1882,10 +1882,10 @@ province;red;green;blue;x;x
 1881;213;74;79;St. Barthélemy;x
 1882;214;94;173;Bône;x
 1883;44;24;50;Western Finish lakes;x
-1884;1;0;236;East Finish lakes;x
-1885;2;0;240;Central finish lakes;x
-1886;3;0;244;Storavan;x
-1887;4;0;248;Storsjon;x
+1884;144;26;100;East Finish lakes;x
+1885;44;28;150;Central finish lakes;x
+1886;144;30;200;Storavan;x
+1887;44;32;250;Storsjon;x
 1888;5;0;232;Kara Sea;x
 1889;6;0;236;Lake geneva;x
 1890;7;0;240;Bodensee;x
