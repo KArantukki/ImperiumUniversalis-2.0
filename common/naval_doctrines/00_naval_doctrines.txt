@@ -1,5 +1,4 @@
-pirate_fleet =
-{
+pirate_fleet = {
 	country_modifier = {
 		privateer_efficiency = 0.33
 	}
@@ -7,8 +6,7 @@ pirate_fleet =
 	button_gfx = 1
 }
 
-private_financing =
-{
+private_financing = {
 	country_modifier = {
 		global_ship_cost = -0.15
 	}
@@ -16,8 +14,7 @@ private_financing =
 	button_gfx = 2
 }
 
-merchant_fleet =
-{
+merchant_fleet = {
 	country_modifier = {
 		global_ship_trade_power = 0.2
 	}
@@ -25,8 +22,7 @@ merchant_fleet =
 	button_gfx = 3
 }
 
-boarding_devices =
-{
+boarding_devices = {
 	country_modifier = {
 		capture_ship_chance = 0.2
 	}
@@ -34,8 +30,7 @@ boarding_devices =
 	button_gfx = 4
 }
 
-old_naval_traditions =
-{
+old_naval_traditions = {
 	can_select = {
 		OR = {
 			culture_group = hellenic
@@ -48,6 +43,6 @@ old_naval_traditions =
 	country_modifier = {
 		sailors_recovery_speed = 1.0
 	}
-
+	
 	button_gfx = 5
 }

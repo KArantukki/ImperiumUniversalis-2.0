@@ -11,11 +11,11 @@
  professional_army_mission_title:0 "Professional Army"
  professional_army_mission_desc:0 "It is necessary to have a drilled and organized army."
  large_army_mission_title:0 "Grand Army"
- large_army_mission_desc:0 "To maintain an army of over fifty thousand men is an enormous achivment."
+ large_army_mission_desc:0 "To maintain an army of over fifty thousand men is an enormous achievement."
  large_army_modifier:0 "Grand Army"
  large_army_modifier_desc:0 "Our army is one of the greatest in the history of mankind."
  great_general_mission_title:0 "Skilled Leader"
- great_general_mission_desc:0 "'Ten soldiers wisely led will beat a hundred without a head.'\n-Euripides
+ great_general_mission_desc:0 "\"Ten soldiers wisely led will beat a hundred without a head.\"\n-Euripides"
  great_general_modifier:0 "Skilled Leader"
  great_general_modifier_desc:0 "A general who is able to lead our soldiers into battle is more worth than everything."
  army_camps_mission_title:0 "Military Infrasturcture"

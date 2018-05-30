@@ -693,7 +693,7 @@
  CHANGE_BASE_MP:0 "$DIRECTION$ $VALUE$ Tribal Population in $WHERE$.\n"
  PROV_TAX_DESCR:0 "The actual amount depends on the population and buildings in the province.\n"
  BASETAX:0 "The upper class population represents the local nobility, the clergy and the wealthy merchant families."
- ND_BASE_TAX:0 "Upper Class Population: §Y$VAL$0000§!
+ ND_BASE_TAX:0 "Upper Class Population: §Y$VAL$0000§!"
  LEDGER_BASE_TAX:0 "Upper Class"
  CN_TAX_TOOLTIP1:0 "This option determines the population of all provinces."
  CN_TAX_TOOLTIP2:0 "§YNormal Values:§! all provinces have their historical tax and manpower values.\n§YRandom Values:§! all provinces have randomized tax and manpower values.\n§YFlat Values:§! all provinces have the same tax and manpower values."
@@ -723,7 +723,6 @@
  STR_DEVOITION:0 "gain $VAL|G$ Political Authority"
  CELESTIAL_EMPEROR_BENEFIT_DESC:0 " -Bonuses from High Mandate.\n -Can enact Centralisation Decisions."
  BORN_IN:0 "Lives in $COUNTRY$."
- 
  HAVE_LESS_THAN_ABSOLUTISM:0 "Have less Government Organization than "
  HAVE_MORE_THAN_ABSOLUTISM:0 "Government Organization is at least "
  ADD_ABSOLUTISM_EFFECT:1 "$DIRECTION$ $VALUE$ Government Organization.\n"
