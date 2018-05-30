@@ -1,0 +1,133 @@
+
+###########################################
+# 25% slaves
+###########################################
+
+25_slaves_modifier = {
+	potential = {
+			NOT = { has_country_modifier = slavery_abolished }
+			has_country_flag = slave_amount_flag
+	}
+
+	trigger = {		
+			custom_trigger_tooltip = {
+				tooltip = 25_slaves_modifier.tooltip
+					check_variable = { which = slaves_modif which = 25_developmentVar }
+					NOT = { check_variable = { which = slaves_modif which = 50_developmentVar } }
+			}
+	}
+
+	global_trade_goods_size_modifier = 0.05
+	build_cost = -0.05
+	build_time = -0.05
+	
+	culture_conversion_cost = 0.05
+	global_unrest = 1
+	global_spy_defence = -0.05
+}
+###########################################
+# 50% slaves
+###########################################
+
+50_slaves_modifier = {
+	potential = {
+			NOT = { has_country_modifier = slavery_abolished }
+			has_country_flag = slave_amount_flag
+	}
+
+	trigger = {
+			custom_trigger_tooltip = {
+				tooltip = 50_slaves_modifier.tooltip
+					check_variable = { which = slaves_modif which = 50_developmentVar }
+					NOT = { check_variable = { which = slaves_modif which = 100_developmentVar } }
+			}
+	}
+
+	global_trade_goods_size_modifier = 0.1
+	build_cost = -0.1
+	build_time = -0.1
+	
+	culture_conversion_cost = 0.1
+	global_unrest = 2
+	global_spy_defence = -0.1
+}
+###########################################
+# 100% slaves
+###########################################
+
+100_slaves_modifier = {
+	potential = {
+			NOT = { has_country_modifier = slavery_abolished }
+			has_country_flag = slave_amount_flag
+	}
+
+	trigger = {
+			custom_trigger_tooltip = {
+				tooltip = 100_slaves_modifier.tooltip
+					check_variable = { which = slaves_modif which = 100_developmentVar }
+					NOT = { check_variable = { which = slaves_modif which = 150_developmentVar } }
+			}
+			
+	}
+
+	global_trade_goods_size_modifier = 0.15
+	build_cost = -0.15
+	build_time = -0.15
+	
+	culture_conversion_cost = 0.15
+	global_unrest = 3
+	global_spy_defence = -0.15
+}
+###########################################
+# 150% slaves
+###########################################
+
+150_slaves_modifier = {
+	potential = {
+		NOT = { has_country_modifier = slavery_abolished }
+			has_country_flag = slave_amount_flag
+	}
+
+	trigger = {
+			custom_trigger_tooltip = {
+				tooltip = 150_slaves_modifier.tooltip
+					check_variable = { which = slaves_modif which = 150_developmentVar }
+					NOT = { check_variable = { which = slaves_modif which = 200_developmentVar } }
+			}
+		
+	}
+
+	global_trade_goods_size_modifier = 0.2
+	build_cost = -0.2
+	build_time = -0.2
+	
+	culture_conversion_cost = 0.2
+	global_unrest = 4
+	global_spy_defence = -0.2
+}
+###########################################
+# 200% slaves
+###########################################
+
+200_slaves_modifier = {
+	potential = {
+			NOT = { has_country_modifier = slavery_abolished }
+			has_country_flag = slave_amount_flag
+	}
+
+	trigger = {
+			custom_trigger_tooltip = {
+				tooltip = 200_slaves_modifier.tooltip
+					check_variable = { which = slaves_modif which = 200_developmentVar }
+			}
+	}
+
+	global_trade_goods_size_modifier = 0.25
+	build_cost = -0.25
+	build_time = -0.25
+	
+	culture_conversion_cost = 0.25
+	global_unrest = 5
+	global_spy_defence = -0.25
+}
+

@@ -83,6 +83,7 @@ hardy_warrior_personality = {
 siege_specialist_personality = {
 	allow = {
 		is_admiral = no
+		artillery_fraction = 0.01 # "any cannons"
 	}
 	siege_ability = 0.15
 }
@@ -90,7 +91,7 @@ siege_specialist_personality = {
 cannoneer_personality = {
 	allow = {
 		is_admiral = no
-		artillery_fraction = 0.2 # "any cannons"
+		artillery_fraction = 0.01 # "any cannons"
 	}
 	artillery_power = 0.1
 }
@@ -104,6 +105,7 @@ extortioner_personality = {
 	allow = {
 		is_admiral = yes
 	}
+	# global_ship_trade_power = 0.15
 	trade_efficiency = 0.15
 }
 

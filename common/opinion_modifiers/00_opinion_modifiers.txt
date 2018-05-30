@@ -10,44 +10,6 @@
 # FIXED STATE
 ##############
 
-
-consort_marriage_ties = {
-	opinion = 5
-}
-
-consort_regent_marriage_ties = { # Goes under consort_marriage_ties in interface
-	opinion = 15
-}
-
-religious_school_relation = {
-	opinion = 25
-}
-
-same_religious_school_relation = {
-	opinion = 10
-}
-
-is_tributary = {
-	opinion = 15
-}
-
-they_forced_tributary = {
-	opinion = -100
-	yearly_decay = 2
-}
-
-tributary_state_broke_free = {
-	opinion = -50
-	yearly_decay = 2
-	min = -50
-}
-
-tributary_state_abandoned = {
-	opinion = -50
-	yearly_decay = 2
-	min = -50
-}
-
 rival = {
 	opinion = -100
 }
@@ -92,12 +54,14 @@ republic_different_religion_same_group_border = {
 
 republic_misguided_heretic = {
 	opinion = 5
-
 }
 
 republic_misguided_heretic_border = {
 	opinion = 5
+}
 
+defender_of_faith = {
+	opinion = 10
 }
 
 same_religion = {
@@ -137,7 +101,7 @@ at_war = {
 }
 
 same_dynasty = {
-
+	opinion = 10
 }
 royal_marriage = {
 	opinion = 30
@@ -211,13 +175,32 @@ in_same_trade_league = {
 	opinion = 20
 }
 
+consort_marriage_ties = {
+	opinion = 5
+}
 
+consort_regent_marriage_ties = { # Goes under consort_marriage_ties in interface
+	opinion = 15
+}
+
+religious_school_relation = {
+	opinion = 25
+}
+
+same_religious_school_relation = {
+	opinion = 10
+}
 
 ##################################
 # Strategy
 ##################################
 
 want_your_provinces = {
+	opinion = -15
+	min = -200
+}
+
+want_subject_provinces = {
 	opinion = -15
 	min = -200
 }
@@ -268,7 +251,6 @@ pirated_us = {
 	min = -100
 	yearly_decay = 5
 }
-
 
 converted_our_culture = {
 	opinion = -30
@@ -687,7 +669,7 @@ released_us_freely = {
 	yearly_decay = 1
 }
 
-fightinginside_japan = {
+fightinginside_realm = {
 	opinion = -25
 	yearly_decay = 1
 }
@@ -794,6 +776,11 @@ boh_papal_reconciled = {
 	yearly_decay = 1
 }
 
+hun_refused_to_help_rebels = {
+	opinion = 50
+	yearly_decay = 2
+}
+
 boh_heretic_hussite = {
 	opinion = -30
 	years = 30
@@ -804,6 +791,11 @@ boh_protestant_king = {
 	opinion = -60
 	years = 15
 	yearly_decay = 4
+}
+
+hun_crowned_by_rebels = {
+	opinion = -100
+	yearly_decay = 5
 }
 
 cyp_famagusta_taken = {
@@ -1071,6 +1063,13 @@ swe_political_alignment = {
 	opinion = 30
 	years = 10
 	yearly_decay = 3
+}
+
+rus_claimed_land = {
+	opinion = -50
+	years = 50
+	yearly_decay = 1
+	min = -50
 }
 
 rus_sacked_moscow = {
@@ -2147,6 +2146,16 @@ border_friction_from_event = {
 	yearly_decay = 2	
 }
 
+broke_free_from_us = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+previous_oppressor = {
+	opinion = -50
+	yearly_decay = 2
+}
+
 missionaries_rebuffed = {
 	opinion = -50
 	yearly_decay = 1
@@ -2242,6 +2251,16 @@ mng_chinese_rites_denounced = {
 hun_bakocz_foreign_policy = {
 	opinion = 50
 	yearly_decay = 2
+}
+
+hun_invited_jesuits = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+anglican_evangelism_opinion = {
+	opinion = -50
+	yearly_decay = 1
 }
 
 ##################################################
@@ -3340,7 +3359,7 @@ shared_trade_secrets = {
 }
 
 demanded_compensation = {
-	opinion = 50
+	opinion = -50
 	yearly_decay = 2
 }
 
@@ -3381,5 +3400,452 @@ opinion_welcomed_fernandes = {
 
 opinion_killed_fernandes = {
 	opinion = -35
+	yearly_decay = 1
+}
+
+opinion_international_law = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+careful_diplomatic_manouvering = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+zealot_reputation_opinion = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+took_on_debt = {
+	opinion = 10
+	max = 200
+	yearly_decay = 2
+}
+
+great_power_influence = {
+	opinion = 25
+	years = 10
+}
+
+opinion_school_of_capital = {
+	opinion = 50
+	yearly_decay = 3
+}
+
+forced_break_alliance = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+indulgent_feast = {
+	opinion = 50
+	yearly_decay = 4
+}
+
+opinion_more_eased_tension = {
+	opinion = 80
+	years = 10
+	yearly_decay = 3
+}
+
+stayed_out_of_crimean_succession = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+refused_aid_in_crimean_succession = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+support_in_crimean_succession = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+installed_ruler_crimean_succession = {
+	opinion = 150
+	yearly_decay = 4
+}
+	
+opinion_approves_of_compliment = {
+	opinion = 25
+	yearly_decay = 2
+}
+
+opinion_grateful_for_invitation = {
+	opinion = 25
+	yearly_decay = 3		
+}
+
+opinion_went_on_grand_tour = {
+	opinion = 50
+	yearly_decay = 5
+}
+
+opinion_refused_traders_in_x = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+opinion_traders_in_x = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+opinion_expelled_traders = {
+	opinion = -75
+	yearly_decay = 3
+}
+
+opinion_captured_diplomats = {
+	opinion = -40
+	yearly_decay = 1
+}
+
+opinion_disapproves_of_threats = {
+	opinion = -25
+	yearly_decay = 3
+}
+
+opinion_approves_of_diplomacy = {
+	opinion = 25
+	yearly_decay = 2
+}
+
+opinion_approves_of_submission = {
+	opinion = 15
+	yearly_decay = 2
+}
+
+christian_unorthodoxy = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+christian_brotherhood = {
+	opinion = 50
+	yearly_decay = 5
+}
+
+opinion_insulted_by_accusation = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+dharmic_imitators = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+we_are_kin = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+offended_by_divorce = {
+	opinion = -75
+	yearly_decay = 3
+}
+
+grateful_for_aid = {
+	opinion = 75
+	yearly_decay = 2
+}
+
+denied_aid = {
+	opinion = -50
+	yearly_decay = 2
+} 
+
+outrageous_demands = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+pawning_of_neumark = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+bra_insecure_succession = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+bra_unhampered_inheritance_privileges = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+pru_edict_of_potsdam_opinion = {
+	opinion = -30
+	yearly_decay = 1
+}
+
+pru_france_huguenots = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+agricolas_reputation = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+nor_strategic_marriage = {
+	opinion = 75
+	yearly_decay = 2
+}
+
+nor_taxation_conflict_over_hebrides = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+nor_gave_away_orkney = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+overlord_takes_stance_vs_hansa = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+hanseatic_kalmar_conflict = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+danish_dutch_burgundian_inspiration = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+fra_gave_up_on_maine = {
+	opinion = -75
+	yearly_decay = 3
+}
+is_tributary = {
+	opinion = 15
+}
+
+they_forced_tributary = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+tributary_state_broke_free = {
+	opinion = -50
+	yearly_decay = 2
+	min = -50
+}
+
+tributary_state_abandoned = {
+	opinion = -50
+	yearly_decay = 2
+	min = -50
+}
+
+chi_did_not_seize_opportunity = {
+	opinion = 25
+	yearly_decay = 2
+}
+
+chi_low_mandate_subjects = {
+	opinion = -50
+	yearly_decay = 3
+}
+
+chi_trade_opportunity = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+tributary_same_overlord = {
+	opinion = 75
+	yearly_decay = 3
+}
+
+tributary_impressive_overlord = {
+	opinion = 60
+	yearly_decay = 2
+}
+
+tributary_forced_brain_drain = {
+	opinion = -75
+	yearly_decay = 3
+}
+
+tributary_stopped_smugglers = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+tributary_harbored_criminals = {
+	opinion = -60
+	yearly_decay = 3
+}
+
+tributary_aiding_smugglers = {
+	opinion = -90
+	yearly_decay = 3
+}
+
+tributary_gave_up_political_refugees = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+tributary_paid_for_service = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+tributary_ungrateful_overlord = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+tributary_refused_tribute = {
+	opinion = -20
+	yearly_decay = 2
+}
+
+overlord_supported_our_enemies = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+pirate_haven = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+pirate_fighting = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+overlord_military_aid = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+st_nicholas_icon_gratitude = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+siberian_intermezzo = {
+	opinion = -60
+	yearly_decay = 3
+}
+
+sack_of_x = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+hired_defectors = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+refused_to_hire_defectors = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+coffee_plant_spread = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+scholars_patronized_locally = {
+	opinion = 35
+	yearly_decay = 3
+}
+
+academic_respect = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+growing_merchant_community = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+merchants_discriminated = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+making_us_rich = {
+	opinion = 50
+	yearly_decay = 3
+}
+
+meddled_in_trade = {
+	opinion = -50
+	yearly_decay = 3
+}
+
+helped_clear_out_bandits = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+protectionism = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+adopted_islamic_titles = {
+	opinion = 75
+	yearly_decay = 2
+}
+
+converted_to_islam = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+discriminated_our_countrymen = {
+	opinion = -50
+	yearly_decay = 3
+}
+
+unsafe_caravans = {
+	opinion = -75
+	yearly_decay = 5
+}
+
+opinion_ruler_of_our_culture = {
+	opinion = 35
+	yearly_decay = 1
+}
+
+opinion_ruler_of_our_religion = {
+	opinion = 35
+	yearly_decay = 1
+}
+
+entertaining_heathens = {
+	opinion = -35
+	yearly_decay = 1
+}
+
+harbored_inventor = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+turned_away_inventor = {
+	opinion = 50
 	yearly_decay = 1
 }
