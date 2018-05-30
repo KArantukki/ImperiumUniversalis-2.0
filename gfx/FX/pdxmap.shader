@@ -206,8 +206,8 @@ VertexStruct VS_OUTPUT_TERRAIN
 Code
 [[
 static const float3 GREYIFY = float3( 0.212671, 0.715160, 0.072169 );
-static const float NUM_TILES = 4.0f;
-static const float TEXELS_PER_TILE = 512.0f;
+static const float NUM_TILES = 6.0f;
+static const float TEXELS_PER_TILE = 256.0f;
 static const float ATLAS_TEXEL_POW2_EXPONENT= 11.0f;
 static const float TERRAIN_WATER_CLIP_HEIGHT = 3.0f;
 static const float TERRAIN_UNDERWATER_CLIP_HEIGHT = 3.0f;
