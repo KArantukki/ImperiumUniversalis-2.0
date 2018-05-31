@@ -90,6 +90,7 @@ can_make_state = {
 		}
 	}
 }
+
 can_improve_tax = {
 	condition = {
 		tooltip = "NEEDRANK_2"

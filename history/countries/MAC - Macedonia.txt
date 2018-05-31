@@ -32,7 +32,7 @@ religious_school = hellenic_type
 		claim = 95
 		adm = 2
 		dip = 2
-        mil = 2
+		mil = 2
 	}
 }
 208.1.1 = {
@@ -57,7 +57,7 @@ religious_school = hellenic_type
 		claim = 95
 		adm = 4
 		dip = 4
-        mil = 4
+		mil = 4
 	}
 }
 257.1.1 = {
@@ -82,14 +82,14 @@ religious_school = hellenic_type
 		claim = 95
 		adm = 2
 		dip = 2
-                mil = 2
+				mil = 2
 	}
 }
 # Alexander I is considered a greek monarch by greeks!
 280.1.1 = {
-government = despotic_monarchy
-add_army_professionalism = 0.1
-primary_culture = macedon
+	government = despotic_monarchy
+	add_army_professionalism = 0.1
+	primary_culture = macedon
 }
 301.1.1 = {clear_scripted_personalities = yes
 	add_ruler_personality = calm_personality
@@ -110,7 +110,7 @@ primary_culture = macedon
 		claim = 95
 		adm = 2
 		dip = 5
-                mil = 3
+				mil = 3
 	}
 }
 306.1.1 = {
@@ -135,7 +135,7 @@ primary_culture = macedon
 		claim = 35
 		adm = 5
 		dip = 5
-                mil = 3
+				mil = 3
 	}
 }
 341.1.1 = { 
@@ -157,7 +157,7 @@ primary_culture = macedon
 		claim = 75
 		adm = 2
 		dip = 2
-                mil = 2
+				mil = 2
 	}
 }
 349.1.1 = {
@@ -183,7 +183,7 @@ capital = 616
 		claim = 60
 		adm = 2
 		dip = 2
-                mil = 2
+				mil = 2
 	}
 }
 359.1.1 = {
@@ -205,7 +205,7 @@ capital = 616
 		claim = 60
 		adm = 2
 		dip = 2
-                mil = 2
+				mil = 2
 	}
 }
 362.1.1 = {
@@ -227,7 +227,7 @@ capital = 616
 		claim = 60
 		adm = 2
 		dip = 4
-        mil = 3
+		mil = 3
 	}
 }
 363.1.1 = {
@@ -250,7 +250,7 @@ capital = 616
 		claim = 80
 		adm = 2
 		dip = 2
-        mil = 2
+		mil = 2
 	}
 }
 385.1.1 = {
@@ -272,7 +272,7 @@ capital = 616
 		claim = 80
 		adm = 2
 		dip = 2
-        mil = 2
+		mil = 2
 	}
 }
 387.1.1 = {
@@ -294,7 +294,7 @@ capital = 616
 		claim = 90
 		adm = 5
 		dip = 5
-        mil = 6
+		mil = 6
 	}
 }
 
@@ -311,7 +311,7 @@ capital = 616
 		dip = 5
 		adm = 5
 		mil = 6
-		leader = {	name = "Philip II"  type = general		fire = 7	shock = 7	manuever = 3	siege = 2 }
+		leader = {	name = "Philip II"	type = general		fire = 7	shock = 7	manuever = 3	siege = 2 }
 		}
 	leader = {
 		name = "Parmenion" 
@@ -324,7 +324,7 @@ capital = 616
 		}
 	leader = {
 		name = "Attalus"
-  		type = general
+		type = general
 		fire = 3	
 		shock = 3	
 		manuever = 2	
@@ -341,7 +341,7 @@ capital = 616
 		claim = 85
 		adm = 6
 		dip = 6
-        mil = 6
+		mil = 6
 		}
 	}
 #358 BC Military reforms of Philipe - early Phalanx
@@ -520,7 +520,7 @@ capital = 616
 		dip = 4
 		adm = 4
 		mil = 5
-		leader = {	name = "Kassandros Antipatrid"  type = general	fire = 4	shock = 4	manuever = 1	siege = 1 }
+		leader = {	name = "Kassandros Antipatrid"	type = general	fire = 4	shock = 4	manuever = 1	siege = 1 }
 	}
 	heir = {
 		name = "Philip"
@@ -531,7 +531,7 @@ capital = 616
 		claim = 95
 		adm = 2
 		dip = 2
-                mil = 2
+				mil = 2
 	}
 }
 457.1.1 = {
@@ -555,7 +555,7 @@ capital = 616
 		claim = 95
 		adm = 1
 		dip = 1
-                mil = 2
+				mil = 2
 	}
 }
 460.1.1 = {
@@ -580,7 +580,7 @@ capital = 616
 		claim = 95
 		adm = 1
 		dip = 2
-                mil = 1
+				mil = 1
 	}
 }
 460.9.1 = {
@@ -608,7 +608,7 @@ capital = 616
 		dip = 3
 		adm = 3
 		mil = 5
-		leader = {	name = "Demetrius Poliorcetes"  type = general	fire = 4	shock = 4	manuever = 2	siege = 4 }
+		leader = {	name = "Demetrius Poliorcetes"	type = general	fire = 4	shock = 4	manuever = 2	siege = 4 }
 	}
 	heir = {
 		name = "Antigonus"
@@ -633,7 +633,7 @@ capital = 616
 		dip = 5
 		adm = 4
 		mil = 4
-		leader = {	name = "Lysimachos"  type = general	fire = 3	shock = 4	manuever = 1	siege = 1 }
+		leader = {	name = "Lysimachos"	 type = general	fire = 3	shock = 4	manuever = 1	siege = 1 }
 	}
 }
 473.1.1 = {
@@ -767,13 +767,12 @@ capital = 616
 	monarch = {
 		name = "Perseus"
 		dynasty = "Antigonidai"
-		birth_daleastte = 516.1.1
+		birth_date = 516.1.1
 		death_date = 566.1.1
 		adm = 2
 		dip = 2
 		mil = 3
 		}
-
 	heir = {
 		name = "Alexander"
 		dynasty = "Antigonidai"
@@ -785,7 +784,7 @@ capital = 616
 	}
 #from 566 - under rule of rome as 4 noble republics - gov form change?
 566.1.1 = {
-government = classic_republic
+	government = classic_republic
 }
 
 #in 585 - revolt of pseudo-Philip, Andriscus - after it Macedon was owned by Rome directly

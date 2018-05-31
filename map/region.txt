@@ -1,6 +1,7 @@
 # A province can belong to several regions.
 
 test_region = { }
+scandinavia_region = {} # not sued, just here to avoid lines in errors.log
 
 gallia_cisalpina = {
 

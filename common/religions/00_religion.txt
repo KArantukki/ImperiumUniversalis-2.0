@@ -52,7 +52,7 @@ religious_schools = {
 					limit = { uses_patriarch_authority = yes }
 					add_patriarch_authority = -0.5 }
 				if = {
-					limit = { has_estate = estate_priests }			
+					limit = { has_estate = estate_priests }
 						add_estate_loyalty = {
 							estate = estate_priests
 							loyalty = -20
@@ -116,7 +116,7 @@ religious_schools = {
 					limit = { uses_patriarch_authority = yes }
 					add_patriarch_authority = -0.5 }
 				if = {
-					limit = { has_estate = estate_priests }			
+					limit = { has_estate = estate_priests }
 						add_estate_loyalty = {
 							estate = estate_priests
 							loyalty = -20
@@ -183,7 +183,7 @@ religious_schools = {
 					limit = { uses_patriarch_authority = yes }
 					add_patriarch_authority = -0.5 }
 				if = {
-					limit = { has_estate = estate_priests }			
+					limit = { has_estate = estate_priests }
 						add_estate_loyalty = {
 							estate = estate_priests
 							loyalty = -20
@@ -246,7 +246,7 @@ religious_schools = {
 					limit = { uses_patriarch_authority = yes }
 					add_patriarch_authority = -0.5 }
 				if = {
-					limit = { has_estate = estate_priests }			
+					limit = { has_estate = estate_priests }
 						add_estate_loyalty = {
 							estate = estate_priests
 							loyalty = -20
@@ -301,7 +301,7 @@ religious_schools = {
 					limit = { uses_patriarch_authority = yes }
 					add_patriarch_authority = -0.5 }
 				if = {
-					limit = { has_estate = estate_priests }			
+					limit = { has_estate = estate_priests }
 						add_estate_loyalty = {
 							estate = estate_priests
 							loyalty = -20
@@ -363,7 +363,7 @@ religious_schools = {
 					limit = { uses_patriarch_authority = yes }
 					add_patriarch_authority = -0.5 }
 				if = {
-					limit = { has_estate = estate_priests }			
+					limit = { has_estate = estate_priests }
 						add_estate_loyalty = {
 							estate = estate_priests
 							loyalty = -20
@@ -421,7 +421,7 @@ religious_schools = {
 					limit = { uses_patriarch_authority = yes }
 					add_patriarch_authority = -0.5 }
 				if = {
-					limit = { has_estate = estate_priests }			
+					limit = { has_estate = estate_priests }
 						add_estate_loyalty = {
 							estate = estate_priests
 							loyalty = -20
