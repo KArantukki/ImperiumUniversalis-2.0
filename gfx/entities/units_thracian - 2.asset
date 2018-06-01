@@ -20,7 +20,7 @@ entity = {
 	}
 }
 entity = {
-	name = "illyrian_INFANTRY_2"
+	name = "illyrian_INFANTRY_1"
 	pdxmesh = "illyrian_INFANTRY_1"
 	
 	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
@@ -31,7 +31,7 @@ entity = {
 	attach = { 
 		spear_bone = "illyrian_spear" 
 		CATRigRArmPalm = "illyrian_shield"
-		CATRigHub003 = "illyrian_helmet_2"
+		CATRigHub003 = "illyrian_helmet_1"
 	}
 }
 entity = {
