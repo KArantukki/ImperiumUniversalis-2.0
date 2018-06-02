@@ -1,4 +1,2 @@
-2570 = "Adummatu"
-1933 = "Cusa"
-1793 = "Kang Diz Huxt"
-1878 = "Tyspwn"
+2158 = "Sparda"
+2277 = "Kang Diz Huxt"

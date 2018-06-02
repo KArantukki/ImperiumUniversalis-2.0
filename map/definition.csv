@@ -2086,9 +2086,9 @@ province;red;green;blue;x;x
 2085;161;165;225;Tiruchirapalli;x
 2086;197;225;191;Cholistan;x
 2087;224;213;178;Ajmer;x
-2088;66;156;186;Umarkot;x
+2088;66;156;186;Umarkot;x 
 2089;81;142;66;Chaul;x
-2090;154;52;179;Rayalaseema;x
+2090;154;52;179;Rayalaseema;x 191
 2091;145;33;11;Tripura;x
 2092;170;185;212;Mahadeo;x
 2093;230;190;64;Mandsaur;x
@@ -2138,7 +2138,7 @@ province;red;green;blue;x;x
 2137;143;75;75;Daming;x
 2138;86;118;240;Wuding;x
 2139;145;24;24;Laizhou;x
-2140;238;254;148;Yanzhou;x
+2140;238;254;148;Yanzhou;x 
 2141;107;218;111;Xuzhou;x
 2142;84;80;128;Huai'an;x
 2143;190;53;53;Fengyang;x

@@ -1,2 +1,0 @@
-16 = "Qart-hadast"
-10 = "Malaha"

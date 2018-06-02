@@ -1,7 +1,11 @@
-2570 = "Adummatu"
-1941 = "A-Gam-Ta-Nu"
-1813 = "Surru"
-1815 = "Berytus"
-1793 = "Uru-Salim"
-1816 = "Dimasqa"
-1818 = "Mahallata"
+
+2273 = "Rafihu"
+2277 = "Uru-Salim"
+2299 = "Surru"
+2302 = "Imerisu"
+2313 = "Tadmuiar"
+2316 = "Mahallata"
+2342 = "Meliddu"
+2346 = "Doluk"
+2347 = "Qarqamis"
+ 
