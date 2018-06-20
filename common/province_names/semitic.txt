@@ -6,3 +6,5 @@
 2476 = "Ninwe"
 2479 = "Assur"
 2500 = "Babel"
+2652 = "Qtespon"
+2666 = "Sus"

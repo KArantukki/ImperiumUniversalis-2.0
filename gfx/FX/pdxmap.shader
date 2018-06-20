@@ -535,7 +535,7 @@ PixelShader =
 			{
 				vHeightNormalSample = CalcNormalForLighting( vHeightNormalSample, vTerrainNormalSample );
 
-				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.85f );
+				vTerrainDiffuseSample.rgb = GetOverlay( vTerrainDiffuseSample.rgb, TerrainColor, 0.95f );
 				vTerrainDiffuseSample.rgb = ApplySnow( vTerrainDiffuseSample.rgb, Input.prepos, vHeightNormalSample, vFoWColor, FoWDiffuse );
 				vTerrainDiffuseSample.rgb = calculate_secondary_compressed( Input.uv, vTerrainDiffuseSample.rgb, Input.prepos.xz );
 
