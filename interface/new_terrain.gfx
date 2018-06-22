@@ -68,5 +68,23 @@ spriteTypes = {
 		name = "GFX_colony_terrain_forest_steppe"
 		texturefile = "gfx/interface/colony_terrain_forest_steppe.dds"
 	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_mangrove"
+		texturefile = "gfx/interface/colony_terrain_mangrove.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_terrain_mangrove"
+		texturefile = "gfx/interface/combat_terrain_mangrove.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_mediterranean"
+		texturefile = "gfx/interface/colony_terrain_mediterranean.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_terrain_mediterranean"
+		texturefile = "gfx/interface/combat_terrain_mediterranean.dds"
+	}
 	
 }
