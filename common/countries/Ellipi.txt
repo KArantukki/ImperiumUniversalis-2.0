@@ -1,0 +1,62 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 86 120 104 }
+
+historical_idea_groups = {
+	cavalry_ideas
+	economy_ideas
+	trade_ideas
+	administrative_ideas
+	quantity_ideas
+	imperial_government_ideas
+	influence_ideas
+	offensive_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Orontes" = 50
+	"Mithranes" = 30
+	"Perdiccas" = 30
+	"Neoptolemus" = 30
+	"Eumenes" = 30
+	"Mihran" = 30
+	"Sames" = 30
+	"Arsames" = 30
+	"Charaspes" = 20
+	"Xerxes" = 10
+	"Abdissares" = 30
+	"Darius" = 30
+	
+	"Yesfir" = -1
+	"Zareen" = -1
+	"Zhaleh" = -1
+	"Nahid" = -1
+	"Banu" = -1
+	"Esta" = -1
+	"Jaleh" = -1
+
+}
+
+leader_names = {
+			"the Mannean" "of Mannea" "of Mannea" "of Mannea" "the One-Eyed" "the Wise" "the Black" "the Older" "the Strong" "Raven" "the Eagle" "the Lion"
+			"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}
