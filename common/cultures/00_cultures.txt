@@ -696,6 +696,12 @@ anatolian_group = {
 			Alulis Argys Arma Ata Atelis Atrastal Bartaras Gugisa Isas Kadoas Kavdaules Kitwa Kukas Kumlis Manes Mitridashtas Nannas Silukas Srkastus Timles Titis Tiwdas Walwes
 		}
 	}
+	chalybean = {
+		primary = CLB
+		male_names = {
+			Alulis Argys Arma Ata Atelis Atrastal Bartaras Gugisa Isas Kadoas Kavdaules Kitwa Kukas Kumlis Manes Mitridashtas Nannas Silukas Srkastus Timles Titis Tiwdas Walwes
+		}
+	}
 	paphlagonian = {
 	}
 	kilikian  = {
@@ -729,8 +735,8 @@ armenian_group = {
 	armenian = {
 		primary = ARM
 	}
-	chaldoian = {
-		primary = CH2
+	urartian = {
+		primary = URT
 	}
 	mannean = {
 		primary = MNN
@@ -747,7 +753,7 @@ armenian_group = {
 	}
 	
 	dynasty_names = {
-		Yervanduni Artashesai Arshakuni Mirioi Artaxoi Archilae Dachoi 
+		Yervanduni Artashesai Arshakuni Mirioi Artaxoi Archilae Dachoi Van 
 	}
 }
 
@@ -1116,8 +1122,14 @@ steppe_people = {
 			Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
 		}
 	}
-	dynasty_names = {
-		Ishpakai Partatuai Madeai Eruvandai Tigranoi Tarai Tarai Torramai Tiermeoi
+	cimmerian = {
+		primary = CYM
+		male_names = {
+			Ishpaka Partatua Madea Eruvand Tigran Tar Torram Tarem Tiermes Terem Tarsua Sco Ra Pada Ada
+		}
+		female_names = {
+			Amage Tabiti "P'ha" Anya Ana
+		}
 	}
 }
 
