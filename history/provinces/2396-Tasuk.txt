@@ -1,0 +1,19 @@
+add_core = MNN
+owner = MNN
+controller = MNN
+hre = no
+base_tax = 1
+base_production = 2
+base_manpower = 2
+trade_goods = wool
+capital = "Tasuk"
+culture = mannean
+religion = armenian_religion
+
+discovered_by = caucaso_anatolian
+discovered_by = iranian
+discovered_by = scythian
+discovered_by = greek
+discovered_by = balkan
+discovered_by = punic
+discovered_by = central_asian
