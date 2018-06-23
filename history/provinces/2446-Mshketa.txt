@@ -1,0 +1,21 @@
+add_core = IBE
+owner = IBE
+controller = IBE
+culture = kartvelian
+religion = skneli
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = cloth
+base_manpower = 3
+capital = "Mtskheta"
+is_city = yes
+small_city_walls = yes
+
+discovered_by = caucaso_anatolian
+discovered_by = iranian
+discovered_by = scythian
+discovered_by = greek
+discovered_by = balkan
+discovered_by = punic
+discovered_by = central_asian
