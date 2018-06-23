@@ -1,11 +1,11 @@
-government = despotic_monarchy
+government = tribal_kingdom
 government_rank = 2
 #mercantilism = 0.25
 technology_group = caucaso_anatolian
 primary_culture = mannean
 religion = armenian_religion
 religious_school = semitic_type
-capital = 2294
+capital = 2493
 
 250.1.1 = {
 	religion = zoroastrianism

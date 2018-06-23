@@ -5,7 +5,7 @@ technology_group = caucaso_anatolian
 primary_culture = kartvelian
 religion = skneli
 religious_school = semitic_type
-capital = 1182
+capital = 2446
 
 455.1.1 = {
 	monarch = {

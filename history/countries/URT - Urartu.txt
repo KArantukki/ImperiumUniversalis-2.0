@@ -1,0 +1,18 @@
+government = despotic_monarchy
+government_rank = 3
+#mercantilism = 0.25
+technology_group = caucaso_anatolian
+primary_culture = urartian
+religion = armenian_religion
+religious_school = semitic_type
+capital = 2391
+143.1.1 = {
+	monarch = {
+		name = "Rusa III"
+		dynasty = "Van"
+		death_date = 204.1.1
+		dip = 1
+		adm = 2
+		mil = 1
+	}
+}

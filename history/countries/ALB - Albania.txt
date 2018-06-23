@@ -5,6 +5,6 @@ technology_group = caucaso_anatolian
 primary_culture = albanian
 religion = skneli
 religious_school = semitic_type
-capital = 2303
+capital = 2463
 
 

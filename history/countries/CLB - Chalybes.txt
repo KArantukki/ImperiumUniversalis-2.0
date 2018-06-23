@@ -1,8 +1,8 @@
-government = tribal_kingdom
+government = tribal_federation
 government_rank = 2
 #mercantilism = 0.25
 technology_group = caucaso_anatolian
-primary_culture = kartvelian
-religion = skneli
+primary_culture = chalybean
+religion = luwian_religion
 religious_school = semitic_type
-capital = 2443
+capital = 2237

@@ -4,4 +4,5 @@ government_rank = 2
 technology_group = iranian
 primary_culture = caspian
 religion = mitraism
+capital = 2465
 

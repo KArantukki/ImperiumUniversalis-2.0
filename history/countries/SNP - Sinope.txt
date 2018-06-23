@@ -4,7 +4,7 @@ government_rank = 1
 technology_group = greek
 primary_culture = ionic
 religion = greek_religion
-capital = 2232
+capital = 2225
 religious_school = hellenic_type
 
 	##fac_oligarchs = 50
