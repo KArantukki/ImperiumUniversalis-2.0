@@ -44,7 +44,7 @@ hispania_superregion = {
 	lusitania
 	cartaginensis_region
 	gallaecia
-	hispania_citerior
+	hispania_tarraconensis
 }
 
 celtica_superregion = {

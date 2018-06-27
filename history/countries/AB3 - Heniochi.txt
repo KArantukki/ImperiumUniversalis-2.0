@@ -1,0 +1,8 @@
+government = tribal_federation
+government_rank = 2
+#mercantilism = 0.25
+technology_group = caucaso_anatolian
+primary_culture = lazi
+religion = skneli
+religious_school = semitic_type
+capital = 2074

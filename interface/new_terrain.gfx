@@ -86,5 +86,14 @@ spriteTypes = {
 		name = "GFX_combat_terrain_mediterranean"
 		texturefile = "gfx/interface/combat_terrain_mediterranean.dds"
 	}
+
+	spriteType = {
+		name = "GFX_colony_terrainsteep_coast"
+		texturefile = "gfx/interface/colony_terrain_steep_coast.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_terrain_steep_coast"
+		texturefile = "gfx/interface/combat_terrain_steep_coast.dds"
+	}
 	
 }

@@ -318,6 +318,8 @@
 3214 = "Citium"
 3215 = "Constantia"
 3216 = "Chytroi"
- 
+499 = "Remorum"
+999 = "Thasus"
+989 = "Lemnus"
  
  

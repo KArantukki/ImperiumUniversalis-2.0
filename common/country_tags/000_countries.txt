@@ -1041,6 +1041,12 @@ GC3 = "countries/Tibareni.txt"
 GC4 = "countries/Mossynoeci.txt"
 GC5 = "countries/Mushki.txt"
 GC6 = "countries/Macrones.txt"
+GC7 = "countries/Svani.txt"
+ABZ = "countries/Abasgi.txt"
+AB2 = "countries/Coraxi.txt"
+AB3 = "countries/Heniochi.txt"
+AB9 = "countries/Menralii.txt"
+
 
 
 
