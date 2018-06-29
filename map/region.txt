@@ -509,42 +509,154 @@ nubia_region = {
 
 aethiops = {
 	areas = {
+	meroe_area
+	nubia_ulterior
+	axum_area
+	adoulis_area
+	daamat
+	punt_area
+	deserta_aethiopia
+	cinnamomifera_regio
+	elephas_area
+	coastal_aethiopia
+	aethiopii_mons
+	aethiopia_inferior
+	aethiopia_superior
+	cyeneum_area
+	agisymba_citerior
+	agisymba_ulterior
 	}
 } 
 
 arabia_petrea_region = {
-
 	areas = {
+	te_mefkat
+	nabatene_west
+	nabatene_east
+	arabia_petraea_area
+	moab_area
+	ammon_area
+	dumatha_area
+	deserta_arabia
+	nabatene_maritimae
+	lihyan_area
+	sidenica_area
+	hegra_area
 	}
 } 
 
 arabia_felix_region = {
-
 	areas = {
+	arabia_magna
+	arabia_felix_area
+	arabia_east
+	gerrah_area
+	ichtyophagorum_sinus
+	omanitis_area
+	makan_area
+	libanotophoros_regio
+	myrrhifera_exterior
+	hadramaut_area
+	qataban_area
+	saba_area
+	mapharitis_area
+	himyar_area
+	myrrhifera_interior
+	main_area
+	macoraba_area
+	iathrippa_area
+	cinaedocolpitis
 	}
 }
 
 africa_region = {
-
 	areas = {
+	carthago_area
+	zeugitana_area
+	byzacium_area
+	emporia_area
+	mediterranea_insulae
+	numidia_maritimae
+	cirta_area
+	thevestis_area
+	militiana_area
+	gaetulia
+	mauretania_sitifensis
+	
 	}
 }
 
 lybia_region = {
-
 	areas = {
+	ammonium_area
+	augila_area
+	marmarica_east
+	marmarica_west
+	cyrenaica_east
+	cyrenaica_west
+	syrtica_area
+	desertum_africanum
+	garamantum_area
+	tripolitania_east
+	tripolitania_west
+	deserta_syrtica
+	deserta_tripolitania
+	deserta_numidia
+	libya_interior
+	garamantum_ulterior
 	}
 }
 
 mauretania_region = {
+	areas = {
+	caesariensis_east
+	caesariensis_west
+	madethubadus_area
+	cartenna_area
+	siga_area
+	diur_mons
+	deserta_mauretania
+	tingitana_west
+	tingitana_east
+	atlas_mons
+	libya_west
+	fortunatae_insulae
+	lixiane_area
+	mauretania_ulterior
+	mauretania_superior
+	libya_atlanticum
+	}
+}
 
+asian_sarmatia = {
 	areas = {
 	}
 }
 
 sarmatia_region = {
-
 	areas = {
+	glaesum_area
+	hyperborea_area
+	germano_sarmatia
+	transvistuliana_area
+	tyras_area
+	pyretus_area
+	scythia_harpitis
+	scythia_thissamatica
+	tauroscythia_area
+	chersonesus_heracle
+	chersonesus_taurica
+	chersonesus_zenonis
+	borysthenes_inferior
+	borysthenes_superior
+	daco_sarmatia
+	gelonia_area
+	sarmatia_west
+	sarmatia_east
+	sarmatia_ulterior
+	cimmero_scythia
+	lower_tanais
+	upper_tanais
 	}
 }
 

@@ -4,7 +4,7 @@ small_city_walls = {
 	time = 30
 	modifier = {
 		fort_level = 2
-		local_defensiveness = 0.25
+		local_defensiveness = 0.1
 	}
 	
 	onmap = yes
@@ -21,7 +21,7 @@ large_city_walls = {
 	make_obsolete = small_city_walls
 	modifier = {
 		fort_level = 4
-		local_defensiveness = 0.5
+		local_defensiveness = 0.2
 	}
 	
 	onmap = yes

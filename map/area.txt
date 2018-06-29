@@ -956,3 +956,345 @@ troglodytica_area = {
 	839 841 843 840 842
 }
 #aethiops
+meroe_area = {
+	827 831 832 833 847
+}
+nubia_ulterior = {
+	856 855 834 835 836
+}
+axum_area = {
+	868 867 866 869 864
+}
+adoulis_area = {
+	872 838 837 929 896 
+}
+daamat = {
+	870 871 873 874 875
+}
+punt_area = {
+	876 877 879 881 880
+}
+deserta_aethiopia = {
+	892 884 882 883 894 
+}
+cinnamomifera_regio = {
+	885 878 886 887
+}
+elephas_area = {
+	890 889 888 893 891
+}
+coastal_aethiopia = {
+	895 897 898
+}
+aethiopii_mons = {
+	863 901 865 862 904
+}
+aethiopia_inferior = {
+	858 857 861 860 859
+}
+aethiopia_superior = {
+	905 909 915 910 913
+}
+cyeneum_area = {
+	912 914 911 916 917
+}
+agisymba_citerior = {
+	681 680 682 683
+}
+agisymba_ulterior = {
+	919 918 920 921 922
+}
+#arabia_petrea_region
+te_mefkat = {
+	2255 2254 2259 2258 2256
+}
+nabatene_west = {
+	2266 2267 2260 2261 2257
+}
+nabatene_east = {
+	2529 2533 2534 2532 2530
+}
+arabia_petraea_area = {
+	2265 2262 2264 2276 2263
+}
+moab_area = {
+	2280 2282 2281 2275
+}
+ammon_area = {
+	2296 2291 2524 2297
+}
+dumatha_area = {
+	2520 2521 2522 2545 2546
+}
+deserta_arabia = {
+	2519 2528 2523 2579 2580
+}
+nabatene_maritimae = {
+	2540 2536 2531 2547 2548
+}
+lihyan_area = {
+	2538 2535 2537 2539 2714
+}
+hegra_area = {
+	2543 2544 2542 2541 2550
+}
+sidenica_area = {
+	2552 2553 2549 2551 2555
+}
+#arabia_felix_region
+arabia_magna = {
+	2573 2564 2574 2575 2577
+}
+arabia_felix_area = {
+	2587 2576 2578 2630 2629
+}
+arabia_east = {
+	2581 2580 2589 2588 2582
+}
+gerrah_area = {
+	2583 2582 2584 2586 2585
+}
+ichtyophagorum_sinus = {
+	2650 2649 2651 2648 2646
+}
+omanitis_area = {
+	2639 2644 2647 2642 2637
+}
+makan_area = {
+	2640 2641 2645 2643 2638
+}
+libanotophoros_regio = {
+	2634 2635 2636 2633 2632
+}
+myrrhifera_exterior = {
+	2603 2604 2625 2602 2601
+}
+hadramaut_area = {
+	2622 2628 2623 2626 2621
+}
+qataban_area = {
+	2613 1620 2619 2627 2600
+}
+saba_area = {
+	2611 2614 2612 2605 2620
+}
+mapharitis_area = {
+	2617 2598 2599 2597 2595
+}
+himyar_area = {
+	2616 2618 2615 2596 2594
+}
+myrrhifera_interior = {
+	2610 2624 2609 2593 2592
+}
+main_area = {
+	2607 2608 2606 2572 2567
+}
+macoraba_area = {
+	2562 2568 2569 2570 2561
+}
+iathrippa_area = {
+	2557 2556 2554 2558 2559
+}
+cinaedocolpitis = {
+	2565 2563 2560 2566 2571
+}
+# africa_region
+carthago_area = {
+	612 615 616 617 613
+}
+zeugitana_area = {
+	608 607 609 614 610
+}
+byzacium_area = {
+	619 618 620 623 622
+}
+emporia_area = {
+	629 625 621 627 626
+}
+mediterranea_insulae = {
+	1249 1250 630 637
+}
+numidia_maritimae = {
+	597 606 588 582 579
+}
+cirta_area = {
+	589 598 599 583 605
+}
+thevestis_area = {
+	603 604 610 611 600
+}
+militiana_area = {
+	624 601 602 591 586
+}
+gaetulia = {
+	590 593 592 585 573 
+}
+mauretania_sitifensis = {
+	580 577 581 584 587
+}
+# lybia_region
+ammonium_area = {
+	716 717 715 718 719
+}
+augila_area = {
+	712 711 1641 1640 1639
+}
+marmarica_east = {
+	725 726 724 723
+}
+marmarica_west = {
+	720 721 722 710 708 
+}
+cyrenaica_east = {
+	707 709 706 704
+}
+cyrenaica_west = {
+	701 705 702 703 700
+}
+syrtica_area = {
+	698 699 697 695 696
+}
+desertum_africanum = {
+	660 663 658 659 713
+}
+garamantum_area = {
+	661 666 656 657 662
+}
+tripolitania_east = {
+	650 652 654 694 
+}
+tripolitania_west = {
+	649 648 646 638 636
+}
+deserta_syrtica = {
+	651 653 655 665 647
+}
+deserta_tripolitania = {
+	641 645 644 642 664
+}
+deserta_numidia = {
+	639 640 628 643
+}
+libya_interior = {
+	678 677 679 796 906
+}
+garamantum_ulterior = {
+	675 674 676 686 685
+}
+# mauretania_region
+caesariensis_east = {
+	570 576 574 571 569
+}
+caesariensis_west = {
+	560 563 564 561 558
+}
+madethubadus_area = {
+	566 594 595 565 572
+}
+cartenna_area = {
+	567 568 575 578 562
+}
+siga_area = {
+	557 559 554 519 552
+}
+diur_mons = {
+	521 550 522 517 518
+}
+deserta_mauretania = {
+	553 556 596 555 551
+}
+tingitana_west = {
+	523 516 515 524 525
+}
+tingitana_east = {
+	526 527 528 529 545
+}
+atlas_mons = {
+	541 540 542 543 536
+}
+libya_west = {
+	689 690 691 692
+}
+fortunatae_insulae = {
+	549 548 547 
+}
+lixiane_area = {
+	632 633 634 635 539
+}
+mauretania_ulterior = {
+	535 537 631 538 532
+}
+mauretania_superior = {
+	534 533 530 531 544
+}
+libya_atlanticum = {
+	693 925 924 923
+}
+# sarmatia_region
+glaesum_area = {
+	1894 1895 1896 1897 1920
+}
+hyperborea_area = {
+	1900 1901 1899 2030 2031
+}
+germano_sarmatia = {
+	2023 2026 1970 2028 2027
+}
+transvistuliana_area = {
+	2024 1898 2025 1969 1911
+}
+tyras_area = {
+	1964 2018 1963 2017 2016
+}
+pyretus_area = {
+	1984 1947 2014 2015 
+}
+scythia_harpitis = {
+	1988 1986 1985 1987
+}
+scythia_thissamatica = {
+	1990 1989 2019 1976 1991
+}
+tauroscythia_area = {
+	2037 1992 1993 2008 3230
+}
+chersonesus_heracle = {
+	1996 1997 1995 1994 2006
+}
+chersonesus_taurica = {
+	2005 1998 1999 3231 2007
+}
+chersonesus_zenonis = {
+	2004 2003 2002 2001 2000
+}
+borysthenes_inferior = {
+	1978 1977 2034 2035 2033
+}
+borysthenes_superior = {
+	1973 1975 1979 1980 2029
+}
+daco_sarmatia = {
+	1972 2021 2022 2020 1974
+}
+gelonia_area = {
+	1971 2040 2043 2042 2036
+}
+sarmatia_west = {
+	2041 2046 2047 2048 2049
+}
+sarmatia_east = {
+	2053 2054 2052 2057 2051
+}
+sarmatia_ulterior = {
+	2062 2061 2060 2055 2063
+}
+cimmero_scythia = {
+	1981 2009 2039 2038 2045
+}
+lower_tanais = {
+	2013 2012 2011 2010 2044
+}
+upper_tanais = {
+	1982 2056 2050 2059 2058
+}

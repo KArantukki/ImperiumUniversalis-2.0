@@ -3231,10 +3231,10 @@ province;red;green;blue;x;x
 3230;19;132;40;UnusedLand40
 3231;119;32;41;UnusedLand41
 3232;219;132;42;UnusedLand42
-3233;219;32;43;UnusedLand43
-3234;219;32;44;UnusedLand44
+3233;19;32;43;UnusedLand43
+3234;119;132;44;UnusedLand44
 3235;219;32;45;UnusedLand45
-3236;219;32;46;UnusedLand46
+3236;19;132;46;UnusedLand46
 3237;219;32;47;UnusedLand47
 3238;219;32;48;UnusedLand48
 3239;219;32;49;UnusedLand49

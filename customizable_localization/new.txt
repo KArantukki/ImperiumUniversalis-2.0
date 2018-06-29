@@ -2,6 +2,10 @@ defined_text = {
 	name = GetRegionName
 
 	text = {
+		localisation_key = asian_sarmatia
+		trigger = {	region = asian_sarmatia }
+	}
+	text = {
 		localisation_key = west_china
 		trigger = {	region = west_china }
 	}
