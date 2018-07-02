@@ -1,0 +1,12 @@
+bookmark =
+{
+	name = "CLASH_OF_EMPIRES_TITLE"
+	desc = "CLASH_OF_EMPIRES_DESC"
+	date = 145.3.1
+	
+	default = yes
+	center = 2476
+	
+	country = ANH
+
+	

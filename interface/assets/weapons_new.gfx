@@ -146,14 +146,32 @@ objectTypes = {
 	###################################################################################################################
 
 	pdxmesh = {
+		name = "celt_shield_3"
+		file = "gfx/models/Units/celt_shield_3.mesh"			
+		
+		scale = 0.12
+	}
+	pdxmesh = {
+		name = "arch_shield_2"
+		file = "gfx/models/Units/arch_shield_2.mesh"			
+		
+		scale = 0.12
+	}
+	pdxmesh = {
+		name = "celt_shield_2"
+		file = "gfx/models/Units/celt_shield_2.mesh"			
+		
+		scale = 0.12
+	}
+	pdxmesh = {
 		name = "gr_legio_shield"
 		file = "gfx/models/Units/gr_legio_shield.mesh"			
 		
 		scale = 0.12
 	}
 	pdxmesh = {
-		name = "hoplite_shield_ath_early"
-		file = "gfx/models/Units/hoplite_shield_ath_early.mesh"			
+		name = "arch_shield_ath"
+		file = "gfx/models/Units/arch_shield_ath.mesh"			
 		
 		scale = 0.13
 	}

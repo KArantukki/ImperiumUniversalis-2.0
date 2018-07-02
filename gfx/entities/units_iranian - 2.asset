@@ -63,7 +63,7 @@ entity = {
 }
 entity = {
 	name = "BAB_INFANTRY_2"
-	pdxmesh = "BAB_INFANTRY_2"
+	pdxmesh = "BAB_INFANTRY_1"
 	
 	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.4 	}
 	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}

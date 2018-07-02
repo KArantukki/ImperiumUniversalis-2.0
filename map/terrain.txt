@@ -47,7 +47,37 @@ categories =  {
 		color = { 66 160 0  }
 		
 		terrain_override = {
-			
+			# Hispania 
+			159 157 253 254 255 250 156 151 171 172 
+			# Gallia
+			376 466 
+			# italia
+			103 97 104 53 52 66 68 72 45 39
+			22 21 20 17 10 12 4 1
+			# africa
+			612 608 615 617 618 597 606 567 568 
+			# greece
+			959 958 963 964 962 938 945 952 
+			1030 1067 995 996 1086 1085 1081
+			# thracia
+			1094 1095 1096 
+			# sarmatia
+			2000 2004 2003 
+			# anatolia
+			2119 2118 987 986 2121 2123 2127 2129 2130 2158 
+			2157 2160 2122 2116 2150 2151 2334 2333 2332
+			2180 
+			#egypt
+			728 729 732 761 762 760 763 780 739 738 747
+			# middle east
+			2299 2300 2317 2320 2321 2322 2345 2371 2369 2347 2346 2348
+			2666 2667 2668 2656 2659 2497 
+			# india
+			2930 2943 2933 2927 3100 2919 2918 3088 2985 3078 3043
+			3006 3041 3027 2992 3000 3025 3026 3024 3188 3079 2972 2980
+			3044 3035 3165 3264 3103 3089 2982
+			# Bactria
+			2828 2832
 		}		
 	}
 	
@@ -65,8 +95,69 @@ categories =  {
 		color = { 42 76 45 }
 		
 		terrain_override = {
-			
+			# Britannia
+			318 301 355 359 
+			# Gallia
+			453 451 458 428 437 438 411 939 397
+			501 500 503 508
+			# Germania
+			1751 1749 1760 1764 1767 1794 1788 1784 
+			1774 1776 1839 1842 1843 1830 1849 1884 
+			1885 1877 1898 1899 1823 1822 1821 1824 
+			1825 1826
+			# Hispania
+			243 228 227 231 229 233 
+			# Dacia-Thracia
+			1939 1942 1932 
 		}                                      
+	}
+
+	#woods
+	woods = {
+		movement_cost = 1.10
+		defence = 1
+		#local_development_cost = 0.1
+		#local_build_cost = 0.15
+		combat_width = -0.20
+		nation_designer_cost_multiplier = 0.9
+		supply_limit = 3
+		
+		color = { 58 104 61 }
+		terrain_override = {
+			# hispania
+			230 199 223 221 178 190 184 186 182 246 245 251
+			# Gallia
+			393 392 410 394 404 403 395 396 422 421 432 431 
+			419 446 441 456 459 428 427 461 429 465 463 477 
+			476 383 504 473 502 499 497 488 513 
+			# Britannia
+			285 284 302 283 288 300 312 313 320 322 323 
+			351 350 357 354 360 514 495 498 1772
+			# Germania 
+			1775 1777 1780 1208 1210 1796 1795 1903 1800 1762
+			1761 1758 1759 1755 1745 1829 1834 1832 1841 1801 
+			1850 1859 1858 1846 1848 1881 1880 1875 1872 1869 
+			1886 1887 1890 1891 1900 1901 1866 1219 1820 1840 
+			1791 1844 1783
+			# italia
+			76 80 114 35 
+			# balkan
+			1187 1190 1183 1178 1177 1936 1933 1106 1091 1956 1965 
+			1021 1027 
+			# africa
+			609 610 614 599 604
+			# anatolia
+			2147 2159 2189 2188 2186 2184 2220 
+			# armenia
+			2458 2460 2454 2450 2448 2446 2435 2438 2433 2434 
+			# middle east and iran
+			2655 2490 2664 2700 2699 2402 
+			# india
+			3093 3081 3080 3094 3096 3081 3086 3077 3105 3106
+			3110 3072 3023 2994 2978 2986 2983 2973 3002 3010 3014 3013 
+			}
+
+		sound_type = forest
 	}
 	
 	#hills
@@ -83,28 +174,30 @@ categories =  {
 
 		
 		terrain_override = { 
-			
+			# Hispania
+			234 238 239 219 205 202 207 208 168 166 214 
+			240 252 256 158 152 144 140 138 185 200153 154 
+			# Britannia
+			311 309 326 329 332 331 349 333 334 303
+			304 346 347 335
+			# Gallia
+			424 425 401 398 371 372 367 366 377 384
+			474 473 469 471 
+			# Italia
+			96 99 102 105 106 94 90 8 9 5 7 14 15 
+			16 18 28 31 33 51 50 57 58 56 64 65 
+			131 127 124 122 36 41 29 62 
+			# Germania
+			1803 1797 1768 1766 1778 1779 1804 1805 1852 
+			1860 1854 1861 1863 1909 1910 1911 1845 1807 
+			1808 1847 
+			# Africa
+			611 580 583 589 569 570 563 518 522
+			# Aethiopia
+			904 911 
 		}
 
 		sound_type = mountain
-	}
-
-	#woods
-	woods = {
-		movement_cost = 1.10
-		defence = 1
-		#local_development_cost = 0.1
-		#local_build_cost = 0.15
-		combat_width = -0.20
-		nation_designer_cost_multiplier = 0.9
-		supply_limit = 3
-		
-		color = { 58 104 61 }
-		terrain_override = {
-		
-			}
-
-		sound_type = forest
 	}
 	
 	#mountain
@@ -122,7 +215,20 @@ categories =  {
 		color = { 117 108 119 }
 		
 		terrain_override = {
-		
+			# Hispania
+			232 224 225 237 220 236 235 218 213 211 165 
+			149 147 
+			# Gallia
+			373 370 365 379 472 
+			# Italia
+			110 113 117 119 95 84 81 77 63 61 
+			55 47 44 40 30 27 
+			# Germania
+			1862 1906 1907
+			# Africa
+			517 536 542 543 539 635 
+			# Aethiopia 
+			883 880 870 871 
 		}
 
 		sound_type = mountain
@@ -159,9 +265,21 @@ categories =  {
 		local_manpower_modifier = 0.15
 		nation_designer_cost_multiplier = 1
 		sound_type = plains
-		color = { 176 183 130 }
+		color = { 166 172 120 }
 		
 		terrain_override = {
+			150 146 145 139 136 137 515 516 516 562 
+			559 575 578 588 607 616 3 11 129 131 130 
+			125 121 67 69 70 73 75 390 92 78 60 37 
+			32 25 24 23 19 34 1166 1165 935 
+			942 941 936 935 932 931 939 940 953 
+			955 956 960 961 965 969 972 975 1062 1063 1065
+			1066 1071 1072 1079 1080 1084 2117 2120 988 
+			985 2125 2124 2126 2128 2133 2131 997 1005 1004
+			1007 3215 2207 2335 2316 2287 2285 2329 2326 2318
+			706 709 704 701 619 620 161 162 93 88 107 87 2002 
+			2001 1994 1990 1989 1988 1986 2145 2149 2152 2161 
+			2182 164 209 210 173 174 175 176 177 195 2 191 368
 			}
 	}
 	
@@ -178,7 +296,8 @@ categories =  {
 		sound_type = jungle
 		color = { 51 94 96 }
 		terrain_override = {
-			
+			3182 3181 3179 3178 3166 3145 3146 3199 3200 3203
+			3204 3205 3052 3054 3120 3185 3008 
 		}
 	}
 	
@@ -193,7 +312,7 @@ categories =  {
 		sound_type = jungle
 		color = { 61 112 114 }
 		terrain_override = {
-			
+			923 924 3224 2676 2674 2948 2914 3033 3021 3195 3193
 		}
 	}	
 	
@@ -207,7 +326,10 @@ categories =  {
 		nation_designer_cost_multiplier = 0.85
 		
 		terrain_override = {
-			
+			# Britannia
+			295 315
+			# Germania
+			1742 1743 1744 1747 
 			}
 
 		combat_width = -0.25
@@ -226,7 +348,16 @@ categories =  {
 		supply_limit = 2
 		
 		terrain_override = {
-			
+			734 730 736 737 2251 746 2880 2879 2877
+			2506 2507 2508 2509 2516 2518 2900
+			# Britannia
+			297 291 293 292 316 319 321 324 294
+			# Gallia
+			490 491 369 386 387 389 
+			# Germania
+			1746 1748 1753 1754 1785 1811 1815 1816 1837 1836 
+			# Italia
+			48 42 82 109 116 
 			}
 
 		combat_width = -0.15
@@ -243,7 +374,10 @@ categories =  {
 		local_manpower_modifier = 0.2
 		
 		terrain_override = {
-			
+			3020 3001 2912 2924 2922 2669 2499 2500 2502 
+			2501 2503 2504 2505 2652 735 731 745 748 752 
+			754 756 757 86 85 133 134 135 1098 740 744
+			1099 1102 2013 2876 2878 2875 2866 2864 
 			}
 
 		combat_width = -0.15
@@ -265,10 +399,31 @@ categories =  {
 		
 		
 		terrain_override = {
-			
+			703 2541 2549 
 			}	
 		
 		color = { 220 210 0 }
+	}
+	
+	desert_river = {
+		movement_cost = 1.1
+		supply_limit = 2
+		allowed_num_of_buildings = -1
+		sound_type = desert
+		#local_development_cost = 1.0
+		local_build_cost = 0.1
+		nation_designer_cost_multiplier = 0.9
+		sound_type = desert
+		
+		
+		terrain_override = {
+			750 751 753 755 758 759 795 806 808 810 812 814
+			818 821 822 823 824 825 2360 2359 2358 2357 2362 
+			2356 2363 2354 2353 2479 2491 2874 2868 785 633 
+			632 816 2898 2897 
+			}	
+		
+		color = { 174 210 0 }
 	}
 	
 	salt_desert = {
@@ -302,7 +457,11 @@ categories =  {
 		nation_designer_cost_multiplier = 0.9		
 		
 		terrain_override = {
-			  
+			  # Africa
+			  537 631 646 648 654 694 695 698 700 
+			  720 725 726 
+			  # Africa red sea
+			  773 772 776 777 778 839 888 889 
 		}
 	
 		supply_limit = 1
@@ -322,7 +481,10 @@ categories =  {
 		sound_type = sea
 		
 		terrain_override = {
-			
+			# Baleares
+			160 163
+			# Sardinia
+			126
 			}
 		
 		color = { 200 128 0 }
@@ -334,6 +496,7 @@ categories =  {
 		#local_development_cost = 0.1
 		local_build_cost = 0.1
 		local_defensiveness = 0.2
+		defence = 1
 		nation_designer_cost_multiplier = 0.9		
 		supply_limit = 2
 		local_sailors_modifier = 0.25
@@ -342,6 +505,7 @@ categories =  {
 		sound_type = sea
 		
 		terrain_override = {
+			340 341 348
 			}
 		
 		color = { 191 128 13 }
@@ -355,7 +519,14 @@ categories =  {
 		nation_designer_cost_multiplier = 0.95
 			
 		terrain_override = {  
-			
+			# Africa
+			521 526 527 528 529 544 531 532 533 541 540 535 
+			519 552 554 558 555 564 571 576 577 584 624 622 
+			623 625 626 601 627 629 638 636 649 650 652 702 
+			710 727 741 742 743 782 783 781826 827 831 832
+			833 835 856 858 836 867 873 875 876 877 879 881 
+			882 878 885 886 887 890 682 680 2871 2873 2862
+			2869 
 			
 			} 
 		
@@ -376,7 +547,17 @@ categories =  {
 
 		
 		terrain_override = {
-				
+				# Britannia
+				306 308 307 305 363 362 336 337 338 343 345 
+				342 344 339 
+				# Gallia
+				423 400 
+				# Africa
+				587 600 603 550 551 545
+				# Aethiopia
+				869 863 
+				# Scythia
+				2896 2895
 			}
 
 		combat_width = -0.25
@@ -395,8 +576,12 @@ categories =  {
 		color = { 160 80 0 }
 		
 		terrain_override = {
-				
-				
+			# Italia
+			49 46 132
+			# Africa
+			707 705
+			# Aethiopia
+			864 868
 			}
 
 		combat_width = -0.25
@@ -450,7 +635,7 @@ categories =  {
 		color = { 156 171 129  }
 		
 		terrain_override = {
-				
+				2861 2863 2872 2890 
 				}	
 	}	
 	
@@ -463,7 +648,9 @@ categories =  {
 		nation_designer_cost_multiplier = 0.95	
 		
 		terrain_override = {
-			
+			2520 2714 2546 2313 2573 2575 2583 2582 2630 2629 
+			716 712 787 791 790 788 793 3229 848 661 659 657 
+			658 665 656 662 691 690 860 2269 1639 717 2550 
 			}
 		
 		supply_limit = 2
@@ -485,7 +672,10 @@ categories =  {
 		color = { 86 89 99 }
 		
 		terrain_override = {
-			
+			# Africa
+			602 572 565 595 594 634 689 675
+			676 685 686 678 679 713 838 837
+			840 842 845 779 767 770 
 			}	
 	}
 }

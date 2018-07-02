@@ -1,11 +1,25 @@
 
+
+entity = {
+	name = "celt_shield_3"
+	pdxmesh = "celt_shield_3"
+}
+entity = {
+	name = "arch_shield_2"
+	pdxmesh = "arch_shield_2"
+}
+
+entity = {
+	name = "celt_shield_2"
+	pdxmesh = "celt_shield_2"
+}
 entity = {
 	name = "gr_legio_shield"
 	pdxmesh = "gr_legio_shield"
 }
 entity = {
-	name = "hoplite_shield_ath_early"
-	pdxmesh = "hoplite_shield_ath_early"
+	name = "arch_shield_ath"
+	pdxmesh = "arch_shield_ath"
 }
 entity = {
 	name = "rep_shield"

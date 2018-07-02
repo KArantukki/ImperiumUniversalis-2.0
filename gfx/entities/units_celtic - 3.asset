@@ -7,7 +7,7 @@
 
 entity = {
 	name = "celticgfx_INFANTRY_3"
-	pdxmesh = "celticgfx_INFANTRY_2"
+	pdxmesh = "celticgfx_INFANTRY_3"
 	
 	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
 	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
@@ -16,39 +16,11 @@ entity = {
 
 	attach = { 
 		CATRigLArmPalm = "celtic_sword" 
-		CATRigRArmPalm = "celtic_shield"
+		CATRigRArmPalm = "celt_shield_3"
 	}
 }
 entity = {
-	name = "ARZ_INFANTRY_3"
-	pdxmesh = "ARZ_INFANTRY_1"
-	
-	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
-	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
-	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
-	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
-
-	attach = { 
-		CATRigLArmPalm = "germanic_axe" 
-		CATRigRArmPalm = "thracian_shield"
-	}
-}
-entity = {
-	name = "ICX_INFANTRY_3"
-	pdxmesh = "celticgfx_INFANTRY_2"
-	
-	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
-	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
-	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
-	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
-
-	attach = { 
-		CATRigLArmPalm = "germanic_axe" 
-		CATRigRArmPalm = "british_shield"
-	}
-}
-entity = {
-	name = "germanic_INFANTRY_3"
+	name = "germanic_INFANTRY_1"
 	pdxmesh = "germanic_INFANTRY_1"
 	
 	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
@@ -64,325 +36,172 @@ entity = {
 
 
 entity = {
-	name = "BRT_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "OTX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CUX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "BRX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "COX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CRX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CCX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CAX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CTX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DBX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DEX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DGX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DOX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "GAX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "GHX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "REX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "SIX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "STX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "TRX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DUX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CLD_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "ORX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "PAX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "VTX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CLX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CNX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CEX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CIX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CVX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DAX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "EPX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "LUX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "SEX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "SM9_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "TXX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "NOX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "VAX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "VIX_INFANTRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-
-entity = {
 	name = "SUI_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "DAN_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "TEH_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "GAU_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HER_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "ANG_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHA_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "FRI_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CIM_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "TEU_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "EUT_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "VAR_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "AMB_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "AUI_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "ANV_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BAT_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BRU_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHT_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHM_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CTT_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHE_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "SIG_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "TEN_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "UBI_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "USP_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HEM_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "LAN_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "MAR_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "QUA_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "SEM_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "LGI_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BUR_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "VAN_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HRI_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HLV_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "NAH_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "RUG_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "LEM_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "GOT_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BAS_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "SCR_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "FEN_INFANTRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 
 
@@ -393,332 +212,180 @@ entity = {
 ###################################################################################################################
 
 entity = {
-	name = "BRT_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "OTX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CUX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "BRX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "COX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CRX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CCX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CAX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CTX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DBX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DEX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DGX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DOX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "GAX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "GHX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "REX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "SIX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "STX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "TRX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DUX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CLD_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "ORX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "PAX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "VTX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CLX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CNX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CEX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CIX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CVX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DAX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "EPX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "LUX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "SEX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "SM9_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "TXX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "NOX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "VAX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "VIX_CAVALRY_3"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
 	name = "celticgfx_CAVALRY_3"
 	clone = "celticgfx_INFANTRY_3"
 }
 entity = {
 	name = "SUI_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "DAN_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "TEH_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "GAU_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HER_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "ANG_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHA_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "FRI_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CIM_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "TEU_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "EUT_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "VAR_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "AMB_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "AUI_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "ANV_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BAT_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BRU_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHT_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHM_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CTT_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHE_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "SIG_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "TEN_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "UBI_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "USP_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HEM_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "LAN_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "MAR_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "QUA_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "SEM_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "LGI_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BUR_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "VAN_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HRI_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HLV_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "NAH_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "RUG_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "LEM_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "GOT_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BAS_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "SCR_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "FEN_CAVALRY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 
 ###################################################################################################################
@@ -728,331 +395,179 @@ entity = {
 ###################################################################################################################
 
 entity = {
-	name = "BRT_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "OTX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CUX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "BRX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "COX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CRX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CCX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CAX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CTX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DBX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DEX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DGX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DOX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "GAX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "GHX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "REX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "SIX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "STX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "TRX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DUX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CLD_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "ORX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "PAX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "VTX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CLX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CNX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CEX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CIX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "CVX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "DAX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "EPX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "LUX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "SEX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "SM9_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "TXX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "NOX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "VAX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
-	name = "VIX_ARTILLERY"
-	clone = "ICX_INFANTRY_3"
-}
-entity = {
 	name = "celticgfx_ARTILLERY_3"
 	clone = "celticgfx_INFANTRY_3"	
 }
 
 entity = {
 	name = "SUI_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "DAN_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "TEH_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "GAU_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HER_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "ANG_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHA_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "FRI_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CIM_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "TEU_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "EUT_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "VAR_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "AMB_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "AUI_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "ANV_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BAT_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BRU_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHT_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHM_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CTT_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "CHE_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "SIG_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "TEN_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "UBI_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "USP_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HEM_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "LAN_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "MAR_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "QUA_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "SEM_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "LGI_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BUR_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "VAN_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HRI_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "HLV_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "NAH_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "RUG_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "LEM_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "GOT_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "BAS_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "SCR_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }
 entity = {
 	name = "FEN_ARTILLERY_3"
-	clone = "germanic_INFANTRY_3"
+	clone = "germanic_INFANTRY_1"
 }

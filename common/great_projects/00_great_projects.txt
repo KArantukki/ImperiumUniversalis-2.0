@@ -1,13 +1,4 @@
-nile_canal = {
-	ambient_object = nile_canal
-	province = 1775
-	is_canal = yes
-	time = 84
-	
-	modifier = {
-		province_trade_power_value = 5
-	}
-}
+
 
 great_mausoleum = {
 	ambient_object = mausoleum
