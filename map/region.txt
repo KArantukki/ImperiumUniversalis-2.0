@@ -2,7 +2,6 @@
 
 test_region = { }
 scandinavia_region = {} # not sued, just here to avoid lines in errors.log
-test_region = { }
 
 gallia_cisalpina = {
 	areas = {
@@ -11,7 +10,7 @@ gallia_cisalpina = {
 	alpes_cottiae
 	transpadana_area
 	cenomania_area
-	venetia_area
+	venetia_area 
 	liguria_area
 	}
 }
@@ -850,50 +849,6 @@ eastern_india_region = {
 }
 
 
-silkroad_region = {
-	areas = {
-	}
-}
-
-northern_steppes = {
-	areas = {
-	}
-}
-
-north_china = {
-	areas = {
-	}
-}
-central_china = {
-	areas = {
-	}
-}
-west_china = {
-	areas = {
-	}
-}
-south_china = {
-	areas = {
-	}
-}
-lingnan_region = {
-	areas = {
-	}
-}
-south_east_asia = {
-	areas = {
-		}
-}
-korea_region = {
-	areas = {
-	}
-}
-tibetan_highland = {
-	areas = {
-	}
-}
-
-
 mare_suebicum_region = {
 	areas = {
 		east_mare_suebicum
@@ -1021,75 +976,4 @@ mare_persicus_region = {
 		sinus_persicus
 	}
 }
-yellow_sea_region = {
-
-	areas = {
-
-		
-	}
-}
-southern_chinese_sea_region = {
-
-	areas = {
-		
-	}
-}
-
-vietnamese_sea_region = {
-
-	areas = {
-		
-		
-	}
-}
-
-arabian_sea_region = {
-	areas = {
-	
-	}
-}
-
-yangtze_region = {
-	areas = {
-	
-	}
-}
-
-indos_region = {
-	areas = {
-	
-	}
-}
-
-rhenus_region = {
-	areas = {
-	
-	}
-}
-
-ganges_region = {
-	areas = {
-	
-	}
-}
-
-oxus_region = {
-	areas = {
-		
-	}
-}
-albis_region = {
-	areas = {
-		
-	}
-}
-
-wasteland_ocean = {
-	areas = {	
-		
-		
-	}
-}
-
-
 

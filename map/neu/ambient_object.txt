@@ -1,0 +1,2171 @@
+type={
+	type="mausoleum"
+	use_animation=no
+	time_duration=300.000000
+	object={
+		name="mausoleum"
+		hidden_on_start=no
+		position={
+			1655.000 0.100 1275.000 
+		}
+		rotation={
+			0.000 2.000 0.000 
+		}
+	}
+}
+type={
+	type="zeus"
+	use_animation=no
+	scale=1.200000
+	time_duration=300.000000
+	object={
+		name="zeus"
+		hidden_on_start=no
+		position={
+			1447.000 0.100 1296.000 
+		}
+		rotation={
+			0.000 176.000 0.000 
+		}
+	}
+}
+type={
+	type="rhodos"
+	use_animation=no
+	scale=0.550000
+	time_duration=300.000000
+	object={
+		name="rhodos"
+		hidden_on_start=no
+		position={
+			1674.000 -0.500 1252.000 
+		}
+		rotation={
+			14.000 30.000 0.000 
+		}
+	}
+}
+type={
+	type="artemis_temple"
+	use_animation=no
+	scale=1.600000
+	time_duration=300.000000
+	object={
+		name="artemis_temple"
+		hidden_on_start=no
+		position={
+			1641.000 0.000 1308.000 
+		}
+		rotation={
+			14.000 150.000 0.000 
+		}
+	}
+}
+type={
+	type="colloseum"
+	use_animation=no
+	scale=0.120000
+	time_duration=300.000000
+	object={
+		name="roman_colloseum"
+		hidden_on_start=no
+		position={
+			1140.000 0.000 1445.000 
+		}
+		rotation={
+			14.000 22.000 0.000 
+		}
+	}
+}
+type={
+	type="pharos"
+	use_animation=no
+	scale=0.600000
+	time_duration=300.000000
+	object={
+		name="pharos"
+		hidden_on_start=no
+		position={
+			1736.000 0.000 1073.000 
+		}
+		rotation={
+			14.000 150.000 0.000 
+		}
+	}
+}
+type={
+	type="weiyung"
+	use_animation=no
+	scale=0.850000
+	time_duration=300.000000
+	object={
+		name="weiyung"
+		hidden_on_start=no
+		position={
+			4428.000 0.640 1185.000 
+		}
+		rotation={
+			0.000 90.000 0.000 
+		}
+	}
+}
+type={
+	type="gate_of_nations"
+	use_animation=no
+	scale=0.850000
+	time_duration=300.000000
+	object={
+		name="gate_of_nations"
+		hidden_on_start=no
+		position={
+			2528.000 0.100 1022.000 
+		}
+		rotation={
+			0.000 166.000 0.000 
+		}
+	}
+}
+type={
+	type="nile_canal"
+	use_animation=no
+	scale=0.800000
+	time_duration=300.000000
+	object={
+		name="nile_canal"
+		hidden_on_start=yes
+		position={
+			1658.000 0.100 889.000 
+		}
+		rotation={
+			0.000 2.000 0.000 
+		}
+	}
+}
+type={
+	type="babylon"
+	use_animation=no
+	scale=0.900000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="babylon"
+		hidden_on_start=no
+		position={
+			2231.000 -0.100 1126.000 
+		}
+		rotation={
+			14.000 165.000 0.000 
+		}
+	}
+}
+type={
+	type="marib_dam"
+	use_animation=no
+	scale=2.600000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="marib_dam"
+		hidden_on_start=no
+		position={
+			2238.000 -1.300 536.000 
+		}
+		rotation={
+			14.000 110.000 0.000 
+		}
+	}
+}
+type={
+	type="cothon"
+	use_animation=no
+	scale=0.650000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="cothon"
+		hidden_on_start=no
+		position={
+			1057.500 0.000 1268.500 
+		}
+		rotation={
+			14.000 180.000 0.000 
+		}
+	}
+}
+type={
+	type="windmill"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+}
+type={
+	type="seagulls"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			996.000 11.000 134.000 
+		}
+		rotation={
+			0.000 90.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1758.000 11.000 1081.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			2169.000 11.000 472.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			2593.000 11.000 893.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			3057.000 11.000 795.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1669.000 11.000 1221.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			228.000 11.000 979.000 
+		}
+		rotation={
+			0.000 90.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			476.000 11.000 1255.000 
+		}
+		rotation={
+			0.000 90.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			553.000 11.000 1223.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			736.000 11.000 1352.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1064.000 11.000 1275.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1225.000 11.000 1327.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1008.000 11.000 1489.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1517.000 11.000 1256.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1563.000 11.000 1353.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1710.000 11.000 1449.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1889.000 11.000 1181.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			599.000 11.000 1703.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+}
+type={
+	type="eagle"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			1990.000 9.300 425.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2008.000 9.300 543.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			1844.000 9.300 867.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			1736.000 9.300 1000.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2997.000 9.300 926.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			3681.000 9.300 870.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			3921.000 9.300 891.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			969.000 9.300 1171.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			520.000 9.300 1160.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			472.000 9.300 1342.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			675.000 9.300 1423.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			1441.000 9.300 1071.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			1489.000 9.300 1500.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2745.000 9.300 1473.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2800.000 9.300 1198.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2551.000 9.300 1208.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2168.000 9.300 1248.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2394.000 9.300 1067.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			3064.000 9.300 1454.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2926.000 9.300 1317.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			3232.000 9.300 1061.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			631.000 9.300 1844.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			984.000 9.300 1643.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			1090.280 9.300 1776.640 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			878.000 9.300 1566.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			1212.000 9.300 1601.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			1636.000 9.300 1636.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			1945.000 9.300 1650.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2101.000 9.300 1557.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2286.000 9.300 1563.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="eagle"
+		hidden_on_start=no
+		position={
+			2621.000 9.300 1593.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+}
+type={
+	type="polar_bear"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+}
+type={
+	type="brown_bear"
+	use_animation=yes
+	scale=0.250000
+	time_duration=300.000000
+	object={
+		name="brown_bear"
+		hidden_on_start=no
+		position={
+			2347.000 0.000 1404.000 
+		}
+		rotation={
+			0.000 60.000 0.000 
+		}
+	}
+	object={
+		name="brown_bear"
+		hidden_on_start=no
+		position={
+			1214.000 0.000 1991.000 
+		}
+		rotation={
+			0.000 330.000 0.000 
+		}
+	}
+	object={
+		name="brown_bear"
+		hidden_on_start=no
+		position={
+			1090.000 0.000 1563.000 
+		}
+		rotation={
+			0.000 300.000 0.000 
+		}
+	}
+	object={
+		name="brown_bear"
+		hidden_on_start=no
+		position={
+			916.000 0.000 1593.000 
+		}
+		rotation={
+			0.000 100.000 0.000 
+		}
+	}
+	object={
+		name="brown_bear"
+		hidden_on_start=no
+		position={
+			1537.000 0.000 1538.000 
+		}
+		rotation={
+			0.000 330.000 0.000 
+		}
+	}
+	object={
+		name="brown_bear"
+		hidden_on_start=no
+		position={
+			2095.000 0.000 1601.000 
+		}
+		rotation={
+			0.000 330.000 0.000 
+		}
+	}
+}
+type={
+	type="panda_bear"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="panda_bear"
+		hidden_on_start=no
+		position={
+			4702.000 0.000 910.000 
+		}
+		rotation={
+			0.000 300.000 0.000 
+		}
+	}
+	object={
+		name="panda_bear"
+		hidden_on_start=no
+		position={
+			4704.000 0.000 992.000 
+		}
+		rotation={
+			0.000 200.000 0.000 
+		}
+	}
+	object={
+		name="panda_bear"
+		hidden_on_start=no
+		position={
+			4573.000 0.000 781.000 
+		}
+		rotation={
+			0.000 100.000 0.000 
+		}
+	}
+	object={
+		name="panda_bear"
+		hidden_on_start=no
+		position={
+			4816.000 0.000 1084.000 
+		}
+		rotation={
+			0.000 100.000 0.000 
+		}
+	}
+}
+type={
+	type="kangaroo"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+}
+type={
+	type="crocodile"
+	use_animation=yes
+	scale=0.250000
+	time_duration=300.000000
+	object={
+		name="crocodile"
+		hidden_on_start=no
+		position={
+			1169.000 0.000 440.000 
+		}
+		rotation={
+			0.000 140.000 0.000 
+		}
+	}
+	object={
+		name="crocodile"
+		hidden_on_start=no
+		position={
+			1826.000 0.000 893.000 
+		}
+		rotation={
+			0.000 140.000 0.000 
+		}
+	}
+	object={
+		name="crocodile"
+		hidden_on_start=no
+		position={
+			1756.000 0.000 1008.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="crocodile"
+		hidden_on_start=no
+		position={
+			1767.000 0.000 945.000 
+		}
+		rotation={
+			0.000 -50.000 0.000 
+		}
+	}
+	object={
+		name="crocodile"
+		hidden_on_start=no
+		position={
+			1793.000 0.000 1069.000 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+}
+type={
+	type="zebra"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+	object={
+		name="zebra"
+		hidden_on_start=no
+		position={
+			1060.000 0.000 390.000 
+		}
+		rotation={
+			0.000 140.000 0.000 
+		}
+	}
+	object={
+		name="zebra"
+		hidden_on_start=no
+		position={
+			1057.000 0.000 396.000 
+		}
+		rotation={
+			0.000 120.000 0.000 
+		}
+	}
+	object={
+		name="zebra"
+		hidden_on_start=no
+		position={
+			1240.000 0.000 416.000 
+		}
+		rotation={
+			0.000 230.000 0.000 
+		}
+	}
+	object={
+		name="zebra"
+		hidden_on_start=no
+		position={
+			1233.000 0.000 416.000 
+		}
+		rotation={
+			0.000 180.000 0.000 
+		}
+	}
+	object={
+		name="zebra"
+		hidden_on_start=no
+		position={
+			1422.000 0.000 370.000 
+		}
+		rotation={
+			0.000 20.000 0.000 
+		}
+	}
+}
+type={
+	type="seal"
+	use_animation=yes
+	scale=0.250000
+	time_duration=300.000000
+}
+type={
+	type="whale"
+	use_animation=yes
+	scale=0.800000
+	time_duration=300.000000
+	object={
+		name="whale"
+		hidden_on_start=no
+		position={
+			443.000 1.500 64.000 
+		}
+		rotation={
+			0.000 180.000 0.000 
+		}
+	}
+	object={
+		name="whale"
+		hidden_on_start=no
+		position={
+			2903.000 2.500 747.000 
+		}
+		rotation={
+			0.000 180.000 0.000 
+		}
+	}
+	object={
+		name="whale"
+		hidden_on_start=no
+		position={
+			266.000 1.600 1190.000 
+		}
+		rotation={
+			0.000 180.000 0.000 
+		}
+	}
+}
+type={
+	type="vulture"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="vulture"
+		hidden_on_start=no
+		position={
+			1759.000 9.300 463.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="vulture"
+		hidden_on_start=no
+		position={
+			662.000 9.300 581.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="vulture"
+		hidden_on_start=no
+		position={
+			410.000 9.300 995.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="vulture"
+		hidden_on_start=no
+		position={
+			1166.000 9.300 947.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="vulture"
+		hidden_on_start=no
+		position={
+			1350.000 9.300 684.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="vulture"
+		hidden_on_start=no
+		position={
+			1767.000 9.300 622.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="vulture"
+		hidden_on_start=no
+		position={
+			1540.000 9.300 996.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="vulture"
+		hidden_on_start=no
+		position={
+			661.000 9.300 1110.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+	object={
+		name="vulture"
+		hidden_on_start=no
+		position={
+			894.000 9.300 1082.000 
+		}
+		rotation={
+			0.000 45.000 0.000 
+		}
+	}
+}
+type={
+	type="guanaco"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+}
+type={
+	type="nammi2_stonehenge_entity"
+	use_animation=no
+	scale=0.500000
+	time_duration=300.000000
+	object={
+		name="stonehenge"
+		hidden_on_start=no
+		position={
+			31.000 0.150 32.000 
+		}
+		rotation={
+			0.000 -0.800 0.000 
+		}
+	}
+}
+type={
+	type="elephant_indian"
+	use_animation=yes
+	scale=0.270000
+	time_duration=300.000000
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			1552.000 0.000 424.000 
+		}
+		rotation={
+			0.000 330.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			2007.000 0.000 487.000 
+		}
+		rotation={
+			0.000 22.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			2134.000 0.000 457.000 
+		}
+		rotation={
+			0.000 138.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			2427.000 0.000 378.000 
+		}
+		rotation={
+			0.000 66.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			2109.000 0.000 366.000 
+		}
+		rotation={
+			0.000 66.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			1884.000 0.000 395.000 
+		}
+		rotation={
+			0.000 111.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3279.000 0.000 442.000 
+		}
+		rotation={
+			0.000 -66.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3350.000 0.000 300.000 
+		}
+		rotation={
+			0.000 -66.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3472.000 0.000 304.000 
+		}
+		rotation={
+			0.000 127.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3454.000 0.000 245.000 
+		}
+		rotation={
+			0.000 300.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3437.000 0.000 439.000 
+		}
+		rotation={
+			0.000 89.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			1831.000 0.000 838.000 
+		}
+		rotation={
+			0.000 55.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			1809.000 0.000 779.000 
+		}
+		rotation={
+			0.000 190.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			2010.000 0.000 632.000 
+		}
+		rotation={
+			0.000 110.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			1824.000 0.000 530.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			2462.000 0.000 1010.000 
+		}
+		rotation={
+			0.000 -44.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			2577.000 0.000 950.000 
+		}
+		rotation={
+			0.000 -11.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3032.000 0.000 837.000 
+		}
+		rotation={
+			0.000 55.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3119.000 0.000 987.000 
+		}
+		rotation={
+			0.000 220.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3363.000 0.000 1001.000 
+		}
+		rotation={
+			0.000 322.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3333.000 0.000 913.000 
+		}
+		rotation={
+			0.000 222.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3219.000 0.000 834.000 
+		}
+		rotation={
+			0.000 -52.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3248.000 0.000 751.000 
+		}
+		rotation={
+			0.000 180.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3447.000 0.000 727.000 
+		}
+		rotation={
+			0.000 228.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3508.000 0.000 842.000 
+		}
+		rotation={
+			0.000 330.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3582.000 0.000 885.000 
+		}
+		rotation={
+			0.000 330.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3649.000 0.000 881.000 
+		}
+		rotation={
+			0.000 33.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3649.000 0.000 872.000 
+		}
+		rotation={
+			0.000 170.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3785.000 0.000 893.000 
+		}
+		rotation={
+			0.000 55.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3797.000 0.000 817.000 
+		}
+		rotation={
+			0.000 -34.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3708.000 0.000 745.000 
+		}
+		rotation={
+			0.000 34.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3636.000 0.000 679.000 
+		}
+		rotation={
+			0.000 34.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3639.000 0.000 686.000 
+		}
+		rotation={
+			0.000 12.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3470.000 0.000 634.000 
+		}
+		rotation={
+			0.000 -55.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3417.000 0.000 570.000 
+		}
+		rotation={
+			0.000 34.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3262.000 0.000 639.000 
+		}
+		rotation={
+			0.000 2.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			967.000 0.000 1238.000 
+		}
+		rotation={
+			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			1043.000 0.000 1246.000 
+		}
+		rotation={
+			0.000 120.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			1037.000 0.000 1187.000 
+		}
+		rotation={
+			0.000 330.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			2045.000 0.000 1239.000 
+		}
+		rotation={
+			0.000 -22.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			2352.000 0.000 1113.000 
+		}
+		rotation={
+			0.000 -44.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3192.000 0.000 1054.000 
+		}
+		rotation={
+			0.000 33.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian2"
+		hidden_on_start=no
+		position={
+			3194.000 0.000 1049.000 
+		}
+		rotation={
+			0.000 188.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3182.000 0.000 1165.000 
+		}
+		rotation={
+			0.000 33.000 0.000 
+		}
+	}
+	object={
+		name="elephant_indian"
+		hidden_on_start=no
+		position={
+			3046.000 0.000 1275.000 
+		}
+		rotation={
+			0.000 322.000 0.000 
+		}
+	}
+}
+type={
+	type="pyramids"
+	use_animation=no
+	scale=1.100000
+	time_duration=300.000000
+	object={
+		name="pyramids"
+		hidden_on_start=no
+		position={
+			1769.000 0.000 1029.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="camel"
+	use_animation=yes
+	scale=0.180000
+	time_duration=300.000000
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			1129.000 0.000 916.000 
+		}
+		rotation={
+			0.000 76.000 0.000 
+		}
+	}
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			1853.000 0.000 669.000 
+		}
+		rotation={
+			0.000 -20.000 0.000 
+		}
+	}
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			1838.000 0.000 871.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			1841.000 0.000 868.000 
+		}
+		rotation={
+			0.000 260.000 0.000 
+		}
+	}
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			1910.000 0.000 1015.000 
+		}
+		rotation={
+			0.000 290.000 0.000 
+		}
+	}
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			2257.000 0.000 553.000 
+		}
+		rotation={
+			0.000 110.000 0.000 
+		}
+	}
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			2255.000 0.000 557.000 
+		}
+		rotation={
+			0.000 80.000 0.000 
+		}
+	}
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			1859.000 0.000 997.000 
+		}
+		rotation={
+			0.000 250.000 0.000 
+		}
+	}
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			1020.000 0.000 1168.000 
+		}
+		rotation={
+			0.000 -55.000 0.000 
+		}
+	}
+	object={
+		name="camel"
+		hidden_on_start=no
+		position={
+			2066.000 0.000 1044.000 
+		}
+		rotation={
+			0.000 80.000 0.000 
+		}
+	}
+}
+type={
+	type="bison"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+}
+type={
+	type="moose"
+	use_animation=yes
+	scale=0.280000
+	time_duration=300.000000
+}
+type={
+	type="giraffe"
+	use_animation=yes
+	scale=0.300000
+	time_duration=300.000000
+	object={
+		name="giraffe"
+		hidden_on_start=no
+		position={
+			1211.000 0.000 432.000 
+		}
+		rotation={
+			0.000 -20.000 0.000 
+		}
+	}
+	object={
+		name="giraffe"
+		hidden_on_start=no
+		position={
+			1147.000 0.000 446.000 
+		}
+		rotation={
+			0.000 120.000 0.000 
+		}
+	}
+}
+type={
+	type="desert_skeleton_mesh"
+	use_animation=no
+	scale=0.400000
+	time_duration=300.000000
+}
+type={
+	type="frame_top_left_entity"
+	use_animation=no
+	scale=0.500000
+	always_visible=yes
+	object={
+		name="vframe"
+		hidden_on_start=no
+		position={
+			38.000 18.000 265.000 
+		}
+		rotation={
+			90.000 90.000 0.000 
+		}
+	}
+	object={
+		name="vframe"
+		hidden_on_start=no
+		position={
+			38.000 17.000 0.000 
+		}
+		rotation={
+			90.000 90.000 0.000 
+		}
+	}
+	object={
+		name="vframe"
+		hidden_on_start=no
+		position={
+			38.000 18.000 518.000 
+		}
+		rotation={
+			90.000 90.000 0.000 
+		}
+	}
+	object={
+		name="vframe"
+		hidden_on_start=no
+		position={
+			38.000 18.000 773.000 
+		}
+		rotation={
+			90.000 90.000 0.000 
+		}
+	}
+	object={
+		name="vframe"
+		hidden_on_start=no
+		position={
+			38.000 18.000 1282.000 
+		}
+		rotation={
+			90.000 90.000 0.000 
+		}
+	}
+	object={
+		name="vframe"
+		hidden_on_start=no
+		position={
+			38.000 18.000 1027.000 
+		}
+		rotation={
+			90.000 90.000 0.000 
+		}
+	}
+	object={
+		name="vframe"
+		hidden_on_start=no
+		position={
+			38.000 18.000 1794.310 
+		}
+		rotation={
+			90.000 90.000 0.000 
+		}
+	}
+	object={
+		name="vframe"
+		hidden_on_start=no
+		position={
+			38.000 18.000 1538.000 
+		}
+		rotation={
+			90.000 90.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_top_left_entity"
+	use_animation=no
+	scale=1.030000
+	always_visible=yes
+	object={
+		name="frame_top_left_entity01"
+		hidden_on_start=no
+		position={
+			400.000 18.000 2045.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity03"
+		hidden_on_start=no
+		position={
+			1436.000 18.000 2045.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity05"
+		hidden_on_start=no
+		position={
+			3484.000 18.000 2045.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity07"
+		hidden_on_start=no
+		position={
+			5020.000 18.000 2045.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity07"
+		hidden_on_start=no
+		position={
+			4508.000 18.000 2045.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_top_right_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			-100.000 18.000 2045.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity02"
+		hidden_on_start=no
+		position={
+			924.000 18.000 2045.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity06"
+		hidden_on_start=no
+		position={
+			3996.000 18.000 2045.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_bottom_left_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			512.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			0.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			1024.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			3584.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			4096.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			4608.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_bottom_right_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			2048.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			2560.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			1536.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			3072.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+	object={
+		name="frame_top_left_entity"
+		hidden_on_start=no
+		position={
+			5120.000 18.000 1.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="frame_top_center_entity"
+	use_animation=no
+	always_visible=yes
+	object={
+		name="frame_top_left_entity05"
+		hidden_on_start=no
+		position={
+			1948.000 18.000 2045.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_petra_entity"
+	use_animation=no
+	scale=0.150000
+	time_duration=300.000000
+	object={
+		name="petra"
+		hidden_on_start=no
+		position={
+			41.000 0.000 46.000 
+		}
+		rotation={
+			0.000 -60.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_buddha_statues_small_entity"
+	use_animation=no
+	scale=0.120000
+	time_duration=300.000000
+	object={
+		name="buddha_small"
+		hidden_on_start=yes
+		position={
+			1.000 -22.300 1.000 
+		}
+		rotation={
+			0.000 -15.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi_kremlin_entity"
+	use_animation=no
+	scale=0.520000
+	time_duration=300.000000
+	object={
+		name="kremlin"
+		hidden_on_start=yes
+		position={
+			1.000 -22.300 1.000 
+		}
+		rotation={
+			0.000 5.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_parthenon_entity"
+	use_animation=no
+	scale=0.100000
+	time_duration=300.000000
+	object={
+		name="parthenon"
+		hidden_on_start=no
+		position={
+			51.000 0.000 55.000 
+		}
+		rotation={
+			0.000 20.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_buddha_statues_big_entity"
+	use_animation=no
+	scale=0.190000
+	time_duration=300.000000
+	object={
+		name="buddha_big"
+		hidden_on_start=yes
+		position={
+			1.000 -22.300 1.000 
+		}
+		rotation={
+			0.000 25.000 0.000 
+		}
+	}
+}
+type={
+	type="nammi2_hagia_sophia_minarets_entity"
+	use_animation=no
+	scale=0.000000
+	time_duration=300.000000
+	object={
+		name="hagia_sophia"
+		hidden_on_start=yes
+		position={
+			1.600 0.150 1.000 
+		}
+		rotation={
+			0.000 -30.000 0.000 
+		}
+	}
+}
+type={
+	type="kiel_canal"
+	use_animation=no
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="kiel_canal"
+		hidden_on_start=yes
+		position={
+			2952.800 -0.100 1609.000 
+		}
+		rotation={
+			0.000 -75.000 0.000 
+		}
+	}
+}
+type={
+	type="panama_canal"
+	use_animation=no
+	scale=1.500000
+	time_duration=300.000000
+	always_visible=yes
+	visible_in_all_map_modes=yes
+	object={
+		name="panama_canal"
+		hidden_on_start=yes
+		position={
+			1565.800 0.000 1016.500 
+		}
+		rotation={
+			0.000 25.000 0.000 
+		}
+	}
+}
+type={
+	type="elephant_indian"
+	use_animation=yes
+	scale=0.200000
+	time_duration=300.000000
+}

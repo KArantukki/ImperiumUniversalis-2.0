@@ -994,8 +994,6 @@ POR = "countries/Porolissenses.txt"
 CLG = "countries/Celegeri.txt"
 DND = "countries/Dindari.txt"
 
-
-#
 OS8 = "countries/Osismii.txt"
 VE3 = "countries/Venetes.txt"
 NM8 = "countries/Namnetes.txt"
@@ -1019,11 +1017,42 @@ PE8 = "countries/Paesuri.txt"
 VS8 = "countries/Vescetani.txt"
 VL8 = "countries/Volci.txt"
 
-
 TPR = "countries/Tapori.txt"
 LUS = "countries/Lusitania.txt"
 CLI = "countries/Celtiberia.txt"
 SYB = "countries/Sybaris.txt"
+
+CYM = "countries/Cimmeria.txt"
+URT = "countries/Urartu.txt"
+CLB = "countries/Chalybes.txt"
+SX1 = "countries/Scytheni.txt"
+SX2 = "countries/Sacaseni.txt"
+SNP = "countries/Sinope.txt"
+AMX = "countries/Amisos.txt"
+
+GZ1 = "countries/Parsua.txt"
+GZ2 = "countries/Zamua.txt"
+GZ3 = "countries/Ellipi.txt"
+GZ4 = "countries/Musasir.txt"
+
+GC1 = "countries/Taochi.txt"
+GC2 = "countries/Sanni.txt"
+GC3 = "countries/Tibareni.txt"
+GC4 = "countries/Mossynoeci.txt"
+GC5 = "countries/Mushki.txt"
+GC6 = "countries/Macrones.txt"
+GC7 = "countries/Svani.txt"
+ABZ = "countries/Abasgi.txt"
+AB2 = "countries/Coraxi.txt"
+AB3 = "countries/Heniochi.txt"
+AB9 = "countries/Menralii.txt"
+
+
+
+
+
+
+
 
 
 

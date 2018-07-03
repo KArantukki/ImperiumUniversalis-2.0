@@ -1,0 +1,20 @@
+add_core = GC1
+owner = GC1
+controller = GC1
+culture = lazi
+religion = skneli
+hre = no
+base_tax = 0
+base_production = 0
+trade_goods = tar_good
+base_manpower = 4
+capital = "Tao"
+is_city = yes
+
+discovered_by = caucaso_anatolian
+discovered_by = iranian
+discovered_by = scythian
+discovered_by = greek
+discovered_by = balkan
+discovered_by = punic
+discovered_by = central_asian
