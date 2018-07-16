@@ -5,4 +5,4 @@ technology_group = roman
 primary_culture = oscan
 religion = roman_religion
 religious_school = hellenic_type
-capital = 220
+capital = 51

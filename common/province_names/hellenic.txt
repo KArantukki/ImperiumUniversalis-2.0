@@ -42,6 +42,7 @@
 760 = "Diospolis Mikra"
 761 = "Tentyris"
 762 = "Thebai"
+3237 = "Dios Polis Megale"
 763 = "Koptos"
 781 = "Latopolis"
 782 = "Omboi"
@@ -166,4 +167,4 @@
 3158 = "Modoura"
 3214 = "Kition"
 499 = "Durocortorion"
- 
+37 = "Sipious"

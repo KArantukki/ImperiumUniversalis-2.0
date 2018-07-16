@@ -119,6 +119,7 @@
 760 = "Diospolis Mikra"
 761 = "Tentyris"
 762 = "Thebais"
+3237 = "Diospolis Magna"
 763 = "Koptos"
 781 = "Latopolis"
 782 = "Ambo"

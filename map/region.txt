@@ -813,7 +813,7 @@ western_india_region = {
 	asmaka_west
 	asmaka_east
 	vakataka_area
-	vidarbha_area
+	
 	}
 }
 southern_india_region = {
@@ -837,6 +837,7 @@ southern_india_region = {
 }
 eastern_india_region = {
 	areas = {
+	vidarbha_area
 	suhma_area
 	kikata_area
 	vanga_area
@@ -964,7 +965,7 @@ mare_erythraeum_region = {
 		mare_aethiopicum
 	}
 }
-mare_india_region = {
+indian_ocean_region = {
 	areas = {	
 		mare_india_west
 		mare_india_east

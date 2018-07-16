@@ -5,7 +5,7 @@ technology_group = greek
 primary_culture = italiote
 religion = greek_religion
 historical_friend = ACH
-capital = 1782
+capital = 21
 religious_school = hellenic_type
 
 	##fac_oligarchs = 60

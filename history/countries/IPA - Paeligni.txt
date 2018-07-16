@@ -5,7 +5,7 @@ technology_group = roman
 primary_culture = umbri
 religion = roman_religion
 religious_school = hellenic_type
-capital = 215
+capital = 56
 
 	add_country_modifier = {
 				name = slavery_abolished

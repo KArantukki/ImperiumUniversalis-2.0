@@ -5,5 +5,5 @@ technology_group = roman
 primary_culture = umbri
 religion = roman_religion
 religious_school = hellenic_type
-capital = 222
+capital = 49
 	

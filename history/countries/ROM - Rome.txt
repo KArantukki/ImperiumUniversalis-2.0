@@ -5,7 +5,7 @@ technology_group = roman
 primary_culture = latin
 religion = roman_religion
 religious_school = hellenic_type
-capital = 219
+capital = 53
 
 add_treasury = 50
 

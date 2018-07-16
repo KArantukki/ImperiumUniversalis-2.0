@@ -5,5 +5,5 @@ technology_group = roman
 primary_culture = lucani
 religion = roman_religion
 religious_school = hellenic_type
-capital = 240
+capital = 28
 	

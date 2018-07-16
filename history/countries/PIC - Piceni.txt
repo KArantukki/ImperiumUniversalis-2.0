@@ -5,5 +5,5 @@ technology_group = roman
 primary_culture = piceni
 religion = roman_religion
 religious_school = hellenic_type
-capital = 212
+capital = 59
 	

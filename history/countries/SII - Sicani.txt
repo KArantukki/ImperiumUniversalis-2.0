@@ -5,6 +5,6 @@ technology_group = roman
 primary_culture = sicani
 religion = roman_religion
 religious_school = hellenic_type
-capital = 291
+capital = 5
 
 

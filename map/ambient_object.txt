@@ -180,14 +180,14 @@ type={
 type={
 	type="cothon"
 	use_animation=no
-	scale=0.650000
+	scale=0.660000
 	always_visible=yes
 	visible_in_all_map_modes=yes
 	object={
 		name="cothon"
 		hidden_on_start=no
 		position={
-			1057.500 0.000 1268.500 
+			1057.500 -0.200 1268.500 
 		}
 		rotation={
 			14.000 180.000 0.000 
@@ -219,7 +219,7 @@ type={
 		name="seagulls"
 		hidden_on_start=no
 		position={
-			1758.000 11.000 1081.000 
+			2169.000 11.000 472.000 
 		}
 		rotation={
 			0.000 70.000 0.000 
@@ -229,10 +229,10 @@ type={
 		name="seagulls"
 		hidden_on_start=no
 		position={
-			2169.000 11.000 472.000 
+			228.000 11.000 979.000 
 		}
 		rotation={
-			0.000 70.000 0.000 
+			0.000 90.000 0.000 
 		}
 	}
 	object={
@@ -253,26 +253,6 @@ type={
 		}
 		rotation={
 			0.000 70.000 0.000 
-		}
-	}
-	object={
-		name="seagulls"
-		hidden_on_start=no
-		position={
-			1669.000 11.000 1221.000 
-		}
-		rotation={
-			0.000 0.000 0.000 
-		}
-	}
-	object={
-		name="seagulls"
-		hidden_on_start=no
-		position={
-			228.000 11.000 979.000 
-		}
-		rotation={
-			0.000 90.000 0.000 
 		}
 	}
 	object={
@@ -333,6 +313,26 @@ type={
 		}
 		rotation={
 			0.000 30.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1758.000 11.000 1081.000 
+		}
+		rotation={
+			0.000 70.000 0.000 
+		}
+	}
+	object={
+		name="seagulls"
+		hidden_on_start=no
+		position={
+			1669.000 11.000 1221.000 
+		}
+		rotation={
+			0.000 0.000 0.000 
 		}
 	}
 	object={
@@ -1563,7 +1563,7 @@ type={
 		name="pyramids"
 		hidden_on_start=no
 		position={
-			1769.000 0.000 1029.000 
+			1767.000 0.000 1031.000 
 		}
 		rotation={
 			0.000 0.000 0.000 

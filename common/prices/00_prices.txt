@@ -34,9 +34,6 @@ salt = {
 naval_supplies = {
 	base_price = 2.0
 }
-
-
-# Metals
 copper = {
 	base_price = 4.0
 }

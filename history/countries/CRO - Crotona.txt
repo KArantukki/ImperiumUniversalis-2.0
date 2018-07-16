@@ -7,7 +7,7 @@ religion = greek_religion
 historical_friend = ACH
 historical_friend = POS
 historical_friend = MET
-capital = 242
+capital = 17
 religious_school = hellenic_type
 
 	##fac_oligarchs = 55

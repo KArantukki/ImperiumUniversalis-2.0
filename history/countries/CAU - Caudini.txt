@@ -5,7 +5,7 @@ technology_group = roman
 primary_culture = samnitic
 religion = roman_religion
 religious_school = hellenic_type
-capital = 233
+capital = 36
 
 	historical_friend = HIR
 	historical_friend = PTR

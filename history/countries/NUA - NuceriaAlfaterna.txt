@@ -5,7 +5,7 @@ technology_group = roman
 primary_culture = etruscan
 religion = etruscan_religion
 religious_school = hellenic_type
-capital = 227
+capital = 35
 
 		
 280.1.1 = { government = classic_republic }

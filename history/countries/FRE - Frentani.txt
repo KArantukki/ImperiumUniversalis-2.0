@@ -5,5 +5,5 @@ technology_group = roman
 primary_culture = samnitic
 religion = roman_religion
 religious_school = hellenic_type
-capital = 216
+capital = 43
 

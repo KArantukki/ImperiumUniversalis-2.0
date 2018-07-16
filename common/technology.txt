@@ -232,6 +232,18 @@ groups = {
 			value = 75
 		}
 	}
+	african = {
+		start_level = 0
+		#cav_to_inf_ratio = 1.0
+		is_primitive = no
+		
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
 }	
 	
 	

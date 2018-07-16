@@ -5,6 +5,6 @@ technology_group = roman
 primary_culture = sicels
 religion = roman_religion
 religious_school = hellenic_type
-capital = 259
+capital = 9
 
 
