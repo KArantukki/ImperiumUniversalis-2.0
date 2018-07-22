@@ -10,3 +10,4 @@ scythiangfx
 berbergfx
 iberiangfx
 iraniangfx
+egyptgfx

@@ -1,8 +1,0 @@
-government = despotic_monarchy
-government_rank = 2
-#mercantilism = 0.25
-technology_group = diadochi
-primary_culture = egyptian
-religion = egyptian_religion
-religious_school = egyptian_type
-capital = 1763

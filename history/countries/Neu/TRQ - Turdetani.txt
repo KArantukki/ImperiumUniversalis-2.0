@@ -1,9 +1,0 @@
-government = despotic_monarchy
-government_rank = 2
-#mercantilism = 0.25
-technology_group = iberian
-primary_culture = turdetani
-religion = iberian_religion
-capital = 146
-religious_school = semitic_type
-	

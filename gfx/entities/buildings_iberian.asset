@@ -132,9 +132,9 @@ entity = {
 }
 entity = {
 	name = "iberiangfx_small_city_walls"
-	pdxmesh = "celticgfx_fort"
+	pdxmesh = "iberiangfx_fort_1"
 }
 entity = {
 	name = "iberiangfx_large_city_walls"
-	pdxmesh = "celticgfx_fort"
+	pdxmesh = "iberiangfx_fort_2"
 }

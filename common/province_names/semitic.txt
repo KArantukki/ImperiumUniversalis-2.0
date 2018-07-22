@@ -8,3 +8,4 @@
 2500 = "Babel"
 2652 = "Qtespon"
 2666 = "Sus"
+129 = "Karali"

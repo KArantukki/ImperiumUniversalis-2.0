@@ -1,11 +1,11 @@
 
 entity = {
 	name = "thraciangfx_small_city_walls"
-	pdxmesh = "thraciangfx_castle"
+	pdxmesh = "celticgfx_fort"
 }
 entity = {
 	name = "thraciangfx_large_city_walls"
-	pdxmesh = "thraciangfx_castle"
+	pdxmesh = "celticgfx_fort_2"
 }
 
 entity = {

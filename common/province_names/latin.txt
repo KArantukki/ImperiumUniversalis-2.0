@@ -322,5 +322,5 @@
 499 = "Remorum"
 999 = "Thasus"
 989 = "Lemnus"
- 
+508 = "Augusta Treverorum"
  

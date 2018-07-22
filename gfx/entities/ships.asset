@@ -380,7 +380,6 @@ entity = {
 entity = {
 	name = "ship_west_early_currach"
 	clone = "ship_light_1"
-	}
 }
 entity = {
 	name = "ship_west_currach"

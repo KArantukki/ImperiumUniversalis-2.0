@@ -34,6 +34,7 @@ salt = {
 naval_supplies = {
 	base_price = 2.0
 }
+
 copper = {
 	base_price = 4.0
 }
@@ -50,6 +51,7 @@ iron = {
 horses = {
 	base_price = 3
 }
+
 spices = {
 	base_price = 3.0
 }

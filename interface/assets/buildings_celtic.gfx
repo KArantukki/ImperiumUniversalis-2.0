@@ -33,8 +33,14 @@ objectTypes = {
 	}
 	pdxmesh = {
 		name = "celticgfx_fort"
-		file = "gfx/models/Buildings/Celtic/celtic_fort.mesh"
-		scale = 0.38
+		file = "gfx/models/Buildings/Celtic/celtic_fort_1.mesh"
+		scale = 0.41
+		cull_distance = 700.0f
+	}
+	pdxmesh = {
+		name = "celticgfx_fort_2"
+		file = "gfx/models/Buildings/Celtic/celtic_fort_2.mesh"
+		scale = 0.41
 		cull_distance = 700.0f
 	}
 

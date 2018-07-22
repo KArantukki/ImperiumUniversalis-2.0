@@ -2,7 +2,7 @@
 
 graphical_culture = celticgfx
 
-color = { 139 0 139 }
+color = { 42 79 122 }
 
 historical_idea_groups = {
 	trade_ideas

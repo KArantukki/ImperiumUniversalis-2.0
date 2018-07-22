@@ -48,20 +48,6 @@ entity = {
 	}
 }
 entity = {
-	name = "EGY_INFANTRY_1"
-	pdxmesh = "EGY_INFANTRY_1"
-	
-	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.4 	}
-	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
-	state = { name = "attack"		animation = "attack" 	animation_speed = 0.7	}
-	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.7	}
-
-	attach = { 
-		spear_bone = "egy_spear" 
-		CATRigRArmPalm = "egy_shield"
-	}
-}
-entity = {
 	name = "BAB_INFANTRY_1"
 	pdxmesh = "BAB_INFANTRY_1"
 	
@@ -74,14 +60,6 @@ entity = {
 		spear_bone = "babylonian_spear" 
 		CATRigRArmPalm = "babylonian_shield" 
 	}
-}
-entity = {
-	name = "MEM_INFANTRY_1"
-	clone = "EGY_INFANTRY_1"
-}
-entity = {
-	name = "THB_INFANTRY_1"
-	clone = "EGY_INFANTRY_1"
 }
 entity = {
 	name = "ASY_INFANTRY_1"
@@ -129,14 +107,6 @@ entity = {
 entity = {
 	name = "scythiangfx_CAVALRY_1"
 	clone = "scythiangfx_INFANTRY_1"
-}
-entity = {
-	name = "EGY_CAVALRY_1"
-	clone = "EGY_INFANTRY_1"
-}
-entity = {
-	name = "THB_CAVALRY_1"
-	clone = "EGY_INFANTRY_1"
 }
 entity = {
 	name = "BAB_CAVALRY_1"
@@ -187,14 +157,6 @@ entity = {
 entity = {
 	name = "scythiangfx_ARTILLERY_1"
 	clone = "scythiangfx_INFANTRY_1"
-}
-entity = {
-	name = "EGY_ARTILLERY_1"
-	clone = "EGY_INFANTRY_1"
-}
-entity = {
-	name = "THB_ARTILLERY_1"
-	clone = "EGY_INFANTRY_1"
 }
 entity = {
 	name = "BAB_ARTILLERY_1"

@@ -464,9 +464,11 @@ gaulish_group = {
 	cisalpine_gaul = {
 		primary = SE2
 	}
-	
 	gaul = {
 		primary = GLI
+	}
+	southern_gaul = {
+		primary = ALZ
 	}
 	belgae = {
 		primary = BEL
@@ -1564,7 +1566,7 @@ eastern_iranian_group = {
 egyptian_group = {
 	country = { has_banners = 1}
 	province = { local_has_banners = 1}
-	graphical_culture = punicgfx
+	graphical_culture = egyptgfx
 	
 	egyptian = {
 		primary = EGY

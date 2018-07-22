@@ -36,5 +36,15 @@ objectTypes = {
 		file = "gfx/models/Buildings/iberian/iberian_castle.mesh"
 		scale = 0.14
 	}
+	pdxmesh = {
+		name = "iberiangfx_fort_1"
+		file = "gfx/models/Buildings/iberian/iberian_fort_1.mesh"
+		scale = 0.22
+	}
+	pdxmesh = {
+		name = "iberiangfx_fort_2"
+		file = "gfx/models/Buildings/iberian/iberian_fort_2.mesh"
+		scale = 0.23
+	}
 }
 	

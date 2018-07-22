@@ -1,0 +1,9 @@
+government = tribal_federation
+government_rank = 2
+#mercantilism = 0.25
+technology_group = celtic
+primary_culture = gaul
+religion = celtic_religion
+capital = 424
+religious_school = north_pagan_type
+add_army_professionalism = 0.05

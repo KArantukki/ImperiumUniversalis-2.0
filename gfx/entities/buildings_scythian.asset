@@ -5,7 +5,7 @@ entity = {
 }
 entity = {
 	name = "scythiangfx_large_city_walls"
-	pdxmesh = "celticgfx_fort"
+	pdxmesh = "celticgfx_fort_2"
 }
 
 entity = {
