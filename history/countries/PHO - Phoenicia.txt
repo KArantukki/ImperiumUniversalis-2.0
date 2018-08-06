@@ -1,0 +1,10 @@
+government = oligarchic_monarchy
+government_rank = 3
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = phoenician
+religion = punic_religion
+religious_school = semitic_type
+capital = 2299
+
+historical_friend = CAR

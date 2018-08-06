@@ -1,8 +1,0 @@
-government = tribal_kingdom
-government_rank = 2
-#mercantilism = 0.25
-technology_group = greek
-primary_culture = epirot
-religion = greek_religion
-capital = 600
-religious_school = hellenic_type

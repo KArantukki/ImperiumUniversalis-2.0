@@ -12,7 +12,6 @@ trade_goods = fish
 capital = ""
 is_city = yes
 
-
 #discovered_by = roman
 discovered_by = greek
 discovered_by = punic

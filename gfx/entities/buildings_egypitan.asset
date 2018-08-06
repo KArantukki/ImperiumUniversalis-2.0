@@ -96,7 +96,7 @@ entity = {
 }
 entity = {
 	name = "egyptgfx_house_2_4"
-	pdxmesh = "egyptgfx_rich_house"
+	pdxmesh = "egyptgfx_obelisc"
 }
 entity = {
 	name = "egyptgfx_house_3_1"
@@ -132,7 +132,7 @@ entity = {
 }
 entity = {
 	name = "egyptgfx_small_city_walls"
-	pdxmesh = "egyptgfx_fort_1"
+	pdxmesh = "egyptgfx_fort"
 }
 entity = {
 	name = "egyptgfx_large_city_walls"

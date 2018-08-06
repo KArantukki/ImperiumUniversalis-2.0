@@ -1,0 +1,7 @@
+government = tribal_federation
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = gutian
+religion = mesopotamian_religion
+capital = 2660

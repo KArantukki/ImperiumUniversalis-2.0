@@ -9,7 +9,7 @@ base_manpower = 2
 trade_goods = grain
 capital = "Ariaratheia"
 culture = kappadokian
-religion = scythian_religion
+religion = luwian_religion
 
 discovered_by = caucaso_anatolian
 discovered_by = iranian

@@ -1,0 +1,9 @@
+government = despotic_monarchy
+government_rank = 3
+#mercantilism = 0.25
+technology_group = caucaso_anatolian
+primary_culture = phrygian
+religion = cybele
+religious_school = hellenic_type
+capital = 2195
+	

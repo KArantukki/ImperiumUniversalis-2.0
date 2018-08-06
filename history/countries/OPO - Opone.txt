@@ -1,0 +1,9 @@
+government = tribal_kingdom
+government_rank = 1
+#mercantilism = 0.25
+technology_group = afro_arabian
+primary_culture = somali
+religion = east_african
+religious_school = semitic_type
+capital = 890
+	

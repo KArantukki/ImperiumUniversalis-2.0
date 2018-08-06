@@ -1,0 +1,120 @@
+government = despotic_monarchy
+government_rank = 2
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = hebrew
+religion = jewish
+capital = 2277
+
+
+114.1.1 = {
+	monarch = {
+		name = "Josiah"
+		dynasty = "of Judah"
+		birth_date = 106.1.1
+		dip = 2
+		adm = 4
+		mil = 3
+	}
+	queen = {
+        name = "Hamautal"
+        dynasty = "of Libnah"
+		birth_date = 107.1.1
+        death_date = 150.1.1
+        female = yes
+        adm = 2
+        dip = 2
+        mil = 1
+    }
+	heir = {
+		name = "Jehoahaz"
+		monarch_name = "Jehoahaz"
+		dynasty = "of Judah"
+		birth_date = 122.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+614.1.1 = {
+	monarch = {
+		name = "Simon Maccabeus"
+		dynasty = "Hasmonid"
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+619.1.1 = {
+	monarch = {
+		name = "Yohanan Hyrcanus"
+		dynasty = "Hasmonid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+650.1.1 = {
+	monarch = {
+		name = "Aristobulus I"
+		dynasty = "Hasmonid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+651.1.1 = {
+	monarch = {
+		name = "Alexander Jannaeus"
+		dynasty = "Hasmonid"
+		dip = 4
+		adm = 4
+		mil = 3
+	}
+}
+678.1.1 = {
+	monarch = {
+		name = "Salome Alexandra"
+		dynasty = "Hasmonid"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+687.1.1 = {
+	monarch = {
+		name = "Hyrcanus II"
+		dynasty = "Hasmonid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+688.1.1 = {
+	monarch = {
+		name = "Aristobulus II"
+		dynasty = "Hasmonid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+691.1.1 = {
+	monarch = {
+		name = "Hyrcanus II"
+		dynasty = "Hasmonid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+714.1.1 = {
+	monarch = {
+		name = "Antigonus"
+		dynasty = "Hasmonid"
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}

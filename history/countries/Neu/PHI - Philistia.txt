@@ -1,9 +1,0 @@
-government = league
-government_rank = 2
-#mercantilism = 0.25
-technology_group = diadochi
-primary_culture = philistia
-religion = punic_religion
-religious_school = semitic_type
-capital = 1790
-

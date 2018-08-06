@@ -1,0 +1,10 @@
+government = germanic_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = germanic
+primary_culture = irminonic
+religion = germanic_religion
+religious_school = north_pagan_type
+capital = 1806
+
+480.1.1 = { capital = 985 }

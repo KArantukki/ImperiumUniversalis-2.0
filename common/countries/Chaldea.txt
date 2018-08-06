@@ -1,0 +1,73 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 195 170 149 }
+
+historical_idea_groups = {
+	infantry_ideas
+	economy_ideas
+	trade_ideas
+	administrative_ideas
+	quantity_ideas
+	imperial_government_ideas
+	influence_ideas
+	offensive_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	
+}
+
+monarch_names = {
+	"Mazaios" = 40
+	"Stamenes" = 40
+	"Sardanapalos" = 40
+	"Kambyses" = 40
+	"Gobryas" = 40
+	"Hystanes" = 40
+	"Zopyros" = 40
+	"Nabonid" = 40
+	"Nebukadnezar #3" = 60
+	"Aracha" = 35
+	"Belshazzar" = 25
+	
+	"Abba" = 5
+	"Itti-Marduk" = 5
+	"Itti-Marduk-Balatu" = 5
+	"Esagil-Kin-Apli" = 5
+	"Adad-Apla-Iddina" = 5
+	"Marduk-Nasir-Apli" = 5
+	"Nergel-Usezib" = 5
+	"Nabu-Ri-Man-Nu" = 5
+	"Kidinnu" = 5
+	
+	"Ennigaldi" = -1
+	"Amytis" = -1
+	"Bel-Shalti-Nanna" = -1
+	"Adad-Guppi" = -1
+	"Amat-Mamu" = -1
+	"Iltani" = -1 
+
+
+}
+
+leader_names = {
+			"of Babylon" "of Babylon" "of Chaldea" "of Chaldea" "of Chaldea" "of Kutha" "of Idu" "of Opis" "of Harran" 
+			"of Orchoe" "the Lame" "the Strong" "the Blind" "the Black" "the Wise" "the Younger" "Egibi" "Egibi" "Egibi" 
+			"the Chaldean" "the Chaldean" "the Chaldean" "the Chaldean" "the Elder" "the Elder" "the Elder" 
+			"" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Guards of Chaldea" "Spears of Marduk" "Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

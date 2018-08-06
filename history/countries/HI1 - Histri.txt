@@ -1,0 +1,9 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = balkan
+primary_culture = veneti
+religion = celtic_religion
+religious_school = north_pagan_type
+capital = 1167
+	

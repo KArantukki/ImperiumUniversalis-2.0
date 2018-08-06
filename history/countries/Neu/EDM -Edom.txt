@@ -1,9 +1,0 @@
-government = despotic_monarchy
-government_rank = 2
-#mercantilism = 0.25
-technology_group = diadochi
-primary_culture = idumean
-religion = punic_religion
-religious_school = semitic_type
-capital = 2334
-

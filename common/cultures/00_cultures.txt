@@ -692,6 +692,9 @@ anatolian_group = {
 	lycian = {
 		primary = LYC
 	}
+	lycaonian = {
+		primary = LYA
+	}
 	lydian = {
 		primary = LYD
 		male_names = {
@@ -1604,6 +1607,18 @@ akkadian_group = {
 	assyrian = {
 		primary = ASY
 		male_names = {
+			Tudiya Adamu Yangi Suhlamu Harharu Mandaru Imsu Harsu Didanu Hana Zuabu Nuabu
+			Abazu Belu Azarah Ushpia Apiashal Sulili Akiya "Puzur-Ashur" "Shalim-ahum"
+			"Arik-den-ili" "Eriba-Adad" "Adad-nirari" "Tukulti-Nunurta" "Shalmaneser"
+			"Shamshi-Adad" Sargon Sennacherib Esarhaddon Ashurbanipal 
+		}
+		female_names = {
+			Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu
+		}
+	}
+	babylonian = {
+		primary = BAB
+		male_names = {
 			Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
 			Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
 			Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur
@@ -1612,8 +1627,8 @@ akkadian_group = {
 			Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu
 		}
 	}
-	babylonian = {
-		primary = BAB
+	chaldean = {
+		primary = CAL
 		male_names = {
 			Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
 			Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
@@ -1634,7 +1649,17 @@ akkadian_group = {
 			Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu
 		}
 	}
-	gutian = { }
+	gutian = { 
+		primary = GTM
+		male_names = {
+			Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
+			Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
+			Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur
+		}
+		female_names = {
+			Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu
+		}
+	}
 	
 	dynasty_names = {
 		Hormuzdai Asmaroi Amiroi Eshoi Haloi Arseenoi Yaloi
@@ -2098,7 +2123,7 @@ thraco_phrygian_group = {
 		primary = BIT
 	}
 	mysian  = {
-		#primary = 
+		primary = MYS
 	}
 	
 	male_names = {
@@ -2217,5 +2242,31 @@ malay_group = {
 	}
 	dynasty_names = {
 		"Hong Bang" Ngo Tran Ho Thuc Dinh
+	}
+}
+
+central_african_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = berbergfx
+	
+	agisymbian = {
+		primary = AGS
+		male_names = {
+			Zoskales Gadarat Adhebah Azaba Datawnas Mehadeyis "Wa`zeb" Ousana Saifu Hataz Ioel Hataz Wazena "Alla Amidas" Nezool Ebana Eon
+		}
+	}
+	troglodytian = {
+		primary = TRO
+		male_names = {
+			Zoskales Gadarat Adhebah Azaba Datawnas Mehadeyis "Wa`zeb" Ousana Saifu Hataz Ioel Hataz Wazena "Alla Amidas" Nezool Ebana Eon
+		}
+	}
+	
+	female_names = {
+		Kadimalo Pelkha Atasamale Tagtal Henuttakhebit Mediken Qalhata Piankharty
+	}
+	dynasty_names = {
+		Kaaoi Awawai Nedjehoi Makedai Sebai Alarai Pyoi Shabakai
 	}
 }

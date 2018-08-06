@@ -77,14 +77,17 @@ oriental_monarchy = {
 			technology_cost = -0.02
 		}
 		3 = {
+			num_accepted_cultures = 1
 			legitimacy = 0.75
 			technology_cost = -0.03
 		}
 		4 = {
+			num_accepted_cultures = 1
 			legitimacy = 1.0
 			technology_cost = -0.04
 		}
 		5 = {
+			num_accepted_cultures = 2
 			legitimacy = 1.0
 			technology_cost = -0.05
 		}

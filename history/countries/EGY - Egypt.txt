@@ -3,15 +3,46 @@ government_rank = 4
 #mercantilism = 0.25
 technology_group = diadochi
 primary_culture = egyptian
+add_accepted_culture = wasetic
 religion = egyptian_religion
 religious_school = egyptian_type
 
 historical_rival = BAB
-historical_rival = LYD
-historical_rival = MDI
 
 capital = 735
 		
+90.1.1 = {
+	add_army_professionalism = 0.1
+	add_absolutism = 10
+	monarch = {
+		name = "Psamtik I"
+		dynasty = "of Sais"
+        death_date = 146.1.1
+		dip = 3
+		adm = 3
+		mil = 5
+	}
+	queen = {
+        name = "Mehytenweskhet"
+        dynasty = "Harsiesid"
+		birth_date = 110.1.1
+        death_date = 146.1.1
+        female = yes
+        adm = 3
+        dip = 2
+        mil = 2
+    }
+	heir = {
+		name = "Necho"
+		monarch_name = "Necho II"
+		dynasty = "of Sais"
+		birth_date = 130.1.1
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
 184.1.1 = {
 	add_army_professionalism = 0.05
 	add_absolutism = 20

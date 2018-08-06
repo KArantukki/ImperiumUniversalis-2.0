@@ -1,0 +1,8 @@
+government = pastoral_tribe
+government_rank = 2
+#mercantilism = 0.25
+technology_group = afro_arabian
+primary_culture = minaean
+religion = arab_religion
+religious_school = semitic_type
+capital = 2567

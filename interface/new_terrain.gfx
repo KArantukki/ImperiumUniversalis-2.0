@@ -113,5 +113,23 @@ spriteTypes = {
 		name = "GFX_combat_terrain_alluvial_plain"
 		texturefile = "gfx/interface/combat_terrain_alluvial_plain.dds"
 	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_mesopotamian_plain"
+		texturefile = "gfx/interface/colony_terrain_mesopotamian_plain.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_terrain_mesopotamian_plain"
+		texturefile = "gfx/interface/combat_terrain_mesopotamian_plain.dds"
+	}
+
+	spriteType = {
+		name = "GFX_colony_terrain_nile_plain"
+		texturefile = "gfx/interface/colony_terrain_nile_plain.dds"
+	}
+	spriteType = {
+		name = "GFX_combat_terrain_nile_plain"
+		texturefile = "gfx/interface/combat_terrain_nile_plain.dds"
+	}
 	
 }

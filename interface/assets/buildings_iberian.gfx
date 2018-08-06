@@ -39,12 +39,12 @@ objectTypes = {
 	pdxmesh = {
 		name = "iberiangfx_fort_1"
 		file = "gfx/models/Buildings/iberian/iberian_fort_1.mesh"
-		scale = 0.22
+		scale = 0.26
 	}
 	pdxmesh = {
 		name = "iberiangfx_fort_2"
 		file = "gfx/models/Buildings/iberian/iberian_fort_2.mesh"
-		scale = 0.23
+		scale = 0.25
 	}
 }
 	

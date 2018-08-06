@@ -6,7 +6,15 @@ color = { 205 211 124 }
 
 
 historical_idea_groups = {
-	
+	quantity_ideas
+	economy_ideas
+	influence_ideas
+	domestic_government_ideas
+	defensive_ideas
+	spy_ideas
+	administrative_ideas
+	superior_religious_ideas
+	expansion_ideas
 }
 
 historical_units = {
@@ -35,9 +43,7 @@ monarch_names = {
 }
 
 leader_names = {
-			Gala Massinissa Micipsa Adherbal Hiempsal Jugurtha Gauda Masteabar Arabion Juba Gaya
-			Awzal Aylal Azenkwed Cicungh Ikken Cucunq Mass Izri Zacfin Tacfin Ugwistan Usadden Uzza
-			Yuba Zaidren Tagwizult Jugurtha
+			Jugurthanoi Galaoi Massinissanoi Micipsanoi "of Mauretania" "Arabioi" Cucunqoi
 }
 
 ship_names = {

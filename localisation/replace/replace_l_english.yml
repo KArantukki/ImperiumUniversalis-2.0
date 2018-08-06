@@ -1,7 +1,9 @@
 ﻿l_english:
- PROV2025:0 "Sulonica Superior"
+ african:0 "Central African"
  MGD:0 "Mygdonia"
  MGD_ADJ:0 "Mygdonian"
+ PRG:0 "Perge"
+ PRG_ADJ:0 "Pergian"
  CCQ: "Calontienses"
  CCQ_ADJ:0 "Calontiense"
  REGIMENT_NAME:0 "$NUM$$ORDER$ Cohort of $HOME$"

@@ -1,0 +1,72 @@
+government = oriental_monarchy
+government_rank = 4
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = babylonian
+religion = mesopotamian_religion
+religious_school = semitic_type
+add_accepted_culture = chaldean
+capital = 2500
+
+historical_rival = EGY
+historical_rival = ASY
+
+change_statists_vs_orangists = 0.75
+	add_army_professionalism = 0.05
+
+128.1.1 = {
+	add_absolutism = 15
+	monarch = {
+		name = "Nabopolassar"
+		dynasty = "of Chaldea"
+		birth_date = 96.1.1
+		death_date = 152.1.1
+		culture = chaldean
+		religion = mesopotamian_religion
+		dip = 5
+		adm = 4
+		mil = 4
+	}
+	heir = {
+		name = "Nebuchadnezzar"
+		monarch_name = "Nebuchadnezzar II"
+		dynasty = "of Chaldea"
+		culture = chaldean
+		religion = mesopotamian_religion
+		birth_date = 120.1.1
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+194.1.1 = {
+	add_ruler_personality = calm_personality
+	add_absolutism = 20
+	monarch = {
+		name = "Neriglissar"
+		dynasty = "of Babylon"
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+198.1.1 = {
+	clear_scripted_personalities = yes
+	monarch = {
+		name = "Labashi-Marduk"
+		dynasty = "of Babylon"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+199.1.1 = {
+	monarch = {
+		name = "Nabonidus"
+		dynasty = "of Babylon"
+		dip = 2
+		adm = 1
+		mil = 4
+	}
+}
