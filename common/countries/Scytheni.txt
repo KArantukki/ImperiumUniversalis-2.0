@@ -2,7 +2,7 @@
 
 graphical_culture = scythiangfx
 
-color = { 255 102 5 }
+color = { 204 172 30 }
 
 
 
