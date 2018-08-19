@@ -1,8 +1,0 @@
-government = tribal_despotism
-government_rank = 2
-#mercantilism = 0.25
-technology_group = scythian
-primary_culture = sogdian
-religion = zoroastrianism
-capital = 2454
-	

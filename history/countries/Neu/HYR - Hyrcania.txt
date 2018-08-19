@@ -1,7 +1,0 @@
-government = despotic_monarchy
-government_rank = 2
-#mercantilism = 0.25
-technology_group = iranian
-primary_culture = amard
-religion = mitraism
-capital = 1945

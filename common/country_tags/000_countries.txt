@@ -436,6 +436,7 @@ ASY	= "countries/Assyria.txt"
 SAG	= "countries/Sagartia.txt"
 GTM	= "countries/Gutium.txt"
 CAL	= "countries/Chaldea.txt"
+UXI	= "countries/Uxiia.txt"
 
 #Arabia
 
@@ -858,6 +859,28 @@ DRN		= "countries/Drangiana.txt"
 KRM		= "countries/Karmana.txt"
 ANH		= "countries/Anshan.txt"
 
+SOX		= "countries/Soxotae.txt"
+RUD		= "countries/Rudiane.txt"
+ISA		= "countries/Isatichae.txt"
+CAB		= "countries/Cabadene.txt"
+NSA		= "countries/Nisaeia.txt"
+DRC		= "countries/Drachamae.txt"
+CSI		= "countries/Casirotae.txt"
+AIA		= "countries/Ariaspae.txt"
+EUE		= "countries/Euergetae.txt"
+STT		= "countries/Sattagydia.txt"
+ORI		= "countries/Orietaia.txt"
+ICT		= "countries/Ichthyophagia.txt"
+
+PAI		= "countries/Parni.txt"
+TMB		= "countries/Tambyzia.txt"
+CMA		= "countries/Chomaria.txt"
+SLA		= "countries/Salatarae.txt"
+ZIA		= "countries/Zariaspae.txt"
+DRS		= "countries/Drepsiania.txt"
+OXI		= "countries/Oxiania.txt"
+TRY		= "countries/Trybactae.txt"
+
 SAP		= "countries/Sassanids.txt"
 
 
@@ -908,6 +931,9 @@ ODA 	= "countries/Odra.txt"
 SMV 	= "countries/SimhaVamsa.txt"
 NAG 	= "countries/Naga.txt"
 YAK 	= "countries/Yakka.txt"
+SRP 	= "countries/Shurparaka.txt"
+SBR 	= "countries/Sabara.txt"
+NEP 	= "countries/Nepa.txt"
 
 
 IDS 	= "countries/IndoScythians.txt"

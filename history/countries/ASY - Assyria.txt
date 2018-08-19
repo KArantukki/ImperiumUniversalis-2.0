@@ -7,6 +7,9 @@ religion = mesopotamian_religion
 religious_school = semitic_type
 add_accepted_culture = syriac
 capital = 2372
+
+historical_rival = SUS
+historical_rival = BAB
 	
 127.1.1 = {
 	add_army_professionalism = 0.05

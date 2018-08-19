@@ -5,7 +5,7 @@ technology_group = caucaso_anatolian
 primary_culture = mannean
 religion = armenian_religion
 religious_school = semitic_type
-capital = 2294
+capital = 2397
 
 250.1.1 = {
 	religion = zoroastrianism

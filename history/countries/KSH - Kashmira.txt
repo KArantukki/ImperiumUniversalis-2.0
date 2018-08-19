@@ -1,0 +1,10 @@
+government = tribal_federation
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = paropamisadae
+religion = mitraism
+capital = 2819
+
+310.1. = { government = despotic_monarchy }
+550.1.1 = { religion = buddhism }

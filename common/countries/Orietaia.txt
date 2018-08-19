@@ -1,0 +1,116 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 132 158 41 }
+
+
+historical_idea_groups = {
+	cavalry_ideas
+	economy_ideas
+	trade_ideas
+	administrative_ideas
+	quantity_ideas
+	imperial_government_ideas
+	influence_ideas
+	offensive_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	
+}
+monarch_names = {
+	
+	"Sogdianos" = 5
+	"Arses" = 5
+	"Admatha" = 5
+	"Adurnarseh" = 5
+	"Arbupales" = 5
+	"Ardumanish" = 5
+	"Ariyaramna" = 5
+	"Arshad" = 5
+	"Arshaka" = 5
+	"Arshama" = 5
+	"Artaxes" = 5
+	"Bagabigna" = 5
+	"Bagabuxsha" = 5
+	"Bagadata" = 5
+	"Bubaces" = 5
+	"Chithrafarna" = 5
+	"Dadarshi" = 5
+	"Darayavahush" = 5
+	"Datuvahya" = 5
+	"Farnaka" = 5
+	"Farnaspa" = 5
+	"Gaubaruva" = 5
+	"Intaphrenes" = 5
+	"Hvakhshathra" = 5
+	"Katana" = 5
+	"Khshayarsha" = 5
+	"Marduniya" = 5
+	"Mihrab" = 5
+	"Nabunaita" = 5
+	"Narseh" = 5
+	"Naudar" = 5
+	"Niphates" = 5
+	"Onares" = 5
+	"Petines" = 5
+	"Pharnaces" = 5
+	"Prexaspes" = 5
+	"Sisines" = 5
+	"Spitamaneh" = 5
+	"Spithridates" = 5
+	"Tiridata" = 5
+	"Utana" = 5
+	"Uvaxshtra" = 5
+	"Vahuka" = 5
+	"Vahyazdata" = 5
+	"Vahumisa" = 5
+	"Varazdata" = 5
+	"Vivana" = 5
+	"Xshayarshan" = 5
+	"Zupir" = 5
+	
+	"Yesfir" = -1
+	"Zareen" = -1
+	"Zhaleh" = -1
+	"Nahid" = -1
+	"Banu" = -1
+	"Esta" = -1
+	"Jaleh" = -1
+	"Abandokht" = -1
+	"Amastri" = -1
+	"Apama" = -1
+	"Ardushnamuya" = -1
+	"Artunis" = -1
+	"Barsine" = -1
+	"Hutaosa" = -1
+	"Irdabama" = -1
+	"Kassandane" = -1
+	"Mandane" = -1
+	"Pantea" = -1
+	"Parysatis" = -1
+	"Sisygambis" = -1
+	"Roshanak" = -1
+	"Uparmiya" = -1
+
+}
+
+leader_names = {
+		Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+		Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+		Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 	
+}
+
+ship_names = {
+	
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

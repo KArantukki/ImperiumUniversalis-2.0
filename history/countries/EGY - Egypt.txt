@@ -32,11 +32,14 @@ capital = 735
         dip = 2
         mil = 2
     }
+}
+130.1.1 = {
 	heir = {
 		name = "Necho"
 		monarch_name = "Necho II"
 		dynasty = "of Sais"
 		birth_date = 130.1.1
+        death_date = 160.1.1
 		claim = 95
 		adm = 3
 		dip = 5

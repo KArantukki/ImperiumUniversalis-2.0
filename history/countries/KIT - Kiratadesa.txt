@@ -1,0 +1,9 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = tibetan
+religion = bon_religion
+capital = 2995
+
+500.1.1 = { religion = buddhism }

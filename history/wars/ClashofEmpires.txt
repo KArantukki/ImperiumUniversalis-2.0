@@ -8,6 +8,7 @@ war_goal = {
 	add_attacker = BAB
 	add_attacker = MDI
 	add_attacker = URT
+	add_attacker = SUS
 	add_defender = ASY
 	add_defender = EGY
 }
@@ -15,6 +16,7 @@ war_goal = {
 	rem_attacker = BAB
 	rem_attacker = MDI
 	rem_attacker = URT
+	rem_attacker = SUS
 	rem_defender = ASY
 	rem_defender = EGY
 }

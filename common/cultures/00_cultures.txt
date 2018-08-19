@@ -592,15 +592,6 @@ indian_group = {
 	graphical_culture = indiangfx
 	
 	# ceylon
-	magadhi = {
-		primary = MAU
-	}
-	kosalanite = {
-		primary = KOS
-	}
-	vatsanite = {
-		primary = VAT
-	}
 	kambojas = {
 		primary = KAM
 	}
@@ -625,8 +616,29 @@ indian_group = {
 	nishadan = {
 		primary = NIS
 	}
+	ashmakan = {
+		primary = ASH
+	}
+	magadhi = {
+		primary = MAU
+	}
+	kosalanite = {
+		primary = KOS
+	}
 	sinhala = {
 		primary = ANJ
+	}
+	vatsanite = {
+		primary = VAT
+	}
+	kalinganite = {
+		primary = KAL
+	}
+	gangaridinite = {
+		primary = GAG
+	}
+	odranite = {
+		primary = ODA
 	}
 	
 	male_names = {
@@ -646,20 +658,11 @@ indian_group = {
 	}
 }
 
-non_vedic_group = {
+eastern_vedic_group = {
 	country = { has_banners = 1}
 	province = { local_has_banners = 1}
 	graphical_culture = indiangfx
 	
-	kalinganite = {
-		primary = KAL
-	}
-	gangaridinite = {
-		primary = GAG
-	}
-	odranite = {
-		primary = ODA
-	}
 	
 	male_names = {
 		Agnimitra Ananta Añjana Arjunadatta Aryabhata Bahasati Bramhadatta Bhadrasala Bhumimitra Brahmamitra Brihadratha Chanakya Chanda 
@@ -1012,11 +1015,11 @@ western_iranian = {
 	parthian = {
 		primary = PRT
 	}
-	oreitian = {
-		#primary = 
-	}
 	karamanian = {
 		primary = KRM
+	}
+	ichthyophagian = {
+		primary = ICT
 	}
 	
 	male_names = {
@@ -1083,7 +1086,7 @@ steppe_people = {
 		}
 	}
 	parni = {
-		primary = PRT
+		primary = PRN
 		male_names = {
 			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
 			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
@@ -1260,9 +1263,6 @@ dravidian_group = {
 	}
 	naga = {
 		primary = NAG
-	}
-	ashmakan = {
-		primary = ASH
 	}
 	
 	male_names = {
@@ -1518,7 +1518,18 @@ eastern_iranian_group = {
 		}
 	}
 	pashtuns = {
-		primary = ARA
+		primary = STT
+		male_names = {
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+			Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+	}
+	oreitian = {
+		primary = ORI
 		male_names = {
 			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
 			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
@@ -1540,7 +1551,7 @@ eastern_iranian_group = {
 		}
 	}
 	drangian = {
-		primary = DRN
+		primary = AIA
 		male_names = {
 			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
 			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
@@ -1551,7 +1562,7 @@ eastern_iranian_group = {
 		}
 	}
 	arian = {
-		#primary = BAK
+		primary = ARI
 		male_names = {
 			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
 			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
@@ -1562,9 +1573,28 @@ eastern_iranian_group = {
 		}
 	}
 	parikanian = {
-		#primary = 
+		primary = EUE
+		male_names = {
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+			Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
 	}
-}
+	paropamisadae = {
+		primary = KSH
+		male_names = {
+			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
+			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
+			Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 
+		}
+		female_names = {
+			Yesfir Zareen Zhaleh Nahid Mrvarid Minu Nousha Gulbahar Hettie Hester Jaleh Banu Esta Ester Estera
+		}
+	}
+} 
 
 egyptian_group = {
 	country = { has_banners = 1}
@@ -1640,17 +1670,6 @@ akkadian_group = {
 	}
 	elamite = {
 		primary = SUS
-		male_names = {
-			Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
-			Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
-			Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur
-		}
-		female_names = {
-			Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu
-		}
-	}
-	gutian = { 
-		primary = GTM
 		male_names = {
 			Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
 			Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
@@ -2268,5 +2287,37 @@ central_african_group = {
 	}
 	dynasty_names = {
 		Kaaoi Awawai Nedjehoi Makedai Sebai Alarai Pyoi Shabakai
+	}
+}
+zargos_group = {
+	country = { has_banners = 1}
+	province = { local_has_banners = 1}
+	graphical_culture = iraniangfx
+	
+	uxii = {
+		primary = UXI
+		male_names = {
+			Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
+			Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
+			Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur Madates
+		}
+		female_names = {
+			Sisygambis Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu
+		}
+	}
+	gutian = { 
+		primary = GTM
+		male_names = {
+			Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
+			Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
+			Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur
+		}
+		female_names = {
+			Dadu Bilit Belit Atheh Astarte Aruru Ninharrissi Nairi Pirisati Urmitu
+		}
+	}
+	
+	dynasty_names = {
+		Hormuzdai Asmaroi Amiroi Eshoi Haloi Arseenoi Yaloi
 	}
 }

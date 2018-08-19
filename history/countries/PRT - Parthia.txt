@@ -1,0 +1,345 @@
+government = tribal_kingdom
+government_rank = 3
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = parthian
+religion = mitraism
+capital = 2706
+	
+#add_accepted_culture = parni
+		
+300.1.1 = {
+	government = despotic_monarchy
+}
+330.1.1 = { religion = zoroastrianism }
+480.1.1 = {
+monarch = {
+		name = "Andragoras"
+		dynasty = "of Parthia"
+		birth_date = 455.1.1
+		dip = 1
+		adm = 2
+		mil = 1
+	}
+}
+
+507.1.1 = {
+		primary_culture = parni
+		add_accepted_culture = parthian
+		add_ruler_personality = legendary_leader_personality
+		government_rank = 3
+monarch = {
+		name = "Arsaces I"
+		dynasty = "Arsacid"
+		dip = 4
+		adm = 4
+		mil = 6
+	}
+}
+543.1.1 = {
+	clear_scripted_personalities = yes
+monarch = {
+		name = "Arsaces II"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+569.1.1 = {
+monarch = {
+		name = "Arsaces III"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+574.1.1 = {
+monarch = {
+		name = "Arsaces IV"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+577.1.1 = {
+monarch = {
+		name = "Arsaces V"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+587.1.1 = {
+monarch = {
+		name = "Arsaces V"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+613.1.1 = { 
+	government_rank = 4 
+	add_accepted_culture = seleucid
+	add_accepted_culture = babylonian
+}
+622.1.1 = {
+monarch = {
+		name = "Arsaces VI"
+		dynasty = "Arsacid"
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+627.1.1 = {
+monarch = {
+		name = "Arsaces VII"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 4
+		mil = 4
+	}
+}
+628.1.1 = {
+monarch = {
+		name = "Arsaces VIII"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+632.1.1 = {
+monarch = {
+		name = "Arsaces IX"
+		dynasty = "Arsacid"
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+633.1.1 = {
+monarch = {
+		name = "Arsaces X"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+663.1.1 = {
+monarch = {
+		name = "Arsaces XI"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+663.6.1 = {
+monarch = {
+		name = "Arsaces XII"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+667.1.1 = {
+monarch = {
+		name = "Arsaces XIII"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 4
+		mil = 4
+	}
+}
+675.1.1 = {
+monarch = {
+		name = "Arsaces XIV"
+		dynasty = "Arsacid"
+		dip = 4
+		adm = 3
+		mil = 4
+	}
+}
+677.1.1 = {
+monarch = {
+		name = "Arsaces XV"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+684.1.1 = {
+monarch = {
+		name = "Arsaces XVII"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+688.1.1 = {
+monarch = {
+		name = "Arsaces XVIII"
+		dynasty = "Arsacid"
+		dip = 2
+		adm = 5
+		mil = 2
+	}
+}
+689.1.1 = {
+monarch = {
+		name = "Arsaces XIX"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+697.1.1 = {
+capital = 1878
+monarch = {
+		name = "Arsaces XX"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+704.1.1 = {
+monarch = {
+		name = "Arsaces XXI"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+716.1.1 = {
+monarch = {
+		name = "Arsaces XXII"
+		dynasty = "Arsacid"
+		dip = 2
+		adm = 3
+		mil = 3
+	}
+}
+724.1.1 = {
+monarch = {
+		name = "Arsaces XXIII"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+742.1.1 = {
+monarch = {
+		name = "Arsaces XXIV"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+752.1.1 = {
+monarch = {
+		name = "Musa"
+		dynasty = "of Parthia"
+		dip = 4
+		adm = 4
+		mil = 3
+		female = yes
+	}
+	heir = {
+		name = "Phraates"
+		monarch_name = "Arsaces XXV"
+		dynasty = "Arsacid"
+		death_date = 758.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+758.1.1 = {
+monarch = {
+		name = "Arsaces XXVI"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+762.1.1 = {
+monarch = {
+		name = "Arsaces XXVII"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+764.1.1 = {
+monarch = {
+		name = "Arsaces XXVIII"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+788.1.1 = {
+monarch = {
+		name = "Arsaces XXIX"
+		dynasty = "Arsacid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+790.1.1 = {
+monarch = {
+		name = "Arsaces XXX"
+		dynasty = "Arsacid"
+		dip = 2
+		adm = 3
+		mil = 3
+	}
+}
+793.1.1 = {
+monarch = {
+		name = "Arsaces XXXII"
+		dynasty = "Arsacid"
+		dip = 2
+		adm = 2
+		mil = 4
+	}
+}
+799.1.1 = {
+monarch = {
+		name = "Arsaces XXXIII"
+		dynasty = "Arsacid"
+		dip = 2
+		adm = 3
+		mil = 3
+	}
+}
+800.1.1 = {
+monarch = {
+		name = "Arsaces XXXIV"
+		dynasty = "Arsacid"
+		death_date = 805.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}

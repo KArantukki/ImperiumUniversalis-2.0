@@ -1,0 +1,12 @@
+government = tribal_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = tamil
+religion = dravidian
+capital = 3163
+
+
+500.1. = { government = despotic_monarchy }
+
+

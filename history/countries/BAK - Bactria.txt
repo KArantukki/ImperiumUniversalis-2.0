@@ -1,0 +1,9 @@
+government = tribal_kingdom
+government_rank = 3
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = bactrian
+religion = mitraism
+capital = 2828
+
+300.1.1 = { government = despotic_monarchy }

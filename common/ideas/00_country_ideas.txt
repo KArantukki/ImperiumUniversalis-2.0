@@ -1585,6 +1585,9 @@ BAK_ideas = {
 		OR = {
 			tag = GBK
 			tag = BAK
+			tag = ZIA
+			tag = OXI
+			tag = DRS
 		}
 	}
 	free = yes

@@ -1,9 +1,0 @@
-government = tribal_kingdom
-government_rank = 2
-#mercantilism = 0.25
-technology_group = iranian
-primary_culture = medians
-religion = zoroastrianism
-capital = 3729
-
-historical_friend = MDI

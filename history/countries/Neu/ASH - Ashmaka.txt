@@ -1,9 +1,0 @@
-government = tribal_kingdom
-government_rank = 3
-#mercantilism = 0.25
-technology_group = indian
-primary_culture = ashmakan
-religion = dravidian
-capital = 3282
-300.1. = { government = despotic_monarchy }
-550.1.1 = { religion = buddhism }

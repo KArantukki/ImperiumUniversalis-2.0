@@ -1,4 +1,8 @@
 ﻿l_english:
+ zargos_group:0 "Zargos Group"
+ uxii:0 "Uxiian"
+ paropamisadae:0 "Paropamisadaen"
+ ichthyophagian:0 "Ichthyophagian"
  chaldean:0 "Chaldean"
  lycaonian:0 "Lycaonian"
  central_african_group:0 "Central African Group"
@@ -160,7 +164,7 @@
  numidian:0 "Numidian"
  mauretanian:0 "Mauri"
  indian_group:0 "Indo-Aryan Group"
- non_vedic_group:0 "Eastern Indian Group"
+ eastern_vedic_group:0 "Eastern Indo-Aryan"
  kalinganite:0 "Kalingan"
  gangaridinite:0 "Gangaridin"
  kosalanite:0 "Kosalan"

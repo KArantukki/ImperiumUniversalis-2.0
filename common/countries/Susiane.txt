@@ -2,7 +2,7 @@
 
 graphical_culture = iraniangfx
 
-color = { 131 62 159 }
+color = { 122 65 4 }
 
 
 historical_idea_groups = {

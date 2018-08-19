@@ -1,0 +1,9 @@
+government = despotic_monarchy
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = elamite
+religion = elamite_religion
+capital = 2666
+historical_rival = ASY
+
