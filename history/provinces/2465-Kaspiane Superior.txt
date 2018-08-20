@@ -7,8 +7,8 @@ hre = no
 base_tax = 0
 base_production = 0
 trade_goods = rice
-base_manpower = 4
-capital = "Caspiana"
+base_manpower = 3
+capital = ""
 is_city = yes
 #small_city_walls = yes
 

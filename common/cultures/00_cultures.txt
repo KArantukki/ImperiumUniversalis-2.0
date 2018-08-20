@@ -1076,15 +1076,6 @@ steppe_people = {
 			Amage Tabiti "P'ha" Anya Ana
 		}
 	}
-	maeotian = {
-		primary = MAI
-		male_names = {
-			Ishpaka Partatua Madea Eruvand Tigran Tar Torram Tarem Tiermes Terem Tarsua Sco Ra Pada Ada
-		}
-		female_names = {
-			Amage Tabiti "P'ha" Anya Ana
-		}
-	}
 	parni = {
 		primary = PRN
 		male_names = {
@@ -1097,6 +1088,15 @@ steppe_people = {
 		}
 		dynasty_names = {
 			Arsakid
+		}
+	}
+	maeotian = {
+		primary = MAI
+		male_names = {
+			Ishpaka Partatua Madea Eruvand Tigran Tar Torram Tarem Tiermes Terem Tarsua Sco Ra Pada Ada
+		}
+		female_names = {
+			Amage Tabiti "P'ha" Anya Ana
 		}
 	}
 	chorasmian = {

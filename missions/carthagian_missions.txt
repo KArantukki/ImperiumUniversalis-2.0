@@ -16,23 +16,19 @@ car_missions_expansion_1 = {
 		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1358
-				province_id = 1391
-				province_id = 1418
-				province_id = 1479
+				province_id = 1342
+				province_id = 1352
+				province_id = 1367
 			}
 		}
 		trigger = {
-			1358 = {	
+			1342 = {	
 				is_strongest_trade_power = ROOT
 			}
-			1391 = {	
+			1352 = {	
 				is_strongest_trade_power = ROOT
 			}
-			1418 = {	
-				is_strongest_trade_power = ROOT
-			}
-			1479 = {	
+			1367 = {	
 				is_strongest_trade_power = ROOT
 			}
 		}
@@ -46,27 +42,23 @@ car_missions_expansion_1 = {
 		required_missions = { car_western_medsea_control }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1453
-				province_id = 1555
-				province_id = 1578
-				province_id = 1568
-				province_id = 1609
+				province_id = 1381
+				province_id = 1419
+				province_id = 1455
+				province_id = 1386
 			}
 		}
 		trigger = {
-			1453 = {	
+			1381 = {	
 				is_strongest_trade_power = ROOT
 			}
-			1555 = {	
+			1419 = {	
 				is_strongest_trade_power = ROOT
 			}
-			1578 = {	
+			1455 = {	
 				is_strongest_trade_power = ROOT
 			}
-			1568 = {	
-				is_strongest_trade_power = ROOT
-			}
-			1609 = {	
+			1386 = {	
 				is_strongest_trade_power = ROOT
 			}
 		}
@@ -88,16 +80,16 @@ car_missions_expansion_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = sardinia_area
-				area = western_sardinia_area
+				area = sardinia_east
+				area = sardinia_west
 			}
 		}
 		trigger = {
-			sardinia_area = {
+			sardinia_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			western_sardinia_area = {
+			sardinia_west = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -147,8 +139,7 @@ car_missions_expansion_1 = {
 			}
 				OR = {
 					region = gallia_narbonensis
-					area = western_liguria_area
-					area = eastern_liguria_area
+					area = liguria_area
 				}
 			has_port = yes
 		}
@@ -158,11 +149,7 @@ car_missions_expansion_1 = {
 					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				western_liguria_area = {
-					type = any
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				eastern_liguria_area = {
+				liguria_area = {
 					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
@@ -194,19 +181,19 @@ car_missions_expansion_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			27 = {
+			161 = {
 				has_building = small_harbor
 			}
-			27 = {
+			161 = {
 				has_building = small_market
 			}
 		}
 		effect = {
-				27 = {
+				161 = {
 					add_base_tax = 1
 					add_base_production = 1
 				}
-				gadir_area = {
+				gades_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -220,7 +207,7 @@ car_missions_expansion_1 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				tingis_area = {
+				tingitana_west = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -238,20 +225,20 @@ car_missions_expansion_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 				OR = {
-					province_id = 301
-					province_id = 302
-					province_id = 4
-					province_id = 5
+					province_id = 137
+					province_id = 138
+					province_id = 516
+					province_id = 515
 				}
 		}
 		trigger = {
 			OR = {
-				owns = 301
-				owns = 302
+				owns = 137
+				owns = 138
 			}
 			OR = {
-				owns = 4
-				owns = 5
+				owns = 516
+				owns = 515
 			}
 		}
 		effect = {
@@ -299,7 +286,7 @@ car_missions_expansion_1 = {
 								region = cartaginensis_region
 							}
 						}
-						amount = 30
+						amount = 16
 					}
 			}
 		}
@@ -384,16 +371,16 @@ car_missions_expansion_2 = {
 						all_owned_province = {
 							region = africa_region
 						}
-						amount = 30
+						amount = 12
 					}
 			}
-			481 = {
+			608 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			403 = {
+			619 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			406 = {
+			620 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -402,21 +389,21 @@ car_missions_expansion_2 = {
 				add_base_tax = 1
 				add_base_production = 1
 			}
-			western_sicilia_area = {
+			sicilia_west = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			sardinia_area = {
+			sardinia_west = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			western_sardinia_area = {
+			sardinia_east = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -433,10 +420,10 @@ car_missions_expansion_2 = {
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			area = western_sicilia_area
+			area = sicilia_west
 		}
 		trigger = {
-			western_sicilia_area = {
+			sicilia_west = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -446,14 +433,14 @@ car_missions_expansion_2 = {
 				add_base_tax = 1
 				add_base_production = 1
 			}
-			northern_sicilia_area = {
+			syracuse_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			eastern_sicilia_area = {
+			sicilia_est = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -470,21 +457,21 @@ car_missions_expansion_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = northern_sicilia_area
-				area = eastern_sicilia_area
-				area = western_sicilia_area
+				area = syracuse_area
+				area = sicilia_west
+				area = sicilia_est
 			}
 		}
 		trigger = {
-			northern_sicilia_area = {
+			syracuse_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			eastern_sicilia_area = {
+			sicilia_west = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			western_sicilia_area = {
+			sicilia_est = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -520,23 +507,22 @@ car_missions_expansion_2 = {
 		}
 		effect = {
 			add_dip_power = 250
-			add_permanent_claim = 593
-			add_permanent_claim = 577
-			add_permanent_claim = 540
-			add_permanent_claim = 539
-			add_permanent_claim = 693
-			add_permanent_claim = 2437
-			add_permanent_claim = 705
-			add_permanent_claim = 706
-			add_permanent_claim = 192
-			creta_area = {
+			add_permanent_claim = 37
+			add_permanent_claim = 60
+			add_permanent_claim = 85
+			add_permanent_claim = 1170
+			add_permanent_claim = 1171
+			add_permanent_claim = 1149
+			add_permanent_claim = 1148
+			add_permanent_claim = 1041
+			knossos_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			west_creta_area = {
+			gortyn_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -553,27 +539,19 @@ car_missions_expansion_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = creta_area
-				area = west_creta_area
-				province_id = 593
-				province_id = 577
-				province_id = 540
-				province_id = 539
+				area = knossos_area
+				area = gortyn_area
 			}
 		}
 		trigger = {
-			creta_area = {
+			knossos_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			west_creta_area = {
+			gortyn_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			owns = 593
-			owns = 577
-			owns = 540
-			owns = 539
 		}
 		effect = {
 			add_mercantilism = 5
@@ -585,14 +563,14 @@ car_missions_expansion_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			kypros_area = {
+			cyprus_west = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			east_kypros_area = {
+			cyprus_east = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -609,30 +587,30 @@ car_missions_expansion_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = kypros_area
-				area = east_kypros_area
+				area = cyprus_west
+				area = cyprus_east
 			}
 		}
 		trigger = {
-			kypros_area = {
+			cyprus_west = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			east_kypros_area = {
+			cyprus_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			add_dip_power = 200
-			kypros_area = {
+			cyprus_west = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_core = ROOT
 			}
-			east_kypros_area = {
+			cyprus_east = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -689,19 +667,21 @@ car_missions_expansion_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				province_id = 693
-				province_id = 2437
-				province_id = 705
-				province_id = 706
-				province_id = 192
+				province_id = 60
+				province_id = 85
+				province_id = 1171
+				province_id = 1170
+				province_id = 1148
+				province_id = 1149
 			}
 		}
 		trigger = {
-				owns = 693
-				owns = 2437
-				owns = 705
-				owns = 706
-				owns = 192
+				owns = 60
+				owns = 85
+				owns = 1171
+				owns = 1170
+				owns = 1148
+				owns = 1149
 		}
 		effect = {
 			add_dip_power = 100

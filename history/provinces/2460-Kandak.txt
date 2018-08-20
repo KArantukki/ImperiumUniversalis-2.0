@@ -5,9 +5,9 @@ culture = albanian
 religion = skneli
 hre = no
 base_tax = 0
-base_production = 1
+base_production = 0
 trade_goods = fruits
-base_manpower = 3
+base_manpower = 5
 capital = "Kandak"
 is_city = yes
 

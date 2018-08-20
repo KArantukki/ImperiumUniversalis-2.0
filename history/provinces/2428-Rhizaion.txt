@@ -3,10 +3,11 @@ owner = TRA
 controller = TRA
 culture = ionic
 religion = greek_religion
+hre = no
 base_tax = 0
 base_production = 1
 trade_goods = fish
-base_manpower = 2
+base_manpower = 4
 capital = "Rhizaion"
 is_city = yes
 

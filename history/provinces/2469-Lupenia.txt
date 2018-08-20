@@ -10,7 +10,6 @@ trade_goods = copper
 base_manpower = 3
 capital = "Lupenia"
 is_city = yes
-small_city_walls = yes
 
 discovered_by = caucaso_anatolian
 discovered_by = iranian

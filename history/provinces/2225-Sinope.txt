@@ -5,11 +5,12 @@ culture = ionic
 religion = greek_religion
 hre = no
 base_tax = 1
-base_production = 4
+base_production = 3
 trade_goods = dyes
-base_manpower = 3
+base_manpower = 2
 capital = "Sinope"
 is_city = yes
+small_city_walls = yes
 
 discovered_by = caucaso_anatolian
 discovered_by = iranian

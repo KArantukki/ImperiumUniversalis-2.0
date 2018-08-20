@@ -18,4 +18,4 @@ discovered_by = iranian
 #discovered_by = south_east_asian
 #discovered_by = britannic
 #discovered_by = korean
-#discovered_by = african# No previous file for Paragon Sinus
+#discovered_by = african

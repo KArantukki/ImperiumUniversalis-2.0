@@ -1,4 +1,4 @@
-#discovered_by = roman
+discovered_by = roman
 discovered_by = greek
 discovered_by = punic
 discovered_by = diadochi

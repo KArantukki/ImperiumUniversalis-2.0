@@ -18,10 +18,10 @@ ath_missions_expansion_1 = {
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-				province_id = 542
+				province_id = 957
 		}
 		trigger = {
-			542 = {
+			957 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -39,16 +39,16 @@ ath_missions_expansion_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 				OR = {
-					area = euboea_area
-					area = south_euboea_area
+					area = euboea_inferior
+					area = euboea_superior
 				}
 		}
 		trigger = {
-			euboea_area = {
+			euboea_inferior = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			south_euboea_area = {
+			euboea_superior = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -83,21 +83,21 @@ ath_missions_expansion_2 = {
 		effect = {
 			add_army_professionalism = 0.05	
 			create_general = 80
-			euboea_area = {
+			euboea_inferior = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			south_euboea_area = {
+			euboea_inferior = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-				add_permanent_claim = 558
+				add_permanent_claim = 963
 		}
 	}
 	ath_fall_of_thebai = {
@@ -107,10 +107,10 @@ ath_missions_expansion_2 = {
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-				province_id = 558
+				province_id = 963
 		}
 		trigger = {
-			558 = {
+			963 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -126,7 +126,7 @@ ath_missions_expansion_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			corinthia = {
+			corinthia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -143,15 +143,15 @@ ath_missions_expansion_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 				OR = {
-					province_id = 507
-					province_id = 508
+					province_id = 955
+					province_id = 956
 				}
 		}
 		trigger = {
-			507 = {
+			955 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			508 = {
+			956 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -174,12 +174,12 @@ ath_missions_expansion_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 				OR = {
-					area = corinthia
+					area = corinthia_area
 					area = argolis_area
 				}
 		}
 		trigger = {
-			corinthia = {
+			corinthia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -189,7 +189,7 @@ ath_missions_expansion_2 = {
 			}
 		}
 		effect = {
-			laconia_area = {
+			laconica_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -204,13 +204,6 @@ ath_missions_expansion_2 = {
 				add_permanent_claim = ROOT
 			}
 			arcadia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			elis_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -276,28 +269,28 @@ ath_missions_expansion_3 = {
 		}
 		effect = {
 			add_navy_tradition = 20	
-			northern_aegean_islands = {
+			thasus_et_lemnus = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			chios_area = {
+			lesbos_et_chios = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			creta_area = {
+			knossos_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			west_creta_area = {
+			gortyn_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -321,16 +314,16 @@ ath_missions_expansion_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = northern_aegean_islands
-				area = chios_area
+				area = lesbos_et_chios
+				area = thasus_et_lemnus
 			}
 		}
 		trigger = {
-			chios_area = {
+			thasus_et_lemnus = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northern_aegean_islands = {
+			lesbos_et_chios = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -344,14 +337,14 @@ ath_missions_expansion_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			thasus = {
+			rhodope_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			aeolis_area = {
+			aeolia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -393,23 +386,30 @@ ath_missions_expansion_3 = {
 		icon = mission_propontis
 		required_missions = { ath_chalcidice_area }
 		provinces_to_highlight = {
-			province_id = 1609
+			province_id = 1429
 		}
 		trigger = {
-			1609 = {	
+			1429 = {	
 				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
 			add_mercantilism = 2
-			southern_taurica_area = {
+			chersonesus_heracle = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			cimmerian_bosporus_area = {
+			chersonesus_taurica = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			chersonesus_zenonis = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -437,21 +437,21 @@ ath_missions_expansion_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
+				area = knossos_area
+				area = gortyn_area
 				area = rhodiorum_area
-				area = west_creta_area
-				area = creta_area
 			}
 		}
 		trigger = {
+			knossos_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gortyn_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			rhodiorum_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			west_creta_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			creta_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -459,21 +459,21 @@ ath_missions_expansion_4 = {
 		effect = {
 			add_dip_power = 250
 			add_yearly_sailors = 2.0
-			kypros_area = {
+			cyprus_west = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			east_kypros_area = {
+			cyprus_east = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			ionian_coast_area = {
+			ionia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -487,14 +487,14 @@ ath_missions_expansion_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			west_cyrene = {
+			cyrenaica_east = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			east_cyrene = {
+			cyrenaica_west = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -511,22 +511,22 @@ ath_missions_expansion_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = kypros_area
-				area = east_kypros_area
+				area = cyprus_west
+				area = cyprus_east
 			}
 		}
 		trigger = {
-			kypros_area = {
+			cyprus_west = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			east_kypros_area = {
+			cyprus_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			1578 = {
+			1455 = {
 				add_trade_modifier = {
 						who = ROOT
 						duration = -1
@@ -540,16 +540,16 @@ ath_missions_expansion_4 = {
 		icon = mission_europa_e
 		required_missions = { ath_kypros }
 		provinces_to_highlight = {
-			province_id = 1578
+			province_id = 1455
 		}
 		trigger = {
-			1578 = {	
+			1455 = {	
 				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
 				add_mercantilism = 5
-				add_dip_power = 500
+				add_dip_power = 300
 		}
 	}
 	ath_thalassocracy_mission = {
@@ -593,20 +593,20 @@ ath_missions_expansion_5 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				province_id = 1742
-				province_id = 490
+				province_id = 707
+				province_id = 650
 			}
 		}
 		trigger = {
-			1742 = {
+			707 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			490 = {
+			650 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			1453 = {
+			1381 = {
 				add_trade_modifier = {
 						who = ROOT
 						duration = -1
@@ -620,10 +620,10 @@ ath_missions_expansion_5 = {
 		icon = mission_trade
 		required_missions = { ath_kyrene }
 		provinces_to_highlight = {
-			province_id = 1453
+			province_id = 1381
 		}
 		trigger = {
-			1453 = {	
+			1381 = {	
 				is_strongest_trade_power = ROOT
 			}
 		}
