@@ -5,4 +5,4 @@ technology_group = scythian
 primary_culture = sarmatian
 religion = sarmatian
 religious_school = nomad_type
-capital = 2063
+capital = 2905

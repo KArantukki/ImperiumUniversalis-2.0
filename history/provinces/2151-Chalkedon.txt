@@ -1,7 +1,7 @@
 add_core = BIT
-add_core = LYD
-owner = LYD
-controller = LYD
+add_core = KHA
+owner = KHA
+controller = KHA
 culture = doric
 religion = greek_religion
 hre = no

@@ -1,8 +1,8 @@
-add_core = SX9
-owner = SX9
-controller = SX9
-culture = sarmatian
-religion = sarmatian
+add_core = SX3
+owner = SX3
+controller = SX3
+culture = scythian
+religion = scythian_religion
 hre = no
 base_tax = 0
 base_production = 1

@@ -1121,6 +1121,10 @@ AB6 = "countries/Sindi.txt"
 AB7 = "countries/Apsilae.txt"
 AB8 = "countries/Cercetae.txt"
 AB9 = "countries/Menralii.txt"
+BO1 = "countries/Borysthenis.txt"
+BO2 = "countries/Borysthenites.txt"
+TGT = "countries/Thyssagetae.txt"
+KHA = "countries/Chalcedon.txt"
 
 
 

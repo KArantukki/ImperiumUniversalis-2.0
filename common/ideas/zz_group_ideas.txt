@@ -866,7 +866,7 @@ semitic_ideas = {
 
 sarmatian_scythian_ideas = {
 	start = {
-		cav_to_inf_ratio = 0.5
+		cav_to_inf_ratio = 0.25
 		enemy_core_creation = 1.0
 	}
 	
@@ -1197,6 +1197,7 @@ greek_colonial_ideas = {
 			NOT = { region = mare_aegaeum_islands_region }
 			NOT = { region = ionia_region }
 			NOT = { region = asia_minor }
+			NOT = { tag = TRA }
 		}
 	}
 	free = yes

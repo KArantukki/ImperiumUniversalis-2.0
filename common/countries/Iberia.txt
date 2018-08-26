@@ -2,7 +2,7 @@
 
 graphical_culture = iraniangfx
 
-color = { 85 26 0 }
+color = { 97 60 40 }
 
 revolutionary_colors = { 5  13  0 }
 

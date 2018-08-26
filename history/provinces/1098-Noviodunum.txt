@@ -1,15 +1,16 @@
-native_size = 80
-native_ferocity = 8
-native_hostileness = 4
-culture = odrysian
-religion = thracian
+add_core = GET
+owner = GET
+controller = GET
+culture = getean
+religion = dacian_religion
 hre = no
 base_tax = 0
 base_production = 0
+trade_goods = meat_animals
 base_manpower = 3
-trade_goods = unknown
 capital = ""
-is_city = no
+is_city = yes
+
 
 add_permanent_province_modifier = {
 		name = river_estuary_modifier

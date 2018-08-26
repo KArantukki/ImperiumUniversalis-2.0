@@ -1,11 +1,11 @@
-add_core = AMX
-owner = AMX
-controller = AMX
-culture = ionic
-religion = greek_religion
+add_core = GC4
+owner = GC4
+controller = GC4
+culture = lazi
+religion = skneli
 hre = no
 base_tax = 0
-base_production = 1
+base_production = 0
 trade_goods = fish
 base_manpower = 3
 capital = "Polemonion"
