@@ -17,14 +17,14 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			owns_core_province = 501
-			owns_core_province = 510
-			owns_core_province = 528
-			owns_core_province = 534
-			owns_core_province = 523
-			owns_core_province = 535
-			owns_core_province = 571
-			owns_core_province = 558
+			owns_core_province = 959
+			owns_core_province = 963
+			owns_core_province = 945
+			owns_core_province = 938
+			owns_core_province = 933
+			owns_core_province = 941
+			owns_core_province = 968
+			owns_core_province = 972
 			total_development = 300
 		}
 		effect = {
@@ -58,22 +58,24 @@ country_decisions = {
 			NOT = { exists = BOS }
 			NOT = { TAG HEL }
 			OR = {
-				capital_scope = { area = taurica_area	}
-				capital_scope = { area = tanais_area	}
+				capital_scope = { area = chersonesus_heracle	}
+				capital_scope = { area = chersonesus_taurica	}
+				capital_scope = { area = chersonesus_zenonis	}
+				capital_scope = { area = cimmerian_bosporus	}
 			}
 		}
 		allow = {
 			is_at_war =  no
-			owns_core_province = 1128
-			owns_core_province = 1129
-			owns_core_province = 1121
-			owns_core_province = 1127
-			owns_core_province = 1126
+			owns_core_province = 1996
+			owns_core_province = 2000
+			owns_core_province = 2004
+			owns_core_province = 2068
+			owns_core_province = 2013
 		}
 		effect = {
 			change_tag = BOS
 			add_prestige = 25
-			taurica_area = {
+			chersonesus_heracle = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
@@ -97,11 +99,15 @@ country_decisions = {
 			NOT = { TAG HEL }
 			NOT = { TAG CYC }
 			NOT = { TAG RHO }
-			capital_scope = { area = creta_area	}
+			OR = {
+			capital_scope = { area = knossos_area	}
+			capital_scope = { area = gortyn_area	}
+			}
 		}
 		allow = {
 			is_at_war =  no
-			creta_area = { type = all owned_by = ROOT }
+			knossos_area = { type = all owned_by = ROOT }
+			gortyn_area = { type = all owned_by = ROOT }
 		}
 		effect = {
 			change_tag = KRT
@@ -125,18 +131,16 @@ country_decisions = {
 				primary_culture = arcadian
 				primary_culture = greek
 			}
-			capital_scope = { area = kypros_area	}
+			OR = {
+				capital_scope = { area = cyprus_west	}
+				capital_scope = { area = cyprus_east	}
+			}
+			
 		}
 		allow = {
 			is_at_war =  no
-			owns_core_province = 1828
-			owns_core_province = 1829
-			owns_core_province = 1830
-			owns_core_province = 1831
-			owns_core_province = 1832
-			owns_core_province = 1833
-			owns_core_province = 1834
-			owns_core_province = 1835
+			cyprus_west = { type = all owned_by = ROOT }
+			cyprus_east = { type = all owned_by = ROOT }
 		}
 		effect = {
 			change_tag = ZYP
@@ -239,7 +243,10 @@ country_decisions = {
 			}
 			NOT = { exists = EUB }
 			NOT = { TAG HEL }
-			capital_scope = { area = euboea_area	}
+			OR = {
+			capital_scope = { area = euboea_inferior	}
+			capital_scope = { area = euboea_superior	}
+			}
 		}
 		allow = {
 			is_at_war =  no
@@ -248,8 +255,8 @@ country_decisions = {
 					calc_true_if = {
 						all_owned_province = {
 							OR = {
-								area = euboea_area
-								area = south_euboea_area
+								area = euboea_inferior
+								area = euboea_superior
 								}
 						}
 						amount = 5
@@ -281,7 +288,8 @@ country_decisions = {
 			NOT = { TAG HEL }
 			OR = {
 				capital_scope = { area = thessalia_area	}
-				capital_scope = { area = larisa_area	}
+				capital_scope = { area = perrhaebia_area	}
+				capital_scope = { area = magnesia_area	}
 			}
 		}
 		allow = {
@@ -293,6 +301,7 @@ country_decisions = {
 							OR = {
 								area = thessalia_area
 								area = larisa_area
+								area = magnesia_area
 								}
 						}
 						amount = 6
@@ -468,13 +477,13 @@ country_decisions = {
 		effect = {
 			change_tag = MAC
 
-				eastern_macedonia_area = {
+				macedonia_secunda = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = MAC
 				}
-				western_macedonia_area = {
+				macedonia_prima = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}

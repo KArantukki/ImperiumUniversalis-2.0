@@ -1,7 +1,7 @@
 add_core = GC4
 owner = GC4
 controller = GC4
-culture = lazi
+culture = pontic
 religion = skneli
 hre = no
 base_tax = 0

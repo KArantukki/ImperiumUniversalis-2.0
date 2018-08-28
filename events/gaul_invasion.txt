@@ -45,6 +45,7 @@ province_event = {
 		OR = {
 			area = aemilia_area
 			area = picenum_area
+			area = apennines_area
 		}
 		NOT = { 
 			any_neighbor_province = { 
@@ -106,6 +107,7 @@ province_event = {
 		OR = {
 			area = aemilia_area
 			area = transpadana_area
+			area = gallia_cispadana
 		}
 		NOT = { 
 			any_neighbor_province = { 
@@ -165,8 +167,8 @@ province_event = {
 	
 	trigger = {
 		OR = {
-			area = eastern_venetia_area
-			area = western_venetia_area
+			area = alpes_carnae
+			area = venetia_area
 		}
 		is_year = 500
 		NOT = { 
@@ -228,7 +230,8 @@ province_event = {
 	trigger = {
 		OR = {
 			area = aemilia_area
-			area = western_venetia_area
+			area = venetia_area
+			area = gallia_cispadana
 		}
 		NOT = { 
 			any_neighbor_province = { 
@@ -416,7 +419,10 @@ province_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		OR = {
 		area = aetolia_area
+		area = phocis_area
+		}
 		has_global_flag = balkan_invasion_start
 		NOT = { has_global_flag = attack_on_delphi_flag }
 	}
@@ -456,7 +462,10 @@ province_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		area = odrysia
+		OR = {
+		area = haemus_mons
+		area = haemimontus_area
+		}
 		has_global_flag = balkan_invasion_start
 		has_global_flag = attack_on_delphi_flag
 	}
@@ -495,7 +504,7 @@ province_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		area = thracia_west
+		area = odryssia_area
 		NOT = { exists = GAL }
 		has_global_flag = attack_on_delphi_flag
 		NOT = { has_global_flag = galatians_in_thracia }
@@ -578,7 +587,7 @@ province_event = {
 	hidden = yes
 
 	trigger = {
-		province_id = 1002
+		province_id = 1203
 		is_year = 390
 		has_global_flag = cisalpine_invasion_start
 	}
@@ -589,8 +598,8 @@ province_event = {
 	
 	option = {
 		name = "gaul_invasion.12.a"
-			if = {	limit = { 1047 = { is_empty = yes } } 
-				1047 = {
+			if = {	limit = { 1905 = { is_empty = yes } } 
+				1905 = {
 					add_core = COT
 					cede_province = COT
 					change_culture = noric
@@ -598,8 +607,17 @@ province_event = {
 					}
 				}
 				if = {
-					limit = { 1048 = { is_empty = yes } }
-						1048 = {
+					limit = { 1904 = { is_empty = yes } }
+						1904 = {
+							add_core = COT
+							cede_province = COT
+							change_culture = noric
+							change_religion = celtic_religion
+						}
+					}
+				if = {
+					limit = { 1902 = { is_empty = yes } }
+						1902 = {
 							add_core = COT
 							cede_province = COT
 							change_culture = noric
@@ -620,7 +638,7 @@ province_event = {
 	hidden = yes
 
 	trigger = {
-		province_id = 1002
+		province_id = 1203
 		is_year = 385
 		NOT = { is_year = 420 }
 		NOT = { started_in = 395.1.1 }
@@ -634,18 +652,10 @@ province_event = {
 	option = {
 		name = "gaul_invasion.12.a"
 			ai_chance = { factor = 100 }
-			if = {	limit = { 998 = { is_empty = yes } } 
-				998 = {
+			if = {	limit = { 1239 = { is_empty = yes } } 
+				1239 = {
 					add_core = ERA
 					cede_province = ERA
-					change_culture = noric
-					change_religion = celtic_religion
-					}
-				}
-			if = {	limit = { 999 = { is_empty = yes } } 
-				999 = {
-					add_core = ARA
-					cede_province = ARA
 					change_culture = noric
 					change_religion = celtic_religion
 					}
@@ -664,7 +674,7 @@ province_event = {
 	hidden = yes
 
 	trigger = {
-		province_id = 1002
+		province_id = 1203
 		is_year = 385
 		NOT = { is_year = 420 }
 		NOT = { started_in = 395.1.1 }
@@ -678,8 +688,8 @@ province_event = {
 	option = {
 		name = "gaul_invasion.12.a"
 			ai_chance = { factor = 100 }
-			if = {	limit = { 1046 = { is_empty = yes } } 
-				1046 = {
+			if = {	limit = { 1908 = { is_empty = yes } } 
+				1908 = {
 					add_core = OSI
 					cede_province = OSI
 					change_culture = noric
@@ -701,7 +711,7 @@ province_event = {
 	hidden = yes
 
 	trigger = {
-		province_id = 1002
+		province_id = 1203
 		is_year = 390
 		NOT = { is_year = 425 }
 		NOT = { started_in = 395.1.1 }
@@ -715,8 +725,8 @@ province_event = {
 	option = {
 		name = "gaul_invasion.12.a"
 			ai_chance = { factor = 100 }
-			if = {	limit = { 1047 = { is_empty = yes } } 
-				1047 = {
+			if = {	limit = { 1913 = { is_empty = yes } } 
+				1913 = {
 					add_core = COT
 					cede_province = COT
 					change_culture = noric
@@ -724,8 +734,8 @@ province_event = {
 					}
 				}
 				if = {
-					limit = { 1048 = { is_empty = yes } }
-						1048 = {
+					limit = { 1912 = { is_empty = yes } }
+						1912 = {
 							add_core = COT
 							cede_province = COT
 							change_culture = noric
@@ -733,24 +743,24 @@ province_event = {
 						}
 					}
 			if = {
-					limit = { 1072 = { is_empty = yes } }
-						1072 = {
+					limit = { 1908 = { is_empty = yes } }
+						1908 = {
 							add_core = COT
 							cede_province = COT
 							change_religion = celtic_religion
 						}
 					}
 			if = {
-					limit = { 1042 = { is_empty = yes } }
-						1042 = {
+					limit = { 1906 = { is_empty = yes } }
+						1906 = {
 							add_core = ANR
 							cede_province = ANR
 							change_religion = celtic_religion
 						}
 				}
 			if = {
-					limit = { 1041 = { is_empty = yes } }
-						1041 = {
+					limit = { 1907 = { is_empty = yes } }
+						1907 = {
 							add_core = ANR
 							cede_province = ANR
 							change_religion = celtic_religion
@@ -771,7 +781,7 @@ province_event = {
 	hidden = yes
 
 	trigger = {
-		province_id = 1002
+		province_id = 1203
 		is_year = 395
 		NOT = { is_year = 425 }
 		NOT = { started_in = 400.1.1 }
@@ -785,32 +795,16 @@ province_event = {
 	option = {
 		name = "gaul_invasion.12.a"
 			ai_chance = { factor = 100 }
-			if = {	limit = { 1069 = { is_empty = yes } } 
-				1069 = {
+			if = {	limit = { 1911 = { is_empty = yes } } 
+				1911 = {
 					add_core = CS2
 					cede_province = CS2
 					change_religion = celtic_religion
 					}
 				}
 			if = {
-					limit = { 1070 = { is_empty = yes } }
-						1070 = {
-							add_core = CS2
-							cede_province = CS2
-							change_religion = celtic_religion
-						}
-				}
-			if = {
-					limit = { 1091 = { is_empty = yes } }
-						1091 = {
-							add_core = CS2
-							cede_province = CS2
-							change_religion = celtic_religion
-						}
-				}
-			if = {
-					limit = { 1095 = { is_empty = yes } }
-						1095 = {
+					limit = { 1917 = { is_empty = yes } }
+						1917 = {
 							add_core = CS2
 							cede_province = CS2
 							change_religion = celtic_religion
@@ -845,8 +839,8 @@ province_event = {
 		name = "gaul_invasion.12.a"
 				ai_chance = { factor = 100 }
 			if = {
-					limit = { 687 = { NOT = { is_core = SC1 } } }
-				687 = {
+					limit = { 1247 = { NOT = { is_core = SC1 } } }
+				1247 = {
 					add_core = SC1
 					cede_province = SC1
 					change_culture = noric
@@ -854,16 +848,16 @@ province_event = {
 				}
 			}
 			if = {
-					limit = { 686 = { NOT = { is_core = DND } } }
-				686 = {
+					limit = { 1248 = { NOT = { is_core = DND } } }
+				1248 = {
 					add_core = DND
 					cede_province = DND
 					change_religion = celtic_religion
 				}
 			}
 			if = {
-					limit = { 684 = { is_empty = yes } }
-						684 = {
+					limit = { 1246 = { is_empty = yes } }
+						1246 = {
 							add_core = SC1
 							cede_province = SC1
 							change_culture = noric
@@ -871,8 +865,8 @@ province_event = {
                         			}
 				}
 			if = {
-					limit = { 683 = { is_empty = yes } }
-						683 = {
+					limit = { 1245 = { is_empty = yes } }
+						1245 = {
 							add_core = SC1
 							cede_province = SC1
 							change_culture = noric
@@ -880,8 +874,16 @@ province_event = {
 						}
 				}
 			if = {
-					limit = { 677 = { is_empty = yes } }
-						677 = {
+					limit = { 1243 = { is_empty = yes } }
+						1243 = {
+							add_core = CLG
+							cede_province = CLG
+							change_religion = celtic_religion
+						}
+				}
+			if = {
+					limit = { 1180 = { is_empty = yes } }
+						1180 = {
 							add_core = CLG
 							cede_province = CLG
 							change_religion = celtic_religion

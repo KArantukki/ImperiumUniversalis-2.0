@@ -11,10 +11,10 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			owns_core_province = 2607
-			owns_core_province = 2608
-			owns_core_province = 2609
-			owns_core_province = 2614
+			owns_core_province = 2930
+			owns_core_province = 2951
+			owns_core_province = 2936
+			owns_core_province = 2927
 			OR = {
 				religion = buddhism
 				secondary_religion = buddhism

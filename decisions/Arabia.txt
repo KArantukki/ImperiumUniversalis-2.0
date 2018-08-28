@@ -8,10 +8,12 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			owns_core_province = 1789
-			owns_core_province = 1937
-			owns_core_province = 2587
-			owns_core_province = 2581
+			owns_core_province = 2611
+			owns_core_province = 2616
+			owns_core_province = 2613
+			owns_core_province = 2622
+			owns_core_province = 2562
+			owns_core_province = 2557
 		}
 		effect = {
 			change_tag = ARB

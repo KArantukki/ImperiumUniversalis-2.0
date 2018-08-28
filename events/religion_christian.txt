@@ -11,9 +11,9 @@ country_event = {
 	
 	major = yes
 	trigger = {
-		owns = 1793
+		owns = 2277
 		is_year = 780
-		1793 = {
+		2277 = {
 			OR = {
 				religion = jewish
 				religion = samaritan
@@ -190,7 +190,7 @@ country_event = {
 	picture = paulus
 	
 	trigger = {
-		owns = 1793
+		owns = 2277
 		religion_years = { christian = 5 }
 		has_global_flag = christ_beginn
 		NOT = { has_country_flag = christians_in_capital }

@@ -1,7 +1,7 @@
 add_core = GC3
 owner = GC3
 controller = GC3
-culture = lazi
+culture = pontic
 religion = skneli
 hre = no
 base_tax = 0

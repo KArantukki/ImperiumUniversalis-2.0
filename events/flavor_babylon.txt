@@ -11,9 +11,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		owns_or_vassal_of = 1882
+		owns_or_vassal_of = 2500
 		is_subject = no
-		1882 = { has_province_modifier = gardens_of_babylon }
+		2500 = { has_province_modifier = gardens_of_babylon }
 	}
 	
 	mean_time_to_happen = {
@@ -65,7 +65,7 @@ country_event = {
 					owner = { num_of_loans = 10 }
 					}
 		}
-		1882 = { remove_province_modifier = gardens_of_babylon }
+		2500 = { remove_province_modifier = gardens_of_babylon }
 		add_prestige = -20
 		hidden_effect = { hide_ambient_object = babylon }
 	}

@@ -333,7 +333,6 @@ macedonia_region = {
 greek_region = {
 	areas = {
 	thessalia_area
-	thesprotia_area
 	magnesia_area
 	phocis_area
 	acarnania_area
@@ -817,7 +816,7 @@ western_india_region = {
 	}
 }
 southern_india_region = {
-	areas = {
+	areas = { 
 	kuntala_area
 	karavira_area
 	dravida_east

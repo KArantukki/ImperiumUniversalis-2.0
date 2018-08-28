@@ -1,100 +1,18 @@
 country_decisions = {
 	
-	 ai_war_media = {
-		major = yes
-		potential = {
-			tag = ANH
-			ai = yes
-			is_subject_of = MDI
-			NOT = { has_country_flag = persian_ind_war_flag }
-		}
-		allow = {
-			is_at_war =  no
-			is_subject_of = MDI
-			is_year = 197
-		}
-		effect = {
-			set_country_flag = persian_ind_war_flag
-				declare_war_with_cb = {
-					who = MDI
-					casus_belli = cb_independence_war
-				}
-			add_prestige = 25
-			add_army_tradition = 25
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			infantry = capital
-			cavalry = capital
-			cavalry = capital
-			cavalry = capital
-			cavalry = capital
-			artillery = capital
-			artillery = capital
-			artillery = capital
-			artillery = capital
-			artillery = capital
-			artillery = capital
-			}
-		ai_importance = 50	
-		ai_will_do = {
-			factor = 400
-		}
-	}
-	 form_persia_nation = {
-		major = yes
-		potential = {
-			NOT = { exists = PSE }
-			primary_culture = persian
-			NOT = { TAG = SAP }
-		}
-		allow = {
-			is_at_war =  no
-			is_subject = no
-			is_tribal = no
-			owns_core_province = 1967
-			owns_core_province = 1968
-			owns_core_province = 3724
-		}
-		effect = {
-			change_tag = PSE
-				persis_region = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = PSE
-				}
-			}
-		ai_importance = 50	
-		ai_will_do = {
-			factor = 400
-		}
-	}
 	 form_media_nation = {
 		major = yes
 		potential = {
+			NOT = { exists = MDI }
 			NOT = { TAG = MDI }
 			NOT = { TAG = SAP }
 			primary_culture = medians
+			
 		}
 		allow = {
 			is_at_war =  no
 			media_region = { type = all owned_by = ROOT }
-			owns_core_province = 1941
+			owns_core_province = 2688
 		}
 		effect = {
 			change_tag = MDI
@@ -146,12 +64,12 @@ country_decisions = {
 		allow = {
 			is_subject = no
 			government_rank = 3
-			owns_core_province = 1967
-			owns_core_province = 1968
-			owns_core_province = 1940
-			owns_core_province = 1941
-			owns_core_province = 2046
-			owns_core_province = 2038
+			owns_core_province = 2688
+			owns_core_province = 2682
+			owns_core_province = 2666
+			owns_core_province = 2705
+			owns_core_province = 2828
+			owns_core_province = 2835
 			total_development = 650
 		}
 		effect = {
@@ -160,33 +78,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 100
-		}
-	}
-	build_persepolis = {
-		potential = {
-			TAG = PSE
-			NOT = { has_global_flag = persepolis_built }
-		}
-		allow = {
-			is_at_war =  no
-			owns_core_province = 1968
-			is_subject = no
-			adm_tech = 6
-			years_of_income = 1.0
-		}
-		effect = {
-				set_capital = 1968
-				set_global_flag = persepolis_built
-				add_years_of_income = -1.0
-				1968 = {
-					add_base_manpower = -2
-					add_base_production = 1
-					add_base_tax = 1
-				}
-			}
-		ai_importance = 50	
-		ai_will_do = {
-			factor = 200
 		}
 	}
 	edict_of_cyrus = {
@@ -212,38 +103,6 @@ country_decisions = {
 		}
 	}
 	
-	 build_gate_of_nations = {
-		potential = {
-			owns = 1968
-			1968 = {
-				NOT = { has_great_project = gate_of_nations }
-			}
-			NOT = { has_global_flag = gate_of_nations_built }
-		}
-		allow = {
-			treasury = 300
-			capital = 1968
-			dip_tech = 6
-			1968 = {
-			NOT = { has_construction = building } }
-		}
-		effect = {
-			add_treasury = -300
-			set_global_flag = gate_of_nations_built
-			
-			add_country_modifier = {
-					name = gate_of_nations_built
-					duration = -1
-				}
-			1968 = {
-				add_great_project = gate_of_nations
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-	
 	 form_iran_nation = {
 		major = yes
 		potential = {
@@ -259,13 +118,13 @@ country_decisions = {
 			is_at_war =  no
 			is_subject = no
 			is_tribal = no
-			owns_core_province = 1967
-			owns_core_province = 1968
-			owns_core_province = 1940
-			owns_core_province = 1941
-			owns_core_province = 2046
-			owns_core_province = 2038
-			num_of_cities = 75
+			owns_core_province = 2688
+			owns_core_province = 2682
+			owns_core_province = 2666
+			owns_core_province = 2705
+			owns_core_province = 2828
+			owns_core_province = 2835
+			num_of_cities = 90
 		}
 		effect = {
 			change_tag = SAP

@@ -11,11 +11,11 @@ country_event = {
 	
 	trigger = {
 		TAG = CHT
-		896 = { 
+		1760 = { 
 			is_empty = yes
 		}
 		any_owned_province = { 
-			any_neighbor_province = { province_id = 896 }
+			any_neighbor_province = { province_id = 1760 }
 		}
 	}
 	
@@ -27,7 +27,7 @@ country_event = {
 		name = "germania.1.a"
 			custom_tooltip = germania.1.tt
 			hidden_effect = {
-				896 = {
+				1760 = {
 					create_colony = 1000
 				}
 			}
@@ -98,11 +98,11 @@ country_event = {
 	
 	trigger = {
 		TAG = CHT
-		total_development = 16
+		total_development = 8
 		OR = {
-			911 = { is_empty = yes }
-			2276 = { is_empty = yes }
-			908 = { is_empty = yes }
+			490 = { is_empty = yes }
+			491 = { is_empty = yes }
+			493 = { is_empty = yes }
 		}
 	}
 	
@@ -144,9 +144,9 @@ country_event = {
 				every_province = {
 						limit = {
 							OR = {
-								province_id = 911
-								province_id = 2276
-								province_id = 908
+								province_id = 490
+								province_id = 491
+								province_id = 493
 							}
 							is_empty = yes
 						}

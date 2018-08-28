@@ -82,7 +82,7 @@ country_event = {
 			}
 		is_year = 455
 		NOT = { is_year = 460 }
-		owns = 219
+		owns = 53
 	}
 	
 	mean_time_to_happen = {
@@ -581,7 +581,7 @@ country_event = {
 	trigger = {
 		tag = ROM
 		NOT = { started_in = 245.1.1 }
-		NOT = { has_ruler = "Servius Tullius" }
+		NOT = { ADM = 4 }
 		is_year = 205
 		government = monarchy
 		NOT = { has_country_flag = last_king_of_rome }
@@ -631,7 +631,7 @@ country_event = {
 	trigger = {
 		tag = ROM
 		NOT = { started_in = 220.1.1 }
-		has_ruler = "Servius Tullius of Rome"
+		MIL = 4
 		NOT = { has_country_flag = servius_tullius_mil_reform }
 	}
 	
@@ -684,7 +684,7 @@ country_event = {
 	trigger = {
 		tag = ROM
 		NOT = { started_in = 220.1.1 }
-		has_ruler = "Servius Tullius of Rome"
+		ADM = 4
 		NOT = { has_country_flag = servius_tullius_adm_reform }
 		NOT = { has_country_modifier = servius_tullius_adm }
 	}
@@ -851,11 +851,11 @@ country_event = {
 		
 	trigger = {
 		tag = ROM
-		is_year = 196
+		is_year = 190
 		NOT = { started_in = 200.1.1 }
-		owns = 219
+		owns = 53
 		treasury = 50
-		219 = {
+		53 = {
 				is_capital = yes
 				num_free_building_slots = 1
             	NOT = { has_building = small_city_walls }
@@ -874,7 +874,7 @@ country_event = {
 			limit = { AI = NO }
 			add_treasury = -50
 		}
-		219 = {
+		53 = {
 		      add_province_modifier = {
 				name = servian_wall
 				duration = -1
@@ -1021,44 +1021,6 @@ country_event = {
 	}
 }
 
-########################################################################################
-# trade center
-########################################################################################
-country_event = {
-	id = rome.26
-	title = "rome.26.t"
-	desc = "rome.26.d"
-	picture = city
-	fire_only_once = yes
-		
-	trigger = {
-		tag = ROM
-		is_year = 200
-		NOT = { started_in = 225.1.1 }
-		219 = {
-		    NOT = { has_province_modifier = center_of_trade_modifier_1 }
-		    NOT = { has_province_modifier = center_of_trade_modifier_2 }
-		    NOT = { has_province_modifier = center_of_trade_modifier_3 }
-			}
-		owns_or_vassal_of = 280
-		owns_or_vassal_of = 219
-		owns_or_vassal_of = 218
-	}
-
-	mean_time_to_happen = {
-		months = 120
-	}
-
-	option = {
-		name = "rome.26.a"
-		219 = {
-		     add_permanent_province_modifier = {
-				name = center_of_trade_modifier_1
-				duration = -1
-			}
-		}
-	}
-}
 
 ########################################################################################
 # colloseum
@@ -1071,9 +1033,9 @@ country_event = {
 	fire_only_once = yes
 		
 	trigger = {
-		owns = 219
+		owns = 53
 		NOT = { has_global_flag = colloseum_happened }
-		219 = { has_building = huge_theater }
+		53 = { has_building = huge_theater }
 	}
 
 	mean_time_to_happen = {

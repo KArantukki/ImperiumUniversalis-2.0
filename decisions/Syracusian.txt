@@ -8,16 +8,16 @@ country_decisions = {
 			NOT = { TAG = HEL }
 			primary_culture = italiote
 			OR = {
-				capital_scope = { area = western_sicilia_area	}
-				capital_scope = { area = northern_sicilia_area	}
-				capital_scope = { area = eastern_sicilia_area	}
+				capital_scope = { area = sicilia_west	}
+				capital_scope = { area = sicilia_est	}
+				capital_scope = { area = syracuse_area	}
 			}
 		}
 		allow = {
 			is_at_war =  no
-			western_sicilia_area = { type = all owned_by = ROOT }
-			northern_sicilia_area = { type = all owned_by = ROOT }
-			eastern_sicilia_area = { type = all owned_by = ROOT }
+			sicilia_west = { type = all owned_by = ROOT }
+			sicilia_est = { type = all owned_by = ROOT }
+			syracuse_area = { type = all owned_by = ROOT }
 		}
 		effect = {
 			change_tag = SCI
@@ -25,9 +25,9 @@ country_decisions = {
 			every_province = {
 						limit = {	is_core = CAR
 									OR = {
-									area = western_sicilia_area
-									area = northern_sicilia_area
-									area = eastern_sicilia_area
+									area = sicilia_west
+									area = sicilia_est
+									area = syracuse_area
 									}
 						}
 									remove_core = CAR
@@ -57,11 +57,11 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			owns_core_province = 251
-			owns_core_province = 245
-			owns_core_province = 244
-			owns_core_province = 242
-			owns_core_province = 238
+			owns_core_province = 10
+			owns_core_province = 14
+			owns_core_province = 17
+			owns_core_province = 22
+			owns_core_province = 4
 		}
 		effect = {
 				change_tag = MHE

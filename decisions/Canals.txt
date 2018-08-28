@@ -15,13 +15,13 @@ country_decisions = {
 				adm_tech = 16
 			}
 			treasury = 2500
-			owns_or_vassal_of = 1770
-			owns_or_vassal_of = 1775
-			owns_or_vassal_of = 1778
+			owns_or_vassal_of = 739
+			owns_or_vassal_of = 742
+			owns_or_vassal_of = 743
 		}
 		effect = {
 			add_treasury = -2500
-			1775 = {	# Bilbeis
+			742 = {	
 				add_great_project = nile_canal
 			}
 			set_global_flag = nile_canal_built

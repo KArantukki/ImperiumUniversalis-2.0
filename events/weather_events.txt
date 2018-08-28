@@ -19,7 +19,6 @@ province_event = {
 			region = media_region
 			region = aethiops
 			continent = china
-			continent = sarmatia
 			continent = europe
 			continent = india
 		}
@@ -99,7 +98,6 @@ province_event = {
 		OR = {
 			continent = asia
 			continent = africa
-			continent = persia
 			continent = india
 			continent = china
 			region = italian_region
@@ -248,10 +246,14 @@ province_event = {
 		NOT = { is_month = 7 }
 		OR = {
 			continent = africa
-			continent = persia
 			continent = india
+			continent = asia
 		}
-		has_terrain = desert
+		OR = {
+			has_terrain = desert
+			has_terrain = coastal_desert
+			has_terrain = salt_desert
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -259,7 +261,7 @@ province_event = {
 		
 		modifier = {
 				factor = 1.3
-					continent = persia
+					continent = asia
 			}
 		modifier = {
 				factor = 1.5

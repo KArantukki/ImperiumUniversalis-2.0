@@ -12,6 +12,8 @@ province_event = {
 	
 	trigger = {
 		trade_goods = ivory
+		elephant_domestication = 100
+		owner = { has_institution = elephant_domestication }
 		NOT = { has_province_modifier = elephant_work }
 		OR = {
 			had_province_flag = { flag = elephant_event_happened days = 3650 }

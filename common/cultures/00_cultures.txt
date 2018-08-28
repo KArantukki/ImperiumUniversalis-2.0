@@ -1,3 +1,55 @@
+#italic
+#hellenic
+#illyrian_group
+#dacothracian_group
+#macedon_group
+
+#gaulish_group
+#iberian_group
+#germanic_group
+#aquitani_group
+#eastern_celtic
+#veneti_group
+#britannic_group
+#ibero_celtic_group
+#ligures_group
+#nuragic_group
+#raeti_group
+#turdetani_group
+#balto_slavic_group
+
+#indian_group
+#dravidian_group
+
+#thraco_phrygian_group
+#anatolian_group
+#armenian_group
+#semitic
+#caucasian_group
+#egyptian_group
+#akkadian_group
+#zargos_group
+
+#north_african_group
+#cushitic_group
+#arabic_group
+#central_african_group
+
+#eastern_iranian_group
+#western_iranian
+#steppe_people
+
+#xiongnu_group
+#chinese_group
+#viet_group
+#yue_group
+#tibetan_group
+#korean_group
+#tungusic_group
+#nanman_group
+#malay_group
+
+
 italic = {
 	graphical_culture = italicgfx
 	country = { has_banners = 1 }
@@ -718,9 +770,6 @@ anatolian_group = {
 	kappadokian = {
 		primary = KPP
 	}
-	pontic = {
-		primary = PON
-	}
 	
 	male_names = {
 		Car Lyndus Mysus Atys Nastes Amphimachos Nomion Dares Mycale Tantalus Pelops Broteas 
@@ -1077,7 +1126,7 @@ steppe_people = {
 		}
 	}
 	parni = {
-		primary = PRN
+		primary = DAH
 		male_names = {
 			Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
 			Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
@@ -1180,6 +1229,17 @@ caucasian_group = {
 	}
 	albanian = {
 		primary = ALB
+		male_names = {
+			Pharnavaz Sauromaces Mirian Pharnajom Artaxias Artoces Mirian Arshak
+			Mihrdat Amazasp Pharasmanes Ghadam Vache Bacurius Trdat Aspacures Dachi 
+			Vakhatang Archil
+		}
+		dynasty_names = {
+			Pharnavai Sauromacai Mirai Pharnajoi Artaxai Dachoi Vachoi
+		}
+	}
+	pontic = {
+		primary = PON
 		male_names = {
 			Pharnavaz Sauromaces Mirian Pharnajom Artaxias Artoces Mirian Arshak
 			Mihrdat Amazasp Pharasmanes Ghadam Vache Bacurius Trdat Aspacures Dachi 

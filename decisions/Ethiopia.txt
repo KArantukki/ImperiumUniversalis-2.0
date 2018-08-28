@@ -8,9 +8,9 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			owns_core_province = 2532
-			owns_core_province = 2541
-			owns_core_province = 2542
+			owns_core_province = 868
+			owns_core_province = 870
+			owns_core_province = 872
 			total_development = 500
 		}
 		effect = {
@@ -51,9 +51,9 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			owns_core_province = 2364
-			owns_core_province = 2357
-			owns_core_province = 2370
+			owns_core_province = 785
+			owns_core_province = 762
+			owns_core_province = 757
 		}
 		effect = {
 				add_accepted_culture = egyptian
@@ -93,7 +93,6 @@ country_decisions = {
 				add_patriarch_authority = 0.25
 				capital_scope = {
 					add_base_production = 1
-					add_base_manpower = -1
 				}
 				add_country_modifier = {
 					name = stelae_cult

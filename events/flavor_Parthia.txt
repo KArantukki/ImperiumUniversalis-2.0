@@ -14,7 +14,7 @@ country_event = {
 	
 	trigger = {
 		tag = PRT
-		primary_culture = persian
+		primary_culture = parthian
 		is_year = 500
 		NOT = { is_year = 525 }
 	}

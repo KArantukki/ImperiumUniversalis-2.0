@@ -11,7 +11,7 @@ province_event = {
 	
 	trigger = {
 		OR = {
-			area = palmyra_area
+			area = palmyrene_area
 			owned_by = PLM
 		}
 		culture_group = semitic
@@ -64,7 +64,7 @@ province_event = {
 		culture_group = hellenic
 		is_year = 475
 		owned_by = PER
-		area = mysia_area
+		area = aeolia_area
 	}
 	
 	mean_time_to_happen = {

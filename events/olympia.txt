@@ -11,9 +11,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-				owns = 532
-				controls = 532
-				532 = {
+				owns = 941
+				controls = 941
+				941 = {
 					NOT = { has_siege = yes }	
 				}
 				is_month = 4

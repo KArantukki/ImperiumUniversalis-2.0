@@ -5,64 +5,62 @@
 culture_lvl1 = {
 	penalty = 0.01
 	bonus = {
-		heir_chance = 0.15
-		legitimacy = 1
+		same_culture_advisor_cost = -0.1
+		prestige = 0.1
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
+
 
 	history = {
 		OR = {
-			base_production = 3
-			base_tax = 2
+			base_tax = 1
 			culture_group = italic
 			culture_group = hellenic
+			culture_group = macedon_group
 			culture_group = iberian_group
-			culture_group = indian_group
-			culture_group = anatolian_group
-			culture_group = semitic
-			culture_group = chinese_group
-			culture_group = egyptian_group
-			culture_group = akkadian_group
+			culture_group = aquitani_group
+			culture_group = eastern_celtic
 			culture_group = veneti_group
 			culture_group = ligures_group
-			culture_group = macedon_group
-			culture_group = korean_group
+			culture_group = raeti_group
 			culture_group = turdetani_group
-			culture_group = thraco_phrygian_group
-			culture_group = nanman_group
-			culture_group = non_vedic_group
-			culture_group = western_iranian
+			culture_group = indian_group
 			culture_group = dravidian_group
-			culture = lepontic
+			culture_group = thraco_phrygian_group
+			culture_group = anatolian_group
+			culture_group = armenian_group
+			culture_group = semitic
+			culture_group = egyptian_group
+			culture_group = zargos_group
+			culture_group = western_iranian
+			culture_group = chinese_group
+			culture_group = yue_group
+			culture_group = korean_group
+			culture = odrysian
+			culture = paeonian
+			culture = iapyges
+			culture = ardiaei
+			culture = illyrian
+			culture = gaul
+			culture = southern_gaul
+			culture = axumite
+			culture = nubian
 			culture = sabaean
-			culture = celtiberian
-			owned_by = PSE
+			culture = qatabanian
+			culture = hadramitic
+			culture = gerrhan
 			AND = {
-				culture_group = celtiberian
-				is_year = 250
-			}
-			AND = {
-				culture_group = eastern_iranian_group
-				is_year = 250
-			}
-			AND = {
-				culture_group = arabic_group
-				is_year = 275
-			}
-			AND = {
-				culture = noric
-				is_year = 350
+				culture_group = ibero_celtic_group
+				is_year = 200
 			}
 			AND = {
 				culture_group = gaulish_group
-				is_year = 375
+				is_year = 200
 			}
 			AND = {
-				culture_group = ibero_celtic_group
-				is_year = 350
+				culture_group = caucasian_group
+				is_year = 225
 			}
-			# has_province_modifier = center_of_trade_modifier_1
+			is_year = 275
 		}
 	}
 
@@ -75,8 +73,8 @@ culture_lvl1 = {
 			scale = yes
 			factor = 0.2
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_4_commoners
-				base_production = 4
+				tooltip = tooltip_at_least_3_upper_class
+				base_tax = 3
 			}
 		}
 		modifier = {
@@ -109,50 +107,45 @@ culture_lvl1 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.1
 			custom_trigger_tooltip = {
-				tooltip = tooltip_small_market
+				tooltip = tooltip_small_bath
 				OR = {
-					has_building = small_market
-					has_building = medium_market
-					has_building = great_market
+					has_building = small_bath
+					has_building = big_bath
 				}
 			}
 		}
-		# modifier = {
-			# scale = yes
-			# factor = 0.25
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_small_harbor
-				# OR = {
-					# has_building = small_harbor
-					# has_building = big_harbor
-					# has_building = harbor_district
-				# }
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.5
-			# potential = {
-			# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-			# }
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-				# any_trade_node_member_province = { 
-					# culture_lvl1 = 100
-				# }
-			# }
-		# }
+		modifier = {
+			scale = yes
+			factor = 0.1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_building_small_theater
+				OR = {
+					has_building = small_theater
+					has_building = big_theater
+					has_building = great_theater
+				}
+			}
+		}
+		modifier = {
+			scale = yes
+			factor = 0.1
+			potential = {
+				is_capital = yes
+				owner = { is_tribal = no }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_advisor_philosopher
+				owner = {
+					OR  = {
+							philosopher_adv = 1
+							philosopher_adv = 2
+							philosopher_adv = 3
+						}
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
@@ -170,91 +163,32 @@ culture_lvl1 = {
 culture_lvl2 = {
 	penalty = 0.01
 	bonus = {
-		advisor_cost = -0.1
+		monthly_splendor = 0.5
 		advisor_pool = 1
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
 
 	history = {
 		OR = {
-			base_production = 9
-			base_tax = 6
+			base_tax = 3
 			culture_group = hellenic
+			culture = etruscan
+			culture_group = indian_group
+			culture_group = thraco_phrygian_group
 			culture_group = anatolian_group
 			culture_group = semitic
-			culture_group = chinese_group
 			culture_group = egyptian_group
 			culture_group = akkadian_group
-			owned_by = PSE
-			AND = {
-				culture_group = iberian_group
-				is_year = 450
-			}
-			AND = {
-				culture_group = indian_group
-				is_year = 225
-			}
-			AND = {
-				culture_group = iberian_group
-				is_year = 450
-			}
+			culture_group = chinese_group
+			province_id = 133
 			AND = {
 				culture_group = italic
-				is_year = 350
-			}
-			AND = {
-				culture_group = dravidian_group
-				is_year = 250
-			}
-			AND = {
-				culture_group = veneti_group
-				is_year = 500
-			}
-			AND = {
-				culture_group = macedon_group
-				is_year = 450
-			}
-			AND = {
-				culture_group = korean_group
-				is_year = 550
+				is_year = 325
 			}
 			AND = {
 				culture_group = western_iranian
-				is_year = 400
+				is_year = 250
 			}
-			AND = {
-				culture_group = non_vedic_group
-				is_year = 400
-			}
-			AND = {
-				culture_group = nanman_group
-				is_year = 400
-			}
-			AND = {
-				culture_group = thraco_phrygian_group
-				is_year = 400
-			}
-			AND = {
-				culture_group = turdetani_group
-				is_year = 450
-			}
-			AND = {
-				culture_group = celtiberian
-				is_year = 450
-			}
-			AND = {
-				culture_group = eastern_iranian_group
-				is_year = 450
-			}
-			AND = {
-				culture_group = arabic_group
-				is_year = 500
-			}
-			# AND = {
-				# has_province_modifier = center_of_trade_modifier_1
-				# owner = { is_tribal = no }
-			# }
+			is_year = 400
 		}
 	}
 
@@ -268,8 +202,8 @@ culture_lvl2 = {
 			scale = yes
 			factor = 0.2
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_8_commoners
-				base_production = 8
+				tooltip = tooltip_at_least_3_upper_class
+				base_tax = 3
 			}
 		}
 		modifier = {
@@ -302,50 +236,44 @@ culture_lvl2 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.1
 			custom_trigger_tooltip = {
-				tooltip = tooltip_small_market
+				tooltip = tooltip_small_bath
 				OR = {
-					has_building = small_market
-					has_building = medium_market
-					has_building = great_market
+					has_building = small_bath
+					has_building = big_bath
 				}
 			}
 		}
-		# modifier = {
-			# scale = yes
-			# factor = 0.25
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_small_harbor
-				# OR = {
-					# has_building = small_harbor
-					# has_building = big_harbor
-					# has_building = harbor_district
-				# }
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.5
-			# potential = {
-			# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-			# }
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-				# any_trade_node_member_province = { 
-					# culture_lvl2 = 100
-				# }
-			# }
-		# }
+		modifier = {
+			scale = yes
+			factor = 0.1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_building_small_theater
+				OR = {
+					has_building = small_theater
+					has_building = big_theaterv
+				}
+			}
+		}
+		modifier = {
+			scale = yes
+			factor = 0.1
+			potential = {
+				is_capital = yes
+				owner = { is_tribal = no }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_advisor_philosopher
+				owner = {
+					OR  = {
+							philosopher_adv = 1
+							philosopher_adv = 2
+							philosopher_adv = 3
+						}
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
@@ -363,29 +291,41 @@ culture_lvl2 = {
 culture_lvl3 = {
 	penalty = 0.01
 	bonus = {
-		prestige_decay = -0.02
-		idea_cost = -0.1
+		culture_conversion_cost = -0.1
+		global_missionary_strength = 0.01
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
 
 	history = {
 		OR = {
+			base_tax = 5
 			AND = {
-				owned_by = ROM
+				culture_group = italic
+				is_year = 650
+			}
+			AND = {
+				culture_group = hellenic
+				is_year = 600
+			}
+			AND = {
+				culture_group = western_iranian
+				is_year = 850
+			}
+			AND = {
+				culture_group = indian_group
+				is_year = 800
+			}
+			AND = {
+				culture_group = semitic
 				is_year = 700
 			}
 			AND = {
-				culture_group = chinese_group
-				is_year = 650
+				culture_group = akkadian_group
+				is_year = 700
 			}
-			# AND = {
-				# OR = {
-						# has_province_modifier = center_of_trade_modifier_2
-						# has_province_modifier = center_of_trade_modifier_3
-					# }
-				# owner = { is_tribal = no }
-			# }
+			AND = {
+				culture_group = egyptian_group
+				is_year = 750
+			}
 		}
 	}
 
@@ -395,10 +335,10 @@ culture_lvl3 = {
 	embracement_speed = {
 		modifier = {
 			scale = yes
-			factor = 0.2
+			factor = 0.1
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_12_commoners
-				base_production = 12
+				tooltip = tooltip_at_least_6_upper_class
+				base_tax = 6
 			}
 		}
 		modifier = {
@@ -431,59 +371,45 @@ culture_lvl3 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.1
 			custom_trigger_tooltip = {
-				tooltip = tooltip_medium_market
+				tooltip = tooltip_small_bath
 				OR = {
-					has_building = medium_market
-					has_building = great_market
+					has_building = small_bath
+					has_building = big_bath
 				}
 			}
 		}
-		# modifier = {
-			# scale = yes
-			# factor = 0.25
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_big_harbor
-				# OR = {
-					# has_building = big_harbor
-					# has_building = harbor_district
-				# }
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.5
-			# potential = {
-			# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-			# }
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-				# any_trade_node_member_province = { 
-					# culture_lvl3 = 100
-				# }
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.1
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_center_of_trade_modifier_2
-				# OR = {
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-			# }
-		# }
+		modifier = {
+			scale = yes
+			factor = 0.1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_building_small_theater
+				OR = {
+					has_building = small_theater
+					has_building = big_theater
+					has_building = great_theater
+				}
+			}
+		}
+		modifier = {
+			scale = yes
+			factor = 0.08
+			potential = {
+				is_capital = yes
+				owner = { is_tribal = no }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_advisor_philosopher
+				owner = {
+					OR  = {
+							philosopher_adv = 1
+							philosopher_adv = 2
+							philosopher_adv = 3
+						}
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
@@ -501,11 +427,9 @@ culture_lvl3 = {
 culture_lvl4 = {
 	penalty = 0.01
 	bonus = {
-		province_warscore_cost = -0.1
-		enemy_core_creation = 0.1
+		prestige = 0.1
+		diplomatic_reputation = 1 
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
 
 	history = {
 		always = no
@@ -520,8 +444,8 @@ culture_lvl4 = {
 			scale = yes
 			factor = 0.2
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_15_commoners
-				base_production = 15
+				tooltip = tooltip_at_least_9_upper_class
+				base_tax = 9
 			}
 		}
 		modifier = {
@@ -548,65 +472,46 @@ culture_lvl4 = {
 				tooltip = tooltip_any_border_province_has_embraced_this_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					culture_lvl4 = 100
+					culture_lv14 = 100
 				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.1
 			custom_trigger_tooltip = {
-				tooltip = tooltip_medium_market
-				OR = {
-					has_building = medium_market
-					has_building = great_market
+				tooltip = tooltip_big_bath
+					has_building = big_bath
+			}
+		}
+		modifier = {
+			scale = yes
+			factor = 0.1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_building_big_theater
+					OR = {
+					has_building = big_theater
+					has_building = great_theater }
+			}
+		}
+		modifier = {
+			scale = yes
+			factor = 0.06
+			potential = {
+				is_capital = yes
+				owner = { is_tribal = no }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_advisor_philosopher
+				owner = {
+					OR  = {
+							philosopher_adv = 1
+							philosopher_adv = 2
+							philosopher_adv = 3
+						}
 				}
 			}
 		}
-		# modifier = {
-			# scale = yes
-			# factor = 0.25
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_big_harbor
-				# OR = {
-					# has_building = big_harbor
-					# has_building = harbor_district
-				# }
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.5
-			# potential = {
-			# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-			# }
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-				# any_trade_node_member_province = { 
-					# culture_lvl4 = 100
-				# }
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.1
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_center_of_trade_modifier_2
-				# OR = {
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-			# }
-		# }
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
@@ -624,11 +529,9 @@ culture_lvl4 = {
 culture_lvl5 = {
 	penalty = 0.01
 	bonus = {
-		claim_duration = 0.2
-		ae_impact = -0.05
+		global_unrest = -1
+		culture_conversion_cost = -0.1
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
 
 	history = {
 		always = no
@@ -643,8 +546,8 @@ culture_lvl5 = {
 			scale = yes
 			factor = 0.2
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_18_commoners
-				base_production = 18
+				tooltip = tooltip_at_least_12_upper_class
+				base_tax = 12
 			}
 		}
 		modifier = {
@@ -653,7 +556,7 @@ culture_lvl5 = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
 				any_friendly_coast_border_province = {
-					culture_lvl5 = 100
+					culture_lvl4 = 100
 				}
 			}
 		}
@@ -663,7 +566,7 @@ culture_lvl5 = {
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
-						culture_lvl5 = 100
+						culture_lvl4 = 100
 					}
 				}
 			}
@@ -671,56 +574,46 @@ culture_lvl5 = {
 				tooltip = tooltip_any_border_province_has_embraced_this_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					culture_lvl5 = 100
+					culture_lv14 = 100
 				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.1
 			custom_trigger_tooltip = {
-				tooltip = tooltip_great_market
-				has_building = great_market
+				tooltip = tooltip_big_bath
+					has_building = big_bath
 			}
 		}
-		# modifier = {
-			# scale = yes
-			# factor = 0.25
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_harbor_district
-				# has_building = harbor_district
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.5
-			# potential = {
-			# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-			# }
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-				# any_trade_node_member_province = { 
-					# culture_lvl5 = 100
-				# }
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.1
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_center_of_trade_modifier_3
-					# has_province_modifier = center_of_trade_modifier_3
-			# }
-		# }
+		modifier = {
+			scale = yes
+			factor = 0.1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_building_big_theater
+					OR = {
+					has_building = big_theater
+					has_building = great_theater }
+			}
+		}
+		modifier = {
+			scale = yes
+			factor = 0.04
+			potential = {
+				is_capital = yes
+				owner = { is_tribal = no }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_advisor_philosopher
+				owner = {
+					OR  = {
+							philosopher_adv = 1
+							philosopher_adv = 2
+							philosopher_adv = 3
+						}
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
@@ -738,11 +631,9 @@ culture_lvl5 = {
 culture_lvl6 = {
 	penalty = 0.01
 	bonus = {
-		diplomats = 1
-		diplomatic_reputation = 0.5
+		global_missionary_strength = 0.01
+		advisor_cost = -0.1
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
 
 	history = {
 		always = no
@@ -757,8 +648,8 @@ culture_lvl6 = {
 			scale = yes
 			factor = 0.2
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_21_commoners
-				base_production = 21
+				tooltip = tooltip_at_least_15_upper_class
+				base_tax = 15
 			}
 		}
 		modifier = {
@@ -767,7 +658,7 @@ culture_lvl6 = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
 				any_friendly_coast_border_province = {
-					culture_lvl6 = 100
+					culture_lvl4 = 100
 				}
 			}
 		}
@@ -777,7 +668,7 @@ culture_lvl6 = {
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
-						culture_lvl6 = 100
+						culture_lvl4 = 100
 					}
 				}
 			}
@@ -785,56 +676,46 @@ culture_lvl6 = {
 				tooltip = tooltip_any_border_province_has_embraced_this_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					culture_lvl6 = 100
+					culture_lv14 = 100
 				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.1
 			custom_trigger_tooltip = {
-				tooltip = tooltip_great_market
-				has_building = great_market
+				tooltip = tooltip_big_bath
+					has_building = big_bath
 			}
 		}
-		# modifier = {
-			# scale = yes
-			# factor = 0.25
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_harbor_district
-				# has_building = harbor_district
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.5
-			# potential = {
-			# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-			# }
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				# OR = {
-					# has_province_modifier = center_of_trade_modifier_1
-					# has_province_modifier = center_of_trade_modifier_2
-					# has_province_modifier = center_of_trade_modifier_3
-				# }
-				# any_trade_node_member_province = { 
-					# culture_lvl6 = 100
-				# }
-			# }
-		# }
-		# modifier = {
-			# scale = yes
-			# factor = 0.1
-			# custom_trigger_tooltip = {
-				# tooltip = tooltip_center_of_trade_modifier_3
-					# has_province_modifier = center_of_trade_modifier_3
-			# }
-		# }
+		modifier = {
+			scale = yes
+			factor = 0.1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_building_big_theater
+					OR = {
+					has_building = big_theater
+					has_building = great_theater }
+			}
+		}
+		modifier = {
+			scale = yes
+			factor = 0.02
+			potential = {
+				is_capital = yes
+				owner = { is_tribal = no }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_advisor_philosopher
+				owner = {
+					OR  = {
+							philosopher_adv = 1
+							philosopher_adv = 2
+							philosopher_adv = 3
+						}
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)

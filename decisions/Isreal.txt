@@ -12,7 +12,8 @@ country_decisions = {
 			NOT = { exists = ISR }
 			is_at_war =  no
 			is_subject = no
-			owns_core_province = 1793
+			owns_core_province = 2277
+			owns_core_province = 2286
 			total_development = 150
 		}
 		effect = {
@@ -21,19 +22,13 @@ country_decisions = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
 			}
-				judah_area = {
+				judaea_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = ISR
 				}
-				upper_israel = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ISR
-				}
-				lower_israel = {
+				samaria_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}

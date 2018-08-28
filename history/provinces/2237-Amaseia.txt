@@ -9,6 +9,10 @@ trade_goods = meat_animals
 capital = "Amaseia"
 culture = chalybean
 religion = luwian_religion
+add_permanent_province_modifier = {
+		name = center_of_trade_modifier_1
+		duration = -1
+	}
 
 discovered_by = caucaso_anatolian
 discovered_by = iranian

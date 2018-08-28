@@ -13,7 +13,7 @@ country_event = {
 		tag = MAC
 		started_in = 387.1.1
 		NOT = { started_in = 418.1.1 }
-		owns = 602
+		owns = 1032
 		has_ruler = "Philip II Argead"
 		NOT = {	has_country_flag = philipe_start }
 		}
@@ -27,7 +27,7 @@ country_event = {
 	option = {
 		name = "rm.1.a"
 		ai_chance = { factor = 100 }
-		602 = {
+		1032 = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
@@ -98,8 +98,8 @@ country_event = {
 		has_ruler = "Philip II Argead"
         has_country_flag = philipe_start
 		has_country_flag = philipe_reform
-		owns = 614
-		owns = 615
+		owns = 1074
+		owns = 1075
 		NOT = {	has_country_modifier = macedonian_reforms }
 		} 
 	

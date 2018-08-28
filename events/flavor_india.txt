@@ -12,7 +12,7 @@ province_event = {
 	major = yes
 	
 	trigger = {
-		area = ceylon_area
+		area = rajarata_area
 		has_port = yes
 		is_year = 240
 		NOT = { started_in = 260.1.1 }
@@ -44,7 +44,7 @@ province_event = {
 					infantry = SMV
 					infantry = SMV
 					every_province = {
-						limit = { area = ceylon_area }
+						limit = { area = rajarata_area }
 						add_core = SMV
 					}
 		}

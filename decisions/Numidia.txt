@@ -8,8 +8,9 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			owns_core_province = 377
-			owns_core_province = 422
+			owns_core_province = 589
+			owns_core_province = 624
+			owns_core_province = 563
 			total_development = 250
 		}
 		effect = {

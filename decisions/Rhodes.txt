@@ -1,31 +1,4 @@
 country_decisions = {
-	 build_the_coloss = {
-		potential = {
-			NOT = { has_global_flag = coloss_built }
-			owns = 728
-			728 = {
-				NOT = { has_great_project = coloss }
-			}
-			
-		}
-		allow = {
-			treasury = 300
-			adm_tech = 12
-			728 = {
-			NOT = { has_construction = building } }
-		}
-		effect = {
-			add_treasury = -300
-			set_global_flag = coloss_built
-			add_prestige = 10
-			728 = {
-				add_great_project = coloss
-			}
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
 	 form_rhodos_nation = {
 		major = yes
 		potential = {
@@ -42,34 +15,34 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			owns_or_vassal_of = 728
-			owns_or_vassal_of = 726
-			owns_or_vassal_of = 727
+			owns_or_vassal_of = 995
+			owns_or_vassal_of = 996
+			owns_or_vassal_of = 997
 		}
 		effect = {
 					change_tag = RHO
 					if = {
-						limit = { NOT = { owns = 728 } }
-						728 = { cede_province = RHO }
+						limit = { NOT = { owns = 995 } }
+						995 = { cede_province = RHO }
 					}
 					if = {
-						limit = { NOT = { owns = 727 } }
-						727 = { cede_province = RHO }
+						limit = { NOT = { owns = 996 } }
+						996 = { cede_province = RHO }
 					}
 					if = {
-						limit = { NOT = { owns = 726 } }
-						726 = { cede_province = RHO }
+						limit = { NOT = { owns = 997 } }
+						997 = { cede_province = RHO }
 					}
-					set_capital = 728
-					728 = {
+					set_capital = 995
+					995 = {
 						rename_capital = Rhodos
 						change_province_name = Rhodos
 						add_base_production = 2
 					}
-					727 = {
+					996 = {
 						add_base_production = -1
 					}
-					726 = {
+					997 = {
 						add_base_production = -1
 					}
 					
@@ -91,7 +64,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_power = 50
-			dip_tech = 4
+			dip_tech = 5
 		}
 		effect = {
 			add_dip_power = -50

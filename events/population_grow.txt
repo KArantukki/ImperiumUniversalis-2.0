@@ -24,6 +24,9 @@ province_event = {
 				OR = {
 					has_terrain = farmlands
 					has_terrain = floodplains
+					has_terrain = nile_plain
+					has_terrain = mesopotamian_plain
+					has_terrain = alluvial_plain
 				}
 			}
 		modifier = {
@@ -208,6 +211,9 @@ province_event = {
 				OR = {
 					has_terrain = farmlands
 					has_terrain = floodplains
+					has_terrain = nile_plain
+					has_terrain = mesopotamian_plain
+					has_terrain = alluvial_plain
 				}
 			}
 		modifier = {
@@ -392,6 +398,9 @@ province_event = {
 				OR = {
 					has_terrain = farmlands
 					has_terrain = floodplains
+					has_terrain = nile_plain
+					has_terrain = mesopotamian_plain
+					has_terrain = alluvial_plain
 				}
 			}
 		modifier = {

@@ -16,10 +16,10 @@ country_decisions = {
 		allow = {
 			is_at_war =  no
 			is_subject = no
-			owns_core_province = 34
-			owns_core_province = 25
-			owns_core_province = 19
-			owns_core_province = 36
+			owns_core_province = 159
+			owns_core_province = 209
+			owns_core_province = 157
+			owns_core_province = 253
 		}
 		effect = {
 			change_tag = IBB
@@ -47,8 +47,8 @@ country_decisions = {
 			primary_culture = lusitani
 			capital_scope = {
 				OR = {
-					area = northern_lusitania
-					area = southern_lusitania
+					area = lusitania_west
+					area = lusitania_east
 				}
 			}
 		}
@@ -63,13 +63,13 @@ country_decisions = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
 			}
-				northern_lusitania = {
+				lusitania_west = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = LUS
 				}
-				southern_lusitania = {
+				lusitania_east = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}

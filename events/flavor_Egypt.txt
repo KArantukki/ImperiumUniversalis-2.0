@@ -11,7 +11,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		1752 = {
+		728 = {
 			has_province_modifier = alexandria_libary
 		}
 		owns = 1752
@@ -127,84 +127,4 @@ country_event = {
 				set_ruler_flag = sister_marriage_happened
 		}
 
-}
-########################################################################################
-# Move Alexanders Body to Siwa
-########################################################################################
-country_event = {
-	id = egypt.3
-	title = "egypt.3.t"
-    desc = "egypt.3.d"
-	picture = alexander
-	
-        trigger = {
-        tag = PTO
-		culture_group = hellenic
-		is_at_war = no
-		owns_core_province = 1744
-		1763 = {
-			has_province_modifier = dead_body_of_alexander 
-		}
-		NOT = { has_global_flag = move_alexanders_body_to_siwa }
-}
-
-       mean_time_to_happen = {
-		months = 36
-	                             }
-
-       option = {
-		  name = "egypt.3.a"
-		  add_legitimacy = -10
-          add_prestige = -10
-		  
-		set_global_flag = move_alexanders_body_to_siwa
-	}
-       option = {
-		  name = "egypt.3.b"
-		  add_legitimacy = 10
-          add_prestige = -10
-		  add_adm_power = -25
-		  
-			1763 = {
-			remove_province_modifier = dead_body_of_alexander
-				if = {
-							limit = {
-								has_province_modifier = maussoleum_for_alexander
-							}
-							remove_province_modifier = maussoleum_for_alexander
-						}
-		}
-			1752 = {
-			add_province_modifier = {
-							name = dead_body_of_alexander
-							duration = -1
-						}
-		}
-		
-		set_global_flag = move_alexanders_body_to_siwa
-	}
-       option = {
-		  name = "egypt.3.b"
-		  add_legitimacy = 10
-          add_prestige = 10
-		  add_adm_power = -50
-		  
-		  1763 = {
-			remove_province_modifier = dead_body_of_alexander
-				if = {
-							limit = {
-								has_province_modifier = maussoleum_for_alexander
-							}
-							remove_province_modifier = maussoleum_for_alexander
-						}
-		}
-			1744 = {
-			add_province_modifier = {
-							name = dead_body_of_alexander
-							duration = -1
-						}
-		}
-		
-		set_global_flag = move_alexanders_body_to_siwa
-	}
 }

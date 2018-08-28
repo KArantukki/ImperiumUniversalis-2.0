@@ -1,68 +1,6 @@
 namespace = diadochi
 
 ########################################################################################
-# end of thracia
-########################################################################################
-country_event = {
-	id = diadochi.3
-	title = "diadochi.3.t"
-	desc = "diadochi.3.d"
-	picture = lostbattle
-	
-	trigger = {
-		owns = 633
-		any_owned_province = { is_core = THR }
-		NOT = { exists = THR }
-		NOT = { has_global_flag = end_of_thracia }
-	}
-	
-	mean_time_to_happen = {
-		months = 12
-		
-	}
-	option = {
-		name = "diadochi.3.a"
-		set_global_flag = end_of_thracia
-		every_province = {
-				limit = {	is_core = THR
-				}
-							remove_core = THR
-			}
-			
-	}
-}
-########################################################################################
-# end of seleucids
-########################################################################################
-country_event = {
-	id = diadochi.4
-	title = "diadochi.4.t"
-	desc = "diadochi.4.d"
-	picture = lostbattle
-	
-	trigger = {
-		owns = 1825
-		any_owned_province = { is_core = SEL }
-		NOT = { exists = SEL }
-		NOT = { has_global_flag = end_of_seleucids }
-	}
-	
-	mean_time_to_happen = {
-		months = 12
-		
-	}
-	option = {
-		name = "diadochi.4.a"
-		set_global_flag = end_of_seleucids
-		every_province = {
-				limit = {	is_core = SEL
-				}
-							remove_core = SEL
-			}
-			
-	}
-}
-########################################################################################
 # natives for the army
 ########################################################################################
 country_event = {

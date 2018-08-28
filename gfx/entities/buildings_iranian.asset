@@ -55,15 +55,15 @@ entity = {
 }
 entity = {
 	name = "iraniangfx_city_1"
-	pdxmesh = "iraniangfx_city_0"
+	pdxmesh = "babyloniangfx_city_0"
 }
 entity = {
 	name = "iraniangfx_city_2"
-	pdxmesh = "iraniangfx_city_0"
+	pdxmesh = "babyloniangfx_city_0"
 }
 entity = {
 	name = "iraniangfx_city_3"
-	pdxmesh = "iraniangfx_city_0"
+	pdxmesh = "babyloniangfx_city_0"
 }
 
 
@@ -73,11 +73,11 @@ entity = {
 }
 entity = {
 	name = "iraniangfx_castle_2"
-	pdxmesh = "iraniangfx_city_0"
+	pdxmesh = "babyloniangfx_city_0"
 }
 entity = {
 	name = "iraniangfx_castle_3"
-	pdxmesh = "iraniangfx_city_0"
+	pdxmesh = "babyloniangfx_city_0"
 }
 
 

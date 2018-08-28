@@ -5,10 +5,7 @@ country_decisions = {
 		potential = {
 			NOT = { exists = EPI }
 			NOT = { TAG HEL }
-			OR = {
 				primary_culture = epirot
-				primary_culture = northwest_doric
-			}
 		}
 		allow = {
 			is_at_war =  no
@@ -38,13 +35,19 @@ country_decisions = {
 					limit = { is_tribal = yes }					
 					change_government = epirote_monarchy
 				}
-				northern_epirus_area = {
+				chaonia_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = EPI
 				}
-				southern_epirus_area = {
+				mollosia_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = EPI
+				}
+				thesprotia_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
@@ -80,25 +83,27 @@ country_decisions = {
 		potential = {
 			TAG = EPI
 			NOT = { has_country_flag = move_capital_to_ambracia_flag }
-			NOT = { capital = 590 }
+			NOT = { capital = 1035 }
 			num_of_cities = 5
 		}
 		allow = {
-			owns_core_province = 590
+			owns_core_province = 1035
 		}
 		effect = {
 			random_owned_province = {
+				limit = { base_production = 2 }
 				add_base_production = -1
 			}
 			random_owned_province = {
+				limit = { base_manpower = 2 }
 				add_base_manpower = -1
 			}
-			590 = {
+			1035 = {
 				add_base_tax = 1
 				add_base_production = 1
 				change_culture = epirot
 			}
-			set_capital = 590
+			set_capital = 1035
 			set_country_flag = move_capital_to_ambracia_flag
 		}
 		ai_will_do = {

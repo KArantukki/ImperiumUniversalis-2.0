@@ -26,17 +26,15 @@
 #######################################
 
 writing_system = {
-	penalty = 0.5
+	penalty = 0.25
 	bonus = {
-		advisor_cost = -0.1
-		advisor_pool = 1
+		innovativeness_gain = 0.25
+		technology_cost = -0.1
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
 
 	history = {
 		OR = {
-				owned_by = TRQ
+				owned_by = TTQ
 				culture_group = hellenic
 				culture_group = anatolian_group
 				culture_group = semitic
@@ -45,13 +43,9 @@ writing_system = {
 				culture_group = western_iranian
 				culture_group = egyptian_group
 				culture_group = chinese_group
-				culture_group = chinese_group
 				culture_group = indian_group
-				culture_group = non_vedic_group
-				culture_group = veneti_group
 				culture_group = italic
-				culture = lepontic
-				region = gallia_cisalpina
+				culture = sabaean
 				region = italian_region
 				region = magna_graecia
 			AND = {
@@ -95,10 +89,6 @@ writing_system = {
 			}
 				is_year = 600
 		}
-		OR = {
-			is_tribal = no
-			is_year = 200
-		}
 		
 		
 	}
@@ -116,9 +106,9 @@ writing_system = {
 		
 		modifier = {
 			scale = yes
-			factor = 1.0
+			factor = 0.5
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_writing_system
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_institution
 				any_friendly_coast_border_province = {
 					writing_system = 100
 				}
@@ -126,7 +116,7 @@ writing_system = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.25
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
@@ -135,7 +125,7 @@ writing_system = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_border_province_has_embraced_writing_system
+				tooltip = tooltip_any_coast_border_province_has_embraced_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
 					writing_system = 100
@@ -144,22 +134,20 @@ writing_system = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.1
 			potential = {
 			OR = {
 					has_province_modifier = center_of_trade_modifier_1
 					has_province_modifier = center_of_trade_modifier_2
 					has_province_modifier = center_of_trade_modifier_3
-					has_province_modifier = center_of_trade_silkroad_modifier
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_writing_system
+				tooltip = tooltip_any_center_of_trade_has_embraced_institution
 				OR = {
 					has_province_modifier = center_of_trade_modifier_1
 					has_province_modifier = center_of_trade_modifier_2
 					has_province_modifier = center_of_trade_modifier_3
-					has_province_modifier = center_of_trade_silkroad_modifier
 				}
 				any_trade_node_member_province = { 
 					writing_system = 100
@@ -168,7 +156,7 @@ writing_system = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.1
 			custom_trigger_tooltip = {
 				tooltip = tooltip_has_upper_class
 				base_tax = 1
@@ -190,7 +178,7 @@ writing_system = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.2
 			potential = {
 				is_capital = yes
 				owner = { is_tribal = no }
@@ -204,7 +192,7 @@ writing_system = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			potential = {
 				is_capital = yes
 				owner = { is_tribal = no }
@@ -237,81 +225,85 @@ writing_system = {
 #######################################
 
 coin_usage = {
-	penalty = 0.5
+	penalty = 0.25
 	bonus = {
-		advisor_cost = -0.1
-		advisor_pool = 1
+		trade_efficiency = 0.15
+		production_efficiency = 0.15
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
 
 	history = {
 		OR = {
-				owned_by = TRQ
-				culture_group = hellenic
-				culture_group = anatolian_group
-				culture_group = semitic
-				culture_group = caanan_group
-				culture_group = akkadian_group
-				culture_group = western_iranian
-				culture_group = egyptian_group
-				culture_group = chinese_group
-				culture_group = chinese_group
-				culture_group = indian_group
-				culture_group = non_vedic_group
-				culture_group = veneti_group
-				culture_group = italic
-				culture = lepontic
-				region = gallia_cisalpina
-				region = italian_region
-				region = magna_graecia
+			owned_by = LYD
 			AND = {
-				culture_group = turdetani_group
-				is_year = 210
+				culture_group = hellenic
+				OR = {
+					region = greek_region
+					region = mare_aegaeum_islands_region
+					region = ionia_region
+				}
+				is_year = 200
 			}
 			AND = {
-				culture_group = iberian_group
+				culture_group = hellenic
+				is_year = 225
+			}
+			AND = {
+				culture_group = chinese_group
 				is_year = 250
 			}
 			AND = {
-				culture_group = eastern_iranian_group
+				culture_group = indian_group
+				is_year = 225
 			}
 			AND = {
-				culture_group = armenian_group
+				culture_group = semitic
+				is_year = 200
+			}
+			AND = {
+				culture_group = akkadian_group
+				is_year = 225
+			}
+			AND = {
+				culture_group = western_iranian
+				is_year = 245
+			}
+			AND = {
+				culture_group = eastern_iranian_group
 				is_year = 350
 			}
 			AND = {
-				culture_group = dravidian_group
-				is_year = 255
+				culture_group = illyrian_group
+				is_year = 225
 			}
 			AND = {
-				culture_group = korean_group
-				is_year = 300
+				culture_group = eastern_celtic
+				is_year = 480
 			}
 			AND = {
-				culture_group = arabic_group
-				is_year = 400
-			}
-			AND = {
-				culture_group = caucasian_group
-				is_year = 400
-			}
-			AND = {
-				culture_group = ibero_celtic_group
-				is_year = 410
+				culture_group = italic
+				is_year = 450
 			}
 			AND = {
 				culture_group = gaulish_group
-				is_year = 310
+				is_year = 525
 			}
-				is_year = 600
+			AND = {
+				culture_group = iberian_group
+				is_year = 425
+			}
+			AND = {
+				culture_group = dravidian_group
+				is_year = 300
+			}
+			AND = {
+				culture_group = dacothracian_group
+				is_year = 400
+			}
+			AND = {
+				owner = { is_tribal = no }
+				is_year = 650
+			}
 		}
-		OR = {
-			is_tribal = no
-			is_year = 200
-		}
-		
-		
 	}
 	
 	# no need for events, as its there from the start.
@@ -327,35 +319,35 @@ coin_usage = {
 		
 		modifier = {
 			scale = yes
-			factor = 1.0
+			factor = 0.5
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_writing_system
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_institution
 				any_friendly_coast_border_province = {
-					writing_system = 100
+					coin_usage = 100
 				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.25
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
-						writing_system = 100
+						coin_usage = 100
 					}
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_border_province_has_embraced_writing_system
+				tooltip = tooltip_any_coast_border_province_has_embraced_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					writing_system = 100
+					coin_usage = 100
 				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.2
 			potential = {
 			OR = {
 					has_province_modifier = center_of_trade_modifier_1
@@ -365,7 +357,7 @@ coin_usage = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_writing_system
+				tooltip = tooltip_any_center_of_trade_has_embraced_institution
 				OR = {
 					has_province_modifier = center_of_trade_modifier_1
 					has_province_modifier = center_of_trade_modifier_2
@@ -373,21 +365,13 @@ coin_usage = {
 					has_province_modifier = center_of_trade_silkroad_modifier
 				}
 				any_trade_node_member_province = { 
-					writing_system = 100
+					coin_usage = 100
 				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
-			custom_trigger_tooltip = {
-				tooltip = tooltip_has_upper_class
-				base_tax = 1
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.25
+			factor = 0.1
 			potential = {
 				is_capital = yes
 				owner = { is_tribal = no }
@@ -401,33 +385,19 @@ coin_usage = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.1
 			potential = {
-				is_capital = yes
-				owner = { is_tribal = no }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_idea_group_scholars_ideas
-				owner = {
-					full_idea_group = scholars_ideas
+				owner = { is_tribal = yes }
+				OR = {
+					trade_goods = gold
+					trade_goods = silver
 				}
 			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.25
-			potential = {
-				is_capital = yes
-				owner = { is_tribal = no }
-			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_scholar_skill
-				owner = {
-					OR  = {
-							scholar_advisor = 1
-							scholar_advisor = 2
-							scholar_advisor = 3
-						}
+				tooltip = tooltip_has_gold_or_silver
+				OR = {
+					trade_goods = gold
+					trade_goods = silver
 				}
 			}
 		}
@@ -448,81 +418,63 @@ coin_usage = {
 #######################################
 
 elephant_domestication = {
-	penalty = 0.5
+	penalty = 0.0
 	bonus = {
-		advisor_cost = -0.1
-		advisor_pool = 1
+		cavalry_power = 0.025
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
+
 
 	history = {
 		OR = {
-				owned_by = TRQ
-				culture_group = hellenic
-				culture_group = anatolian_group
-				culture_group = semitic
-				culture_group = caanan_group
-				culture_group = akkadian_group
-				culture_group = western_iranian
-				culture_group = egyptian_group
-				culture_group = chinese_group
-				culture_group = chinese_group
+			region = gandhara
+			region = northern_india_region
+			region = western_india_region
+			region = southern_india_region
+			region = eastern_india_region
+			region = arachosia_region
+			region = baktria_region
+			region = parthia_region
+			region = persis_region
+			region = media_region
+			region = mesopotamia_region
+			region = syria_region
+			region = canaan_region
+			region = lower_egypt_region
+			region = upper_egypt_region
+			region = nubia_region
+			region = aethiops
+			region = lybia_region
+			region = africa_region
+			region = mauretania_region
+		}
+		OR = {
 				culture_group = indian_group
-				culture_group = non_vedic_group
-				culture_group = veneti_group
-				culture_group = italic
-				culture = lepontic
-				region = gallia_cisalpina
-				region = italian_region
-				region = magna_graecia
-			AND = {
-				culture_group = turdetani_group
-				is_year = 210
-			}
-			AND = {
-				culture_group = iberian_group
-				is_year = 250
-			}
+				culture_group = dravidian_group
 			AND = {
 				culture_group = eastern_iranian_group
+				is_year = 245
 			}
 			AND = {
-				culture_group = armenian_group
+				culture_group = western_iranian
+				is_year = 275
+			}
+			AND = {
+				culture_group = akkadian_group
+				is_year = 325
+			}
+			AND = {
+				culture_group = semitic
 				is_year = 350
 			}
 			AND = {
-				culture_group = dravidian_group
-				is_year = 255
+				culture_group = egyptian_group
+				is_year = 350
 			}
 			AND = {
-				culture_group = korean_group
-				is_year = 300
-			}
-			AND = {
-				culture_group = arabic_group
+				culture_group = cushitic_group
 				is_year = 400
 			}
-			AND = {
-				culture_group = caucasian_group
-				is_year = 400
-			}
-			AND = {
-				culture_group = ibero_celtic_group
-				is_year = 410
-			}
-			AND = {
-				culture_group = gaulish_group
-				is_year = 310
-			}
-				is_year = 600
-		}
-		OR = {
-			is_tribal = no
-			is_year = 200
-		}
-		
-		
+		}	
 	}
 	
 	# no need for events, as its there from the start.
@@ -539,10 +491,13 @@ elephant_domestication = {
 		modifier = {
 			scale = yes
 			factor = 1.0
+			potential = {
+				elephant_region = yes
+				}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_writing_system
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_institution
 				any_friendly_coast_border_province = {
-					writing_system = 100
+					elephant_domestication = 100
 				}
 			}
 		}
@@ -550,95 +505,18 @@ elephant_domestication = {
 			scale = yes
 			factor = 0.5
 			potential = {
+				elephant_region = yes
 				NOT = {
 					any_friendly_coast_border_province = {
-						writing_system = 100
+						elephant_domestication = 100
 					}
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_border_province_has_embraced_writing_system
+				tooltip = tooltip_any_coast_border_province_has_embraced_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					writing_system = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.5
-			potential = {
-			OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-					has_province_modifier = center_of_trade_silkroad_modifier
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_writing_system
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-					has_province_modifier = center_of_trade_silkroad_modifier
-				}
-				any_trade_node_member_province = { 
-					writing_system = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.5
-			custom_trigger_tooltip = {
-				tooltip = tooltip_has_upper_class
-				base_tax = 1
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.25
-			potential = {
-				is_capital = yes
-				owner = { is_tribal = no }
-			}
-			custom_trigger_tooltip = {
-				tooltip = skilled_ruler_adm
-				owner = {
-					ADM = 6
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.5
-			potential = {
-				is_capital = yes
-				owner = { is_tribal = no }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_idea_group_scholars_ideas
-				owner = {
-					full_idea_group = scholars_ideas
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.25
-			potential = {
-				is_capital = yes
-				owner = { is_tribal = no }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_advisor_scholar_skill
-				owner = {
-					OR  = {
-							scholar_advisor = 1
-							scholar_advisor = 2
-							scholar_advisor = 3
-						}
+					elephant_domestication = 100
 				}
 			}
 		}

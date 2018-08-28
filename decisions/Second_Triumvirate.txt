@@ -7,11 +7,11 @@ country_decisions = {
 			italian_region = { type = all owned_by = ROM }
 		}
 		allow = {
-			owns = 178
-			owns = 192
-			owns = 182
-			owns = 251
-			owns = 255
+			owns = 103
+			owns = 82
+			owns = 92
+			owns = 10
+			owns = 22
 		}
 		effect = {
 			hidden_effect = {
@@ -103,7 +103,7 @@ country_decisions = {
 			change_tag = ROI
 			set_government_rank = 5
 			change_government = principate
-			set_capital = 219
+			set_capital = 53
 		}
 		
 		ai_importance = 200	
@@ -173,7 +173,7 @@ country_decisions = {
 		effect = {
 			switch_tag = ROM
 			change_government = classic_republic
-			set_capital = 219
+			set_capital = 53
 			hidden_effect = {
 				every_province = {
 					limit = { 

@@ -101,7 +101,7 @@ at_war = {
 }
 
 same_dynasty = {
-	opinion = 10
+	opinion = 0
 }
 royal_marriage = {
 	opinion = 30

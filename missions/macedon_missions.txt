@@ -26,21 +26,21 @@ mac_missions_expansion_1 = {
 		}
 		effect = {
 				add_mil_power = 250
-				thasus = {
+				rhodope_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				thracia_west = {
+				hellespont_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				thracia_east = {
+				europa_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -59,49 +59,49 @@ mac_missions_expansion_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 				OR = {
-					area = thasus
-					area = thracia_west
-					area = thracia_east
+					area = rhodope_area
+					area = hellespont_area
+					area = europa_area
 				}
 		}
 		trigger = {
-			thasus = {
+			rhodope_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			thracia_west = {
+			hellespont_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			thracia_east = {
+			europa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 				add_mil_power = 250
-				thracian_cost = {
+				haemimontus_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				odrysia = {
+				odryssia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				dardania = {
+				thracia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				moesia_inferior = {
+				dacia_mediterranea = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -139,17 +139,17 @@ mac_missions_expansion_1 = {
 				if = {
 					limit = {
 						any_country = {
-							owns = 747
-							owns = 816
-							owns = 839
+							owns = 2158
+							owns = 2195
+							owns = 2154
 							num_of_cities = 40
 						}
 					}
 					random_country = {
 						limit = {
-							owns = 747
-							owns = 816
-							owns = 839
+							owns = 2158
+							owns = 2195
+							owns = 2154
 							num_of_cities = 40 }
 						reverse_add_casus_belli = {
 							target = MAC
@@ -167,26 +167,26 @@ mac_missions_expansion_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 				OR = {
-					area = thracian_cost
-					area = odrysia
-					area = dardania
-					area = moesia_inferior
+					area = haemimontus_area
+					area = odryssia_area
+					area = thracia_area
+					area = dacia_mediterranea
 				}
 		}
 		trigger = {
-			thracian_cost = {
+			haemimontus_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			odrysia = {
+			odryssia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			dardania = {
+			thracia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			moesia_inferior = {
+			dacia_mediterranea = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -196,6 +196,34 @@ mac_missions_expansion_1 = {
 					name = "conquered_thracia_modifier"
 					duration = 9125 #25 years
 				}
+				moesia_inferior = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				dacia_ripensis = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				haemus_mons = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				ister_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 				dacia_maluensis = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -204,13 +232,6 @@ mac_missions_expansion_1 = {
 					add_permanent_claim = ROOT
 				}
 				dacia_inferior = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				montes_serrorum = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -255,7 +276,7 @@ mac_missions_expansion_1 = {
 			}
 		}
 		effect = {
-				1752 = {
+				728 = {
 					change_province_name = "Alexandreia"
 					rename_capital = "Alexandreia"
 					change_culture = ROOT
@@ -280,23 +301,23 @@ mac_missions_expansion_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 				OR = {
-					area = east_cyrene
-					area = west_cyrene
-					province_id = 1744
-					province_id = 490
+					area = cyrenaica_east
+					area = cyrenaica_west
+					province_id = 707
+					province_id = 650
 				}
 		}
 		trigger = {
-			east_cyrene = {
+			cyrenaica_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			west_cyrene = {
+			cyrenaica_west = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			owns = 1744
-			owns = 490
+			owns = 707
+			owns = 650
 		}
 		effect = {
 				add_army_tradition = 10
@@ -359,21 +380,21 @@ mac_missions_expansion_2 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				perrhaebia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				magnesia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 				thessalia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				larisa_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				phthiotis_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -391,21 +412,21 @@ mac_missions_expansion_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
+				area = perrhaebia_area
+				area = magnesia_area
 				area = thessalia_area
-				area = larisa_area
-				area = phthiotis_area
 			}
 		}
 		trigger = {
+			perrhaebia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			magnesia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			thessalia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			larisa_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			phthiotis_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -415,14 +436,14 @@ mac_missions_expansion_2 = {
 					name = "thessalian_horses_modifier"
 					duration = 9125 #25 years
 				}
-				euboea_area = {
+				euboea_inferior = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				south_euboea_area = {
+				euboea_superior = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -436,14 +457,21 @@ mac_missions_expansion_2 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				northern_epirus_area = {
+				thesprotia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				southern_epirus_area = {
+				mollosia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				chaonia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -462,17 +490,17 @@ mac_missions_expansion_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = euboea_area
-				area = south_euboea_area
+				area = euboea_inferior
+				area = euboea_superior
 				region = greek_region
 			}
 		}
 		trigger = {
-			euboea_area = {
+			euboea_inferior = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			south_euboea_area = {
+			euboea_superior = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -673,16 +701,21 @@ mac_missions_expansion_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = northern_epirus_area
-				area = southern_epirus_area
+				area = chaonia_area
+				area = mollosia_area
+				area = thesprotia_area
 			}
 		}
 		trigger = {
-			northern_epirus_area = {
+			chaonia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			southern_epirus_area = {
+			mollosia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			thesprotia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -697,6 +730,13 @@ mac_missions_expansion_3 = {
 					add_permanent_claim = ROOT
 				}
 				magna_graecia = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				epirus_nova = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -836,7 +876,7 @@ mac_missions_expansion_3 = {
 			}
 		}
 		effect = {
-				2407 = {
+				2828 = {
 					change_province_name = "Baktria"
 					rename_capital = "Baktria"
 					change_culture = ROOT
@@ -844,7 +884,7 @@ mac_missions_expansion_3 = {
 					add_base_tax = 1
 					add_base_production = 1
 				}
-				2397 = {
+				2835 = {
 					change_province_name = "Alexandria Margiane"
 					rename_capital = "Alexandria Margiane"
 					change_culture = ROOT
@@ -866,7 +906,7 @@ mac_missions_expansion_3 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				pattala_area = {
+				kachcha_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
@@ -884,55 +924,27 @@ mac_missions_expansion_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				province_id = 2061
-				province_id = 2063
-				province_id = 2621
-				province_id = 2620
-				province_id = 2614
-				province_id = 2612
-				province_id = 2611
-				province_id = 2608
-				province_id = 2606
-				province_id = 2607
-				province_id = 2603
-				province_id = 2610
-				province_id = 2602
-				province_id = 2601
-				province_id = 2604
-				province_id = 2605
-				province_id = 112
+				area = sindhu_area
+				area = kamboja_area
+				area = takshasila_area
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = pse_conquer_indus.tooltip
-				owns = 2061
-				owns = 2063
-				owns = 2621
-				owns = 2620
-				owns = 2614
-				owns = 2612
-				owns = 2611
-				owns = 2608
-				owns = 2606
-				owns = 2607
-				owns = 2603
-				owns = 2610
-				owns = 2602
-				owns = 2601
-				owns = 2604
-				owns = 2605
-				owns = 112
+			sindhu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kamboja_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			takshasila_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-				2614 = {
-					change_culture = ROOT
-					change_religion = ROOT
-					add_base_tax = 1
-					add_base_production = 1
-				}
-				2608 = {
+				2930 = {
 					change_culture = ROOT
 					change_religion = ROOT
 					add_base_tax = 1

@@ -47,8 +47,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		owns = 259
-		259 = {
+		owns = 9
+		9 = {
 			culture = sicels
 		}
 		NOT = { primary_culture = sicels }
@@ -63,7 +63,7 @@ country_event = {
 	
 	
 	immediate = { 
-		259 = {
+		9 = {
 					spawn_rebels = {
 							type = nationalist_rebels
 							size = 5
@@ -75,7 +75,7 @@ country_event = {
 	option = {
 		name = "syracuse.2.a"
 			tooltip = { 
-		259 = {
+		9 = {
 					spawn_rebels = {
 							type = nationalist_rebels
 							size = 5

@@ -1,4 +1,6 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
+1323;1496;sea;927;1;1;1;1;Africa
+
 730;734;sea;1650;1;1;1;1;Nile
 229;734;sea;1650;1;1;1;1;Nile
 229;735;sea;1650;1;1;1;1;Nile
@@ -272,6 +274,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 7;14;sea;1374;-1;-1;-1;-1;Sicily
 124;125;sea;1357;-1;-1;-1;-1;Sardinia-Corsica
 137;515;sea;1337;-1;-1;-1;-1;Gibraltar
+138;515;sea;1337;-1;-1;-1;-1;Gibraltar
 286;287;sea;1287;-1;-1;-1;-1;Vectis
 292;2114;sea;1268;-1;-1;-1;-1;Toliatis
 342;340;sea;1279;-1;-1;-1;-1;Ebudes

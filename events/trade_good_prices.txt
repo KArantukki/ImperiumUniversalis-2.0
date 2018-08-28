@@ -21,9 +21,9 @@ country_event = {
 			culture_group = western_iranian
 		}
 		OR = {
-			has_discovered = 1211
-			has_discovered = 1212
-			has_discovered = 1213
+			has_discovered = 1833
+			has_discovered = 1895
+			has_discovered = 1897
 		}
 	}
 	
@@ -101,7 +101,7 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		owns = 767
+		owns = 2122
 		is_year = 540
 		NOT = { has_global_flag = paper_price_changed }
 	}
@@ -126,7 +126,7 @@ country_event = {
 			value = 0.1
 			duration = -1
 		}
-		767 = {
+		2122 = {
 			change_trade_goods = paper
 		}
 		
@@ -259,10 +259,10 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		owns = 3026
+		owns = 2368
 		NOT = { has_global_flag = ivory_price_changed }
-		3026 = { NOT = { trade_goods = ivory } }
-		3126 = { NOT = { trade_goods = ivory } }
+		2368 = { NOT = { trade_goods = ivory } }
+		2663 = { NOT = { trade_goods = ivory } }
 	}
 	
 	mean_time_to_happen = {
@@ -330,7 +330,7 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		has_institution = metallurgy
+		is_year = 190
 		NOT = { has_global_flag = iron_price_changed }
 	}
 	
@@ -368,9 +368,9 @@ country_event = {
 
 
 	trigger = {
-		owns = 2471
+		owns = 2509
 		is_year = 325
-		NOT = { 2471 = { trade_goods = rice } }
+		NOT = { 2509 = { trade_goods = rice } }
 		NOT = { started_in = 350.1.1 }
 	}
 	
@@ -380,7 +380,8 @@ country_event = {
 	
 	option = {
 		name = "pricesiu.10.a"
-		2471 = { change_trade_goods = rice }
+		2509 = { change_trade_goods = rice }
+		2668 = { change_trade_goods = rice }
 		
 	}
 }

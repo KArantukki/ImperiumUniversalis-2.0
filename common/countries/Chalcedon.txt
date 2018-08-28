@@ -2,10 +2,7 @@
 
 graphical_culture = hellenicgfx
 
-color = { 200 191 231 }
-
-revolutionary_colors = { 5  13  0 }
-
+color = { 62 62 119 }
 
 historical_idea_groups = {
 	scholars_ideas

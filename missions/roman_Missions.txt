@@ -281,11 +281,11 @@ roman_missions_1 = {
 		required_missions = { }
 		completed_by = 416.1.1
 		provinces_to_highlight = {
-			province_id = 280
+			province_id = 54
 		}
 		trigger = {
-			owns = 280
-			is_core = 280
+			owns = 54
+			is_core = 54
 		}
 		effect = {
 			latium_area = {
@@ -344,7 +344,14 @@ roman_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			etruria_area = {
+			etruria_east = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			etruria_west = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -382,10 +389,17 @@ roman_missions_1 = {
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			area = etruria_area
+			OR = {
+			area = etruria_east
+			area = etruria_west
+			}
 		}
 		trigger = {
-			etruria_area = {
+			etruria_east = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			etruria_west = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -395,7 +409,7 @@ roman_missions_1 = {
 				name = "conquered_etruria_mission"
 				duration = 9125 #25 years
 			}
-			aemilia_area = {
+			apennines_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -409,28 +423,7 @@ roman_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			eastern_liguria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_liguria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			transpadana_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_venetia_area = {
+			gallia_cisalpina = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -448,15 +441,13 @@ roman_missions_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = aemilia_area
+				area = apennines_area
 				area = picenum_area
-				area = eastern_liguria_area
-				area = western_liguria_area
-				area = western_venetia_area
+				region = gallia_cisalpina
 			}
 		}
 		trigger = {
-			aemilia_area = {
+			apennines_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -464,25 +455,17 @@ roman_missions_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			eastern_liguria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			western_liguria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			western_venetia_area = {
+			gallia_cisalpina = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			178 = { change_culture = ROOT
+			103 = { change_culture = ROOT
 					change_religion = ROOT }
-			1016 = { change_culture = ROOT
+			108 = { change_culture = ROOT
 					change_religion = ROOT }
-			192 = { change_culture = ROOT
+			82 = { change_culture = ROOT
 					change_religion = ROOT }
 			gallia_narbonensis = {
 				limit = {
@@ -637,9 +620,11 @@ roman_missions_1 = {
 			}
 		}
 		effect = {
-			2272 = { change_culture = ROOT
+			510 = { change_culture = ROOT
 					change_religion = ROOT	}
-			2262 = { change_culture = ROOT
+			508 = { change_culture = ROOT
+					change_religion = ROOT	}
+			507 = { change_culture = ROOT
 					change_religion = ROOT	}
 			raetia_et_noricum = {
 				limit = {
@@ -722,14 +707,14 @@ roman_missions_2 = {
 		icon = mission_training
 		required_missions = {  }
 		trigger = {
-			219 = { has_building = craftsman }
-			219 = { has_building = small_conscription_center }
+			53 = { has_building = craftsman }
+			53 = { has_building = small_conscription_center }
 		}
 		effect = {
 			add_years_of_income = 1.0
 			if = {
-				limit = { 219 = { base_manpower = 2 } }
-				219 = { 	add_base_manpower = -1 
+				limit = { 53 = { base_manpower = 2 } }
+				53 = { 	add_base_manpower = -1 
 									add_base_production = 1 }
 			}
 		}
@@ -741,7 +726,7 @@ roman_missions_2 = {
 								rom_conquer_latins
 								rom_ostiastreets_mission	}
 		trigger = {
-			219 = { has_building = small_city_walls }
+			53 = { has_building = small_city_walls }
 			monthly_income = 6
 			army_size = 12
 		}
@@ -781,15 +766,14 @@ roman_missions_2 = {
 		completed_by = 464.1.1
 		provinces_to_highlight = {
 			OR = {
-				province_id = 219
-				province_id = 220
-				province_id = 221
-				province_id = 223
-				province_id = 224 
+				province_id = 53
+				province_id = 51
+				province_id = 48
+				province_id = 45 
 			}
 		}
 		trigger = {
-			219 = {
+			53 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -799,7 +783,7 @@ roman_missions_2 = {
 					}
 				}
 			}
-			220 = {
+			51 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -809,7 +793,7 @@ roman_missions_2 = {
 					}
 				}
 			}
-			221 = {
+			48 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -819,17 +803,7 @@ roman_missions_2 = {
 					}
 				}
 			}
-			223 = {
-			custom_trigger_tooltip = {
-				tooltip = rom_via_appia.tooltip	
-					OR = {
-						has_building = gravel_road
-						has_building = paved_road
-						has_building = imperial_road
-					}
-				}
-			}
-			224 = {
+			45 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -841,7 +815,14 @@ roman_missions_2 = {
 			}
 		}
 		effect = {
-			samnium_area = {
+			south_samnium_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_samnium_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -858,10 +839,17 @@ roman_missions_2 = {
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}	
-			area = samnium_area
+			OR = {
+			area = south_samnium_area
+			area = north_samnium_area
+			}
 		}
 		trigger = {
-			samnium_area = {
+			south_samnium_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_samnium_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -949,16 +937,18 @@ roman_missions_2 = {
 		completed_by = 479.1.1
 		provinces_to_highlight = {
 			OR = {
-				province_id = 226
-				province_id = 1784
-				province_id = 233
-				province_id = 234
-				province_id = 1782
-				province_id = 238
+				province_id = 46
+				province_id = 40
+				province_id = 36
+				province_id = 31
+				province_id = 26
+				province_id = 21
+				province_id = 22
+				province_id = 24
 			}
 		}
 		trigger = {
-			226 = {
+			46 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -968,7 +958,7 @@ roman_missions_2 = {
 					}
 				}
 			}
-			1784 = {
+				40 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -978,7 +968,7 @@ roman_missions_2 = {
 					}
 				}
 			}
-			233 = {
+				36 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -988,7 +978,7 @@ roman_missions_2 = {
 					}
 				}
 			}
-			234 = {
+				31 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -998,7 +988,7 @@ roman_missions_2 = {
 					}
 				}
 			}
-			1782 = {
+				26 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -1008,7 +998,27 @@ roman_missions_2 = {
 					}
 				}
 			}
-			238 = {
+				21 = {
+			custom_trigger_tooltip = {
+				tooltip = rom_via_appia.tooltip	
+					OR = {
+						has_building = gravel_road
+						has_building = paved_road
+						has_building = imperial_road
+					}
+				}
+			}
+				22 = {
+			custom_trigger_tooltip = {
+				tooltip = rom_via_appia.tooltip	
+					OR = {
+						has_building = gravel_road
+						has_building = paved_road
+						has_building = imperial_road
+					}
+				}
+			}
+				24 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -1020,21 +1030,21 @@ roman_missions_2 = {
 			}
 		}
 		effect = {
-			western_sicilia_area = {
+			sicilia_west = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			northern_sicilia_area = {
+			sicilia_est = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			eastern_sicilia_area = {
+			syracuse_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1053,21 +1063,21 @@ roman_missions_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = western_sicilia_area
-				area = northern_sicilia_area
-				area = eastern_sicilia_area
+				area = sicilia_west
+				area = sicilia_est
+				area = syracuse_area
 				}
 		}
 		trigger = {
-			western_sicilia_area = {
+			sicilia_west = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northern_sicilia_area = {
+			sicilia_est = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			eastern_sicilia_area = {
+			syracuse_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1087,19 +1097,19 @@ roman_missions_2 = {
 		}
 		trigger = {
 			NOT = { exists = CAR }
-			owns = 392
+			owns = 612
 		}
 		effect = {	
 			capital_scope = {
 				add_building = naval_monument
 			}
 			if = {
-				limit = { 392 = { base_tax = 2 } }
-					392 = { add_base_tax = -2 } }
+				limit = { 612 = { base_tax = 2 } }
+					612 = { add_base_tax = -2 } }
 			if = {
-				limit = { 392 = { base_production = 4 } }
-					392 = { add_base_production = -4 } }
-			392 = { change_culture = ROOT
+				limit = { 612 = { base_production = 4 } }
+					612 = { add_base_production = -4 } }
+			612 = { change_culture = ROOT
 					change_religion = ROOT	}
 			capital_scope = { 	add_base_tax = 1
 								add_base_production = 2 }
@@ -1143,7 +1153,7 @@ roman_missions_2 = {
 								region = mauretania_region
 							}
 						}
-						amount = 60
+						amount = 30
 					}
 			}
 		}
@@ -1159,7 +1169,7 @@ roman_missions_2 = {
 								rom_beyond_the_border	}
 		completed_by = 700.1.1
 		trigger = {
-			total_development = 4000
+			total_development = 3000
 			monthly_income = 300
 			army_size = 250
 		}
@@ -1190,12 +1200,12 @@ roman_navy_missions = {
 		completed_by = 250.1.1
 		provinces_to_highlight = {
 			OR = {
-				province_id = 218
-				province_id = 219
+				province_id = 52
+				province_id = 53
 			}
 		}
 		trigger = {
-			218 = {
+			52 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -1205,7 +1215,7 @@ roman_navy_missions = {
 					}
 				}
 			}
-			219 = {
+			53 = {
 			custom_trigger_tooltip = {
 				tooltip = rom_via_appia.tooltip	
 					OR = {
@@ -1217,7 +1227,7 @@ roman_navy_missions = {
 			}
 		}
 		effect = {
-			218 = { add_base_production = 1 }
+			52 = { add_base_production = 1 }
 			add_mercantilism = 2
 		}
 	}
@@ -1228,15 +1238,15 @@ roman_navy_missions = {
 								rom_ostiastreets_mission }
 		completed_by = 340.1.1
 		provinces_to_highlight = {	
-			province_id = 218
+			province_id = 52
 		}
 		trigger = {
-			218 = { has_building = small_harbor }
+			52 = { has_building = small_harbor }
 		}
 		effect = {
 			add_yearly_sailors = 2.0
-			light_ship = 218
-			heavy_ship = 218
+			light_ship = 52
+			heavy_ship = 52
 		}
 	}
 	rom_greek_ships_mission = {
@@ -1336,9 +1346,9 @@ roman_missions_east = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = praevalitana
-				area = northern_epirus_area
-				area = southern_epirus_area
+				area = epirus_nova
+				area = chaonia_area
+				area = ionian_islands
 			}
 			has_port = yes
 		}
@@ -1346,15 +1356,15 @@ roman_missions_east = {
 			army_size = 60
 			num_of_heavy_ship = 40
 			OR = {
-				praevalitana = {
+				epirus_nova = {
 					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				northern_epirus_area = {
+				chaonia_area = {
 					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				southern_epirus_area = {
+				ionian_islands = {
 					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
@@ -1572,26 +1582,26 @@ roman_missions_east = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = alexandria
-				area = memphis_area
-				area = south_nile_delta
-				area = north_nile_delta
+				area = sap_meh
+				area = khaset
+				area = heq_at
+				area = aneb_hetch
 			}
 		}
 		trigger = {
-				alexandria = {
+				sap_meh = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				memphis_area = {
+				khaset = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				south_nile_delta = {
+				heq_at = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				north_nile_delta = {
+				aneb_hetch = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
@@ -1608,28 +1618,28 @@ roman_missions_east = {
 				}
 				add_permanent_claim = ROOT
 			}
-			saracenea = {
+			te_mefkat = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			biau = {
+			nabatene_west = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			petrea = {
+			arabia_petraea_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			nabatea = {
+			nabatene_east = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1661,31 +1671,26 @@ roman_missions_east2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			OR = {
-				area = liburnia_west
-				area = dalmatia_north
-				area = dalmatia_south
-				area = praevalitana
-				area = eastern_venetia_area
+				area = istria_area
+				area = liburnia_area
+				area = dalmatia_area
+				area = praevalitana_area
 			}
 		}
 		trigger = {
-				liburnia_west = {
+				istria_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				dalmatia_north = {
+				liburnia_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				dalmatia_south = {
+				dalmatia_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				praevalitana = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				eastern_venetia_area = {
+				praevalitana_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
@@ -1726,9 +1731,9 @@ roman_missions_thracia = {
 		}
 		effect = {
 			add_adm_power = 250
-			638 = { change_culture = ROOT
+			1086 = { change_culture = ROOT
 					change_religion = ROOT }
-			673 = { change_culture = ROOT
+			1094 = { change_culture = ROOT
 					change_religion = ROOT }
 			dacia_region = {
 				limit = {

@@ -28,14 +28,14 @@ country_decisions = {
 	 expend_the_silver_mines = {
 		potential = {
 			TAG = ATH
-			owns = 503
+			owns = 960
 			NOT = { has_global_flag = expanded_silver_mines_flag }
 		NOT = { started_in = 250.1.1 }
 		}
 		allow = {
 			is_at_war =  no
 			adm_power = 100
-			503 = {
+			960 = {
 				OR = {
 					has_building = quarry 
 					has_building = small_mine 
@@ -47,7 +47,7 @@ country_decisions = {
 		effect = {
 				set_global_flag = expanded_silver_mines_flag
 				add_adm_power = -100
-				503 = {
+				960 = {
 					add_province_modifier = {
 						name = "expanded_silver_mines"
 						duration = 36500

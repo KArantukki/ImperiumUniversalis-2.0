@@ -811,7 +811,7 @@ country_event = {
 	
 	trigger = {
 		culture_group = hellenic
-		NOT = { is_year = 240 }
+		NOT = { is_year = 220 }
 		any_owned_province = {
 			culture_group = hellenic
 			OR = {
@@ -1183,7 +1183,7 @@ country_event = {
 		ATH = {
 			exists = yes
 			total_development = 60
-			any_owned_province = { area = corinthia }
+			any_owned_province = { area = corinthia_area }
 		}
 		
 		NOT = { exists = ARC}

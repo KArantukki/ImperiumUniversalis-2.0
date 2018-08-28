@@ -9,11 +9,11 @@ country_decisions = {
 		allow = {
 			is_at_war =  no
 			
-			owns_core_province = 192
-			owns_core_province = 186
-			owns_core_province = 189
-			owns_core_province = 196
-			owns_core_province = 190
+			owns_core_province = 82
+			owns_core_province = 85
+			owns_core_province = 109
+			owns_core_province = 116
+			owns_core_province = 118
 			
 		}
 		effect = {
@@ -25,13 +25,7 @@ country_decisions = {
 				set_government_rank = 3
 			}
 			
-				eastern_venetia_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = VNT
-				}
-				western_venetia_area = {
+				venetia_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}

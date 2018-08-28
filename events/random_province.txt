@@ -1055,7 +1055,6 @@ province_event = {
 			continent = africa
 			continent = india
 			continent = asia
-			continent = persia
 		}
 	}
 	
