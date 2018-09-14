@@ -2,7 +2,7 @@
 
 graphical_culture = scythiangfx
 
-color = { 100 145 88 }
+color = { 50 100 40 }
 
 
 historical_idea_groups = {
