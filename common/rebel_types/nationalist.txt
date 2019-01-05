@@ -37,6 +37,40 @@ nationalist_rebels = {
 		factor = 2
 		
 		modifier = {
+			factor = 0.5
+			has_estate = estate_allies
+			owner = { 
+					estate_loyalty = {
+						estate = estate_allies
+						loyalty = 60
+					}
+			}
+		}
+		modifier = {
+			factor = 5
+			has_estate = estate_allies
+			owner = { 
+				NOT = {
+					estate_loyalty = {
+						estate = estate_allies
+						loyalty = 30
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			has_estate = estate_allies
+			owner = { 
+				NOT = {
+					estate_loyalty = {
+						estate = estate_allies
+						loyalty = 40
+					}
+				}
+			}
+		}
+		modifier = {
 			factor = 5
 			owner = { is_tribal = yes }
 		}
@@ -116,23 +150,23 @@ nationalist_rebels = {
 			NOT = { tolerance_to_this = -2 }
 		}
 		modifier = {
-			factor = 1.3
-			owner = {
-				NOT = { legitimacy_or_horde_unity = 50 }
-			}
-		}
-		modifier = {
-			factor = 1.3
-			owner = {
-				NOT = { legitimacy_or_horde_unity = 80 }
-			}
-		}
-		modifier = {
 			factor = 2
 			owner = {
 				ai = yes
 				luck = no
 			}
+		}
+		modifier = {
+			factor = 5
+			is_in_capital_area = no
+			is_island = no
+		}
+		modifier = {
+			factor = 25
+			owner = {
+				NOT = { num_of_ports = 1 }
+			}
+			is_in_capital_area = no 
 		}
 	}
  

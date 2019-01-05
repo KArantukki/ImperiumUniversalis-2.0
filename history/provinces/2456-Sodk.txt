@@ -1,4 +1,6 @@
 add_core = SX2
+add_core = IBE
+add_core = SAS
 owner = SX2
 controller = SX2
 hre = no

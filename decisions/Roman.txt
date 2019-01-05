@@ -17,60 +17,18 @@ country_decisions = {
 					name = lex_hortensia_modifier
 					duration = -1
 				}
-			add_estate_influence_modifier = {
-				estate = estate_citizens
-				desc = EST_VAL_LEX_HORTENSIA
-				duration = 36500
-				influence = 5
-			}
-			add_estate_influence_modifier = {
-				estate = estate_nobles
-				desc = EST_VAL_LEX_HORTENSIA
-				duration = 36500
-				influence = -5
-			}
-				
+			add_stability = -1
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
 	
-	#Lex Ogulnia
-	 lex_ogulnia = {
-		potential = {
-			OR = {
-				TAG = ROM
-				TAG = ROI
-			}
-			NOT = { has_country_flag = lex_ogulnia_flag }
-		}
-		allow = {
-			adm_tech = 16
-			estate_influence = {
-				estate = estate_citizens
-				influence = 70
-			}
-		}
-		effect = {
-			set_country_flag = lex_ogulnia_flag
-			add_estate_influence_modifier = {
-				estate = estate_citizens
-				desc = EST_VAL_LEX_OGULNIA
-				duration = -1
-				influence = 5
-			}
-			add_patriarch_authority = 0.1
-				
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
 	
 	#Twelve Tables
 	 twelve_tables_law = {
 		potential = {
+			NOT = { has_dlc = "Dharma" }
 			OR = {
 				TAG = ROM
 				TAG = ROI
@@ -79,19 +37,9 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 6
-			estate_influence = {
-				estate = estate_citizens
-				influence = 40
-			}
 		}
 		effect = {
 			add_stability = -1
-			add_estate_influence_modifier = {
-				estate = estate_citizens
-				desc = EST_VAL_TWELVE_TABLES
-				duration = -1
-				influence = 5
-			}
 			add_country_modifier = {
 					name = twelve_tables
 					duration = -1
@@ -129,8 +77,9 @@ country_decisions = {
 				set_government_rank = 3
 			}
 			if = {
-					limit = { is_tribal = yes }
-					change_government = league
+				limit = { government = tribal }
+					change_government = republic
+					add_government_reform = league_reform
 				}
 			}
 			
@@ -152,7 +101,8 @@ country_decisions = {
 		effect = {
 			change_tag = ETR
 			add_prestige = 25
-			change_government = league
+			change_government = republic
+			add_government_reform = league_reform
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }		
@@ -184,8 +134,9 @@ country_decisions = {
 				set_government_rank = 3
 			}
 			if = {
-					limit = { is_tribal = yes }
-					change_government = league
+					limit = { government = tribal }
+					change_government = republic
+					add_government_reform = league_reform
 				}
 			}
 		ai_importance = 100

@@ -1,6 +1,6 @@
-add_core = UMB
-owner = UMB
-controller = UMB
+add_core = SAB
+owner = SAB
+controller = SAB
 culture = umbri
 religion = roman_religion
 hre = no

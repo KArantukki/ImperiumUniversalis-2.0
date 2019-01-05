@@ -1,10 +1,11 @@
-government = oriental_monarchy
-government_rank = 4
+government = monarchy
+add_government_reform = assyrian_administration_reform
+government_rank = 3
 #mercantilism = 0.25
 technology_group = diadochi
 primary_culture = babylonian
 religion = mesopotamian_religion
-religious_school = semitic_type
+#religious_school = semitic_type
 add_accepted_culture = chaldean
 capital = 2500
 

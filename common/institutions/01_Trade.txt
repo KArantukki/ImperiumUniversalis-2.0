@@ -8,8 +8,7 @@ trade_lvl1 = {
 		trade_efficiency = 0.05
 		trade_range_modifier = 0.1
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -24,6 +23,8 @@ trade_lvl1 = {
 			culture_group = chinese_group
 			culture_group = egyptian_group
 			culture_group = akkadian_group
+			culture_group = aquitani_group
+			culture_group = gaulish_group
 			culture_group = veneti_group
 			culture_group = ligures_group
 			culture_group = macedon_group
@@ -31,7 +32,7 @@ trade_lvl1 = {
 			culture_group = turdetani_group
 			culture_group = thraco_phrygian_group
 			culture_group = nanman_group
-			culture_group = non_vedic_group
+			# culture_group = non_vedic_group
 			culture_group = western_iranian
 			culture_group = dravidian_group
 			culture = lepontic
@@ -40,29 +41,29 @@ trade_lvl1 = {
 			owned_by = PSE
 			AND = {
 				culture_group = celtiberian
-				is_year = 250
+				is_year = 200
+			}
+			AND = {
+				culture_group = eastern_celtic
+				is_year = 225
+			}
+			AND = {
+				culture_group = raeti_group
+				is_year = 225
+			}
+			AND = {
+				culture_group = western_iranian
+				is_year = 200
 			}
 			AND = {
 				culture_group = eastern_iranian_group
-				is_year = 250
+				is_year = 225
 			}
 			AND = {
-				culture_group = arabic_group
-				is_year = 275
+				owner = { is_tribal = no }
+				is_year = 225
 			}
-			AND = {
-				culture = noric
-				is_year = 350
-			}
-			AND = {
-				culture_group = gaulish_group
-				is_year = 375
-			}
-			AND = {
-				culture_group = ibero_celtic_group
-				is_year = 350
-			}
-			has_province_modifier = center_of_trade_modifier_1
+			is_year = 250
 		}
 	}
 
@@ -74,9 +75,17 @@ trade_lvl1 = {
 		modifier = {
 			scale = yes
 			factor = 0.2
+			potential = {
+				province_has_center_of_trade = yes
+			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_4_commoners
-				base_production = 4
+				tooltip = tooltip_any_center_of_trade_has_embraced_institution
+				OR = {
+					province_has_center_of_trade = yes
+				}
+				any_trade_node_member_province = { 
+					writing_system = 100
+				}
 			}
 		}
 		modifier = {
@@ -109,7 +118,7 @@ trade_lvl1 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_small_market
 				OR = {
@@ -121,7 +130,7 @@ trade_lvl1 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_small_harbor
 				OR = {
@@ -133,25 +142,8 @@ trade_lvl1 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
-			potential = {
-			OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-				any_trade_node_member_province = { 
-					trade_lvl1 = 100
-				}
-			}
+			factor = 0.5 
+			province_trade_power = 5
 		}
 	}
 	
@@ -173,15 +165,12 @@ trade_lvl2 = {
 		caravan_power = 0.1
 		merchants = 1
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
+	trade_company_efficiency = 0.0
+	
 
 	history = {
 		OR = {
-			base_production = 9
-			base_tax = 6
 			culture_group = hellenic
-			culture_group = anatolian_group
 			culture_group = semitic
 			culture_group = chinese_group
 			culture_group = egyptian_group
@@ -224,7 +213,7 @@ trade_lvl2 = {
 				is_year = 400
 			}
 			AND = {
-				culture_group = non_vedic_group
+				# culture_group = non_vedic_group
 				is_year = 400
 			}
 			AND = {
@@ -249,12 +238,9 @@ trade_lvl2 = {
 			}
 			AND = {
 				culture_group = arabic_group
-				is_year = 500
+				is_year = 400
 			}
-			AND = {
-				has_province_modifier = center_of_trade_modifier_1
-				owner = { is_tribal = no }
-			}
+			is_year = 500
 		}
 	}
 
@@ -267,9 +253,17 @@ trade_lvl2 = {
 		modifier = {
 			scale = yes
 			factor = 0.2
+			potential = {
+				province_has_center_of_trade = yes
+			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_8_commoners
-				base_production = 8
+				tooltip = tooltip_any_center_of_trade_has_embraced_institution
+				OR = {
+					province_has_center_of_trade = yes
+				}
+				any_trade_node_member_province = { 
+					writing_system = 100
+				}
 			}
 		}
 		modifier = {
@@ -302,7 +296,7 @@ trade_lvl2 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.1
 			custom_trigger_tooltip = {
 				tooltip = tooltip_small_market
 				OR = {
@@ -314,35 +308,13 @@ trade_lvl2 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.1
 			custom_trigger_tooltip = {
 				tooltip = tooltip_small_harbor
 				OR = {
 					has_building = small_harbor
 					has_building = big_harbor
 					has_building = harbor_district
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.5
-			potential = {
-			OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-				any_trade_node_member_province = { 
-					trade_lvl2 = 100
 				}
 			}
 		}
@@ -366,8 +338,7 @@ trade_lvl3 = {
 		trade_efficiency = 0.05
 		global_prov_trade_power_modifier = 0.1
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -379,13 +350,6 @@ trade_lvl3 = {
 				culture_group = chinese_group
 				is_year = 650
 			}
-			AND = {
-				OR = {
-						has_province_modifier = center_of_trade_modifier_2
-						has_province_modifier = center_of_trade_modifier_3
-					}
-				owner = { is_tribal = no }
-			}
 		}
 	}
 
@@ -396,14 +360,22 @@ trade_lvl3 = {
 		modifier = {
 			scale = yes
 			factor = 0.2
+			potential = {
+				province_has_center_of_trade = yes
+			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_12_commoners
-				base_production = 12
+				tooltip = tooltip_any_center_of_trade_has_embraced_institution
+				OR = {
+					province_has_center_of_trade = yes
+				}
+				any_trade_node_member_province = { 
+					writing_system = 100
+				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.4
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
 				any_friendly_coast_border_province = {
@@ -413,7 +385,7 @@ trade_lvl3 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
@@ -431,7 +403,7 @@ trade_lvl3 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_medium_market
 				OR = {
@@ -442,45 +414,12 @@ trade_lvl3 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_big_harbor
 				OR = {
 					has_building = big_harbor
 					has_building = harbor_district
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.5
-			potential = {
-			OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-				any_trade_node_member_province = { 
-					trade_lvl3 = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.1
-			custom_trigger_tooltip = {
-				tooltip = tooltip_center_of_trade_modifier_2
-				OR = {
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
 				}
 			}
 		}
@@ -504,8 +443,7 @@ trade_lvl4 = {
 		embargo_efficiency = 0.1
 		trade_range_modifier = 0.1
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no
@@ -519,14 +457,22 @@ trade_lvl4 = {
 		modifier = {
 			scale = yes
 			factor = 0.2
+			potential = {
+				province_has_center_of_trade = yes
+			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_15_commoners
-				base_production = 15
+				tooltip = tooltip_any_center_of_trade_has_embraced_institution
+				OR = {
+					province_has_center_of_trade = yes
+				}
+				any_trade_node_member_province = { 
+					writing_system = 100
+				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.4
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
 				any_friendly_coast_border_province = {
@@ -536,7 +482,7 @@ trade_lvl4 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
@@ -554,7 +500,7 @@ trade_lvl4 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_medium_market
 				OR = {
@@ -565,45 +511,12 @@ trade_lvl4 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_big_harbor
 				OR = {
 					has_building = big_harbor
 					has_building = harbor_district
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.5
-			potential = {
-			OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-				any_trade_node_member_province = { 
-					trade_lvl4 = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.1
-			custom_trigger_tooltip = {
-				tooltip = tooltip_center_of_trade_modifier_2
-				OR = {
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
 				}
 			}
 		}
@@ -627,8 +540,7 @@ trade_lvl5 = {
 		merchants = 1
 		trade_efficiency = 0.05
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no
@@ -642,14 +554,22 @@ trade_lvl5 = {
 		modifier = {
 			scale = yes
 			factor = 0.2
+			potential = {
+				province_has_center_of_trade = yes
+			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_18_commoners
-				base_production = 18
+				tooltip = tooltip_any_center_of_trade_has_embraced_institution
+				OR = {
+					province_has_center_of_trade = yes
+				}
+				any_trade_node_member_province = { 
+					writing_system = 100
+				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.3
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
 				any_friendly_coast_border_province = {
@@ -659,7 +579,7 @@ trade_lvl5 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.15
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
@@ -677,7 +597,7 @@ trade_lvl5 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_great_market
 				has_building = great_market
@@ -685,40 +605,10 @@ trade_lvl5 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_harbor_district
 				has_building = harbor_district
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.5
-			potential = {
-			OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-				any_trade_node_member_province = { 
-					trade_lvl5 = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.1
-			custom_trigger_tooltip = {
-				tooltip = tooltip_center_of_trade_modifier_3
-					has_province_modifier = center_of_trade_modifier_3
 			}
 		}
 	}
@@ -741,8 +631,7 @@ trade_lvl6 = {
 		global_trade_power = 0.1
 		trade_steering = 0.15
 	}
-	historical_start_date = 100.1.1
-	historical_start_province = 1813
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no
@@ -756,14 +645,22 @@ trade_lvl6 = {
 		modifier = {
 			scale = yes
 			factor = 0.2
+			potential = {
+				province_has_center_of_trade = yes
+			}
 			custom_trigger_tooltip = {
-				tooltip = tooltip_at_least_21_commoners
-				base_production = 21
+				tooltip = tooltip_any_center_of_trade_has_embraced_institution
+				OR = {
+					province_has_center_of_trade = yes
+				}
+				any_trade_node_member_province = { 
+					writing_system = 100
+				}
 			}
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.3
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
 				any_friendly_coast_border_province = {
@@ -773,7 +670,7 @@ trade_lvl6 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.15
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
@@ -791,7 +688,7 @@ trade_lvl6 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_great_market
 				has_building = great_market
@@ -799,40 +696,10 @@ trade_lvl6 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			custom_trigger_tooltip = {
 				tooltip = tooltip_harbor_district
 				has_building = harbor_district
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.5
-			potential = {
-			OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_this_institution
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-				any_trade_node_member_province = { 
-					trade_lvl6 = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.1
-			custom_trigger_tooltip = {
-				tooltip = tooltip_center_of_trade_modifier_3
-					has_province_modifier = center_of_trade_modifier_3
 			}
 		}
 	}

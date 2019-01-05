@@ -1,40 +1,4 @@
 country_decisions = {
 	########################################
-	 establish_cultural_syncretism = {
-		potential = {
-			NOT = { has_country_modifier = cultural_syncretism }
-		}
-		allow = {
-			full_idea_group = syncretic_religious_ideas
-			stability = 1
-		}
-		effect = {
-			add_stability = -1
-			add_country_modifier = {
-					name = cultural_syncretism
-					duration = -1
-				}	
-		}
-		ai_will_do = {
-			factor = 0.5
-		}
-	}
-	 abolish_cultural_syncretism = {
-		potential = {
-			has_country_modifier = cultural_syncretism
-		}
-		allow = {
-			NOT = { full_idea_group = syncretic_religious_ideas }
-			stability = 1
-		}
-		effect = {
-			add_stability = -1
-			remove_country_modifier = cultural_syncretism
-					
-		}
-		ai_will_do = {
-			factor = 0.0
-		}
-	}
 }
 	

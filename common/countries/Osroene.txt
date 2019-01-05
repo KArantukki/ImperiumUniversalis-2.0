@@ -1,11 +1,9 @@
 #Country Name: Please see filename.
 
 graphical_culture = iraniangfx
+special_unit_culture = mesopotamian_special
 
 color = { 255 123 0 }
-
-revolutionary_colors = { 5  13  0 }
-
 
 historical_idea_groups = {
 	
@@ -16,13 +14,33 @@ historical_units = {
 }
 
 monarch_names = {
-	"Aryu" = 40
-	"Abdu #4" = 80
-	"Barku # 7" = 70
-	"Manu" = 40
-	"Paqor" = 40
-	"Sanatruk" = 40
-
+	"Udaynath #1" = 30
+	"Hairan #1" = 30
+	"Maeonius #1" = 30
+	"Vaballathus #1" = 30
+	
+	"Abdalonymus" = 5
+	"Achololim" = 5
+	"Baalhaan" = 5
+	"Carthalo" = 5
+	"Fuabal" = 5
+	"Hamiscora" = 5
+	"Luli" = 5
+	"Mathos" = 5
+	"Merbal" = 5
+	"Tendao" = 5
+	"Salicar" = 5
+	"Zaracas" = 5
+	"Shipitbaal" = 5
+	
+	"Zenobia #1" = -5
+	"Adonia" = -1
+	"Ashtoreth" = -1
+	"Coryander" = -1
+	"Jesibel" = -1
+	"Tanith" = -1
+	"Tanni" = -1
+	"Tanythe" = -1
 
 }
 

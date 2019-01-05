@@ -8,6 +8,7 @@ metalworking_lvl1 = {
 		shock_damage_received = -0.05
 		production_efficiency = 0.05
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -140,6 +141,7 @@ metalworking_lvl2 = {
 		shock_damage = 0.05
 		fire_damage = 0.05
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -273,6 +275,7 @@ metalworking_lvl3 = {
 		fire_damage_received = -0.05
 		production_efficiency = 0.05
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -375,6 +378,7 @@ metalworking_lvl4 = {
 		global_trade_goods_size_modifier = 0.05
 		shock_damage_received = -0.05
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no
@@ -473,6 +477,7 @@ metalworking_lvl5 = {
 		shock_damage = 0.05
 		production_efficiency = 0.05
 	}
+	trade_company_efficiency = 0.0
 	
 	history = {
 		always = no
@@ -565,6 +570,7 @@ metalworking_lvl6 = {
 		production_efficiency = 0.05
 		siege_ability = 0.1
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no

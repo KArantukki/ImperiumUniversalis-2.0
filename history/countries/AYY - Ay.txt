@@ -1,4 +1,5 @@
-government = tribal_kingdom
+government = tribal
+add_government_reform = tribal_kingdom_reform
 government_rank = 2
 #mercantilism = 0.25
 technology_group = indian
@@ -7,6 +8,8 @@ religion = dravidian
 capital = 3163
 
 
-500.1. = { government = despotic_monarchy }
+500.1.1 = { 
+	government = monarchy
+	add_government_reform = despotism_reform }
 
 

@@ -9,6 +9,10 @@ base_production = 4
 trade_goods = fish
 base_manpower = 3
 capital = "Thermai Himeraiai"
+small_harbor = yes
+shrine = yes
+small_townhall = yes
+gravel_road = yes
 is_city = yes
 
 discovered_by = roman

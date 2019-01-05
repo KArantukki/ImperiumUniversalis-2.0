@@ -1,7 +1,6 @@
 add_core = CRI
-add_core = LYC
-owner = LYC
-controller = LYC
+owner = CRI
+controller = CRI
 culture = carian
 religion = luwian_religion
 hre = no

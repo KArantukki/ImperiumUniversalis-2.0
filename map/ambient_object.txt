@@ -4,7 +4,7 @@ type={
 	time_duration=300.000000
 	object={
 		name="mausoleum"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
 			1655.000 0.100 1275.000 
 		}
@@ -20,7 +20,7 @@ type={
 	time_duration=300.000000
 	object={
 		name="zeus"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
 			1447.000 0.100 1296.000 
 		}
@@ -36,7 +36,7 @@ type={
 	time_duration=300.000000
 	object={
 		name="rhodos"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
 			1674.000 -0.500 1252.000 
 		}
@@ -52,7 +52,7 @@ type={
 	time_duration=300.000000
 	object={
 		name="artemis_temple"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
 			1641.000 0.000 1308.000 
 		}
@@ -84,7 +84,7 @@ type={
 	time_duration=300.000000
 	object={
 		name="pharos"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
 			1736.000 0.000 1073.000 
 		}
@@ -100,7 +100,7 @@ type={
 	time_duration=300.000000
 	object={
 		name="weiyung"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
 			4428.000 0.640 1185.000 
 		}
@@ -116,7 +116,7 @@ type={
 	time_duration=300.000000
 	object={
 		name="gate_of_nations"
-		hidden_on_start=no
+		hidden_on_start=yes
 		position={
 			2528.000 0.100 1022.000 
 		}

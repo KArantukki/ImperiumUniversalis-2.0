@@ -1,107 +1,37 @@
 spriteTypes = {
 	spriteType = {
-		name = "iberiangfx_sacrifice"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/sacrifice.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
 		name = "iberiangfx_battle"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/battle.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_navy"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/navy.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_navy2"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/navy.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_naval_battle"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/naval_battle.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_cavalry"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/cavalry.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_ruler"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/ruler.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_military_parade"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/military_parade.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_religious"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/religious.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_city"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/city.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_siege_picture"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/siege_picture.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_construction"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/construction.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_trade"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/trade.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_family"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/family.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_food_supplies"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/food_supplies.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_tradecity"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/tradecity.dds"
-		allwaystransparent = yes
-	}
-	spriteType = {
-		name = "iberiangfx_rivercrossing"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/rivercrossing.dds"
+		texturefile = "gfx/event_pictures/event_pictures_IBERIAN/battle.dds"
 		allwaystransparent = yes
 	}
 	spriteType = {
 		name = "iberiangfx_death"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/death.dds"
+		texturefile = "gfx/event_pictures/event_pictures_IBERIAN/death.dds"
 		allwaystransparent = yes
 	}
 	spriteType = {
-		name = "iberiangfx_forum_picture"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/forum_picture.dds"
+		name = "iberiangfx_city"
+		texturefile = "gfx/event_pictures/event_pictures_IBERIAN/city.dds"
 		allwaystransparent = yes
 	}
 	spriteType = {
-		name = "iberiangfx_rich_woman"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/rich_woman.dds"
+		name = "iberiangfx_cavalry"
+		texturefile = "gfx/event_pictures/event_pictures_IBERIAN/cavalry.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iberiangfx_tradecity"
+		texturefile = "gfx/event_pictures/event_pictures_IBERIAN/tradecity.dds"
 		allwaystransparent = yes
 	}
 	spriteType = {
 		name = "iberiangfx_peasant_woman"
-		texturefile = "gfx/event_pictures/event_pictures_GAUL/peasant_woman.dds"
+		texturefile = "gfx/event_pictures/event_pictures_IBERIAN/peasant_woman.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "iberiangfx_senat"
+		texturefile = "gfx/event_pictures/event_pictures_IBERIAN/senat.dds"
 		allwaystransparent = yes
 	}
 }

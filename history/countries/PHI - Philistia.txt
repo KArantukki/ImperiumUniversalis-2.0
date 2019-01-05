@@ -1,9 +1,10 @@
-government = league
+government = republic
+add_government_reform = league_reform
 government_rank = 2
 #mercantilism = 0.25
 technology_group = diadochi
 primary_culture = philistia
 religion = punic_religion
-religious_school = semitic_type
+#religious_school = semitic_type
 capital = 2279
 

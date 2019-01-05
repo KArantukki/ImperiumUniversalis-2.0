@@ -66,11 +66,23 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_govReb_change_government_bg"
-		texturefile = "gfx/interface/govReb_change_government_bg.dds"
-		transparencecheck = yes
-		allwaystransparent = no
-		alphamaskfile = "gfx/interface/diplomacy_overlay_alpha.tga"
+		name = "GFX_reform_government_bg_large"
+		texturefile = "gfx//interface//reform_government_bg_large.dds"
+	}
+	
+			spriteType = {
+		name = "GFX_reform_government_bg_huge"
+		texturefile = "gfx//interface//reform_government_bg_huge.dds"
+	}
+	
+			spriteType = {
+		name = "GFX_reform_government_bg_legacy"
+		texturefile = "gfx//interface//reform_government_bg_legacy.dds"
+	}
+	
+			spriteType = {
+		name = "GFX_reform_government_bg"
+		texturefile = "gfx//interface//reform_government_bg.dds"
 	}
 		
 	spriteType = {
@@ -143,7 +155,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_government_type_icon_big"
 		texturefile = "gfx//interface//country_governments_rebels_view_govcat_big.dds"
-		noOfFrames = 5
+		noOfFrames = 6
 		loadType = "INGAME"
 	}
 	
@@ -151,6 +163,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_russian_government_bar_frame"
 		texturefile = "gfx//interface//russian_government_bar_frame.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	spriteType = {
+		name = "GFX_cossacks_government_bar_frame"
+		texturefile = "gfx//interface//cossacks_government_bar_frame.dds"
 		loadType = "INGAME"
 		transparencecheck = yes	
 	}
@@ -168,7 +186,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_government_type_icon"
 		texturefile = "gfx//interface//country_governments_rebels_view_govcat.dds"
-		noOfFrames = 5
+		noOfFrames = 6
 		loadType = "INGAME"
 	}
 	

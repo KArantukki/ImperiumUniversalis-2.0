@@ -28,11 +28,17 @@ small_water_irrigation = {
 			trade_goods = fruits
 			trade_goods = olive 
 			trade_goods = rice
-			trade_goods = tea_good }
+			trade_goods = tea_good
+			trade_goods = horses
+			trade_goods = honey
+			trade_goods = olibanum
+			trade_goods = herbs 
+			trade_goods = cotton }
 	}
 	modifier = {
-		local_production_efficiency = 0.2
-		trade_goods_size_modifier = 0.15
+		local_production_efficiency = 0.1
+		local_manpower_modifier = 0.1 
+		supply_limit_modifier = 0.1
 	}
 	ai_will_do = {
 		factor = 2.0
@@ -50,12 +56,18 @@ big_water_irrigation = {
 			trade_goods = spices
 			trade_goods = fruits
 			trade_goods = olive 
-			trade_goods = rice 
-			trade_goods = tea_good }
+			trade_goods = rice
+			trade_goods = tea_good
+			trade_goods = horses
+			trade_goods = honey
+			trade_goods = olibanum
+			trade_goods = herbs 
+			trade_goods = cotton }
 	}
 	modifier = {
-		local_production_efficiency = 0.4
-		trade_goods_size_modifier = 0.3
+		local_production_efficiency = 0.2
+		local_manpower_modifier = 0.2
+		supply_limit_modifier = 0.2
 	}
 	ai_will_do = {
 		factor = 1.5
@@ -74,11 +86,17 @@ big_estate = {
 			trade_goods = fruits
 			trade_goods = olive 
 			trade_goods = rice
-			trade_goods = tea_good }
+			trade_goods = tea_good
+			trade_goods = horses
+			trade_goods = honey
+			trade_goods = olibanum
+			trade_goods = herbs 
+			trade_goods = cotton }
 	}
 	modifier = {
-		local_production_efficiency = 0.6
-		trade_goods_size_modifier = 0.5
+		local_production_efficiency = 0.2
+		local_manpower_modifier = 0.2
+		supply_limit_modifier = 0.2
 	}
 	ai_will_do = {
 		factor = 1.0

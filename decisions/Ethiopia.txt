@@ -21,14 +21,7 @@ country_decisions = {
 				}
 				set_government_rank = 4
 			}
-			
-			if = {
-				limit = {
-					government = tribal	
-				}
-				change_government = despotic_monarchy
-			}
-			
+
 				aethiops = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -44,10 +37,7 @@ country_decisions = {
 	}
 	 egyptian_heritage = {
 		potential = {
-			OR = {
 				culture_group = cushitic_group
-				culture_group = nubian_group
-			}
 		}
 		allow = {
 			is_at_war =  no

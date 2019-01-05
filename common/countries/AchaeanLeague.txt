@@ -6,15 +6,13 @@ color = { 52 142 55 }
 
 
 historical_idea_groups = {
-	quality_ideas
-	scholars_ideas
-	imperial_government_ideas
-	infantry_ideas
 	administrative_ideas
-	quantity_ideas
-	expansion_ideas
-	defensive_ideas
-	
+	diplomatic_ideas
+	infantry_ideas
+	domestic_government_ideas
+	imperial_ideas
+	mercenary_ideas
+	republican_government_ideas
 }
 
 historical_units = {

@@ -1,0 +1,66 @@
+theocracy_mechanic = {
+	has_devotion = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	royal_marriage = no
+	religion = no
+	heir = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+}
+
+oligarchy_reform = {
+	icon = "oligarchy"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	legacy_equivalent = oligarchic_monarchy
+	heir = no
+
+	modifiers = {
+		advisor_cost = -0.2
+	}
+}
+spartan_monarchy_reform = {
+	icon = "spartan_king"
+	potential = {
+		TAG = SP1
+	}
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	legacy_equivalent = spartan_monarchy
+	lock_level_when_selected = yes
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	modifiers = {
+		discipline = 0.05
+		monarch_military_power = 1
+		global_manpower_modifier = -0.25
+	}
+}
+
+papacy_reform = {
+	potential = {
+		tag = PAP
+	}
+
+	modifiers = {
+		prestige_per_development_from_conversion = 0.33
+		tolerance_own = 1
+	}
+	valid_for_nation_designer = no
+	icon = "papacy"
+	allow_normal_conversion = yes
+	legacy_equivalent = papal_government
+	papacy = yes
+	allow_convert = no
+	lock_level_when_selected = yes
+	fixed_rank = 2
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}

@@ -1,7 +1,12 @@
 #
 
 type = infantry
-unit_type = afro_arabian
+trigger = { 
+	OR = {
+		unit_type = afro_arabian
+		unit_type = african
+		}
+}
 
 maneuver = 1
 offensive_morale = 5

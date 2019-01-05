@@ -222,4 +222,94 @@ spriteTypes = {
 		name = "mission_eastern_soldiers"
 		texturefile = "gfx//interface//missions//mission_eastern_soldiers.dds"
 	}
+	
+	spriteType = {
+		name = "mission_bab_king"
+		texturefile = "gfx//interface//missions//mission_bab_king.dds"
+	}
+	
+	spriteType = {
+		name = "mission_assyrians"
+		texturefile = "gfx//interface//missions//mission_assyrians.dds"
+	}
+	
+	spriteType = {
+		name = "mission_cavalry"
+		texturefile = "gfx//interface//missions//mission_cavalry.dds"
+	}
+	
+	spriteType = {
+		name = "mission_arabia"
+		texturefile = "gfx//interface//missions//mission_arabia.dds"
+	}
+	
+	spriteType = {
+		name = "mission_egypt_2"
+		texturefile = "gfx//interface//missions//mission_egypt_2.dds"
+	}
+	
+	spriteType = {
+		name = "mission_alexander"
+		texturefile = "gfx//interface//missions//mission_alexander.dds"
+	}
+	
+	spriteType = {
+		name = "mission_athens"
+		texturefile = "gfx//interface//missions//mission_athens.dds"
+	}
+	
+	spriteType = {
+		name = "mission_corinth"
+		texturefile = "gfx//interface//missions//mission_corinth.dds"
+	}
+	
+	spriteType = {
+		name = "mission_thebens"
+		texturefile = "gfx//interface//missions//mission_thebens.dds"
+	}
+	
+	spriteType = {
+		name = "mission_scythian"
+		texturefile = "gfx//interface//missions//mission_scythian.dds"
+	}
+	
+	spriteType = {
+		name = "mission_sparta"
+		texturefile = "gfx//interface//missions//mission_sparta.dds"
+	}
+	
+	spriteType = {
+		name = "mission_big_fleet"
+		texturefile = "gfx//interface//missions//mission_big_fleet.dds"
+	}
+	
+	spriteType = {
+		name = "mission_lostbattle"
+		texturefile = "gfx//interface//missions//mission_lostbattle.dds"
+	}
+	
+	spriteType = {
+		name = "mission_hoplite_1"
+		texturefile = "gfx//interface//missions//mission_hoplite_1.dds"
+	}
+	
+	spriteType = {
+		name = "mission_hoplite_2"
+		texturefile = "gfx//interface//missions//mission_hoplite_2.dds"
+	}
+	
+	spriteType = {
+		name = "mission_siege2"
+		texturefile = "gfx//interface//missions//mission_siege2.dds"
+	}
+	
+	spriteType = {
+		name = "mission_mountains"
+		texturefile = "gfx//interface//missions//mission_mountains.dds"
+	}
+	
+	spriteType = {
+		name = "mission_ship2"
+		texturefile = "gfx//interface//missions//mission_ship2.dds"
+	}
 }

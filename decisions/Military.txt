@@ -9,7 +9,7 @@ country_decisions = {
 		}
 		allow = {
 			dip_power = 50
-			dip_tech = 8
+			dip_tech = 12
 			OR = {
 				full_idea_group = naval_ideas
 				navy_tradition = 40

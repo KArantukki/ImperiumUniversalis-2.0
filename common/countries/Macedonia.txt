@@ -1,23 +1,32 @@
 #Country Name: Please see filename.
 
 graphical_culture = hellenicgfx
+special_unit_culture = macedon_special
 
 color = { 107 43 135 }
 
 historical_idea_groups = {
-	infantry_ideas
-	administrative_ideas
+	leadership_ideas
 	expansion_ideas
-	quality_ideas
+	agraculture_ideas
+	infantry_ideas
+	imperial_ideas
+	royal_court_ideas
 	cavalry_ideas
+	syncrenism_ideas
+	administrative_ideas
+
 }
 
 historical_units = {
-	
+	0_macedon_archers
+	5_macedon_knights
+	5_macedon_phalanx
+	10_adv_macedon_phalanx
+	20_late_macedon_phalanx
 }
                   
 monarch_names = {
-
 	"Kassander" = 50
 	"Philip" = 10
 	"Alexander" = 10

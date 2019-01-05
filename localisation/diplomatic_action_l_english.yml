@@ -88,5 +88,5 @@
  food_not_sold:0 "Refused to sell food supplies"
  NOT_TRADE_EMBARGOING:0 "Not Embargoing"
  TRIBUTYINVALID:0 "- The country needs to be of your culture group OR it needs to be close to your borders."
- 
- 
+ sacked_city_opinion:0 "Sacked City"
+ opinion_refused_to_give_land:0 "Broken Promises"

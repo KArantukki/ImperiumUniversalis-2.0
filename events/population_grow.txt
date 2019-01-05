@@ -21,13 +21,7 @@ province_event = {
 		###### POSITIVE
 		modifier = {
 				factor = 0.9
-				OR = {
-					has_terrain = farmlands
-					has_terrain = floodplains
-					has_terrain = nile_plain
-					has_terrain = mesopotamian_plain
-					has_terrain = alluvial_plain
-				}
+				is_farmland_terrain = yes
 			}
 		modifier = {
 				factor = 0.95
@@ -208,13 +202,7 @@ province_event = {
 		###### POSITIVE
 		modifier = {
 				factor = 0.9
-				OR = {
-					has_terrain = farmlands
-					has_terrain = floodplains
-					has_terrain = nile_plain
-					has_terrain = mesopotamian_plain
-					has_terrain = alluvial_plain
-				}
+				is_farmland_terrain = yes
 			}
 		modifier = {
 				factor = 0.95
@@ -395,13 +383,7 @@ province_event = {
 		###### POSITIVE
 		modifier = {
 				factor = 0.9
-				OR = {
-					has_terrain = farmlands
-					has_terrain = floodplains
-					has_terrain = nile_plain
-					has_terrain = mesopotamian_plain
-					has_terrain = alluvial_plain
-				}
+				is_farmland_terrain = yes
 			}
 		modifier = {
 				factor = 0.95

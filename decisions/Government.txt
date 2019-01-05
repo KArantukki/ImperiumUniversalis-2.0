@@ -1,49 +1,4 @@
 country_decisions = {
-	 change_to_monarchy = {
-		major = yes
-		potential = {
-			government = oligarchic_monarchy
-		}
-		allow = {
-			is_at_war = no
-			has_any_disaster = no
-			devotion = 100
-			adm_tech = 6
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 30
-					}
-				}
-		}
-		effect = {
-			add_stability = -3
-			change_government = despotic_monarchy
-		}
-		ai_will_do = {
-			factor = 0.5
-		}
-	}
-	 change_to_oligarchismonarchy = {
-		major = yes
-		potential = {
-			government = classic_republic
-		}
-		allow = {
-			stability = 3
-			is_at_war = no
-			has_any_disaster = no
-			NOT = { republican_tradition = 0.25 }
-		}
-		effect = {
-			add_stability = -3
-			change_government = oligarchic_monarchy
-		}
-		ai_will_do = {
-			factor = 0.5
-		}
-	}
-	 
 	############################################
 	 abolish_slavers_dec = {
 		potential = {
@@ -52,7 +7,7 @@ country_decisions = {
 		}
 		allow = {
 			stability = 1	
-			NOT = { government = spartan_monarchy }
+			NOT = { has_reform = spartan_monarchy_reform }
 		}
 		effect = {
 			add_country_modifier = {
@@ -134,8 +89,8 @@ country_decisions = {
 			adm_tech = 26
 			adm_power = 100
 			OR = {
-				full_idea_group = imperial_government_ideas
-				ADM = 5
+				full_idea_group = administrative_ideas
+				full_idea_group = imperial_ideas
 			}
 		}
 		effect = {
@@ -171,74 +126,21 @@ country_decisions = {
 	}
 	########################################
 	
-	greek_polis_to_monarchy = {
+	greek_polis_reform = {
 		major = yes
 		potential = {
-			government = greek_polis_tyrannis
-		}
-		allow = {
-			is_at_war = no
-			has_any_disaster = no
-			mil_tech = 4
-			total_development = 65
-			faction_influence = {
-				faction = fac_monarchists
-				influence = 50
-			}
-		}
-		effect = {
-			add_stability = -1
-			change_government = despotic_monarchy
-			set_government_rank = 2
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	greek_polis_to_oligarchy = {
-		major = yes
-		potential = {
-			government = greek_polis
-			faction_in_power = fac_oligarchs
-		}
-		allow = {
-			is_at_war = no
-			has_any_disaster = no
-			dip_tech = 4
-			total_development = 65
-			faction_influence = {
-				faction = fac_oligarchs
-				influence = 50
-			}
-		}
-		effect = {
-			add_stability = -1
-			change_government = oligarchic_monarchy
-			set_government_rank = 2
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	greek_polis_to_democracy = {
-		major = yes
-		potential = {
-			government = greek_polis_democracy
-			faction_in_power = fac_democrats
+			has_reform = greek_polis_reform
+			NOT = { has_dlc = "Dharma" }
 		}
 		allow = {
 			is_at_war = no
 			has_any_disaster = no
 			adm_tech = 4
-			total_development = 65
-			faction_influence = {
-				faction = fac_democrats
-				influence = 50
-			}
+			total_development = 50
 		}
 		effect = {
 			add_stability = -1
-			change_government = classic_republic
+			set_legacy_government = classic_republic
 			set_government_rank = 2
 		}
 		ai_will_do = {
@@ -249,10 +151,8 @@ country_decisions = {
 	heir_as_coruler = {
 		potential = {
 			OR = {
-				government = despotic_monarchy
-				government = principate
-				government = diadochi_monarchy
-				government = greek_polis_tyrannis
+				has_reform = despotism_reform
+				has_reform = epirote_monarchy_reform
 			}
 			NOT = { has_ruler_modifier = heir_is_coruler }
 		}
@@ -299,23 +199,17 @@ country_decisions = {
 	coronation_decision = {
 		potential = {
 			NOT = { has_ruler_modifier = ruler_coronation }
-			OR = {
-				government = despotic_monarchy
-				government = principate
-				government = diadochi_monarchy
-				government = greek_polis_tyrannis
-			}
-			is_tribal = no
+			government = monarchy
+			NOT = { government = tribal }
+			NOT = { government = native }
 			has_consort_regency = no
 			has_regency = no
 		}
 		allow = {
-			splendor = 25
 			years_of_income = 0.5
 			NOT = { has_disaster = succession_crisis_disaster }
 		}
 		effect = {
-			add_splendor = -25
 			add_years_of_income = -0.5
 			add_prestige = 10
 			add_legitimacy = 10
@@ -329,6 +223,7 @@ country_decisions = {
 	
 	written_laws_decision = {
 		potential = {
+			NOT = { has_dlc = "Dharma" }
 			NOT = { has_country_modifier = written_laws_modifier }
 		}
 		allow = {

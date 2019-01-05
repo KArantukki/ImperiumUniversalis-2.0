@@ -117,7 +117,7 @@ country_event = {
 			total_development = 1250
 		}
 		NOT = { started_in = 600.1.1 }
-		government = classic_republic
+		has_reform = res_publica_reform
 		has_any_disaster = no
 		
 		
@@ -136,199 +136,6 @@ country_event = {
 	}
 }
 
-########################################################################################
-# equites support populares 
-########################################################################################
-country_event = {
-	id = rome.6
-	title = "rome.6.t"
-	desc = "rome.6.d"
-	picture = senat
-	is_triggered_only = yes
-	
-	trigger = {
-		tag = ROM
-		has_country_flag = populares_optimates_appear
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	option = {
-		name = "rome.6.a"
-			add_faction_influence = { faction = populares influence = 10 }
-			
-	}
-}
-########################################################################################
-# equites support optimates 
-########################################################################################
-country_event = {
-	id = rome.7
-	title = "rome.7.t"
-	desc = "rome.7.d"
-	picture = senat
-	is_triggered_only = yes
-	
-	trigger = {
-		tag = ROM
-		has_country_flag = populares_optimates_appear
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	option = {
-		name = "rome.7.a"
-			add_faction_influence = { faction = optimates influence = 10 }
-			add_republican_tradition = -5
-	}
-}
-########################################################################################
-# optimates gain power
-########################################################################################
-country_event = {
-	id = rome.8
-	title = "rome.8.t"
-	desc = "rome.8.d"
-	picture = senat
-	is_triggered_only = yes
-	
-	trigger = {
-		tag = ROM
-		has_country_flag = populares_optimates_appear
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	option = {
-		name = "rome.8.a"
-			add_faction_influence = { faction = optimates influence = 5 }
-			
-	}
-}
-########################################################################################
-# populares gain power
-########################################################################################
-country_event = {
-	id = rome.9
-	title = "rome.9.t"
-	desc = "rome.9.d"
-	picture = senat
-	is_triggered_only = yes
-	
-	trigger = {
-		tag = ROM
-		has_country_flag = populares_optimates_appear
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	option = {
-		name = "rome.9.a"
-			add_faction_influence = { faction = populares influence = 5 }
-			
-	}
-}
-########################################################################################
-# populares land reform
-########################################################################################
-country_event = {
-	id = rome.10
-	title = "rome.10.t"
-	desc = "rome.10.d"
-	picture = plebs
-	is_triggered_only = yes
-	
-	trigger = {
-		tag = ROM
-		has_country_flag = populares_optimates_appear
-			faction_influence = {
-				faction = populares
-				influence = 60
-			}
-		NOT = { has_country_modifier = populares_land_reform }		
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	option = {
-		name = "rome.10.a"
-			add_faction_influence = { faction = populares influence = 5 }
-			add_stability = -1
-			add_country_modifier = {
-				name = populares_land_reform
-				duration = 7300
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -10
-			}
-	}
-	option = {
-		name = "rome.10.b"
-			add_faction_influence = { faction = populares influence = -5 }
-			add_republican_tradition = -0.05
-			add_estate_loyalty = {
-				estate = estate_citizens
-				loyalty = -10
-			}
-	}
-}
-########################################################################################
-# Proscription lists
-########################################################################################
-country_event = {
-	id = rome.11
-	title = "rome.11.t"
-	desc = "rome.11.d"
-	picture = assassination
-	is_triggered_only = yes
-	
-	trigger = {
-		tag = ROM
-		has_country_flag = populares_optimates_appear
-			faction_influence = {
-				faction = optimates
-				influence = 60
-			}
-		NOT = { has_country_modifier = populares_land_reform }		
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	option = {
-		name = "rome.11.a"
-			add_faction_influence = { faction = populares influence = -20 }
-			if = {
-				limit = {	 has_country_modifier = populares_land_reform }
-							remove_country_modifier = populares_land_reform
-			}
-			add_estate_loyalty = {
-				estate = estate_citizens
-				loyalty = -15
-			}
-		add_republican_tradition = -0.15
-	}
-	option = {
-		name = "rome.11.b"
-			add_stability = -1
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -15
-			}
-	}
-}
 
 ########################################################################################
 # marian reform  I - capite censi
@@ -367,10 +174,6 @@ country_event = {
 				duration = -1
 			}
 			
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
-			}
 			if = {
 				limit = {	has_factions = yes }
 							add_faction_influence = { faction = populares influence = 10 }
@@ -506,10 +309,6 @@ country_event = {
 				limit = {	has_factions = yes }
 							add_faction_influence = { faction = populares influence = 10 }
 			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
-			}
 			
 		set_country_flag = land_grants_happened	
 	}
@@ -595,7 +394,8 @@ country_event = {
 		name = "rome.16.a"
 		ai_chance = { factor = 90 }
 		add_stability = -1
-		change_government = classic_republic
+		change_government = republic
+		add_government_reform = res_publica_reform
 		capital_scope = {
 		spawn_rebels = {
 				type = noble_rebels
@@ -655,14 +455,6 @@ country_event = {
 				name = servius_tullius_mil
 				duration = -1
 			}	
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -10
-			}
-			add_estate_loyalty = {
-				estate = estate_citizens
-				loyalty = 10
-			}	
 			set_country_flag = servius_tullius_mil_reform
 	}
 	option = {
@@ -711,20 +503,6 @@ country_event = {
 				name = servius_tullius_adm
 				duration = -1
 			}	
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
-			}
-			add_estate_loyalty = {
-				estate = estate_citizens
-				loyalty = 5
-			}	
-			add_estate_influence_modifier = {
-			estate = estate_citizens
-				desc = EST_VAL_SERVIUS_TULLIUS_REFORM
-				influence = 5
-				duration = -1
-			}
 	}
 	option = {
 		name = "rome.18.b"
@@ -890,112 +668,6 @@ country_event = {
 	}
 }
 
-########################################################################################
-# secessio plebis
-########################################################################################
-country_event = {
-	id = rome.22
-	title = "rome.22.t"
-	desc = "rome.22.d"
-	picture = plebs
-	is_triggered_only = yes
-	
-	trigger = {
-		
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	
-	immediate = {
-		set_country_flag = secessio_plebis_happened
-	}
-	
-	option = {
-		name = "rome.22.a"
-		ai_chance = { factor = 80 }
-			add_stability = -1
-			add_estate_loyalty = {
-				estate = estate_citizens
-				loyalty = 10
-			}	
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -25
-			}	
-			add_estate_influence_modifier = {
-			estate = estate_citizens
-				desc = EST_VAL_SERVIUS_TULLIUS_REFORM
-				influence = 20
-				duration = -1
-			}
-			end_disaster = secessio_plebis_disaster
-	}
-	option = {
-		name = "rome.22.b"
-		ai_chance = { factor = 20 }
-			set_country_flag = kill_the_plebs_flag
-			random_owned_province = {
-					spawn_rebels = {
-							type = 	republican_rebels
-							size = 4
-						}
-				}
-	}
-}
-########################################################################################
-# secessio plebis ends 1st
-########################################################################################
-country_event = {
-	id = rome.23
-	title = "rome.23.t"
-	desc = "rome.23.d"
-	picture = plebs
-	is_triggered_only = yes
-	
-	trigger = {
-		
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	option = {
-		name = "rome.23.a"
-		ai_chance = { factor = 80 }
-			add_stability = 1
-			
-	}
-}
-########################################################################################
-# secessio plebis ends 2nd
-########################################################################################
-country_event = {
-	id = rome.24
-	title = "rome.24.t"
-	desc = "rome.24.d"
-	picture = plebs
-	
-	trigger = {
-		has_country_flag = kill_the_plebs_flag
-		NOT = { num_of_revolts = 1 }
-	}
-	
-	mean_time_to_happen = {
-		days = 1	
-	}
-	
-	option = {
-		name = "rome.24.a"
-		ai_chance = { factor = 80 }
-			add_stability = 1
-			clr_country_flag = kill_the_plebs_flag
-			end_disaster = secessio_plebis_disaster
-	}
-}
 ########################################################################################
 # change to republic from principate
 ########################################################################################

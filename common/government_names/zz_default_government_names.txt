@@ -28,7 +28,7 @@ default_monarchy = {
 	
 	trigger = {
 		government = monarchy
-		NOT = { government = triumvirate }
+		#NOT = { has_reform = triumvirate }
 	}
 }
 
@@ -59,8 +59,8 @@ default_tribe_kingdom = {
 	
 	trigger = {
 		OR = {
-				government = tribal_despotism
-				government = tribal_kingdom
+				has_reform = tribal_kingdom_reform
+				has_reform = iberian_society_reform
 			}
 	}
 }
@@ -91,7 +91,7 @@ default_tribe = {
 	}
 	
 	trigger = {
-			government = tribal_federation
+			government = tribal
 	}
 }
 
@@ -121,7 +121,7 @@ default_horde = {
 	}
 	
 	trigger = {
-			government = tribal_horde
+			government = native
 	}
 }
 
@@ -152,7 +152,37 @@ default_league = {
 	}
 	
 	trigger = {
-		government = league
+		has_reform = league_reform
+	}
+}
+
+default_oligarchy = {
+	rank = {
+		1 = CITY
+		2 = OLIGARCHY
+		3 = OLIGARCHY
+		4 = GREAT_OLIGARCHY
+		4 = EMPIRE
+	}
+	
+	ruler_male = {
+		1 = CONSUL
+		2 = CONSUL
+		3 = CONSUL
+		4 = GRAND_CONSUL
+		5 = GREAT_CONSUL
+	}
+	
+	ruler_female = {
+		1 = CONSULESS
+		2 = CONSULESS
+		3 = CONSULESS
+		4 = GRAND_CONSULESS
+		5 = GREAT_CONSULESS
+	}
+	
+	trigger = {
+		government = theocracy
 	}
 }
 

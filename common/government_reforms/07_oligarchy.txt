@@ -1,0 +1,13 @@
+oligarchy_mechanic = {
+	has_devotion = yes
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	royal_marriage = no
+	religion = no
+	heir = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	modifiers = {
+		land_morale = 0.1
+	}
+}

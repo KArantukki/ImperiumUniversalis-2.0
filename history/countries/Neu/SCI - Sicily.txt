@@ -1,8 +1,0 @@
-government = despotic_monarchy
-government_rank = 3
-#mercantilism = 0.25
-technology_group = greek
-primary_culture = italiote
-religion = greek_religion
-capital = 251
-religious_school = hellenic_type

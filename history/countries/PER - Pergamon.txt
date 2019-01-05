@@ -1,11 +1,12 @@
-government = greek_polis
+government = republic
+add_government_reform = greek_polis_reform
 government_rank = 1
 #mercantilism = 0.25
 technology_group = greek
 primary_culture = aeolic
 religion = greek_religion
 capital = 2122
-religious_school = hellenic_type
+#religious_school = hellenic_type
 
 	##fac_oligarchs = 60
 	##fac_monarchists = 35
@@ -15,10 +16,11 @@ religious_school = hellenic_type
 
 425.1.1 = { primary_culture = greek }
 471.1.1 = {
-	government = despotic_monarchy
+	government = monarchy
+	add_government_reform = despotism_reform
 	government_rank = 3
 	clear_scripted_personalities = yes
-	add_ruler_personality = charismatic_negoniator_personality
+	#dd_ruler_personality = charismatic_negoniator_personality
 	monarch = {
 		name = "Philetaerus"
 		dynasty = "Attalid"

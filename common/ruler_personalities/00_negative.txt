@@ -280,7 +280,6 @@ infertile_personality = {
 	}
 
 	allow = {
-		NOT = { government = ottoman_government }
 		government = monarchy
 	}
 	
@@ -1095,11 +1094,7 @@ little_tyrant_personality = {
 			}
 			modifier = {
 				factor = 2
-				OR = {
-					government = greek_polis	
-					government = greek_polis_democracy	
-					government = greek_polis_tyrannis
-				}
+				has_reform = greek_polis_reform
 			}
 		}
 	}

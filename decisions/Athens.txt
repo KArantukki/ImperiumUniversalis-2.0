@@ -15,10 +15,7 @@ country_decisions = {
 		}
 		effect = {
 				remove_country_modifier = solons_reform
-				add_estate_loyalty = {
-					estate = estate_citizens
-					loyalty = -10
-				}
+				add_stability = -1
 			}
 		ai_importance = 5	
 		ai_will_do = {

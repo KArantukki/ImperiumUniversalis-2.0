@@ -5,7 +5,7 @@ government_rank = 3
 technology_group = roman
 primary_culture = latin
 religion = roman_religion
-religious_school = hellenic_type
+#religious_school = hellenic_type
 capital = 616
 
 add_treasury = 250

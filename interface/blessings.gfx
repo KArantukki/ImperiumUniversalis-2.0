@@ -5,32 +5,32 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_holy_site_2407"
+		name = "GFX_holy_site_2828"
 		texturefile = "gfx//interface//holy_sites//baktra.dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_holy_site_3052"
+		name = "GFX_holy_site_2876"
 		texturefile = "gfx//interface//holy_sites//chorasmia.dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_holy_site_2397"
+		name = "GFX_holy_site_2835"
 		texturefile = "gfx//interface//holy_sites//merw.dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_holy_site_2003"
-		texturefile = "gfx//interface//holy_sites//yazd.dds"
+		name = "GFX_holy_site_2682"
+		texturefile = "gfx//interface//holy_sites//parsa.dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_holy_site_3031"
+		name = "GFX_holy_site_2397"
 		texturefile = "gfx//interface//holy_sites//asnavant.dds"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_holy_site_1945"
+		name = "GFX_holy_site_2702"
 		texturefile = "gfx//interface//holy_sites//alborz.dds"
 		loadType = "INGAME"
 	}

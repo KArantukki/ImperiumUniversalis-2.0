@@ -490,5 +490,50 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/road_construction.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "fall_of_nineveh"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/fall_of_nineveh.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "execution"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/execution.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "spy"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/spy.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "birth"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/birth.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "artisans"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/artisans.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "young_student"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/young_student.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "arrested_person"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/arrested_person.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "horse_smith"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/horse_smith.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "navy3"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/navy3.dds"
+		allwaystransparent = yes
+	}
 	
 }

@@ -583,10 +583,6 @@ country_event = {
 									add_base_tax = 1
 								}
 							}
-							if = {
-								limit = { has_estate = no }
-								set_estate = estate_citizens
-							}
 				}
 				add_manpower = 1
 			
@@ -763,10 +759,6 @@ province_event = {
 		modifier = {
 				factor = 0.75
 				is_state = yes
-			}			
-		modifier = {
-				factor = 0.75
-				has_estate = estate_nobles
 			}	
 		modifier = {
 				factor = 0.8
@@ -1294,7 +1286,7 @@ province_event = {
 	trigger = {
 		any_neighbor_province = { 
 			owner = {
-				government = tribal_horde
+				government = native
 				NOT = { alliance_with = ROOT }
 				NOT = { 
 						has_opinion = {
@@ -1307,7 +1299,7 @@ province_event = {
 				is_subject_of = ROOT
 			}
 		}
-		owner = { NOT = { government = tribal_horde } }
+		owner = { NOT = { government = native } }
 	}
 	
 	mean_time_to_happen = {

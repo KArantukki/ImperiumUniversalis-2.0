@@ -14,7 +14,7 @@ country_decisions = {
 			is_subject = no
 			owns_core_province = 2277
 			owns_core_province = 2286
-			total_development = 150
+			 num_of_provinces_in_states = 8 
 		}
 		effect = {
 			change_tag = ISR
@@ -36,6 +36,28 @@ country_decisions = {
 				}
 			}
 		ai_importance = 300	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	# Ezra's Marriage Reform
+	 ezras_reform = {
+		major = yes
+		potential = {
+			TAG = JUD 
+			NOT = { has_country_modifier = ezras_reform_modifier }
+		}
+		allow = {
+			religion = jewish
+			is_at_war =  no
+			adm_tech = 6
+		}
+		effect = {
+			add_country_modifier = { 
+				name = ezras_reform_modifier
+				duration = -1  
+				}
+			}
 		ai_will_do = {
 			factor = 1
 		}

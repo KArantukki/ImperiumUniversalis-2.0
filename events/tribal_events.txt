@@ -12,10 +12,8 @@ country_event = {
 	
 	trigger = {
 		always = no
-		OR = {	government = tribal_despotism 
-				government = tribal_horde 
-				government = tribal_kingdom
-				government = tribal_federation }
+		OR = {	government = tribal 
+				government = native }
 	}
 	
 	mean_time_to_happen = {
@@ -41,8 +39,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {	government = tribal_horde  
-				is_tribal = yes }
+		government = tribal
 		any_neighbor_country = {	NOT = { is_tribal = yes }  
 									total_development = 30
 									NOT = { is_rival = ROOT }
@@ -241,7 +238,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_estate = estate_priests
 		religion = celtic_religion
 		NOT = { stability = 3 }
 	}
@@ -266,10 +262,7 @@ country_event = {
 	option = {
 		name = "tribal.9.b"
 		ai_chance = { factor = 40 }
-			add_estate_loyalty = {
-				estate = estate_priests
-				loyalty = -10
-			}
+			
 	}
 }
 ########################################################################################
@@ -318,7 +311,7 @@ country_event = {
 	picture = stag
 	
 	trigger = {
-		government = tribal_horde
+		government = native
 		NOT = { num_of_cities = 4 }
 		NOT = { has_country_modifier = good_hunt_mod }
 		NOT = { has_country_modifier = bad_hunt_mod }
@@ -348,7 +341,7 @@ country_event = {
 	picture = stag
 	
 	trigger = {
-		government = tribal_horde
+		government = native
 		NOT = { num_of_cities = 4 }
 		NOT = { has_country_modifier = good_hunt_mod }
 		NOT = { has_country_modifier = bad_hunt_mod }
@@ -414,7 +407,7 @@ country_event = {
 
 
     trigger = { 
-            government = tribal_horde
+            government = native
             is_at_war = no
             any_neighbor_country = {
                 NOT = { 
@@ -875,4 +868,34 @@ country_event = {
 				influence = -5
 			}
     }
+}
+########################################################################################
+# no will for reforms
+########################################################################################
+country_event = {
+    id = tribal.24
+    title = "tribal.24.t"
+    desc = "tribal.24.d"
+    picture = battle
+	is_triggered_only = yes
+    
+    trigger = {
+			government = tribal
+        }
+    
+    mean_time_to_happen = {
+		days = 1   
+    }
+	
+    option = {
+        name = "tribal.24.a"
+			add_stability = -1
+	}
+    option = {
+        name = "tribal.24.b"
+			add_country_modifier = {
+				name = no_wil_for_reforms_modifier
+				duration = 3650
+			}	
+	}
 }

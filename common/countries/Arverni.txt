@@ -86,27 +86,27 @@ monarch_names = {
 }
 
 ship_names = {
-Andastra
-Arawn
-Ardan
-Arianrhod
-Badb
-Balor
-Casnar Wledig
-Cathbad
-Grendel
-Gronw Pebr
-Medb
-Melusine
-Oger
-Orlam
-Rosmerta
-Uisneach
-Sul
-Ethlinn
-Ethnea
-Hafgan
-Hefaidd Hen
+	Andastra
+	Arawn
+	Ardan
+	Arianrhod
+	Badb
+	Balor
+	Casnar Wledig
+	Cathbad
+	Grendel
+	Gronw Pebr
+	Medb
+	Melusine
+	Oger
+	Orlam
+	Rosmerta
+	Uisneach
+	Sul
+	Ethlinn
+	Ethnea
+	Hafgan
+	Hefaidd Hen
 }
 
 leader_names = { 

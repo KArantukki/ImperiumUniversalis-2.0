@@ -5,12 +5,146 @@ monarch_power = MIL
 # ahead_of_time = {
 # }
 
-# Pre-era techs
+
 technology = {
 	# Tech 0
-	year = 180 # 574 BC  
+	year = 125 # 629 BC 
 	
 	sprite_level = 1
+	
+	enable = 1_etruscan_spearmen
+	enable = 1_etruscan_swordsmen
+	enable = 1_etruscan_hunters
+	enable = 1_etruscan_raiders
+	enable = 1_doric_hoplite
+	enable = 1_achaean_hoplites
+	enable = 1_doric_riders
+	enable = 1_aetolian_riders
+	enable = 1_ionian_archers
+	enable = 1_phoenician_marines
+	enable = 1_mounted_spearmen
+	enable = 1_phoenician_slingers
+	enable = 1_assyrian_spearmen
+	enable = 1_assyrian_chariots
+	enable = 1_egyptian_chariots
+	enable = 1_assyrian_levy_archers
+	enable = 1_median_clansmen
+	enable = 1_highland_archers
+	enable = 1_highland_raiders
+	enable = 1_median_horsemen
+	enable = 1_thracian_clansmen
+	enable = 1_illyrian_clansmen
+	enable = 1_mounted_clansmen
+	enable = 1_clansmen_archers
+	enable = 1_forest_warriors
+	enable = 1_hill_warriors
+	enable = 1_gaul_spearthrowers
+	enable = 1_celtic_horsemen
+	enable = 1_germanic_clansmen
+	enable = 1_clans_cavalry
+	enable = 1_hill_archers
+	enable = 1_desert_clansmen
+	enable = 1_garamantian_chariots
+	enable = 1_garamantian_skirmishers
+	enable = 1_cimmerian_axemen
+	enable = 1_cimmerian_raiders
+	enable = 1_cimmerian_archers
+	enable = 1_tartassian_archers
+	enable = 1_tartassian_riders
+	enable = 1_tartassian_spearmen
+	enable = 1_sabean_horsemen
+	enable = 1_sabean_tribesmen
+	enable = 1_sabean_skirmishers
+	enable = 1_vedic_clansmen
+	enable = 1_dravidian_clansmen
+	enable = 1_chinese_levy_archers
+	enable = 1_bronze_spear_cavalry
+	enable = 1_bronze_sword_infantry
+	enable = 1_bronze_spear_infantry
+	enable = 1_northern_axemen
+	enable = 1_steppe_riders
+	enable = 1_northern_spearthrowers
+	enable = 1_anatolian_skirmishers
+	enable = 1_lydian_horsemen
+	enable = 1_phrygian_spearmen
+	enable = 1_jungle_clansmen
+	enable = 1_mounted_warriors
+	enable = 1_jungle_spearthrowers
+	enable = 1_brit_clansmen
+	enable = 1_brit_highland_raiders
+	
+	land_morale = 1.0
+	combat_width = 1.0
+	
+	artillery_fire 		= 	0.2
+	artillery_shock 	=	0.2
+	infantry_shock		= 	0.2
+	infantry_fire 		= 	0.2
+	cavalry_shock		= 	0.2
+	cavalry_fire		= 	0.2
+	military_tactics 	= 	0.1
+	
+}
+
+technology = {
+	# Tech 1
+	year = 130 # 624 BC 
+	
+	land_morale = 	0.05
+	supply_limit =  0.05
+}
+
+technology = {
+	# Tech 2
+	year = 135 # 619 BC 
+	military_tactics 	= 	0.05
+	small_city_walls = yes
+
+}
+
+technology = {
+	# Tech 3
+	year = 145 # 609 BC 
+
+	cavalry_shock		= 	0.05
+	cavalry_fire		= 	0.05
+}
+
+technology = {
+	# Tech 4
+	year = 160 # 594 BC 
+
+	small_army_camp = yes
+}
+
+# Pre-era techs
+technology = {
+	# Tech 5
+	year = 175 # 579 BC  
+	
+	land_morale = 	0.05
+}
+
+technology = {
+	# Tech 6
+	year = 190 # 564 BC  
+	
+	military_tactics 	= 	0.05
+}
+
+technology = {
+	# Tech 7
+	year = 205 
+		
+	land_morale = 	0.05
+}
+
+# The 30 big techs from here on
+
+technology = {
+	# Tech 8
+	year = 220
+	
 	
 	enable = 0_seleucid_elephants
 	enable = 0_african_skirmishers
@@ -106,62 +240,11 @@ technology = {
 	enable = 0_brit_tribesmen
 	enable = 0_brit_chariots
 	enable = 0_early_brit_skirmishers
-	
-	land_morale = 1.0
-	
-	combat_width = 1.0
-	
-	
-	artillery_fire 		= 	0.3
-	artillery_shock 	=	0.3
-	infantry_shock		= 	0.3
-	infantry_fire 		= 	0.3
-	cavalry_shock		= 	0.3
-	cavalry_fire		= 	0.3
-	military_tactics 	= 	0.15
-	
-	
-}
-
-technology = {
-	# Tech 1
-	year = 190 # 564 BC  
-	
-	military_tactics 	= 	0.1
-	small_city_walls = yes
-
-	
-	
-}
-
-technology = {
-	# Tech 2
-	year = 205 
-	
-		
-	small_army_camp = yes
-	land_morale = 	0.1
-
-	
-	
-}
-
-# The 30 big techs from here on
-
-technology = {
-	# Tech 3
-	year = 220
-	
-	#combat_width = 1
-	infantry_shock		= 	0.05
-	infantry_fire 		= 	0.02
-	maneuver_value 		= 	0.05
-	military_tactics 	= 	0.05
 
 }
 
 technology = {
-	# Tech 4
+	# Tech 9
 	year = 235
 	
 	#enable = art_1_2
@@ -172,16 +255,16 @@ technology = {
 }
 
 technology = {
-	# Tech 5
+	# Tech 10
 	year = 250
 	
+	sprite_level = 2
 	small_conscription_center = yes
 }
 
 technology = {
-	# Tech 6
+	# Tech 11
 	year = 265
-	
 	
 	land_morale = 	0.05
 	supply_limit =  0.05
@@ -191,7 +274,7 @@ technology = {
 }
 
 technology = {
-	# Tech 7
+	# Tech 12
 	year = 280
 	
 	land_morale = 	0.5
@@ -201,7 +284,7 @@ technology = {
 }
 
 technology = {
-	# Tech 8
+	# Tech 13
 
 	year = 295
 	
@@ -213,7 +296,7 @@ technology = {
 }
 
 technology = {
-	# Tech 9
+	# Tech 14
 	year = 310
 	
 	enable = 0_companion_cavalry
@@ -225,7 +308,7 @@ technology = {
 }
 
 technology = {
-	# Tech 10
+	# Tech 15
 	year = 325
 	
 	land_morale = 	0.05
@@ -240,12 +323,12 @@ technology = {
 }
 
 technology = {
-	# Tech 11
+	# Tech 16
 	year = 340
 }
 
 technology = {
-	# Tech 12
+	# Tech 17
 	year = 355
 	
 	#enable = art_2_6
@@ -266,42 +349,8 @@ technology = {
 }
 
 technology = {
-	# Tech 13
+	# Tech 18
 	year = 370
-	
-	combat_width = 2
-	big_military_settlement = yes
-	
-}
-
-technology = {
-	# Tech 14
-	year = 385
-	
-	
-	land_morale = 	0.05
-	supply_limit =  0.05
-	#combat_width = 1
-	infantry_shock		= 	0.05
-	infantry_fire 		= 	0.02
-	cavalry_shock		= 	0.05
-	cavalry_fire		= 	0.05
-	maneuver_value 		= 	0.05
-	military_tactics 	= 	0.05
-	artillery_fire 		= 	0.05
-	artillery_shock 	=	0.02
-	
-}
-
-technology = {
-	# Tech 15
-	year = 400
-
-	
-	land_morale = 	0.2
-	supply_limit =  0.2
-	combat_width = 2
-	
 	
 	enable = 5_adv_celtic_warriors
 	enable = 5_adv_chinese_spearmen
@@ -386,10 +435,43 @@ technology = {
 	enable = 5_iceni_horsemen
 	enable = 5_caledonian_slingers
 	
+	combat_width = 1
+	big_military_settlement = yes
+	
 }
 
 technology = {
-	# Tech 16
+	# Tech 19
+	year = 385
+	
+	
+	land_morale = 	0.05
+	supply_limit =  0.05
+	#combat_width = 1
+	infantry_shock		= 	0.05
+	infantry_fire 		= 	0.02
+	cavalry_shock		= 	0.05
+	cavalry_fire		= 	0.05
+	maneuver_value 		= 	0.05
+	military_tactics 	= 	0.05
+	artillery_fire 		= 	0.05
+	artillery_shock 	=	0.02
+	
+}
+
+technology = {
+	# Tech 20
+	year = 400
+	sprite_level = 3
+	
+	land_morale = 	0.2
+	supply_limit =  0.2
+	combat_width = 2
+	
+}
+
+technology = {
+	# Tech 21
 	year = 415
 
 	military_academy = yes
@@ -399,7 +481,7 @@ technology = {
 }
 
 technology = {
-	# Tech 17
+	# Tech 22
 	year = 430
 	
 	border_garrison = yes
@@ -409,7 +491,7 @@ technology = {
 }
 
 technology = {
-	# Tech 18
+	# Tech 23
 	year = 445
 
 	land_morale = 	0.05
@@ -428,7 +510,7 @@ technology = {
 }
 
 technology = {
-	# Tech 19
+	# Tech 24
 	year = 460	
 
 	#enable = art_3_9
@@ -448,7 +530,7 @@ technology = {
 }
 
 technology = {
-	# Tech 20
+	# Tech 25
 	year = 475
 
 	land_morale = 	0.05
@@ -546,7 +628,7 @@ technology = {
 }
 
 technology = {
-	# Tech 21
+	# Tech 26
 	year = 490
 	infantry_shock		= 	0.05
 	infantry_fire 		= 	0.02
@@ -555,7 +637,7 @@ technology = {
 }
 
 technology = {
-	# Tech 22
+	# Tech 27
 	year = 520
 	
 	artillery_fire 		= 	0.05
@@ -563,7 +645,7 @@ technology = {
 }
 
 technology = {
-	# Tech 23
+	# Tech 28
 	year = 535
 	
 	
@@ -573,7 +655,7 @@ technology = {
 }
 
 technology = {
-	# Tech 24
+	# Tech 29
 	year = 550
 	
 	combat_width = 1
@@ -583,7 +665,7 @@ technology = {
 }
 
 technology = {
-	# Tech 25
+	# Tech 30
 	year = 565
 
 	land_morale = 	0.05
@@ -675,7 +757,7 @@ technology = {
 }
 
 technology = {
-	# Tech 26
+	# Tech 31
 	year = 580
 	
 	#combat_width = 1
@@ -691,7 +773,7 @@ technology = {
 }
 
 technology = {
-	# Tech 27
+	# Tech 32
 	year = 595
 
 	#combat_width = 1
@@ -707,7 +789,7 @@ technology = {
 }
 
 technology = {
-	# Tech 28
+	# Tech 33
 	year = 610
 	
 	combat_width = 1
@@ -715,18 +797,18 @@ technology = {
 }
 
 technology = {
-	# Tech 29
+	# Tech 34
 	year = 625
 	
 	land_morale = 	0.1
 	supply_limit =  0.1
-	combat_width = 1
 
 }
 
 technology = {
-	# Tech 30
+	# Tech 35
 	year = 640
+	sprite_level = 4
 	
 	land_morale = 	0.05
 	supply_limit =  0.05
@@ -816,7 +898,7 @@ technology = {
 }
 
 technology = {
-	# Tech 31
+	# Tech 36
 	year = 655
 	
 	land_morale = 	0.05
@@ -826,7 +908,7 @@ technology = {
 }
 
 technology = {
-	# Tech 32
+	# Tech 37
 	year = 670
 	
 	land_morale = 	0.2
@@ -845,7 +927,7 @@ technology = {
 }
 
 technology = {
-	# Tech 33
+	# Tech 38
 	year = 685
 	land_morale = 	0.15
 	supply_limit =  0.15
@@ -853,12 +935,12 @@ technology = {
 }
 
 technology = {
-	# Tech 34
+	# Tech 39
 	year = 700
 }
 
 technology = {
-	# Tech 35
+	# Tech 40
 	year = 715
 	infantry_shock		= 	0.05
 	infantry_fire 		= 	0.02
@@ -871,14 +953,14 @@ technology = {
 }
 
 technology = {
-	# Tech 36
+	# Tech 41
 	year = 730
 	land_morale = 	0.1
 
 }
 
 technology = {
-	# Tech 37
+	# Tech 42
 	year = 745
 	infantry_shock		= 	0.05
 	infantry_fire 		= 	0.02
@@ -891,14 +973,14 @@ technology = {
 }
 
 technology = {
-	# Tech 38
+	# Tech 43
 	year = 760
 	land_morale = 	0.1
 
 }
 
 technology = {
-	# Tech 39
+	# Tech 44
 	year = 775
 	infantry_shock		= 	0.05
 	infantry_fire 		= 	0.02
@@ -911,7 +993,7 @@ technology = {
 }
 
 technology = {
-	# Tech 40
+	# Tech 45
 	year = 790
 	land_morale = 	0.1
 
@@ -1009,7 +1091,7 @@ technology = {
 }
 
 technology = {
-	# Tech 41
+	# Tech 46
 	year = 805
 	infantry_shock		= 	0.05
 	infantry_fire 		= 	0.02
@@ -1022,14 +1104,14 @@ technology = {
 }
 
 technology = {
-	# Tech 42
+	# Tech 47
 	year = 820
 	land_morale = 	0.1
 
 }
 
 technology = {
-	# Tech 43
+	# Tech 48
 	year = 835
 	maneuver_value 		= 	0.1
 	military_tactics 	= 	0.05
@@ -1037,14 +1119,14 @@ technology = {
 }
 
 technology = {
-	# Tech 44
+	# Tech 49
 	year = 850
 	land_morale = 	0.1
 
 }
 
 technology = {
-	# Tech 45
+	# Tech 50
 	year = 865
 	infantry_shock		= 	0.1
 	infantry_fire 		= 	0.1
@@ -1052,14 +1134,14 @@ technology = {
 }
 
 technology = {
-	# Tech 46
+	# Tech 51
 	year = 880
 	land_morale = 	0.1
 
 }
 
 technology = {
-	# Tech 47
+	# Tech 52
 	year = 895
 	infantry_shock		= 	0.05
 	infantry_fire 		= 	0.02
@@ -1069,14 +1151,14 @@ technology = {
 }
 
 technology = {
-	# Tech 48
+	# Tech 53
 	year = 910
 	land_morale = 	0.1
 
 }
 
 technology = {
-	# Tech 49
+	# Tech 54
 	year = 925
 	infantry_shock		= 	0.05
 	infantry_fire 		= 	0.02
@@ -1088,7 +1170,7 @@ technology = {
 }
 
 technology = {
-	# Tech 50
+	# Tech 55
 	year = 940
 	land_morale = 	0.15
 

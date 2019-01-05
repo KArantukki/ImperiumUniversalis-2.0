@@ -12,11 +12,11 @@ country_event = {
 	
 	trigger = {
 		manpower_percentage = 0.2
-		government = tribal_horde
+		government = native
 		is_at_war = no
 		is_subject = no
 		any_country = { 
-			NOT = { government = tribal_horde }
+			NOT = { government = native }
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
 			any_active_trade_node = { 
@@ -36,7 +36,7 @@ country_event = {
 			add_yearly_manpower = -1.0
 			hidden_effect = {
 				random_country = {
-					limit = {	NOT = { government = tribal_horde }
+					limit = {	NOT = { government = native }
 								NOT = { alliance_with = ROOT }
 								NOT = { is_subject_of = ROOT }
 								any_active_trade_node = { has_merchant = ROOT }

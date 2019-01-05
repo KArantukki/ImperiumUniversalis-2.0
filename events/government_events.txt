@@ -191,9 +191,10 @@ country_event = {
 	option = {
 		name = "government.6.a"
 		random = {
-			chance = 50
+			chance = 25
 			kill_ruler = yes
 		}
+		add_faction_influence = { faction = fac_monarch influence = -5 }
 	}
 }
 ########################################################################################
@@ -223,7 +224,7 @@ country_event = {
 				}
 				spawn_rebels = {
 						type = nationalist_rebels
-						size = 6
+						size = 4
 						win = yes
 					}	
 			}
@@ -232,7 +233,7 @@ country_event = {
 				}
 				spawn_rebels = {
 						type = nationalist_rebels
-						size = 6
+						size = 3
 						win = yes
 					}	
 			}
@@ -263,6 +264,7 @@ country_event = {
 	option = {
 		name = "government.8.a"
 			add_stability = -1
+			add_faction_influence = { faction = fac_monarch influence = -5 }
 			set_ruler_flag = mad_ruler
 	}
 }
@@ -411,12 +413,14 @@ country_event = {
 					}
 					area = { add_local_autonomy = 20  }
 					}
+		add_faction_influence = { faction = fac_monarch influence = 5 }
 
 	}
 	option = {
 		name = "government.13.b"
 		ai_chance = { factor = 20 }
 			add_stability = -1
+			add_faction_influence = { faction = fac_nobles influence = 5 }
 	}
 }
 ########################################################################################
@@ -572,130 +576,6 @@ country_event = {
 		}
 	}
 
-########################################################################################
-# ceremony
-########################################################################################
-country_event = {
-	id = government.23
-	title = "government.23.t"
-	desc = "government.23.d"
-	picture = culture
-	is_triggered_only = yes
-	
-	trigger = {
-		government = oriental_monarchy
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "government.23.a"
-		ai_chance = { factor = 50 }
-			add_prestige = 5
-			change_statists_vs_orangists = 0.05
-	}
-	option = {
-		name = "government.23.b"
-		ai_chance = { factor = 50 }
-			add_dip_power = 10
-			change_statists_vs_orangists = -0.05
-	}
-}
-########################################################################################
-# foreign generals
-########################################################################################
-country_event = {
-	id = government.24
-	title = "government.24.t"
-	desc = "government.24.d"
-	picture = generals
-	is_triggered_only = yes
-	
-	trigger = {
-		government = oriental_monarchy
-		any_owned_province = { 
-			has_owner_culture = no }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = { 
-		hidden_effect = {
-			random_owned_province = {
-				limit = { has_owner_culture = no }
-					save_event_target_as = generalprovince
-			}
-			set_saved_name = {
-				key = young_general_name
-				type = advisor
-				scope = event_target:generalprovince
-			}
-		}
-	}
-	
-	option = {
-		name = "government.24.a"
-		ai_chance = { factor = 50 }
-			define_general = {
-				name = young_general_name
-				fire = 5
-				shock = 5
-				manuever = 2
-				siege = 2
-			}
-			add_legitimacy = -5
-			change_statists_vs_orangists = -0.05
-	}
-	option = {
-		name = "government.24.b"
-		ai_chance = { factor = 50 }
-			change_statists_vs_orangists = 0.05
-			
-	}
-	
-	after = {
-		clear_saved_name = young_general_name
-	}
-}
-########################################################################################
-# our architecture
-########################################################################################
-country_event = {
-	id = government.25
-	title = "government.25.t"
-	desc = "government.25.d"
-	picture = construction
-	is_triggered_only = yes
-	
-	trigger = {
-		government = oriental_monarchy
-		NOT = { has_country_modifier = foreign_influences_in_architecture }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "government.25.a"
-		ai_chance = { factor = 50 }
-			change_statists_vs_orangists = 0.05
-	}
-	option = {
-		name = "government.25.b"
-		ai_chance = { factor = 50 }
-			add_country_modifier = {
-					name = foreign_influences_in_architecture
-					duration = 1825
-				}
-			add_dip_power = -10
-			change_statists_vs_orangists = -0.05
-	}
-}
 ########################################################################################
 # snow falls
 ########################################################################################

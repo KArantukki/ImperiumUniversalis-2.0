@@ -1,8 +1,8 @@
-add_core = AP1
-owner = AP1
-controller = AP1
-culture = epirot
-religion = greek_religion
+add_core = BY1
+owner = BY1
+controller = BY1
+culture = ardiaei
+religion = illyrian_religion
 hre = no
 base_tax = 0
 base_production = 1

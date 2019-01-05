@@ -810,5 +810,4 @@ spriteTypes = {
 		effectFile = "gfx//FX//progress.lua"
 	}
 
-	}
 }

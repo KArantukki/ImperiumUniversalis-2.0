@@ -10,6 +10,8 @@ base_manpower = 1
 trade_goods = fish
 capital = ""
 is_city = yes
+small_harbor = yes
+gravel_road = yes
 
 discovered_by = roman
 discovered_by = greek

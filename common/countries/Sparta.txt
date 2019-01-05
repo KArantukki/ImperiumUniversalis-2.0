@@ -7,12 +7,13 @@ color = { 100 5 5 }
 
 historical_idea_groups = {
 	infantry_ideas
-	imperial_government_ideas
-	quality_ideas
+	agraculture_ideas
+	imperial_ideas
+	leadership_ideas
 	administrative_ideas
-	offensive_ideas
-	maritime_ideas
-	defensive_ideas
+	diplomatic_ideas
+	naval_ideas
+	cerimonial_ideas
 }
 
 historical_units = {

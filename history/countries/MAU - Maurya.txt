@@ -1,4 +1,5 @@
-government = vedic_kingdom
+government = tribal
+add_government_reform = vedic_kingdom_reform
 government_rank = 3
 #mercantilism = 0.25
 technology_group = indian
@@ -53,7 +54,9 @@ historical_rival = AGA
 264.1.1 = {
 	capital = 2689
 }	
-290.1. = { government = despotic_monarchy }
+290.1.1 = { 
+government = monarchy
+add_government_reform = despotism_reform }
 341.1.1 = {
 	monarch = {
 		name = "Shishunaga"

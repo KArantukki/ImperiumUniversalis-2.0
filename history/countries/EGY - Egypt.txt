@@ -1,11 +1,12 @@
-government = despotic_monarchy
+government = monarchy
+add_government_reform = despotism_reform
 government_rank = 4
 #mercantilism = 0.25
 technology_group = diadochi
 primary_culture = egyptian
 add_accepted_culture = wasetic
 religion = egyptian_religion
-religious_school = egyptian_type
+#religious_school = egyptian_type
 
 historical_rival = BAB
 
@@ -14,6 +15,7 @@ capital = 735
 90.1.1 = {
 	add_army_professionalism = 0.1
 	add_absolutism = 10
+	add_faction_influence = { faction = fac_monarch influence = 30 }
 	monarch = {
 		name = "Psamtik I"
 		dynasty = "of Sais"

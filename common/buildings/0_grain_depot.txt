@@ -22,12 +22,12 @@ small_grain_depot = {
 	trigger = {
 		OR = {
 		trade_goods = grain
-		trade_goods =fruits
-		trade_goods =rice }
+		trade_goods = fruits
+		trade_goods = rice }
 	}
 	modifier = {
-		land_forcelimit = 2
-		trade_goods_size_modifier = 0.25
+		land_forcelimit = 3
+		trade_goods_size_modifier = 0.2
 	}
 	
 	ai_will_do = {
@@ -41,12 +41,12 @@ big_grain_depot = {
 	trigger = {
 		OR = {
 		trade_goods = grain
-		trade_goods =fruits
-		trade_goods =rice }
+		trade_goods = fruits
+		trade_goods = rice }
 	}
 	modifier = {
-		land_forcelimit = 4
-		trade_goods_size_modifier = 0.5
+		land_forcelimit = 6
+		trade_goods_size_modifier = 0.4
 	}
 	
 	ai_will_do = {

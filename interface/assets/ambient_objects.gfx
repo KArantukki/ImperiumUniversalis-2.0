@@ -227,13 +227,6 @@ objectTypes = {
 		scale = 1.0
 	}
 	
-	pdxmesh = {
-		name = "desert_skeleton_mesh"
-		file = "gfx/models/Buildings/Muslim/artemis_temple.mesh"			
-		
-		scale = 0.7
-	}
-	
 
 	
 	pdxmesh = {

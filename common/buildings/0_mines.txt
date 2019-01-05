@@ -29,11 +29,13 @@ quarry = {
 			trade_goods = tin
 			trade_goods = gems 
 			trade_goods = silver
-			trade_goods = gold }
+			trade_goods = gold
+			trade_goods = jade  }
 	}
 	modifier = {
-		local_production_efficiency = 0.2
+		local_production_efficiency = 0.15
 		local_build_cost = -0.05
+		local_build_time = -0.05 
 	}
 	ai_will_do = {
 		factor = 3.0
@@ -51,13 +53,15 @@ small_mine = {
 			trade_goods = marble
 			trade_goods = lead
 			trade_goods = tin
-			trade_goods = gems
+			trade_goods = gems 
 			trade_goods = silver
-			trade_goods = gold }
+			trade_goods = gold
+			trade_goods = jade  }
 	}
 	modifier = {
-		local_production_efficiency = 0.4
+		local_production_efficiency = 0.3
 		local_build_cost = -0.1
+		local_build_time = -0.1
 	}
 	ai_will_do = {
 		factor = 1.0
@@ -75,13 +79,15 @@ big_mine = {
 			trade_goods = marble
 			trade_goods = lead
 			trade_goods = tin
-			trade_goods = gems
+			trade_goods = gems 
 			trade_goods = silver
-			trade_goods = gold }
+			trade_goods = gold
+			trade_goods = jade  }
 	}
 	modifier = {
-		local_production_efficiency = 0.6
+		local_production_efficiency = 0.45
 		local_build_cost = -0.15
+		local_build_time = -0.15 
 	}
 	ai_will_do = {
 		factor = 1.0

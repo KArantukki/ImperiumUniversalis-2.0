@@ -28,7 +28,7 @@ country_event = {
 				is_core = ROOT 
 			}
 			spawn_rebels = {
-				type = 	anti_tax
+				type = 	peasant_rebels
 				size = 2
 				win = yes
 			}
@@ -130,7 +130,6 @@ country_event = {
 	}
 	option = {
 		name = "iucivilwar.4.a"
-		ai_chance = { factor = 70 }
 			remove_advisor = random
 	}
 }
@@ -155,8 +154,7 @@ country_event = {
 	}
 	option = {
 		name = "iucivilwar.5.a"
-		ai_chance = { factor = 70 }
-			add_yearly_manpower = -0.2
+		add_yearly_manpower = -0.05
 	}
 }
 
@@ -186,9 +184,9 @@ country_event = {
 			add_legitimacy = 5
 			add_republican_tradition = 5
 			add_devotion = 5
-			add_adm_power = -50
-			add_dip_power = -50
-			add_mil_power = -50
+			add_adm_power = -25
+			add_dip_power = -25
+			add_mil_power = -25
 	}
 	option = {
 		name = "iucivilwar.6.b"

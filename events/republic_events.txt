@@ -11,13 +11,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
 			government = republic
-			government = republican_dictatorship
-		}
-		NOT = { government = tribal_despotism }
-		NOT = { government = tribal_horde }
-		NOT = { government = tribal_federation }
+		NOT = { government = tribal }
 	}
 	
 	mean_time_to_happen = {
@@ -50,15 +45,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-			government = republic
-			government = republican_dictatorship
-		}
-		has_estate = estate_nobles
-		has_estate = estate_citizens
-		NOT = { government = tribal_despotism }
-		NOT = { government = tribal_horde }
-		NOT = { government = tribal_federation }
+		government = republic
 	}
 	
 	mean_time_to_happen = {
@@ -68,87 +55,12 @@ country_event = {
 	option = {
 		name = "republic.2.a"
 		ai_chance = { factor = 50 }
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
-			}
-			add_estate_influence_modifier = {
-				estate = estate_nobles
-				duration = 1825
-				influence = -5
-			}
+			add_mil_power = -25
 	}
 	option = {
 		name = "republic.2.b"
 		ai_chance = { factor = 50 }
 			add_republican_tradition = -5
-			add_estate_influence_modifier = {
-				estate = estate_nobles
-				duration = 1825
-				influence = 5
-			}
-	}
-}
-########################################################################################
-# tribun killed
-########################################################################################
-country_event = {
-	id = republic.3
-	title = "republic.3.t"
-	desc = "republic.3.d"
-	picture = plebs
-	is_triggered_only = yes
-	
-	trigger = {
-		has_estate = estate_nobles
-		has_estate = estate_citizens
-		government = republic
-		NOT = { government = tribal_despotism }
-		NOT = { government = tribal_horde }
-		NOT = { government = tribal_federation }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	option = {
-		name = "republic.3.a"
-		ai_chance = { factor = 40 }
-			add_republican_tradition = -5
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
-			}
-		if = {
-			limit = { has_country_flag = populares_optimates_appear }
-						add_faction_influence = { faction = optimates influence = 5 }
-		}
-			
-	}
-	option = {
-		name = "republic.3.b"
-		ai_chance = { factor = 40 }
-			add_republican_tradition = -5
-			add_estate_loyalty = {
-				estate = estate_citizens
-				loyalty = -5
-			}
-		if = {
-			limit = { has_country_flag = populares_optimates_appear }
-						add_faction_influence = { faction = optimates influence = 10 }
-		}
-	}
-	option = {
-		name = "republic.3.c"
-		ai_chance = { factor = 20 }
-			add_stability = -1
-			
-		if = {
-			limit = { has_country_flag = populares_optimates_appear }
-						add_faction_influence = { faction = optimates influence = 5 }
-		}
-			
 	}
 }
 ########################################################################################
@@ -163,10 +75,8 @@ country_event = {
 	
 	trigger = {
 		government = republic
+		NOT = { has_reform = greek_polis_reform }
 		stability = 1
-		NOT = { government = tribal_despotism }
-		NOT = { government = tribal_horde }
-		NOT = { government = tribal_federation }
 	}
 	
 	mean_time_to_happen = {
@@ -191,13 +101,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
 			government = republic
-			government = republican_dictatorship
-		}
-		NOT = { government = tribal_despotism }
-		NOT = { government = tribal_horde }
-		NOT = { government = tribal_federation }
+		NOT = { has_reform = greek_polis_reform }
 		any_province = {
 			has_seat_in_parliament = yes
 			is_capital = no 
@@ -236,13 +141,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-			government = republic
-			government = republican_dictatorship
-		}
-		NOT = { government = tribal_despotism }
-		NOT = { government = tribal_horde }
-		NOT = { government = tribal_federation }
+		government = republic
 	}
 	
 	mean_time_to_happen = {
@@ -279,10 +178,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = classic_republic
-		has_any_disaster = no
-		has_dlc = "Res Publica"
-		
+		OR = {
+			has_reform = res_publica_reform
+			has_reform = citizens_republic_reform
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -293,6 +192,7 @@ country_event = {
 		name = "republic.8.a"
 				add_republican_tradition = -2.5
 				add_corruption = 0.5
+				add_faction_influence = { faction = fac_oligarchs influence = 5 }
 				if = {
 						limit = { has_country_flag = populares_optimates_appear }
 									add_faction_influence = { faction = optimates influence = 5 }
@@ -316,10 +216,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = classic_republic
-		has_any_disaster = no
-		has_dlc = "Res Publica"
-		
+		OR = {
+			has_reform = res_publica_reform
+			has_reform = citizens_republic_reform
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -347,10 +247,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = classic_republic
-		has_any_disaster = no
-		has_dlc = "Res Publica"
-		
+		government = republic
 	}
 	
 	mean_time_to_happen = {
@@ -361,11 +258,12 @@ country_event = {
 		name = "republic.10.a"
 				add_corruption = 1
 				add_years_of_income = 0.25
+		add_faction_influence = { faction = fac_oligarchs influence = 5 }
 	}
 	option = {
 		name = "republic.10.b"
 				add_republican_tradition = 5
-			
+				add_faction_influence = { faction = fac_oligarchs influence = -5 }
 	}
 }
 ########################################################################################
@@ -379,9 +277,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = classic_republic
-		has_any_disaster = no
-		
+		government = republic
 	}
 	
 	mean_time_to_happen = {
@@ -392,6 +288,7 @@ country_event = {
 		name = "republic.11.a"
 				add_republican_tradition = -2.5
 				add_mil_power = 25
+				add_faction_influence = { faction = fac_oligarchs influence = 5 }
 	}
 	option = {
 		name = "republic.11.b"
@@ -409,10 +306,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = classic_republic
-		has_any_disaster = no
-		has_dlc = "Res Publica"
-		
+		government = republic
+		NOT = { has_reform = greek_polis_reform }
 	}
 	
 	mean_time_to_happen = {
@@ -422,31 +317,6 @@ country_event = {
 	option = {
 		name = "republic.12.a"
 				add_republican_tradition = -5
-	}
-}
-########################################################################################
-# ruler died
-########################################################################################
-country_event = {
-	id = republic.13
-	title = "republic.13.t"
-	desc = "republic.13.d"
-	picture = senat_conflict
-	hidden = yes
-	
-	trigger = {
-		is_orangists_in_power = yes
-		has_dlc = "Res Publica"
-		ruler_age = 40
-	}
-	
-	mean_time_to_happen = {
-			months = 120
-	}
-	
-	option = {
-		name = "republic.13.a"
-				kill_ruler = yes
 	}
 }
 ########################################################################################
@@ -460,15 +330,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = classic_republic
-		estate_influence = {
-				estate = estate_nobles
-				influence = 60
-			}
-		any_owned_province = { 
-			has_estate = estate_nobles
-			has_seat_in_parliament = yes
-		}	
+		government = republic
 	}
 	
 	mean_time_to_happen = {
@@ -479,7 +341,7 @@ country_event = {
 		name = "republic.14.a"
 				random_owned_province = {
 					limit = { 	has_seat_in_parliament = no
-								has_estate = estate_nobles
+								base_tax = 1
 					}
 					set_seat_in_parliament = yes
 				}
@@ -488,16 +350,13 @@ country_event = {
 		name = "republic.14.b"
 				random_owned_province = {
 					limit = { 	has_seat_in_parliament = no
-								has_estate = estate_nobles
+								base_tax = 1
 					}
 					add_local_autonomy = 25
 				}
 	}
 	option = {
 		name = "republic.14.c"
-				add_estate_loyalty = {
-					estate = estate_nobles
-					loyalty = -10
-			}
+			add_stability = -1
 	}
 }

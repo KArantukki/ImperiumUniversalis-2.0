@@ -8,6 +8,8 @@ base_tax = 1
 base_production = 3
 base_manpower = 1
 trade_goods = olive
+small_harbor = yes
+gravel_road = yes
 capital = ""
 is_city = yes
 

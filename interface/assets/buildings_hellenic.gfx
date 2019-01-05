@@ -56,15 +56,5 @@ objectTypes = {
 		file = "gfx/models/Buildings/Hellenic/hellenic_castle_2.mesh"
 		scale = 0.26
 	}
-	pdxmesh = {
-		name = "aqueduct_1"
-		file = "gfx/models/Buildings/aqueduct.mesh"
-		scale = 0.11
-	}
-	pdxmesh = {
-		name = "aqueduct_2"
-		file = "gfx/models/Buildings/aqueduct.mesh"
-		scale = 0.14
-	}
 }
 	

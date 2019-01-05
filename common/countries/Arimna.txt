@@ -1,18 +1,20 @@
 #Country Name: Please see filename.
 
 graphical_culture = italicgfx
+special_unit_culture = etruscan_special
 
 color = { 181 141 123 }
 
 historical_idea_groups = {
-	domestic_government_ideas
 	infantry_ideas
-	trade_ideas
-	economy_ideas
-	superior_religious_ideas
-	engineering_ideas
-	quality_ideas
-	
+	royal_court_ideas
+	diplomatic_ideas
+	mercenary_ideas
+	agraculture_ideas
+	caravan_trade_ideas
+	cavalry_ideas
+	administrative_ideas
+	syncrenism_ideas
 }
 
 historical_units = {

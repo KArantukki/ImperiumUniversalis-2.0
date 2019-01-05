@@ -1,10 +1,20 @@
 #Country Name: Please see filename.
 
 graphical_culture = hellenicgfx
+special_unit_culture = epirote_special
 
 color = { 163 116 145 }
 
 historical_idea_groups = {
+	infantry_ideas
+	expansion_ideas
+	royal_court_ideas
+	leadership_ideas
+	maritime_ideas
+	agraculture_ideas
+	naval_ideas
+	diplomatic_ideas
+	administrative_ideas
 	
 }
 
@@ -19,7 +29,6 @@ monarch_names = {
 	"Alcetas" = 20
 	"Neoptolemos" = 20
 	"Arybbas" = 20
-	"Alexander" = 20
 	"Aeacides" = 20
 	"Alcetas" = 15
 	"Pyrrhus" = 10
@@ -52,7 +61,8 @@ monarch_names = {
 	"Laodamia" = -1
 	"Kallidike" = -1
 	"Echenika" = -1
-	"Sokratis" = -1
+	"Berenike" = -1
+	"Cleopatra" = -1
 
 
 }
@@ -62,11 +72,17 @@ leader_names = {
 }
 
 ship_names = {
-	
+	Zeus Hera Aphrodite Apollo Ares Artemis Athena Demeter Dionysus Hades Hephaestos Hermes Hestia Poseidon 
+	Achlys Aether Aion Ananke Chaos Chronos Erebus Eros Gaia Hemera Hypnos Nemesis Nyx Pontus Tartaros Thalassa
+	Thanatos Uranus Koios Kreios Kronos Hyperion Iapetós Oceanós Phoibe Rhéa Theía Thémis Astería Atlas Aúra
+	Clymene Dione Helios Eurybía Lelantos Leto Menoítios Pállas Perses Prometheus Alcyoneus Chthonius Damysus 
+	Mimas Pallas Porphyrion Antaeus Agathodaemon Aegaeon Achelous Benthesikyme Ceto Graeae Delphin Aello 
+	Celaeno Aphros Bythos Leucothea Achilles Heracles Aiax Jason Argo Odysseus Orpheus Theseus Aegea Antiope
+	Hippolyta Iphito Marpesia Otrera Penthesilea 
 }
 
 army_names = {
-	"Army of $PROVINCE$"
+	"Ieros Lochos" "Lochos of $PROVINCE$"
 }
 
 fleet_names = {

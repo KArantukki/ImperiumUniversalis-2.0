@@ -20,7 +20,8 @@ small_bath = {
 	time = 12
 	#make_obsolete = 
 	modifier = {
-		local_tax_modifier = 0.2
+		local_tax_modifier = 0.1
+		local_monthly_devastation = -0.1 
 	}
 	ai_will_do = {
 		factor = 1.5
@@ -31,7 +32,8 @@ big_bath = {
 	time = 12
 	make_obsolete = small_bath
 	modifier = {
-		local_tax_modifier = 0.4
+		local_tax_modifier = 0.2
+		local_monthly_devastation = -0.2
 	}
 	ai_will_do = {
 		factor = 1.0

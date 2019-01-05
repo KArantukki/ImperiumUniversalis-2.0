@@ -1,7 +1,8 @@
-name = "Medo-Babylonian war against Assyrian Empire"
+name = "Medo-Babylonian war against the Assyrian Empire"
 war_goal = {
 	type = take_capital_invasion
-	casus_belli = cb_invasion
+	casus_belli = cb_mission_invasion
+	tag = ASY
 }
 
 128.1.1 = {
@@ -9,14 +10,24 @@ war_goal = {
 	add_attacker = MDI
 	add_attacker = URT
 	add_attacker = SUS
+	add_attacker = CYM
+	add_attacker = SAG
 	add_defender = ASY
 	add_defender = EGY
+	add_defender = GZ1
+	add_defender = GZ2
+	add_defender = GZ3
 }
 199.1.1 = {	
 	rem_attacker = BAB
 	rem_attacker = MDI
 	rem_attacker = URT
 	rem_attacker = SUS
+	rem_attacker = CYM
+	rem_attacker = SAG
 	rem_defender = ASY
 	rem_defender = EGY
+	rem_defender = GZ1
+	rem_defender = GZ2
+	rem_defender = GZ3
 }

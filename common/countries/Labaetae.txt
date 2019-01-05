@@ -1,6 +1,7 @@
 #Country Name: Please see filename.
 
 graphical_culture = thraciangfx
+special_unit_culture = illyrian_special
 
 color = { 90 90 153 }
 

@@ -729,24 +729,32 @@ guiTypes = {
 
 		}
 		
-		##################### assault button.
-			
+
+									   
+   
 		guiButtonType = {
 			name = "assault_button"
-			position = { x = 279 y = 446 }
-			
+			position = { x = 318 y = 446 }
+   
 			quadTextureSprite ="GFX_button_assault"
-			}				
+		}
 
 
-		##################### Artillery Barrage button.
-			
+												 
+   
 		guiButtonType = {
 			name = "artillery_barrage_button"
-			position = { x = -50 y = -5 }
-			
+			position = { x = -150 y = 0 }
+   
 			quadTextureSprite ="GFX_artillery_barrage"
-			}				
 		}
+
+		guiButtonType = {
+			name = "naval_barrage_button"
+			position = { x = -150 y = 0 }
+			quadTextureSprite ="GFX_naval_barrage"
+		}
+	}
 }
+
 

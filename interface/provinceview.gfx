@@ -1,12 +1,5 @@
 spriteTypes = {
 
-	
-	spriteType = {
-		name = "GFX_supply_depots_icon"
-		texturefile = "gfx/interface/supply_depots_icon.dds"
-		noOfFrames = 2
-	}	
-
 	spriteType = {
 		name = "GFX_provinceview_bg_citizens"
 		texturefile = "gfx/interface/provinceview_bg_citizens.dds"
@@ -947,6 +940,12 @@ spriteTypes = {
 		texturefile = "gfx//interface//resources_small.dds"
 		noOfFrames = 39
 		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_resource_transparent"
+		texturefile = "gfx//interface//resource_transparent.dds"
+		loadType = "INGAME"
 	}	
 	
 	spriteType = {
@@ -1013,7 +1012,7 @@ spriteTypes = {
 	spriteType = {	
 		name = "GFX_unit_types_strip"
 		texturefile = "gfx//interface//unit_types_strip.tga"
-		noOfFrames = 9
+		noOfFrames = 10
 		loadType = "INGAME"
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1023,7 +1022,7 @@ spriteTypes = {
 	spriteType = {	
 		name = "GFX_unit_types_strip_nontransp"
 		texturefile = "gfx//interface//unit_types_strip.tga"
-		noOfFrames = 9
+		noOfFrames = 10
 		loadType = "INGAME"
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1276,6 +1275,12 @@ spriteType = {
 	}	
 	
 	spriteType = {
+		name = "GFX_supply_depots_icon"
+		texturefile = "gfx/interface/supply_depots_icon.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
 		name = "GFX_make_state_button"
 		texturefile = "gfx/interface/make_state_button.dds"
 	}	
@@ -1286,6 +1291,10 @@ spriteType = {
 	spriteType = {
 		name = "GFX_core_all_button"
 		texturefile = "gfx/interface/core_all_button.dds"
-	}	
-}
+	}		
+	spriteType = {
+		name = "GFX_settlement_growth_button"
+		#texturefile = "gfx/interface/settlement_growth_button.dds"
+		texturefile = "gfx/interface/development_button_tax.dds"
+	}
 }

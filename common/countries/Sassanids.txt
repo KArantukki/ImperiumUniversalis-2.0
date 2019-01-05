@@ -4,59 +4,96 @@ graphical_culture = iraniangfx
 
 color = { 239 201 86 }
 
-
-
 historical_idea_groups = {
-	
 	cavalry_ideas
-	economy_ideas
-	trade_ideas
+	caravan_trade_ideas
+	royal_court_ideas
+	logistic_ideas
+	syncrenism_ideas
 	administrative_ideas
-	quantity_ideas
-	imperial_government_ideas
-	influence_ideas
-	offensive_ideas
 	mercenary_ideas
+	diplomatic_ideas
+	domestic_government_ideas
 }
 
-historical_units = {
-	
-}
+historical_units = { }
 
 monarch_names = {
-	"Ardashir #0" = 40
-	"Shapur #0" = 40
-	"Hormizd #0" = 40
-	"Bahram #0" = 40
-	"BNarseh #0" = 40
-	"Adhur Narseh #0" = 40
-	"Yazdegerd #0" = 40
-	"Khosrau #0" = 40
+	"Ardashir" = 20
+	"Shapur" = 20
+	"Mehrdad" = 20
+	"Ardavan" = 20
+	"Farrukh" = 20
+	"Shahrwaraz" = 20
+	"Vistahm" = 20
+	"Spandiyadh" = 20
+	"Vistahm" = 20
+	"Spandiyadh" = 20
+	"Sokhrab" = 20
+	"Rodstahm" = 20
+	"Jamasp" = 20
+	"Kawad" = 20
+	"Balash" = 20
+	"Yazdekert" = 20
+	"Narse" = 20
+	"Hormizd" = 20
+	"Khosrau" = 20
+	"Baga-data" = 20
+	"Mani" = 5
+	"Sogdyana" = 10
+	"Kambujiya" = 10
+	"Tsishpish" = 10
+	"Athurpat" = 10
+	"Bagabukhsha" = 10
+	"Marduniya" = 10
+	"Ariyobarzan" = 10
+	"Vindapana" = 10
+	"Utana" = 10
+	"Vishtaspa" = 10
+	"Vakauka" = 10
+	"Ardumanish" = 10
+	"Gaubaruva" = 10
+	"Vidarna" = 10
+	"Ariyaramna" = 10
+	"Arshama" = 10
+	"Bardiya" = 10
 	
-	"Yesfir #10" = -1
-	"Zareen #10" = -1
-	"Zhaleh #10" = -1
-	"Nahid #10" = -1
-	"Banu #10" = -1
-	"Esta #10" = -1
-	"Jaleh #10" = -1
+	"Shirin" = -1
+	"Azarmigdukht" = -1
+	"Boran" = -1
+	"Shahendukht" = -1
+	"Denag" = -1
+	"Amastri" = -1
+	"Apama" = -1
+	"Artastuna" = -1
+	"Atossa" = -1
+	"Jamaspi" = -1
+	"Raoxshna" = -2
+	"Sisygambis" = -1
 
 }
 
 leader_names = {
-		Alborz Arash Ardashir Arman Babak Bahadur Bahman Bahram Baraz Behnam Cas Casper Cyrus Darien
-		Darius Dariush Faridoon Farzin Feroze Firuz Gaspar Gazsi Jahan Jahangir Jasper Javed Jesper Kacper Kir Kaveh
-		Mirza Navid Paiman Parviz Payam Rahim Sargon Shahin Shapur Xerxes 	
+		Hakhamanish Ashkanian Sasani Suren Surena Mihran Chosroid
+		Karen Ispahbudhan Varaz Zik Otanid Ardumanish Hydarnid
+		
 }
 
 ship_names = {
+	Sogdyana Kambujiya Tsishpish Athurpat Bagabukhsha Marduniya Ariyobarzan Vindapana Utana 
+	Vishtaspa Vakauka Ardumanish Gaubaruva Vidarna Ariyaramna Arshama Bardiya Mehrdad Ardavan 
+	Farrukh Shahrwaraz Vistahm Spandiyadh Vistahm Spandiyadh Sokhrab Rodstahm Jamasp Kawad Balash 
+	Yazdekert Narse Hormizd Khosrau "Baga-data" Mani
 	
+	Shirin Azarmigdukht Boran Shahendukht Denag Amastri Apama Artastuna Atossa Jamaspi Raoxshna Sisygambis
+	
+	"Amesha Spenta" Yazata Ahura Daeva Ahriman Ohrmazd Parsa
 }
 
 army_names = {
-	"Army of $PROVINCE$"
+	"Gond-i $PROVINCE$"
 }
 
 fleet_names = {
-	"Ships of $PROVINCE$"
+	"Yellow Fleet" "Black Fleet" "Red Fleet" "Ships of $PROVINCE$"
 }

@@ -87,6 +87,7 @@ default = {
 	can_set_mil_focus = yes
 	can_send_missionary_to_subject = yes				# Requires Cradle of Civilization
 	can_union_break = no								# Only works together with has_overlords_ruler
+	overlord_can_fabricate_for = no
 	
 	max_government_rank = 0								# 0 means no limit
 	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord

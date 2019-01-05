@@ -1,6 +1,16 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_courthouse_muslimgfx"
+		texturefile = "gfx//interface//buildings//city_walls_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort0"
+		texturefile = "gfx//interface//buildings//city_walls_1.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
 		name = "GFX_building_default"
 		texturefile = "gfx//interface//buildings//building_default.tga"
 		loadType = "INGAME"

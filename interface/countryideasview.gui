@@ -259,7 +259,7 @@ guiTypes = {
 				name = "adm_ideaunlockgroups_listbox"
 				backGround = ""
 				position = { x=26 y=63 }
-				size = { x=313 y=525 }
+				size = { x=294 y=744 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1.5
@@ -270,7 +270,7 @@ guiTypes = {
 				name = "dip_ideaunlockgroups_listbox"
 				backGround = ""
 				position = { x=344 y=63 }
-				size = { x=313 y=525 }
+				size = { x=294 y=744 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1.5
@@ -281,7 +281,7 @@ guiTypes = {
 				name = "mil_ideaunlockgroups_listbox"
 				backGround = ""
 				position = { x=663 y=63 }
-				size = { x=313 y=525 }
+				size = { x=294 y=744 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 1.5
@@ -630,7 +630,7 @@ guiTypes = {
 		name = "countryideaview_ideagroupunlocklistitem"
 		backGround =""
 		position = { x=0 y=0 }	
-		size = { x=300 y=84 }
+		size = { x=300 y=80 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -657,27 +657,27 @@ guiTypes = {
 		{
 			name ="ideas_cost"
 			spriteType = "GFX_icon_powers_administrative"
-			position = { x= 75 y = 4 }
+			position = { x= 65 y = 4 }
 			Orientation = "UPPER_LEFT"
 		}				
 
 		instantTextBoxType = {
 			name = "ideas_idea_title"
-			position = { x = 45 y = 8 }
+			position = { x = 85 y = 8 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
 			maxWidth = 280
 			maxHeight = 32
-			format = centre
+			format = left
 		}	
 
 		iconType =
 		{
 			name ="ideas_bonus_icon"
 			spriteType = "GFX_ideas_bonus_strip"
-			position = { x = 278 y = 3 }
+			position = { x = 237 y = -7 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}		

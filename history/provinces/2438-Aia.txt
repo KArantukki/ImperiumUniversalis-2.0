@@ -10,10 +10,7 @@ trade_goods = gold
 base_manpower = 4
 capital = "Aia"
 is_city = yes
-add_permanent_province_modifier = {
-		name = center_of_trade_modifier_1
-		duration = -1
-	}
+center_of_trade = 1
 
 discovered_by = caucaso_anatolian
 discovered_by = iranian

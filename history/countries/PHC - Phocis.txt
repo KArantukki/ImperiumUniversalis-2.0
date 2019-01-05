@@ -1,10 +1,11 @@
-government = league
+government = republic
+add_government_reform = league_reform
 government_rank = 2
 #mercantilism = 0.25
 technology_group = greek
 primary_culture = aeolic
 religion = greek_religion
-religious_school = hellenic_type
+#religious_school = hellenic_type
 historical_friend = KYM
 capital = 968
 		

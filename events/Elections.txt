@@ -10,14 +10,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-		government = tribal_federation
-		government = classic_republic
-		government = punic_republic
-		government = greek_polis_democracy
-		government = league }
-		NOT = {	government = monarchy }
-		NOT = {	government = republican_dictatorship }
+		government = republic
+		NOT = { has_reform = greek_polis_reform }
 	}
 	
 
@@ -85,13 +79,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-		government = tribal_federation
-		government = classic_republic
-		government = punic_republic
-		government = league }
-		NOT = {	government = monarchy }
-		NOT = {	government = republican_dictatorship }
+		government = republic
+		NOT = { has_reform = greek_polis_reform }
 	}
 	
 
@@ -147,7 +136,8 @@ country_event = {
 	
 	is_triggered_only = yes
 	trigger = {
-		exists = yes
+		government = theocracy
+		NOT = { government = tribal }
 		NOT = { government = spartan_monarchy } 
 	}
 	
@@ -159,26 +149,6 @@ country_event = {
 			age = 35
 			hidden = yes
 		}
-
-		if = {
-			limit = {
-				has_dlc = "The Cossacks"
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 5
-			}
-			add_estate_loyalty = {
-				estate = estate_citizens
-				loyalty = 5
-			}
-		}
-		if = {
-			limit = {
-					government = greek_polis
-			}
-			add_faction_influence = { faction = fac_oligarchs influence = 5 }
-		}
 		add_devotion = 5
 		
 	}
@@ -189,25 +159,6 @@ country_event = {
 			age = 30
 			hidden = yes
 		}
-		if = {
-			limit = {
-				has_dlc = "The Cossacks"
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -10
-			}
-			add_estate_loyalty = {
-				estate = estate_citizens
-				loyalty = 10
-			}
-		}
-		if = {
-			limit = {
-					government = greek_polis
-			}
-			add_faction_influence = { faction = fac_democrats influence = 10 }
-		}
 		add_devotion = -5
 		
 	}
@@ -217,25 +168,6 @@ country_event = {
 		define_heir = {
 			age = 20
 			hidden = yes
-		}
-		if = {
-			limit = {
-				has_dlc = "The Cossacks"
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -5
-			}
-			add_estate_loyalty = {
-				estate = estate_citizens
-				loyalty = -10
-			}
-		}
-		if = {
-			limit = {
-					government = greek_polis
-			}
-			add_faction_influence = { faction = fac_monarchists influence = 10 }
 		}
 		add_devotion = 10
 		
@@ -250,7 +182,12 @@ country_event = {
 	picture = senat
 	
 	is_triggered_only = yes
-	trigger = { government = tribal_federation }
+	trigger = { 
+		OR = {
+			has_reform = tribal_federation_reform
+			has_reform = germanic_tribal_kingdom_reform
+		}
+	}
 	
 
 	option = {

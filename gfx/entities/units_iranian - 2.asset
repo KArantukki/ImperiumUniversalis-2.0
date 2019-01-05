@@ -34,35 +34,7 @@ entity = {
 	}
 }
 entity = {
-	name = "PSE_INFANTRY_2"
-	pdxmesh = "iraniangfx_INFANTRY_1"
-	
-	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.4 	}
-	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
-	state = { name = "attack"		animation = "attack" 	animation_speed = 0.7	}
-	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.7	}
-
-	attach = { 
-		spear_bone = "persian_spear" 
-		CATRigRArm2 = "persian_shield"
-	}
-}
-entity = {
-	name = "EGY_INFANTRY_2"
-	pdxmesh = "EGY_INFANTRY_1"
-	
-	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.4 	}
-	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
-	state = { name = "attack"		animation = "attack" 	animation_speed = 0.7	}
-	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.7	}
-
-	attach = { 
-		spear_bone = "egy_spear" 
-		CATRigRArmPalm = "egy_shield"
-	}
-}
-entity = {
-	name = "BAB_INFANTRY_2"
+	name = "mesopotamian_special_INFANTRY_2"
 	pdxmesh = "BAB_INFANTRY_1"
 	
 	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.4 	}
@@ -75,42 +47,6 @@ entity = {
 		CATRigRArmPalm = "babylonian_shield" 
 	}
 }
-entity = {
-	name = "MEM_INFANTRY_2"
-	clone = "EGY_INFANTRY_2"
-}
-entity = {
-	name = "THB_INFANTRY_2"
-	clone = "EGY_INFANTRY_2"
-}
-entity = {
-	name = "ASY_INFANTRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "ARM_INFANTRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "CH2_INFANTRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "OSR_INFANTRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "PLM_INFANTRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "SYI_INFANTRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "SUS_INFANTRY_2"
-	clone = "BAB_INFANTRY_2"
-}
 ###################################################################################################################
 #####                                                                                                         #####
 #####                                                   CAVALRY                                               #####
@@ -119,56 +55,12 @@ entity = {
 
 
 entity = {
-	name = "PSE_CAVALRY_2"
-	clone = "PSE_INFANTRY_2"
-}
-entity = {
 	name = "iraniangfx_CAVALRY_2"
 	clone = "iraniangfx_INFANTRY_2"
 }
 entity = {
 	name = "scythiangfx_CAVALRY_2"
 	clone = "scythiangfx_INFANTRY_2"
-}
-entity = {
-	name = "EGY_CAVALRY_2"
-	clone = "EGY_INFANTRY_2"
-}
-entity = {
-	name = "THB_CAVALRY_2"
-	clone = "EGY_INFANTRY_2"
-}
-entity = {
-	name = "BAB_CAVALRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "ASY_CAVALRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "ARM_CAVALRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "CH2_CAVALRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "OSR_CAVALRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "PLM_CAVALRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "SYI_CAVALRY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "SUS_CAVALRY_2"
-	clone = "BAB_INFANTRY_2"
 }
 ###################################################################################################################
 #####                                                                                                         #####
@@ -177,54 +69,10 @@ entity = {
 ###################################################################################################################
 
 entity = {
-	name = "PSE_ARTILLERY_2"
-	clone = "PSE_INFANTRY_2"
-}
-entity = {
 	name = "iraniangfx_ARTILLERY_2"
 	clone = "iraniangfx_INFANTRY_2"
 }
 entity = {
 	name = "scythiangfx_ARTILLERY_2"
 	clone = "scythiangfx_INFANTRY_2"
-}
-entity = {
-	name = "EGY_ARTILLERY_2"
-	clone = "EGY_INFANTRY_2"
-}
-entity = {
-	name = "THB_ARTILLERY_2"
-	clone = "EGY_INFANTRY_2"
-}
-entity = {
-	name = "BAB_ARTILLERY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "ASY_ARTILLERY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "ARM_ARTILLERY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "CH2_ARTILLERY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "OSR_ARTILLERY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "PLM_ARTILLERY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "SYI_ARTILLERY_2"
-	clone = "BAB_INFANTRY_2"
-}
-entity = {
-	name = "SUS_ARTILLERY_2"
-	clone = "BAB_INFANTRY_2"
 }

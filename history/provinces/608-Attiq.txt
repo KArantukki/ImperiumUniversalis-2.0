@@ -11,6 +11,9 @@ trade_goods = salt
 capital = ""
 is_city = yes
 small_city_walls = yes
+small_harbor = yes
+small_townhall = yes
+gravel_road = yes
 
 
 discovered_by = roman

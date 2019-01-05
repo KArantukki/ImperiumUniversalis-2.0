@@ -489,7 +489,7 @@ take_normal_border_1 = {
 
 	allowed_provinces = {
 		OR = {
-			owner = { NOT = { government = tribal_horde } }
+			owner = { NOT = { government = native } }
 			base_production = 1
 			base_tax = 1	}
 		OR = {
@@ -516,7 +516,7 @@ take_normal_border_2 = {
 
 	allowed_provinces = {
 		OR = {
-			owner = { NOT = { government = tribal_horde } }
+			owner = { NOT = { government = native } }
 			NOT = { has_terrain = steppe } }
 		OR = {
 			any_neighbor_province = {
@@ -542,7 +542,7 @@ take_normal_border_3 = {
 
 	allowed_provinces = {
 		OR = {
-			owner = { NOT = { government = tribal_horde } }
+			owner = { NOT = { government = native } }
 			base_production = 1
 			base_tax = 1	}
 		OR = {
@@ -569,7 +569,7 @@ take_normal_border_4 = {
 
 	allowed_provinces = {
 		OR = {
-			owner = { NOT = { government = tribal_horde } }
+			owner = { NOT = { government = native } }
 			base_production = 1
 			base_tax = 1	}
 		OR = {
@@ -595,7 +595,7 @@ take_normal_border_5 = {
 
 	allowed_provinces = {
 		OR = {
-			owner = { NOT = { government = tribal_horde } }
+			owner = { NOT = { government = native } }
 			base_production = 1
 			base_tax = 1	}
 		OR = {
@@ -622,7 +622,7 @@ take_normal_border_6 = {
 
 	allowed_provinces = {
 		OR = {
-			owner = { NOT = { government = tribal_horde } }
+			owner = { NOT = { government = native } }
 			base_production = 1
 			base_tax = 1	}
 		OR = {
@@ -648,7 +648,7 @@ take_normal_border_rep = {
 
 	allowed_provinces = {
 		OR = {
-			owner = { NOT = { government = tribal_horde } }
+			owner = { NOT = { government = native } }
 			base_production = 1
 			base_tax = 1	}
 		OR = {

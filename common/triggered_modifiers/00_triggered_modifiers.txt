@@ -3,45 +3,27 @@
 # controller of the panionion
 ###########################################
 
-controller_of_the_panionion = {
+phoenician_colonisation = {
 	potential = {
-		OR = {
-				TAG = CHI
-				TAG = KLA
-				TAG = ERR
-				TAG = EPH
-				TAG = MIL
-				TAG = SAM
+		tag = PH2
+		NOT = { started_in = 215.1.1 }
+		calc_true_if = {
+				all_country = {
+					primary_culture = punic
+					is_subject_of = PH2
+				}
+				amount = 4
 			}
 	}
 
 	trigger = {
-			owns_or_vassal_of = 751
+			tag = PH2
 	}
 
 	diplomatic_upkeep = 8
-	diplomatic_reputation = 1
+	trade_range = 1
 }
 
-###########################################
-# tribal
-###########################################
-
-tribal_society = {
-	potential = {
-		is_tribal = yes
-	}
-
-	trigger = {
-		is_tribal = yes
-	}
-	drill_gain_modifier = -0.25
-	administrative_efficiency = -0.5
-	stability_cost_modifier = 0.15
-	culture_conversion_cost = 0.5
-	amount_of_banners = -1
-	
-}
 
 ###########################################
 # reb
@@ -132,7 +114,28 @@ controll_the_hellespont = {
 	}
 
 	trade_efficiency = 0.05	
-	global_tax_income = 3
+	global_tax_income = 4
+}
+###########################################
+# Propontis
+###########################################
+
+controll_the_hellespont = {
+	potential = {
+		OR = {
+			has_discovered = 633
+			has_discovered = 634
+			}
+	}
+
+	trigger = {
+			is_subject = no	
+			owns_or_vassal_of = 633
+			owns_or_vassal_of = 634
+	}
+
+	trade_efficiency = 0.05	
+	global_tax_income = 4
 }
 ###########################################
 # Olymp
@@ -284,8 +287,6 @@ unorganized_religion= {
 	tolerance_heathen = 1
 	tolerance_heretic = 1
 }
-
-
 #############################
 submission_to_emperor = {
    potential = {
@@ -295,4 +296,18 @@ submission_to_emperor = {
    trigger = {
        always = no
    }
+}
+
+######################################
+# Robot parts
+######################################
+
+synthetic_remnants = {
+	potential = {
+		has_global_flag = synthetics_defeated
+	}
+	trigger = {
+		has_global_flag = synthetics_defeated
+	}
+	technology_cost = -0.25
 }

@@ -76,8 +76,7 @@ small_conscription_center = {
 	cost = 100
 	time = 12
 	modifier = {
-		land_morale = 0.001
-		regiment_recruit_speed = -0.25
+		regiment_recruit_speed = -0.3
 	}
 	ai_will_do = {
 		factor = 50

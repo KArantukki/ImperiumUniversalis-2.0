@@ -1,4 +1,5 @@
 add_core = MNN
+add_core = MDI
 owner = MNN
 controller = MNN
 hre = no

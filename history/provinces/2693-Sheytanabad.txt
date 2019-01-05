@@ -1,4 +1,5 @@
 add_core = GZ3
+add_core = MDI
 owner = GZ3
 controller = GZ3
 hre = no

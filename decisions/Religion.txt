@@ -6,7 +6,7 @@ country_decisions = {
 			NOT = { has_country_modifier = disrespect_other_gods_modifier }
 		}
 		allow = {
-			NOT = { full_idea_group = syncretic_religious_ideas }
+			NOT = { has_idea_group = syncrenism_ideas }
 			stability = 1
 			advisor = priest_adv
 			NOT = { religious_unity = 0.8 }
@@ -45,12 +45,6 @@ country_decisions = {
 				name = high_priest_modifier
 				duration = -1
 			}
-			add_estate_influence_modifier = {
-				estate = estate_priests
-				desc = EST_VAL_HIGH_PRIEST_POSITION
-				duration = -1
-				influence = 10
-			}
 		}
 		ai_will_do = {
 			factor = 0.85
@@ -65,7 +59,7 @@ country_decisions = {
 		allow = {
 			stability = 1
 			any_owned_province = { 
-				culture_group = owner
+				culture_group = ROOT
 				religion = christian
 			}
 			
@@ -112,7 +106,7 @@ country_decisions = {
 				}
 				modifier = {
 					factor = 3.0
-					full_idea_group = syncretic_religious_ideas
+					full_idea_group = syncrenism_ideas
 				}
 		}
 	}
@@ -144,13 +138,6 @@ country_decisions = {
 				change_religion = capital
 			}
 			add_stability = -1
-			if = {
-				limit = { has_estate = estate_priests }			
-				add_estate_loyalty = {
-					estate = estate_priests
-					loyalty = -25
-				}
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -160,7 +147,7 @@ country_decisions = {
 				}
 				modifier = {
 					factor = 2
-					full_idea_group = syncretic_religious_ideas
+					full_idea_group = syncrenism_ideas
 				}
 		}
 	}

@@ -6,6 +6,7 @@ trigger = { OR = {
 		unit_type = north_african
 		unit_type = iberian
 		unit_type = afro_arabian
+		unit_type = african
 		}
 }
 

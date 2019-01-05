@@ -183,8 +183,16 @@ spriteTypes = {
 	
 	# 1st age Objectives
 	spriteType = {
-		name = "GFX_obj_metallurgy_embraced"
-		texturefile = "gfx/interface/ages/obj_metallurgy.dds"
+		name = "GFX_obj_prestigious_nation"
+		texturefile = "gfx/interface/ages/obj_prestigious_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_the_capitals_of_the_world"
+		texturefile = "gfx/interface/ages/obj_the_capitals_of_the_world.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_roads_built"
+		texturefile = "gfx/interface/ages/obj_roads_built.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_large_city"
@@ -214,7 +222,13 @@ spriteTypes = {
 		name = "GFX_obj_olympic_winner"
 		texturefile = "gfx/interface/ages/obj_olympic_winner.dds"
 	}
+	
 	# 1st age Abilities
+	
+	spriteType = {
+		name = "GFX_ab_neo_babylonian_empire"
+		texturefile = "gfx/interface/ages/ab_neo_babylonian_empire.dds"
+	}
 	spriteType = {
 		name = "GFX_ab_urbanization"
 		texturefile = "gfx/interface/ages/ab_urbanization.dds"
@@ -261,8 +275,8 @@ spriteTypes = {
 	}
 	# 2nd age Objectives
 	spriteType = {
-		name = "GFX_obj_physical_science_embraced"
-		texturefile = "gfx/interface/ages/obj_physical_science_embraced.dds"
+		name = "GFX_obj_nation_of_progress"
+		texturefile = "gfx/interface/ages/obj_nation_of_progress.dds"
 	}
 	spriteType = {
 		name = "GFX_obj_great_ruler"

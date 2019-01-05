@@ -5,7 +5,7 @@ technology_group = diadochi
 primary_culture = greco_semitic
 religion = greek_religion
 capital = 1825
-religious_school = hellenic_type
+#religious_school = hellenic_type
 
 431.1.1 = {
 	add_ruler_personality = diadochi_leader_personality

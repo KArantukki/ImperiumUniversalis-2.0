@@ -1,10 +1,11 @@
-government = tribal_kingdom
+government = tribal
+add_government_reform = tribal_kingdom_reform
 government_rank = 2
 #mercantilism = 0.25
 technology_group = balkan
 primary_culture = odrysian
 religion = thracian
-religious_school = balkan_type
+#religious_school = balkan_type
 capital = 1088
 	
 275.1.1 = {
@@ -103,7 +104,8 @@ technology_group = greek
 }
 412.1.1 = {
 	capital = 668
-	government = despotic_monarchy
+	government = monarchy
+	add_government_reform = despotism_reform
 	monarch = {
 		name = "Seuthes III"
 		dynasty = "of Odrysia"

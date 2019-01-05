@@ -173,10 +173,8 @@ righteous_personality = {
 			government = republic
 			government = monarchy
 		}
-		NOT = { government = tribal_horde }
-		NOT = { government = tribal_despotism }
-		NOT = { government = tribal_kingdom }
-		NOT = { government = tribal_federation }
+		NOT = { government = native }
+		NOT = { is_tribal = yes }
 	}
 	
 	chance = {
@@ -713,7 +711,6 @@ fertile_personality = {
 	}
 	allow = {
 		government = monarchy
-		NOT = { government = ottoman_government }
 	}
 	
 	chance = {
@@ -907,7 +904,7 @@ pious_personality = {
 	}
 
 	allow = {
-		government = theocracy
+		
 	}
 	
 	chance = {
@@ -1310,12 +1307,6 @@ industrious_personality = {
 	
 	allow = { }
 	
-	chance = {
-		modifier = {
-			factor = 1
-			government = merchant_republic
-		}
-	}
 	
 	building_budget_multiplier = 1.2
 	custom_ai_explanation = "AI_RULER_PICK_IDEA_GROUPS"
@@ -1887,10 +1878,6 @@ legendary_leader_personality = {
 				is_monarch_leader = yes
 			}
 			modifier = {
-				factor = 1
-				government = diadochi_monarchy
-			}
-			modifier = {
 				factor = 2
 				MIL = 6
 			}
@@ -2245,88 +2232,6 @@ aggressive_personality = {
 
 
 
-diadochi_leader_personality = {
-	ruler_allow = {
-		allow = {
-			MIL = 1
-			government = diadochi_monarchy
-		}
-	
-		chance = {
-			modifier = {
-				factor = 3
-				government = diadochi_monarchy
-			}
-			modifier = {
-				factor = 2
-				is_monarch_leader = yes
-			}
-			modifier = {
-				factor = 2
-				MIL = 3
-			}
-			modifier = {
-				factor = 2
-				MIL = 5
-			}
-		}
-	}
-
-	heir_allow = {
-		allow = {
-			heir_MIL = 1
-			government = diadochi_monarchy
-		}
-	
-		chance = {
-			modifier = {
-				factor = 3
-				government = diadochi_monarchy
-			}
-			modifier = {
-				factor = 3
-				is_heir_leader = yes
-			}
-			modifier = {
-				factor = 3
-				heir_MIL = 3
-			}
-		}
-	}
-	
-	consort_allow = {
-		allow = {
-			always = no
-		}
-
-	}
-
-	allow = {
-	}
-	
-	chance = {
-	}
-
-	
-	monthly_militarized_society = 0.1
-	reduced_liberty_desire = 10
-	nation_designer_cost = 20
-	
-	war_priority = {
-		modifier = {
-			factor = 25
-			is_rival = ROOT
-		}
-	}
-	war_priority = {
-		modifier = {
-			factor = 25
-			government = diadochi_monarchy
-		}
-	}
-	
-} #1 better
-
 # Immortal, for games converted from CKII, but also available in Nation Designer.
 immortal_personality = {
 	
@@ -2521,7 +2426,10 @@ ambitious_senator = {
 
 	allow = {
 			TAG = ROM
-			government = classic_republic
+			OR = {
+			has_reform = res_publica_reform
+			has_reform = classic_republic
+			}
 	}
 	
 	discipline = 0.05

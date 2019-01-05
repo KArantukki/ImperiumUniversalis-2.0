@@ -1,6 +1,7 @@
 #Country Name: Please see filename.
 
 graphical_culture = celticgfx
+special_unit_culture = british_special
 
 color = { 0 250 154 }
 

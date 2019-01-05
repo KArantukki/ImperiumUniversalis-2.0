@@ -34,42 +34,20 @@ republican_rebels = {
 	spawn_chance = {
 		factor = 2
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			owner = { total_development = 65 }
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 			owner = { total_development = 85 }
 		}
 		modifier = {
-			factor = 0.0
+			factor = 0.25
 			owner = { total_development = 100 }
 		}
 		modifier = {
 			factor = 0.0
 			owner = { is_tribal = yes }
-		}
-		modifier = {
-			factor = 0.0
-			owner = { 
-				NOT = {
-					estate_influence = {
-						estate = estate_citizens
-						influence = 5
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.25
-			owner = { 
-				NOT = {
-					estate_influence = {
-						estate = estate_citizens
-						influence = 15
-					}
-				}
-			}
 		}
 		modifier = {
 			factor = 2
@@ -93,7 +71,7 @@ republican_rebels = {
 		}
 		modifier = {
 			factor = 10.0
-			owner = { NOT = { legitimacy = 60 } }
+			owner = { NOT = { legitimacy = 50 } }
 		}
 		modifier = {
 			factor = 0.0
@@ -104,21 +82,43 @@ republican_rebels = {
 		modifier = {
 			factor = 0.0
 			owner = { 
-					government = league
+					government = republic
+					NOT = { has_reform = greek_polis_reform }
 			}
 		}
 		modifier = {
-			factor = 0.0
-			owner = { 
-					government = classic_republic
+			factor = 0.25
+			owner = {
+				NOT = { has_global_flag = birth_of_democracy }
+				has_reform = greek_polis_reform 
 			}
 		}
 		modifier = {
 			factor = 5
-			OR = {
-				NOT = { is_year = 250 }
-				has_global_flag = birth_of_democracy
-				culture_group = hellenic
+			owner = {
+				has_reform = greek_polis_reform 
+				NOT = { has_country_modifier = polis_democracy_modifier }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				has_reform = greek_polis_reform 
+				NOT = { republican_tradition = 90  }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				has_reform = greek_polis_reform 
+				NOT = { republican_tradition = 75  }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				has_reform = greek_polis_reform 
+				NOT = { republican_tradition = 50  }
 			}
 		}
 	}
@@ -181,33 +181,19 @@ republican_rebels = {
 		if = {
 			limit = { 
 					OR = {
-						government = oligarchic_monarchy
-						government = diadochi_monarchy
-						government = bureaucratic_monarchy
-						government = epirote_monarchy
-						government = despotic_monarchy
+						government = monarchy
+						government = theocracy
 						}
 					}
-			change_government = classic_republic
-		}
-		if = {
-			limit = { has_disaster = secessio_plebis_disaster }
-			end_disaster = secessio_plebis_disaster
-			add_estate_influence_modifier = {
-			estate = estate_citizens
-				desc = EST_VAL_SERVIUS_TULLIUS_REFORM
-				influence = 20
-				duration = -1
-			}
-			
-			add_prestige = -25
+			change_government = republic
+			add_government_reform = citizens_republic_reform
 		}
 		if = {
 			limit = {
-						has_faction = fac_democrats
-						faction_in_power = fac_democrats
+					has_reform = greek_polis_reform
 			}
-			add_faction_influence = { faction = fac_democrats influence = 15 }
+			add_faction_influence = { faction = fac_democrats influence = 50 }
+			country_event = greek_polis.2
 		}
 	}
 }

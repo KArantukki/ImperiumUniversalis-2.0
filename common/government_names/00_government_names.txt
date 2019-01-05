@@ -27,12 +27,11 @@ greek_monarchy = {
 	}
 	
 	trigger = {
-		OR = {	government = despotic_monarchy
-				government = epirote_monarchy
-				government = diadochi_monarchy	
-				government = greek_polis_tyrannis						}
+		OR = {	has_reform = despotism_reform
+				has_reform = aristocratic_monarchy_reform
+				has_reform = epirote_monarchy_reform		}
 		OR = {	culture_group = macedon_group 						
-				culture_group = hellenic 				}
+				culture_group = hellenic 	}
 				
 		NOT = { TAG = PTO }
 	}
@@ -127,7 +126,8 @@ triumvirate_government = {
 	}
 	
 	trigger = {
-		government = triumvirate_government
+		always = no
+		#has_reform = triumvirate_government_reform
 	}
 }
 
@@ -157,7 +157,8 @@ roman_senate = {
 	}
 	
 	trigger = {
-		government = roman_senate
+		always = no
+		#has_reform = roman_senate
 	}
 }
 
@@ -187,7 +188,8 @@ principate = {
 	}
 	
 	trigger = {
-		government = principate
+		always = no
+		#has_reform = principate_reform
 	}
 }
 
@@ -217,7 +219,7 @@ spartan_monarchy = {
 	}
 	
 	trigger = {
-		government = spartan_monarchy
+		has_reform = spartan_monarchy_reform
 	}
 }
 
@@ -283,6 +285,8 @@ egypt_monarchy = {
 	trigger = {
 		OR = {
 			TAG = EGY
+			TAG = THB
+			TAG = MEM
 			TAG = PTO
 		}
 		government = monarchy
@@ -408,10 +412,7 @@ indian_monarchy = {
 	}
 	
 	trigger = {
-		OR = {
-			culture_group = indian_group
-			culture_group = non_vedic_group
-		}
+		culture_group = indian_group
 		government = monarchy
 		NOT = { TAG = KAL }
 	}
@@ -505,11 +506,8 @@ greek_democracy = {
 	}
 	
 	trigger = {
-			OR = {
-				government = classic_republic
-				government = greek_polis_democracy
-				government = greek_polis
-				}
+				government = republic
+				NOT = { has_reform = league_reform }
 				culture_group = hellenic 
 	}
 }
@@ -540,7 +538,7 @@ greek_oligarchy = {
 	}
 	
 	trigger = {
-				government = oligarchic_monarchy
+				has_reform = oligarchy_reform
 				culture_group = hellenic 
 	}
 }
@@ -572,7 +570,7 @@ greek_league = {
 	}
 	
 	trigger = {
-				government = league
+				has_reform = league_reform
 				culture_group = hellenic 
 				NOT = { TAG = EUB }
 				NOT = { TAG = HEL }
@@ -604,8 +602,7 @@ euboean_league = {
 	}
 	
 	trigger = {
-				government = league
-				culture_group = hellenic 
+				has_reform = league_reform
 				OR = {
 						TAG = EUB
 						TAG = HEL }
@@ -638,7 +635,7 @@ latin_democracy = {
 	}
 	
 	trigger = {
-				government = classic_republic
+				government = republic
 				primary_culture = latin 
 	}
 }
@@ -699,8 +696,8 @@ italic_league = {
 	}
 	
 	trigger = {
-		AND = {	government = league
-				culture_group = italic }
+			has_reform = league_reform
+			culture_group = italic 
 	}
 }
 
@@ -761,7 +758,8 @@ punic_republic = {
 	}
 	
 	trigger = {
-			government = punic_republic
+			government = republic
+			primary_culture = punic
 	}
 }
 
@@ -791,16 +789,18 @@ satrapy = {
 	}
 	
 	trigger = {
-				OR = {
-					is_subject = yes
-					is_march = yes }
+				is_subject = yes
 				NOT = { government = republic }
 				OR = {
 					culture_group = semitic
 					culture_group = armenian_group
 					culture_group = anatolian_group
 					culture_group = hellenic	
+					culture_group = thraco_phrygian_group
+					culture_group = zargos_group
 					culture_group = western_iranian
+					culture_group = egyptian_group			
+					culture_group = caucasian_group			
 					culture_group = steppe_people			
 							}
 	}
@@ -832,8 +832,8 @@ gaul_tribe = {
 	}
 	
 	trigger = {
-			government = tribal_federation
-			primary_culture = gaul
+			has_reform = tribal_federation_reform
+			culture_group = gaulish_group
 	}
 }
 
@@ -864,7 +864,7 @@ southern_arabian_tribe = {
 	
 	trigger = {
 			government = monarchy
-			NOT  { government = pastoral_tribe }
+			NOT  { has_reform = pastoral_tribe_reform }
 			OR = {
 				primary_culture = sabaean
 				primary_culture = minaean
@@ -900,7 +900,7 @@ pastoral_tribe = {
 	}
 	
 	trigger = {
-			government = pastoral_tribe
+			has_reform = pastoral_tribe_reform
 	}
 }
 
@@ -930,7 +930,7 @@ iberian_monarchy = {
 	}
 	
 	trigger = {
-		government = iberian_monarchy
+		has_reform = iberian_society_reform
 	}
 }
 
@@ -960,6 +960,122 @@ germanic_kingdom = {
 	}
 	
 	trigger = {
-		government = germanic_kingdom
+		has_reform = germanic_tribal_kingdom_reform
+	}
+}
+
+semitic_monarchy = {
+	rank = {
+		1 = CITY
+		2 = KINGDOM
+		3 = KINGDOM
+		4 = EMPIRE
+		5 = EMPIRE 
+	}	
+	
+	ruler_male = {
+		1 = MLKTITLE 
+		2 = MLKTITLE
+		3 = MLKTITLE
+		4 = SAR_SARRANI
+		5 = SAR_SARRANI
+	}
+	
+	ruler_female = {
+		1 = MLKTITLE
+		2 = MLKTITLE
+		3 = MLKTITLE	
+		4 = SAR_SARRANI	
+		5 = SAR_SARRANI
+	}
+	
+	trigger = {
+		government = monarchy
+		culture_group = semitic
+	}
+}
+akkadian_monarchy = {
+	rank = {
+		1 = CITY
+		2 = KINGDOM
+		3 = KINGDOM
+		4 = EMPIRE
+		5 = EMPIRE 
+	}	
+	
+	ruler_male = {
+		1 = MALOKA 
+		2 = MALOKA
+		3 = MALOKA
+		4 = SAR_SARRANI
+		5 = SAR_SARRANI
+	}
+	
+	ruler_female = {
+		1 = MALOKE
+		2 = MALOKE
+		3 = MALOKE	
+		4 = SAR_SARRANI	
+		5 = SAR_SARRANI
+	}
+	
+	trigger = {
+		government = monarchy
+			culture_group = akkadian_group
+	}
+}
+
+polis_democracy = {
+	rank = {
+		1 = DEMOCRATIC_POLIS
+	}	
+	
+	ruler_male = {
+		1 = ARCHON
+	}
+	
+	ruler_female = {
+		1 = ARCHON
+	}
+	
+	trigger = {
+		has_reform = greek_polis_reform
+		has_country_modifier = polis_democracy_modifier
+	}
+}
+polis_tyrannis = {
+	rank = {
+		1 = TYRANNIC_POLIC
+	}	
+	
+	ruler_male = {
+		1 = TYRANN
+	}
+	
+	ruler_female = {
+		1 = TYRANNESS
+	}
+	
+	trigger = {
+		has_reform = greek_polis_reform
+		has_country_modifier = polis_tyrannis_modifier
+	}
+}
+polis_oligarchy = {
+	rank = {
+		1 = OLIGARCHIC_POLIS
+	}	
+	
+	ruler_male = {
+		1 = ARCHON
+	}
+	
+	ruler_female = {
+		1 = ARCHON
+	}
+	
+	trigger = {
+		has_reform = greek_polis_reform
+		has_country_modifier = polis_oligarchy_modifier
 	}
 }

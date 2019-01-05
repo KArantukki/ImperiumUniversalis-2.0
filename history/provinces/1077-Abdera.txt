@@ -1,13 +1,14 @@
 add_core = EDO
-owner = EDO
-controller = EDO
-culture = odrysian
-religion = thracian
+add_core = THS
+owner = THS
+controller = THS
+culture = ionic
+religion = greek_religion
 hre = no
 base_tax = 0
 base_production = 1
 base_manpower = 3
-trade_goods = silver
+trade_goods = gold
 capital = ""
 is_city = yes
 

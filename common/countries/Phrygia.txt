@@ -4,11 +4,16 @@ graphical_culture = hellenicgfx
 
 color = { 181 30 75 }
 
-revolutionary_colors = { 5  13  0 }
-
-
 historical_idea_groups = {
-	
+	mercenary_ideas
+	caravan_trade_ideas
+	financial_ideas
+	fortress_ideas
+	diplomatic_ideas
+	domestic_government_ideas
+	infantry_ideas
+	syncrenism_ideas
+	royal_court_ideas
 }
 
 historical_units = {
@@ -16,103 +21,44 @@ historical_units = {
 }
 
 monarch_names = {
-	"Lyndus" = 20
-	"Mysus" = 20
-	"Nastes" = 20
-	"Amphimachos" = 20
-	"Dares" = 20
-	"Tantalus" = 20
-	"Pelops" = 20
-	"Broteas" = 20
-	"Ardys" = 20
-	"Gyges" = 20
-	"Alyattes" = 20
-	"Croesus" = 20
-	"Sadyattes" = 20
-	"Candaules" = 20
-	"Agron" = 20
-	"Abas" = 10
-	"Adithrerak" = 10
-	"Adrastos" = 10
-	"Arkias" = 10
-	"Ataniyen" = 10
-	"Atas" = 10
-	"Ates" = 10
-	"Babas" = 10
-	"Benagonos" = 10
-	"Bewdos" = 10
-	"Bodoris" = 10
-	"Brogimaros" = 10
-	"Gallaros" = 10
-	"Gioulikh" = 10
+	# Bithynian
+	"Zipoites" = 20
+	"Nikomedes" = 35
+	"Ziaelas" = 20
+	"Prusias" = 20
+	"Bas" = 20
+	# Phrygian
 	"Gordios" = 10
-	"Ermolaos" = 10
-	"Iktes" = 10
-	"Ile" = 10
-	"Iosaes" = 10
-	"Kallyriatis" = 10
-	"Kantyix" = 10
-	"Kupolas" = 10
-	"Kurunis" = 10
-	"Likes" = 10
-	"Lityerses" = 10
-	"Mamutas" = 10
-	"Mantalos" = 10
-	"Mais" = 10
-	"Memes" = 10
-	"Menogas" = 10
-	"Menoudoutos" = 10
 	"Midas" = 10
-	"Mistraboutas" = 10
-	"Montanos" = 10
-	"Muxos" = 10
-	"Omousas" = 10
-	"Phaglyn" = 10
-	"Pokraioy" = 10
-	"Pologretes" = 10
-	"Polodrates" = 10
-	"Poukros" = 10
-	"Proitos" = 10
-	"Psuwapsaros" = 10
-	"Rodan" = 10
-	"Sitidos" = 10
-	"Skrpoy" = 10
-	"Tados" = 10
-	"Tatas" = 10
-	"Thimbis" = 10
-	"Totos" = 10
-	"Woines" = 10
-	"Xeun" = 10
-	"Yattas" = 10
-	"Yrgitos" = 10
+	"Mygdon " = 10
+	"Acmon" = 10
+	"Dymas" = 10
+	"Pelops" = 10
+	"Tantalus" = 10
+	"Atys" = 10
+	"Broteas" = 10
 	
-	"Agipeia" = -1
-	"Akmonia" = -1
-	"Apola" = -1
-	"Dia" = -1
-	"Ekataia" = -1
-	"Kaliya" = -1
-	"Kuliya" = -1
-	"Nana" = -1
-	"Oyenayia" = -1
-	"Pormate" = -1
-         
-	                                                     
+	"Niobe" = -1
+	"Dione" = -1
+	"Mysia" = -1
+	"Atyia" = -1
+	"Arachne" = -1
+	   
 }
 
 leader_names = {
-					"of Phrygia" "the Wise" "the Older" "the Strong" Abasewais Adrastewais Arkiewais 
-					Atewais Babewais Bewdewais Bodoriewais Brogimarewais Gallarewais Gioulikhewais 
-					Gordiewais Ermolaewais Iktewais Ilewais Iosaewais Kallyriatewais Kantyewais Kupolewais 
-					Kurunewais Likewais Lityersewais Mamutewais Mantalewais Maewais Memewais Menogewais 
-					Menoudoutewais Midewais Mistraboutewais Montanewais Muxewais Omousewais Phaglynewais 
-					Pokraiewais Pologretewais Polodratewais Poukrewais Pountewais Proitawos Psuwapsarewais 
-					Rodanewais Sitidewais Skrpewais Tadewais Tatewais Thimbiewais Totewais Woinewais Wrekun 
-					Xeunewais Yattewais Yrgitewais "of Berekyntai"
+		"of Bithynia" "of Mysia" "of Phrygia" "of Phrygia" "of Phrygia" "of Phrygia" "of Phrygia" "the Wise" "the Elder" "the Younger" 
+		"" "" "" "" "" "" "" "" "" "" ""
 }
 
 ship_names = {
-	Adrotos Agdistis Akenanogawos Akrisias Anpeleites Apelan Argyitas Areyastin Ataniya Bagaios Bago Balaios Bas Belte Bonekos Ganos Geudis Daos Dareios Dindum Diounsin Edessa Eilikrine Erse Ewememesmeneya Ewkobeyan Ezis Glanos Glunea Ibeya Kelainaj Kiklen Koroan Lawagtaei Loidimon Mas Mazeus Mitraphata Orowan Ouranion Proitavos Saggarios Sipylon Tekmor Temnon Tieion Zeuman
+	Zeus Hera Aphrodite Apollo Ares Artemis Athena Demeter Dionysus Hades Hephaestos Hermes Hestia Poseidon 
+	Achlys Aether Aion Ananke Chaos Chronos Erebus Eros Gaia Hemera Hypnos Nemesis Nyx Pontus Tartaros Thalassa
+	Thanatos Uranus Koios Kreios Kronos Hyperion Iapetós Oceanós Phoibe Rhéa Theía Thémis Astería Atlas Aúra
+	Clymene Dione Helios Eurybía Lelantos Leto Menoítios Pállas Perses Prometheus Alcyoneus Chthonius Damysus 
+	Mimas Pallas Porphyrion Antaeus Agathodaemon Aegaeon Achelous Benthesikyme Ceto Graeae Delphin Aello 
+	Celaeno Aphros Bythos Leucothea Achilles Heracles Aiax Jason Argo Odysseus Orpheus Theseus Aegea Antiope
+	Hippolyta Iphito Marpesia Otrera Penthesilea 
 }
 
 army_names = {

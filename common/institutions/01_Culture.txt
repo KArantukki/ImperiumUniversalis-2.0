@@ -8,6 +8,7 @@ culture_lvl1 = {
 		same_culture_advisor_cost = -0.1
 		prestige = 0.1
 	}
+	trade_company_efficiency = 0.0
 
 
 	history = {
@@ -166,6 +167,7 @@ culture_lvl2 = {
 		monthly_splendor = 0.5
 		advisor_pool = 1
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -294,6 +296,7 @@ culture_lvl3 = {
 		culture_conversion_cost = -0.1
 		global_missionary_strength = 0.01
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -430,6 +433,7 @@ culture_lvl4 = {
 		prestige = 0.1
 		diplomatic_reputation = 1 
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no
@@ -472,7 +476,7 @@ culture_lvl4 = {
 				tooltip = tooltip_any_border_province_has_embraced_this_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					culture_lv14 = 100
+					culture_lvl4 = 100
 				}
 			}
 		}
@@ -532,6 +536,7 @@ culture_lvl5 = {
 		global_unrest = -1
 		culture_conversion_cost = -0.1
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no
@@ -556,7 +561,7 @@ culture_lvl5 = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
 				any_friendly_coast_border_province = {
-					culture_lvl4 = 100
+					culture_lvl5 = 100
 				}
 			}
 		}
@@ -566,7 +571,7 @@ culture_lvl5 = {
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
-						culture_lvl4 = 100
+						culture_lvl5 = 100
 					}
 				}
 			}
@@ -574,7 +579,7 @@ culture_lvl5 = {
 				tooltip = tooltip_any_border_province_has_embraced_this_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					culture_lv14 = 100
+					culture_lvl5 = 100
 				}
 			}
 		}
@@ -638,6 +643,7 @@ culture_lvl6 = {
 	history = {
 		always = no
 	}
+	trade_company_efficiency = 0.0
 
 	can_embrace = {
 		has_institution = culture_lvl5
@@ -658,7 +664,7 @@ culture_lvl6 = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
 				any_friendly_coast_border_province = {
-					culture_lvl4 = 100
+					culture_lvl6 = 100
 				}
 			}
 		}
@@ -668,7 +674,7 @@ culture_lvl6 = {
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
-						culture_lvl4 = 100
+						culture_lvl6 = 100
 					}
 				}
 			}
@@ -676,7 +682,7 @@ culture_lvl6 = {
 				tooltip = tooltip_any_border_province_has_embraced_this_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					culture_lv14 = 100
+					culture_lvl6 = 100
 				}
 			}
 		}

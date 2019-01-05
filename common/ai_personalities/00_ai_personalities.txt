@@ -38,11 +38,15 @@ ai_capitalist = {
 		}
 		modifier = {
 			factor = 1.1
-			administrative_ideas = 1
+			financial_ideas = 1
 		}		
 		modifier = {
 			factor = 1.1
-			trade_ideas = 1
+			maritime_trade_ideas = 1
+		}			
+		modifier = {
+			factor = 1.1
+			caravan_trade_ideas = 1
 		}	
 	}
 	icon = 2
@@ -104,13 +108,6 @@ ai_militarist = {
 			any_neighbor_country = { ai = no }
 		}
 		modifier = {
-			factor = 10
-			any_neighbor_country = {
-				ai = no 
-				total_development = ROOT
-			}
-		}
-		modifier = {
 			factor = 0
 			has_regency = yes
 		}	
@@ -158,14 +155,19 @@ ai_militarist = {
 		}	
 		modifier = {
 			factor = 1.1
-			quality_ideas = 1
+			leadership_ideas = 1
 		}
 		modifier = {
 			factor = 1.1
-			quantity_ideas = 1
+			infantry_ideas = 1
+		}			
+		modifier = {
+			factor = 1.1
+			cavalry_ideas = 1
 		}			
 		modifier = {
 			factor = 2.5
+			is_year = 250
 			tag = ROM
 		}		
 		modifier = {
@@ -176,7 +178,7 @@ ai_militarist = {
 		}
 		modifier = {
 			factor = 5
-			government = tribal_horde
+			government = native
 		}		
 	}
 	icon = 4

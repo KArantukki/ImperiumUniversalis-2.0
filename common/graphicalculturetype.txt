@@ -1,4 +1,5 @@
 westerngfx
+italicgfx
 celticgfx
 indiangfx
 asiangfx

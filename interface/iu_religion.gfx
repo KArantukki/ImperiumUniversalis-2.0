@@ -1,12 +1,24 @@
 spriteTypes = {	
 
 	spriteType = {
+		name = "GFX_religious_conversion_center_zoroastrianism"
+		texturefile = "gfx/interface/religious_conversion_center_zoroastrianism.dds"
+	}
+	spriteType = {
 		name = "GFX_religious_conversion_center_buddhism"
 		texturefile = "gfx/interface/religious_conversion_center_buddhism.dds"
 	}
 	spriteType = {
 		name = "GFX_religious_conversion_center_ajivika"
 		texturefile = "gfx/interface/religious_conversion_center_ajivika.dds"
+	}
+	spriteType = {
+		name = "GFX_religious_conversion_center_jain"
+		texturefile = "gfx/interface/religious_conversion_center_jain.dds"
+	}
+	spriteType = {
+		name = "GFX_religious_conversion_center_christian"
+		texturefile = "gfx/interface/religious_conversion_center_christian.dds"
 	}
 	spriteType = {
 		name = "GFX_trading_policy_secure_transportation"

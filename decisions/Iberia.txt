@@ -5,13 +5,6 @@ country_decisions = {
 		potential = {
 			NOT = { exists = IBB }
 			culture_group = iberian_group
-			OR = {
-				capital_scope = { region = hispania_baetica }
-				capital_scope = { region = lusitania }
-				capital_scope = { region = cartaginensis_region }
-				capital_scope = { region = gallaecia }
-				capital_scope = { region = hispania_citerior }
-			}
 		}
 		allow = {
 			is_at_war =  no
@@ -45,12 +38,6 @@ country_decisions = {
 		potential = {
 			NOT = { exists = LUS }
 			primary_culture = lusitani
-			capital_scope = {
-				OR = {
-					area = lusitania_west
-					area = lusitania_east
-				}
-			}
 		}
 		allow = {
 			is_at_war =  no
@@ -100,13 +87,7 @@ country_decisions = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
 			}
-				hispania_citerior = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = CLI
-				}
-				hispania_citerior = {
+				hispania_tarraconensis = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
@@ -120,31 +101,4 @@ country_decisions = {
 		}
 	}
 	
-	abolish_the_senate = {
-		potential = {
-			government = iberian_monarchy
-		}
-		allow = {
-			is_at_war = no
-			has_any_disaster = no
-			legitimacy = 100
-			adm_tech = 8
-				NOT = {
-					estate_influence = {
-						estate = estate_clans
-						influence = 25
-					}
-				}
-		}
-		effect = {
-			change_government = despotic_monarchy
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -25
-			}
-		}
-		ai_will_do = {
-			factor = 0.5
-		}
-	}
 }

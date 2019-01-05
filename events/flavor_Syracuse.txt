@@ -29,7 +29,7 @@ country_event = {
 				name = "Archimedes"
 				location = 251
 				skill = 3
-				discount = yes
+				cost_multiplier = 0.25
 			}
 		set_country_flag = archimedes_flag
 	}

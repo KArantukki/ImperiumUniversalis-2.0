@@ -1,12 +1,6 @@
 succession_crisis_disaster = {
 	potential = {
-			OR = {
-				government = despotic_monarchy
-				government = principate
-				government = diadochi_monarchy
-				government = greek_polis_tyrannis
-				government = oriental_monarchy
-			}
+			government = monarchy
 			NOT = { months_of_ruling = 36 }
 			had_global_flag = { flag = game_start_flag days = 1095 }
 	}
@@ -117,31 +111,6 @@ succession_crisis_disaster = {
 		modifier = {
 			factor = 5
 			NOT = { is_female = yes }
-		}
-		
-		modifier = {
-			factor = -5
-				estate_influence = {
-					estate = estate_nobles
-					influence = 30
-				}
-				estate_loyalty = {
-					estate = estate_nobles
-					loyalty = 60
-				}
-		}
-		modifier = {
-			factor = 5
-				estate_influence = {
-					estate = estate_nobles
-					influence = 30
-				}
-			NOT = {
-				estate_loyalty = {
-					estate = estate_nobles
-					loyalty = 40
-				}
-			}
 		}
 	}
 	

@@ -1,17 +1,21 @@
 #Country Name: Please see filename.
 
 graphical_culture = italicgfx
+special_unit_culture = roman_special
 
 color = { 43 59 99 }
 
 
 historical_idea_groups = {
-	offensive_ideas
-	administrative_ideas
-	influence_ideas
+	leadership_ideas
+	domestic_government_ideas
+	expansion_ideas
 	infantry_ideas
-	spy_ideas
-	
+	administrative_ideas
+	imperial_ideas
+	naval_ideas
+	engineering_ideas
+	syncrenism_ideas
 }
 
 historical_units = {

@@ -1,6 +1,6 @@
-add_core = OX1
-owner = OX1
-controller = OX1
+add_core = PL1
+owner = PL1
+controller = PL1
 culture = illyrian
 religion = illyrian_religion
 hre = no

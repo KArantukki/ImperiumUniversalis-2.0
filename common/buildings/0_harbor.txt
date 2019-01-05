@@ -22,8 +22,9 @@ small_harbor = {
 		has_port = yes
 	}
 	modifier = {
-		province_trade_power_value = 2.0
+		province_trade_power_value = 2.5
 		local_sailors_modifier = 0.25
+		naval_forcelimit = 5
 	}
 
 	ai_will_do = {
@@ -38,8 +39,9 @@ big_harbor = {
 		has_port = yes
 	}
 	modifier = {
-		province_trade_power_value = 4.0
+		province_trade_power_value = 5.0
 		local_sailors_modifier = 0.5
+		naval_forcelimit = 10
 	}
 	
 	ai_will_do = {
@@ -54,8 +56,9 @@ harbor_district = {
 		has_port = yes
 	}
 	modifier = {
-		province_trade_power_value = 6.0
+		province_trade_power_value = 7.5
 		local_sailors_modifier = 0.75
+		naval_forcelimit = 15
 	}
 	
 	ai_will_do = {

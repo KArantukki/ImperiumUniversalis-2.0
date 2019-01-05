@@ -70,147 +70,6 @@ country_event = {
 	}
 }
 ########################################################################################
-# jainism spreads
-########################################################################################
-province_event = {
-	id = religion_indian.3
-	title = "religion_indian.3.t"
-	desc = "religion_indian.3.d"
-	picture = priest
-	
-	trigger = {
-		OR = {
-			religion = dravidian
-			religion = brahmin
-			religion = sramana
-			religion = buddhism
-			culture = greco_indian
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 15000			
-		modifier = {
-				factor = 0.75
-				owner = { religion = jain	}
-			}			
-		modifier = {
-				factor = 0.9
-				religion = sramana
-			}		
-		modifier = {
-				factor = 3.0
-				religion = buddhism
-			}		
-		modifier = {
-				factor = 1.25
-				religion = dravidian
-			}			
-		modifier = {
-				factor = 0.85
-				is_looted = yes
-			}	
-		modifier = {
-				factor = 0.75
-				owner = { war_exhaustion = 5	}
-			}	
-		modifier = {
-				factor = 0.8
-				region = southern_india_region
-			}	
-		modifier = {
-				factor = 0.7
-				region = western_india_region
-			}
-	}
-	
-	option = {
-		name = "religion_indian.3.a"
-		ai_chance = { factor = 80 }
-			change_religion = jain
-	}
-}
-########################################################################################
-# buddhism spreads
-########################################################################################
-province_event = {
-	id = religion_indian.4
-	title = "religion_indian.4.t"
-	desc = "religion_indian.4.d"
-	picture = priest
-	
-	trigger = {
-		is_religion_enabled = buddhism
-		OR = {
-			religion = dravidian
-			religion = brahmin
-			religion = jain
-			culture = greco_indian
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 34000			
-		modifier = {
-				factor = 0.75
-				owner = { religion = buddhism	}
-			}		
-		modifier = {
-				factor = 0.9
-				religion = sramana	
-			}	
-		modifier = {
-				factor = 2.5
-				religion = jain
-			}		
-		modifier = {
-				factor = 1.25
-				religion = dravidian
-			}	
-		modifier = {
-				factor = 0.75
-				is_looted = yes
-			}	
-		modifier = {
-				factor = 0.75
-				owner = { war_exhaustion = 5	}
-			}	
-		modifier = {
-				factor = 0.8
-				region = eastern_india_region
-			}
-		modifier = {
-				factor = 0.8
-				region = northern_india_region
-			}
-		modifier = {
-				factor = 0.9
-				region = gandhara
-			}
-		modifier = {
-				factor = 0.75
-				has_global_flag = first_buddhist_concil
-			}
-		modifier = {
-				factor = 0.6
-				religion_years = { buddhism = 25 }
-			}
-		modifier = {
-				factor = 1.1
-				religion_years = { buddhism = 75 }
-			}
-		modifier = {
-				factor = 1.4
-				religion_years = { buddhism = 200 }
-			}
-	}
-	
-	option = {
-		name = "religion_indian.3.a"
-			change_religion = buddhism
-	}
-}
-########################################################################################
 # buddhist missionaries
 ########################################################################################
 province_event = {
@@ -330,36 +189,6 @@ country_event = {
 	}
 }
 ########################################################################################
-# third buddhist concil
-########################################################################################
-country_event = {
-	id = religion_indian.7
-	title = "religion_indian.7.t"
-	desc = "religion_indian.7.d"
-	picture = priest
-	major = yes
-	
-	trigger = {
-			religion = buddhism
-			has_global_flag = first_buddhist_concil
-			NOT = { has_global_flag = third_buddhist_concil_happened }
-			total_development = 250
-	}
-	
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	option = {
-		name = "religion_indian.7.a"
-		ai_chance = { factor = 70 }
-		add_karma = 20
-		add_prestige = 20
-		set_global_flag = third_buddhist_concil_happened			
-			
-	}
-}
-########################################################################################
 # peace or war
 ########################################################################################
 country_event = {
@@ -408,29 +237,37 @@ country_event = {
 	major = yes
 	
 	trigger = {
+		NOT = { is_religion_enabled = buddhism }
+		is_year = 210
+		is_reformation_center = no
 		any_owned_province = {
 			OR = {
-				religion = brahmin
-				religion = sramana
-				religion = jain
-			}
-			OR = {
-				area = magadha_area
-				area = northern_kalinga_area
-				area = gangaridai_area
-				area = vrji_area
+				AND = { 
+					religion = brahmin
+					any_neighbor_province = { religion = sramana }
+				}
+				AND = { 
+					religion = sramana
+					any_neighbor_province = { religion = brahmin }
+				}
 			}
 		}
-		is_year = 215
-		NOT = { is_religion_enabled = buddhism }
 		
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 80
 		modifier = {
 				factor = 1.5
 				religion = jain
+			}
+		modifier = {
+				factor = 1.25
+				religion = brahmin
+			}
+		modifier = {
+				factor = 0.75
+				primary_culture = magadhi
 			}
 	}
 	
@@ -440,23 +277,23 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					OR = {
-						area = magadha_area
-						area = northern_kalinga_area
-						area = gangaridai_area
-						area = vrji_area
-					}
-					OR = {
-						religion = sramana
-						religion = brahmin
-						religion = jain
+						is_in_capital_area = yes 
+						AND = { 
+							religion = brahmin
+							any_neighbor_province = { religion = sramana }
+						}
+						AND = { 
+							religion = sramana
+							any_neighbor_province = { religion = brahmin }
+						}
 					}
 				}
 				change_religion = buddhism
 				add_reform_center = buddhism
 				add_province_modifier = {
-							name = home_of_buddhism
-							duration = -1
-						}
+					name = "religious_center_modifier"
+					duration = 18250
+				}
 			}
 	}
 }
@@ -474,17 +311,26 @@ province_event = {
 		is_religion_enabled = buddhism
 		religion_years = { buddhism = 10 }
 		religion = buddhism
+		any_neighbor_province = { is_reformation_center = no }
+		NOT = { any_neighbor_province = { is_reformation_center = no } }
+		NOT = { any_province = { 	area = ROOT 
+									is_reformation_center = no } }
 		NOT = { has_global_flag = first_buddhist_concil }
 
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 42
 	}
 	
 	option = {
 		name = "religion_indian.10.a"
 		set_global_flag = first_buddhist_concil
+				add_reform_center = buddhism
+				add_province_modifier = {
+					name = "religious_center_modifier"
+					duration = 9125
+				}
 	}
 }
 ########################################################################################
@@ -501,9 +347,12 @@ country_event = {
 		is_year = 220
 		NOT = { is_religion_enabled = ajivika }
 		
+		any_neighbor_province = { is_reformation_center = no }
+		NOT = { any_neighbor_province = { is_reformation_center = no } }
 		any_owned_province = {
 			OR = {
 				religion = sramana
+				religion = buddhism
 				religion = jain
 			}
 			OR = {
@@ -536,11 +385,73 @@ country_event = {
 					}
 					OR = {
 						religion = sramana
+						religion = buddhism
 						religion = jain
 					}
 				}
 				change_religion = ajivika
 				add_reform_center = ajivika
+				add_province_modifier = {
+					name = "religious_center_modifier"
+					duration = 18250
+				}
+			}
+	}
+}
+########################################################################################
+# Jainism appears
+########################################################################################
+country_event = {
+	id = religion_indian.12
+	title = "religion_indian.12.t"
+	desc = "religion_indian.12.d"
+	picture = priest
+	major = yes
+	
+	trigger = {
+		is_year = 190
+		NOT = { is_religion_enabled = jain }
+		
+		any_neighbor_province = { is_reformation_center = no }
+		NOT = { any_neighbor_province = { is_reformation_center = no } }
+		any_owned_province = {
+				religion = sramana
+			OR = {
+				region = northern_india_region
+				region = eastern_india_region
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+				factor = 1.5
+				religion = jain
+			}
+		modifier = {
+				factor = 0.25
+				is_religion_enabled = buddhism
+			}
+	}
+	
+	option = {
+		name = "religion_indian.12.a"
+			enable_religion = jain
+			random_owned_province = {
+				limit = {
+					OR = {
+						region = northern_india_region
+						region = eastern_india_region
+					}
+				religion = sramana
+				}
+				change_religion = jain
+				add_reform_center = jain
+				add_province_modifier = {
+					name = "religious_center_modifier"
+					duration = 18250
+				}
 			}
 	}
 }

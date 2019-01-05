@@ -11,6 +11,10 @@ base_manpower = 2
 trade_goods = grain
 capital = ""
 is_city = yes
+shrine = yes
+small_market = yes
+small_townhall = yes
+gravel_road = yes
 
 #discovered_by = roman
 #discovered_by = greek

@@ -1,18 +1,19 @@
-government = tribal_kingdom
+government = tribal
+add_government_reform = tribal_kingdom_reform
 government_rank = 3
 #mercantilism = 0.25
 capital = 633
 technology_group = balkan
 primary_culture = odrysian
 religion = thracian
-religious_school = hellenic_type
+#religious_school = hellenic_type
 
 431.1.1 = {
 	government_rank = 4
 	technology_group = greek
 	primary_culture = macedon
 	religion = greek_religion
-	government = diadochi_monarchy
+	#government = diadochi_monarchy
 	add_ruler_personality = diadochi_leader_personality
 	monarch = {
 		name = "Lysimachos"

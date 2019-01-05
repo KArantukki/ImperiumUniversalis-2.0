@@ -1,11 +1,12 @@
-government = greek_polis
+government = republic
+add_government_reform = greek_polis_reform
 government_rank = 1
 #mercantilism = 0.25
 technology_group = greek
 primary_culture = italiote
 religion = greek_religion
 capital = 210
-religious_school = hellenic_type
+#religious_school = hellenic_type
 
 	##fac_oligarchs = 60
 	##fac_monarchists = 35

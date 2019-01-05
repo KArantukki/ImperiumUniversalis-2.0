@@ -76,6 +76,78 @@ country_event = {
 }
 
 ########################################################################################
+# Birth of Kyros
+########################################################################################
+country_event = {
+	id = persia.6
+	title = "persia.6.t"
+	desc = "persia.6.d"
+	picture = birth
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = ANH
+		NOT = { has_country_flag = birth_of_kyros_flag }
+		NOT = {  started_in = 178.1.1  }
+		is_year = 170
+		NOT = { is_year = 185 }
+		has_heir = no 
+		has_regency = no 
+	}
+	
+	mean_time_to_happen = {
+		months = 16
+	}
+	
+	option = {
+		name = "persia.6.a"
+			define_heir = {
+				male = yes
+				dynasty = ROOT
+				name = "Kyros"
+				claim = 100
+				adm = 6
+				dip = 6
+				mil = 6
+			}
+	}
+}
+########################################################################################
+# Parsa joins Kyros
+########################################################################################
+country_event = {
+	id = persia.7
+	title = "persia.7.t"
+	desc = "persia.7.d"
+	picture = birth
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = ANH
+		PRS = {
+			exists = yes
+			ai = yes
+			OR = {
+				alliance_with = ANH
+				is_subject_of = ANH
+			}
+		}
+		NOT = {  started_in = 205.1.1  }
+		ADM = 5
+		DIP = 5
+		MIL = 5
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "persia.7.a"
+		inherit = PRS 
+	}
+}
+########################################################################################
 # House of Egibi
 ########################################################################################
 country_event = {

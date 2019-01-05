@@ -1,15 +1,20 @@
 #Country Name: Please see filename.
 
 graphical_culture = thraciangfx
+special_unit_culture = illyrian_special2
 
 color = { 25 0 150 }
 
 historical_idea_groups = {
-	infantry_ideas
-	administrative_ideas
+	leadership_ideas
 	expansion_ideas
-	quality_ideas
+	agraculture_ideas
+	infantry_ideas
+	imperial_ideas
+	royal_court_ideas
 	cavalry_ideas
+	syncrenism_ideas
+	administrative_ideas
 }
 
 historical_units = {

@@ -933,7 +933,18 @@ guiTypes = {
 #				text = "TIME"
 #				format = left
 #			}
-
+			guiButtonType = {
+				name = "mission_button"
+				position = { x = 296 y =9 }
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "MONTHLY_COST"
+				buttonFont = "vic_18"
+				quadTextureSprite ="GFX_sort_84"	
+				Orientation = "UPPER_LEFT"
+			}
+			
 			checkboxType = {
 				name = "show_subjects"
 				position = { x= -7 y=466 }

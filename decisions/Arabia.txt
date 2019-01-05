@@ -24,13 +24,6 @@ country_decisions = {
 				set_government_rank = 3
 			}
 			
-			if = {
-				limit = {
-					government = tribal	
-				}
-				change_government = despotic_monarchy
-			}
-			
 				arabia_petrea_region = {
 					limit = {
 						NOT = { owned_by = ROOT }

@@ -149,10 +149,7 @@ country_event = {
 	
 	option = {
 		name = "china.6.a"
-				add_estate_loyalty = {
-					estate = estate_nobles
-					loyalty = -10
-				}
+			add_stability = -1
 	}
 }
 
@@ -242,54 +239,3 @@ country_event = {
 	}
 }
 
-########################################################################################
-# Cast iron in china
-########################################################################################
-country_event = {
-	id = china.9
-	title = "china.9.t"
-	desc = "china.9.d"
-	picture = city
-	fire_only_once = yes
-	major = yes
-	
-	trigger = {
-		culture_group = chinese_group
-		is_institution_enabled = metallurgy
-		NOT = {
-			any_province = { 
-				continent = china
-				metallurgy = 100
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 48
-	}
-	
-	
-	immediate = { 
-		hidden_effect = {
-			capital_scope = {
-				add_institution_embracement = {
-					which = metallurgy
-					value = 100
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = "china.9.a"
-		add_adm_power = 100
-		tooltip = {
-			capital_scope = {
-				add_institution_embracement = {
-					which = metallurgy
-					value = 100
-				}
-			}
-		}
-	}
-}

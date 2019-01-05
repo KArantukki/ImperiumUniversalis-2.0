@@ -5,14 +5,14 @@ graphical_culture = italicgfx
 color = { 165 89 66 }
 
 historical_idea_groups = {
-	offensive_ideas
+	agraculture_ideas
 	infantry_ideas
-	economy_ideas
-	imperial_government_ideas
-	engineering_ideas
-	expansion_ideas
-	quality_ideas
-	
+	diplomatic_ideas
+	cerimonial_ideas
+	cavalry_ideas
+	caravan_trade_ideas
+	domestic_government_ideas
+	raider_ideas
 }
 
 historical_units = {

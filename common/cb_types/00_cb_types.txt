@@ -167,7 +167,7 @@ cb_independence_war = {
 	prerequisites = {
 		is_subject = yes
 		is_subject_of = FROM
-		NOT = { government = triumvirate_government }
+		#NOT = { government = triumvirate_government }
 	}
 
 	war_goal = defend_capital_independence
@@ -231,7 +231,7 @@ cb_invasion = {
 	valid_for_subject = no
 
 	prerequisites = {
-		is_nomad = no
+		NOT = { government = native }
 		is_subject = no
 		NOT = { government_rank = 4 }
 		NOT = { total_development = FROM }
@@ -251,15 +251,14 @@ cb_horde_invasion = {
 
 	prerequisites = {
 		is_subject = no
-		is_nomad = yes
+		government = native
 		NOT = { government_rank = 4 }
 		NOT = { total_development = 60 }
 		FROM = {		
 			is_neighbor_of = ROOT
 			total_development = ROOT
 			government_rank = 3
-			is_tribal = no
-			is_nomad = no
+			NOT = { government = native }
 		}
 	}
 
@@ -274,19 +273,19 @@ cb_mission_invasion = {
 	war_goal = take_capital_mission_invasion
 }
 #########################################################################
-cb_roman_civil_war = {
-	valid_for_subject = yes
-
-
-	prerequisites = {
-			government = triumvirate_government
-		FROM = {	
-			government = triumvirate_government
-		}
-	}
-
-	war_goal = take_capital_roman_civil_war
-}
+#cb_roman_civil_war = {
+#	valid_for_subject = yes
+#
+#
+#	prerequisites = {
+#			government = triumvirate_government
+#		FROM = {	
+#			government = triumvirate_government
+#		}
+#	}
+#
+#	war_goal = take_capital_roman_civil_war
+#}
 
 # Take the Mandate of Heaven
 cb_take_mandate = {
@@ -337,8 +336,13 @@ cb_tribal_raid = {
 	prerequisites = {
 		is_free_or_tributary_trigger = yes
 		OR = {
-			is_tribal = yes
-			is_nomad = yes
+			government = native
+			has_reform = vedic_kingdom_reform
+			has_reform = pastoral_tribe_reform
+			has_reform = tribal_kingdom_reform
+			has_reform = tribal_federation_reform
+			has_reform = iberian_society_reform
+			has_reform = germanic_tribal_kingdom_reform
 		}
 		FROM = {
 		OR = {
@@ -361,26 +365,6 @@ cb_normal_borderconquest_1 = {
 			NOT = { MIL = 2}
 			NOT = { is_subject_of = FROM }
 			NOT = { government = republic }
-			OR = {
-				AND = {
-					NOT = {
-						OR = { 	government = greek_polis
-								government = greek_polis_democracy
-								government = greek_polis_tyrannis
-							}
-						}
-					}
-				AND = {
-						FROM = {
-							NOT = {
-								OR = { 	government = greek_polis
-										government = greek_polis_democracy
-										government = greek_polis_tyrannis
-									}
-								}
-							}
-						}
-				}
 			
 			OR = {
 				AND = {
@@ -438,26 +422,6 @@ cb_normal_borderconquest_2 = {
 			NOT = { MIL = 3}
 			NOT = { is_subject_of = FROM }
 			NOT = { government = republic }
-			OR = {
-				AND = {
-					NOT = {
-						OR = { 	government = greek_polis
-								government = greek_polis_democracy
-								government = greek_polis_tyrannis
-							}
-						}
-					}
-				AND = {
-						FROM = {
-							NOT = {
-								OR = { 	government = greek_polis
-										government = greek_polis_democracy
-										government = greek_polis_tyrannis
-									}
-								}
-							}
-						}
-				}
 			
 			OR = {
 				AND = {
@@ -515,26 +479,6 @@ cb_normal_borderconquest_3 = {
 			NOT = { MIL = 4}
 			NOT = { is_subject_of = FROM }
 			NOT = { government = republic }
-			OR = {
-				AND = {
-					NOT = {
-						OR = { 	government = greek_polis
-								government = greek_polis_democracy
-								government = greek_polis_tyrannis
-							}
-						}
-					}
-				AND = {
-						FROM = {
-							NOT = {
-								OR = { 	government = greek_polis
-										government = greek_polis_democracy
-										government = greek_polis_tyrannis
-									}
-								}
-							}
-						}
-				}
 			
 			OR = {
 				AND = {
@@ -592,26 +536,6 @@ cb_normal_borderconquest_4 = {
 			NOT = { MIL = 5}
 			NOT = { is_subject_of = FROM }
 			NOT = { government = republic }
-			OR = {
-				AND = {
-					NOT = {
-						OR = { 	government = greek_polis
-								government = greek_polis_democracy
-								government = greek_polis_tyrannis
-							}
-						}
-					}
-				AND = {
-						FROM = {
-							NOT = {
-								OR = { 	government = greek_polis
-										government = greek_polis_democracy
-										government = greek_polis_tyrannis
-									}
-								}
-							}
-						}
-				}
 			
 			OR = {
 				AND = {
@@ -679,26 +603,6 @@ cb_normal_borderconquest_5 = {
 			NOT = { MIL = 6}
 			NOT = { is_subject_of = FROM }
 			NOT = { government = republic }
-			OR = {
-				AND = {
-					NOT = {
-						OR = { 	government = greek_polis
-								government = greek_polis_democracy
-								government = greek_polis_tyrannis
-							}
-						}
-					}
-				AND = {
-						FROM = {
-							NOT = {
-								OR = { 	government = greek_polis
-										government = greek_polis_democracy
-										government = greek_polis_tyrannis
-									}
-								}
-							}
-						}
-				}
 			
 			OR = {
 				AND = {
@@ -757,26 +661,6 @@ cb_normal_borderconquest_6 = {
 			NOT = { government = republic }
 			OR = {
 				AND = {
-					NOT = {
-						OR = { 	government = greek_polis
-								government = greek_polis_democracy
-								government = greek_polis_tyrannis
-							}
-						}
-					}
-				AND = {
-						FROM = {
-							NOT = {
-								OR = { 	government = greek_polis
-										government = greek_polis_democracy
-										government = greek_polis_tyrannis
-									}
-								}
-							}
-						}
-				}
-			OR = {
-				AND = {
 					ai = no
 					FROM = {
 						OR = {			
@@ -828,27 +712,21 @@ cb_normal_borderconquest_6 = {
 cb_normal_borderconquest_rep = {
 	prerequisites = {
 			NOT = { is_subject_of = FROM }
-					government = republic
-			OR = {
-				AND = {
-					NOT = {
-						OR = { 	government = greek_polis
-								government = greek_polis_democracy
-								government = greek_polis_tyrannis
-							}
-						}
-					}
-				AND = {
-						FROM = {
-							NOT = {
-								OR = { 	government = greek_polis
-										government = greek_polis_democracy
-										government = greek_polis_tyrannis
-									}
-								}
+		OR = {		
+			AND = {
+				government = republic
+				NOT = { has_reform = greek_polis_reform }
+			}
+			AND = {
+					has_reform = greek_polis_reform
+					FROM = {
+						NOT = {
+							has_reform = greek_polis_reform
 							}
 						}
 				}
+			}	
+			
 			OR = {
 				AND = {
 					ai = no
@@ -902,15 +780,9 @@ cb_normal_borderconquest_rep = {
 cb_normal_borderconquest_polis = {
 	prerequisites = {
 			NOT = { is_subject_of = FROM }
-					OR = { 	government = greek_polis
-							government = greek_polis_democracy
-							government = greek_polis_tyrannis
-							}
+					has_reform = greek_polis_reform
 				FROM = {
-					OR = { 	government = greek_polis
-							government = greek_polis_democracy
-							government = greek_polis_tyrannis
-							}
+					has_reform = greek_polis_reform
 						}
 	}
 
@@ -921,13 +793,19 @@ cb_horde_subjugating = {
 				is_free_or_tributary_trigger = yes
 				FROM = {
 						OR = {
-							government = pastoral_tribe
-							government = tribal_horde
+							has_reform = pastoral_tribe_reform
+							government = native
 						}
 					}
+				NOT = {
+					border_distance = {
+						who = FROM
+						distance = 100
+					}
+				}
 				government_rank = 3
-				NOT = { government = pastoral_tribe }
-				NOT = { government = tribal_horde }
+				NOT = { has_reform = pastoral_tribe_reform }
+				NOT = { government = native }
 	}
 
 	attacker_disabled_po = {

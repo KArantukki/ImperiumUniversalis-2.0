@@ -36,8 +36,8 @@ sardinia_corsica_region = {
 	corsica_area
 	sardinia_east
 	sardinia_west
-	}
-}
+}	}
+
 
 magna_graecia = {
 	areas = {
@@ -92,7 +92,6 @@ belgica_region = {
 	belgica_secunda
 	belgica_maritimae
 	remorum_area
-	
 	}
 }
 
@@ -109,8 +108,8 @@ hispania_baetica = {
 
 lusitania = {
 	areas = {
-	lusitania_maritimae
-	olisipo_area
+	oestriminis_superior
+	oestriminis_inferior
 	lusitania_west
 	lusitania_east
 	caesarobriga_area
@@ -346,14 +345,14 @@ greek_region = {
 	messenia_area
 	arcadia_area
 	achaea_area
+	euboea_inferior
+	euboea_superior
 	}
 }
 
 
 mare_aegaeum_islands_region = {
 	areas = {
-	euboea_inferior
-	euboea_superior
 	thasus_et_lemnus
 	lesbos_et_chios
 	cyclades_area
@@ -365,7 +364,6 @@ mare_aegaeum_islands_region = {
 }
 
 ionia_region = {
-
 	areas = {
 	troad_area
 	aeolia_area
@@ -848,6 +846,7 @@ eastern_india_region = {
 	}
 }
 
+south_east_asia = {  }
 
 mare_suebicum_region = {
 	areas = {
@@ -887,6 +886,7 @@ oceanus_atlanticus_region = {
 		fortunatae_insulae_sea
 		mare_mauretanicum
 		oceanus_libycus
+		sinus_hespericus
 	}
 }
 mare_ibericum_region = {

@@ -19,24 +19,8 @@ entity = {
 		CATRigRArm2 = "arch_shield_ath"
 	}
 }
-
 entity = {
-	name = "SP1_INFANTRY_1"
-	pdxmesh = "SP1_INFANTRY_1"
-	
-	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
-	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
-	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
-	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
-
-	attach = { 
-		spear_bone = "spartan_spear" 
-		CATRigRArm2 = "hoplite_shield_sp1"
-	}
-}
-
-entity = {
-	name = "MAC_INFANTRY_1"
+	name = "hellenic_alt1_INFANTRY_1"
 	pdxmesh = "hellenicgfx_INFANTRY_1"
 	
 	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
@@ -45,12 +29,27 @@ entity = {
 	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
 
 	attach = { 
-		spear_bone = "macedon_spear" 
-		CATRigRArm2 = "hoplite_shield_mac2"
+		spear_bone = "hoplite_spear" 
+		CATRigRArm2 = "arch_shield_2"
 	}
 }
 entity = {
-	name = "macedon_INFANTRY_1"
+	name = "hellenic_alt2_INFANTRY_1"
+	pdxmesh = "hellenicgfx_INFANTRY_1"
+
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+	
+	attach = { 
+		spear_bone = "punic_spear" 
+		CATRigRArm2 = "hoplite_shield_alt3"
+	}
+}
+
+entity = {
+	name = "macedon_special_INFANTRY_1"
 	pdxmesh = "hellenicgfx_INFANTRY_1"
 	
 	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
@@ -65,7 +64,7 @@ entity = {
 }
 
 entity = {
-	name = "EPI_INFANTRY_1"
+	name = "epirote_special_INFANTRY_1"
 	pdxmesh = "hellenicgfx_INFANTRY_1"
 	
 	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
@@ -79,7 +78,21 @@ entity = {
 	}
 }
 entity = {
-	name = "COR_INFANTRY_1"
+	name = "SP1_INFANTRY_1"
+	pdxmesh = "SP1_INFANTRY_1"
+	
+	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
+	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
+	state = { name = "attack"		animation = "attack" 	animation_speed = 0.6	}
+	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
+
+	attach = { 
+		spear_bone = "spartan_spear" 
+		CATRigRArm2 = "hoplite_shield_sp1"
+	}
+}
+entity = {
+	name = "MAC_INFANTRY_1"
 	pdxmesh = "hellenicgfx_INFANTRY_1"
 	
 	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.3 	}
@@ -88,135 +101,10 @@ entity = {
 	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.6	}
 
 	attach = { 
-		spear_bone = "hoplite_spear" 
-		CATRigRArm2 = "arch_shield_2"
+		spear_bone = "macedon_spear" 
+		CATRigRArm2 = "hoplite_shield_mac2"
 	}
 }
-entity = {
-	name = "PSO_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "ARG_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "TEG_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "TNG_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "CLK_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "KNO_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "LIN_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "CHI_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "LES_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "KRD_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "PIE_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "PTD_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "TES_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "AIN_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "ACR_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "HME_INFANTRY_1"
-	clone = "COR_INFANTRY_1"
-}
-
-entity = {
-	name = "BSL_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "EMT_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "MGD_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "KRS_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "LNK_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "ORE_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "ALM_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "ELM_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "EOR_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "THR_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "GBK_INFANTRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-
-entity = {
-	name = "MOL_INFANTRY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "THP_INFANTRY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "CHC_INFANTRY_1"
-	clone = "EPI_INFANTRY_1"
-}
-
-
-
 ###################################################################################################################
 #####                                                                                                         #####
 #####                                                   CAVALRY                                               #####
@@ -227,147 +115,6 @@ entity = {
 	name = "hellenicgfx_CAVALRY_1"
 	clone = "hellenicgfx_INFANTRY_1"
 }
-entity = {
-	name = "SP1_CAVALRY_1"
-	clone = "SP1_INFANTRY_1"
-}
-entity = {
-	name = "MAC_CAVALRY_1"
-	clone = "MAC_INFANTRY_1"
-}
-entity = {
-	name = "BSL_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "EMT_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "MGD_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "KRS_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "LNK_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "ORE_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "ALM_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "ELM_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "EOR_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "THR_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "PTO_CAVALRY_1"
-	clone = "PTO_INFANTRY_1"
-}
-entity = {
-	name = "GBK_CAVALRY_1"
-	clone = "macedon_INFANTRY_1"
-}
-
-entity = {
-	name = "EPI_CAVALRY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "MOL_CAVALRY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "THP_CAVALRY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "CHC_CAVALRY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "COR_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "PSO_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "ARG_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "TEG_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "TNG_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "CLK_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "KNO_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "LIN_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "CHI_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "LES_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "KRD_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "PIE_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "PTD_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "TES_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "AIN_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "ACR_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "HME_CAVALRY_1"
-	clone = "COR_INFANTRY_1"
-}
 ###################################################################################################################
 #####                                                                                                         #####
 #####                                                   ARTILLERY                                             #####
@@ -377,140 +124,4 @@ entity = {
 entity = {
 	name = "hellenicgfx_ARTILLERY_1"
 	clone = "hellenicgfx_INFANTRY_1"	
-}
-entity = {
-	name = "SP1_ARTILLERY_1"
-	clone = "SP1_INFANTRY_1"
-}
-entity = {
-	name = "MAC_ARTILLERY_1"
-	clone = "MAC_INFANTRY_1"
-}
-entity = {
-	name = "BSL_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "EMT_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "MGD_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "KRS_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "LNK_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "ORE_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "ALM_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "ELM_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "EOR_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "THR_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "GBK_ARTILLERY_1"
-	clone = "macedon_INFANTRY_1"
-}
-entity = {
-	name = "EPI_ARTILLERY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "MOL_ARTILLERY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "THP_ARTILLERY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "CHC_ARTILLERY_1"
-	clone = "EPI_INFANTRY_1"
-}
-entity = {
-	name = "COR_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "PSO_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "ARG_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "TEG_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "TNG_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "CLK_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "KNO_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "LIN_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "CHI_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "LES_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "KRD_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "PIE_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "PTD_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "TES_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "AIN_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "ACR_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
-}
-entity = {
-	name = "HME_ARTILLERY_1"
-	clone = "COR_INFANTRY_1"
 }

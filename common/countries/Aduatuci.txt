@@ -15,54 +15,49 @@ historical_idea_groups = {
 	spy_ideas
 }
 
-
 monarch_names = { 
-Bodwald
-Bruno
-Burkhard
-Dankrad
-Detlev
-Diebold
-Dietbald
-Dietbert
-Ansbert
-Ansgar
-Answald
-Arend
-Arnt
-Arvid
-Ask
-Meinulf
-Neidhart
-Nordbert
-Norwin
-Odalfried
-Odward
-Odwin
-Okko
-Ole
-Bernwald
-Bernward
-Berthold
-Bertram
-Bertwin
-Birger
-Björn
-Blankard
-Bodo
-Swidger
-Tankred
-Teutobald
-Teutobert
-Teutomar
-Theodard
-Thor
-Ingo
-Ingobert
-Ingoiomer
-Ingram
-Ingward
-Ingwin
+	"Ascaric" = 20
+	"Merogais" = 20
+	"Mallobaudes" = 20
+	"Genobaud" = 20
+	"Sunno" = 20
+	"Marcomer" = 20
+	"Pharamond" = 20
+	"Chlodio" = 20
+	"Theudemeres" = 20
+	"Aegidius" = 20
+	"Sigobert" = 20
+	"Arminius" = 20
+	"Inguiomer" = 20
+	"Segestes" = 20
+	"Thumelicus" = 20
+	"Maroboduus" = 20
+	"Catualda" = 20
+	"Vannius" = 20
+	"Vangio" = 20
+	"Ballomar" = 20
+	"Attalus" = 20
+	"Remismund" = 1
+	"Richimund" = 1
+	"Veremund" = 1
+	"Baderic" = 1
+	"Bertachar" = 1
+	"Hermanafrid" = 1
+	"Aart" = 1
+	"Abbe" = 1
+	"Ade" = 1
+	"Adelmar" = 1
+	"Baldrick" = 1
+	
+	"Adel" = -1
+	"Thusnelda" = -1
+	"Sigfreda" = -1
+	"Walkiria" = -1
+	"Rella" = -1
+	"Gundula" = -1
+	"Hilda" = -1
+	"Jutte" = -1
+	"Odilla" = -1
 }
 
 ship_names = {

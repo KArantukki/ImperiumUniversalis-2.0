@@ -31,6 +31,7 @@ writing_system = {
 		innovativeness_gain = 0.25
 		technology_cost = -0.1
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -38,7 +39,7 @@ writing_system = {
 				culture_group = hellenic
 				culture_group = anatolian_group
 				culture_group = semitic
-				culture_group = caanan_group
+				# culture_group = caanan_group
 				culture_group = akkadian_group
 				culture_group = western_iranian
 				culture_group = egyptian_group
@@ -106,7 +107,7 @@ writing_system = {
 		
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.3
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_institution
 				any_friendly_coast_border_province = {
@@ -116,7 +117,7 @@ writing_system = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.15
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
@@ -136,18 +137,12 @@ writing_system = {
 			scale = yes
 			factor = 0.1
 			potential = {
-			OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
+				province_has_center_of_trade = yes
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_center_of_trade_has_embraced_institution
 				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
+					province_has_center_of_trade = yes
 				}
 				any_trade_node_member_province = { 
 					writing_system = 100
@@ -156,7 +151,7 @@ writing_system = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.1
+			factor = 0.05
 			custom_trigger_tooltip = {
 				tooltip = tooltip_has_upper_class
 				base_tax = 1
@@ -173,20 +168,6 @@ writing_system = {
 				tooltip = skilled_ruler_adm
 				owner = {
 					ADM = 6
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.2
-			potential = {
-				is_capital = yes
-				owner = { is_tribal = no }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_idea_group_scholars_ideas
-				owner = {
-					full_idea_group = scholars_ideas
 				}
 			}
 		}
@@ -230,6 +211,7 @@ coin_usage = {
 		trade_efficiency = 0.15
 		production_efficiency = 0.15
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -319,7 +301,7 @@ coin_usage = {
 		
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 0.4
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_institution
 				any_friendly_coast_border_province = {
@@ -329,7 +311,7 @@ coin_usage = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.25
+			factor = 0.2
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
@@ -349,21 +331,11 @@ coin_usage = {
 			scale = yes
 			factor = 0.2
 			potential = {
-			OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-					has_province_modifier = center_of_trade_silkroad_modifier
-				}
+				province_has_center_of_trade = yes
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_center_of_trade_has_embraced_institution
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-					has_province_modifier = center_of_trade_silkroad_modifier
-				}
+				province_has_center_of_trade = yes
 				any_trade_node_member_province = { 
 					coin_usage = 100
 				}
@@ -422,6 +394,7 @@ elephant_domestication = {
 	bonus = {
 		cavalry_power = 0.025
 	}
+	trade_company_efficiency = 0.0
 
 
 	history = {

@@ -37,9 +37,8 @@ country_decisions = {
 				}
 				
 				if = {
-					limit = { NOT = { government = monarchy }
-					}
-					change_government = league
+					limit = { government = republic	}
+					add_government_reform = league_reform
 				}
 				if = {
 					limit = { NOT = { government_rank = 4 } }
@@ -180,7 +179,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ACH
-			change_government = league
+			change_government = republic
+			add_government_reform = league_reform
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
@@ -218,7 +218,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ARC
-			change_government = league
+			change_government = republic
+			add_government_reform = league_reform
 			set_capital = 528
 				528 = {
 						rename_capital = Megalopolis
@@ -266,7 +267,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = EUB
-			change_government = league
+			change_government = republic
+			add_government_reform = league_reform
 			if = {
 				limit = { government_rank = 1 }
 				set_government_rank = 2
@@ -311,7 +313,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = THE
-			change_government = league
+			change_government = republic
+			add_government_reform = league_reform
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
@@ -348,7 +351,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = BOE
-			change_government = league
+			change_government = republic
+			add_government_reform = league_reform
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
@@ -382,7 +386,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = CYC
-			change_government = league
+			change_government = republic
+			add_government_reform = league_reform
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
@@ -408,12 +413,6 @@ country_decisions = {
 		}
 		effect = {
 			custom_tooltip = adopt_greek_culture_tooltip
-			IF = {
-				limit = { government = republic }
-				change_government = classic_republic }
-			IF = {
-				limit = { NOT = { government = republic } }
-				change_government = despotic_monarchy }
 			add_adm_power = 250
 			add_dip_power = 250
 			add_mil_power = 250

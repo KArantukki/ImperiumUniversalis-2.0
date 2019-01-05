@@ -1,4 +1,4 @@
-government = tribal_despotism
+government = native
 government_rank = 3
 #mercantilism = 0.25
 technology_group = scythian

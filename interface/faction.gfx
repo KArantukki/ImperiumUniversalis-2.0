@@ -131,5 +131,25 @@ spriteTypes = {
 		name = "GFX_faction_fac_monarchists"	
 		texturefile = "gfx//interface//polis_fac_monarchists.tga"
 	}
+	# monarchy
+	
+	spriteType = {
+		name = "GFX_faction_bg_fac_monarch"	
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_fac_monarch"	
+		texturefile = "gfx//interface//fac_monarch.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_fac_nobles"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}		
+	spriteType = {
+		name = "GFX_faction_fac_nobles"	
+		texturefile = "gfx//interface//fac_nobles.tga"
+	}
 
 }

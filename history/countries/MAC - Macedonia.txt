@@ -1,4 +1,5 @@
-government = tribal_kingdom
+government = tribal
+add_government_reform = tribal_kingdom_reform
 government_rank = 2
 #mercantilism = 0.25
 technology_group = greek
@@ -80,7 +81,7 @@ religious_school = hellenic_type
 }
 257.1.1 = {
 	clear_scripted_personalities = yes
-	add_ruler_personality = inspiring_leader_leader_personality
+	add_ruler_personality = inspiring_leader_personality
 	monarch = {
 		name = "Alexander I"
 		dynasty = "Argead"
@@ -105,11 +106,13 @@ religious_school = hellenic_type
 }
 # Alexander I is considered a greek monarch by greeks!
 280.1.1 = {
-	government = despotic_monarchy
+	government = monarchy
+	add_government_reform = despotism_reform
 	add_army_professionalism = 0.1
 	primary_culture = macedon
 }
-301.1.1 = {clear_scripted_personalities = yes
+301.1.1 = {
+	clear_scripted_personalities = yes
 	add_ruler_personality = calm_personality
 	monarch = {
 		name = "Alcetas II"
@@ -133,7 +136,7 @@ religious_school = hellenic_type
 }
 306.1.1 = {
 	clear_scripted_personalities = yes
-	add_ruler_personality = malevolent_leader_leader_personality
+	add_ruler_personality = malevolent_leader_personality
 	monarch = {
 		name = "Perdiccas II"
 		dynasty = "Argead"
@@ -158,7 +161,7 @@ religious_school = hellenic_type
 }
 341.1.1 = { 
 	clear_scripted_personalities = yes
-	add_ruler_personality = martial_educator_leader_leader_personality
+	add_ruler_personality = martial_educator_personality
 	monarch = {
 		name = "Archelaus I"
 		dynasty = "Argead"
@@ -424,7 +427,7 @@ capital = 616
 431.6.10 = {
 	capital = 616
 	clear_scripted_personalities = yes
-	add_ruler_personality = diadochi_leader_personality
+	#add_ruler_personality = diadochi_leader_personality
 	clr_country_flag = alexander_is_ruler
 	government = diadochi_monarchy
 	monarch = {
@@ -529,7 +532,7 @@ capital = 616
 446.1.1 = {
 	government_rank = 3
 	clear_scripted_personalities = yes
-	add_ruler_personality = diadochi_leader_personality
+	#add_ruler_personality = diadochi_leader_personality
 	monarch = {
 		name = "Kassandros"
 		dynasty = "Antipatrid"
@@ -617,7 +620,7 @@ capital = 616
 
 461.1.1 = {
 	clear_scripted_personalities = yes
-	add_ruler_personality = diadochi_leader_personality
+	#add_ruler_personality = diadochi_leader_personality
 	monarch = {
 		name = "Demetrius Poliorcetes"
 		dynasty = "Antigonidai"
@@ -642,7 +645,7 @@ capital = 616
 
 470.1.1 = {
 	clear_scripted_personalities = yes
-	add_ruler_personality = diadochi_leader_personality
+	#add_ruler_personality = diadochi_leader_personality
 	monarch = {		
 		name = "Lysimachos"
 		dynasty = "Lysimachid"
@@ -685,7 +688,7 @@ capital = 616
 478.1.1 = {
 	add_stability = 2
 	clear_scripted_personalities = yes
-	add_ruler_personality = diadochi_leader_personality
+	#add_ruler_personality = diadochi_leader_personality
 	monarch = {
 		name = "Antigonus II Gonatas"
 		dynasty = "Antigonidai"
@@ -800,9 +803,11 @@ capital = 616
 		dip = 1
 		mil = 1
 	}
+}
 #from 566 - under rule of rome as 4 noble republics - gov form change?
 566.1.1 = {
-	government = classic_republic
+	government = republic
+	add_government_reform = citizens_republic_reform 
 }
 
 #in 585 - revolt of pseudo-Philip, Andriscus - after it Macedon was owned by Rome directly

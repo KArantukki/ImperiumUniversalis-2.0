@@ -33,12 +33,6 @@ country_decisions = {
 									remove_core = CAR
 					}
 				if = {
-					limit = { NOT = { government = monarchy }
-					}
-					change_government = league
-					else = { change_government = oligarchic_monarchy }
-				}
-				if = {
 					limit = { NOT = { government_rank = 3 } }
 					set_government_rank = 3
 				}
@@ -73,10 +67,8 @@ country_decisions = {
 					add_permanent_claim = MHE
 				}
 				if = {
-					limit = { NOT = { government = monarchy }
-					}
-					change_government = league
-					else = { change_government = oligarchic_monarchy }
+					limit = { government = republic }	
+					add_government_reform = league_reform
 				}
 				if = {
 					limit = { NOT = { government_rank = 3 } }

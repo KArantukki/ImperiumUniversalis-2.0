@@ -14,7 +14,6 @@ historical_idea_groups = {
 	scholars_ideas
 	spy_ideas
 }
-}
 
 
 monarch_names = { 

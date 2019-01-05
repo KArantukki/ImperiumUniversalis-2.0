@@ -3,10 +3,11 @@ country_decisions = {
 	reform_government = {
 		major = yes
 		potential = {
-			is_tribal = yes
+			government = tribal
+			NOT = { has_dlc = "Dharma" }
 			primitives = no
-			NOT = { government = pastoral_tribe }
-			NOT = { government = vedic_kingdom }
+			NOT = { has_reform = pastoral_tribe }
+			NOT = { has_reform = vedic_kingdom }
 		}
 		allow = {
 			has_any_disaster = no
@@ -28,10 +29,10 @@ country_decisions = {
 
 			IF = {
 				limit = { government = republic }
-				change_government = classic_republic }
+				set_legacy_government = classic_republic }
 			IF = {
 				limit = { NOT = { government = republic } }
-				change_government = despotic_monarchy }
+				set_legacy_government = despotic_monarchy }
 
 		}
 		ai_importance = 10
@@ -42,7 +43,8 @@ country_decisions = {
 	reform_vedic_government = {
 		major = yes
 		potential = {
-			government = vedic_kingdom
+			has_reform = vedic_kingdom_reform
+			NOT = { has_dlc = "Dharma" }
 		}
 		allow = {
 			has_any_disaster = no
@@ -51,7 +53,7 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -1
-			change_government = despotic_monarchy
+			set_legacy_government = despotic_monarchy
 
 		}
 		ai_importance = 10
@@ -62,7 +64,8 @@ country_decisions = {
 	reform_from_pastoral_tribe = {
 		major = yes
 		potential = {
-			government = pastoral_tribe
+			has_reform = pastoral_tribe_reform
+			NOT = { has_dlc = "Dharma" }
 		}
 		allow = {
 			has_any_disaster = no
@@ -72,13 +75,12 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -3
-			change_government = tribal_federation
+			set_legacy_government = tribal_federation
 		}
 		ai_importance = 100
 		ai_will_do = {
 			factor = 100
 		}
 	}
-	
 }
 	

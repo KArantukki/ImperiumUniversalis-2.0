@@ -51,7 +51,7 @@ priest_adv = {
 	monarch_power = ADM
 	
 	# Bonus
-	global_unrest = -2
+	global_unrest = -1
 	global_missionary_strength = 0.005
 	skill_scaled_modifier = { max_absolutism = 5 }
 	
@@ -249,10 +249,6 @@ foreign_advisor = {
 				has_owner_culture = yes
 			}
 		modifier = {
-				factor = 0.25
-				culture_group = OWNER
-			}
-		modifier = {
 				factor = 1.25
 				is_territory = yes
 			}
@@ -395,7 +391,7 @@ foreign_warrior = {
 			}
 		modifier = {
 				factor = 0.25
-				culture_group = OWNER
+				culture_group = ROOT
 			}
 		modifier = {
 				factor = 1.25

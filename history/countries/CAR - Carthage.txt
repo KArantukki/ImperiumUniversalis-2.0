@@ -1,13 +1,15 @@
-government = despotic_monarchy
+government = monarchy
+add_government_reform = aristocratic_monarchy_reform
 government_rank = 2
 #mercantilism = 0.25
 technology_group = punic
 primary_culture = punic
 religion = punic_religion
-religious_school = semitic_type
+#religious_school = semitic_type
 capital = 612
 historical_rival = SYR
 historical_friend = PHO
+historical_friend = PH2
 
 #historical_rival = CAR
 historical_rival = GDR
@@ -34,6 +36,9 @@ historical_rival = LYL
 		mil = 2
 	}
 }
+155.1.1 = { leader = {	name = "Hanno the Navigator"	type = explorer	fire = 1	shock = 1	manuever = 8	siege = 0	death_date = 199.1.1 } }
+155.1.1 = { leader = {	name = "Himilco the Navigator"	type = explorer	fire = 0	shock = 0	manuever = 3	siege = 0	death_date = 199.1.1 } }
+
 174.1.1 = {
 	monarch = {
 		name = "Hanno I"
@@ -43,9 +48,6 @@ historical_rival = LYL
 		mil = 3
 	}
 }
-
-155.1.1 = { leader = {	name = "Hanno the Navigator"	type = explorer	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 199.1.1 } }
-155.1.1 = { leader = {	name = "Himilco the Navigator"	type = explorer	fire = 0	shock = 0	manuever = 3	siege = 0	death_date = 199.1.1 } }
 
 
 198.1.1 = {
@@ -181,7 +183,6 @@ government_rank = 3
 	}
 }
 446.1.1 = {
-	government = punic_republic
 	government_rank = 4
 }
 	

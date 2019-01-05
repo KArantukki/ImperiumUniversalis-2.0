@@ -1,0 +1,8 @@
+
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = EGY
+	second = PHI
+	start_date = 145.1.1
+	end_date = 160.1.1
+}

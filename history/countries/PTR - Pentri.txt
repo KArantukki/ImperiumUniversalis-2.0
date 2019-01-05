@@ -1,10 +1,11 @@
-government = tribal_federation
+government = tribal
+add_government_reform = tribal_federation_reform
 government_rank = 2
 #mercantilism = 0.25
 technology_group = roman
 primary_culture = samnitic
 religion = roman_religion
-religious_school = hellenic_type
+#religious_school = hellenic_type
 capital = 44
 
 	historical_friend = HIR
@@ -15,7 +16,8 @@ capital = 44
 450.1.1 = {	
 	historical_rival = ROM
 	historical_friend = ETR
-	government = league
+	government = republic
+	add_government_reform = league_reform
 	leader = { 
 		name = "Gellius Egnatius"	
 		type = general	

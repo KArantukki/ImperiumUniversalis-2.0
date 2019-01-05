@@ -137,7 +137,9 @@ country_event = {
 		name = "advisor_event.4.b"
 		ai_chance = { factor = 33 }
 			add_years_of_income = -0.15
-			create_admiral = 50
+			create_admiral = {
+				tradition = 50
+			}
 			add_navy_tradition = 5
 	}
 	option = {

@@ -406,11 +406,6 @@ entity = {
 }
 
 entity = {
-	name = "indian_generic_01_type1_shield"
-	pdxmesh = "indian_generic_01_type1_shield"
-}
-
-entity = {
 	name = "germanic_shield"
 	pdxmesh = "germanic_shield"
 }

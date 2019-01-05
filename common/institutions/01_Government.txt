@@ -8,6 +8,7 @@ government_lvl1 = {
 		max_absolutism = 5
 		stability_cost_modifier = -0.1
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -254,6 +255,7 @@ government_lvl2 = {
 		yearly_absolutism = 0.5
 		max_states = 5
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -476,6 +478,7 @@ government_lvl3 = {
 		devotion = 0.25
 		horde_unity = 0.25
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -644,6 +647,7 @@ government_lvl4 = {
 		yearly_absolutism = 0.5
 		yearly_corruption = -0.025
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -809,6 +813,7 @@ government_lvl5 = {
 		max_absolutism = 5
 		state_maintenance_modifier = -0.1
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no
@@ -931,6 +936,7 @@ government_lvl6 = {
 		max_absolutism = 5
 		global_autonomy = -0.05
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no

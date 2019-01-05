@@ -41,7 +41,6 @@ country_decisions = {
 		}
 		effect = {
 				change_religion = zurvanism
-				
 			}
 			
 		ai_will_do = {
@@ -159,53 +158,57 @@ country_decisions = {
 		}
 	}
 	
-	 reforms_of_darius = {
+	invite_zoroaster_to_court = {
 		potential = {
-			government = despotic_monarchy
+			is_religion_enabled = zoroastrianism
 			OR = {
-				TAG = PSE
-				TAG = ASN }
-			NOT = { has_country_modifier = administration_reform_of_dareos }
-		}
-		allow = {
-			is_at_war = no
-			has_any_disaster = no
-			adm_tech = 8
-			ADM = 5
-		}
-		effect = {
-			change_government = oriental_monarchy
-			hidden_effect = { change_statists_vs_orangists = -0.25 }
-			add_country_modifier = {
-				name = administration_reform_of_dareos
-				duration = -1
+				religion = zoroastrianism
+				religion = mitraism
 			}
-		}
-		ai_will_do = {
-			factor = 0.5
-		}
-	}
-	 adopt_oriental_monarchy = {
-		potential = {
-			government = despotic_monarchy
-			OR = {
-					culture_group = western_iranian
-					culture_group = eastern_iranian_group
-				}
+			NOT = { is_year = 170 }
+			NOT = { has_global_flag = zoroaster_at_court_flag }
 		}
 		allow = {
-			is_at_war = no
-			adm_tech = 10
-			ADM = 5
+			is_at_war =  no
+			is_subject = no
+			ADM = 4
+			religion = zoroastrianism
+			num_of_cities = 5
+			prestige = 10
 		}
 		effect = {
-			change_government = oriental_monarchy
-			hidden_effect = { change_statists_vs_orangists = 0.10 }
-			add_stability = -1
-		}
+				set_global_flag = zoroaster_at_court_flag
+				if = {
+					limit = {
+						capital_scope = {
+						is_reformation_center = no
+						OR = {
+							religion = zoroastrianism
+							religion = mitraism }
+						}
+					}
+					capital_scope = {
+						change_religion = zoroastrianism
+						add_reform_center = zoroastrianism 
+							add_province_modifier = {
+								name = "religious_center_modifier"
+								duration = 18250
+							}
+					}	
+				}
+				define_advisor = {
+					type = priest_adv
+					name = "Zoroaster"
+					skill = 3
+					discount = yes
+					religion = zoroastrianism
+				}
+			}
+		ai_importance = 100	
 		ai_will_do = {
-			factor = 0.25
+			factor = 200
 		}
 	}
+	
 }
 	

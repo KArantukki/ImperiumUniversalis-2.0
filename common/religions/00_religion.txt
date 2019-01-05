@@ -4,441 +4,7 @@
 
 
 pagan_group = {
-religious_schools = {
-		hellenic_type = {
-			potential_invite_scholar = {
-				always = no
-			}
 
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				hidden_trigger = { ai = no }
-				adm_power = 100
-				years_of_income = 0.5
-				OR = {
-					any_owned_province = {
-						OR = {
-							religion = roman_religion
-							religion = greek_religion
-							religion = etruscan_religion
-							religion = cybele
-						}
-					}
-					any_neighbor_country = {
-						religious_school = {
-							group = pagan_group
-							school = hellenic_type
-						}
-					}
-					any_country = {
-						religious_school = {
-							group = pagan_group
-							school = hellenic_type
-						}
-						reverse_has_opinion = { who = ROOT value = 50 }
-					}
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				add_adm_power = -100
-				add_years_of_income = -0.5
-				set_religious_school = {
-					group = pagan_group
-					school = hellenic_type
-				}
-				if = {
-					limit = { uses_patriarch_authority = yes }
-					add_patriarch_authority = -0.5 }
-				if = {
-					limit = { has_estate = estate_priests }
-						add_estate_loyalty = {
-							estate = estate_priests
-							loyalty = -20
-						}
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = hellenic_type_modifier
-
-			picture = "GFX_hellenic_type"
-
-			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			idea_cost = -0.025
-		}
-		north_pagan_type = {
-			potential_invite_scholar = {
-				always = no
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				hidden_trigger = { ai = no }
-				adm_power = 100
-				years_of_income = 0.5
-				OR = {
-					any_owned_province = {
-						OR = {
-							religion = celtic_religion
-							religion = germanic_religion
-							religion = iberian_religion
-							religion = baltic_religion
-							religion = slavic_religion
-						}
-					}
-					any_neighbor_country = {
-						religious_school = {
-							group = pagan_group
-							school = north_pagan_type
-						}
-					}
-					any_country = {
-						religious_school = {
-							group = pagan_group
-							school = north_pagan_type
-						}
-						reverse_has_opinion = { who = ROOT value = 50 }
-					}
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				add_adm_power = -100
-				add_years_of_income = -0.5
-				set_religious_school = {
-					group = pagan_group
-					school = north_pagan_type
-				}
-				if = {
-					limit = { uses_patriarch_authority = yes }
-					add_patriarch_authority = -0.5 }
-				if = {
-					limit = { has_estate = estate_priests }
-						add_estate_loyalty = {
-							estate = estate_priests
-							loyalty = -20
-						}
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = north_pagan_type_modifier
-
-			picture = "GFX_northern_type"
-
-			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			land_morale = 0.05
-		}
-		semitic_type = {
-			potential_invite_scholar = {
-				always = no
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				hidden_trigger = { ai = no }
-				adm_power = 100
-				years_of_income = 0.5
-				OR = {
-					any_owned_province = {
-						OR = {
-							religion = arab_religion
-							religion = mesopotamian_religion
-							religion = punic_religion
-							religion = luwian_religion
-							religion = armenian_religion
-							religion = skneli
-							religion = elamite_religion
-							religion = east_african
-						}
-					}
-					any_neighbor_country = {
-						religious_school = {
-							group = pagan_group
-							school = semitic_type
-						}
-					}
-					any_country = {
-						religious_school = {
-							group = pagan_group
-							school = semitic_type
-						}
-						reverse_has_opinion = { who = ROOT value = 50 }
-					}
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				add_adm_power = -100
-				add_years_of_income = -0.5
-				set_religious_school = {
-					group = pagan_group
-					school = semitic_type
-				}
-				if = {
-					limit = { uses_patriarch_authority = yes }
-					add_patriarch_authority = -0.5 }
-				if = {
-					limit = { has_estate = estate_priests }
-						add_estate_loyalty = {
-							estate = estate_priests
-							loyalty = -20
-						}
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = semitic_type_modifier
-
-			picture = "GFX_semitic_type"
-
-			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			global_unrest = -1
-		}
-		nomad_type = {
-			potential_invite_scholar = {
-				always = no
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				hidden_trigger = { ai = no }
-				adm_power = 100
-				years_of_income = 0.5
-				OR = {
-					any_owned_province = {
-						OR = {
-							religion = sarmatian
-							religion = scythian_religion
-							religion = tengri
-							religion = numidian_religion
-						}
-					}
-					any_neighbor_country = {
-						religious_school = {
-							group = pagan_group
-							school = nomad_type
-						}
-					}
-					any_country = {
-						religious_school = {
-							group = pagan_group
-							school = nomad_type
-						}
-						reverse_has_opinion = { who = ROOT value = 50 }
-					}
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				add_adm_power = -100
-				add_years_of_income = -0.5
-				set_religious_school = {
-					group = pagan_group
-					school = nomad_type
-				}
-				if = {
-					limit = { uses_patriarch_authority = yes }
-					add_patriarch_authority = -0.5 }
-				if = {
-					limit = { has_estate = estate_priests }
-						add_estate_loyalty = {
-							estate = estate_priests
-							loyalty = -20
-						}
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = nomad_type_modifier
-
-			picture = "GFX_nomad_type"
-
-			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			cavalry_cost = -0.1
-		}
-		sun_type = {
-			potential_invite_scholar = {
-				always = no
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				hidden_trigger = { ai = no }
-				adm_power = 100
-				years_of_income = 0.5
-				OR = {
-					any_neighbor_country = {
-						religious_school = {
-							group = pagan_group
-							school = sun_type
-						}
-					}
-					any_country = {
-						religious_school = {
-							group = pagan_group
-							school = sun_type
-						}
-						reverse_has_opinion = { who = ROOT value = 50 }
-					}
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				add_adm_power = -100
-				add_years_of_income = -0.5
-				set_religious_school = {
-					group = pagan_group
-					school = sun_type
-				}
-				if = {
-					limit = { uses_patriarch_authority = yes }
-					add_patriarch_authority = -0.5 }
-				if = {
-					limit = { has_estate = estate_priests }
-						add_estate_loyalty = {
-							estate = estate_priests
-							loyalty = -20
-						}
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = sun_type_modifier
-
-			picture = "GFX_sun_type"
-
-			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			discipline = 0.05
-		}
-		balkan_type = {
-			potential_invite_scholar = {
-				always = no
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				hidden_trigger = { ai = no }
-				adm_power = 100
-				years_of_income = 0.5
-				OR = {
-					any_owned_province = {
-						OR = {
-							religion = illyrian_religion
-							religion = thracian
-							religion = dacian_religion
-						}
-					}
-					any_neighbor_country = {
-						religious_school = {
-							group = pagan_group
-							school = balkan_type
-						}
-					}
-					any_country = {
-						religious_school = {
-							group = pagan_group
-							school = balkan_type
-						}
-						reverse_has_opinion = { who = ROOT value = 50 }
-					}
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				add_adm_power = -100
-				add_years_of_income = -0.5
-				set_religious_school = {
-					group = pagan_group
-					school = balkan_type
-				}
-				if = {
-					limit = { uses_patriarch_authority = yes }
-					add_patriarch_authority = -0.5 }
-				if = {
-					limit = { has_estate = estate_priests }
-						add_estate_loyalty = {
-							estate = estate_priests
-							loyalty = -20
-						}
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = balkan_type_modifier
-
-			picture = "GFX_balkan_type"
-
-			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			loot_amount = 0.15
-		}
-		egyptian_type = {
-			potential_invite_scholar = {
-				always = no
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				hidden_trigger = { ai = no }
-				no_religious_school_modifier = yes
-				adm_power = 100
-				OR = {
-					any_owned_province = {
-							religion = egyptian_religion
-					}
-					any_neighbor_country = {
-						religious_school = {
-							group = pagan_group
-							school = egyptian_type
-						}
-					}
-					any_country = {
-						religious_school = {
-							group = pagan_group
-							school = egyptian_type
-						}
-						reverse_has_opinion = { who = ROOT value = 50 }
-					}
-				}
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				add_adm_power = -100
-				add_years_of_income = -0.5
-				set_religious_school = {
-					group = pagan_group
-					school = egyptian_type
-				}
-				if = {
-					limit = { uses_patriarch_authority = yes }
-					add_patriarch_authority = -0.5 }
-				if = {
-					limit = { has_estate = estate_priests }
-						add_estate_loyalty = {
-							estate = estate_priests
-							loyalty = -20
-						}
-				}
-			}
-
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = egyptian_type_modifier
-
-			picture = "GFX_egyptian_type"
-
-			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			stability_cost_modifier = -0.1
-		}	
-}
-	
 	mesopotamian_religion = {
 		icon = 3
 		color = { 109 153 0 }
@@ -2671,6 +2237,7 @@ religious_schools = {
 ################################################################
 
 jewish_group = {
+	center_of_religion = 2277
 	harmonized_modifier = harmonized_jewish_group
 	jewish = {
 		icon = 9
@@ -2713,6 +2280,72 @@ jewish_group = {
 	christian = {
 		icon = 10
 		color = { 80 92 114 }
+		
+		allowed_center_conversion = {
+			mesopotamian_religion
+			arab_religion
+			punic_religion
+			egyptian_religion
+			east_african
+			roman_religion
+			etruscan_religion
+			greek_religion
+			cybele
+			germanic_religion
+			celtic_religion
+			iberian_religion
+			nuragic_religion
+			armenian_religion
+			skneli
+			numidian_religion
+			scythian_religion
+			sarmatian
+			illyrian_religion
+			thracian
+			dacian_religion
+			jewish
+			samaritan
+			#christian
+			zurvanism
+			zoroastrianism
+			mitraism
+			brahmin
+			sramana
+			dravidian
+			jain
+			buddhism
+			ajivika
+			chinese_religion
+			muism
+			southern_mythology
+			tengri
+			luwian_religion
+			slavic_religion
+			baltic_religion
+			finno_ugric_religion
+			bon_religion
+			white_tiger_religion
+			wuism
+			elamite_religion
+		}
+		will_get_center = {
+			any_owned_province = {
+							is_reformation_center = no
+							development = 8
+							NOT = {
+								any_province = {
+									area = PREV
+									is_reformation_center = yes
+									religion = christian
+								}
+							}
+							NOT = {
+								any_neighbor_province = {
+									is_reformation_center = yes
+								}
+							}
+			}
+		}
 		country = {
 			global_missionary_strength = 0.01
 			tolerance_own = 2
@@ -2736,6 +2369,7 @@ jewish_group = {
 
 persian_group = {
 	harmonized_modifier = harmonized_persian_group
+	center_of_religion = 2828
 	zurvanism = {
 		icon = 11
 		color = { 122 53 54 }
@@ -2744,9 +2378,23 @@ persian_group = {
 			zoroastrianism
 			mitraism
 		}
+		allowed_center_conversion = {
+			zoroastrianism
+			mitraism
+			scythian_religion
+			sarmatian
+			mesopotamian_religion
+			armenian_religion
+			brahmin
+		}
 		on_convert = {
 			add_prestige = -10
 			add_stability = -1
+		}
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				is_reformation_center = no
+			}
 		}
 		country = {
 			embracement_cost = -0.1
@@ -2773,9 +2421,26 @@ persian_group = {
 			zurvanism
 			mitraism
 		}
+		allowed_center_conversion = {
+			mitraism
+			scythian_religion
+			sarmatian
+			mesopotamian_religion
+			armenian_religion
+			brahmin
+		}
 		on_convert = {
 			add_prestige = -10
 			add_stability = -1
+		}
+		will_get_center = {
+			any_owned_province = {
+						OR = {
+								religion = mitraism
+								religion = zoroastrianism
+							}
+							is_reformation_center = no
+			}
 		}
 		country = {
 			max_absolutism = 5
@@ -2789,8 +2454,7 @@ persian_group = {
 			religious_conversion_resistance = 0.8
 		}
 		
-		
-		holy_sites = { 2407 3052 2397 2003 3031 1945 }
+		holy_sites = { 2828 2876 2835 2682 2397 2702  }
 		
 		blessings = {
 			blessing_of_ahura_mazda
@@ -2804,6 +2468,7 @@ persian_group = {
 		#heretic = {   }
 		misguided_heretic = yes
 		defender_of_faith = yes
+		date = 155.1.1
 	}
 	mitraism = {
 		icon = 13
@@ -3055,6 +2720,80 @@ brahmin_group = {
 			buddhism
 			ajivika
 		}
+	
+		allowed_center_conversion = {
+			mesopotamian_religion
+			arab_religion
+			punic_religion
+			egyptian_religion
+			east_african
+			roman_religion
+			etruscan_religion
+			greek_religion
+			cybele
+			germanic_religion
+			celtic_religion
+			iberian_religion
+			nuragic_religion
+			armenian_religion
+			skneli
+			numidian_religion
+			scythian_religion
+			sarmatian
+			illyrian_religion
+			thracian
+			dacian_religion
+			jewish
+			samaritan
+			christian
+			zurvanism
+			zoroastrianism
+			mitraism
+			brahmin
+			sramana
+			dravidian
+			#jain
+			buddhism
+			ajivika
+			chinese_religion
+			muism
+			southern_mythology
+			tengri
+			luwian_religion
+			slavic_religion
+			baltic_religion
+			finno_ugric_religion
+			bon_religion
+			white_tiger_religion
+			wuism
+			elamite_religion
+		}
+		will_get_center = {
+			any_owned_province = {
+						OR = {
+								religion = brahmin
+								religion = sramana
+								religion = dravidian
+								religion = jain
+							}
+							is_in_capital_area = yes
+							is_reformation_center = no
+							development = 10
+							is_island = no
+							NOT = {
+								any_province = {
+									area = PREV
+									is_reformation_center = yes
+									religion = jain
+								}
+							}
+							NOT = {
+								any_neighbor_province = {
+									is_reformation_center = yes
+								}
+							}
+			}
+		}
 		
 		country = {
 			yearly_corruption = -0.15
@@ -3078,6 +2817,7 @@ brahmin_group = {
 		}
 		
 		uses_karma = yes
+		date = 200.1.1
 		#heretic = {   }
 	}
 	buddhism = {
@@ -3531,4 +3271,152 @@ eastern_religions = {
 		#heretic = {   }
 	}
 
+}
+
+test_religion_group = {
+	defender_of_faith = yes
+	
+	religious_schools = {
+		hanafi_school = {
+			potential_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = hanafi_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_hanafi"
+
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			adm_tech_cost_modifier = -0.05
+		}
+		hanbali_school = {
+			potential_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = hanbali_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_hanbali"
+
+			ae_impact = -0.1
+		}
+		maliki_school = {
+			potential_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = maliki_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_maliki"
+
+			development_cost = -0.1
+		}
+		shafii_school = {
+			potential_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+			}
+
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = shafii_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_shafii"
+
+			merchants = 1
+		}
+		#Shias
+		ismaili_school = {
+			potential_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+			}
+			
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = ismaili_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_ismaili"
+
+			horde_unity = 1
+			legitimacy = 1
+			republican_tradition = 0.5
+			devotion = 1
+		}
+		jafari_school = {
+			potential_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+			}
+			
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = jafari_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_jafari"
+
+			shock_damage = 0.1
+		}
+		zaidi_school = {
+			potential_invite_scholar = {
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				
+			}
+			
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = zaidi_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_zaidi"
+
+			shock_damage_received = -0.1
+		}
+		
+	}
 }

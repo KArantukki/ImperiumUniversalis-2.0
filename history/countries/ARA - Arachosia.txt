@@ -1,4 +1,5 @@
-government = tribal_federation
+government = tribal
+add_government_reform = tribal_federation_reform
 government_rank = 2
 #mercantilism = 0.25
 technology_group = iranian
@@ -7,4 +8,6 @@ religion = mitraism
 capital = 2784
 
 
-300.1.1 = { government = despotic_monarchy }
+300.1.1 = { 
+	government = monarchy
+	add_government_reform = despotism_reform }

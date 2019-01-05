@@ -12,6 +12,9 @@ trade_goods = cloth
 capital = ""
 is_city = yes
 small_city_walls = yes
+craftsman = yes
+small_townhall = yes
+gravel_road = yes
 
 #discovered_by = roman
 discovered_by = greek

@@ -456,6 +456,16 @@ iconType = {
 		verticalBorder= ""
 		fullscreen = no
 		
+		instantTextBoxType={
+			name = "manufactory_cost"
+			position = {x = -999 y = -999 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+		
 		checkboxType = {
 			name = "build_small_market"
 			position = { x = 5 y = 5 }

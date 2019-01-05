@@ -47,51 +47,6 @@ country_event = {
 	}
 }
 ########################################################################################
-# high taxes
-########################################################################################
-country_event = {
-	id = economy.3
-	title = "economy.3.t"
-	desc = "economy.3.d"
-	picture = city
-	is_triggered_only = yes
-	
-	trigger = {
-		num_of_cities = 3
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	
-	option = {
-		name = "economy.3.a"
-		ai_chance = { factor = 33 }
-			add_years_of_income = 0.1
-	}
-	option = {
-		name = "economy.3.b"
-		ai_chance = { factor = 33 }
-			add_prestige = 5
-	}
-	option = {
-		name = "economy.3.c"
-		ai_chance = { factor = 33 }
-			add_absolutism = 2
-	}
-	option = {
-		name = "economy.3.e"
-		ai_chance = { factor = 33 }
-		trigger = { ruler_has_personality = scholar_personality 	}
-		required_personality = scholar_personality
-		highlight = yes
-		add_adm_power = 30
-		add_dip_power = 30
-		add_mil_power = 30
-	}
-}
-########################################################################################
 # Economic stagnation
 ########################################################################################
 country_event = {
@@ -447,12 +402,7 @@ country_event = {
 	
 	option = {
 		name = "economy.14.a"
-		add_splendor = 25
-			add_estate_influence_modifier = {
-				estate = estate_citizens
-				desc = EST_VAL_RESPECTED_WEAVERS
-				duration = 1825
-				influence = 5
-			}
+		add_splendor = 10
+		add_prestige = 5
 	}
 }

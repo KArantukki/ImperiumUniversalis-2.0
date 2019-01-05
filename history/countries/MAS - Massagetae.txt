@@ -1,10 +1,10 @@
-government = tribal_horde
+government = native
 government_rank = 3
 #mercantilism = 0.25
 technology_group = scythian
 primary_culture = saka
 religion = scythian_religion
-religious_school = sun_type
+#religious_school = sun_type
 capital = 2882
 	
 195.1.1 = {

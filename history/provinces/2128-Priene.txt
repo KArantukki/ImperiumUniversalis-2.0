@@ -1,6 +1,6 @@
-add_core = MIL
-owner = MIL
-controller = MIL
+add_core = MLT
+owner = MLT
+controller = MLT
 culture = ionic
 religion = greek_religion
 hre = no
@@ -11,10 +11,7 @@ trade_goods = wine
 capital = ""
 is_city = yes
 
-add_permanent_province_modifier = {
-		name = panionion
-		duration = -1
-	}
+add_province_triggered_modifier = panionion
 add_permanent_province_modifier = {
 		name = river_estuary_modifier
 		duration = -1

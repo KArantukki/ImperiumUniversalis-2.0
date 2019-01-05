@@ -32,7 +32,7 @@ country_decisions = {
 		}
 		allow = {
 			gallia_narbonensis = { owned_by = ROOT }
-			hispania_citerior = { owned_by = ROOT }
+			hispania_tarraconensis = { owned_by = ROOT }
 			illyria_region = { owned_by = ROOT }
 			greek_region = { owned_by = ROOT }
 			macedonia_region = { owned_by = ROOT }
@@ -158,11 +158,11 @@ country_decisions = {
 			NOT = { has_country_flag = ai_macedonia_1_done }
 		}
 		allow = {
-			western_macedonia_area = { owned_by = ROOT }
-			eastern_macedonia_area = { owned_by = ROOT }
+			macedonia_secunda = { owned_by = ROOT }
+			macedonia_prima = { owned_by = ROOT }
 			chalcidice_area = { owned_by = ROOT }
-			larisa_area = { owned_by = ROOT }
-			thessalia_area = { owned_by = ROOT }
+			perrhaebia_area = { owned_by = ROOT }
+			pelagonia_area = { owned_by = ROOT }
 		}
 		effect = {
 			add_stability = 1

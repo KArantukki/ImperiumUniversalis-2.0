@@ -19,8 +19,8 @@ small_market = {
 	cost = 100
 	time = 12
 	modifier = {
-		province_trade_power_modifier = 0.2
-		local_institution_spread = 0.05
+		province_trade_power_modifier = 0.1
+		local_institution_spread = 0.1
 	}
 	ai_will_do = {
 		factor = 1.5
@@ -31,8 +31,8 @@ medium_market = {
 	cost = 200
 	time = 12
 	modifier = {
-		province_trade_power_modifier = 0.4
-		local_institution_spread = 0.1
+		province_trade_power_modifier = 0.2
+		local_institution_spread = 0.2
 	}
 	ai_will_do = {
 		factor = 1.0
@@ -43,8 +43,8 @@ great_market = {
 	cost = 300
 	time = 12
 	modifier = {
-		province_trade_power_modifier = 0.6
-		local_institution_spread = 0.2
+		province_trade_power_modifier = 0.3
+		local_institution_spread = 0.3
 	}
 	ai_will_do = {
 		factor = 1.0

@@ -9,7 +9,9 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			total_development = 60
+			owns_core_province = 1039
+			owns_core_province = 1036
+			owns_core_province = 1038
 			OR = {
 				NOT = { exists = THP }
 				TAG = THP
@@ -32,9 +34,10 @@ country_decisions = {
 			if = { limit = { TAG = THP }  set_country_flag = thesprotian_ruler }
 			change_tag = EPI
 				if = {
-					limit = { is_tribal = yes }					
-					change_government = epirote_monarchy
+					limit = { government = tribal }			
+					change_government = monarchy
 				}
+				add_government_reform = epirote_monarchy_reform
 				chaonia_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -62,12 +65,18 @@ country_decisions = {
 	}
 	 new_coinage_dec = {
 		potential = {
-			TAG = EPI
+			OR = {
+				tag = EPI
+				tag = THP
+				tag = MOL
+				tag = CHC
+			}
 			NOT = { has_country_modifier = new_coinage }
 		}
 		allow = {
+			TAG = EPI
 			NOT = { average_autonomy = 20 }
-			adm_tech = 10
+			adm_tech = 16
 		}
 		effect = {
 			add_country_modifier = {
@@ -81,21 +90,33 @@ country_decisions = {
 	}
 	 move_capital_to_ambracia = {
 		potential = {
-			TAG = EPI
+			OR = {
+				tag = EPI
+				tag = THP
+				tag = MOL
+				tag = CHC
+			}
 			NOT = { has_country_flag = move_capital_to_ambracia_flag }
 			NOT = { capital = 1035 }
-			num_of_cities = 5
+			num_of_cities = 3
 		}
 		allow = {
+			TAG = EPI
 			owns_core_province = 1035
 		}
 		effect = {
 			random_owned_province = {
-				limit = { base_production = 2 }
+				limit = { 
+					base_production = 2 
+					NOT = { province_id = 1035 }
+				}
 				add_base_production = -1
 			}
 			random_owned_province = {
-				limit = { base_manpower = 2 }
+				limit = { 
+					base_manpower = 2 
+					NOT = { province_id = 1035 }
+				}
 				add_base_manpower = -1
 			}
 			1035 = {

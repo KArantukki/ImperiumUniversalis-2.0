@@ -12,7 +12,7 @@ country_event = {
 	picture = illness
 	
 	trigger = {
-		government = diadochi_monarchy
+		government = monarchy
 		tag = MAC
 		has_ruler = "Philip IV"
 		NOT = {
@@ -346,7 +346,6 @@ country_event = {
 			mil = 5
 			}
 		define_heir = {
-			add_ruler_personality = diadochi_leader_personality
 			name = "Antigonus II Gonatas"
 			dynasty = "Antigonidai"
 			age = 27
@@ -354,131 +353,13 @@ country_event = {
 			dip = 4
 			mil = 5
 		}
-			add_ruler_personality = diadochi_leader_personality
-			add_ruler_modifier = demetrius
+			add_ruler_modifier = { 
+			name = demetrius
+			duration = -1  
+		}
 	}
 }
 
-########################################################################################
-# the birth of Alexander
-########################################################################################
-country_event = {
-	id = macedon.10
-	title = macedon.10.t
-	desc = macedon.10.d
-	picture = city
-
-	trigger = {
-		tag = MAC
-		total_development = 300
-		culture_group = hellenic
-		NOT = { has_country_flag = birth_of_alexander_flag }
-		NOT = { started_in = 387.1.1 }
-		OR = {
-			NOT = { heir_age = 6 }
-			has_female_heir = yes
-		}
-		OR = {
-			AND = {
-				exists = PSE
-				PSE = {
-					total_development = 1800
-					OR = {
-						all_owned_province = { culture_group = hellenic }
-						any_subject_country = { culture_group = hellenic }
-					}
-				}
-			}
-				
-			AND = {
-				exists = BAB
-				BAB = {
-					total_development = 1800
-					OR = {
-						all_owned_province = { culture_group = hellenic }
-						any_subject_country = { culture_group = hellenic }
-					}
-				}
-			}
-				
-			AND = {
-				exists = LYD
-				LYD = {
-					total_development = 1800
-					OR = {
-						all_owned_province = { culture_group = hellenic }
-						any_subject_country = { culture_group = hellenic }
-					}
-				}
-			}
-			has_country_flag = rise_of_macedon_ability
-		}
-	} 
-	
-	mean_time_to_happen = {
-		months = 600
-		modifier = {
-				factor = 0.2
-				has_country_flag = rise_of_macedon_ability
-			}
-		modifier = {
-				factor = 0.85
-				is_year = 350
-			}
-		modifier = {
-				factor = 0.85
-				is_year = 400
-			}
-		modifier = {
-				factor = 0.85
-				is_year = 450
-			}
-		modifier = {
-				factor = 0.85
-				is_year = 500
-			}
-		modifier = {
-				factor = 0.75
-				total_development = 400
-			}
-		modifier = {
-				factor = 0.25
-				defensive_war_with = PSE
-			}
-		modifier = {
-				factor = 0.25
-				defensive_war_with = BAB
-			}
-		modifier = {
-				factor = 0.25
-				defensive_war_with = LYD
-			}
-		modifier = {
-				factor = 0.5
-				is_rival = PSE
-			}
-		modifier = {
-				factor = 0.5
-				has_heir = no
-			}
-	}
-
-	immediate = {
-		hidden_effect = { set_country_flag = birth_of_alexander_flag	}
-	}
-
-	option = {
-		name = "macedon.10.a"
-		add_prestige = 5
-		define_heir = {
-				name = "Alexander"
-				dynasty = ROOT
-				adm = 6
-				dip = 6
-				mil = 6
-			}
-	}
-}
 ########################################################################################
 # Alexander becomes talented leader
 ########################################################################################

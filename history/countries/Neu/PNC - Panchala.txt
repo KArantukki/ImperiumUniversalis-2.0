@@ -1,4 +1,5 @@
-government = vedic_kingdom
+government = tribal
+add_government_reform = vedic_kingdom_reform
 government_rank = 2
 #mercantilism = 0.25
 technology_group = indian
@@ -6,4 +7,5 @@ primary_culture = kurunite
 religion = brahmin
 capital = 2669
 	
-300.1. = { government = despotic_monarchy }
+300.1.1 = { government = monarchy
+add_government_reform = despotism_reform }

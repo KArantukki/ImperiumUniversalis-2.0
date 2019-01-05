@@ -1,19 +1,21 @@
 #Country Name: Please see filename.
 
 graphical_culture = hellenicgfx
+special_unit_culture = hellenic_alt1
 
 color = { 72 85 206 }
 
 
 historical_idea_groups = {
-	scholars_ideas
+	academy_ideas
+	maritime_trade_ideas
 	naval_ideas
+	republican_government_ideas
+	shipbuilding_ideas
 	infantry_ideas
-	trade_ideas
-	quality_ideas
+	financial_ideas
 	maritime_ideas
-	administrative_ideas
-	
+	leadership_ideas
 }
 
 historical_units = {
@@ -22,7 +24,6 @@ historical_units = {
 
 monarch_names = {
 	"Demetrios" = 10
-	"Philocrates" = 10
 	"Diognetus" = 10
 	"Cranaus" = 10
 	"Amphictyon" = 10

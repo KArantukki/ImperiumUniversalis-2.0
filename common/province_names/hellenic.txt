@@ -28,7 +28,7 @@
 742 = "Bubastis"
 744 = "Heliopolis"
 745 = "Memphis"
-745 = "Moeris"
+746 = "Moeris"
 748 = "Herakleopolis"
 750 = "Aphroditopolis"
 751 = "Hipponon"

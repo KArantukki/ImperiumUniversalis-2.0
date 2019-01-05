@@ -6,13 +6,15 @@ color = { 211 90 74 }
 
 
 historical_idea_groups = {
-	expansion_ideas
 	infantry_ideas
-	syncretic_religious_ideas
-	quantity_ideas
-	administrative_ideas
-	naval_ideas
-	quality_ideas
+	maritime_trade_ideas
+	academy_ideas
+	leadership_ideas
+	diplomatic_ideas
+	domestic_government_ideas
+	mercenary_ideas
+	maritime_trade_ideas
+	financial_ideas
 }
 
 historical_units = {
@@ -20,10 +22,9 @@ historical_units = {
 }
 
 monarch_names = {
-	"Antigonus #0" = 110
-	"Demetrius #0" = 80
-	"Philip #0" = 80
-monarch_names = {
+	"Antigonus" = 110
+	"Demetrius" = 80
+	"Philip" = 80
 	"Cypselus" = 1
 	"Philocrates" = 1
 	"Diognetus" = 1

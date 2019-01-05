@@ -1,6 +1,6 @@
-add_core = AR1
-owner = AR1
-controller = AR1
+add_core = LA1
+owner = LA1
+controller = LA1
 culture = ardiaei
 religion = illyrian_religion
 hre = no

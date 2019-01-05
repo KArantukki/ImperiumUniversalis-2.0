@@ -93,57 +93,24 @@ can_make_state = {
 
 can_improve_tax = {
 	condition = {
-		tooltip = "NEEDRANK_2"
+		tooltip = "HAS_CITY_RIGHTS"
 		potential = {
-			owner = { 
-				NOT = { government_rank = 3 }
-			}
+			always = yes
 		}
 		allow = {
-			always = no
-		}
-	}
-	condition = {
-		tooltip = "IS_STATE_COL"
-		potential = {
-			is_state = no
-		}
-		allow = {
-			always = no
-		}
-	}
-	condition = {
-		tooltip = "NOT_POSSIBLE"
-		potential = {
-			owner = { 
-				has_country_flag = colony_event_flag
-			}
-		}
-		allow = {
-			always = no
-		}
-	}
-	condition = {
-		tooltip = "IS_TRIBAL_OWNER"
-		potential = {
-			owner = { 
-				OR = {
-					is_tribal = yes
-					is_nomad = yes
+			OR = {
+				has_estate = estate_colony
+				has_estate = estate_preveliged_city
 				}
-			}
-		}
-		allow = {
-			always = no
 		}
 	}
 	condition = {
-		tooltip = "DIFFERENT_CULTURE"
+		tooltip = "NOT_HAS_OPEN_EVENT"
 		potential = {
-			has_owner_culture = yes
+			always = yes
 		}
 		allow = {
-			has_owner_culture = no
+			NOT = { has_country_flag = open_prov_event_flag }
 		}
 	}
 	condition = {
@@ -153,35 +120,6 @@ can_improve_tax = {
 		}
 		allow = {
 			ai = no
-		}
-	}
-	condition = {
-		tooltip = "ALREADY_TARGET_OF_COLONY"
-		potential = {
-			OR = {
-				has_province_modifier = building_colony
-			}
-		}
-		allow = {
-			NOT = { has_province_modifier = building_colony }
-		}
-	}
-	condition = {
-		tooltip = "COLONY_IN_SUBJECT_PROV"
-		potential = {
-			owner = { is_subject_of = ROOT }
-		}
-		allow = {
-			always = no
-		}
-	}
-	condition = {
-		tooltip = "NEEDS_POPULATION"
-		potential = {
-			NOT = { development = 1 }
-		}
-		allow = {
-			always = no
 		}
 	}
 }
@@ -255,6 +193,19 @@ can_exploit_production = {
 can_exploit_manpower = {
 	condition = {
 		tooltip = "NOT_POSSIBLE"
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+
+
+can_expel_minority_from = {
+	condition = {
 		potential = {
 			always = yes
 		}

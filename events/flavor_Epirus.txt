@@ -67,15 +67,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = epirote_monarchy
-		num_of_cities = 3
-		TAG = EPI
+		has_reform = epirote_monarchy_reform
+		OR = {
+			has_faction = molossians
+			has_faction = thesprotians
+			has_faction = chaonians
+		}
 		NOT = {
 			has_ruler = "Pyrrhos I"
 			DIP = 5
 			ADM = 5
 			MIL = 6
 		}
+		
 	}
 	
 	mean_time_to_happen = {
@@ -83,79 +87,108 @@ country_event = {
 	}
 	
 	option = {
-		name = "epirus.2.a"
-			trigger = { faction_influence = {
-							faction = molossians
-							influence = 1
-						} 
-					}
-			add_faction_influence = { faction = molossians influence = 30 }		
-			IF = {
-				limit = { has_country_flag = molossian_ruler }
-				add_legitimacy = 5
-			}
-			IF = {
-				limit = { NOT = { has_country_flag = molossian_ruler } }
-				add_legitimacy = -20
-				define_ruler = {
-					dynasty = "Aeacidae"	
-				}
-				hidden_effect = { kill_heir = yes }
-				set_country_flag = molossian_ruler
-				clr_country_flag = chaonian_ruler
-				clr_country_flag = thesprotian_ruler
+		name = "epirus.2.aa" ### A New Ruler from Molossia
+			trigger = {
+				 has_faction = molossians
+				 NOT = { has_country_flag = molossian_ruler }
 			}
 			
+			define_ruler = {
+				dynasty = "Aeacidae"
+				adm = 3
+				dip = 2
+				mil = 2
+				claim = 90
+			}
+				
+			add_faction_influence = { faction = molossians influence = 15 }
+			
+			add_stability = -1
+			
+			hidden_effect = { kill_heir = yes }
+			
+			set_country_flag = molossian_ruler
+			clr_country_flag = chaonian_ruler
+			clr_country_flag = thesprotian_ruler
 	}
 	option = {
-		name = "epirus.2.b"
-			trigger = { faction_influence = {
-							faction = thesprotians
-							influence = 1
-						} 
-					}
-			add_faction_influence = { faction = thesprotians influence = 30 }		
-			IF = {
-				limit = { has_country_flag = thesprotian_ruler }
-				add_legitimacy = 5
+		name = "epirus.2.ab" ### Keep the Ruler from Molossia
+			trigger = {
+				has_faction = molossians
+				has_country_flag = molossian_ruler
 			}
-			IF = {
-				limit = { NOT = { has_country_flag = thesprotian_ruler } }
-				add_legitimacy = -20
-				define_ruler = {
-					dynasty = "Aidonae"	
-				}
-				set_country_flag = thesprotian_ruler
-				clr_country_flag = chaonian_ruler
-				clr_country_flag = molossian_ruler
-				hidden_effect = { kill_heir = yes }
-			}
-			
+			add_faction_influence = { faction = molossians influence = 15 }
 			
 	}
+	################################################################
 	option = {
-		name = "epirus.2.c"
-			trigger = { faction_influence = {
-							faction = chaonians
-							influence = 1
-						} 
-					}
-			add_faction_influence = { faction = chaonians influence = 30 }		
-			IF = {
-				limit = { has_country_flag = chaonian_ruler }
-				add_legitimacy = 5
+		name = "epirus.2.ba" ### A New Ruler from Thesprotia
+			trigger = {
+				 has_faction = thesprotians
+				 NOT = { has_country_flag = thesprotian_ruler }
 			}
-			IF = {
-				limit = { NOT = { has_country_flag = chaonian_ruler } }
-				add_legitimacy = -20
-				define_ruler = {
-					dynasty = "Chaonae"	
-				}
-				hidden_effect = { kill_heir = yes }
-				set_country_flag = chaonian_ruler
-				clr_country_flag = thesprotian_ruler
-				clr_country_flag = molossian_ruler
-			}	
+			
+			define_ruler = {
+				dynasty = "Aidonae"
+				adm = 3
+				dip = 2
+				mil = 2
+				claim = 90
+			}
+				
+			add_faction_influence = { faction = thesprotians influence = 15 }
+			
+			add_stability = -1
+			
+			hidden_effect = { kill_heir = yes }
+			
+			set_country_flag = thesprotian_ruler
+			clr_country_flag = chaonian_ruler
+			clr_country_flag = molossian_ruler
+	}
+	option = {
+		name = "epirus.2.bb" ### Keep the Ruler from Thesprotia
+			trigger = {
+				has_faction = thesprotians
+				has_country_flag = thesprotian_ruler
+			}
+			add_faction_influence = { faction = thesprotians influence = 15 }
+			
+	}
+	
+	################################################################
+	option = {
+		name = "epirus.2.ca" ### A New Ruler from Chaonians
+			trigger = {
+				 has_faction = chaonians
+				 NOT = { has_country_flag = chaonian_ruler }
+			}
+			
+			define_ruler = {
+				dynasty = "Chaonae"
+				adm = 3
+				dip = 2
+				mil = 2
+				claim = 90
+			}
+				
+			add_faction_influence = { faction = chaonians influence = 15 }
+			
+			add_stability = -1
+			
+			hidden_effect = { kill_heir = yes }
+			
+			set_country_flag = chaonian_ruler
+			clr_country_flag = thesprotian_ruler
+			clr_country_flag = molossian_ruler
+	}
+	option = {
+		name = "epirus.2.cb" ### Keep the Ruler from Chaonians
+			trigger = {
+				has_faction = chaonians
+				has_country_flag = chaonian_ruler
+			}
+			add_faction_influence = { faction = chaonians influence = 15 }
 			
 	}
 

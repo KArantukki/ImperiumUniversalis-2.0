@@ -15,7 +15,7 @@
 # AI will consider buildings it does not have the tech for at 20% of scripted AI weight (in case it wants to save slots)
 
 
-military_monument = {		
+military_monument = {
 	cost = 500
 	time = 24	
 	#make_obsolete = small_townhall	

@@ -1,10 +1,11 @@
-government = despotic_monarchy
+government = monarchy
+add_government_reform = aristocratic_monarchy_reform
 government_rank = 1
 #mercantilism = 0.25
 technology_group = roman
 primary_culture = latin
 religion = roman_religion
-religious_school = hellenic_type
+#religious_school = hellenic_type
 capital = 53
 
 add_treasury = 50
@@ -185,8 +186,10 @@ add_country_modifier = {
 		mil = 2
 	}
 }
+ 
 245.1.1 = {
-	government = classic_republic
+	government = republic
+	add_government_reform = res_publica_reform 
 	add_army_professionalism = 0.1
 	government_rank = 3
 	change_statists_vs_orangists = -0.25

@@ -20,7 +20,7 @@ groups = {
 		}
 	}
 	greek = {
-		start_level = 1
+		start_level = 2
 		#cav_to_inf_ratio = 0.5
 		start_cost_modifier = 0.20
 		nation_designer_cost = {
@@ -31,7 +31,7 @@ groups = {
 		}
 	}
 	punic = {
-		start_level = 1
+		start_level = 2
 		#cav_to_inf_ratio = 0.5
 		start_cost_modifier = 0.20
 		nation_designer_cost = {
@@ -42,7 +42,7 @@ groups = {
 		}
 	}
 	diadochi = {
-		start_level = 1
+		start_level = 3
 		#cav_to_inf_ratio = 0.8
 		start_cost_modifier = 0.20
 		nation_designer_cost = {
@@ -160,7 +160,7 @@ groups = {
 		}
 	}
 	far_eastern = {
-		start_level = 1
+		start_level = 2
 		#cav_to_inf_ratio = 0.5
 		start_cost_modifier = 0.20
 		nation_designer_cost = {
@@ -184,7 +184,7 @@ groups = {
 		}
 	}
 	caucaso_anatolian = {
-		start_level = 1
+		start_level = 2
 		#cav_to_inf_ratio = 1.0
 		start_cost_modifier = 0.20
 		is_primitive = no

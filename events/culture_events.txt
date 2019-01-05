@@ -475,10 +475,6 @@ country_event = {
 					}
 				}
 			}
-			add_country_modifier = {
-					name = greek_alphabet
-					duration = 3650
-				}
 	}
 	option = {
 		name = "culture.13.b"

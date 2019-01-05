@@ -19,28 +19,6 @@ entity = {
 		CATRigRArm2 = "punic_shield"
 	}
 }
-entity = {
-	name = "JUD_INFANTRY_2"
-	pdxmesh = "punicgfx_INFANTRY_1"
-	
-	state = { name = "idle" 		animation = "idle" 		animation_speed = 0.4 	}
-	state = { name = "walk" 		animation = "walk"		animation_speed = 0.75 	}
-	state = { name = "attack"		animation = "attack" 	animation_speed = 0.7	}
-	state = { name = "retreat"		animation = "retreat" 	animation_speed = 0.7	}
-
-	attach = { 
-		spear_bone = "punic_spear" 
-		CATRigRArm2 = "hoplite_shield_jud"
-	}
-}
-entity = {
-	name = "JER_INFANTRY_2"
-	clone = "JUD_INFANTRY_2"
-}
-entity = {
-	name = "ISR_INFANTRY_2"
-	clone = "JUD_INFANTRY_2"
-}
 ###################################################################################################################
 #####                                                                                                         #####
 #####                                                   CAVALRY                                               #####
@@ -52,18 +30,6 @@ entity = {
 	name = "punicgfx_CAVALRY_2"
 	clone = "punicgfx_INFANTRY_2"
 }
-entity = {
-	name = "JUD_CAVALRY_2"
-	clone = "JUD_INFANTRY_2"
-}
-entity = {
-	name = "JER_CAVALRY_2"
-	clone = "JUD_INFANTRY_2"
-}
-entity = {
-	name = "ISR_CAVALRY_2"
-	clone = "JUD_INFANTRY_2"
-}
 ###################################################################################################################
 #####                                                                                                         #####
 #####                                                   ARTILLERY                                             #####
@@ -73,16 +39,4 @@ entity = {
 entity = {
 	name = "punicgfx_ARTILLERY_2"
 	clone = "punicgfx_INFANTRY_2"
-}
-entity = {
-	name = "JUD_ARTILLERY_2"
-	clone = "JUD_INFANTRY_2"
-}
-entity = {
-	name = "JER_ARTILLERY_2"
-	clone = "JUD_INFANTRY_2"
-}
-entity = {
-	name = "ISR_ARTILLERY_2"
-	clone = "JUD_INFANTRY_2"
 }

@@ -16,8 +16,15 @@ archaic_age = {
 	}
 
 	objectives = {		
-		obj_metallurgy_embraced = {
-			has_institution = metallurgy
+		obj_roads_built = {
+			num_of_owned_provinces_with = {
+				value = 8
+					OR = {
+						has_building = gravel_road
+						has_building = paved_road
+						has_building = imperial_road
+					}
+			}
 		}	
 		obj_large_city = {
 			any_owned_province = {
@@ -34,13 +41,48 @@ archaic_age = {
 			}
 			gold_income = 2
 		}
+		obj_prestigious_nation = {
+			allow = { 
+				NOT = { culture_group = eastern_iranian_group }
+				NOT = { culture_group = western_iranian }
+				NOT = { culture_group = hellenic }
+				NOT = { capital_scope = { region = mesopotamia_region } }
+				NOT = { capital_scope = { region = syria_region } }
+				NOT = { capital_scope = { region = lower_egypt_region } }
+				NOT = { capital_scope = { region = canaan_region } }
+				NOT = { capital_scope = { region = asia_minor } }
+			}
+			prestige = 80
+		}
+		obj_the_capitals_of_the_world = {
+			allow = { 
+				NOT = { culture_group = eastern_iranian_group }
+				NOT = { culture_group = western_iranian }
+				NOT = { culture_group = hellenic }
+				OR = {
+					capital_scope = { region = mesopotamia_region }
+					capital_scope = { region = syria_region }
+					capital_scope = { region = lower_egypt_region }
+					capital_scope = { region = canaan_region }
+					capital_scope = { region = asia_minor }
+				}
+			}
+			owns = 2500
+			owns = 2476
+			owns = 2277
+			owns = 745
+			owns = 2158
+		}
 		obj_zoroastrianism = {
-			allow = { NOT = { culture_group = hellenic } }
+			allow = { 
+				OR = {
+					culture_group = eastern_iranian_group
+					culture_group = western_iranian
+				}
+			}
 			OR = {
 				religion = zurvanism
-				secondary_religion = zurvanism
 				religion = zoroastrianism
-				secondary_religion = zoroastrianism
 			}
 		}
 		obj_olympic_winner = {
@@ -61,17 +103,16 @@ archaic_age = {
 		obj_democracy = {
 			republican_tradition = 95
 			OR = {
-				government = greek_polis_democracy
-				government = punic_republic
-				government = classic_republic
-				government = league
+				has_reform = citizens_republic_reform
+				has_reform = greek_polis_reform
+				has_reform = res_publica_reform
 			}
 		}
 		obj_big_fleet = {
-			num_of_heavy_ship = 100
+			num_of_heavy_ship = 60
 		}
 		obj_pile_of_gold = {
-			treasury = 2500
+			treasury = 500
 			monthly_income = 50
 		}
 	}	
@@ -113,13 +154,17 @@ archaic_age = {
 						}
 				modifier = {
 					factor = 0
+					NOT = {	num_of_light_ship = 6 }
+						}
+				modifier = {
+					factor = 0
 					NOT = {	trade_income_percentage = 0.33 }
 						}
 					}			
 		}
 	ab_citizen_army = {
 			modifier = {
-				amount_of_banners = 0.33
+				amount_of_banners = 0.4
 			}
 			ai_will_do = {
 				factor = 5
@@ -147,8 +192,8 @@ archaic_age = {
 				tag = SP1
 			}
 			modifier = {
-				diplomatic_reputation = 2
-				diplomatic_upkeep = 8
+				infantry_power = 0.1
+				diplomatic_upkeep = 6
 			}
 			ai_will_do = {
 				factor = 25
@@ -156,10 +201,14 @@ archaic_age = {
 		}
 	ab_persian_empire = {
 			allow = {
-				tag = PSE
+				OR = {
+					tag = PSE
+					tag = ANH
+					tag = PRS
+				}
 			}
 			modifier = {
-				years_of_nationalism = -20
+				years_of_nationalism = -15
 			}
 			ai_will_do = {
 				factor = 25
@@ -170,15 +219,16 @@ archaic_age = {
 				tag = ATH
 			}
 			modifier = {
-				stability_cost_modifier = -0.33
+				stability_cost_modifier = -0.25
+				republican_tradition = 0.5 
 			}
 			ai_will_do = {
 				factor = 25
 			}			
 		}
-	ab_syracusian_tyrannis = {
+	ab_neo_babylonian_empire = {
 			allow = {
-				tag = SYR
+				tag = BAB
 			}
 			modifier = {
 				core_creation = -0.25
@@ -216,15 +266,18 @@ classical_age = {
 	}
 	
 	can_start = {
-		any_country = {
-			has_institution = law_system
-		}
+		is_year = 290
 	}
 	
 	
 	objectives = {		
-		obj_physical_science_embraced = {
-			has_institution = physical_science
+		obj_nation_of_progress = {
+			has_institution = agriculture_lvl3
+			has_institution = construction_lvl3
+			has_institution = culture_lvl3
+			has_institution = government_lvl3
+			has_institution = metalworking_lvl3
+			has_institution = trade_lvl3
 		}			
 		obj_great_ruler = {
 			has_regency = no
@@ -240,7 +293,7 @@ classical_age = {
 			home_trade_node = { 	is_strongest_trade_power = ROOT }
 		}	
 		obj_scholars_ideas = {
-			full_idea_group = scholars_ideas
+			full_idea_group = academy_ideas
 		}	
 		obj_indian_religion = {
 			allow = {
@@ -253,11 +306,8 @@ classical_age = {
 			}
 			OR = {
 				religion = buddhism
-				secondary_religion = buddhism
 				religion = jain
-				secondary_religion = jain
 				religion = ajivika
-				secondary_religion = ajivika
 			}
 		}
 		obj_rule_over_greece = {
@@ -265,7 +315,6 @@ classical_age = {
 				capital_scope = {
 					OR = {
 						continent = sarmatia
-						continent = persia
 						continent = asia
 						continent = africa
 						continent = europe
@@ -285,7 +334,7 @@ classical_age = {
 	abilities = {
 	ab_famous_court = {
 			modifier = {
-				advisor_cost = -0.33
+				advisor_cost = -0.3
 			}
 			ai_will_do = {
 				factor = 5
@@ -325,7 +374,7 @@ classical_age = {
 		}
 	ab_land_reforms = {
 			modifier = {
-				state_maintenance_modifier = -0.5
+				state_maintenance_modifier = -0.4
 			}
 			ai_will_do = {
 				factor = 5
@@ -336,7 +385,7 @@ classical_age = {
 				tag = ROM
 			}
 			modifier = {
-				core_creation = -0.5
+				core_creation = -0.4
 			}
 			ai_will_do = {
 				factor = 25
@@ -371,7 +420,7 @@ classical_age = {
 				}
 			}
 			modifier = {
-				all_power_cost = -0.05
+				all_power_cost = -0.025
 			}
 			ai_will_do = {
 				factor = 25
@@ -396,8 +445,8 @@ classical_age = {
 				tag = CAR
 			}
 			modifier = {
-				ship_power_propagation = 0.25
-				placed_merchant_power = 5.0
+				ship_power_propagation = 0.2
+				placed_merchant_power = 20.0
 			}
 			ai_will_do = {
 				factor = 25
@@ -424,9 +473,7 @@ hellenistic_age = {
 	start = 420
 	
 	can_start = {
-		any_country = {
-			has_institution = classical_philosophy
-		}
+		is_year = 420
 	}
 	religious_conflicts = yes
 	
@@ -444,11 +491,11 @@ hellenistic_age = {
 		}
 		obj_world_wonder = {
 			OR = {
-				any_owned_province = { has_great_project = zeus_statue }
-				any_owned_province = { has_great_project = coloss }
-				any_owned_province = { has_great_project = pharos }
-				any_owned_province = { has_great_project = artemis_temple }
-				any_owned_province = { has_great_project = great_mausoleum }
+				any_owned_province = { has_province_modifier = wonder_rhodos }
+				any_owned_province = { has_province_modifier = wonder_mausoleum }
+				any_owned_province = { has_province_modifier = wonder_pharos }
+				any_owned_province = { has_province_modifier = wonder_artemis_temple }
+				any_owned_province = { has_province_modifier = wonder_zeus_olypmia }
 				any_owned_province = { has_province_modifier = gizeh }
 				any_owned_province = { has_province_modifier = gardens_of_babylon }
 			}
@@ -459,29 +506,28 @@ hellenistic_age = {
 				navy_tradition = 90
 			}
 		}
-		obj_luxury_goods = {
-			OR = {
-				calc_true_if = {
-					all_owned_province = {
-						OR = { 
-							trade_goods = marble
-							trade_goods = dyes
-							trade_goods = pearls
-							trade_goods = jade }
+		obj_luxury_goods = 
+			num_of_owned_provinces_with = {
+				value = 6
+					OR = {
+						trade_goods = marble
+						trade_goods = dyes
+						trade_goods = pearls
+						trade_goods = jade
+						trade_goods = gems
+						trade_goods = amber
 					}
-					amount = 8
-				}
 			}
 		}
 		obj_beacon_of_science = {
-			capital_scope = { development = 30 }
+			capital_scope = { development = 20 }
 			capital_scope = { has_building = great_library }
 		}
 		obj_full_authority = {
-			absolutism = 50
+			absolutism = 40
 		}
 		obj_loyal_ally = {
-			num_of_trusted_allies = 1
+			num_of_trusted_allies = 2
 		}
 	}	
 
@@ -545,7 +591,6 @@ hellenistic_age = {
 				capital_scope = {
 					add_base_tax = 1
 					add_base_production = 1
-					add_base_manpower = 1
 				}
 			}
 			modifier = {
@@ -582,7 +627,7 @@ hellenistic_age = {
 			}
 			modifier = {
 				global_regiment_cost = -0.1
-				reinforce_cost_modifier = -0.50
+				discipline = 0.05
 			}
 			ai_will_do = {
 				factor = 25
@@ -621,13 +666,16 @@ hellenistic_age = {
 			}
 			effect = {
 				if = {
-					limit = { is_tribal = yes }
-					change_government = despotic_monarchy
+					limit = { 
+						NOT = { government = monarchy }
+					}
+					change_government = monarchy
+					add_government_reform = aristocratic_monarchy_reform
 				}
 			}
 			modifier = {
 				movement_speed = 0.05
-				cavalry_flanking = 0.15
+				cavalry_flanking = 0.25
 			}
 			ai_will_do = {
 				factor = 25
@@ -645,8 +693,14 @@ hellenistic_age = {
 			}
 			effect = {
 				if = {
-					limit = { is_tribal = yes }
-					change_government = despotic_monarchy
+					limit = { 
+						OR = {
+							has_reform = tribal_federation_reform
+							has_reform = tribal_kingdom_reform
+						}
+					}
+					change_government = monarchy
+					add_government_reform = aristocratic_monarchy_reform
 				}
 			}
 			modifier = {
@@ -814,8 +868,9 @@ imperial_age = {
 				tag = ICH
 			}
 			modifier = {
-				yearly_absolutism = 0.25
+				land_morale = 0.1
 				legitimacy = 1
+				meritocracy = 1 
 			}
 			ai_will_do = {
 				factor = 15

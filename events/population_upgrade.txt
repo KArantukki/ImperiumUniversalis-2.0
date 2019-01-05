@@ -45,14 +45,6 @@ province_event = {
 				}
 			}
 		modifier = {
-				factor = 0.9
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
-				}
-			}
-		modifier = {
 				factor = 0.95
 						prosperity = 25
 				NOT = { prosperity = 50 }
@@ -282,14 +274,6 @@ province_event = {
 					has_building = shrine
 					has_building = small_temple
 					has_building = great_temple
-				}
-			}
-		modifier = {
-				factor = 0.9
-				OR = {
-					has_province_modifier = center_of_trade_modifier_1
-					has_province_modifier = center_of_trade_modifier_2
-					has_province_modifier = center_of_trade_modifier_3
 				}
 			}
 		modifier = {

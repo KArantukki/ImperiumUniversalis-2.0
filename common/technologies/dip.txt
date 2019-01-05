@@ -6,11 +6,11 @@ ahead_of_time = {
 	yearly_corruption = -0.05
 }
 
-# Pre-era techs
 technology = {
 	# Tech 0
-	year = 180 # 574 BC  
-	naval_morale			=	2.0
+	year = 125 # 629 BC 
+
+	naval_morale			=	1.5
 	range					=	200
 	#enable = ship_light_1
 	#enable = ship_transport
@@ -32,15 +32,6 @@ technology = {
 	enable = ship_medit_ancient_dhow
 	enable = ship_medit_early_coastal
 	enable = ship_medit_early_cargoship
-	auto_explore_adjacent_to_colony = yes
-	merchants = yes
-	trade_range				=	400
-}
-
-technology = {
-	# Tech 1
-	year = 190 # 564 BC  
-	global_colonial_growth	= 	5
 	enable = ship_greek_penteconter
 	enable = ship_greek_triaconter
 	enable = ship_greek_bireme
@@ -52,27 +43,79 @@ technology = {
 	enable = ship_chin_light1
 	enable = ship_chin_trade1
 	enable = ship_chin_trans1
-	trade_range				=	50
+	#auto_explore_adjacent_to_colony = yes
+}
+
+technology = {
+	# Tech 1
+	year = 130 # 624 BC 
+	merchants = yes
+	trade_range	= 400
+	
 }
 
 technology = {
 	# Tech 2
-	year = 205 
-	small_market = yes
-	#may_fabricate_claims = yes
+	year = 135 # 619 BC
 	
+	trade_efficiency 		= 	0.05
+	naval_morale			=	0.1
+
+}
+
+technology = {
+	# Tech 3
+	year = 145 # 609 BC 
+	
+	trade_range				=	50
+
+}
+
+technology = {
+	# Tech 4
+	year = 160 # 594 BC 
+
+	enable = ship_roman_unireme
+	enable = ship_greek_transbireme
+	enable = ship_chin_heavy2
+	enable = ship_balkan_bireme
+	trade_efficiency 		= 	0.05
+	small_market = yes
+}
+
+# Pre-era techs
+technology = {
+	# Tech 5
+	year = 175 # 579 BC  
+	
+	naval_maintenance		=	0.05
+	small_shipyard = yes
+}
+
+technology = {
+	# Tech 6
+	year = 190 # 564 BC  
+	global_colonial_growth	= 	5
+	naval_morale			=	0.1
+}
+
+technology = {
+	# Tech 7
+	year = 205 
+	naval_morale			=	0.05
+	trade_efficiency 		= 	0.05
 }
 
 # The 30 big techs from here on
 
 technology = {
-	# Tech 3
+	# Tech 8
 	year = 220
 	may_study_technology = yes
 }
 
 technology = {
-	# Tech 4
+	# Tech 9
 	year = 235
 	trade_range				=	30
 	naval_morale			=	0.05
@@ -80,38 +123,32 @@ technology = {
 }
 
 technology = {
-	# Tech 5
+	# Tech 10
 	year = 250
-	enable = ship_roman_unireme
-	enable = ship_greek_transbireme
-	enable = ship_chin_heavy2
-	enable = ship_balkan_bireme
 	lumberjack = yes
 }
 
 technology = {
-	# Tech 6
+	# Tech 11
 	year = 265
-	small_shipyard = yes
 }
 
 technology = {
-	# Tech 7
+	# Tech 12
 	year = 280
 	small_theater = yes
 }
 
 technology = {
-	# Tech 8
-
+	# Tech 13
 	year = 295
-	naval_maintenance		=	0.05
+	
 	may_steal_maps = yes
 	embassy = yes
 }
 
 technology = {
-	# Tech 9
+	# Tech 14
 	year = 310
 	naval_morale			=	0.05
 	enable = ship_roman_bireme
@@ -120,7 +157,7 @@ technology = {
 }
 
 technology = {
-	# Tech 10
+	# Tech 15
 	year = 325
 	enable = ship_roman_transbireme
 	enable = ship_greek_transtriere
@@ -130,7 +167,7 @@ technology = {
 }
 
 technology = {
-	# Tech 11
+	# Tech 16
 	year = 340
 	global_colonial_growth	= 	5
 	range					=	20
@@ -138,7 +175,7 @@ technology = {
 }
 
 technology = {
-	# Tech 12
+	# Tech 17
 	year = 355
 	enable = ship_greek_lembos
 	enable = ship_medit_transbireme
@@ -146,19 +183,19 @@ technology = {
 }
 
 technology = {
-	# Tech 13
+	# Tech 18
 	year = 370
 	num_accepted_cultures = 1
 }
 
 technology = {
-	# Tech 14
+	# Tech 19
 	year = 385
 	big_shipyard = yes
 }
 
 technology = {
-	# Tech 15
+	# Tech 20
 	year = 400
 	enable = ship_greek_tetrere
 	enable = ship_roman_trireme
@@ -169,7 +206,7 @@ technology = {
 }
 
 technology = {
-	# Tech 16
+	# Tech 21
 	year = 415
 	enable = ship_greek_hemiolia
 	enable = ship_west_flatbottom
@@ -177,7 +214,7 @@ technology = {
 }
 
 technology = {
-	# Tech 17
+	# Tech 22
 	year = 430
 	may_slander_merchants = yes
 	big_harbor = yes
@@ -186,7 +223,7 @@ technology = {
 }
 
 technology = {
-	# Tech 18
+	# Tech 23
 	year = 445
 	small_bath = yes
 	great_market = yes
@@ -196,7 +233,7 @@ technology = {
 }
 
 technology = {
-	# Tech 19
+	# Tech 24
 	year = 460	
 	big_theater = yes
 	enable = ship_greek_pentere
@@ -204,7 +241,7 @@ technology = {
 }
 
 technology = {
-	# Tech 20
+	# Tech 25
 	year = 475
 	global_colonial_growth	= 	5
 	naval_maintenance		=	0.1
@@ -216,13 +253,13 @@ technology = {
 }
 
 technology = {
-	# Tech 21
+	# Tech 26
 	year = 490
 	enable = ship_west_leathersail
 }
 
 technology = {
-	# Tech 22
+	# Tech 27
 	year = 520
 	trade_efficiency 		= 	0.05
 	
@@ -230,7 +267,7 @@ technology = {
 }
 
 technology = {
-	# Tech 23
+	# Tech 28
 	year = 535
 	trade_range				=	50
 	enable = ship_roman_liburnia
@@ -239,7 +276,7 @@ technology = {
 }
 
 technology = {
-	# Tech 24
+	# Tech 29
 	year = 550
 	harbor_district = yes
 	may_sabotage_reputation = yes
@@ -248,7 +285,7 @@ technology = {
 }
 
 technology = {
-	# Tech 25
+	# Tech 30
 	year = 565
 	global_colonial_growth	= 	5
 	naval_morale			=	0.05
@@ -266,7 +303,7 @@ technology = {
 }
 
 technology = {
-	# Tech 26
+	# Tech 31
 	year = 580
 	trade_range				=	20
 	naval_monument = yes
@@ -275,14 +312,14 @@ technology = {
 }
 
 technology = {
-	# Tech 27
+	# Tech 32
 	year = 595
 	great_theater = yes
 	may_infiltrate_administration = yes
 }
 
 technology = {
-	# Tech 28
+	# Tech 33
 	year = 610
 	trade_range				=	20
 	reduced_naval_attrition = yes
@@ -291,21 +328,21 @@ technology = {
 }
 
 technology = {
-	# Tech 29
+	# Tech 34
 	year = 625
 	num_accepted_cultures = 1
 	enable = ship_west_transportrook
 }
 
 technology = {
-	# Tech 30
+	# Tech 35
 	year = 640
 	enable = ship_medit_trihemiolia
 	enable = ship_chin_light4
 }
 
 technology = {
-	# Tech 31
+	# Tech 36
 	year = 655
 	may_corrupt_officials = yes
 	enable = ship_medit_early_dhow
@@ -313,7 +350,7 @@ technology = {
 }
 
 technology = {
-	# Tech 32
+	# Tech 37
 	year = 670
 	may_sabotage_recruitment = yes
 	palace_garden = yes
@@ -322,7 +359,7 @@ technology = {
 
 
 technology = {
-	# Tech 33
+	# Tech 38
 	year = 685
 	global_colonial_growth	= 	5
 	huge_theater = yes
@@ -330,7 +367,7 @@ technology = {
 }
 
 technology = {
-	# Tech 34
+	# Tech 39
 	year = 700
 	naval_morale			=	0.05
 	enable = ship_medit_quinquireme
@@ -339,7 +376,7 @@ technology = {
 }
 
 technology = {
-	# Tech 35
+	# Tech 40
 	year = 715
 	trade_efficiency 		= 	0.05
 	enable = ship_chin_light5
@@ -347,7 +384,7 @@ technology = {
 }
 
 technology = {
-	# Tech 36
+	# Tech 41
 	year = 730
 	global_colonial_growth	= 	5
 	naval_maintenance		=	0.05
@@ -355,14 +392,14 @@ technology = {
 }
 
 technology = {
-	# Tech 37
+	# Tech 42
 	year = 745
 	trade_efficiency 		= 	0.05
 
 }
 
 technology = {
-	# Tech 38
+	# Tech 43
 	year = 760
 	trade_range				=	20
 	trade_efficiency 		= 	0.025
@@ -370,14 +407,14 @@ technology = {
 }
 
 technology = {
-	# Tech 39
+	# Tech 44
 	year = 775
 	naval_morale			=	0.05
 
 }
 
 technology = {
-	# Tech 40
+	# Tech 45
 	year = 790
 	trade_efficiency 		= 	0.05
 	enable = ship_west_early_longboat
@@ -388,35 +425,35 @@ technology = {
 }
 
 technology = {
-	# Tech 41
+	# Tech 46
 	year = 805
 	global_colonial_growth	= 	10
 
 }
 
 technology = {
-	# Tech 42
+	# Tech 47
 	year = 820
 	num_accepted_cultures = 1
 
 }
 
 technology = {
-	# Tech 43
+	# Tech 48
 	year = 835
 	trade_efficiency 		= 	0.025
 
 }
 
 technology = {
-	# Tech 44
+	# Tech 49
 	year = 850
 	trade_range				=	50
 
 }
 
 technology = {
-	# Tech 45
+	# Tech 50
 	year = 865
 	naval_morale			=	0.05
 	naval_maintenance		=	0.1
@@ -425,28 +462,28 @@ technology = {
 }
 
 technology = {
-	# Tech 46
+	# Tech 51
 	year = 880
 	trade_efficiency 		= 	0.025
 
 }
 
 technology = {
-	# Tech 47
+	# Tech 52
 	year = 895
 	num_accepted_cultures = 1
 
 }
 
 technology = {
-	# Tech 48
+	# Tech 53
 	year = 910
 	global_colonial_growth	= 	10
 
 }
 
 technology = {
-	# Tech 49
+	# Tech 54
 	year = 925
 	naval_morale			=	0.05
 	naval_maintenance		=	0.1
@@ -454,8 +491,8 @@ technology = {
 }
 
 technology = {
-	# Tech 50
+	# Tech 55
 	year = 940
-	trade_efficiency 		= 	0.055
+	trade_efficiency 		= 	0.05
 
 }

@@ -4,9 +4,6 @@ graphical_culture = thraciangfx
 
 color = { 192 192 192 }
 
-revolutionary_colors = { 5  13  0 }
-
-
 historical_idea_groups = {
 	trade_ideas
 	defensive_ideas
@@ -16,7 +13,6 @@ historical_idea_groups = {
 	domestic_government_ideas
 	scholars_ideas
 	spy_ideas
-}
 }
 
 historical_units = {

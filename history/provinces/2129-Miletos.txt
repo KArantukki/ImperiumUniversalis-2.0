@@ -1,6 +1,6 @@
-add_core = MIL
-owner = MIL
-controller = MIL
+add_core = MLT
+owner = MLT
+controller = MLT
 culture = ionic
 religion = greek_religion
 hre = no
@@ -11,10 +11,12 @@ trade_goods = olive
 capital = ""
 is_city = yes
 small_city_walls = yes
-add_permanent_province_modifier = {
-		name = center_of_trade_modifier_1
-		duration = -1
-	}
+small_harbor = yes
+small_market = yes
+shrine = yes
+small_townhall = yes
+gravel_road = yes
+center_of_trade = 1
 
 discovered_by = roman
 discovered_by = greek

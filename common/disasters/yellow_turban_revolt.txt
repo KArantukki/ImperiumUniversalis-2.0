@@ -10,20 +10,13 @@ yellow_turban_revolt = {
 	
 	can_start = {
 		has_any_disaster = no
-		total_development = 2500
-		estate_influence = {
-			estate = estate_patricius
-			influence = 50
-			}
+		total_development = 800
 		}
 	
 	
 	can_stop = {
 		NOT = {
-				estate_influence = {
-					estate = estate_patricius
-					influence = 30
-				}
+			total_development = 800
 			}
 		}
 		

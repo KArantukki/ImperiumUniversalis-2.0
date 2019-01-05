@@ -7,6 +7,11 @@ bookmark =
 	default = yes
 	center = 2476
 	
+	country = BAB
+	country = ASY
+	country = EGY
+	country = MDI
+	country = SUS
 	country = ANH
-
+}
 	

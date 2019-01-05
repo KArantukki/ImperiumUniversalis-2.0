@@ -1,4 +1,5 @@
 add_core = GZ1
+add_core = MDI
 owner = GZ1
 controller = GZ1
 hre = no

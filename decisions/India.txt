@@ -72,7 +72,7 @@ country_decisions = {
 				modifier = {
 					factor = 0.2
 					NOT = {
-						government = vedic_kingdom
+						has_reform = vedic_kingdom_reform
 					}
 				}
 				modifier = {

@@ -121,7 +121,7 @@ country_event = {
 			duration = -1
 		}
 		change_price = {
-			trade_goods = meat
+			trade_goods = meat_animals
 			key = PAPER_PRODUCTION
 			value = 0.1
 			duration = -1

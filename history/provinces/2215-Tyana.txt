@@ -1,8 +1,7 @@
-add_core = LYA
-add_core = LYD
-owner = LYD
-controller = LYD
-culture = lycaonian
+add_core = KPP
+owner = KPP
+controller = KPP
+culture = kappadokian
 religion = luwian_religion
 hre = no
 base_tax = 0

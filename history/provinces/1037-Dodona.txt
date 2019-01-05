@@ -10,11 +10,7 @@ base_manpower = 3
 trade_goods = fish
 capital = ""
 is_city = yes
-
-add_province_modifier = {
-	name = oracle_of_dodona
-	duration = -1
-}
+add_province_triggered_modifier = oracle_of_dodona
 
 discovered_by = roman
 discovered_by = greek

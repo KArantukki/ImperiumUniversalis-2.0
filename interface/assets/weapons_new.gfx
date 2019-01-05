@@ -149,13 +149,13 @@ objectTypes = {
 		name = "celt_shield_3"
 		file = "gfx/models/Units/celt_shield_3.mesh"			
 		
-		scale = 0.12
+		scale = 0.135
 	}
 	pdxmesh = {
 		name = "arch_shield_2"
 		file = "gfx/models/Units/arch_shield_2.mesh"			
 		
-		scale = 0.12
+		scale = 0.135
 	}
 	pdxmesh = {
 		name = "celt_shield_2"

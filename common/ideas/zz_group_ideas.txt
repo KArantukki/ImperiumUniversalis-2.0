@@ -462,11 +462,11 @@ celt_iberian_ideas = {
 iberian_ideas = {
 	start = {
 		land_morale = 0.1
-		global_institution_spread = 0.15
+		global_institution_spread = 0.2
 	}
 	
 	bonus = {
-		general_cost = -0.25
+		general_cost = -0.2
 	}
 	
 	trigger = {
@@ -596,10 +596,7 @@ indian_ideas = {
 	}
 	
 	trigger = {
-		or = {
 		culture_group = indian_group
-		culture_group = non_vedic_group
-		}
 	}
 	free = yes
 		
@@ -733,14 +730,14 @@ armenian_ideas = {
 		mil_tech_cost_modifier = -0.1
 	}
 	the_army_of_tigranes = {	
-		land_forcelimit_modifier = 0.33
+		land_forcelimit_modifier = 0.25
 	}
 	jewish_settlers = {
 		trade_efficiency = 0.1
 		advisor_pool = 1
 	}	
 	tigranes_the_great = {
-		max_absolutism = 10
+		legitimacy = 1
 	}
 }
 

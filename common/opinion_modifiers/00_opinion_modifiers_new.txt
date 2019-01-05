@@ -1,4 +1,25 @@
 
+
+opinion_gift_sent = {
+	opinion = 50
+	yearly_decay = 10
+}
+
+opinion_advisor_in_exile = {
+	opinion = -25
+	yearly_decay = 20
+}
+
+opinion_food_trade = {
+	opinion = 25
+	yearly_decay = 5
+}
+
+caravan_raids = {
+	opinion = -50
+	yearly_decay = 5
+}
+
 sent_food_opinion = {
 	opinion = 10
 	yearly_decay = 1
@@ -47,4 +68,19 @@ opinion_send_traitor_back = {
 illyrian_confederacy_opinion = {
 	opinion = 100
 	yearly_decay = 2.5
+}
+
+opinion_destroyed_nineveh = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+sacked_city_opinion = {
+	opinion = -50
+	yearly_decay = 2.5
+}
+
+opinion_refused_to_give_land = {
+	opinion = -50
+	yearly_decay = 1
 }

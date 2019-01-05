@@ -2,112 +2,70 @@ iucivilwar = {
 	potential = {
 		num_of_cities = 5
 		NOT = { has_any_disaster = yes }
-		NOT = { government = roman_senate }
+		#NOT = { government = roman_senate }
 		is_subject = no
 		is_tribal = no
+		NOT = { government = native }
 		government_rank = 2
 	}
 
 	
 	
 	can_start = {
-		has_any_disaster = no
-		OR = {
-			AND = {		government = republic
-				NOT = { republican_tradition = 50 } }
-			AND = {		government = monarchy
-				NOT = { legitimacy = 50 } }	
-			AND = {		government = oligarchic_monarchy
-				NOT = { devotion = 50 } }
-			}	
+		NOT = { stability = 0 }
+		NOT = { manpower_percentage = 0.50 }
 		}
 	
 	
 	can_stop = {
-		OR = {
-			AND = {		government = republic
-						republican_tradition = 50 
-						}
-			AND = {		government = monarchy
-						legitimacy = 50
-						}
-			AND = {		government = oligarchic_monarchy
-						devotion = 50
-						}
-			AND = {		government = republican_dictatorship
-						stability = 1 }	
-			}
+			stability = 1
+			manpower_percentage = 0.50 
 		}
 		
 	
 	
 	progress = {
-		
 		modifier = {
 			factor = 1
-			OR = {
-			AND = {		government = republic
-				NOT = { republican_tradition = 50 } }
-			AND = {		government = monarchy
-				NOT = { legitimacy = 50 } }	
-			}
-			AND = {		government = oligarchic_monarchy
-				NOT = { devotion = 50 }  }
-		}
-		modifier = {
-			factor = 1
-			OR = {
-			AND = {		government = republic
-				NOT = { republican_tradition = 40 } }
-			AND = {		government = monarchy
-				NOT = { legitimacy = 40 } }	
-			}
-			AND = {		government = oligarchic_monarchy
-				NOT = { legitimacy = 40 } }	
-			}
-		modifier = {
-			factor = 1
-			overextension_percentage = 0.10
-		}		
-		modifier = {
-			factor = 2
-			revolt_percentage = 0.10
-		}
-		modifier = {
-			factor = 2
 			NOT = { stability = 0 }
 		}
 		modifier = {
-			factor = 2
+			factor = 1
 			NOT = { stability = -1 }
 		}
 		modifier = {
-			factor = 2
+			factor = 1
 			NOT = { stability = -2 }
-		}		
+		}
+		modifier = {
+			factor = 1
+			NOT = { manpower_percentage = 0.50 }
+			}
+		modifier = {
+			factor = 1
+			NOT = { manpower_percentage = 0.30 }
+			}
+		modifier = {
+			factor = 1
+			NOT = { manpower_percentage = 0.10 }
+			}
 	}
 	
 	
 	
 	can_end = {
-		OR = {
-			AND = {		government = republic
-						republican_tradition = 90 }
-			AND = {		government = monarchy
-						legitimacy = 90 }
-			AND = {		government = republican_dictatorship
-						republican_tradition = 90 }
-			AND = {		government = oligarchic_monarchy
-						devotion = 90 }
-		}
-						stability = 0
+		stability = 1
+		manpower_percentage = 0.50 
 	}
 	
 
 	modifier = {
-		manpower_recovery_speed = -0.25
-		global_autonomy = 0.05
+		stability_cost_modifier = 0.5
+		legitimacy = -1
+		republican_tradition = -0.5
+		devotion = -0.5
 		global_unrest = 5
+		
 	}	
 	
 	

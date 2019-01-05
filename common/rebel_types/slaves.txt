@@ -11,7 +11,7 @@ slave_rebels = {
 	
 	resilient = yes					# Can retreat
 	reinforcing = yes				# Can reinforce
-	general = no					# Does use generals
+	general = yes					# Does use generals
 	smart = yes						# Do assault forts, tactically withdraw from battle, etc.
 	unit_transfer = no				# Units do not remain after enforcing demands.
 	
@@ -32,55 +32,72 @@ slave_rebels = {
 				owner = { has_country_modifier = slavery_abolished }
 		}
 		modifier = {
-			factor = 3
-			owner = {
-				estate_influence = { estate = estate_heilotes influence = 40 }
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				estate_influence = { estate = estate_heilotes influence = 60 }
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				estate_influence = { estate = estate_heilotes influence = 80 }
-			}
-		}
-		modifier = {
-			factor = 3
-			has_estate = estate_heilotes
-		}
-		modifier = {
-			factor = 0.1
+			factor = 0.0
 				owner = { 
-					NOT = { check_variable = { which = slaves value = 500 } } 
+					NOT = { check_variable = { which = slaves value = 2500 } } 
 				}
 		}
 		modifier = {
 			factor = 2
 			owner = {
-				check_variable = { which = slaves value = 7500 }
+				check_variable = { which = var_slaves_pop_ratio value = 10 }
 			}
 		}
 		modifier = {
-			factor = 4
+			factor = 2
 			owner = {
-				check_variable = { which = slaves value = 15000 }
+				check_variable = { which = var_slaves_pop_ratio value = 20 }
 			}
 		}
 		modifier = {
-			factor = 6
+			factor = 2
 			owner = {
-				check_variable = { which = slaves value = 25000 }
+				check_variable = { which = var_slaves_pop_ratio value = 30 }
 			}
 		}
 		modifier = {
-			factor = 1.5
-			is_overseas = yes
+			factor = 2
+			owner = {
+				check_variable = { which = var_slaves_pop_ratio value = 40 }
+			}
 		}
+		modifier = {
+			factor = 2
+			owner = {
+				check_variable = { which = var_slaves_pop_ratio value = 50 }
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				check_variable = { which = var_slaves_pop_ratio value = 60 }
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				check_variable = { which = var_slaves_pop_ratio value = 100 }
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				check_variable = { which = var_slaves_pop_ratio value = 120 }
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				check_variable = { which = var_slaves_pop_ratio value = 140 }
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				check_variable = { which = var_slaves_pop_ratio value = 160 }
+			}
+		}
+
 	}
  
  	# This is checked for EACH province in the Area of Operations
@@ -113,6 +130,10 @@ slave_rebels = {
 	}
 	siege_won_effect = {
 		add_local_autonomy = 5
+		if = {
+			limit = { check_variable = { which = slaves value = 500 } }
+			change_variable = { slaves = -500 }
+		}
 	}
 	
 	# Country scope
@@ -132,14 +153,5 @@ slave_rebels = {
 	demands_enforced_effect = {
 		multiply_variable = { which = slaves value = 0.75 }
 		add_prestige = -25
-		if = {
-			limit = { has_estate = estate_heilotes }
-			add_estate_influence_modifier = {
-				estate = estate_heilotes
-				desc = EST_VAL_SUCCESSFUL_SLAVE_REVOLT
-				influence = 20
-				duration = 3650
-			}
-		}
 	}
 }

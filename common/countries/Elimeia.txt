@@ -1,27 +1,36 @@
 #Country Name: Please see filename.
 
 graphical_culture = hellenicgfx
+special_unit_culture = macedon_special
 
 color = { 128 128 190 }
 
 historical_idea_groups = {
-	infantry_ideas
-	administrative_ideas
+	leadership_ideas
 	expansion_ideas
-	quality_ideas
+	agraculture_ideas
+	infantry_ideas
+	imperial_ideas
+	royal_court_ideas
 	cavalry_ideas
+	syncrenism_ideas
+	administrative_ideas
+
 }
 
 historical_units = {
-	
+	0_macedon_archers
+	5_macedon_knights
+	5_macedon_phalanx
+	10_adv_macedon_phalanx
+	20_late_macedon_phalanx
 }
-
+                  
 monarch_names = {
-
-	"Cassander #11" = 50
-	"Philip #4" = 10
-	"Alexander #6" = 10
-	"Demetrius #2" = 40
+	"Kassander" = 50
+	"Philip" = 10
+	"Alexander" = 10
+	"Demetrius" = 40
 	"Lysimachus" = 20
 	"Antipater" = 20
 	"Sostenes" = 20
@@ -35,8 +44,24 @@ monarch_names = {
 	"Koinos" = 20
 	"Perdiccas #2" = 20
 	"Polyperchon" = 20
-	"Perdiccas" = 20
 	"Orestes" = 20
+	"Addaeus" = 5
+	"Admetus" = 5
+	"Andromenes" = 5
+	"Anthemusian" = 5
+	"Aretis" = 5
+	"Arrhabaeus" = 5
+	"Atharrias" = 5
+	"Cleander" = 5
+	"Clearchus" = 5
+	"Hegelochus" = 5
+	"Leonnatus" = 5
+	"Menestheus" = 5
+	"Neoptolemus" = 5
+	"Orontes" = 5
+	"Peroedas" = 5
+	"Polemocrates" = 5
+	"Timander" = 5
 	"Lysanios" = 1
 	"Atrometos" = 1
 	"Hippasus" = 1
@@ -64,16 +89,12 @@ monarch_names = {
 }
 
 leader_names = {
-			Aristonous Arybbas Balacrus Demetrius Hephaestion Leonnatus Lysmachus Menes Pausanias
-			Peithon Peucestas Ptolemy Philotas Cleitus Sopolis Heraclides Peroidas Socrates Pantordanus
-			Hegelochus Calas Philip Agathon Parmenion Attalus Seleucus Coenus Craterus Gorgias Meleager Menander
-			Polyperchon Simmias Proteas Nearchus Amphoterus Eudemus Iollas Lagus Nicanor Polemon Teutamus Tlepolemus
-			Alexander Archelaos Bubalus Lampos Belistiche Adaios Antipater Alexarchus Leon Marsyas Amerias Oikiades Samus
-			Epigonus Archias Perses Stobaeus Criton Macedonius Parmenion Evander Herophon Adymus Menelaus
+			Argeadai Antipatridai Ptolemaioi Antigonidai Seleucidae Agiadai Eurypontidai Atreidai Lacedaemonidai Melanthidai Dionysii Deinomenidai Hieronidai
+			"of Pella" "the Macedon" "the Wise" "the Black" "the One-Eyed" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
 }
 
 ship_names = {
-	
+	Ankalis Ade Adraia Akrea Alie Aliza Aortes Argiopous Aretos Aspilos Bix Buktas Charon Charopos Danon Darullos Grabion Enyalius Homodalion Ilax Kanadoi Klinotrokhon Kynoupes Laiba Lalabis Leibethron Lyncestis Mattues Paraos Peripeteia Pudna Rhamata Sarissa Sigynos Thaulos
 }
 
 army_names = {

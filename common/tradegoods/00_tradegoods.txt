@@ -17,8 +17,10 @@ grain = {
 			factor = 0
 			OR = {
 				has_terrain = desert
-				has_terrain = glacier
 				has_terrain = coastline
+				has_terrain = salt_desert
+				has_terrain = coastal_desert
+				has_terrain = desert_mountain
 				has_climate = arctic
 			}
 		}
@@ -33,11 +35,11 @@ grain = {
 			factor = 0.25
 			OR = {
 				has_terrain = mountain
-				has_terrain = coastal_desert
 				has_terrain = forest
 				has_terrain = woods
 				has_terrain = hills
 				has_terrain = jungle
+				has_terrain = drylands
 			}
 		}
 		modifier = {
@@ -58,7 +60,6 @@ grain = {
 		modifier = {
 			factor = 0.6
 			OR = {
-				has_terrain = drylands
 				has_terrain = savannah
 				has_terrain = steppe
 			}
@@ -74,6 +75,8 @@ grain = {
 		modifier = {
 			factor = 1.5
 			has_terrain = farmlands
+			has_terrain = alluvial_plain
+			has_terrain = floodplains
 		}
 	}
 }
@@ -101,8 +104,8 @@ wine = {
 				has_terrain = desert
 				has_terrain = coastal_desert
 				has_terrain = marsh
+				has_terrain = mangrove
 				has_terrain = savannah
-				has_terrain = glacier
 			}
 		}
 		modifier = {
@@ -111,13 +114,15 @@ wine = {
 		}
 		modifier = {
 			factor = 1.25
-			has_terrain = farmlands
+				has_terrain = farmlands
+				has_terrain = mediterranean
+				has_terrain = highlands
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.35
 			OR = {
 				has_terrain = hills
-				has_terrain = highlands
+				has_terrain = fertile_highlands
 			}
 		}
 		modifier = {
@@ -129,6 +134,7 @@ wine = {
 				region = gallia_narbonensis
 				region = aquitania_region
 				region = hispania_baetica
+				region = thracia_region
 				region = lusitania
 			}
 		}
@@ -156,7 +162,6 @@ wool = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_terrain = glacier
 				has_terrain = marsh
 				has_terrain = jungle
 				has_terrain = farmlands
@@ -179,6 +184,7 @@ wool = {
 				has_terrain = desert
 				has_terrain = savannah
 				has_terrain = highlands
+				has_terrain = fertile_highlands
 				has_terrain = drylands
 				has_climate = arid
 			}
@@ -192,17 +198,17 @@ cloth = {
 		merc_maintenance_modifier = -0.15
 	}
 	province = {
-		 attrition = -1
+		 attrition = -0.5
 	}
 	chance = {
 		factor = 10
 		modifier = {
 			factor = 0
-			NOT = { development = 18 }
+			NOT = { base_production = 3 }
 		}
 		modifier = {
 			factor = 2.0
-			development = 22
+			base_production = 6
 		}
 	}
 }
@@ -226,11 +232,16 @@ fish = {
 			OR = {
 				has_terrain = coastline
 				has_terrain = coastal_desert
+				has_terrain = steep_coast
 			}
 		}
 		modifier = {
+			factor = 1.4
+			has_winter = severe_winter
+		}
+		modifier = {
 			factor = 1.2
-			has_terrain = glacier
+			has_winter = normal_winter
 		}
 	}
 }
@@ -287,7 +298,6 @@ fur = {
 		modifier = {
 			factor = 2.5
 			has_winter = severe_winter
-			NOT = { has_terrain = glacier }
 		}
 		modifier = {
 			factor = 1.5
@@ -312,25 +322,12 @@ salt = {
 	chance = {
 		factor = 5
 		modifier = {
-			factor = 0
-			NOT = { has_terrain = desert }
-			NOT = { has_terrain = marsh }
-			NOT = { has_terrain = mountain }
-			NOT = { has_terrain = highlands }
-		}
-		modifier = {
 			factor = 2
-			OR = {
 				has_terrain = desert
-				AND = {
-					has_terrain = marsh
-					NOT = { has_climate = arctic } #Hudson Bay
-				}
-			}
 		}
 		modifier = {
-			factor = 5.0
-			area = western_sahara_area
+			factor = 5
+				has_terrain = salt_desert
 		}
 	}
 }
@@ -348,14 +345,12 @@ naval_supplies = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_terrain = glacier
 				has_terrain = desert
 				has_terrain = coastal_desert
 				has_terrain = drylands
 				has_terrain = savannah
 				has_terrain = marsh
 				has_terrain = steppe
-				has_terrain = highlands
 				has_terrain = farmlands
 			}
 		}
@@ -380,6 +375,7 @@ naval_supplies = {
 				has_terrain = woods
 				has_terrain = hills
 				has_terrain = jungle
+				has_terrain = forest_steppe
 			}
 		}
 		modifier = {
@@ -416,19 +412,23 @@ copper = {
 				has_terrain = grasslands
 				has_terrain = savannah
 				has_terrain = coastline
-				has_terrain = glacier
 				has_terrain = jungle
 				has_terrain = farmlands
 				has_terrain = forest
 				has_terrain = woods
+				has_terrain = mangrove
+				has_terrain = fertile_highlands
+				has_terrain = alluvial_plain
+				has_terrain = floodplains
+				has_terrain = forest_steppe
 			}
 		}
 		modifier = {
-			factor = 1.1
-			is_random_new_world = yes
+			factor = 1.15
 			OR = {
 				has_terrain = mountain
 				has_terrain = highlands
+				has_terrain = desert_mountain
 			}
 		}
 	}
@@ -437,27 +437,22 @@ copper = {
 gold = {
 	color = { 1.0 0.84 0.19 }
 	chance = {
-		factor = 5
+		factor = 2
 		modifier = {
-			factor = 0
+			factor = 2
 			OR = {
-				has_terrain = forest
-				has_terrain = woods
-				has_terrain = drylands
-				has_terrain = grasslands
-				has_terrain = savannah
-				has_terrain = steppe
-				has_terrain = jungle
-				has_terrain = coastline
-				has_terrain = coastal_desert
-				has_terrain = marsh
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = hills
 			}
 		}
 		modifier = {
-			factor = 0.4
-			NOT = {	has_terrain = mountain	}
-			NOT = {	has_terrain = highlands	}
-			NOT = {	has_terrain = hills	}
+			factor = 2
+			OR = {
+				region = dacia_region
+				region = thracia_region
+				region = hispania_baetica
+			}
 		}
 	}
 }
@@ -468,7 +463,7 @@ iron = {
 		shock_damage_received = -0.1
 	}
 	province = {
-		 regiment_recruit_speed = -0.2
+		 regiment_recruit_speed = -0.1
 	}
 	chance = {
 		factor = 10
@@ -480,6 +475,7 @@ iron = {
 				has_terrain = mountain
 				has_terrain = hills
 				has_terrain = highlands
+				has_terrain = desert_mountain
 			}
 		}
 	}
@@ -502,6 +498,8 @@ horses = {
 			OR = {
 				has_terrain = desert
 				has_terrain = steppe
+				has_terrain = forest_steppe
+				has_terrain = drylands
 			}
 		}
 		modifier = {
@@ -527,16 +525,19 @@ spices = {
 		factor = 5
 		modifier = {
 			factor = 0
-			NOT = { has_terrain = jungle }
-			NOT = { has_terrain = savannah }
-			NOT = { has_terrain = glacier }
+			NOT = { region = northern_india_region }
+			NOT = { region = western_india_region }
+			NOT = { region = southern_india_region }
+			NOT = { region = eastern_india_region }
+			NOT = { region = aethiops }
 		}
 
 		modifier = {
 			factor = 1.25
 			OR = {
 				has_terrain = jungle
-				has_terrain = savannah
+				has_terrain = farmlands
+				has_terrain = alluvial_plain
 			}
 		}
 	}
@@ -569,6 +570,12 @@ fruits = {
 		modifier = {
 			factor = 1.2
 			has_terrain = farmlands
+			has_terrain = alluvial_plain
+			has_terrain = floodplains
+		}
+		modifier = {
+			factor = 1.1
+			has_port = yes
 		}
 	}
 }
@@ -596,7 +603,7 @@ amber = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { has_port = yes }
+			has_port = no
 		}
 	}
 }
@@ -619,7 +626,7 @@ silver = {
 			factor = 3.0
 			OR = {
 				region = hispania_baetica
-				region = hispania_citerior
+				region = cartaginensis_region
 			}
 		}
 	}
@@ -631,7 +638,7 @@ marble = {
 		build_cost = -0.1
 	}
 	province = {
-		 local_build_cost = -0.1
+		 local_build_cost = -0.05
 	}
 	chance = {
 		factor = 2
@@ -676,7 +683,6 @@ olive = {
 				has_terrain = forest
 				has_climate = arctic
 				has_climate = arid
-				has_terrain = glacier
 				has_winter = severe_winter
 				has_winter = normal_winter
 				has_winter = mild_winter
@@ -687,6 +693,8 @@ olive = {
 			OR = {
 				has_terrain = farmlands
 				has_terrain = grasslands
+				has_terrain = coastline
+				has_terrain = alluvial_plain
 			}
 		}
 		modifier = {
@@ -728,15 +736,15 @@ ceramic = {
 		factor = 5
 		modifier = {
 			factor = 0
-			NOT = { development = 10 }
+			NOT = { base_production = 2 }
 		}
 		modifier = {
 			factor = 2.0
-			development = 12
+			 base_production = 4
 		}
 		modifier = {
 			factor = 2.0
-			development = 18
+			 base_production = 8
 		}
 	}
 }
@@ -754,9 +762,10 @@ meat_animals = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_terrain = glacier
 				has_terrain = forest
 				has_terrain = woods
+				has_terrain = coastline
+				has_terrain = salt_desert
 				has_terrain = marsh
 				has_climate = arctic
 				has_winter = severe_winter
@@ -780,12 +789,23 @@ dyes = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_terrain = glacier
 				has_climate = arid
 				has_climate = arctic
 				has_winter = mild_winter
 				has_winter = normal_winter
 				has_winter = severe_winter
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				region = suebia_region
+				region = germania_region
+				region = britannia_inferior
+				region = britannia_superior
+				region = caledonia
+				region = hibernia
+				region = celtica_area
 			}
 		}
 		modifier = {
@@ -809,8 +829,10 @@ honey = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_terrain = glacier
 				has_terrain = desert
+				has_terrain = salt_desert
+				has_terrain = coastal_desert
+				has_terrain = desert_mountain
 				has_climate = arid
 				has_climate = arctic
 				has_winter = severe_winter
@@ -835,7 +857,7 @@ lead = {
 		 local_monthly_devastation = -0.2
 	}
 	chance = {
-		factor = 10
+		factor = 5
 		modifier = {
 			factor = 0
 			OR = {
@@ -867,11 +889,15 @@ glas = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { base_production = 1 }
+			NOT = { base_production = 4 }
 		}
 		modifier = {
-			factor = 1.25
-			base_production = 3
+			factor = 1.2
+			base_production = 6
+		}
+		modifier = {
+			factor = 1.1
+			base_tax = 1
 		}
 	}
 }
@@ -902,10 +928,8 @@ olibanum = {
 		factor = 10
 		modifier = {
 			factor = 0
-			OR = {
 				NOT = { region = arabia_region }
 				NOT = { region = nubia_region }
-			}
 		}
 	}
 }
@@ -922,10 +946,8 @@ pearls = {
 		factor = 10
 		modifier = {
 			factor = 0
-			OR = {
 				NOT = { region = arabia_region }
 				NOT = { region = nubia_region }
-			}
 		}
 		modifier = {
 			factor = 0
@@ -1007,24 +1029,7 @@ jade = {
 		 ae_impact = -0.025
 	}
 	chance = {
-		factor = 10
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { region = eastern_india_region }
-				NOT = { region = south_china }
-				NOT = { region = north_china }
-				NOT = { region = silkroad_region }
-			}
-		}
-		modifier = {
-			factor = 1.25
-				region = south_china
-		}
-		modifier = {
-			factor = 2.0
-				area = kashgar_area
-		}
+		factor = 0
 	}
 }
 
@@ -1047,12 +1052,6 @@ tin = {
 				NOT = { region = gallaecia }
 			}
 		}
-		modifier = {
-			factor = 5.0
-			OR = {
-				area = south_albis
-			}
-		}
 	}
 }
 
@@ -1070,8 +1069,10 @@ rice = {
 			factor = 0
 			OR = {
 				has_terrain = desert
-				has_terrain = glacier
 				has_terrain = coastline
+				has_terrain = desert_mountain
+				has_terrain = salt_desert
+				has_terrain = drylands
 				has_climate = arctic
 			}
 		}
@@ -1098,7 +1099,6 @@ rice = {
 				has_terrain = coastal_desert
 				has_terrain = forest
 				has_terrain = woods
-				has_terrain = hills
 				has_terrain = jungle
 			}
 		}
@@ -1134,8 +1134,10 @@ rice = {
 			has_winter = normal_winter
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			has_terrain = farmlands
+			has_terrain = alluvial_plain
+			has_terrain = floodplains
 		}
 		modifier = {
 			factor = 1.25
@@ -1164,16 +1166,19 @@ cotton = {
 		naval_maintenance_modifier = -0.1
 	}
 	province = {
-		 local_ship_cost = -0.05
-	}
+		 local_ship_cost = -0.05	}
+
 	chance = {
 		factor = 20
 		modifier = {
 			factor = 0
 			OR = {
 				has_terrain = desert
-				has_terrain = glacier
+				has_terrain = desert_mountain
+				has_terrain = coastal_desert
+				has_terrain = drylands
 				has_terrain = coastline
+				has_terrain = mangrove
 				has_climate = arctic
 			}
 		}
@@ -1269,7 +1274,8 @@ tea_good = {
 			factor = 0
 			OR = {
 				has_terrain = desert
-				has_terrain = glacier
+				has_terrain = coastal_desert
+				has_terrain = salt_desert
 				has_terrain = coastline
 				has_climate = arctic
 			}
@@ -1334,6 +1340,7 @@ tea_good = {
 		modifier = {
 			factor = 1.5
 			has_terrain = farmlands
+			has_terrain = fertile_highlands
 		}
 	}
 }

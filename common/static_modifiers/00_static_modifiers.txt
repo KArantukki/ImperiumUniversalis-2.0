@@ -211,6 +211,30 @@ severe_winter = {
 	picture = "winter_severe"
 }
 
+mild_monsoon = {
+	local_hostile_attrition = 1
+	local_hostile_movement_speed = -0.20
+	local_friendly_movement_speed = -0.20
+
+	picture = "monsoon_mild"
+}
+
+normal_monsoon = {
+	local_hostile_attrition = 2
+	local_hostile_movement_speed = -0.25
+	local_friendly_movement_speed = -0.25
+
+	picture = "monsoon_normal"
+}
+
+severe_monsoon = {
+	local_hostile_attrition = 3
+	local_hostile_movement_speed = -0.50
+	local_friendly_movement_speed = -0.50
+
+	picture = "monsoon_severe"
+}
+
 blockaded = {
 	regiment_recruit_speed = 0.2
 	ship_recruit_speed = 0.2
@@ -356,6 +380,17 @@ core = {
 non_core = {
 }
 
+territory_core = {
+	local_tax_modifier = 0.75				#90% more in a core
+	local_manpower_modifier = 0.75			#75% more in a core
+	local_sailors_modifier = 0.75
+	local_missionary_strength = -0.02
+}
+
+territory_non_core = {
+	local_missionary_strength = -0.02
+}
+
 march_bonus = {
 	# global_manpower_modifier = 0.25
 	# land_forcelimit_modifier = 0.30
@@ -370,17 +405,17 @@ same_culture_group = {
 	local_manpower_modifier = -0.4
 	local_sailors_modifier = -0.25
 	local_unrest = 2
-	local_amount_of_banners = -0.15
+	local_amount_of_banners = -0.25
 	local_years_of_nationalism = 5
 }
 
 non_accepted_culture = {
-	local_tax_modifier = -0.5	
+	local_tax_modifier = -0.5
 	local_missionary_strength = -0.015
 	local_manpower_modifier = -0.9
 	local_sailors_modifier = -0.5
-	local_unrest = 5
-	local_amount_of_banners = -0.25
+	local_unrest = 3
+	local_amount_of_banners = -0.5
 	local_years_of_nationalism = 10
 }
 
@@ -481,6 +516,7 @@ local_autonomy_multiplicative = {
 	naval_forcelimit_modifier = -1.0 # Misleading, only used to avoid errors when applying effect of Estates in code. 
 	local_missionary_strength = -0.02
 	local_culture_conversion_cost = 0.5
+	local_build_cost = 0.5
 }
 
 local_autonomy = {
@@ -581,9 +617,7 @@ ai_nation = {
 
 
 war_taxes = {
-	# land_maintenance_modifier = -0.15
-	# naval_maintenance_modifier = -0.15
-	# possible_mercenaries = 0.05
+	fac_nobles_influence = 0.1
 	global_tax_modifier = 0.25
 	global_unrest = 3
 }
@@ -597,12 +631,9 @@ positive_stability = {
 	global_unrest = -1					#-1% revolt risk each step
 	global_tax_modifier = 0.05
 	global_missionary_strength = 0.005
-	# temples_influence = 0.02
-	# mr_aristocrats_influence = 0.03
-	# rr_jacobins_influence = 0.03
 	stability_cost_modifier = 0.50
 	# monthly_fervor_increase = 1
-	# devotion = 0.5
+	devotion = 0.5
 	yearly_corruption = -0.02
 	global_institution_spread = 0.05
 	yearly_harmony = 0.2
@@ -610,6 +641,7 @@ positive_stability = {
 	meritocracy = 0.1
 	max_absolutism = 5
 	liberty_desire_from_subject_development = -0.1
+	fac_democrats_influence = 0.05
 }
 
 negative_stability = {
@@ -622,6 +654,12 @@ negative_stability = {
 	monthly_militarized_society = 0.025
 	liberty_desire_from_subject_development = -0.05
 	meritocracy = 0.1
+	fac_oligarchs_influence = -0.1
+	fac_monarchists_influence = -0.1
+}
+
+privateering = {
+	pr_captains_influence = 0.1
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
@@ -703,12 +741,13 @@ bankruptcy = {
 
 
 war = {
-	# rr_girondists_influence = 0.15
+	devotion = -0.5
 	monthly_militarized_society = 0.05
 }
 
 peace = {
 	war_exhaustion = -0.1
+	devotion = 0.25
 	# monthly_fervor_increase = 1
 	# global_autonomy = -0.1
 	# global_institution_spread = 0.1
@@ -728,21 +767,19 @@ call_for_peace = {
 }
 
 war_exhaustion = {
+	devotion = -1
+	legitimacy = -1
 	global_unrest = 1
 	global_regiment_recruit_speed = 0.02
 	global_ship_recruit_speed = 0.02
 	core_creation = 0.03
-	# temples_influence = -0.05
-	# mr_aristocrats_influence = -0.05
-	# rr_girondists_influence = -0.05
-	# rr_royalists_influence = 0.05
 	manpower_recovery_speed = -0.01
 	sailors_recovery_speed = -0.01
 	siege_ability = -0.01
 	# global_trade_goods_size_modifier = -0.02
 	yearly_corruption = 0.03
 	monthly_militarized_society = -0.1
-	fac_democrats_influence = 0.02
+	fac_democrats_influence = 0.05
 }
 
 doom = {
@@ -758,7 +795,7 @@ authority = {
 
 regency_council = {
 	legitimacy = -2
-	fac_democrats_influence = 0.05
+	fac_nobles_influence = 0.2
 }
 
 trade_efficiency = {
@@ -816,40 +853,24 @@ positive_piety = { #As of 1.23 Legalism in vanilla
 defender_of_faith = {
 	land_morale = 0.1
 	naval_morale = 0.1
-	# technology_cost = 0.05
-	war_exhaustion = -0.025					#quicker recovery
-	# papal_influence = 1
-	prestige = 1							#1% extra prestige yearly
-	# missionaries = 1
-	# devotion = 0.5
+	war_exhaustion = -0.025			
+	prestige = 1	
 
 }
 
 emperor = {
-	spy_offence = 0.05					#minor bonus on spies.
-	advisor_pool = 1
-	diplomatic_upkeep = 1
-	free_leader_pool = 1
-	prestige = 1
 }
 
-states_in_hre = {							#bonuses for each non-free city with capital in HRE.. as emperor
-	land_forcelimit	= 0.25					#each state increases forcelimit by 0.5
-	global_manpower = 0.5					#each gives 0.5 MP to the emperor.
+states_in_hre = {							
 }
 
-free_cities_in_hre = {							#bonuses for each free city in the HRE.. as emperor
-	global_tax_income = 2				
-	global_manpower = 1	
-	land_forcelimit	= 0.5
+free_cities_in_hre = {		
 }
 
 free_city_in_hre = {
-	global_tax_income = 3
-	diplomatic_reputation = 1
 }
 
-member_in_hre = {				
+member_in_hre = {
 	diplomatic_reputation = 1
 }
 
@@ -866,14 +887,7 @@ num_of_marriages = {
 }
 
 num_of_provinces = {
-	# monthly_militarized_society = -0.015
-
-	ae_impact = 0.0025
-	fac_oligarchs_influence = 0.003
-	land_morale = -0.001
-	inflation_action_cost = 0.005
-	war_exhaustion_cost = 0.005
-	horde_unity = -0.01
+	war_exhaustion_cost = 0.002
 }
 
 # Multiplied by Development
@@ -895,10 +909,7 @@ legitimacy = {
 	# tolerance_heathen = 2
 	# tolerance_heretic = 2
 	diplomatic_reputation = 2
-	# vassal_income = 0.1
-	# monthly_militarized_society = 0.05
-	# max_absolutism = 20
-	fac_monarchists_influence = 0.1
+	fac_monarch_influence = 0.1
 }
 
 #Multiplied by current Horde Unity - 50
@@ -918,7 +929,6 @@ devotion = {
 	# prestige = 2
 	global_tax_modifier = 0.2
 	production_efficiency = 0.2
-	fac_oligarchs_influence = 1
 }
 
 # Multiplied by current meritocracy - 50
@@ -944,6 +954,7 @@ corruption = {
 	devotion = -10
 	reduced_liberty_desire = -100
 	max_absolutism = -100
+	fac_monarch_influence = -0.25
 }
 
 root_out_corruption = {
@@ -960,7 +971,7 @@ recovery_motivation = {
 	interest = -2
 	horde_unity = 10
 	land_morale = 0.25
-	fac_monarchists_influence = 0.02
+	fac_monarchists_influence = 1.0
 }
 
 militarized_society = {
@@ -1021,6 +1032,30 @@ over_extension = {
 	global_autonomy = 0.1
 }
 
+territory_very_easy_difficulty = { # Penalties for territories on very easy difficulty
+
+}
+
+territory_easy_difficulty = { # Penalties for territories on easy difficulty
+	yearly_corruption = 0.01
+}
+
+territory_normal_difficulty = { # Penalties for territories on normal difficulty
+	yearly_corruption = 0.02
+}
+
+territory_hard_difficulty = { # Penalties for territories on hard difficulty
+	yearly_corruption = 0.02
+}
+
+territory_very_hard_difficulty = { # Penalties for territories on very hard difficulty
+	yearly_corruption = 0.02
+}
+
+territory_ai_difficulty = { #Penalties for territories owned by AI regardless of difficulty.
+	yearly_corruption = 0.02
+}
+
 prestige = {
 	global_trade_power = 0.15			#+15/-15 total bonus from prestige.
 	land_morale = 0.2
@@ -1033,7 +1068,6 @@ prestige = {
 	ae_impact = -0.2
 	# embracement_cost = -0.1
 	technology_cost = -0.1
-	fac_monarchists_influence = 0.05
 	monthly_splendor = 1
 }
 
@@ -1046,40 +1080,30 @@ no_debate_in_parliament = {
 republican_tradition = {
 	global_unrest = -3
 	# rr_jacobins_influence = 0.1
-	fac_democrats_influence = 0.02
+	fac_democrats_influence = 0.05
+	fac_oligarchs_influence = 0.03
 }
 
 inverse_republican_tradition = {
 	stability_cost_modifier = 2.0
 	# rr_jacobins_influence = -0.1
 	yearly_corruption = 0.05
-	fac_oligarchs_influence = 0.01
-	fac_monarchists_influence = 0.01
+	fac_oligarchs_influence = 0.02
+	fac_monarchists_influence = 0.05
 }
 
 
 curia_controller = {
-	diplomats = 1							#1 extra diplomat as curia controller
-	prestige = 1							#1% extra prestige yearly
-	stability_cost_modifier = -0.1			#10% cheaper stability
-	advisor_pool = 2
-	advisor_cost = -0.2
-	free_leader_pool = 1
-	ae_impact = -0.2
-	technology_cost = -0.05
+
 }
 
 religious_unity = {
 	monthly_fervor_increase = 1
-	# max_absolutism = 5
 }
 
 inverse_religious_unity = {
 	stability_cost_modifier = 0.5		#more expensive to recover stability
 	global_unrest = 3
-	# church_power_modifier = -1
-	# devotion = -1
-	# yearly_corruption = 0.1
 }
 
 total_occupation = {
@@ -1160,20 +1184,16 @@ in_golden_era = {
 
 absolutism = {
 	administrative_efficiency = 0.5
-	# discipline = 0.05
-	# core_decay_on_your_own = -0.5
+	reform_progress_growth = 1
 	production_efficiency = 0.25
 	global_tax_modifier = 0.25
 	inflation_action_cost = -0.25
 	war_exhaustion_cost = -0.25
 	global_prov_trade_power_modifier = 0.25
-	stability_cost_modifier = -0.25
 	global_spy_defence = 0.25
 	land_forcelimit_modifier = 0.25
-	manpower_recovery_speed = 0.25
 	naval_forcelimit_modifier = 0.25
 	province_warscore_cost = -0.25
-	culture_conversion_cost = -0.25
 	state_maintenance_modifier = 1
 }
 
@@ -1189,13 +1209,6 @@ high_army_professionalism = {
 	fire_damage = 0.1
 	shock_damage = 0.1
 	siege_ability = 0.25
-	fire_damage_received = -0.1
-	shock_damage_received = -0.1
-	land_attrition = -0.25
-}
-
-streltsy_modifier = {
-	# stability_cost_modifier = 1.0
 }
 
 power_projection = {
@@ -1231,14 +1244,9 @@ trade_company_dominant = {
 
 
 large_colonial_nation = {
-	merchants = 1
-	global_trade_power = 0.05
-	naval_forcelimit = 10
-	# land_forcelimit = 5
 }
 
 march_subject = {
-	land_forcelimit = 2
 }
 
 vassal_subject = {
@@ -1253,14 +1261,8 @@ union_subject = {
 
 all_nations = {
 	global_tax_income = 12
-	land_forcelimit	= 6
+	land_forcelimit	= 4
 	naval_forcelimit = 12
-}
-
-indep_nation = { # does not appear in the vanilla file, maybe deleted since 1.25
-	global_tax_income = 12
-	land_forcelimit	= 3
-	naval_forcelimit = 6
 }
 
 subject_nation = {
@@ -1283,48 +1285,24 @@ maintained_forts = {
 }
 
 gov_rank_1 = {
-	min_autonomy = 50
-	possible_condottieri = -1.0
-	cav_to_inf_ratio = -0.15
+	
 }
 
 gov_rank_2 = {
-	# diplomats = 1
-	# max_states = 5
-	diplomatic_upkeep = 1
-	possible_condottieri = -0.20
+	
 }
 
 gov_rank_3 = {
-	diplomats = 1
-	free_leader_pool = 1
-	max_states = 5
-	# max_absolutism = 5
-	diplomatic_upkeep = 3
-	reduced_liberty_desire = 10
-	possible_condottieri = -0.40
-	merchants = 1
+	
 }
 
 # for mod support...
 gov_rank_4 = {
-	diplomatic_upkeep = 6
-	diplomats = 2
-	max_states = 10
-	reduced_liberty_desire = 15
-	possible_condottieri = -0.60
-	free_leader_pool = 1
-	merchants = 1
+	
 }
 
 gov_rank_5 = {
-	diplomatic_upkeep = 9
-	diplomats = 3
-	max_states = 15
-	reduced_liberty_desire = 30
-	possible_condottieri = -0.8
-	free_leader_pool = 1
-	merchants = 1
+	
 }
 
 gov_rank_6 = {
@@ -1345,7 +1323,7 @@ gov_rank_10 = {
 
 # For autonomy mechanics
 autonomy_increased = {
-	local_unrest = -5
+	local_unrest = -10
 }
 
 autonomy_decreased = {
@@ -1416,34 +1394,6 @@ in_trade_league = {
 
 tutorial_colonial_range = {
 	range = 0.1
-}
-
-
-########################################
-# For Dutch Mechanics in vanilla
-# For Oriental Monarchy in IU
-########################################
-
-# Tolerance
-statists = {
-	# naval_forcelimit_modifier = 0.10
-	# global_trade_power = 0.05
-	# republican_tradition = 1
-	advisor_cost = -0.2
-	years_of_nationalism = -5
-	promote_culture_cost = -0.5
-	min_autonomy = 10
-}
-
-# Intolerance
-orangists = {
-	# land_forcelimit_modifier = 0.25
-	# stability_cost_modifier = -0.10
-	# republican_tradition = -1
-	legitimacy = 1
-	global_spy_defence = 0.25
-	tolerance_heathen = -1
-	tolerance_heretic = -1
 }
 
 ########################################
@@ -1664,55 +1614,66 @@ invite_minorities_modifier = {
 # Religious Schools
 ########################################
 
+########################################
+# Religious Schools
+########################################
+hanafi_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	adm_tech_cost_modifier = -0.05
+}
 
-hellenic_type_modifier = {
+hanbali_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	idea_cost = -0.025
+	ae_impact = -0.1
 }
-north_pagan_type_modifier = {
+
+maliki_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	land_morale = 0.05
+	development_cost = -0.1
 }
-semitic_type_modifier = {
+
+shafii_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	global_unrest = -1
+	merchants = 1
 }
-nomad_type_modifier = {
+
+ismaili_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	cavalry_cost = -0.1
+	horde_unity = 1
+	legitimacy = 1
+	republican_tradition = 0.5
+	devotion = 1
 }
-sun_type_modifier = {
+
+jafari_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	discipline = 0.05
+	shock_damage = 0.1
 }
-balkan_type_modifier = {
+
+zaidi_scholar_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	loot_amount = 0.15
-}
-egyptian_type_modifier = {
-	religion_sub_modifier = yes # Will make icon placed next to religion modifier
-	religion = yes
-	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
-	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	stability_cost_modifier = -0.1
+	shock_damage_received = -0.1
 }
 
 ########################################
@@ -1743,4 +1704,26 @@ innovativeness = {
 	navy_tradition_decay = -0.02
 	production_efficiency = 0.2
 	diplomatic_reputation = 0.5
+}
+
+rajput_regiment = {
+	drill_decay_modifier = -0.25
+	discipline = 0.05
+}
+
+raiding_parties_modifier = {
+	
+}
+
+serfs_recieved_by_cossacks = {
+	
+}
+
+cossacks_modifier = {
+	
+}
+
+streltsy_modifier = {
+	land_morale = -0.25
+	stability_cost_modifier = 1.0
 }

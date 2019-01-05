@@ -38,13 +38,13 @@ pretender_rebels = {
 		modifier = {
 			factor = 0
 			owner = {
-				NOT = { num_of_cities = 3 }
+				NOT = { num_of_cities = 2 }
 			}
 		}
 		modifier = {
 			factor = 0
 			owner = {
-				government = spartan_monarchy
+				has_reform = spartan_monarchy
 			}
 		}
 		modifier = {
@@ -58,7 +58,7 @@ pretender_rebels = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 0.5
 			owner = {
 				government = republic
 				#aristocracy_ideas = 1
@@ -68,7 +68,7 @@ pretender_rebels = {
 			factor = 5.0
 			owner = {
 				government = republic
-				NOT = { republican_tradition = 0.40 }
+				NOT = { republican_tradition = 40 }
 			}
 		}	
 		modifier = {
@@ -78,11 +78,7 @@ pretender_rebels = {
 		modifier = {
 			factor = 2
 			owner = {
-				OR = {
 					culture_group = indian_group
-					culture_group = shauraseni
-					culture_group = maharashtri
-				}
 			}
 		}
 		modifier = {
@@ -134,14 +130,14 @@ pretender_rebels = {
 	 		}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.85
 			owner = {
 				government = monarchy
 				legitimacy = 66
 			}
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			owner = {
 				government = monarchy
 				legitimacy = 75
@@ -151,6 +147,13 @@ pretender_rebels = {
 			factor = 2.5
 			owner = {
 				is_tribal = yes
+			}
+		}
+		modifier = {
+			factor = 5
+			owner = {
+				has_reform = greek_polis_reform
+				NOT = { has_country_modifier = polis_tyrannis_modifier }
 			}
 		}
 	}
@@ -214,27 +217,25 @@ pretender_rebels = {
 			limit = {
 				NOT = {
 					OR = {
-						government = despotic_monarchy
-						government = spartan_monarchy
-						government = iberian_monarchy
-						government = greek_polis	
-						government = greek_polis_democracy	
-						government = greek_polis_tyrannis
-						government = principate
-						government = epirote_monarchy
-						government = bureaucratic_monarchy
-						government = chinese_feudalism
-						government = diadochi_monarchy
+						has_reform = greek_polis_reform
+						has_reform = spartan_monarchy_reform
 						is_tribal = no
 						is_nomad = no
 					}
 				}
 			}
-			change_government = REB 
+			change_government = monarchy
+			add_government_reform = despotism_reform
+			
 		}
 		if = {
 			limit = { has_heir = yes }
 			kill_heir = yes
+		}
+		if = { 
+			limit = { has_reform = greek_polis_reform }
+			add_faction_influence = { faction = fac_monarchists influence = 50 }
+			country_event = greek_polis.1
 		}
 		define_ruler = {
 			rebel = yes

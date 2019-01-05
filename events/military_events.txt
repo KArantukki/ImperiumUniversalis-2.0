@@ -311,7 +311,6 @@ country_event = {
 
 	option = {
 		name = "military.7.a"
-		ai_chance = { factor = 70 }
 			tooltip = {
 			random_owned_province = {
 				limit = {

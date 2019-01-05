@@ -1,0 +1,87 @@
+
+monarchy_mechanic = {
+	monarchy = yes
+	heir = yes
+	queen = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+}
+
+# level 1
+
+despotism_reform = {
+	icon = "despot_icon"
+	allow_normal_conversion = yes
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		global_tax_modifier = 0.1 
+		fac_monarch_influence = 0.05
+	}
+	factions_frame = 9
+	factions = {
+		fac_nobles
+		fac_monarch
+	}
+}
+aristocratic_monarchy_reform = {
+	icon = "noble_monarchy"
+	allow_normal_conversion = yes
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		free_leader_pool = 1
+		fac_nobles_influence = 0.05 
+	}
+	factions_frame = 9
+	factions = {
+		fac_nobles
+		fac_monarch
+	}
+}
+epirote_monarchy_reform = {
+	icon = "epirus_kingdom"
+	allow_normal_conversion = yes
+	legacy_equivalent = epirote_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	potential = {
+		TAG = EPI
+	}
+	modifiers = {
+		global_manpower_modifier = 0.25
+	}
+	factions = {
+		molossians
+		thesprotians
+		chaonians	
+	}
+}
+assyrian_administration_reform = {
+	potential = {
+		OR = {
+			has_reform = assyrian_administration_reform
+			have_had_reform = assyrian_administration_reform
+			AND = {
+				government_rank = 3
+				any_owned_province = {
+					culture_group = akkadian_group
+				}
+			}
+		}
+	}
+	icon = "assyrian_king"
+	allow_normal_conversion = yes
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	
+	modifiers = {
+		max_states = 5
+	}
+}
+
+
+# level 2

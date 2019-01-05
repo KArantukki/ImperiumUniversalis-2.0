@@ -15,6 +15,7 @@ country_event = {
 	trigger = {
 		tag = PRT
 		primary_culture = parthian
+		government = monarchy
 		is_year = 500
 		NOT = { is_year = 525 }
 	}

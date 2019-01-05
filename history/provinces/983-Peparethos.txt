@@ -1,13 +1,13 @@
-add_core = ATH
-owner = ATH
-controller = ATH
-culture = ionic
+add_core = SKY
+owner = SKY
+controller = SKY
+culture = aeolic
 religion = greek_religion
 hre = no
 base_tax = 0
 base_production = 0
 base_manpower = 1
-trade_goods = fish
+trade_goods = wine
 capital = ""
 is_city = yes
 

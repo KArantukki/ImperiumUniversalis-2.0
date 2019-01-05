@@ -8,6 +8,7 @@ construction_lvl1 = {
 		build_cost = -0.05
 		build_time = -0.05
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -142,6 +143,7 @@ construction_lvl2 = {
 		build_time = -0.05
 		defensiveness = 0.1
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -262,6 +264,7 @@ construction_lvl3 = {
 		build_cost = -0.05
 		production_efficiency = 0.05
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		OR = {
@@ -370,6 +373,7 @@ construction_lvl4 = {
 		build_time = -0.05
 		siege_ability = 0.1
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no
@@ -454,6 +458,7 @@ construction_lvl5 = {
 		build_cost = -0.05
 		production_efficiency = 0.05
 	}
+	trade_company_efficiency = 0.0
 
 	history = {
 		always = no
@@ -538,6 +543,7 @@ construction_lvl6 = {
 		siege_ability = 0.1
 		defensiveness = 0.1
 	}
+	trade_company_efficiency = 0.0
 
 
 	history = {

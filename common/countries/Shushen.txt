@@ -38,7 +38,7 @@ monarch_names = {
 	"Jiandi" = -1
 	"Qingdu" = -1
 	"Changyi" = -1
-
+}
 leader_names = {
 			"Aangang Hala" "Amuru Hala" "Dahuri Hala" "Giorca Hala" "Jobalut Hala" "Malangga Hala" "Nanfulu Hala" "Sirgiya Hala" "Sirtu Hala"
 }

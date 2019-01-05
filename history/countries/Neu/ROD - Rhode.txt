@@ -1,4 +1,5 @@
-government = greek_polis
+government = republic
+add_government_reform = greek_polis_reform
 government_rank = 1
 #mercantilism = 0.25
 technology_group = greek
@@ -9,7 +10,7 @@ historical_friend = NIC
 historical_friend = KYM
 historical_friend = EMQ
 capital = 44
-religious_school = hellenic_type
+#religious_school = hellenic_type
 
 	##fac_oligarchs = 60
 	##fac_monarchists = 35

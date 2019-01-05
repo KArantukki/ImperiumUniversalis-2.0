@@ -227,7 +227,7 @@ country_event = {
 	}
 }
 ########################################################################################
-# birth of democracy
+# Solon
 ########################################################################################
 country_event = {
 	id = greek.2
@@ -237,21 +237,15 @@ country_event = {
 	fire_only_once = yes
 	major = yes
 	
-	
 	trigger = {
-				is_year = 220.1.1
-		NOT = { started_in = 244.1.1  }
-		NOT = { has_global_flag = birth_of_democracy  }
-		culture_group = hellenic
-		government = greek_polis
+		has_reform = greek_polis_reform
+		has_country_modifier = polis_oligarchy_modifier
+		NOT = { stability = 1 } 
 		
-		OR = {
-			faction_influence = {
-				faction = fac_democrats
-				influence = 40
-			}
-			faction_in_power = fac_democrats
-		}
+		is_year = 155.1.1
+		NOT = { started_in = 160.1.1  }
+		NOT = { has_global_flag = solons_reform_flag  }
+		
 			capital_scope = {
 				OR = {
 					region = greek_region
@@ -262,14 +256,22 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 80
 		modifier = {
 				factor = 0.75
 				TAG = ATH
 			}
 		modifier = {
-				factor = 0.85
-				NOT = { legitimacy = 65 }
+				factor = 0.5
+				NOT = { stability = 0 }
+			}
+		modifier = {
+				factor = 0.5
+				total_development = 12
+			}
+		modifier = {
+				factor = 0.5
+				is_year = 165
 			}
 			
 	}
@@ -277,36 +279,23 @@ country_event = {
 	option = {
 		name = "greek.2.a"
 		set_global_flag = birth_of_democracy
-		add_faction_influence = { faction = fac_democrats influence = 20 }
-		add_legitimacy = 10
-		every_country = {
-				limit = {
-					government = greek_polis
-				}
-				country_event = {
-								id = greek.3
-								days = 30
-							}
-			}
-	}
-}
-########################################################################################
-# democrats on the rise
-########################################################################################
-country_event = {
-	id = greek.3
-	title = "greek.3.t"
-	desc = "greek.3.d"
-	picture = senat
-	is_triggered_only = yes
-	
-	trigger = {
-		government = greek_polis	
-	}
-	
-	option = {
-		name = "greek.3.a"
+		set_global_flag = solons_reform_flag
+		add_stability = 1
+		add_republican_tradition = 20 
 		add_faction_influence = { faction = fac_democrats influence = 15 }
+			add_country_modifier = { 
+				name = solons_reform
+				desc = SOLONS_REFORMS_DESC
+				duration = -1
+			}
+			define_ruler = {
+				name = "Solon"
+				dynasty = "Kodrosoi"
+				adm = 6
+				dip = 4
+				mil = 3
+				age = 50
+			}
 	}
 }
 ########################################################################################
@@ -358,22 +347,17 @@ country_event = {
 	
 	
 	trigger = {
-		tag = ATH
 		has_country_modifier = solons_reform
-		OR = {
-			government = greek_polis	
-			government = greek_polis_democracy	
-			government = greek_polis_tyrannis	
-		}
+		has_reform = greek_polis_reform
 		faction_influence = {
 				faction = fac_democrats
 				influence = 40
 			}
-		is_year = 250
+		is_year = 240
 	}
 	
 	mean_time_to_happen = {
-		months = 80
+		months = 60
 	}
 	
 	option = {

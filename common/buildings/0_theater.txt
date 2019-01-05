@@ -16,7 +16,7 @@
 
 
 small_theater = {		
-	cost = 100
+	cost = 200
 	time = 24
 	#make_obsolete = 
 	modifier = {
@@ -28,7 +28,7 @@ small_theater = {
 	}
 }
 big_theater = {		
-	cost = 200
+	cost = 400
 	time = 24
 	make_obsolete = small_theater
 	modifier = {
@@ -40,7 +40,7 @@ big_theater = {
 	}
 }
 great_theater = {		
-	cost = 300
+	cost = 600
 	time = 24
 	make_obsolete = big_theater
 	modifier = {
@@ -52,12 +52,12 @@ great_theater = {
 	}
 }
 huge_theater = {		
-	cost = 500
+	cost = 1000
 	time = 24
 	make_obsolete = great_theater
 	modifier = {
 		local_tax_modifier = 0.5
-		local_unrest = -5
+		local_unrest = -4
 	}
 	ai_will_do = {
 		factor = 1.0

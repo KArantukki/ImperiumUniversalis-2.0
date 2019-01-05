@@ -60,7 +60,7 @@ spriteTypes = {
 		noOfFrames = 5
 	}	
 	
-	spriteType = {   
+	spriteType = {
 		name = "GFX_statist_vs_orangist_overlay"
 		texturefile = "gfx/interface/statist_vs_orangist_overlay.dds"
 	}
@@ -69,6 +69,7 @@ spriteTypes = {
 		name = "GFX_support_heir_button"
 		texturefile = "gfx/interface/support_heir_button.dds"
 	}
+
 
 	spriteType = {
 		name = "GFX_abdicate_button"
@@ -221,11 +222,36 @@ spriteTypes = {
 		name = "GFX_culture_name_sort"
 		texturefile = "gfx//interface//culture_name_sort.dds"
 	}
+	spriteType = {
+		name = "GFX_culture_name_sort_long"
+		texturefile = "gfx//interface//culture_name_sort_long.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_culture_bonus_sort"
+		texturefile = "gfx//interface//culture_bonus_sort.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_culture_slot_mughals"
+		texturefile = "gfx//interface//culture_slot_mughals.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_culture_slot_mughals_assimilated"
+		texturefile = "gfx//interface//culture_slot_mughals_assimilated.dds"
+	}	
+	
 	
 	spriteType = {
 		name = "GFX_culture_dev_sort"
 		texturefile = "gfx//interface//culture_dev_sort.dds"
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_culture_dev_sort_big"
+		texturefile = "gfx//interface//culture_dev_sort_big.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_monarch_heir_crown_icon"

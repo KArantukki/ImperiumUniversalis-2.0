@@ -74,7 +74,8 @@ country_decisions = {
 				limit = {
 					government = tribal	
 				}
-				#change_government = despotic_monarchy
+				change_government = republic
+				add_government_reform = league_reform
 			}
 				belgica_region = {
 					limit = {
@@ -100,8 +101,8 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			total_development = 75
-
+			total_development = 45
+			prestige = 25
 		}
 		effect = {
 			change_tag = NOC
@@ -116,9 +117,22 @@ country_decisions = {
 				limit = {
 					government = tribal	
 				}
-				#change_government = despotic_monarchy
+				change_government = republic
+				add_government_reform = league_reform
 			}
-				noricum = {
+				alpes_noricae = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = NOC
+				}
+				vindobona_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = NOC
+				}
+				noricum_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
@@ -141,7 +155,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			total_development = 75
+			total_development = 40
 		}
 		effect = {
 			change_tag = RAE
@@ -151,20 +165,13 @@ country_decisions = {
 				}
 				set_government_rank = 3
 			}
-			
-			if = {
-				limit = {
-					government = tribal	
-				}
-				#change_government = despotic_monarchy
-			}
-				west_raetia = {
+				raetia_prima = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
 					add_permanent_claim = RAE
 				}
-				east_raetia = {
+				raetia_secunda = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}
@@ -191,7 +198,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war =  no
-			total_development = 130
+			total_development = 80
 		}
 		effect = {
 			change_tag = BRT
@@ -200,13 +207,6 @@ country_decisions = {
 					NOT = { government_rank = 3 }		
 				}
 				set_government_rank = 3
-			}
-			
-			if = {
-				limit = {
-					government = tribal	
-				}
-				#change_government = despotic_monarchy
 			}
 				britannia_inferior = {
 					limit = {
@@ -248,12 +248,6 @@ country_decisions = {
 				set_government_rank = 3
 			}
 			
-			if = {
-				limit = {
-					government = tribal	
-				}
-				#change_government = despotic_monarchy
-			}
 				caledonia = {
 					limit = {
 						NOT = { owned_by = ROOT }

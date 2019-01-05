@@ -57,7 +57,7 @@ library = {
 
 	modifier = {
 		innovativeness_gain = 0.025
-		local_state_maintenance_modifier = -0.25
+		local_state_maintenance_modifier = -0.1
 	}
 	ai_will_do = {
 		factor = 1.0

@@ -16,15 +16,15 @@
 
 
 small_shipyard = {
-	cost = 200
+	cost = 150
 	time = 12
 	trigger = {
 		has_port = yes
 	}
 	modifier = {
-		naval_forcelimit = 5
 		local_ship_repair = 0.15
 		ship_recruit_speed = -0.15
+		local_ship_cost = -0.15
 	}
 	
 	ai_will_do = {
@@ -32,7 +32,7 @@ small_shipyard = {
 	}
 }
 big_shipyard = {
-	cost = 400
+	cost = 300
 	time = 12
 	make_obsolete = small_shipyard
 	
@@ -40,9 +40,9 @@ big_shipyard = {
 		has_port = yes
 	}
 	modifier = {
-		naval_forcelimit = 10
 		local_ship_repair = 0.3
 		ship_recruit_speed = -0.3
+		local_ship_cost = -0.3
 	}
 	
 	ai_will_do = {

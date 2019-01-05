@@ -55,11 +55,11 @@ noble_rebels = {
 		}
 		modifier = {
 			factor = 0.5
-			owner = { government = oligarchic_monarchy }
+			owner = { has_reform = oligarchy_reform }
 		}
 		modifier = {
 			factor = 0.25
-			owner = { government = greek_polis }
+			owner = { has_reform = greek_polis_reform }
 		}
 		modifier = {
 			factor = 0.01
@@ -71,10 +71,6 @@ noble_rebels = {
 				government = republic
 				republican_tradition = 80
 			}
-		}
-		modifier = {
-			factor = 5
-			has_estate = estate_nobles
 		}
 		modifier = {
 			factor = 2.5
@@ -157,24 +153,6 @@ noble_rebels = {
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
-				has_estate = estate_nobles
-				NOT = {
-					has_estate_influence_modifier = {
-						estate = estate_nobles
-						modifier = EST_VAL_NOBLES_WON_REVOLT
-					}
-				}
-			}
-			add_estate_influence_modifier = {
-				estate = estate_nobles
-				desc = EST_VAL_NOBLES_WON_REVOLT
-				influence = 15
-				duration = 3650
-			}
-		}
-		if = {
-			limit = {
-				has_dlc = "The Cossacks"
 				has_estate = estate_clans
 				NOT = {
 					has_estate_influence_modifier = {
@@ -192,27 +170,23 @@ noble_rebels = {
 		}
 		if = {
 			limit = {
-				NOT = {					
-					OR = {
-						government = spartan_monarchy
-						government = iberian_monarchy
-						government = greek_polis	
-						government = greek_polis_democracy	
-						government = greek_polis_tyrannis
-						government = principate
-						government = epirote_monarchy
-						government = bureaucratic_monarchy
-						government = diadochi_monarchy
-						is_tribal = no
-						is_nomad = no
-					}
-				}
+				NOT = {	has_reform = greek_polis_reform }
+				NOT = {	has_reform = spartan_monarchy_reform }
+				NOT = {	government = tribal }
+				NOT = {	government = native }
 				NOT = { legitimacy = 50 }
 				NOT = { horde_unity = 50 }
 				NOT = { republican_tradition = 50 }
 				NOT = { devotion = 50 }
 			}
-			change_government = oligarchic_monarchy
+			change_government = monarchy
+			add_government_reform = aristocratic_monarchy_reform
+		}
+		if = {
+			limit = {
+				has_faction = fac_nobles
+			}
+			add_faction_influence = { faction = fac_monarch influence = 30 }
 		}
 		every_owned_province = {
 			limit = {
