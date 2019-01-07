@@ -1,10 +1,10 @@
 add_core = SX1
 add_core = GC4
-owner = SX1
-controller = SX1
+owner = GC4
+controller = GC4
 hre = no
-base_tax = 1
-base_production = 2
+base_tax = 0
+base_production = 0
 base_manpower = 2
 trade_goods = silver
 capital = "Nicopolis"

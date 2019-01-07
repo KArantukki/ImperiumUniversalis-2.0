@@ -1,7 +1,7 @@
 add_core = GZ3
 add_core = MDI
 owner = GZ3
-controller = GZ3
+controller = MDI
 hre = no
 base_tax = 0
 base_production = 0
