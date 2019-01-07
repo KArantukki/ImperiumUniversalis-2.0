@@ -333,8 +333,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1017;1013;sea;1393;-1;-1;-1;-1;IonianIsles
 1012;1011;sea;1393;-1;-1;-1;-1;IonianIsles
 1012;1013;sea;1393;1412;1323;1413;1326;IonianIsles
-1025;983;sea;1420;-1;-1;-1;-1;AegeanSea
-970;983;sea;1420;-1;-1;-1;-1;AegeanSea
 970;1025;sea;1420;-1;-1;-1;-1;AegeanSea
 921;919;sea;927;-1;-1;-1;-1;Africa
 

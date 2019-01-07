@@ -135,61 +135,6 @@ country_event = {
 	}
 }
 ########################################################################################
-# religious mix
-########################################################################################
-country_event = {
-	id = religion.5
-	title = "religion.5.t"
-	desc = "religion.5.d"
-	picture = sacrifice
-	is_triggered_only = yes
-
-	trigger = {
-		any_province = { religion = secondary }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	
-	option = {
-		name = "religion.5.a"
-		random_province = {
-				limit = { 
-					religion = secondary
-				}
-				change_religion = owner
-			}
-			
-	}
-}
-########################################################################################
-# religious mix failed
-########################################################################################
-country_event = {
-	id = religion.6
-	title = "religion.6.t"
-	desc = "religion.6.d"
-	picture = civilwar
-	is_triggered_only = yes
-
-	trigger = {
-		any_province = { religion = secondary }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		
-	}
-	
-	option = {
-		name = "religion.6.a"
-		add_stability = -1
-			
-	}
-}
-########################################################################################
 # New Shrine
 ########################################################################################
 country_event = {

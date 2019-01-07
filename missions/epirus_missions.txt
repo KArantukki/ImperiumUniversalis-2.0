@@ -459,7 +459,7 @@ epi_missions_4 = {
 				}
 		}
 	}
-	mac_fall_of_theben = {
+	epi_fall_of_theben = {
 		icon = mission_thebens
 		#completed_by = 200.1.1
 		required_missions = {	epi_northern_greece }
@@ -484,7 +484,7 @@ epi_missions_4 = {
 			add_prestige = 10
 		}
 	}
-	mac_fall_of_athens = {
+	epi_fall_of_athens = {
 		icon = mission_athens
 		#completed_by = 200.1.1
 		required_missions = {	mac_fall_of_theben }
@@ -509,7 +509,7 @@ epi_missions_4 = {
 			add_prestige = 10
 		}
 	}
-	mac_fall_of_korinth = {
+	epi_fall_of_korinth = {
 		icon = mission_corinth
 		#completed_by = 200.1.1
 		required_missions = {	mac_fall_of_athens }

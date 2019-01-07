@@ -55,7 +55,7 @@ estate_allies = {
 	}	
 	
 	# Influence modifiers##############################################
-	base_influence = 10
+	base_influence = 4
 	
 	influence_modifier = {
 		desc = EST_VAL_WAR
@@ -63,6 +63,144 @@ estate_allies = {
 			is_at_war = yes
 		}		
 		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_AUXIL_10
+		trigger = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.1
+				}
+			NOT = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.2
+				}
+			}
+		}		
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_AUXIL_20
+		trigger = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.2
+				}
+			NOT = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.3
+				}
+			}
+		}		
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_AUXIL_30
+		trigger = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.3
+				}
+			NOT = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.4
+				}
+			}
+		}		
+		influence = 15
+	}
+	influence_modifier = {
+		desc = EST_VAL_AUXIL_40
+		trigger = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.4
+				}
+			NOT = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.5
+				}
+			}
+		}		
+		influence = 20
+	}
+	influence_modifier = {
+		desc = EST_VAL_AUXIL_50
+		trigger = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.5
+				}
+			NOT = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.6
+				}
+			}
+		}		
+		influence = 25
+	}
+	influence_modifier = {
+		desc = EST_VAL_AUXIL_60
+		trigger = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.6
+				}
+			NOT = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.7
+				}
+			}
+		}		
+		influence = 30
+	}
+	influence_modifier = {
+		desc = EST_VAL_AUXIL_70
+		trigger = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.7
+				}
+			NOT = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.8
+				}
+			}
+		}		
+		influence = 35
+	}
+	influence_modifier = {
+		desc = EST_VAL_AUXIL_80
+		trigger = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.8
+				}
+			NOT = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.9
+				}
+			}
+		}		
+		influence = 40
+	}
+	influence_modifier = {
+		desc = EST_VAL_AUXIL_90
+		trigger = {
+				has_global_modifier_value = {
+					which = development_cost
+					value = 0.9
+				}
+		}		
+		influence = 45
 	}
 	
 	# Loyalty modifiers ##############################################
@@ -154,6 +292,8 @@ estate_allies = {
 		}
 		
 		effect = {
+		custom_tooltip = auxiliary.tooltip
+		hidden_effect = {
 			capital_scope = {
 					streltsy_infantry = ROOT
 					if = {
@@ -301,6 +441,7 @@ estate_allies = {
 						streltsy_infantry = ROOT
 					}
 				}
+			}
 		}
 		
 		ai_will_do = {
@@ -328,7 +469,9 @@ estate_allies = {
 			always = yes
 		}
 		trigger = {
-			always = yes
+			any_owned_province = {
+				has_estate = estate_allies
+			}
 		}
 		
 		effect = {
@@ -444,7 +587,9 @@ estate_allies = {
 			always = yes
 		}
 		trigger = {
-			always = yes
+			any_owned_province = {
+				has_estate = estate_allies
+			}
 		}
 		
 		effect = {

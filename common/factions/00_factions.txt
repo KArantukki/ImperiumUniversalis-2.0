@@ -11,10 +11,6 @@ molossians =
 			owns = 1042
 			owns = 1038
 			owns = 1034
-			any_owned_province = {
-				is_core = MOL
-				culture = epirot
-			}
 		}
 	}
 	
@@ -34,10 +30,6 @@ thesprotians =
 			owns = 1040
 			owns = 1037
 			owns = 1036
-			any_owned_province = {
-				is_core = THP
-				culture = epirot
-			}
 		}
 	}
 	modifier = 
@@ -56,10 +48,6 @@ chaonians =
 			owns = 1043
 			owns = 1044
 			owns = 1039
-			any_owned_province = {
-				is_core = CHC
-				culture = epirot
-			}
 		}
 	}
 	

@@ -1,4 +1,4 @@
-add_core = SYI
+add_core = LUH
 add_core = OSR
 add_core = ASY
 owner = ASY

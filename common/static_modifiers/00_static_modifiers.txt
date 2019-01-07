@@ -1726,4 +1726,5 @@ cossacks_modifier = {
 streltsy_modifier = {
 	land_morale = -0.25
 	stability_cost_modifier = 1.0
+	development_cost = 1
 }

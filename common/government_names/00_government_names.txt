@@ -539,7 +539,7 @@ greek_oligarchy = {
 	
 	trigger = {
 				has_reform = oligarchy_reform
-				culture_group = hellenic 
+				culture_group = hellenic
 	}
 }
 
@@ -930,7 +930,13 @@ iberian_monarchy = {
 	}
 	
 	trigger = {
-		has_reform = iberian_society_reform
+		OR = {
+			has_reform = iberian_society_reform
+			AND = {
+				culture_group = iberian_group
+				government = monarchy
+			}
+		}
 	}
 }
 

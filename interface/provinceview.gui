@@ -3709,7 +3709,7 @@ guiTypes = {
 			listboxType = {
 				name = "institutions"
 				position = { x= 26 y = 178 }
-				size = { x = 256 y = 420 }
+				size = { x = 296 y = 420 }
 				Orientation = "UPPER_LEFT"
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"
@@ -3730,7 +3730,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "institution_close_button"
-				position = { x = 304 y = 123 }
+				position = { x = 354 y = 123 }
 				quadTextureSprite ="GFX_closebutton2"
 				clicksound = close_window
 				shortcut = "n"

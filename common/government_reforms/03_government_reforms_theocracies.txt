@@ -3,10 +3,13 @@ theocracy_mechanic = {
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
 	royal_marriage = no
-	religion = no
+	religion = yes
 	heir = yes
 	basic_reform = yes # = invisible/does not take up a slot
 	valid_for_nation_designer = no
+	modifiers = {
+		land_morale = 0.25
+	}
 }
 
 oligarchy_reform = {

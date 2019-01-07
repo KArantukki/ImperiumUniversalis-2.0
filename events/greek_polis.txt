@@ -564,6 +564,7 @@ country_event = {
 	
 	trigger = {
 		has_reform = greek_polis_reform
+		has_faction = fac_democrats
 		NOT = { faction_in_power = fac_democrats }
 	}
 	

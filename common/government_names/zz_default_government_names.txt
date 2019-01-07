@@ -58,10 +58,7 @@ default_tribe_kingdom = {
 	}
 	
 	trigger = {
-		OR = {
 				has_reform = tribal_kingdom_reform
-				has_reform = iberian_society_reform
-			}
 	}
 }
 
@@ -182,7 +179,7 @@ default_oligarchy = {
 	}
 	
 	trigger = {
-		government = theocracy
+			has_reform = oligarchy_reform
 	}
 }
 

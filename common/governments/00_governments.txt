@@ -148,8 +148,6 @@ republic = {
 	}
 }
 
-
-
 theocracy = {
 	color = { 75 170 75 }
 	basic_reform = theocracy_mechanic
