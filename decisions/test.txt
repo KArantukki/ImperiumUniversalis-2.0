@@ -3,11 +3,11 @@ country_decisions = {
 	 testtest = {
 		major = yes
 		potential = {
-			ai = yes
+			always = no
 		}
 		allow = {
 			capital_scope = {
-				writing_system = 100
+				province_has_center_of_trade = yes
 			}
 		}
 		effect = {

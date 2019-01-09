@@ -91,14 +91,6 @@ peasant_rebels = {
 				 devastation = 25
 		}
 		modifier = {
-			factor = 1.5
-			has_owner_culture = no
-		}
-		modifier = {
-			factor = 1.25
-			 has_owner_religion = no 
-		}
-		modifier = {
 			factor = 2.0
 			owner = {
 				yearly_corruption_increase = 0.001

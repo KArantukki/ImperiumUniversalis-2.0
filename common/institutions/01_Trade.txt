@@ -74,22 +74,6 @@ trade_lvl1 = {
 	embracement_speed = {
 		modifier = {
 			scale = yes
-			factor = 0.2
-			potential = {
-				province_has_center_of_trade = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_institution
-				OR = {
-					province_has_center_of_trade = yes
-				}
-				any_trade_node_member_province = { 
-					writing_system = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
 			factor = 0.5
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
@@ -252,22 +236,6 @@ trade_lvl2 = {
 	embracement_speed = {
 		modifier = {
 			scale = yes
-			factor = 0.2
-			potential = {
-				province_has_center_of_trade = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_institution
-				OR = {
-					province_has_center_of_trade = yes
-				}
-				any_trade_node_member_province = { 
-					writing_system = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
 			factor = 0.5
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
@@ -359,22 +327,6 @@ trade_lvl3 = {
 	embracement_speed = {
 		modifier = {
 			scale = yes
-			factor = 0.2
-			potential = {
-				province_has_center_of_trade = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_institution
-				OR = {
-					province_has_center_of_trade = yes
-				}
-				any_trade_node_member_province = { 
-					writing_system = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
 			factor = 0.4
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
@@ -454,22 +406,6 @@ trade_lvl4 = {
 	}
 
 	embracement_speed = {
-		modifier = {
-			scale = yes
-			factor = 0.2
-			potential = {
-				province_has_center_of_trade = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_institution
-				OR = {
-					province_has_center_of_trade = yes
-				}
-				any_trade_node_member_province = { 
-					writing_system = 100
-				}
-			}
-		}
 		modifier = {
 			scale = yes
 			factor = 0.4
@@ -553,22 +489,6 @@ trade_lvl5 = {
 	embracement_speed = {
 		modifier = {
 			scale = yes
-			factor = 0.2
-			potential = {
-				province_has_center_of_trade = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_institution
-				OR = {
-					province_has_center_of_trade = yes
-				}
-				any_trade_node_member_province = { 
-					writing_system = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
 			factor = 0.3
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_this_institution
@@ -642,22 +562,6 @@ trade_lvl6 = {
 	}
 
 	embracement_speed = {
-		modifier = {
-			scale = yes
-			factor = 0.2
-			potential = {
-				province_has_center_of_trade = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_institution
-				OR = {
-					province_has_center_of_trade = yes
-				}
-				any_trade_node_member_province = { 
-					writing_system = 100
-				}
-			}
-		}
 		modifier = {
 			scale = yes
 			factor = 0.3

@@ -6,6 +6,7 @@ technology_group = diadochi
 primary_culture = assyrian
 religion = mesopotamian_religion
 #religious_school = semitic_type
+add_accepted_culture = babylonian
 add_accepted_culture = syriac
 capital = 2372
 

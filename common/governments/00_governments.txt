@@ -47,8 +47,8 @@ monarchy = {
 			}
 			noble_privileges = {
 				reforms = {
-					levy_army_reform
-					standing_army_reform
+					early_feudalism_reform
+					empowered_monarch_reform
 				}
 			}
 			expanded_bureaucracy = {

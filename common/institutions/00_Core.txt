@@ -135,20 +135,6 @@ writing_system = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.1
-			potential = {
-				province_has_center_of_trade = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_institution
-				province_has_center_of_trade = yes
-				any_trade_node_member_province = { 
-					writing_system = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
 			factor = 0.05
 			custom_trigger_tooltip = {
 				tooltip = tooltip_has_upper_class
@@ -321,20 +307,6 @@ coin_usage = {
 				tooltip = tooltip_any_coast_border_province_has_embraced_institution
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					coin_usage = 100
-				}
-			}
-		}
-		modifier = {
-			scale = yes
-			factor = 0.2
-			potential = {
-				province_has_center_of_trade = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_center_of_trade_has_embraced_institution
-				province_has_center_of_trade = yes
-				any_trade_node_member_province = { 
 					coin_usage = 100
 				}
 			}
