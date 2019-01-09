@@ -174,7 +174,9 @@ country_event = {
 	}
 	
 }
+###########################
 # Election!Federation
+###########################
 country_event = {
 	id = elections.4
 	title = "elections.4.t"
@@ -182,54 +184,40 @@ country_event = {
 	picture = senat
 	
 	is_triggered_only = yes
-	trigger = { 
-		OR = {
-			has_reform = tribal_federation_reform
-			has_reform = germanic_tribal_kingdom_reform
+	trigger = {
+		has_reform = tribal_federation_reform
 		}
-	}
 	
 
 	option = {
-		name = "elections.4.a"	
-		ai_chance = { factor = 60 }
-		define_ruler = {
-			adm = 0
-			dip = 0
-			mil = 0
-			age = 30
+		name = "elections.3.a"	# Oligarchic Type
+		ai_chance = { factor = 35 }
+		define_heir = {		
+			age = 35
+			hidden = yes
 		}
-		add_absolutism = 2
-		if = {
-			limit = {
-				has_dlc = "The Cossacks"
-			}
-			add_estate_loyalty = {
-				estate = estate_clans
-				loyalty = -5
-			}
-		}
+		add_devotion = 5
+		
 	}
 	option = {
-		name = "elections.4.b"	
-		ai_chance = { factor = 40 }
-		define_ruler = {
-			adm = 2
-			dip = 2
-			mil = 2
-			age = 40
+		name = "elections.3.b"	# Democratic Type
+		ai_chance = { factor = 25 }
+		define_heir = {	
+			age = 30
+			hidden = yes
 		}
-		add_legitimacy = -10
-		if = {
-			limit = {
-				has_dlc = "The Cossacks"
-			}
-			add_estate_loyalty = {
-				estate = estate_clans
-				loyalty = 5
-			}
+		add_devotion = -5
+		
+	}
+	option = {
+		name = "elections.3.c"	# Tyrannic Type
+		ai_chance = { factor = 30 }
+		define_heir = {
+			age = 20
+			hidden = yes
 		}
+		add_devotion = 10
+		
 	}
 	
 }
-	

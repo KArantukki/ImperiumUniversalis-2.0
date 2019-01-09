@@ -25,6 +25,7 @@ historical_rival = BAB
 		}
 }
 145.8.10 = {
+	add_war_exhaustion = 5
 	monarch = {
 		name = "Ashur-uballit II"
 		dynasty = "of Assyria"

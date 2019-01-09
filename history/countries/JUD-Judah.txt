@@ -7,6 +7,8 @@ primary_culture = hebrew
 religion = jewish
 capital = 2277
 
+historical_rival = EGY
+historical_rival = PHI
 
 114.1.1 = {
 	monarch = {

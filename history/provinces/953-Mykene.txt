@@ -10,7 +10,7 @@ base_manpower = 2
 trade_goods = grain
 capital = ""
 is_city = yes
-estate = estate_preveliged_city
+estate = estate_privileged_city
 
 discovered_by = roman
 discovered_by = greek

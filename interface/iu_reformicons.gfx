@@ -227,6 +227,22 @@ spriteTypes = {
 		name = "government_reform_tribal_republic_reform"
 		texturefile = "gfx//interface//government_reform_icons//tribal_republic_reform.dds"
 	}
+	spriteType = {
+		name = "government_reform_pirates"
+		texturefile = "gfx//interface//government_reform_icons//pirates.dds"
+	}
+	spriteType = {
+		name = "government_reform_field_worker"
+		texturefile = "gfx//interface//government_reform_icons//field_worker.dds"
+	}
+	spriteType = {
+		name = "government_reform_artisan"
+		texturefile = "gfx//interface//government_reform_icons//artisan.dds"
+	}
+	spriteType = {
+		name = "government_reform_twelve_tables"
+		texturefile = "gfx//interface//government_reform_icons//twelve_tables.dds"
+	}
 	
 	
 }

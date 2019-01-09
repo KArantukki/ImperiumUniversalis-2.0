@@ -18,7 +18,7 @@ oligarchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	legacy_equivalent = oligarchic_monarchy
-	heir = no
+	heir = yes
 
 	modifiers = {
 		advisor_cost = -0.2

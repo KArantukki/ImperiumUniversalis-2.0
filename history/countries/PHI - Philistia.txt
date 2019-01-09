@@ -8,3 +8,5 @@ religion = punic_religion
 #religious_school = semitic_type
 capital = 2279
 
+historical_rival = JUD
+

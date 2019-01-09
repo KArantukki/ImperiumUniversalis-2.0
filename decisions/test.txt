@@ -1,0 +1,17 @@
+country_decisions = {
+
+	 testtest = {
+		major = yes
+		potential = {
+			ai = yes
+		}
+		allow = {
+			capital_scope = {
+				writing_system = 100
+			}
+		}
+		effect = {
+			add_prestige = 1
+		}
+	}
+}

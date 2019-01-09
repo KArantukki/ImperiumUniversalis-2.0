@@ -9,53 +9,53 @@ monarchy = {
 					assyrian_administration_reform 
 				}
 			}
-			expanded_administration = {
+			economic_focus = {
 				reforms = {
-					local_governors_reform
-					satrapies_reform
-					expand_the_bureaucracy
-					administration_of_trade
-					census_reform
+					trade_focus_reform
+					artisans_focus_reform
+					taxation_focus_reform
+					agraculture_focus_reform
+					pirate_focus_reform
 				}
 			}
-			land_ownership = {
+			early_institutions = {
 				reforms = {
-					royal_property
-					aristocratic_property
-					personal_property
+					noble_council_reform
+					royal_inspectors_reform
+					bureaucracy_reform
 				}
 			}
-			laws_and_judges = {
+			law_and_order = {
 				reforms = {
-					word_of_the_monarch
-					nobles_as_judges
-					religious_law
-					village_tribunals
+					written_law_reform
+					twelve_tables_reform
+					customary_law_reform
+					religious_law_reform
 				}
 			}
-			early_army_reforms = {
+			centralization_decentralization = {
 				reforms = {
-					monarchs_army
-					generals_army
-					regional_armies
-					citizens_army
-					mercs_armies
+					increased_centralization
+					local_administrations
 				}
 			}
-			royal_council = {
+			military_reforms = {
 				reforms = {
-					royal_family_advisors
-					noble_council_advisors
-					skilled_advisors
-					religious_advisors
+					levy_army_reform
+					standing_army_reform
 				}
 			}
-			local_governments = {
+			noble_privileges = {
 				reforms = {
-					self_governing_cities
-					early_feudalism
-					appointed_governors
-					local_government_structures
+					levy_army_reform
+					standing_army_reform
+				}
+			}
+			expanded_bureaucracy = {
+				reforms = {
+					centralized_bureaucracy
+					decentralized_bureaucracy
+					organized_trade_reform
 				}
 			}
 	}
@@ -82,8 +82,8 @@ republic = {
 	color = { 65 155 220 }
 	basic_reform = republic_mechanic
 
-		reform_levels = {
-			basic_democratic_structures = {
+	reform_levels = {
+			early_monarchies = {
 				reforms = {
 					citizens_republic_reform
 					greek_polis_reform
@@ -91,52 +91,50 @@ republic = {
 					league_reform
 				}
 			}
-			expanded_administration = {
+			economic_focus = {
 				reforms = {
-					local_governors_reform
-					expand_the_bureaucracy
-					administration_of_trade
-					census_reform
+					trade_focus_reform
+					artisans_focus_reform
+					taxation_focus_reform
+					agraculture_focus_reform
+					pirate_focus_reform
 				}
 			}
-			land_ownership = {
+			early_institutions = {
 				reforms = {
-					personal_property
-					aristocratic_property
+					institutionalized_democracy_reform
+					bureaucracy_reform
 				}
 			}
-			laws_and_judges = {
+			law_and_order = {
 				reforms = {
-					elected_judges
-					religious_law
+					written_law_reform
 					twelve_tables_reform
-					village_tribunals
+					customary_law_reform
+					religious_law_reform
 				}
 			}
-			early_army_reforms = {
+			military_reforms = {
 				reforms = {
-					generals_army
-					regional_armies
-					citizens_army
-					mercs_armies
+					levy_army_reform
+					standing_army_reform
 				}
 			}
-			council_and_advisors = {
+			citizenship_reforms = {
 				reforms = {
-					noble_council_advisors
-					skilled_advisors
-					religious_advisors
-					elected_assembly_advisors
+					limited_citizens_right
+					obtainable_citizenship
+					citizenship_for_all
 				}
 			}
-			local_governments = {
+			expanded_bureaucracy = {
 				reforms = {
-					self_governing_cities
-					appointed_governors
-					local_government_structures
+					centralized_bureaucracy
+					decentralized_bureaucracy
+					organized_trade_reform
 				}
 			}
-		}
+	}
 	
 	legacy_government = {
 		classic_republic
@@ -153,56 +151,53 @@ theocracy = {
 	basic_reform = theocracy_mechanic
 
 	reform_levels = {
-			oligarchic_structures = {
+			early_monarchies = {
 				reforms = {
 					oligarchy_reform
 					spartan_monarchy_reform
-					papacy_reform
 				}
 			}
-			expanded_administration = {
+			economic_focus = {
 				reforms = {
-					local_governors_reform
-					expand_the_bureaucracy
-					administration_of_trade
-					census_reform
+					trade_focus_reform
+					artisans_focus_reform
+					taxation_focus_reform
+					agraculture_focus_reform
+					pirate_focus_reform
 				}
 			}
-			land_ownership = {
+			early_institutions = {
 				reforms = {
-					personal_property
-					aristocratic_property
+					noble_council_reform
+					bureaucracy_reform
 				}
 			}
-			laws_and_judges = {
+			law_and_order = {
 				reforms = {
-					elected_judges
-					nobles_as_judges
-					religious_law
-					village_tribunals
+					written_law_reform
+					twelve_tables_reform
+					customary_law_reform
+					religious_law_reform
 				}
 			}
-			early_army_reforms = {
+			military_reforms = {
 				reforms = {
-					generals_army
-					regional_armies
-					citizens_army
-					mercs_armies
+					levy_army_reform
+					standing_army_reform
 				}
 			}
-			council_and_advisors = {
+			citizenship_reforms = {
 				reforms = {
-					noble_council_advisors
-					skilled_advisors
-					religious_advisors
-					elected_assembly_advisors
+					limited_citizens_right
+					obtainable_citizenship
+					citizenship_for_all
 				}
 			}
-			local_governments = {
+			expanded_bureaucracy = {
 				reforms = {
-					self_governing_cities
-					appointed_governors
-					local_government_structures
+					centralized_bureaucracy
+					decentralized_bureaucracy
+					organized_trade_reform
 				}
 			}
 	}

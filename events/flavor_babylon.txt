@@ -45,7 +45,7 @@ country_event = {
 	}
 	# no more maintanance
 	option = {
-		name = "babylon.2.c"	
+		name = "babylon.1.c"	
 		ai_chance = { 
 		factor = 1 
 				modifier = {
@@ -89,6 +89,22 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1	
+	}
+	
+	immediate = {
+		hidden_effect = {
+		MDI = {
+			infantry = 2476
+			infantry = 2476
+			infantry = 2476
+			infantry = 2476
+			infantry = 2476
+			infantry = 2476
+			cavalry = 2476
+			cavalry = 2476
+			cavalry = 2476
+			}
+		}
 	}
 	
 	# burn it down!

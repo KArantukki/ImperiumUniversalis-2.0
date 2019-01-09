@@ -1,6 +1,6 @@
 ﻿l_english:
- estate_preveliged_city:0 "Preveliged Town"
- estate_preveliged_city_desc:0 "This privileges will grant the city and its citizens more rights and a own local government for internal affairs."
+ estate_privileged_city:0 "Privileged  Town"
+ estate_privileged_city_desc:0 "This privileges will grant the city and its citizens more rights and a own local government for internal affairs."
  estate_municipium:0 "Municipium"
  estate_isopolitida_polis:0 "Isopolitida Polis"
  estate_free_city:0 "Free City"
