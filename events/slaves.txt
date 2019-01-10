@@ -915,3 +915,53 @@ country_event = {
 		clear_saved_name = slave_leader_name
 	}
 }
+
+########################################################################################
+# slaves run away
+########################################################################################
+country_event = {
+	id = slaves.7
+	title = "slaves.7.t"
+	desc = "slaves.7.d"
+	picture = slaves
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = slavery_abolished }
+		check_variable = { which = var_slaves_pop_ratio value = 5 }
+		check_variable = { which = slaves value = 2000 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		modifier = {
+			factor = 2.0
+			check_variable = { which = var_slaves_pop_ratio value = 40 }
+		}
+		modifier = {
+			factor = 2.0
+			check_variable = { which = var_slaves_pop_ratio value = 80 }
+		}
+	}
+
+	option = {
+		name = "slaves.7.a"
+			if = {
+				limit = { 
+					check_variable = { which = slaves value = 40000 }
+				}
+					change_variable = { slaves = -3000 }
+				else = {
+					if = {
+						limit = { 
+							check_variable = { which = slaves value = 20000 }
+						}
+							change_variable = { slaves = -2000 }
+						else = {
+								change_variable = { slaves = -1000 }
+						}
+					}
+				}
+			}
+	}
+}

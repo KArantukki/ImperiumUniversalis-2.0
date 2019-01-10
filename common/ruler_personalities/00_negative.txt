@@ -1139,41 +1139,6 @@ little_tyrant_personality = {
 } 
 
 
-misogynistic_personality = {
-	ruler_allow = {
-		allow = {
-			NOT = { ruler_has_personality = open_minded_personality }
-			is_female = no
-		}
-		chance = {
-			modifier = {
-				factor = 1
-				NOT = { dip = 2 }
-			}
-			modifier = {
-				factor = 2
-				ruler_has_personality = infertile_personality
-			}
-		}
-	}
-
-	heir_allow = {
-		allow = {
-		has_female_heir = no
-		}
-	}
-	
-	consort_allow = {
-		allow = {
-		has_female_consort = no
-		}
-	}
-
-	female_advisor_chance = -1.0
-	
-	nation_designer_cost = -5
-}
-
 arbitrarily_personality = {
 	ruler_allow = {
 		allow = {

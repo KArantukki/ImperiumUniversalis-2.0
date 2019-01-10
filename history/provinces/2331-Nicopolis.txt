@@ -1,7 +1,7 @@
 add_core = LUH
 add_core = ASY
 owner = ASY
-controller = ASY
+controller = CYM
 culture = syriac
 religion = punic_religion
 hre = no
@@ -33,3 +33,6 @@ discovered_by = caucaso_anatolian
 #discovered_by = britannic
 #discovered_by = korean
 #discovered_by = african
+discovered_by = CYM
+discovered_by = SX1
+discovered_by = SX2

@@ -39,18 +39,21 @@ estate_colony = {
 		regiment_recruit_speed = -0.25
 		local_culture_conversion_cost = -0.5
 		local_missionary_strength = 0.02
+		local_autonomy = -0.15
 	}
 	province_modifier_neutral = {
 		local_state_maintenance_modifier = 2.0
 		regiment_recruit_speed = -0.25
 		local_culture_conversion_cost = -0.5
 		local_missionary_strength = 0.02
+		local_autonomy = -0.15
 	}
 	province_modifier_angry = {
 		local_state_maintenance_modifier = 2.0
 		regiment_recruit_speed = -0.25
 		local_culture_conversion_cost = -0.5
 		local_missionary_strength = 0.02
+		local_autonomy = -0.15
 	}	
 	
 	# Influence modifiers##############################################

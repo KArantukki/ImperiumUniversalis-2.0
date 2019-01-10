@@ -535,5 +535,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/navy3.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "exploration"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/exploration.dds"
+		allwaystransparent = yes
+	}
 	
 }

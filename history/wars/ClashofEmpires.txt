@@ -13,6 +13,9 @@ war_goal = {
 	add_attacker = SUS
 	add_attacker = CYM
 	add_attacker = SAG
+	add_attacker = ANH
+	add_attacker = PRS
+	
 	add_defender = ASY
 	add_defender = EGY
 	add_defender = GZ1
@@ -28,6 +31,9 @@ war_goal = {
 	rem_attacker = SUS
 	rem_attacker = CYM
 	rem_attacker = SAG
+	rem_attacker = ANH
+	rem_attacker = PRS
+	
 	rem_defender = ASY
 	rem_defender = EGY
 	rem_defender = GZ1

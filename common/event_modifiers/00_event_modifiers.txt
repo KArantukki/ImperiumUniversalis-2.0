@@ -1,6 +1,16 @@
 
 vassal_action_happened = {  }
 
+governor_driven_away_modif = {
+	local_unrest = 3
+	local_autonomy = 0.1
+}
+
+unrest_in_the_army = {
+	land_morale = -0.05
+	recover_army_morale_speed = -0.1 
+}
+
 social_war_compromise = {
 	global_unrest = -0.5
 	stability_cost_modifier = 0.05
@@ -177,10 +187,6 @@ increased_maintanance = {
 
 servian_wall = {
 	local_defensiveness = 0.2
-}
-
-not_owning_the_roman_fleet = {
-	naval_forcelimit_modifier = -0.95
 }
 
 idols_brought_to_capital = {

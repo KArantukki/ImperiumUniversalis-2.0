@@ -89,7 +89,7 @@ nationalist_rebels = {
 		modifier = {
 			factor = 0.75
 			is_overseas = yes
-			has_owner_religion = yes
+			has_owner_culture = yes
 		}
 		modifier = {
 			factor = 0.8
@@ -127,15 +127,11 @@ nationalist_rebels = {
 		}
 		modifier = {
 			factor = 2.5
-			owner = {
-				NOT = { primary_culture = ROOT }
-			}
+			has_owner_culture = no
 		}
 		modifier = {
-			factor = 2.5
-			owner = {
-				NOT = { culture_group = ROOT }
-			}
+			factor = 5
+			NOT = { culture_group = OWNER }
 		}
 		modifier = {
 			factor = 1.5
@@ -162,11 +158,23 @@ nationalist_rebels = {
 			is_island = no
 		}
 		modifier = {
-			factor = 25
+			factor = 10
 			owner = {
 				NOT = { num_of_ports = 1 }
 			}
 			is_in_capital_area = no 
+		}
+		modifier = {
+			factor = 2.0
+			owner = {
+				war_exhaustion = 4
+			}
+		}
+		modifier = {
+			factor = 2.0
+			owner = {
+				war_exhaustion = 8
+			}
 		}
 	}
  

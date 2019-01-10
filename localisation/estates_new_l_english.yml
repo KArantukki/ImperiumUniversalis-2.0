@@ -46,6 +46,9 @@
  EST_VAL_AUXIL_70:0 "§YAuxiliary Units§! make up 70 - 80% of our forcelimit"
  EST_VAL_AUXIL_80:0 "§YAuxiliary Units§! make up 80 - 90% of our forcelimit"
  EST_VAL_AUXIL_90:0 "§YAuxiliary Units§! make up 90 - 100% of our forcelimit"
+ EST_VAL_OFFICERS_DISMISSED:0 "Officers dismissed"
+ EST_VAL_SKILLFUL_OFFICER:0 "Enlised Military Genius"
+ 
   
  TRIBAL_GATHERING:0 "Tribal Gathering"
  DEMAND_MANPOWER:0 "Demand Extra Manpower"

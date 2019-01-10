@@ -194,7 +194,7 @@ country_event = {
 		ai_chance = { factor = 80 }
 					add_country_modifier = {
 						name = mathematic_school
-						duration = 1825
+						duration = 3650
 					}
 					add_years_of_income = -0.25
 	}

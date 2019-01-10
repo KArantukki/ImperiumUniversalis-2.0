@@ -36,6 +36,10 @@ peasant_rebels = {
 		factor = 2
 		modifier = {
 			factor = 0.5
+			NOT = { owned_by = OWNER }
+		}
+		modifier = {
+			factor = 0.5
 			NOT = { base_production = 1 }
 		}
 		modifier = {

@@ -93,15 +93,33 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+		ASY = {add_accepted_culture = syriac }
+			infantry = 2476
+			infantry = 2476
+			infantry = 2476
+			infantry = 2476
+			infantry = 2476
+			infantry = 2476
+			artillery = 2476
+			artillery = 2476
+			artillery = 2476
+			cavalry = 2476
+			cavalry = 2476
+			cavalry = 2476
 		MDI = {
 			infantry = 2476
 			infantry = 2476
 			infantry = 2476
-			infantry = 2476
-			infantry = 2476
-			infantry = 2476
+			artillery = 2476
+			artillery = 2476
 			cavalry = 2476
 			cavalry = 2476
+			}
+		SUS = {
+			infantry = 2476
+			infantry = 2476
+			infantry = 2476
+			artillery = 2476
 			cavalry = 2476
 			}
 		}

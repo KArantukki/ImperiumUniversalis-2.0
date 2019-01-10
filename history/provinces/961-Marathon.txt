@@ -11,6 +11,8 @@ trade_goods = grain
 capital = ""
 is_city = yes
 estate = estate_privileged_city
+gravel_road = yes
+small_grain_depot = yes
 
 discovered_by = roman
 discovered_by = greek

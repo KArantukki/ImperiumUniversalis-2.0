@@ -5,6 +5,6 @@ government_rank = 2
 technology_group = diadochi
 primary_culture = samaritan
 religion = samaritan
-capital = 1801
+capital = 2286
 
 

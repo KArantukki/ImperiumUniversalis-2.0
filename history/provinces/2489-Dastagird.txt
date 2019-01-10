@@ -10,6 +10,10 @@ base_manpower = 4
 trade_goods = fruits
 capital = ""
 is_city = yes
+small_townhall = yes
+gravel_road = yes
+small_water_irrigation = yes
+small_grain_depot = yes
 
 #discovered_by = roman
 #discovered_by = greek
@@ -32,3 +36,6 @@ discovered_by = caucaso_anatolian
 #discovered_by = britannic
 #discovered_by = korean
 #discovered_by = african
+discovered_by = CYM
+discovered_by = SX1
+discovered_by = SX2

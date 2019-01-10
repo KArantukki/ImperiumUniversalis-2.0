@@ -234,7 +234,7 @@ country_event = {
 				change_mil = 1
 			}
 		}
-		add_scaled_republican_tradition = -5
+		add_republican_tradition = -10
 		if = {
 			limit = { NOT = { has_ruler_flag = reelected_first_time_flag } }
 				set_ruler_flag = reelected_first_time_flag
@@ -248,8 +248,8 @@ country_event = {
 		add_faction_influence = { faction = fac_democrats influence = 2 }
 			define_ruler = {
 				adm = 2
-				dip = 1
-				mil = 1
+				dip = 0
+				mil = 0
 				min_age = 30
 				max_age = 40
 			}
@@ -258,9 +258,9 @@ country_event = {
 		name = "greek_polis.400.c" # Rich Merchants
 		add_faction_influence = { faction = fac_oligarchs influence = 2 }
 			define_ruler = {
-				adm = 1
+				adm = 0
 				dip = 2
-				mil = 1
+				mil = 0
 				min_age = 35
 				max_age = 45
 			}
@@ -269,8 +269,8 @@ country_event = {
 		name = "greek_polis.400.e" # Powerful Noble
 		add_faction_influence = { faction = fac_monarchists influence = 2 }
 			define_ruler = {
-				adm = 1
-				dip = 1
+				adm = 0
+				dip = 0
 				mil = 2
 				min_age = 35
 				max_age = 50

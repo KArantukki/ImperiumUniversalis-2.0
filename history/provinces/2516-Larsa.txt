@@ -12,6 +12,10 @@ trade_goods = fruits
 capital = ""
 is_city = yes
 small_city_walls = yes
+small_townhall = yes
+gravel_road = yes
+shrine = yes
+small_water_irrigation = yes
 
 discovered_by = QED
 #discovered_by = roman
