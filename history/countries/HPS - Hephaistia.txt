@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = greek_polis_reform
+government = tribal
+add_government_reform = tribal_kingdom_reform
 government_rank = 1
 #mercantilism = 0.25
 technology_group = greek
@@ -15,6 +15,8 @@ capital = 989
 	
 	
 244.1.1 = { 
+	government = republic
+	add_government_reform = greek_polis_reform
 	primary_culture = ionic 
 
 	}
