@@ -10,8 +10,6 @@ estate_clans = {
 	always_remove_on_religious_conquest = no
 	
 	# They want to control at least this % of the country's non-overseas development, if # of home provinecs is above set amount
-	min_territory = 33
-	min_provinces_to_want_territory = 3
 
 	# If true, country will get estate
 	trigger = {
@@ -25,6 +23,7 @@ estate_clans = {
 	}
 	
 	# Min autonomy in estate provinces
+	start_territory_weight = 33
 	min_autonomy = 50
 	autonomy_does_not_affect = local_sailors_modifier
 	autonomy_does_not_affect = local_manpower_modifier

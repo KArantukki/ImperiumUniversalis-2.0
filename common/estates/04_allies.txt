@@ -1,6 +1,6 @@
 estate_allies = {
 	icon = 4
-	color = { 255 121 112 }
+	color = { 48 165 87 }
 	keep_on_conquest = no
 	always_remove_on_religious_conquest = no
 	min_territory = 0
@@ -248,21 +248,62 @@ estate_allies = {
 	# Does the AI want to give any extra territory beyond the minimum?
 	ai_territory_modifier = {
 		trigger = {
-			num_of_cities = 24
+			num_of_cities = 12
 		}	
-		value = 2
+		value = 5
 	}	
 	ai_territory_modifier = {
 		trigger = {
-			num_of_cities = 48
+			num_of_owned_provinces_with = {
+				value = 12
+				has_owner_accepted_culture = no
+				has_owner_culture = no
+				NOT = { has_estate = estate_allies }
+			}
 		}	
-		value = 2
+		value = 5
+	}	
+	ai_territory_modifier = {
+		trigger = {
+			NOT = {
+				estate_territory = {
+					estate = estate_allies
+					territory = 10
+				}
+			}
+		}	
+		value = 5
 	}
 	ai_territory_modifier = {
 		trigger = {
-			NOT = { manpower_percentage = 0.2 }
+			NOT = {
+				estate_territory = {
+					estate = estate_allies
+					territory = 25
+				}
+			}
 		}	
-		value = 2
+		value = 5
+	}
+	ai_territory_modifier = {
+		trigger = {
+			NOT = {
+				estate_influence = {
+					estate = estate_allies
+					influence = 50
+				}
+			}
+		}	
+		value = 5
+	}	
+	ai_territory_modifier = {
+		trigger = {
+				estate_influence = {
+					estate = estate_allies
+					influence = 70
+				}
+		}	
+		value = -5
 	}		
 	
 	

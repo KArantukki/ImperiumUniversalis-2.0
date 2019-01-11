@@ -1,6 +1,6 @@
 estate_free_city = {
 	icon = 2
-	color = { 224 196 96 }
+	color = { 234 218 75 }
 	keep_on_conquest = no
 	always_remove_on_religious_conquest = no
 	min_territory = 0
@@ -11,6 +11,8 @@ estate_free_city = {
 		NOT = { government = tribal }
 		num_of_cities = 2
 	}
+	
+	territory_power_modifier = 0.0
 	
 	# If true, province can be granted to estate
 	province_trigger = {
@@ -86,9 +88,9 @@ estate_free_city = {
 		modifier = {
 			factor = 2
 			unrest = 3
-		}		
+		}	
 		modifier = {
-			factor = 0.1
+			factor = 0.25
 			OR = {
 				has_owner_culture = yes 
 				has_owner_accepted_culture = yes
@@ -98,24 +100,59 @@ estate_free_city = {
 			factor = 1.5
 			 nationalism = 15
 		}	
+		modifier = {
+			factor = 0.1
+			 any_province_in_state = { has_estate = estate_free_city } 
+		}	
 	}
 	
 	# Does the AI want to give any extra territory beyond the minimum?
 	ai_territory_modifier = {
 		trigger = {
-			num_of_cities = 12
+			all_states = {
+				OR = {
+					NOT = { unrest = 5 }
+					has_estate = estate_free_city
+				}
+			} 
 		}	
-		value = 2.5
+		value = -5
 	}	
 	ai_territory_modifier = {
 		trigger = {
-			num_of_cities = 36
+			any_state = {
+						unrest = 5
+				NOT = { has_estate = estate_free_city }
+			} 
+		}	
+		value = -5
+	}	
+	ai_territory_modifier = {
+		trigger = {
+			num_of_cities = 12
 		}	
 		value = 5
 	}	
 	ai_territory_modifier = {
 		trigger = {
-			owner = { average_effective_unrest = 4  }
+			NOT = {
+				estate_territory = {
+					estate = estate_free_city
+					territory = 5
+				}
+			}
+		}	
+		value = 5
+	}	
+	ai_territory_modifier = {
+		trigger = {
+			owner = { average_effective_unrest = 5  }
+		}	
+		value = 5
+	}	
+	ai_territory_modifier = {
+		trigger = {
+			owner = { NOT = stability = 1  }
 		}	
 		value = 5
 	}		

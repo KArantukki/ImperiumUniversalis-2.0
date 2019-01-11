@@ -791,7 +791,7 @@ guiTypes = {
 		}
 		checkboxType = {
 			name = "exploit_button"
-			position = { x=416 y=502}
+			position = { x=-200 y=0}
 			quadTextureSprite ="GFX_build_interface_exploit_tab"
 		}
 		

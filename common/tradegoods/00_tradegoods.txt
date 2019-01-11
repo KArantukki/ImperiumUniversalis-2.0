@@ -962,7 +962,7 @@ exotic_animals = {
 		vassal_income = 0.2
 	}
 	province = {
-		 local_hostile_attrition = 05
+		 local_hostile_attrition = 0.5
 	}
 	chance = {
 		factor = 10

@@ -1,6 +1,6 @@
 estate_privileged_city = {
 	icon = 1
-	color = { 130 71 81 }
+	color = { 224 11 4 }
 	keep_on_conquest = no
 	always_remove_on_religious_conquest = no
 	min_territory = 0
@@ -11,6 +11,8 @@ estate_privileged_city = {
 		NOT = { government = tribal }
 		num_of_cities = 2
 	}
+	
+	territory_power_modifier = 0.0
 	
 	# If true, province can be granted to estate
 	province_trigger = {
@@ -112,7 +114,35 @@ estate_privileged_city = {
 		trigger = {
 			num_of_cities = 3
 		}	
-		value = 10
+		value = 5
+	}
+	ai_territory_modifier = {
+		trigger = {
+			num_of_cities = 16
+		}	
+		value = 5
+	}
+	ai_territory_modifier = {
+		trigger = {
+			NOT = {
+				estate_territory = {
+					estate = estate_privileged_city
+					territory = 10
+				}
+			}
+		}	
+		value = 5
+	}	
+	ai_territory_modifier = {
+		trigger = {
+			NOT = {
+				estate_territory = {
+					estate = estate_privileged_city
+					territory = 25
+				}
+			}
+		}	
+		value = 5
 	}		
 	
 	

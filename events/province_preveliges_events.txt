@@ -16,7 +16,10 @@ province_event = {
 	}
 
 	immediate = {
-		set_country_flag = open_prov_event_flag
+			hidden_effect = {
+				set_country_flag = open_prov_event_flag
+				add_base_tax = -1
+			}
 	}
 	
 	option = {
@@ -44,11 +47,14 @@ province_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_estate = estate_preveliged_city
+		has_estate = estate_privileged_city
 	}
 
 	immediate = {
-		set_country_flag = open_prov_event_flag
+			hidden_effect = {
+				set_country_flag = open_prov_event_flag
+				add_base_tax = -1
+			}
 	}
 	
 	option = {

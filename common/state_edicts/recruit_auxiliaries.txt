@@ -21,14 +21,18 @@ auxiliary_recruitment = {
 		modifier = {
 			factor = 0
 			all_province_in_state = {
-				NOT = { base_manpower = 12 }
+				NOT = { development = 24 }
 			}
 		}
 		modifier = {
 			factor = 2.5
 			all_province_in_state = {
-				base_manpower = 20
+				development = 32
 			}
+		}
+		modifier = {
+			factor = 2.5
+			OWNER = { NOT = {  manpower_percentage = 0.4  } }
 		}
 	}
 }
