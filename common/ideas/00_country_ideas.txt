@@ -3904,7 +3904,7 @@ SCY_ideas = {
 	SCY2 = {
 		artillery_power = 0.10
 	}	
-	SCYS3 = {
+	SCY3 = {
 		land_morale = 0.1
 		war_exhaustion = -0.05
 	}
