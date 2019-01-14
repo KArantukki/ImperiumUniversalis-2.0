@@ -18,6 +18,10 @@ province_event = {
 	immediate = {
 			hidden_effect = {
 				set_country_flag = open_prov_event_flag
+				if = {
+					limit = { NOT = { base_tax = 1 } }
+				add_base_tax = -1
+				}
 				add_base_tax = -1
 			}
 	}

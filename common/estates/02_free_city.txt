@@ -22,6 +22,9 @@ estate_free_city = {
 		}
 	}
 	
+	# Is used to weigh importance compared to other estates
+	#start_territory_weight = 2
+	
 	# Min autonomy in estate provinces
 	min_autonomy = 75
 	autonomy_does_not_affect = province_trade_power_modifier  
@@ -87,7 +90,13 @@ estate_free_city = {
 		factor = 1			
 		modifier = {
 			factor = 2
-			unrest = 3
+			unrest = 5
+		}			
+		modifier = {
+			factor = 2
+			all_province_in_state = {
+				unrest = 10
+			}
 		}	
 		modifier = {
 			factor = 0.25
@@ -97,16 +106,12 @@ estate_free_city = {
 			}
 		}
 		modifier = {
-			factor = 1.5
-			 nationalism = 15
-		}	
-		modifier = {
 			factor = 0.1
 			 any_province_in_state = { has_estate = estate_free_city } 
 		}	
 	}
-	
 	# Does the AI want to give any extra territory beyond the minimum?
+	#####################################################################
 	ai_territory_modifier = {
 		trigger = {
 			all_states = {
@@ -125,7 +130,7 @@ estate_free_city = {
 				NOT = { has_estate = estate_free_city }
 			} 
 		}	
-		value = -5
+		value = -3
 	}	
 	ai_territory_modifier = {
 		trigger = {
@@ -152,7 +157,7 @@ estate_free_city = {
 	}	
 	ai_territory_modifier = {
 		trigger = {
-			owner = { NOT = stability = 1  }
+			owner = { NOT = { stability = 1  } }
 		}	
 		value = 5
 	}		

@@ -7,12 +7,12 @@ color = { 0 122 24 }
 
 
 historical_idea_groups = {
-	quality_ideas
-	scholars_ideas
-	spy_ideas
-	superior_religious_ideas
+	leadership_ideas
+	academy_ideas
+	expansion_ideas
+	cerimonial_ideas
 	infantry_ideas
-	trade_ideas
+	caravan_trade_ideas
 }
 
 historical_units = {

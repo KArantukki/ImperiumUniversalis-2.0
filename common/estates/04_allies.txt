@@ -18,6 +18,9 @@ estate_allies = {
 		has_owner_accepted_culture = no
 	}
 	
+	# Is used to weigh importance compared to other estates
+	#start_territory_weight = 20
+	
 	# Min autonomy in estate provinces
 	min_autonomy = 90 
 	autonomy_does_not_affect = local_manpower_modifier  
@@ -250,7 +253,7 @@ estate_allies = {
 		trigger = {
 			num_of_cities = 12
 		}	
-		value = 5
+		value = 1
 	}	
 	ai_territory_modifier = {
 		trigger = {
@@ -261,7 +264,7 @@ estate_allies = {
 				NOT = { has_estate = estate_allies }
 			}
 		}	
-		value = 5
+		value = 1
 	}	
 	ai_territory_modifier = {
 		trigger = {
@@ -272,7 +275,7 @@ estate_allies = {
 				}
 			}
 		}	
-		value = 5
+		value = 1
 	}
 	ai_territory_modifier = {
 		trigger = {
@@ -283,7 +286,7 @@ estate_allies = {
 				}
 			}
 		}	
-		value = 5
+		value = 1
 	}
 	ai_territory_modifier = {
 		trigger = {
@@ -294,7 +297,7 @@ estate_allies = {
 				}
 			}
 		}	
-		value = 5
+		value = 1
 	}	
 	ai_territory_modifier = {
 		trigger = {
@@ -303,7 +306,7 @@ estate_allies = {
 					influence = 70
 				}
 		}	
-		value = -5
+		value = -3
 	}		
 	
 	

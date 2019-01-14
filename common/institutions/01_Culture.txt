@@ -195,7 +195,10 @@ culture_lvl2 = {
 	}
 
 	can_embrace = {
-		has_institution = culture_lvl1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					culture_lvl1 = 100
+				}
 	}
 
 	
@@ -254,7 +257,7 @@ culture_lvl2 = {
 				tooltip = tooltip_building_small_theater
 				OR = {
 					has_building = small_theater
-					has_building = big_theaterv
+					has_building = big_theater
 				}
 			}
 		}
@@ -333,7 +336,10 @@ culture_lvl3 = {
 	}
 
 	can_embrace = {
-		has_institution = culture_lvl2
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					culture_lvl2 = 100
+				}
 	}
 	embracement_speed = {
 		modifier = {
@@ -440,7 +446,10 @@ culture_lvl4 = {
 	}
 
 	can_embrace = {
-		has_institution = culture_lvl3
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					culture_lvl3 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -543,7 +552,10 @@ culture_lvl5 = {
 	}
 
 	can_embrace = {
-		has_institution = culture_lvl4
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					culture_lvl4 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -646,7 +658,10 @@ culture_lvl6 = {
 	trade_company_efficiency = 0.0
 
 	can_embrace = {
-		has_institution = culture_lvl5
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					culture_lvl5 = 100
+				}
 	}
 
 	embracement_speed = {

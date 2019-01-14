@@ -126,8 +126,22 @@ trade_lvl1 = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5 
+			factor = 0.25
 			province_trade_power = 5
+		}
+		modifier = {
+			scale = yes
+			factor = 1.0
+			potential = {
+				always = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_tradenode_member_has_coinage5
+				 province_trade_power = 5
+				any_trade_node_member_province = { 
+					trade_lvl1 = 100
+				}
+			}
 		}
 	}
 	
@@ -229,7 +243,10 @@ trade_lvl2 = {
 	}
 
 	can_embrace = {
-		has_institution = trade_lvl1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					trade_lvl1 = 100
+				}
 	}
 
 	
@@ -286,6 +303,20 @@ trade_lvl2 = {
 				}
 			}
 		}
+		modifier = {
+			scale = yes
+			factor = 0.5
+			potential = {
+				always = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_tradenode_member_has_coinage5
+				 province_trade_power = 5
+				any_trade_node_member_province = { 
+					trade_lvl2 = 100
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
@@ -322,7 +353,10 @@ trade_lvl3 = {
 	}
 
 	can_embrace = {
-		has_institution = trade_lvl2
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					trade_lvl2 = 100
+				}
 	}
 	embracement_speed = {
 		modifier = {
@@ -375,6 +409,20 @@ trade_lvl3 = {
 				}
 			}
 		}
+		modifier = {
+			scale = yes
+			factor = 0.5
+			potential = {
+				always = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_tradenode_member_has_coinage10
+				 province_trade_power = 10
+				any_trade_node_member_province = { 
+					trade_lvl3 = 100
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
@@ -402,7 +450,10 @@ trade_lvl4 = {
 	}
 
 	can_embrace = {
-		has_institution = trade_lvl3
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					trade_lvl3 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -456,6 +507,20 @@ trade_lvl4 = {
 				}
 			}
 		}
+		modifier = {
+			scale = yes
+			factor = 0.5
+			potential = {
+				always = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_tradenode_member_has_coinage15
+				 province_trade_power = 15
+				any_trade_node_member_province = { 
+					trade_lvl4 = 100
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
@@ -483,7 +548,10 @@ trade_lvl5 = {
 	}
 
 	can_embrace = {
-		has_institution = trade_lvl4
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					trade_lvl4 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -531,6 +599,20 @@ trade_lvl5 = {
 				has_building = harbor_district
 			}
 		}
+		modifier = {
+			scale = yes
+			factor = 0.5
+			potential = {
+				always = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_tradenode_member_has_coinage20
+				 province_trade_power = 20
+				any_trade_node_member_province = { 
+					trade_lvl5 = 100
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income. (Or it has a more than long term goal...)
@@ -558,7 +640,10 @@ trade_lvl6 = {
 	}
 
 	can_embrace = {
-		has_institution = trade_lvl5
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					trade_lvl5 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -604,6 +689,20 @@ trade_lvl6 = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_harbor_district
 				has_building = harbor_district
+			}
+		}
+		modifier = {
+			scale = yes
+			factor = 0.5
+			potential = {
+				always = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_tradenode_member_has_coinage25
+				 province_trade_power = 25
+				any_trade_node_member_province = { 
+					trade_lvl6 = 100
+				}
 			}
 		}
 	}

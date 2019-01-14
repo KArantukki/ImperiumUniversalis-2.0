@@ -61,5 +61,7 @@ is_farmland_terrain = {
 						has_terrain = uruk_t
 						has_terrain = memphis_t
 						has_terrain = waset_t
+						has_terrain = halicarnassus_t
+						has_terrain = argos_t
 					}
 }

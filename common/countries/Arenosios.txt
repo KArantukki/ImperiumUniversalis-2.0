@@ -5,14 +5,14 @@ graphical_culture = iberiangfx
 color = { 160 75 112 }
 
 historical_idea_groups = {
-	trade_ideas
+	caravan_trade_ideas
 	cavalry_ideas
-	economy_ideas
-	spy_ideas
-	quantity_ideas
+	financial_ideas
+	expansion_ideas
+	mercenary_ideas
 	domestic_government_ideas
 	infantry_ideas
-	influence_ideas
+	diplomatic_ideas
 }
 
 

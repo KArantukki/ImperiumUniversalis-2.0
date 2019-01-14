@@ -6,15 +6,15 @@ color = { 86 119 135 }
 
 
 historical_idea_groups = {
-	quantity_ideas
-	economy_ideas
-	influence_ideas
+	mercenary_ideas
+	financial_ideas
+	diplomatic_ideas
 	domestic_government_ideas
-	defensive_ideas
-	spy_ideas
-	administrative_ideas
-	superior_religious_ideas
+	fortress_ideas
 	expansion_ideas
+	administrative_ideas
+	cerimonial_ideas
+	
 }
 
 historical_units = {

@@ -2,20 +2,19 @@
 
 graphical_culture = hellenicgfx
 
-color = { 100 5 5 }
-
-revolutionary_colors = { 5  13  0 }
+color = { 239 227 208 }
 
 
 historical_idea_groups = {
-	scholars_ideas
-	trade_ideas
-	infantry_ideas
-	syncretic_religious_ideas
-	quality_ideas
-	administrative_ideas
+	academy_ideas
+	maritime_trade_ideas
 	naval_ideas
-	
+	republican_government_ideas
+	shipbuilding_ideas
+	infantry_ideas
+	financial_ideas
+	maritime_ideas
+	leadership_ideas
 }
 
 historical_units = {
@@ -23,20 +22,50 @@ historical_units = {
 }
 
 monarch_names = {
-	"Eurysthenes" = 60
-	"Agis" = 60
-	"Labotas" = 60
-	"Agesilaos" = 60
-	"Polydoros" = 60
-	"Leon" = 60
-	"Anaxandridas" = 60
-	"Leonidas" = 60
-	"Akrotatos" = 60
-	"Areus" = 60
-	"Pleistonanax" = 60
-	"Damaratos" = 60
-	"Ariston" = 60
-	"Eudamidas" = 60
+	"Demetrios" = 10
+	"Diognetus" = 10
+	"Cranaus" = 10
+	"Amphictyon" = 10
+	"Erechtheus" = 10
+	"Aegeus" = 10
+	"Aristocles" = 10
+	"Critias" = 10
+	"Eucrates" = 10
+	"Solon" = 10
+	"Philippus" = 10
+	"Archestratidas" = 10
+	"Hippocleides" = 10
+	"Thericles" = 10
+	"Hippias" = 10
+	"Cleisthenes" = 10
+	"Pisistratus" = 10
+	"Hermocreon" = 10
+	"Aristides" = 10
+	"Philocrates" = 10
+	"Hypsichides" = 10
+	"Phaedon" = 10
+	"Euphemus" = 10
+	"Tisandrus" = 10
+	"Alexias" = 10
+	"Demostratos" = 10
+	"Charisandrus" = 10
+	"Lysimachides" = 10
+	"Euainetos" = 10
+	"Kimon" = 10
+	"Diotimus" = 10
+	"Telekles" = 10
+	"Anaxicrates" = 10
+	"Aristonymos" = 10
+	"Philokrates" = 10
+	"Democles" = 10
+	"Eubulos" = 10
+	"Diognetus" = 10
+	"Arrheneides" = 10
+	"Thymochares" = 10
+	"Pheidostratos" = 10
+	"Lysiades" = 10
+	"Eurykleides" = 10
+	"Nicetes" = 10
 	
 	"Achaia" = -1
 	"Agapia" = -1
@@ -62,22 +91,30 @@ monarch_names = {
 	"Sophia" = -1
 	"Thaleia" = -1
 	"Zita" = -1
-	
-}
 
+
+
+}
 
 leader_names = {
 			"of Abonuteichos" "Socraticus" "Tacticus" "Aristides" "of Aphrodisias" "of Pherae" "Grammaticus" "Rhodius" "of Cyrrhus" "of Tralles" "of Carystus" 
 			"of Ascalon" "of Sidon" "of Tyre" "Diogenes" "Liberalis" "of Phaleron" "of Tyana" "of Telmessus" "of Samos" "of Phlius" "Indicopleustes" "of Rhodes" 
 			"Pedanius" "of Lesbos" "Ponticus" "Andronicus" "of Chios" "Alexandrinus" "the Younger" "Scholasticus" "of Aphrodisias" 
-			"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+			"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
 }
+
 ship_names = {
-	
+	Zeus Hera Aphrodite Apollo Ares Artemis Athena Demeter Dionysus Hades Hephaestos Hermes Hestia Poseidon 
+	Achlys Aether Aion Ananke Chaos Chronos Erebus Eros Gaia Hemera Hypnos Nemesis Nyx Pontus Tartaros Thalassa
+	Thanatos Uranus Koios Kreios Kronos Hyperion Iapetós Oceanós Phoibe Rhéa Theía Thémis Astería Atlas Aúra
+	Clymene Dione Helios Eurybía Lelantos Leto Menoítios Pállas Perses Prometheus Alcyoneus Chthonius Damysus 
+	Mimas Pallas Porphyrion Antaeus Agathodaemon Aegaeon Achelous Benthesikyme Ceto Graeae Delphin Aello 
+	Celaeno Aphros Bythos Leucothea Achilles Heracles Aiax Jason Argo Odysseus Orpheus Theseus Aegea Antiope
+	Hippolyta Iphito Marpesia Otrera Penthesilea 
 }
 
 army_names = {
-	"Army of $PROVINCE$"
+	"Ieros Lochos" "Lochos of $PROVINCE$"
 }
 
 fleet_names = {

@@ -1,4 +1,5 @@
 add_core = EDO
+add_core = ABD
 add_core = THS
 owner = THS
 controller = THS

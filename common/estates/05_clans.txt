@@ -23,20 +23,21 @@ estate_clans = {
 	}
 	
 	# Min autonomy in estate provinces
-	start_territory_weight = 33
-	min_autonomy = 50
+	start_territory_weight = 1
+	min_autonomy = 25
+	autonomy_does_not_affect = land_forcelimit_modifier
 	autonomy_does_not_affect = local_sailors_modifier
 	autonomy_does_not_affect = local_manpower_modifier
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		global_manpower_modifier = 0.5
+		global_manpower_modifier = 0.4
 		land_maintenance_modifier = -0.4
 		recover_army_morale_speed = 0.2
 		yearly_tribal_allegiance = 0.5
 	}
 	country_modifier_neutral = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.2
 		land_maintenance_modifier = -0.2
 		recover_army_morale_speed = 0.1
 		yearly_tribal_allegiance = 0.25
@@ -388,25 +389,35 @@ estate_clans = {
 				loyalty = -20
 			}
 			if = {
-				limit = { NOT = { total_development = 20 } }
-				infantry = capital
-				infantry = capital
-				infantry = capital
-				cavalry = capital
-				artillery = capital
+				limit = { NOT = { num_of_cities = 2} }
+				capital_scope = {
+					add_unit_construction = {
+						type = infantry
+						amount = 2
+						speed = 0.1
+						cost = 0
+					}
+				}
+					else = {
+						capital_scope = {
+							add_unit_construction = {
+								type = infantry
+								amount = 1
+								speed = 0.1
+								cost = 0
+							}
+						}
+					}
 			}
-			if = {
-				limit = { total_development = 20 }
-				infantry = capital
-				infantry = capital
-				infantry = capital
-				infantry = capital
-				infantry = capital
-				cavalry = capital
-				cavalry = capital
-				artillery = capital
-				artillery = capital
-			}
+			every_owned_province = {
+				limit = { has_estate = estate_clans }
+				add_unit_construction = {
+					type = infantry
+					amount = 1
+					speed = 0.1
+					cost = 0
+				}
+			}	
 			
 		}
 		

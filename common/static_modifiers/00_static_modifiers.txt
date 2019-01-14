@@ -249,16 +249,17 @@ no_adjacent_controlled = {
 	local_colonial_growth = -10
 }
 
+
 # Nobles and Priests / upper class
 provincial_tax_income = {
 	fort_level = 1
 	allowed_num_of_buildings = 1
-	local_institution_spread = 0.01
-	province_trade_power_value = 1
-	tax_income = 0.5
+	land_forcelimit = 0.1
+	local_institution_spread = 0.02
+	province_trade_power_value = 0.5
+	tax_income = 1.0
 	horde_unity = -0.02
 	local_culture_conversion_cost = -0.02
-	# regiment_recruit_speed = -0.01
 }
 
 # Craftsmen and Merchents / commoners
@@ -266,8 +267,8 @@ provincial_production_size = {
 	fort_level = 1
 	allowed_num_of_buildings = 1
 	land_forcelimit = 0.1
-	tax_income = 0.1
-	trade_goods_size = 0.1
+	tax_income = 0.25
+	trade_goods_size = 0.25
 	supply_limit = 0.25
 	local_manpower = 0.25
 	local_sailors = 250
@@ -275,23 +276,22 @@ provincial_production_size = {
 	province_trade_power_value = 0.25
 	local_culture_conversion_cost = -0.01
 	horde_unity = -0.01
-	# ship_recruit_speed = -0.01
-}
-
-knowledge_sharing = {
-	institution_growth = 12
 }
 
 # Tribal
 manpower = {
-	# garrison_growth = 0.01					#1% increase from manpower.
 	province_trade_power_value = 0.1
 	land_forcelimit = 0.1
-	local_sailors = 500
+	local_sailors = 250
+	tax_income = 0.1
 	trade_goods_size = 0.1
 	supply_limit = 0.25
 	naval_forcelimit = 0.25
 	horde_unity = 0.01
+}
+
+knowledge_sharing = {
+	institution_growth = 12
 }
 
 sailors = {
@@ -574,6 +574,7 @@ scorched_earth = {
 base_values = {
 	max_absolutism = 10
 	merc_maintenance_modifier = 1.5
+	mercenary_cost = 0.25
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..
 	missionaries = 1						#1 missionary
@@ -584,7 +585,6 @@ base_values = {
 	diplomatic_upkeep = 2
 	tolerance_heathen = -3
 	tolerance_heretic = -2
-	mercenary_cost = 0.25
 	global_missionary_strength = 0.005
 	global_heretic_missionary_strength = 0.01
 	global_manpower = 1.0
@@ -601,7 +601,7 @@ base_values = {
 	# num_accepted_cultures = 2
 	# monthly_splendor = 1
 	# artillery_bonus_vs_fort = 5
-	cav_to_inf_ratio = 0.30
+	cav_to_inf_ratio = 0.4
 	legitimacy = -0.5
 	trade_range_modifier = 0.75
 }

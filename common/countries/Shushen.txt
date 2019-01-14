@@ -6,11 +6,11 @@ color = { 206 193 121 }
 
 historical_idea_groups = {
 	cavalry_ideas
-	economy_ideas
-	offensive_ideas
-	superior_religious_ideas
+	agraculture_ideas
+	logistic_ideas
+	cerimonial_ideas
 	expansion_ideas
-	defensive_ideas
+	fortress_ideas
 }
 
 historical_units = {

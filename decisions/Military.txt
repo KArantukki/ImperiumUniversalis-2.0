@@ -32,24 +32,4 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	 hire_pirates = {
-		potential = {
-			NOT = { has_country_modifier = hire_pirates_modifier }
-			num_of_ports = 1
-		}
-		allow = {
-			dip_power = 50
-			dip_tech = 20
-		}
-		effect = {
-			add_dip_power = -50
-			add_country_modifier = {
-				name = hire_pirates_modifier
-				duration = 3650
-			}
-		}
-		ai_will_do = {
-			factor = 0.2
-		}
-	}
 }

@@ -18,6 +18,9 @@ estate_colony = {
 	
 	territory_power_modifier = 0.0
 	
+	# Is used to weigh importance compared to other estates
+	#start_territory_weight = 3
+	
 	# Min autonomy in estate provinces
 	min_autonomy = 10 
 	autonomy_does_not_affect = local_manpower_modifier  
@@ -115,7 +118,7 @@ estate_colony = {
 		modifier = {
 			factor = 1.5
 			NOT = { any_province_in_state = { owned_by = ROOT } }
-		}	
+		}	 
 	}
 	
 	# Does the AI want to give any extra territory beyond the minimum?
@@ -123,13 +126,13 @@ estate_colony = {
 		trigger = {
 			num_of_cities = 24
 		}	
-		value = 5
+		value = 1
 	}	
 	ai_territory_modifier = {
 		trigger = {
 			num_of_cities = 48
 		}	
-		value = 5
+		value = 1
 	}	
 	ai_territory_modifier = {
 		trigger = {
@@ -140,7 +143,7 @@ estate_colony = {
 				NOT = { has_estate = estate_colony }
 			}
 		}	
-		value = 5
+		value = 1
 	}	
 	ai_territory_modifier = {
 		trigger = {
@@ -151,7 +154,7 @@ estate_colony = {
 				NOT = { has_estate = estate_colony }
 			} 
 		}	
-		value = 10
+		value = 1
 	}		
 	ai_territory_modifier = {
 		trigger = {
@@ -162,7 +165,7 @@ estate_colony = {
 				}
 			}
 		}	
-		value = 5
+		value = 1
 	}	
 	ai_territory_modifier = {
 		trigger = {
@@ -173,7 +176,7 @@ estate_colony = {
 				}
 			}
 		}	
-		value = 5
+		value = 1
 	}	
 	
 	

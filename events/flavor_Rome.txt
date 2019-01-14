@@ -169,10 +169,6 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_mil_power = -50
 		add_army_professionalism = 0.05
-		add_country_modifier = {
-				name = capite_censi_modifier
-				duration = -1
-			}
 			
 			if = {
 				limit = {	has_factions = yes }
@@ -300,10 +296,6 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_mil_power = -50
 		add_army_professionalism = 0.05
-		add_country_modifier = {
-				name = land_grants_modifier
-				duration = -1
-			}	
 			
 			if = {
 				limit = {	has_factions = yes }

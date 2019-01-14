@@ -9,13 +9,13 @@ revolutionary_colors = { 5  13  0 }
 
 
 historical_idea_groups = {
-	offensive_ideas
+	logistic_ideas
 	infantry_ideas
-	economy_ideas
-	imperial_government_ideas
+	financial_ideas
+	imperial_ideas
 	engineering_ideas
 	expansion_ideas
-	quality_ideas
+	leadership_ideas
 	
 }
 

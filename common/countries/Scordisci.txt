@@ -6,13 +6,13 @@ special_unit_culture = british_special
 color = { 107 79 58 }
 
 historical_idea_groups = {
-	quantity_ideas
-	economy_ideas
-	offensive_ideas
-	influence_ideas
+	mercenary_ideas
+	financial_ideas
+	logistic_ideas
+	diplomatic_ideas
 	administrative_ideas
 	infantry_ideas
-	trade_ideas
+	caravan_trade_ideas
 }
 
 monarch_names = { 

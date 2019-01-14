@@ -155,12 +155,12 @@ peasant_rebels = {
 				has_rebel_faction = REB
 			}
 			add_local_autonomy = 20
-			add_years_of_income = -2.0
 		}
 		if = {
 			limit = { has_country_modifier = forced_labor	 }
 			remove_country_modifier = forced_labor	
 		}
-		add_prestige = -25
+			add_prestige = -25
+			add_years_of_income = -1.0
 	}
 }

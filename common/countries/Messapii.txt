@@ -9,8 +9,8 @@ historical_idea_groups = {
 	naval_ideas
 	maritime_ideas
 	infantry_ideas
-	trade_ideas
-	offensive_ideas
+	caravan_trade_ideas
+	logistic_ideas
 	domestic_government_ideas
 	administrative_ideas
 }

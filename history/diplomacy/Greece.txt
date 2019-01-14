@@ -14,7 +14,7 @@ dependency = {
 	end_date = 225.1.1
 }
 dependency = { 
-	subject_type = "half_autonomous_vassal"
+	subject_type = "vassal"
 	first = COR
 	second = AMC
 	start_date = 145.1.1

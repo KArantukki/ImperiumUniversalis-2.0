@@ -2132,7 +2132,7 @@
  persia.7.d:0 "The [PRS.Monarch.GetTitle] of Parsa, [PRS.Monarch.GetName], has given up his throne and sweared loyalty to  [Root.Monarch.GetName]. His army and followers are now loyal to us as well."
  persia.7.a:0 "A great day for the persians!"
  prov_preveliges.2.t:0 "Preveliged Town Options"
- prov_preveliges.2.d:0 ""
+ prov_preveliges.2.d:0 "You can decide if the province should construct buildings on their own for free or not. If you allow them to do so, they will get 20% minimum autonomy."
  cancel_opt:0 "Cancel"
  prov_preveliges.1.t:0 "Colony"
  prov_preveliges.1.d:0 ""

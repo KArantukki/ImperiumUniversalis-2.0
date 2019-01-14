@@ -286,7 +286,10 @@ government_lvl2 = {
 	}
 
 	can_embrace = {
-		has_institution = government_lvl1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					government_lvl1 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -502,7 +505,10 @@ government_lvl3 = {
 	}
 
 	can_embrace = {
-		has_institution = government_lvl2
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					government_lvl2 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -668,7 +674,10 @@ government_lvl4 = {
 	}
 
 	can_embrace = {
-		has_institution = government_lvl3
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					government_lvl3 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -820,7 +829,10 @@ government_lvl5 = {
 	}
 
 	can_embrace = {
-		has_institution = government_lvl4
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					government_lvl4 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -943,7 +955,10 @@ government_lvl6 = {
 	}
 
 	can_embrace = {
-		has_institution = government_lvl5
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					government_lvl5 = 100
+				}
 	}
 
 	embracement_speed = {

@@ -107,7 +107,7 @@ writing_system = {
 		
 		modifier = {
 			scale = yes
-			factor = 1.0
+			factor = 2.0
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_institution
 				any_friendly_coast_border_province = {
@@ -117,7 +117,7 @@ writing_system = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 1.0
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
@@ -295,7 +295,7 @@ coin_usage = {
 		}
 		modifier = {
 			scale = yes
-			factor = 1.0
+			factor = 2.0
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
@@ -313,7 +313,7 @@ coin_usage = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 1.0
 			potential = {
 				is_capital = yes
 				owner = { is_tribal = no }
@@ -329,17 +329,27 @@ coin_usage = {
 			scale = yes
 			factor = 0.1
 			potential = {
-				owner = { is_tribal = yes }
-				OR = {
-					trade_goods = gold
-					trade_goods = silver
-				}
+				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_has_gold_or_silver
 				OR = {
 					trade_goods = gold
 					trade_goods = silver
+				}
+			}
+		}
+		modifier = {
+			scale = yes
+			factor = 1.0
+			potential = {
+				always = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_tradenode_member_has_coinage10
+				 province_trade_power = 10
+				any_trade_node_member_province = { 
+					coin_usage = 100
 				}
 			}
 		}
@@ -433,7 +443,7 @@ elephant_domestication = {
 		
 		modifier = {
 			scale = yes
-			factor = 1.0
+			factor = 2.5
 			potential = {
 				elephant_region = yes
 				}
@@ -446,7 +456,7 @@ elephant_domestication = {
 		}
 		modifier = {
 			scale = yes
-			factor = 0.5
+			factor = 1.0
 			potential = {
 				elephant_region = yes
 				NOT = {

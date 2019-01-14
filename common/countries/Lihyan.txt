@@ -23,7 +23,30 @@ monarch_names = {
 	"Shamit #5" = 70
 	"Hinas #5" = 70
 	"Talny #5" = 70
+	"Aretas" = 40
+	"Obodas" = 40
+	"Rabbel" = 30
+	"Malichus" = 30
+	"Haritat" = 10
+	"Abadat" = 10
+	"Rabbil" = 10
+	"Natnu" = 10
+	"Nuhuru" = 10
+	"Afsa" = 2
+	"Ayshu" = 2
+	"Fara" = 2
+	"Haddanu" = 2
+	"Malikat" = 2
+	"Quasijju" = 2
+	"Rabbu" = 2
+	"Shudu" = 2
+	"Taymu" = 2
+	"Wahbu" = 2
 	
+	"Uzza" = -1
+	"Abazu" = -1
+	"Rabuzzat" = -1
+
 
 
 }

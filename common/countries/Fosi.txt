@@ -5,14 +5,14 @@ graphical_culture = celticgfx
 color = { 114 104 86 }
 
 historical_idea_groups = {
-	trade_ideas
-	defensive_ideas
-	offensive_ideas
-	superior_religious_ideas
-	economy_ideas
+	caravan_trade_ideas
+	fortress_ideas
+	logistic_ideas
+	cerimonial_ideas
+	agraculture_ideas
 	domestic_government_ideas
-	scholars_ideas
-	spy_ideas
+	academy_ideas
+	expansion_ideas
 }
 
 

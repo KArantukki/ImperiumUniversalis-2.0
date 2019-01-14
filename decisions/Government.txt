@@ -82,6 +82,7 @@ country_decisions = {
 	########################################
 	 prefectures = {
 		potential = {
+			NOT = { has_dlc = "Dharma" }
 			NOT = { has_country_modifier = prefectures_mod }
 			adm_tech = 15
 		}
@@ -106,6 +107,7 @@ country_decisions = {
 	}
 	 open_citizenship = {
 		potential = {
+			NOT = { has_dlc = "Dharma" }
 			NOT = { has_country_modifier = open_citizenship_mod }
 		}
 		allow = {

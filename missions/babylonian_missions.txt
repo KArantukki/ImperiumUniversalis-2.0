@@ -232,9 +232,9 @@ babylon_missions_2 = {
 						has_building = imperial_road
 					}
 				}
-				amount = 10
+				amount = 16
 			}
-			 monthly_income = 50
+			 monthly_income = 75
 		}
 		effect = {
 				add_country_modifier = {

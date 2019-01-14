@@ -4,14 +4,19 @@ graphical_culture = celticgfx
 
 color = { 79 86 32 }
 
+# Gaul / Gallia
+
 historical_idea_groups = {
-	quantity_ideas
-	economy_ideas
-	offensive_ideas
-	influence_ideas
-	administrative_ideas
+	agraculture_ideas
+	caravan_trade_ideas
+	cavalry_ideas
+	cerimonial_ideas
+	expansion_ideas
+	fortress_ideas
+	financial_ideas
+	diplomatic_ideas
 	infantry_ideas
-	trade_ideas
+	administrative_ideas
 }
 
 
@@ -80,41 +85,20 @@ monarch_names = {
 	"Sabia" = -1
 	"Seang" = -1
 	"Shanell" = -1
-
-
-
-}
-
-ship_names = {
-	Andastra
-	Arawn
-	Ardan
-	Arianrhod
-	Badb
-	Balor
-	Casnar Wledig
-	Cathbad
-	Grendel
-	Gronw Pebr
-	Medb
-	Melusine
-	Oger
-	Orlam
-	Rosmerta
-	Uisneach
-	Sul
-	Ethlinn
-	Ethnea
-	Hafgan
-	Hefaidd Hen
 }
 
 leader_names = { 
-	"the Arverni" "" "" "" "" "" "" "" "" "the Wise" "the Wolf" "the Old" "the Bear"
+	"the Wise" "the Wolf" "the Old" "the Bear" "the Gaul" "the Younger" "the Old"
+	"" "" "" "" "" "" "" "" "" "" "" "" "" "" 
+}
+
+ship_names = {
+	Belenus Bodua Brigantia Cicolluis Epona Gobannos Maponos Matronae Nemetona Nodens Ogmios Rosmerta Sirona Sulis 
+	Belisama Senuna Coventina Icovellauna Sequana Suleviae Taranis Toutatis Viducus Nemedus Crouga Neton Cnabetius
 }
 
 army_names = {
-	"Army of $PROVINCE$"
+	"Sons of Toutatis" "Spears of Lugus" "Men of Bodua" "Followers of Belenus" "Army of $PROVINCE$"
 }
 
 fleet_names = {

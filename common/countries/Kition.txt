@@ -12,7 +12,6 @@ historical_idea_groups = {
 	diplomatic_ideas
 	domestic_government_ideas
 	mercenary_ideas
-	maritime_trade_ideas
 	financial_ideas
 }
 

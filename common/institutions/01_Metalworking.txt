@@ -184,7 +184,10 @@ metalworking_lvl2 = {
 	}
 
 	can_embrace = {
-		has_institution = metalworking_lvl1
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					metalworking_lvl1 = 100
+				}
 	}
 
 	
@@ -298,7 +301,10 @@ metalworking_lvl3 = {
 	}
 
 	can_embrace = {
-		has_institution = metalworking_lvl2
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					metalworking_lvl2 = 100
+				}
 	}
 	embracement_speed = {
 		modifier = {
@@ -385,7 +391,10 @@ metalworking_lvl4 = {
 	}
 
 	can_embrace = {
-		has_institution = metalworking_lvl3
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					metalworking_lvl3 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -484,7 +493,10 @@ metalworking_lvl5 = {
 	}
 
 	can_embrace = {
-		has_institution = metalworking_lvl4
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					metalworking_lvl4 = 100
+				}
 	}
 
 	embracement_speed = {
@@ -577,7 +589,10 @@ metalworking_lvl6 = {
 	}
 
 	can_embrace = {
-		has_institution = metalworking_lvl5
+			custom_trigger_tooltip = {
+				tooltip = tooltip_previous_inst_must_be_embraced
+					metalworking_lvl5 = 100
+				}
 	}
 
 	embracement_speed = {

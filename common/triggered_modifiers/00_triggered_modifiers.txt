@@ -1,7 +1,4 @@
 
-###########################################
-# controller of the panionion
-###########################################
 
 phoenician_colonisation = {
 	potential = {
@@ -21,7 +18,6 @@ phoenician_colonisation = {
 	}
 
 	diplomatic_upkeep = 8
-	trade_range = 1
 }
 
 

@@ -3,7 +3,6 @@ italicgfx
 celticgfx
 indiangfx
 asiangfx
-italicgfx
 hellenicgfx
 punicgfx
 thraciangfx

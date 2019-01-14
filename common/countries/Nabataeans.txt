@@ -7,14 +7,14 @@ color = { 142 119 0 }
 
 historical_idea_groups = {
 	cavalry_ideas
-	economy_ideas
-	trade_ideas
+	financial_ideas
+	caravan_trade_ideas
 	administrative_ideas
-	quantity_ideas
-	imperial_government_ideas
-	influence_ideas
-	offensive_ideas
 	mercenary_ideas
+	imperial_ideas
+	diplomatic_ideas
+	logistic_ideas
+	
 }
 
 historical_units = {

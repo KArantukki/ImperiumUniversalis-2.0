@@ -6,14 +6,14 @@ special_unit_culture = mesopotamian_special
 color = { 67 81 114 }
 
 historical_idea_groups = {
-	trade_ideas
+	caravan_trade_ideas
 	mercenary_ideas
-	imperial_government_ideas
+	imperial_ideas
 	infantry_ideas
-	influence_ideas
+	diplomatic_ideas
 	expansion_ideas
 	administrative_ideas
-	superior_religious_ideas
+	cerimonial_ideas
 	maritime_ideas
 }
 

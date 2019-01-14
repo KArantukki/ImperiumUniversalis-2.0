@@ -657,7 +657,6 @@ marble = {
 				region = cartaginensis_region
 				region = lusitania
 				region = hispania_baetica
-				region = hispania_citerior
 				region = mare_aegaeum_islands_region
 				region = asia_minor
 			}

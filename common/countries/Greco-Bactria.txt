@@ -5,14 +5,15 @@ graphical_culture = hellenicgfx
 color = { 33 65 94 }
 
 historical_idea_groups = {
-	expansion_ideas
+	academy_ideas
+	maritime_trade_ideas
+	naval_ideas
+	republican_government_ideas
+	shipbuilding_ideas
 	infantry_ideas
-	administrative_ideas
-	syncretic_religious_ideas
-	quantity_ideas
-	imperial_government_ideas
-	cavalry_ideas
-	
+	financial_ideas
+	maritime_ideas
+	leadership_ideas
 }
 
 historical_units = {
@@ -54,49 +55,23 @@ monarch_names = {
 }
 
 leader_names = {
-		Abantes Abas Abascantus Abreas Acestes Adeimanthos Adelphius Ademetos Adrastos Aeaces Aegaeon Aegicoros
-			Aegon Adrastus Aesepus Aetios Agastrophos Agetos Airopos Aigeus Alcinous Alcmaion Alexandros Aleuas Alkiphron
-			Altes Alphios Alkmaion Amompharetos Amphimnestus Amphinomous Amyntor Alexias Alexarchos Alexander Aloeus Alphaeus
-			Anytos Anytus Apollodoros Apollophanes Atrometos Athenades Athenaeus Asopodoros Asteropaeus Athenaeus Attaginos
-			Bacis Baerius Balius Barates Basilides Bathyaes Belos Biton Bisaltes Boter Borus Bulis Burrhus Butacidas Belos
-			Bendis Bianor Boethus Brygos Brison Butacidas Bacchios Bacchylides Bacenor Bucoli Bulis Briareus Burrhus 
-			Carenos Carneades Carpophorus Celas Cebriones Ceas Chaeremon Choeros Choerilos Cilix Cineas Chryses Chremes
-			Coeranus Cordylion Copreus Cöon Codros Crios Croesus Cronos Cylon Cycnus Cyniscus Cyrenios Cois Conon Cobon Clinias
-			Chromis Chilon Charmides Charillos Chileos Chrysogones Cisses Cnoethos Crethon Ctesippus Cyncus Cyneas Cuphagoras
-			Daetor Damasippus Damasithymos Damoetas Dardanus Daphnis Daphis Deinokrates Deinomenes Deiotones Demarmenos
-			Democedes Demonous Demophlos Demosthenes Deon Diactorides Dexios Dieneces Dicaeus Diocles Dionysophanes Diotrephes
-			Dolops Doreios Doreius Duris Demeas Deiphonous Davos Danaos Damian Daedalos Dadaces Deinias Deipylus Demetrios Deukalion
-			Echekrates Echelaos Echemmon Eioneus Elephenor Eleon Endios Empedocles Ennomus Ennychus Enops Epiphanes Eratosthenes 
-			Euaemon Erysichton Euhemenis Euippus Eukles Euenus Eumolpus Euphorbos Euryanax Eurybates Eutychus Evaenetos Evelthon Evenus Evios
-			Hagnon Halisthertes Halius Harpalion Harpagos Harmon Hegesandros Hegesistratos Helicaon Herakleitos Herakleides Hephaestos 
-			Hero Herodes Herodianus Hiero Hieronymus Hippoklides Hippokratiedes Hippon Hipponax Hippotion Hioples Homeros Hyllus Hypatius
-			Hermon Helios Helle Hermeros Hermotimos Hippias Hyllos Hyperion Hermeias Hippasus Hagias Harmodios Hecataeus Hektor
-			Iambulus Iamus Iasos Iatragoras Icarus Icarius Icarion Ibykos Idas Imbrus Inachos Inachus Ion Iolaos Iphitos Iphitus Isocrates
-			Iakchos Ialmenes Idaios Ilus Idaeus Iobates Iphikrates Isagoras Ismaros Itylus Itheus Ision Irus Iphicrates Itheus
-			Kaletor Kalliaros Kallias Kandaules Karopophores Kasos Kassandros Kephalon Kimon Keos Kekrops Keteus Kleomenes Kosmas Krantor
-			Labdacus Labotas Lampon Lampus Laphanes Learchos Leodes Leonidas Leo Leagros Laogonus Leonitiades Leontis Lemnus Laodocus Lycophron
-			Loxias Lukus Lycophon Lysanios Lygdamis Lysias Lysis Leucippus Lamachos Lagos Lasos Leicritus Leon Leotychides Linus
-			Macarias Machaon Maeon Maron Marsyas Mastor Medus Medon Medios Megakreon Melanthos Melas Menalcas Menandros Menesthes Menestas Mentes 
-			Metron Metrophanes Mikon Mikkos Mnasyllus Mnesiphilos Mnester Monomachus Monoecus Morys Moschion Mulius Myrto Myrsinus Mygdon
-			Naubolus Naukles Nausithous Neoptolemos Neokles Nelpus Nicandros Kikias Nikomachos Nomion Noemon Nisos Nymphicus Nymphodrorus 
-			Odaenathus Odius Odysseus Oenomaus Olus Oliatos Onesilos Onomastos Ophelestes Opites Ops Orges Oresus Orpheus Orsilchus Otus
-			Paios Pallans Pallas Palmys Panares Pandaros Pantites Parthenopaeus Patron Peiros Pelias Pentheus Periclymenus Periandros Perdix
-			Pedocles Patrobus Parmenion Panthous Pantares Peukestes Peteos Periphas Perikles Perieeres Penthylos Paios Palaechthon Palaemon Panaetius
-			Pharnaces Phausius Phaestus Periumus Philoetius Philomen Philostratos Philopoemon Philpoemon Phoenix Phoibus Phorbas Phorcys
-			Priam Pratinos Praxilaus Prinetadas Prokopios Prothous Ptolemaios Pylas Pythes Pythagoras Pytheas Pylaeus Prymneus Pyrrhus Pyris
-			Ribes Rizon Sabas Sabyllos Scamandius Scaios Scythas Scyllias Sicinnos Simonides Skiron Sisyphus Siromos Sophanes Sosilus Sosimenes
-			Speudon Speritas Sostratos Stichius Stolos Strabo Strymon Straton Stachys Sostratos Sosthenes Sinon Syennesis Syagros Stratios
-			Tenes Temenos Elys Terillos Teucer Teukros Tharybis Theas Theasides Theodotus Theodoros Theodekles Thero Theron Theras
-			Thersites Thorax Thrasidaios Thrasilaus Thyrsos Thyrsis Thymotes Timasion Timasitheus Timoxenos Tisias Tisandros Timon Timonax
-			Vettias Xanthippos Xanthippus Xanthos Xenophon Zagreus Zamolxis Zeuxis Zosimus	
+			"of Abonuteichos" "Socraticus" "Tacticus" "Aristides" "of Aphrodisias" "of Pherae" "Grammaticus" "Rhodius" "of Cyrrhus" "of Tralles" "of Carystus" 
+			"of Ascalon" "of Sidon" "of Tyre" "Diogenes" "Liberalis" "of Phaleron" "of Tyana" "of Telmessus" "of Samos" "of Phlius" "Indicopleustes" "of Rhodes" 
+			"Pedanius" "of Lesbos" "Ponticus" "Andronicus" "of Chios" "Alexandrinus" "the Younger" "Scholasticus" "of Aphrodisias" 
+			"of Baktra" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
 }
-
 ship_names = {
-	
+	Zeus Hera Aphrodite Apollo Ares Artemis Athena Demeter Dionysus Hades Hephaestos Hermes Hestia Poseidon 
+	Achlys Aether Aion Ananke Chaos Chronos Erebus Eros Gaia Hemera Hypnos Nemesis Nyx Pontus Tartaros Thalassa
+	Thanatos Uranus Koios Kreios Kronos Hyperion Iapetós Oceanós Phoibe Rhéa Theía Thémis Astería Atlas Aúra
+	Clymene Dione Helios Eurybía Lelantos Leto Menoítios Pállas Perses Prometheus Alcyoneus Chthonius Damysus 
+	Mimas Pallas Porphyrion Antaeus Agathodaemon Aegaeon Achelous Benthesikyme Ceto Graeae Delphin Aello 
+	Celaeno Aphros Bythos Leucothea Achilles Heracles Aiax Jason Argo Odysseus Orpheus Theseus Aegea Antiope
+	Hippolyta Iphito Marpesia Otrera Penthesilea 
 }
 
 army_names = {
-	"Army of $PROVINCE$"
+	"Ieros Lochos" "Lochos of $PROVINCE$"
 }
 
 fleet_names = {

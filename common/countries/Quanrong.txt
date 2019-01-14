@@ -6,11 +6,11 @@ color = { 201 105 90 }
 
 historical_idea_groups = {
 	cavalry_ideas
-	syncretic_religious_ideas
-	quantity_ideas
+	syncrenism_ideas
+	mercenary_ideas
 	expansion_ideas
 	infantry_ideas
-	trade_ideas
+	caravan_trade_ideas
 	
 }
 

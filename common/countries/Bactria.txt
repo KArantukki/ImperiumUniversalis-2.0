@@ -4,24 +4,6 @@ graphical_culture = iraniangfx
 
 color = { 226 174 90 }
 
-
-
-historical_idea_groups = {
-	cavalry_ideas
-	economy_ideas
-	trade_ideas
-	administrative_ideas
-	quantity_ideas
-	imperial_government_ideas
-	influence_ideas
-	offensive_ideas
-	mercenary_ideas
-}
-
-historical_units = {
-	
-}
-
 preferred_religion = zoroastrianism
 
 historical_idea_groups = {

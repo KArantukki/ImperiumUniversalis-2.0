@@ -306,7 +306,7 @@ assyrian_missions_3 = {
 	}
 	has_country_shield = yes
 	asy_arabian_expedition = {
-		position = 1
+		position = 2
 		icon = mission_desert
 		#completed_by = 155.1.1
 		required_missions = {  }

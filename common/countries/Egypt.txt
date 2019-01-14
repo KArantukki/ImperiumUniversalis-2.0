@@ -5,8 +5,8 @@ graphical_culture = egyptgfx
 color = { 211 187 139 }
 
 historical_idea_groups = {
-	economy_ideas
-	quality_ideas
+	financial_ideas
+	leadership_ideas
 	infantry_ideas
 }
 
