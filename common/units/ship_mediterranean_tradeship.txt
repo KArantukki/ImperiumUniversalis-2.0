@@ -11,6 +11,7 @@ trigger = { OR = {
 		unit_type = iberian
 		unit_type = balkan
 		unit_type = african
+		unit_type = caucaso_anatolian
 		}
 }
 
