@@ -48,6 +48,8 @@
  EST_VAL_AUXIL_90:0 "§YAuxiliary Units§! make up 90 - 100% of our forcelimit"
  EST_VAL_OFFICERS_DISMISSED:0 "Officers dismissed"
  EST_VAL_SKILLFUL_OFFICER:0 "Enlised Military Genius"
+ EST_VAL_OPEN_REBELLION:0 "Open Rebellion"
+ EST_VAL_WON_SOCIAL_WAR:0 "Allies lost the rebellion"
  
   
  TRIBAL_GATHERING:0 "Tribal Gathering"

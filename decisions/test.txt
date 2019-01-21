@@ -6,9 +6,7 @@ country_decisions = {
 			always = no
 		}
 		allow = {
-			capital_scope = {
-				province_has_center_of_trade = yes
-			}
+			
 		}
 		effect = {
 			add_prestige = 1

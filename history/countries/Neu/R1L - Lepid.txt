@@ -13,25 +13,8 @@ add_accepted_culture = punic
 
 	add_army_professionalism = 0.75
 	add_country_modifier = {
-			name = standing_army_modifier
-			duration = -1
-		}
-	add_country_modifier = {
-			name = land_grants_modifier
-			duration = -1
-		}
-	add_country_modifier = {
-			name = capite_censi_modifier
-			duration = -1
-		}
-	add_country_modifier = {
 			name = gladiator_games_modifier
 			duration = -1
-		}
-	add_country_modifier = {
-			name = not_owning_the_roman_fleet
-			duration = 1
-			hidden = yes
 		}
 		
 	add_ruler_personality = well_connected_personality

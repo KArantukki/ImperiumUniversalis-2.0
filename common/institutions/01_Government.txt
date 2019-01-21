@@ -201,7 +201,7 @@ government_lvl1 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_1
+				tooltip = has_advisor_has_advisor_governor_1
 				owner = {
 						governor = 1
 				}
@@ -215,7 +215,7 @@ government_lvl1 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_2
+				tooltip = has_advisor_has_advisor_governor_2
 				owner = {
 						governor = 2
 				}
@@ -229,7 +229,7 @@ government_lvl1 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_3
+				tooltip = has_advisor_has_advisor_governor_3
 				owner = {
 						governor = 3
 				}
@@ -423,7 +423,7 @@ government_lvl2 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_1
+				tooltip = has_advisor_has_advisor_governor_1
 				owner = {
 						governor = 1
 				}
@@ -437,7 +437,7 @@ government_lvl2 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_2
+				tooltip = has_advisor_has_advisor_governor_2
 				owner = {
 						governor = 2
 				}
@@ -451,7 +451,7 @@ government_lvl2 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_3
+				tooltip = has_advisor_has_advisor_governor_3
 				owner = {
 						governor = 3
 				}
@@ -613,7 +613,7 @@ government_lvl3 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_2
+				tooltip = has_advisor_has_advisor_governor_2
 				owner = {
 						governor = 2
 				}
@@ -627,7 +627,7 @@ government_lvl3 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_3
+				tooltip = has_advisor_has_advisor_governor_3
 				owner = {
 						governor = 3
 				}
@@ -782,7 +782,7 @@ government_lvl4 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_2
+				tooltip = has_advisor_has_advisor_governor_2
 				owner = {
 						governor = 2
 				}
@@ -796,7 +796,7 @@ government_lvl4 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_3
+				tooltip = has_advisor_has_advisor_governor_3
 				owner = {
 						governor = 3
 				}
@@ -922,7 +922,7 @@ government_lvl5 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_3
+				tooltip = has_advisor_has_advisor_governor_3
 				owner = {
 						governor = 3
 				}
@@ -1048,7 +1048,7 @@ government_lvl6 = {
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
-				tooltip = has_advisor_governor_3
+				tooltip = has_advisor_has_advisor_governor_3
 				owner = {
 						governor = 3
 				}

@@ -593,7 +593,6 @@ on_thri_yearly_pulse = {
 			100 = sparta.2
 			100 = sparta.3
 			100 = sparta.4
-			100 = sparta.9
 			
 			100 = arabia.1
 			
@@ -628,7 +627,6 @@ on_thri_yearly_pulse_2 = {
 		
 			100 = republic.1
 			100 = republic.2
-			100 = republic.3
 			100 = republic.4
 			100 = republic.5
 			25 = republic.6		# Ruler gets killed

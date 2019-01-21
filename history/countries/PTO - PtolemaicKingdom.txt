@@ -14,7 +14,7 @@ historical_rival = KYR
 		
 431.1.1 = {
 	add_army_professionalism = 0.5
-	add_ruler_personality = diadochi_leader_personality
+	#add_ruler_personality = diadochi_leader_personality
 	
 	monarch = {
 		name = "Ptolemy I Soter"

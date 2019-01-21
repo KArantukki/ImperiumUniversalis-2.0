@@ -6,7 +6,7 @@ color = { 178 66 68 }
 
 preferred_religion = zoroastrianism
 
-istorical_idea_groups = {
+historical_idea_groups = {
 	cavalry_ideas
 	caravan_trade_ideas
 	royal_court_ideas
@@ -21,7 +21,7 @@ istorical_idea_groups = {
 historical_units = { }
 
 monarch_names = { 
-	"Kyros #1" = 50
+	"Kyros #2" = 50
 	"Kambyses" = 50
 	"Dareios" = 70
 	"Xerxes" = 70

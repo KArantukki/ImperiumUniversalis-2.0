@@ -87,35 +87,35 @@ republican_rebels = {
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0
 			owner = {
 				NOT = { has_global_flag = birth_of_democracy }
 				has_reform = greek_polis_reform 
 			}
 		}
 		modifier = {
-			factor = 5
+			factor = 2.5
 			owner = {
 				has_reform = greek_polis_reform 
 				NOT = { has_country_modifier = polis_democracy_modifier }
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			owner = {
 				has_reform = greek_polis_reform 
 				NOT = { republican_tradition = 90  }
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			owner = {
 				has_reform = greek_polis_reform 
 				NOT = { republican_tradition = 75  }
 			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			owner = {
 				has_reform = greek_polis_reform 
 				NOT = { republican_tradition = 50  }

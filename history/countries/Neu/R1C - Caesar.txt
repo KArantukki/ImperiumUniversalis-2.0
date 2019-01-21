@@ -14,18 +14,6 @@ historical_rival = RRO
 675.1.1 = {
 	add_army_professionalism = 0.75
 	add_country_modifier = {
-			name = standing_army_modifier
-			duration = -1
-		}
-	add_country_modifier = {
-			name = land_grants_modifier
-			duration = -1
-		}
-	add_country_modifier = {
-			name = capite_censi_modifier
-			duration = -1
-		}
-	add_country_modifier = {
 			name = gladiator_games_modifier
 			duration = -1
 		} 

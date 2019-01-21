@@ -7,6 +7,17 @@ country_decisions = {
 			NOT = { TAG HEL }
 				primary_culture = epirot
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1039	
+				province_id = 1036	
+				province_id = 1038
+				owned_by = THP
+				owned_by = CHC
+				owned_by = MOL
+			}
+			NOT = { owned_by = ROOT }
+		}
 		allow = {
 			is_at_war =  no
 			owns_core_province = 1039
@@ -99,6 +110,9 @@ country_decisions = {
 			NOT = { has_country_flag = move_capital_to_ambracia_flag }
 			NOT = { capital = 1035 }
 			num_of_cities = 3
+		}
+		provinces_to_highlight = {
+				province_id = 1035	
 		}
 		allow = {
 			TAG = EPI

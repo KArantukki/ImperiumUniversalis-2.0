@@ -312,4 +312,29 @@ spriteTypes = {
 		name = "mission_ship2"
 		texturefile = "gfx//interface//missions//mission_ship2.dds"
 	}
+	
+	spriteType = {
+		name = "mission_scholar"
+		texturefile = "gfx//interface//missions//mission_scholar.dds"
+	}
+	
+	spriteType = {
+		name = "mission_artist"
+		texturefile = "gfx//interface//missions//mission_artist.dds"
+	}
+	
+	spriteType = {
+		name = "mission_tax"
+		texturefile = "gfx//interface//missions//mission_tax.dds"
+	}
+	
+	spriteType = {
+		name = "mission_tradeport"
+		texturefile = "gfx//interface//missions//mission_tradeport.dds"
+	}
+	
+	spriteType = {
+		name = "mission_peace"
+		texturefile = "gfx//interface//missions//mission_peace.dds"
+	}
 }

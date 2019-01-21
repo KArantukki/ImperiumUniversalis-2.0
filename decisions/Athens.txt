@@ -29,6 +29,9 @@ country_decisions = {
 			NOT = { has_global_flag = expanded_silver_mines_flag }
 		NOT = { started_in = 250.1.1 }
 		}
+		provinces_to_highlight = {
+			province_id = 960
+		}
 		allow = {
 			is_at_war =  no
 			adm_power = 100

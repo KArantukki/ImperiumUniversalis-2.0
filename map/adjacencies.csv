@@ -335,6 +335,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1012;1013;sea;1393;1412;1323;1413;1326;IonianIsles
 970;1025;sea;1420;-1;-1;-1;-1;AegeanSea
 921;919;sea;927;-1;-1;-1;-1;Africa
+957;958;sea;1409;-1;-1;-1;-1;Aigina
+957;940;sea;1409;-1;-1;-1;-1;Aigina
 
 633;691;sea;670;-1;-1;-1;-1;Oasis
 689;691;sea;670;-1;-1;-1;-1;Oasis

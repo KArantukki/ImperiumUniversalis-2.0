@@ -13,6 +13,8 @@
  LESS_NATION_DESC:0 "§OIMPORTANT:§!\nThis start date cuts off a lot of tribal nations, some of them can still be released by rebels or war. Others won't be in game at all. This scenario is recommanded for slower PCs and for multiplayer games."
  CLASH_OF_EMPIRES_TITLE:0 "§O612 BC§! - Clash of Empires"
  CLASH_OF_EMPIRES_DESC:0 "The former subjects of Assyria have broken free and started a war against their former overlord. After years of fighting, an allied army of Babylonians, Medes Scythians and Susianians besieged and conquerd Nineveh, capital of the Neo-Assyrian Empire. Sinsharishkun, King of Assyria, is killed in the sacking. Meanwhile the Egyptian Pharao has gathered an army to help the Assyrians."
+ 612_TITLE:0 "§O612 BC§! - The Ancient World"
+ 612_DESC:0 ""
  FPW_NAME:0 "§O264 BC§! - First Punic War"
  FPW_DESC:0 "'You aren't defeated unless you accept defeat' -Roman saying\nTwo great powers have risen in the Mediterranean Sea. Carthage is a sprawling Mercantile Empire from North Africa and Iberia, and the Romans are a Militaristic Republic who are the recent conquerors of most of Italy. The islands that border them, Sicily, Sardinia, and Corsica, were under constant dispute between the two powers. Eventually, Italian pirates would take a Carthaginian City, but be pardoned by Carthage. Afterwards, they appealed to the Romans, as they are Italian, and would ask for help in fighting Carthage. What would come is a twenty year long war that consisted of over a million men, and end with Sicily becoming a province SPQR."
  SPW_NAME:0 "§O218 BC§! - Second Punic War"

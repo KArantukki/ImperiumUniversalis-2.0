@@ -55,17 +55,17 @@ estate_privileged_city = {
 	province_modifier_happy = {
 		local_tax_modifier = 0.2
 		local_production_efficiency = 0.2
-		local_amount_of_banners = 1
+		local_amount_of_banners = 0.5
 	}
 	province_modifier_neutral = {
 		local_tax_modifier = 0.2
 		local_production_efficiency = 0.2
-		local_amount_of_banners = 1
+		local_amount_of_banners = 0.5
 	}	
 	province_modifier_angry = {
 		local_tax_modifier = 0.2
 		local_production_efficiency = 0.2
-		local_amount_of_banners = 1
+		local_amount_of_banners = 0.5
 	}	
 	
 	# Influence modifiers##############################################

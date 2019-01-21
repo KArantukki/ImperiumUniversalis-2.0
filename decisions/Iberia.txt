@@ -6,6 +6,15 @@ country_decisions = {
 			NOT = { exists = IBB }
 			culture_group = iberian_group
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 159
+				province_id = 209
+				province_id = 157
+				province_id = 253
+			}
+			NOT = { owned_by = ROOT }
+		}
 		allow = {
 			is_at_war =  no
 			is_subject = no

@@ -42,14 +42,14 @@ estate_allies = {
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
 		local_state_maintenance_modifier = -1.0
-		local_manpower_modifier = 0.5 
-		local_sailors_modifier = 0.5
+		local_manpower_modifier = 0.3
+		local_sailors_modifier = 0.3
 		land_forcelimit = 1
 	}
 	province_modifier_neutral = {
 		local_state_maintenance_modifier = -1.0
-		local_manpower_modifier = 0.25 
-		local_sailors_modifier = 0.25
+		local_manpower_modifier = 0.15
+		local_sailors_modifier = 0.15
 		land_forcelimit = 1
 	}	
 	province_modifier_angry = {
@@ -63,7 +63,15 @@ estate_allies = {
 	influence_modifier = {
 		desc = EST_VAL_WAR
 		trigger = {
+			any_owned_province = { has_estate = estate_allies } 
 			is_at_war = yes
+		}		
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_OPEN_REBELLION
+		trigger = {
+			has_disaster = social_war_disaster
 		}		
 		influence = 10
 	}
@@ -325,6 +333,7 @@ estate_allies = {
 			always = yes
 		}
 		trigger = {
+			NOT = {  has_disaster = social_war_disaster  }
 			any_owned_province = {
 				has_estate = estate_allies
 			}
@@ -513,6 +522,7 @@ estate_allies = {
 			always = yes
 		}
 		trigger = {
+			NOT = {  has_disaster = social_war_disaster  }
 			any_owned_province = {
 				has_estate = estate_allies
 			}
@@ -563,6 +573,7 @@ estate_allies = {
 			always = yes
 		}
 		trigger = {
+			NOT = {  has_disaster = social_war_disaster  }
 			any_owned_province = {
 				has_port = yes
 				has_estate = estate_allies
@@ -631,6 +642,7 @@ estate_allies = {
 			always = yes
 		}
 		trigger = {
+			NOT = {  has_disaster = social_war_disaster  }
 			any_owned_province = {
 				has_estate = estate_allies
 			}

@@ -38,10 +38,25 @@ entity = {
 		#loop_time = 2.0f
 	}
 	state = {
-		name = "looted"	
-		event = { time = 0.5	particle = "siege_smoke_particle" }	
+		name = "siege_1"	
+		event = { time = 0.90	particle = "siege_smoke_particle" }	
+		#loop_time = 2.0f
+	}
+	state = { 
+		name = "siege_2"	
+		event = { time = 0.90	particle = "siege_smoke_particle" }	
+		#loop_time = 2.0f
+	}
+	state = { 
+		name = "siege_3"	
+		event = { time = 0.90	particle = "siege_smoke_particle" }		
 		#loop_time = 2.0f
 	}	
+	state = { 
+		name = "siege_4"	
+		event = { time = 0.90	particle = "siege_smoke_particle" }		
+		#loop_time = 2.0f
+	}		
 	state = { 
 		name = "siege_breach"	
 		event = { time = 0.90	particle = "siege_smoke_particle" }	

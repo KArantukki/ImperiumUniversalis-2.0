@@ -13,7 +13,7 @@ estate_clans_disaster = {
 		has_any_disaster = no
 		estate_influence = {
 			estate = estate_clans
-			influence = 80
+			influence = 100
 		}
 	}
 	
@@ -21,7 +21,7 @@ estate_clans_disaster = {
 		NOT = {
 			estate_influence = {
 				estate = estate_clans
-				influence = 80
+				influence = 100
 			}		
 		}
 	}
@@ -31,66 +31,6 @@ estate_clans_disaster = {
 	}
 	
 	progress = {
-		modifier = {
-			factor = 1
-			estate_influence = {
-				estate = estate_clans
-				influence = 80
-			}
-			hidden_trigger = {
-				NOT = {
-					estate_influence = {
-						estate = estate_clans
-						influence = 85
-					}			
-				}			
-			}
-		}
-		modifier = {
-			factor = 2
-			estate_influence = {
-				estate = estate_clans
-				influence = 85
-			}
-			hidden_trigger = {
-				NOT = {
-					estate_influence = {
-						estate = estate_clans
-						influence = 90
-					}			
-				}			
-			}
-		}
-		modifier = {
-			factor = 3
-			estate_influence = {
-				estate = estate_clans
-				influence = 90
-			}
-			hidden_trigger = {
-				NOT = {
-					estate_influence = {
-						estate = estate_clans
-						influence = 95
-					}			
-				}			
-			}
-		}	
-		modifier = {
-			factor = 4
-			estate_influence = {
-				estate = estate_clans
-				influence = 95
-			}
-			hidden_trigger = {
-				NOT = {
-					estate_influence = {
-						estate = estate_clans
-						influence = 100
-					}			
-				}			
-			}
-		}	
 		modifier = {
 			factor = 5
 			estate_influence = {
@@ -104,7 +44,7 @@ estate_clans_disaster = {
 			NOT = {
 				estate_influence = {
 				estate = estate_clans
-				influence = 70
+				influence = 80
 				}						
 		}
 	}

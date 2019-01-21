@@ -77,7 +77,7 @@ agraculture_focus_reform = {
 	allow_normal_conversion = yes
 
 	potential = {
-		num_of_cities = 6
+		
 		}
 	modifiers = {
 		 	production_efficiency = 0.1

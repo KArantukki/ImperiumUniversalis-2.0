@@ -62,6 +62,14 @@ difficulty_easy_ai = {
 }
 
 difficulty_normal_ai = {
+	manpower_recovery_speed = 0.1
+	land_forcelimit_modifier = 0.1
+	naval_forcelimit_modifier = 0.1
+	global_regiment_cost = -0.05
+	global_ship_cost = -0.05
+	build_cost = -0.05
+	global_unrest = -1
+	
 }
 
 difficulty_hard_ai = {

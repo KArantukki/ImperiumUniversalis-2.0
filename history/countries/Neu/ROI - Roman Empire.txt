@@ -14,19 +14,6 @@ capital = 219
 			name = gladiator_games_modifier
 			duration = -1
 		}
-	add_country_modifier = {
-			name = standing_army_modifier
-			duration = -1
-		}
-	add_country_modifier = {
-			name = land_grants_modifier
-			duration = -1
-		}
-	add_country_modifier = {
-			name = capite_censi_modifier
-			duration = -1
-		}
-			
 721.1.1 = { 
 	monarch = {
 		name = "Augustus"

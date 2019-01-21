@@ -506,7 +506,7 @@ hellenistic_age = {
 				navy_tradition = 90
 			}
 		}
-		obj_luxury_goods = 
+		obj_luxury_goods = {
 			num_of_owned_provinces_with = {
 				value = 6
 					OR = {

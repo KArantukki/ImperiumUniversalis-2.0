@@ -52,7 +52,7 @@ military_academy = {
 	}
 }
 library = {		
-	cost = 200
+	cost = 250
 	time = 36	
 
 	modifier = {

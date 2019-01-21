@@ -30,6 +30,7 @@ country_event = {
 	option = {
 		name = "government.1.a"
 		ai_chance = { factor = 30 }
+			add_absolutism = -1
 			kill_leader = {
 				type = general
 			}
@@ -63,6 +64,7 @@ country_event = {
 		name = "government.2.a"
 		ai_chance = { factor = 55 }
 			kill_advisor = random
+			add_absolutism = -2
 	}
 	option = {
 		name = "government.2.b"
@@ -133,6 +135,7 @@ country_event = {
 		name = "government.4.a"
 		ai_chance = { factor = 50 }
 			kill_advisor = random
+			add_absolutism = -2
 	}
 	option = {
 		name = "government.4.b"
@@ -141,6 +144,7 @@ country_event = {
 				name = careless_advisor
 				duration = 1825
 			}
+			add_absolutism = -1
 			
 	}
 }
@@ -169,6 +173,7 @@ country_event = {
 				add_stability = 1
 				else = { add_adm_power = 100 }
 			}
+			add_absolutism = 2
 	}
 }
 ########################################################################################
@@ -289,11 +294,12 @@ country_event = {
 	}
 	option = {
 		name = "government.9.a"
-			add_corruption = 1
+			add_corruption = 2
 	}
 	option = {
 		name = "government.9.b"
-			add_adm_power = -50
+			add_adm_power = -25
+			add_absolutism = -2
 	}
 }
 ########################################################################################
@@ -351,11 +357,13 @@ country_event = {
 	}
 	option = {
 		name = "government.11.a"
+			add_absolutism = -1
 			add_army_tradition = -10
 	}
 	option = {
 		name = "government.11.b"
-			add_stability = -1
+			add_absolutism = -1
+			add_adm_power = -25
 	}
 }
 ########################################################################################
@@ -413,14 +421,14 @@ country_event = {
 					}
 					area = { add_local_autonomy = 20  }
 					}
-		add_faction_influence = { faction = fac_monarch influence = 5 }
+		add_faction_influence = { faction = fac_monarch influence = -5 }
 
 	}
 	option = {
 		name = "government.13.b"
 		ai_chance = { factor = 20 }
 			add_stability = -1
-			add_faction_influence = { faction = fac_nobles influence = 5 }
+			add_faction_influence = { faction = fac_nobles influence = -5 }
 	}
 }
 ########################################################################################
@@ -444,6 +452,7 @@ country_event = {
 	
 	option = {		name = "government.16.a"
 			add_corruption = 0.5
+			add_absolutism = -1
 		}
 	}
 ########################################################################################

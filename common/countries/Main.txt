@@ -14,7 +14,7 @@ historical_idea_groups = {
 	imperial_ideas
 	diplomatic_ideas
 	logistic_ideas
-	mercenary_ideas
+	
 }
 
 historical_units = {

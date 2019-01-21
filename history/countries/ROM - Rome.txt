@@ -656,18 +656,6 @@ add_country_modifier = {
 	set_country_flag = capite_censi_happened
 	set_country_flag = standing_army_happened
 	
-	add_country_modifier = {
-			name = standing_army_modifier
-			duration = -1
-		}
-	add_country_modifier = {
-			name = land_grants_modifier
-			duration = -1
-		}
-	add_country_modifier = {
-			name = capite_censi_modifier
-			duration = -1
-		}
 }
 675.1.1 = {
 	leader = {	name = "Gaius Julius Caesar"	type = general			fire = 8	shock = 8	manuever = 4	siege = 2	death_date = 705.1.1 } 

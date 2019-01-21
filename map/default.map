@@ -31,6 +31,12 @@ lakes = {
 force_coastal = {
 }
 
+canal_definition = {
+	name = "nile_canal"
+	x = 1768
+	y = 1026
+}
+
 definitions = "definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"

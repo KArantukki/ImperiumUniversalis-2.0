@@ -1,4 +1,6 @@
 ﻿l_english:
+ festival_hold_modifier:0 "Festival Held"
+ festival_hold_modifier_desc:0 "A huge festival was hosted here recently."
  governor_driven_away_modif:0 "Governor Driven Away"
  governor_driven_away_modif_desc:0 "The governor who was loyal to the country government was driven away by the local people."
  unrest_in_the_army:0 "Unrest in the Army"

@@ -19,9 +19,9 @@ historical_idea_groups = {
 historical_units = { }
 
 monarch_names = {
-	"Achaemenes #1" = 40
-	"Cispis #1" = 40
-	"Kurus #1" = 40
+	"Achaemenes #2" = 40
+	"Cispis #2" = 40
+	"Kurus #2" = 40
 	"Xsayarsa" = 40
 	"Darayavahus" = 40
 	"Artaxsaca" = 40
