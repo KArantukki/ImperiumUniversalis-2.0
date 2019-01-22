@@ -9,6 +9,7 @@ capital = 2277
 
 historical_rival = EGY
 historical_rival = PHI
+historical_rival = ISR
 
 114.1.1 = {
 	monarch = {

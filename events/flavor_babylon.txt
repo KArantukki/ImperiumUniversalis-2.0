@@ -366,6 +366,7 @@ country_event = {
 		name = "babylon.302.a"
 				sagartia_area = {
 					limit = {
+						NOT = { is_claim = ROOT }
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 						owned_by = BAB
@@ -374,6 +375,7 @@ country_event = {
 				}
 				adiabene_area = {
 					limit = {
+						NOT = { is_claim = ROOT }
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 						owned_by = BAB
@@ -382,6 +384,7 @@ country_event = {
 				}
 				assyria_area = {
 					limit = {
+						NOT = { is_claim = ROOT }
 						NOT = { is_core = ROOT }
 						NOT = { owned_by = ROOT }
 						owned_by = BAB

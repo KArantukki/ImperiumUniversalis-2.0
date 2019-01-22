@@ -11,6 +11,7 @@ capital = 2500
 
 historical_rival = EGY
 historical_rival = ASY
+historical_friend = MDI
 
 change_statists_vs_orangists = 0.75
 	add_army_professionalism = 0.05

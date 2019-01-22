@@ -82,7 +82,7 @@ military_missions = {
 	}
 	a_proud_navy_mission = {
 		#position = 1
-		icon = mission_ship
+		icon = mission_big_fleet
 		required_missions = { build_shipyards_mission }
 		trigger = {
 			num_of_heavy_ship = 10
@@ -416,7 +416,10 @@ production_missions = {
 		icon = mission_hoplite_2
 		required_missions = {  }
 		trigger = {
-			grown_by_states = 5
+			custom_trigger_tooltip = {
+				tooltip = conquer_new_territories_mission.tooltip
+						grown_by_states = 5
+				}
 		}
 		effect = {
 			add_prestige = 10

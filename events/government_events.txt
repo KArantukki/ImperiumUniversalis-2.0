@@ -667,7 +667,11 @@ country_event = {
 					any_neighbor_province = { NOT = { owned_by = ROOT } }
 				}
 				every_neighbor_province = {
-					limit = { NOT = { owned_by = ROOT } }
+					limit = { 
+						NOT = { owned_by = ROOT } 
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
 					add_claim = ROOT
 				}
 			}

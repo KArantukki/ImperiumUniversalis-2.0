@@ -51,6 +51,7 @@ technology = {
 	# Tech 2
 	year = 135 # 619 BC 
 	shrine = yes
+	small_townhall = yes
 
 }
 
@@ -82,6 +83,7 @@ technology = {
 	# Tech 6
 	year = 190 # 564 BC  
 	production_efficiency 	=	0.025
+	small_temple = yes
 }
 
 technology = {
@@ -134,8 +136,6 @@ technology = {
 technology = {
 	# Tech 13
 	year = 295
-	small_temple = yes
-	small_townhall = yes
 }
 
 technology = {

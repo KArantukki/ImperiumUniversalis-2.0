@@ -14,6 +14,7 @@ historical_friend = MD3
 historical_friend = MD4
 historical_friend = MD5
 historical_friend = MD6
+historical_friend = BAB
 
 129.1.1 = {
 add_absolutism = 10

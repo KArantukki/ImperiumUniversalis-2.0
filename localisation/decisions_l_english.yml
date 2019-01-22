@@ -317,3 +317,5 @@
  invite_zoroaster_to_court_desc:0 "Invite the religious reformer and philosopher Zoroaster to our court."
  hold_a_festival_title:0 "Hold Festival in $CAPITAL$ "
  hold_a_festival_desc:0 "Hold a large festival in the capital to pacify the citizens."
+ block_the_egyptians_decision_title:0 "Attack the Egyptian Army"
+ block_the_egyptians_decision_desc:0 "The Egyptians march through our land to help the Assyrians, it would be wise to help the Babylonians to defeat the Assyrian Empire."

@@ -128,3 +128,154 @@ country_event = {
 		}
 
 }
+########################################################################################
+# claims on canaan 1/2
+########################################################################################
+country_event = {
+	id = egypt.3
+	title = "egypt.3.t"
+	desc = "egypt.3.d"
+	picture = battle
+	
+	trigger = {
+		tag = EGY
+		NOT = {  started_in = 147.1.1 }
+		NOT = {  is_year = 160 }
+		NOT = { exists = ASY }
+		has_truce = BAB
+		OR = {
+			owns = 2277
+			controls = 2277
+			2277 = {
+				owner = { is_subject_of = ROOT } 
+			}
+		}
+		2302 = { owned_by = BAB }
+		2310 = { owned_by = BAB }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	# Claim that region
+	option = {
+		name = "egypt.3.a" 
+		ai_chance = { 
+				factor = 65
+				modifier = {
+					factor = 2.0
+					treasury = 100
+				}
+				modifier = {
+					factor = 2.0
+					manpower_percentage = 0.4
+				}
+				modifier = {
+					factor = 1.5
+					stability = 1
+				}
+				modifier = {
+					factor = 0.75
+					 num_of_loans = 1
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { manpower_percentage = 0.1 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { stability = 0 }
+				}
+			}
+				canaan_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_claim = ROOT
+				}
+		declare_war_with_cb = {
+			who = BAB
+			casus_belli = cb_conquest
+			province = 2302
+		}
+		hidden_effect = {
+			BAB = {
+				country_event = { 
+					id = egypt.301
+				}
+			}
+		}
+	}
+	# Stay away
+	option = {
+		name = "egypt.3.b"
+		ai_chance = { 
+				factor = 50
+				}
+			add_prestige = -10
+			add_war_exhaustion = -2
+	}
+}
+########################################################################################
+# claims on canaan 2/2
+########################################################################################
+country_event = {
+	id = egypt.301
+	title = "egypt.301.t"
+	desc = "egypt.301.d"
+	picture = lostbattle
+	is_triggered_only = yes
+	
+	trigger = {
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	# Fight them
+	option = {
+		name = "egypt.301.a" 
+		ai_chance = { 
+				factor = 65
+				modifier = {
+					factor = 2.0
+					treasury = 100
+				}
+				modifier = {
+					factor = 2.0
+					manpower_percentage = 0.3
+				}
+				modifier = {
+					factor = 1.5
+					stability = 1
+				}
+				modifier = {
+					factor = 0.5
+					 num_of_loans = 1
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { manpower_percentage = 0.05 }
+				}
+				modifier = {
+					factor = 0.5
+					NOT = { stability = 0 }
+				}
+			}
+			add_war_exhaustion = 2
+	}
+	# back down
+	option = {
+		name = "egypt.301.b"
+		ai_chance = { 
+				factor = 50
+				}
+			add_prestige = -10
+			add_war_exhaustion = -2
+	}
+}
+
