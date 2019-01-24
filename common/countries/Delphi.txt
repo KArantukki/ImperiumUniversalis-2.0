@@ -1,10 +1,8 @@
 #Country Name: Please see filename.
 
 graphical_culture = hellenicgfx
-special_unit_culture = hellenic_alt1
 
-color = { 255 128 65 }
-
+color = { 67 69 91 }
 
 
 historical_idea_groups = {

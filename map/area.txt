@@ -42,16 +42,16 @@ picenum_area = {
 	60 59 57 58 78
 }
 umbria_area = {
-	61 63 62 64 65
+	61 63 62 64 72
 }
 etruria_east = {
-	66 67 68 72 69
+	66 67 68 69 71
 }
 etruria_west = {
-	74 73 71 70 75
+	74 73 70 75 120
 }
 apennines_area = {
-	76 77 81 80 
+	76 77 81 80 65
 }
 # Gallia cisalpina
 gallia_cispadana = {
@@ -83,7 +83,7 @@ alpes_tridentinus = {
 }
 # Sardinia et Corsica
 corsica_area = {
-	121 120 122 123 124
+	121 122 123 124
 }
 sardinia_east = {
 	129 128 130 131

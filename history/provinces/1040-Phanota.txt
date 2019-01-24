@@ -1,11 +1,12 @@
-add_core = THP
-owner = THP
-controller = THP
+
+add_core = MOL
+owner = MOL
+controller = MOL
 culture = epirot
 religion = greek_religion
 hre = no
 base_tax = 0
-base_production = 0
+base_production = 1
 base_manpower = 3
 trade_goods = wine
 capital = ""

@@ -3,9 +3,7 @@
 graphical_culture = hellenicgfx
 special_unit_culture = hellenic_alt2
 
-color = { 255 106 68 }
-
-revolutionary_colors = { 5  13  0 }
+color = { 249 163 42 }
 
 
 historical_idea_groups = {
@@ -104,7 +102,8 @@ leader_names = {
 			"of Abonuteichos" "Socraticus" "Tacticus" "Aristides" "of Aphrodisias" "of Pherae" "Grammaticus" "Rhodius" "of Cyrrhus" "of Tralles" "of Carystus" 
 			"of Ascalon" "of Sidon" "of Tyre" "Diogenes" "Liberalis" "of Phaleron" "of Tyana" "of Telmessus" "of Samos" "of Phlius" "Indicopleustes" "of Rhodes" 
 			"Pedanius" "of Lesbos" "Ponticus" "Andronicus" "of Chios" "Alexandrinus" "the Younger" "Scholasticus" "of Aphrodisias" 
-			"of Korinthos" "of Korinthos" "of Korinthos" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+			"of Korinthos" "of Korinthos" "of Korinthos" "of Korinthos" "of Korinthos" "of Korinthos" "of Korinthos" "of Korinthos" 
+			"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
 }
 
 ship_names = {

@@ -1,4 +1,5 @@
 add_core = BY1
+add_core = CHC
 owner = BY1
 controller = BY1
 culture = ardiaei

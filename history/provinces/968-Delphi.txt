@@ -1,4 +1,5 @@
 add_core = PHC
+add_core = DPH
 owner = PHC
 controller = PHC
 culture = aeolic
