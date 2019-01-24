@@ -747,7 +747,7 @@ theban_necropolis = {
 	
 	}
 }
-abu = {
+abu_modifier = {
 	picture = "egypt_temple"
 	potential = {
 		always = yes
