@@ -6,7 +6,7 @@ technology_group = diadochi
 primary_culture = assyrian
 religion = mesopotamian_religion
 #religious_school = semitic_type
-add_accepted_culture = babylonian
+add_accepted_culture = syriac
 capital = 2372
 
 historical_rival = SUS
@@ -14,10 +14,11 @@ historical_rival = BAB
 historical_rival = JUD
 	
 127.1.1 = {
-	add_treasury = -150 
-	add_yearly_manpower = -1.5
+	add_treasury = -125
+	add_yearly_manpower = -1.0
 	add_stability = -1
 	add_army_professionalism = 0.1
+	add_faction_influence = { faction = fac_monarch influence = 10 }
 	monarch = {
 		name = "Sinsharishkun"
 		dynasty = "of Assyria"

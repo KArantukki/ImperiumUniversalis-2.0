@@ -43,8 +43,8 @@ THS_ideas = {
 ASY_ideas = {
     #Traditions
     start = {
-        num_accepted_cultures = 2
-		harsh_treatment_cost = -0.2
+        war_exhaustion = -0.05
+		army_tradition_decay = -0.1
     }
     #Ambitions
     bonus = {
@@ -2613,7 +2613,7 @@ KHR_ideas = {
 
 BAB_ideas = {
 	start = {	
-			same_culture_advisor_cost = -0.25 
+			same_culture_advisor_cost = -0.2 
 			global_unrest = -1
 	}
 	
@@ -2652,12 +2652,12 @@ BAB_ideas = {
 
 EGY_ideas = {
 	start = {	
-			num_accepted_cultures = 1
+			global_prov_trade_power_modifier = 0.1 
 			mercenary_cost = -0.15
 	}
 	
 	bonus = {
-			trade_efficiency = 0.1
+			monthly_splendor = 1
 	}
 	
 	trigger = {
@@ -2679,7 +2679,7 @@ EGY_ideas = {
 		fac_monarch_influence = 0.05
 	}
 	egyptian_agriculture = {
-		 global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.1
 	}
 	land_management = {
 		global_tax_modifier = 0.1

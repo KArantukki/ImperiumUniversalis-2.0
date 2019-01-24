@@ -47,7 +47,11 @@ republican_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			owner = { is_tribal = yes }
+			owner = { government = tribal }
+		}
+		modifier = {
+			factor = 0.0
+			owner = { government = native }
 		}
 		modifier = {
 			factor = 2

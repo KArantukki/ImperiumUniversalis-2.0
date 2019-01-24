@@ -73,7 +73,7 @@ technology = {
 	enable = 1_brit_clansmen
 	enable = 1_brit_highland_raiders
 	
-	land_morale = 1.0
+	land_morale = 2.0
 	combat_width = 1.0
 	
 	artillery_fire 		= 	0.4

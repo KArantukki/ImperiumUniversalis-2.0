@@ -24,6 +24,36 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	build_the_etemenanki = {
+		potential = {
+			TAG = BAB
+			NOT = { has_country_flag = build_the_etemenanki_flag }
+		}
+		
+		allow = {
+			is_at_war =  no
+			ADM = 5
+			religion = mesopotamian_religion
+			treasury = 250
+			2500 = { 
+				has_building = shrine 
+			}
+		}
+		
+		effect = {
+				set_country_flag = build_the_etemenanki_flag
+				add_patriarch_authority = 0.1
+				add_treasury = -250
+				2500 = {
+					add_building = small_temple
+				}
+			}
+			
+		ai_importance = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	agricultural_and_tenancy_system = {
 		potential = {

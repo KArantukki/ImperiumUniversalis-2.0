@@ -319,3 +319,10 @@
  hold_a_festival_desc:0 "Hold a large festival in the capital to pacify the citizens."
  block_the_egyptians_decision_title:0 "Attack the Egyptian Army"
  block_the_egyptians_decision_desc:0 "The Egyptians march through our land to help the Assyrians, it would be wise to help the Babylonians to defeat the Assyrian Empire."
+ greek_carian_mercs:0 "Greek and Carian Mercenaries"
+ greek_carian_mercs_desc:0 ""
+ greek_and_carian_mercs_title:0 "Hire Greek and Carian Mercenaries"
+ greek_and_carian_mercs_desc:0 "Hire Greek and Carian mercenaries from europe to help in the wars to come."
+ build_the_etemenanki_title:0 "Build the Etemenanki"
+ build_the_etemenanki_desc:0 "Etemenanki is the name of a ziggurat dedicated to Marduk in the city of Babylon of the 6th century BCE Neo-Babylonian dynasty. It is considered a possible inspiration for the biblical story (or even literal candidate for the tower itself) of the Tower of Babel."
+ 

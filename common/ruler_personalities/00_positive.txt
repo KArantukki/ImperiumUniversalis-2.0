@@ -2249,40 +2249,6 @@ immortal_personality = {
 	nation_designer_cost = 800
 }
 
-open_minded_personality = {
-	ruler_allow = {
-		allow = {
-			NOT = { ruler_has_personality = misogynistic_personality }
-			is_female = no
-		}
-		chance = {
-			modifier = {
-				factor = 1
-				dip = 4
-			}
-			modifier = {
-				factor = 3
-				ruler_has_personality = free_thinker_personality
-			}
-		}
-	}
-
-	heir_allow = {
-		allow = {
-		has_female_heir = no }
-	}
-	
-	consort_allow = {
-		allow = {
-		has_female_consort = no }
-	}
-
-	female_advisor_chance = 0.25
-	global_unrest = -1
-	
-	nation_designer_cost = 5
-}
-
 
 the_great_personality = {
 	ruler_allow = {

@@ -1,6 +1,17 @@
 
 vassal_action_happened = {  }
 
+greek_carian_mercs = {
+	global_regiment_cost = -0.1
+	mercenary_cost = -0.1
+	possible_mercenaries = 0.5 
+}
+
+focus_on_integration_modifier = {
+	global_autonomy = -0.1
+	harsh_treatment_cost = -0.25
+}
+
 festival_hold_modifier = {
 	local_unrest = -2
 	local_monthly_devastation = -0.25

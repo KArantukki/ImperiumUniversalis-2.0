@@ -24,10 +24,8 @@ estate_privileged_city = {
 				has_country_modifier = social_war_compromise
 			}
 		}
-		OR = {
 			base_production = 1
 			base_tax = 1
-		}
 	}
 	
 	# Is used to weigh importance compared to other estates

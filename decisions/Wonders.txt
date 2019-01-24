@@ -79,7 +79,7 @@ country_decisions = {
 			NOT = { 728 = { has_province_modifier = wonder_pharos } }
 		}
 		allow = {
-			adm_tech = 16
+			adm_tech = 28
 			is_at_war =  no
 			owns_core_province = 728
 			treasury = 750 

@@ -13,11 +13,11 @@ historical_rival = EGY
 historical_rival = ASY
 historical_friend = MDI
 
-change_statists_vs_orangists = 0.75
-	add_army_professionalism = 0.05
 
 128.1.1 = {
 	add_absolutism = 15
+	add_army_professionalism = 0.1
+	add_faction_influence = { faction = fac_monarch influence = 20 }
 	add_ruler_personality = inspiring_leader_personality
 	monarch = {
 		name = "Nabopolassar"

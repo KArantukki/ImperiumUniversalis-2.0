@@ -421,7 +421,6 @@ canaan_region = {
 	ituraea_area
 	anti_lebanon
 	cava_syria
-	trachonitis_area
 	}
 }
 
@@ -539,6 +538,7 @@ arabia_petrea_region = {
 	lihyan_area
 	sidenica_area
 	hegra_area
+	trachonitis_area
 	}
 } 
 

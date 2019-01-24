@@ -99,7 +99,7 @@ can_improve_tax = {
 		}
 		allow = {
 			OR = {
-				has_estate = estate_colony
+				#has_estate = estate_colony
 				has_estate = estate_privileged_city
 				}
 		}

@@ -230,7 +230,7 @@ trade_missions = {
 			define_advisor = {
 				type = merchant_adv
 				skill = 3
-				discount = 0.25
+				 discount = yes
 			}
 		}
 	}
@@ -460,7 +460,7 @@ production_missions = {
 		required_missions = { unite_the_home_region_mission }
 		trigger = {
 			num_of_cities = 300
-			great_power_rank = 4
+			NOT = { great_power_rank = 4 }
 		}
 		effect = {
 			add_dip_power = 120

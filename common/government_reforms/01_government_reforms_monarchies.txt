@@ -78,6 +78,10 @@ assyrian_administration_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 25
 	
+	factions = {
+		fac_nobles
+		fac_monarch
+	}
 	modifiers = {
 		max_states = 5
 	}

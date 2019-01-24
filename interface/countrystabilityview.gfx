@@ -399,6 +399,12 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	spriteType = {
+		name = "GFX_disaster_bab_struggle_with_the_priests"
+		texturefile = "gfx//interface//disasters//bab_struggle_with_the_priests.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
 		name = "GFX_disaster_succession_crisis_disaster"
 		texturefile = "gfx//interface//disasters//succession_crisis_disaster.dds"
 		noOfFrames = 3

@@ -285,7 +285,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_baal = {
-				global_unrest = -2
+				global_unrest = -1
 				trade_efficiency = 0.05
 				
 				allow = {
@@ -338,7 +338,7 @@ pagan_group = {
 			}
 			
 			god_sydyk = {
-				global_unrest = -2
+				global_unrest = -1
 				idea_cost = -0.05
 				allow = {
 					always = yes
@@ -401,11 +401,11 @@ pagan_group = {
 		color = { 255 197 142 }
 		country = {
 			global_autonomy = -0.05
-			legitimacy = 1
+			legitimacy = 0.5
 		}
 		country_as_secondary = {
 			global_autonomy = -0.05
-			legitimacy = 1
+			legitimacy = 0.5
 		}
 		harmonized_modifier = harmonized_egyptian_religion
 		
@@ -415,7 +415,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_osiris = {
-				global_unrest = -2
+				global_unrest = -1
 				tolerance_own = 1
 				
 				allow = {
@@ -588,11 +588,11 @@ pagan_group = {
 		icon = 2
 		color = { 197 167 239 }
 		country = {
-			diplomatic_reputation = 1
+			diplomatic_upkeep = 1 
 			amount_of_banners = 0.1
 		}
 		country_as_secondary = {
-			diplomatic_reputation = 1
+			diplomatic_upkeep = 1 
 			amount_of_banners = 0.1
 		}
 		harmonized_modifier = harmonized_greek_religion
@@ -608,7 +608,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_zeus = {
-				global_unrest = -2
+				global_unrest = -1
 				general_cost = -0.15
 				
 				allow = {
@@ -748,7 +748,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_cybele = {
-				global_unrest = -2
+				global_unrest = -1
 				land_morale = 0.05
 				
 				allow = {
@@ -1015,7 +1015,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_ambisagrus = {
-				global_unrest = -2
+				global_unrest = -1
 				global_autonomy = -0.05
 				
 				allow = {
@@ -1467,7 +1467,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_zeus = {
-				global_unrest = -2
+				global_unrest = -1
 				global_autonomy = -0.05
 				
 				allow = {
@@ -1605,7 +1605,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_zeus = {
-				global_unrest = -2
+				global_unrest = -1
 				global_autonomy = -0.05
 				
 				allow = {
@@ -1741,7 +1741,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_zeus = {
-				global_unrest = -2
+				global_unrest = -1
 				global_autonomy = -0.05
 				
 				allow = {
@@ -1877,7 +1877,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_zeus = {
-				global_unrest = -2
+				global_unrest = -1
 				global_autonomy = -0.05
 				
 				allow = {
@@ -2013,7 +2013,7 @@ pagan_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_zeus = {
-				global_unrest = -2
+				global_unrest = -1
 				global_autonomy = -0.05
 				
 				allow = {
@@ -2262,12 +2262,12 @@ jewish_group = {
 		icon = 36
 		color = { 27 173 196 }
 		country = {
-			global_unrest = -2
+			global_unrest = -1
 			global_missionary_strength = -0.01
 		}
 		country_as_secondary = {
 			core_creation = -0.1
-			global_unrest = -2
+			global_unrest = -1
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -2536,7 +2536,7 @@ brahmin_group = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			god_indra = {
-				global_unrest = -2
+				global_unrest = -1
 				tolerance_own = 1
 				
 				allow = {
@@ -2834,12 +2834,12 @@ brahmin_group = {
 		
 		country = {
 			embracement_cost = -0.2
-			global_unrest = -2
+			global_unrest = -1
 		}
 		
 		country_as_secondary = {
 			embracement_cost = -0.2
-			global_unrest = -2
+			global_unrest = -1
 		}
 		
 		

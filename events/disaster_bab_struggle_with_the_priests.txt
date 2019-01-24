@@ -1,0 +1,76 @@
+namespace = bab_struggle_with_the_priests
+
+########################################################################################
+# Disaster Start
+########################################################################################
+country_event = {
+	id = bab_struggle_with_the_priests.1	
+	title = "bab_struggle_with_the_priests.1.t"
+	desc = "bab_struggle_with_the_priests.1.d"
+	picture = religious
+	is_triggered_only = yes
+
+	major = yes
+	
+	trigger = {
+
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1		
+	}
+
+	immediate = {
+		hidden_effect = {
+		random_owned_province = {
+			limit = {
+				is_core = ROOT 
+			}
+			spawn_rebels = {
+				type = 	peasant_rebels
+				size = 2
+				win = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "bab_struggle_with_the_priests.1.a"
+			add_stability = -1
+			add_legitimacy = -10
+	}
+
+}
+########################################################################################
+# Disaster ends
+########################################################################################
+country_event = {
+	id = bab_struggle_with_the_priests.2	
+	title = "bab_struggle_with_the_priests.2.t"
+	desc = "bab_struggle_with_the_priests.2.d"
+	picture = military_parade
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "bab_struggle_with_the_priests.2.a"
+			add_stability = 1
+	}
+
+}

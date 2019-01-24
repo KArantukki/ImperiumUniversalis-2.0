@@ -239,7 +239,7 @@ alliance = {
 alliance = {
 	first = SAM
 	second = MLT
-	start_date = 145.1.1
+	start_date = 145.1.1ddd
 	end_date = 208.1.1
 }
 alliance = {

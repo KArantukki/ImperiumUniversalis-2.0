@@ -67,6 +67,18 @@ country_event = {
 				}
 				multiply_variable = { which = slaves value = 500 }
 			}
+			
+			every_country = {
+				limit = {
+					government = monarchy
+					NOT = { government = tribal }
+					NOT = { government = native }
+					has_consort_regency = no
+					has_regency = no
+					NOT = { tag = ASY }
+				}
+				add_ruler_modifier = { name = ruler_coronation }
+			}
 	}
 	
 	option = {

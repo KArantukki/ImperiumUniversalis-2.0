@@ -232,7 +232,7 @@ babylon_missions_2 = {
 						has_building = imperial_road
 					}
 				}
-				amount = 16
+				amount = 24
 			}
 			 monthly_income = 75
 		}
@@ -709,7 +709,7 @@ babylon_missions_4 = {
 			owned_by = BAB
 		}
 		trigger = {
-			shrine = 4
+			shrine = 16
 			prestige = 40
 		}
 		effect = {
