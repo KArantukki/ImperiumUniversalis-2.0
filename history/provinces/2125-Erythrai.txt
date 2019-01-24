@@ -12,7 +12,7 @@ capital = ""
 is_city = yes
 small_harbor = yes
 gravel_road = yes
-
+add_province_triggered_modifier = erythraean_sybyl
 discovered_by = roman
 discovered_by = greek
 discovered_by = punic

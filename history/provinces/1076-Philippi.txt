@@ -10,7 +10,7 @@ base_manpower = 4
 trade_goods = silver
 capital = ""
 is_city = yes
-
+add_province_triggered_modifier = pangaion_mines
 discovered_by = roman
 discovered_by = greek
 discovered_by = punic
