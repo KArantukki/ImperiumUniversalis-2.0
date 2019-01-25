@@ -17,7 +17,7 @@ small_market = yes
 shrine = yes
 small_townhall = yes
 gravel_road = yes
-
+add_province_triggered_modifier = sybaris
 discovered_by = roman
 discovered_by = greek
 discovered_by = punic

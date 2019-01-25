@@ -11,14 +11,7 @@ acrocorinthos= {
 	}
 
 	trigger = {
-		owner = {
-			OR = {
-					religion = roman_religion
-					religion = greek_religion
-					religion = etruscan_religion
-					religion = cybele
-				}
-		}
+		always = yes
 	}
 	
 	local_defensiveness = 0.15
@@ -39,14 +32,7 @@ cadmeia = {
 	}
 
 	trigger = {
-		owner = {
-			OR = {
-					religion = roman_religion
-					religion = greek_religion
-					religion = etruscan_religion
-					religion = cybele
-				}
-		}
+		always = yes
 	}
 	local_defensiveness = 0.10
 	allowed_num_of_buildings = 1
@@ -747,7 +733,7 @@ theban_necropolis = {
 	
 	}
 }
-abu = {
+abu_modifier = {
 	picture = "egypt_temple"
 	potential = {
 		always = yes

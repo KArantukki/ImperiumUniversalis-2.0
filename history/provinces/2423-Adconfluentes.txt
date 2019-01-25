@@ -1,4 +1,3 @@
-add_core = SX1
 add_core = ARM
 add_core = URT
 owner = URT
@@ -9,8 +8,8 @@ base_production = 0
 base_manpower = 2
 trade_goods = naval_supplies
 capital = "Adconfluentes"
-culture = scythian
-religion = scythian_religion
+culture = armenian
+religion = armenian_religion
 
 discovered_by = caucaso_anatolian
 discovered_by = iranian

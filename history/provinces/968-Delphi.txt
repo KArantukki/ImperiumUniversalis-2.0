@@ -14,7 +14,7 @@ is_city = yes
 small_city_walls = yes
 center_of_trade = 1
 add_province_triggered_modifier = delphi
-	
+add_province_triggered_modifier = mount_parnassus
 discovered_by = roman
 discovered_by = greek
 discovered_by = punic

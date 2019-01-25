@@ -10,7 +10,7 @@ base_manpower = 3
 trade_goods = wool
 capital = ""
 is_city = yes
-
+add_province_triggered_modifier = mount_cyllene
 discovered_by = roman
 discovered_by = greek
 discovered_by = punic

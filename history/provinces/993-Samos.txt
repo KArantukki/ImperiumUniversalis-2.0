@@ -10,7 +10,7 @@ base_manpower = 1
 trade_goods = wine
 capital = ""
 is_city = yes
-
+add_province_triggered_modifier = heraion_of_samos
 discovered_by = roman
 discovered_by = greek
 discovered_by = punic
