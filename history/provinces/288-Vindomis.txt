@@ -1,12 +1,11 @@
-native_size = 40
-native_ferocity = 6
-native_hostileness = 2
+add_core = CRX
+owner = CRX
+controller = CRX
 culture = britannic
 religion = celtic_religion
 hre = no
 base_tax = 0
-base_production = 0
-trade_goods = unknown
+trade_goods = fur
 base_manpower = 2
 capital = ""
 is_city = no

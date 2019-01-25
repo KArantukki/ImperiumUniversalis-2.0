@@ -1,12 +1,12 @@
-native_size = 45
-native_ferocity = 5
-native_hostileness = 2
+add_core = DBX
+owner = DBX
+controller = DBX
 culture = britannic
 religion = celtic_religion
 hre = no
 base_tax = 0
 base_production = 0
-trade_goods = unknown
+trade_goods = meat_animals
 base_manpower = 3
 capital = ""
 is_city = no
