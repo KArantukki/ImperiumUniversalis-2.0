@@ -11,6 +11,7 @@ trade_goods = unknown
 capital = ""
 center_of_trade = 1
 
+discovered_by = DRD
 #discovered_by = roman
 #discovered_by = greek
 #discovered_by = punic

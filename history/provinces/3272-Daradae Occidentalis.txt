@@ -1,3 +1,6 @@
+add_core = DRD
+owner = DRD
+controller = DRD
 native_size = 65
 native_ferocity = 5
 native_hostileness = 6
@@ -7,9 +10,11 @@ hre = no
 base_tax = 0
 base_production = 0
 base_manpower = 5
-trade_goods = unknown
+trade_goods = gold
 capital = ""
+is_city = yes
 
+discovered_by = DRD
 #discovered_by = roman
 #discovered_by = greek
 #discovered_by = punic

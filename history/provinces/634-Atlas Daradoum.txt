@@ -12,6 +12,7 @@ capital = ""
 is_city = no
 
 
+discovered_by = SLT
 #discovered_by = roman
 #discovered_by = greek
 #discovered_by = punic

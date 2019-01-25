@@ -72,6 +72,7 @@ technology = {
 	enable = 1_jungle_spearthrowers
 	enable = 1_brit_clansmen
 	enable = 1_brit_highland_raiders
+	enable = 1_brit_forest_archers
 	
 	land_morale = 2.0
 	combat_width = 1.0

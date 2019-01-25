@@ -1,5 +1,11 @@
 # Order here is the priority for taking them, if trigger is true.
 
+BAB = {
+	NOT = { is_year = 185 }
+}
+MDI = {
+	NOT = { is_year = 165 }
+}
 ROM = {
 	NOT = { is_year = 700 }
 }
@@ -46,7 +52,7 @@ EPI = {
 }
 
 ANH = {
-			is_year = 195
+			is_year = 180
 	NOT = { is_year = 400 }
 	NOT = { exists = PSE }
 }
