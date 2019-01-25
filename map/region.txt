@@ -514,13 +514,12 @@ aethiops = {
 	deserta_aethiopia
 	cinnamomifera_regio
 	elephas_area
-	coastal_aethiopia
 	aethiopii_mons
 	aethiopia_inferior
 	aethiopia_superior
-	cyeneum_area
-	agisymba_citerior
-	agisymba_ulterior
+	avalites_sinus
+	azania_area
+	barbaria_area
 	}
 } 
 
@@ -599,8 +598,6 @@ lybia_region = {
 	deserta_syrtica
 	deserta_tripolitania
 	deserta_numidia
-	libya_interior
-	garamantum_ulterior
 	}
 }
 
@@ -616,12 +613,10 @@ mauretania_region = {
 	tingitana_west
 	tingitana_east
 	atlas_mons
-	libya_west
 	fortunatae_insulae
-	lixiane_area
 	mauretania_ulterior
 	mauretania_superior
-	libya_atlanticum
+	
 	}
 }
 
@@ -847,6 +842,26 @@ eastern_india_region = {
 }
 
 south_east_asia = {  }
+
+aethiopia_interior_region = {
+	areas = {
+	gaetulia_darae
+	lixiane_area
+	libya_west
+	cerne_area
+	daradae_area
+	stachirae_area
+	sinus_hespericus_area
+	hesperia_aethiopia
+	nigir_area
+	melano_gaetulia
+	libya_interior
+	garamantum_ulterior
+	agisymba_citerior
+	agisymba_ulterior
+	cyeneum_area
+	}
+}
 
 mare_suebicum_region = {
 	areas = {

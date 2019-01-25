@@ -1,12 +1,14 @@
-native_size = 70
+native_size = 135
 native_ferocity = 7
 native_hostileness = 6
-culture = agisymbian
-religion = east_african
+culture = salathian
+religion = numidian_religion
+#culture = agisymbian
+#religion = east_african
 hre = no
 base_tax = 0
 base_production = 0
-base_manpower = 5
+base_manpower = 7
 trade_goods = unknown
 capital = ""
 

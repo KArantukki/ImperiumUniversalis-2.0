@@ -1,13 +1,14 @@
-add_core = PIZ
-owner = PIZ
-controller = PIZ
+
+add_core = TUZ
+owner = TUZ
+controller = TUZ
 culture = gaul
 religion = celtic_religion
 hre = no
 base_tax = 0
 base_production = 0
 trade_goods = grain
-base_manpower = 5
+base_manpower = 4
 capital = ""
 is_city = yes
 

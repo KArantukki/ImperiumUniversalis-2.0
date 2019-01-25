@@ -1012,6 +1012,9 @@ north_african_group = {
 	mauretanian = {
 		primary = MRT
 	}
+	salathian = {
+		#primary = MRT
+	}
 	garamantes = {
 		primary = GAR
 	}

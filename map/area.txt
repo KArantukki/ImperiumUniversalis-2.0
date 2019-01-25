@@ -977,14 +977,11 @@ punt_area = {
 deserta_aethiopia = {
 	892 884 882 883 894 
 }
-cinnamomifera_regio = {
+avalites_sinus = {
 	885 878 886 887
 }
 elephas_area = {
-	890 889 888 893 891
-}
-coastal_aethiopia = {
-	895 897 898
+	890 889 888 893 895
 }
 aethiopii_mons = {
 	863 901 865 862 904
@@ -998,12 +995,16 @@ aethiopia_superior = {
 cyeneum_area = {
 	912 914 911 916 917
 }
-agisymba_citerior = {
-	681 680 682 683
+cinnamomifera_regio = {
+	3295 3296 3297 3298 3299
 }
-agisymba_ulterior = {
-	919 918 920 921 922
+azania_area = {
+	3300 3294 3293 3292 891
 }
+barbaria_area = {
+	897 898 3290 3289 3291
+}
+
 #arabia_petrea_region
 te_mefkat = {
 	2255 2254 2259 2258 2256
@@ -1213,23 +1214,14 @@ tingitana_east = {
 atlas_mons = {
 	541 540 542 543 536
 }
-libya_west = {
-	689 690 691 692
-}
 fortunatae_insulae = {
 	549 548 547 
-}
-lixiane_area = {
-	632 633 634 635 539
 }
 mauretania_ulterior = {
 	535 537 631 538 532
 }
 mauretania_superior = {
 	534 533 530 531 544
-}
-libya_atlanticum = {
-	693 925 924 923
 }
 # sarmatia_region
 glaesum_area = {
@@ -1713,6 +1705,45 @@ mahishaka_north = {
 mushika_area = {
 	3169 3167 3170 3172 3173
 }
+
+# aethiopia_interior_region
+gaetulia_darae = {
+	3256 3258 3259 3260
+}
+cerne_area = {
+	3257 3261 3262 3263 693
+}
+daradae_area = {
+	925 3264 3265 3272 3273
+}
+stachirae_area = {
+	3266 3268 3270 3271 3267
+}
+sinus_hespericus_area = {
+	924 3274 3275 3269
+}
+hesperia_aethiopia = {
+	3276 3277 3278 923 
+}
+libya_west = {
+	689 690 691 692
+}
+lixiane_area = {
+	632 633 634 635 539
+}
+nigir_area = {
+	3283 3282 3281 921 922 
+}
+melano_gaetulia = {
+	3286 3285 3284 3280 
+}
+agisymba_citerior = {
+	681 680 682 683 3287
+}
+agisymba_ulterior = {
+	919 918 920 3288 3279 
+}
+
 # Sea areas 
 east_mare_suebicum = {
 	1261 1260 1251 1252 1253 1258 1259 
@@ -1856,7 +1887,7 @@ mare_erythraeum_sea = {
 	1486 1487 1489 1488 1490 1500 1491 1492 1501 1493 1515
 }
 mare_aethiopicum = {
-	1499 1498 1497 1495 1496 1494
+	1499 1498 1497 1495 1496 1494 1502
 }
 pargon_sinus = {
 	1510 1511 1512 1516 1517 1518 1513 1514 

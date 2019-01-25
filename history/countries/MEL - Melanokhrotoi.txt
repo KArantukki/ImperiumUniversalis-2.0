@@ -6,7 +6,7 @@ technology_group = african
 primary_culture = habesha
 religion = east_african
 #religious_school = semitic_type
-capital = 915
+capital = 3297
 	
 add_stability = -1
 	

@@ -209,11 +209,6 @@ pretender_rebels = {
 	# Country Scope	
 	demands_enforced_effect = {
 		if = {
-			limit = { has_disaster = iucivilwar }
-			add_prestige = -200
-			add_legitimacy = 25
-		}	
-		if = {
 			limit = {
 				NOT = {
 					OR = {
@@ -237,6 +232,16 @@ pretender_rebels = {
 			add_faction_influence = { faction = fac_monarchists influence = 50 }
 			country_event = greek_polis.1
 		}
+		if = {
+			limit = { has_disaster = iucivilwar }
+			add_prestige = -50
+			add_legitimacy = 10
+		}	
+		if = {
+			limit = { has_disaster = succession_crisis_disaster }
+			add_prestige = -50
+			add_legitimacy = 65
+		}	
 		define_ruler = {
 			rebel = yes
 		}

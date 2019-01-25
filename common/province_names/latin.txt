@@ -326,3 +326,5 @@
 508 = "Augusta Treverorum"
 515 = "Septem"
 2316 = "Byblos"
+437 = "Pictavium"
+1136 = "Dyrrhachium"

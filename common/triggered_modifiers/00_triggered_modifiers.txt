@@ -46,21 +46,17 @@ rebel_buff = {
 pillars_of_hercules = {
 	potential = {
 		OR = {
-			has_discovered = 4
-			has_discovered = 5
-			has_discovered = 301
-			has_discovered = 302
-			has_discovered = 303
+			has_discovered = 137
+			has_discovered = 138
+			has_discovered = 515
 			}
 	}
 
 	trigger = {
 			is_subject = no
-			owns_or_vassal_of = 4
-			owns_or_vassal_of = 5
-			owns_or_vassal_of = 301
-			owns_or_vassal_of = 302
-			owns_or_vassal_of = 303
+			owns_or_vassal_of = 137
+			owns_or_vassal_of = 138
+			owns_or_vassal_of = 515
 	}
 
 	trade_efficiency = 0.05	
@@ -74,15 +70,15 @@ pillars_of_hercules = {
 strait_of_messana = {
 	potential = {
 		OR = {
-			has_discovered = 249
-			has_discovered = 245
+			has_discovered = 7
+			has_discovered = 14
 			}
 	}
 
 	trigger = {
 			is_subject = no	
-			owns_or_vassal_of = 245
-			owns_or_vassal_of = 249
+			owns_or_vassal_of = 7
+			owns_or_vassal_of = 14
 	}
 
 	trade_efficiency = 0.05	
@@ -94,19 +90,19 @@ strait_of_messana = {
 controll_the_hellespont = {
 	potential = {
 		OR = {
-			has_discovered = 633
-			has_discovered = 634
-			has_discovered = 734
-			has_discovered = 735
+			has_discovered = 1081
+			has_discovered = 1082
+			has_discovered = 2217
+			has_discovered = 2218
 			}
 	}
 
 	trigger = {
 			is_subject = no	
-			owns_or_vassal_of = 633
-			owns_or_vassal_of = 634
-			owns_or_vassal_of = 734
-			owns_or_vassal_of = 735
+			owns_or_vassal_of = 1081
+			owns_or_vassal_of = 1082
+			owns_or_vassal_of = 2217
+			owns_or_vassal_of = 2218
 	}
 
 	trade_efficiency = 0.05	
@@ -119,15 +115,15 @@ controll_the_hellespont = {
 controll_the_hellespont = {
 	potential = {
 		OR = {
-			has_discovered = 633
-			has_discovered = 634
+			has_discovered = 1086
+			has_discovered = 2151
 			}
 	}
 
 	trigger = {
 			is_subject = no	
-			owns_or_vassal_of = 633
-			owns_or_vassal_of = 634
+			owns_or_vassal_of = 1086
+			owns_or_vassal_of = 2151
 	}
 
 	trade_efficiency = 0.05	
@@ -143,31 +139,9 @@ owns_olymp = {
 	}
 
 	trigger = {
-		owns = 602
+		owns = 1032
 	}
-	prestige = 0.25
-	
-}
-###########################################
-# Silkroad trade
-###########################################
-
-silkroad_trade = {
-	potential = {
-		
-	}
-
-	trigger = {
-		is_tribal = no
-		any_active_trade_node = {
-			OR = {
-				province_id = 2403 # samarkand
-				province_id = 2776 # Silkroad
-			}
-		}
-	}
-	caravan_power = 0.25
-	trade_efficiency = 0.1
+	prestige = 0.1
 	
 }
 ###########################################
@@ -182,8 +156,8 @@ trade_buff = {
 	trigger = {
 		home_trade_node = { highest_value_trade_node = yes }
 	}
-	embracement_cost = -0.1
-	global_institution_spread = 0.1
+	embracement_cost = -0.15
+	global_institution_spread = 0.15
 }
 ###########################################
 # strong human neighbor 

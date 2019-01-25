@@ -142,7 +142,7 @@ country_event = {
 	
 	option = {
 		name = "succession_crisis_event.3.a"
-			add_legitimacy = 5
+			add_legitimacy = 10
 			random_owned_province = {
 				limit = {
 					is_core = ROOT 
