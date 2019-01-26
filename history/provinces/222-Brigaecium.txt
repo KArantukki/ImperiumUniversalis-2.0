@@ -1,7 +1,7 @@
 add_core = GG8
 owner = GG8
 controller = GG8
-culture = cantabri
+culture = callaeci
 religion = celtic_religion
 hre = no
 base_tax = 0
@@ -10,7 +10,7 @@ base_manpower = 3
 trade_goods = salt
 capital = ""
 is_city = yes
-
+add_province_triggered_modifier = nemetobrigae
 #discovered_by = roman
 #discovered_by = greek
 #discovered_by = punic

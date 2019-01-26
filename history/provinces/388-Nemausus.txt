@@ -10,7 +10,7 @@ trade_goods = grain
 base_manpower = 5
 capital = ""
 is_city = yes
-
+add_province_triggered_modifier = nemausus_nemeton
 
 #discovered_by = roman
 #discovered_by = greek

@@ -1,7 +1,7 @@
 add_core = LYD
 owner = LYD
 controller = LYD
-culture = lydian
+culture = ionian
 religion = cybele
 hre = no
 base_tax = 1
@@ -10,7 +10,7 @@ base_manpower = 2
 trade_goods = grain
 capital = ""
 is_city = yes
-
+add_province_triggered_modifier = cybele_relief
 #discovered_by = roman
 discovered_by = greek
 discovered_by = punic

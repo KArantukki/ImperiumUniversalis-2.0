@@ -1,4 +1,5 @@
 add_core = CRQ
+add_core = CVQ
 owner = CRQ
 controller = CRQ
 culture = vettones
