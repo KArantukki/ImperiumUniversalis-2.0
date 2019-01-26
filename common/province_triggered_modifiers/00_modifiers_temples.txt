@@ -133,24 +133,17 @@ heraion_of_samos = {
 }
 
 thermopylae = {
-	picture = "army_tradition_decay"
+	picture = "kilikian_gate"
 	potential = {
 		always = yes
 	}
 
 	trigger = {
-		owner = {
-			OR = {
-					religion = roman_religion
-					religion = greek_religion
-					religion = etruscan_religion
-					religion = cybele
-			}
-		}
+		always = yes
 	}
 	local_defensiveness = 0.1
-	local_hostile_movement_speed = -0.25
-	army_tradition_decay = -0.01
+	local_hostile_movement_speed = -0.50
+	local_friendly_movement_speed = -0.25
 	#Province scope
 	on_activation = {
 	
