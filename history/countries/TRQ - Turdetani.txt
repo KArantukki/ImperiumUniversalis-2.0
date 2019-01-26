@@ -5,6 +5,6 @@ government_rank = 2
 technology_group = iberian
 primary_culture = turdetani
 religion = iberian_religion
-capital = 141
+capital = 171
 #religious_school = semitic_type
 	
