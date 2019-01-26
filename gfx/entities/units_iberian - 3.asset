@@ -37,6 +37,34 @@ entity = {
 	name = "CLI_INFANTRY_3"
 	clone = "AEQ_INFANTRY_3"
 }
+entity = {
+	name = "LOQ_INFANTRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "CRQ_INFANTRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "TUQ_INFANTRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "TPR_INFANTRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "CR8_INFANTRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "ZE8_INFANTRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "VC8_INFANTRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
 ###################################################################################################################
 #####                                                                                                         #####
 #####                                                   CAVALRY                                               #####
@@ -56,6 +84,34 @@ entity = {
 	name = "AEQ_CAVALRY_3"
 	clone = "AEQ_INFANTRY_3"
 }
+entity = {
+	name = "LOQ_CAVALRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "CRQ_CAVALRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "TUQ_CAVALRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "TPR_CAVALRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "CR8_CAVALRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "ZE8_CAVALRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "VC8_CAVALRY_3"
+	clone = "AEQ_INFANTRY_3"
+}
 ###################################################################################################################
 #####                                                                                                         #####
 #####                                                   ARTILLERY                                             #####
@@ -72,5 +128,33 @@ entity = {
 }
 entity = {
 	name = "AEQ_ARTILLERY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "LOQ_ARTILLERY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "CRQ_ARTILLERY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "TUQ_ARTILLERY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "TPR_ARTILLERY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "CR8_ARTILLERY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "ZE8_ARTILLERY_3"
+	clone = "AEQ_INFANTRY_3"
+}
+entity = {
+	name = "VC8_ARTILLERY_3"
 	clone = "AEQ_INFANTRY_3"
 }
