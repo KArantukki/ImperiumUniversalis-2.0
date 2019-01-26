@@ -3,7 +3,9 @@ annexationaction = {
 	condition = {
 		tooltip = ANNEX_TOO_LOW
 		potential = {
-			
+			FROM = {
+				vassal_of = ROOT
+			}
 		}
 		allow = {
 			FROM = {

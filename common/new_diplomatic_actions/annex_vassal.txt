@@ -1,44 +1,36 @@
 
-increase_non_autonomous_vassal = {
+annex_vassal = {
 	category = influence
 	alert_index = 4
-	alert_tooltip = increase_half_autonomous_vassal_tt
+	alert_tooltip = annex_vassal_tt
 	require_acceptance = yes # Whether the recipient gets an option to decline
 	is_visible = {
 		is_subject = no
 		FROM = {
-			is_subject_of_type = half_autonomous_vassal
 			is_subject_of = ROOT
 		}
 	}
 	is_allowed = {
-			dip_power = 100
+			dip_power = 200
+			custom_trigger_tooltip = {
+				tooltip = annex_vassal.tooltip
+					FROM = { is_subject_of_type = non_autonomous_vassal }
+				}
 			reverse_has_opinion = {
 				who = FROM
-				value = 100
+				value = 150
 			}
-			FROM = { is_at_war = no }
+			is_at_war = no
 	}
 	on_accept = {
-		add_dip_power = -100
+		add_dip_power = -200
 		hidden_effect = {	# Just to be sure that flags are removed, before event triggers
-			ROOT = {
-				create_subject = {
-					who = FROM
-					subject_type = non_autonomous_vassal
-				}
-			}
-			FROM = {
-					add_opinion = { who = ROOT modifier = decreased_autonomy_opinion }
-			}
+			inherit = FROM 
 		}
 	}
 	on_decline =
 	{
-			FROM = {
-					add_opinion = { who = ROOT modifier = opinion_declined_autonomy_level }
-			}
-					add_opinion = { who = FROM modifier = opinion_declined_autonomy_level }
+	
 	}
 	ai_acceptance = { 
 		####################
@@ -49,7 +41,7 @@ increase_non_autonomous_vassal = {
 			name = BASE_REJECTION
 			export_to_variable = {
 				which = ai_value
-				value = 40
+				value = 50
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -341,7 +333,7 @@ increase_non_autonomous_vassal = {
 		}
 	}
 	ai_will_do = {
-				FROM = { NOT = { liberty_desire = 25 } }
+				FROM = { NOT = { liberty_desire = 10 } }
 				stability = 1
 				has_any_disaster = no
 				

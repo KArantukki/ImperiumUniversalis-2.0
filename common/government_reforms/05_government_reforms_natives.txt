@@ -12,6 +12,7 @@ native_basic_reform = {
 		cav_to_inf_ratio = 0.5
 		land_maintenance_modifier = -0.25
 		global_institution_spread = -0.25
+		reform_progress_growth = -0.5 
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0

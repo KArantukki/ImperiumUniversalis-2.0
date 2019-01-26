@@ -33,6 +33,7 @@ pse_missions_1 = {
 			}
 		}
 		effect = {
+				change_tag = PSE
 				add_country_modifier = {
 					name = "pse_united_persians"
 					duration = 9125 #25 years

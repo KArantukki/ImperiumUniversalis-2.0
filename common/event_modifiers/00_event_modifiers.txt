@@ -1141,11 +1141,6 @@ gaza =  {
 	local_monthly_devastation = 0.05
 }
 
-pangaion_mines = {
-	picture = "gold_mine"
-	trade_goods_size = 0.2
-	allowed_num_of_buildings = 1	
-}
 
 thermopylae = {
 	picture = "kilikian_gate"
@@ -1199,16 +1194,6 @@ capitoline_hill =  {
 	local_defensiveness = 0.1
 	allowed_num_of_buildings = 1
 	fort_level = 1
-}
-
-timna_copper_mines = {
-	picture = "copper_mine"
-	trade_goods_size = 2
-}
-serabit_el_hadim = {
-	picture = "copper_mine"
-	trade_goods_size = 1
-	possible_buildings = 1
 }
 
 wonder_rhodos = {

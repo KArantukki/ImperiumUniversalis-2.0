@@ -7,39 +7,32 @@ invite_to_league = {
 	require_acceptance = yes 
 	is_visible = {
 		is_subject = no
-		government = league
+		has_government_reform = league_reform
 		FROM = { is_subject = no	}
 	}
 	is_allowed = {
-			government = league
+			has_government_reform = league_reform
 			is_at_war = no
 			FROM = { is_subject = no	}
 			FROM = {is_at_war = no }
 			FROM = { NOT = { num_of_cities = 4 }  }
 	}
 	on_accept = {
-		hidden_effect = {
-			ROOT = {
-					country_event = {
-						id = diplomacy.10
-					}
-				}
-			FROM = { set_country_flag = will_be_annexed_into_league }
-		}
+		inherit = FROM
 	}
 	on_decline = {
 		# No Effect
 	}
 	ai_acceptance = {
+	
 		# Development Value
-		
 		add_entry = {
 			name = DEVELOPMENT_OF_ROOT
 			export_to_variable = {
 				which = ai_value
 				value = states_development
 			}
-			multiply_variable = { which = ai_value value = 10.1 }
+			multiply_variable = { which = ai_value value = 2.5 }
 		}
 		
 		add_entry = {
@@ -246,10 +239,10 @@ invite_to_league = {
 			multiply_variable = { which = ai_value value = -1.0 }
 		}
 		add_entry = {
-			name = IS_LEAGUE
+			name = IS_MONARCHY
 			limit = {
 				FROM = {
-					government = league
+					government = monarchy 
 				}
 			}
 			export_to_variable = {
@@ -260,6 +253,20 @@ invite_to_league = {
 		}
 	}
 	ai_will_do = {
-		always = no
-	}
+				FROM = { 
+					OR = {
+						culture_group = ROOT
+						primary_culture = ROOT
+					}
+				}
+				FROM = {
+					reverse_has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				stability = 1
+				has_any_disaster = no
+				
+		}
 }

@@ -14,7 +14,6 @@ decrease_half_autonomous_vassal = {
 	is_allowed = {
 			FROM = {
 				is_subject_of_type = non_autonomous_vassal
-				is_subject_of = ROOT
 			}
 				is_at_war = no
 	}
@@ -35,6 +34,6 @@ decrease_half_autonomous_vassal = {
 	ai_will_do = {
 			has_any_disaster = no
 			NOT = { army_size = FROM }
-			FROM = { liberty_desire = 80 }
+			FROM = { liberty_desire = 65 }
 		}
 }

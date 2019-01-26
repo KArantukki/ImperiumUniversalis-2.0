@@ -145,6 +145,10 @@ country_event = {
 	option = {
 		name = "persia.7.a"
 		inherit = PRS 
+		if = {
+			NOT = { exists = PSE }
+			change_tag = PSE
+		}
 	}
 }
 ########################################################################################

@@ -81,7 +81,7 @@ agraculture_focus_reform = {
 		}
 	modifiers = {
 		 	production_efficiency = 0.1
-			land_forcelimit_modifier = 0.2
+			land_forcelimit_modifier = 0.1
 	}
 	ai = {
 		factor = 1

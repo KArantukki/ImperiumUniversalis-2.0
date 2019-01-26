@@ -785,7 +785,7 @@ guiTypes = {
 
 		checkboxType = {
 			name = "diplomacy_button"
-			position = { x=416 y=458 }
+			position = { x=-200 y=0 }
 			quadTextureSprite ="GFX_build_interface_diplomacy_tab"
 			shortcut = "0"
 		}

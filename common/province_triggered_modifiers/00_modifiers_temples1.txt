@@ -3,6 +3,48 @@
 #
 # Effects are fully scriptable here.
 
+
+acrocorinthos= {
+	picture = "athen_modifier"
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		always = yes
+	}
+	
+	local_defensiveness = 0.15
+	allowed_num_of_buildings = 1
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+}
+
+cadmeia = {
+	picture = "athen_modifier"
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		always = yes
+	}
+	local_defensiveness = 0.10
+	allowed_num_of_buildings = 1
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+}
+
 asclepeion = {
 	picture = "athen_modifier"
 	potential = {
@@ -89,6 +131,35 @@ heraion_of_samos = {
 	
 	}
 }
+
+thermopylae = {
+	picture = "army_tradition_decay"
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+					religion = roman_religion
+					religion = greek_religion
+					religion = etruscan_religion
+					religion = cybele
+			}
+		}
+	}
+	local_defensiveness = 0.1
+	local_hostile_movement_speed = -0.25
+	army_tradition_decay = -0.01
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+}
+
 mount_taigetus = {
 	picture = "army_tradition"
 	potential = {
@@ -106,7 +177,7 @@ mount_taigetus = {
 			}
 		}
 	}
-	army_tradition = 0.2
+	army_tradition = 0.25
 	#Province scope
 	on_activation = {
 	
@@ -270,8 +341,36 @@ mount_olympus = {
 			}
 		}
 	}
-	land_morale = 0.025
+	land_morale = 0.05
 	religious_conversion_resistance = 0.5
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+}
+
+cumae_oracle = {
+	picture = "greek_religion_holy_site"
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			OR = {
+					religion = roman_religion
+					religion = greek_religion
+					religion = etruscan_religion
+					religion = cybele
+			}
+		}
+	}
+	land_morale = 0.025
+	prestige = 0.01
+	religious_conversion_resistance = 0.1
 	#Province scope
 	on_activation = {
 	
@@ -324,7 +423,7 @@ labranda = {
 			}
 		}
 	}
-	land_morale = 0.02
+	land_morale = 0.025
 	prestige_decay = -0.01
 	religious_conversion_resistance = 0.15
 	#Province scope
@@ -404,7 +503,6 @@ sybaris = {
 		}
 	}
 	local_tax_modifier = 0.2
-	province_trade_power_value = 5
 	#Province scope
 	on_activation = {
 	
@@ -432,7 +530,7 @@ island_of_achilles = {
 	}
 
 	local_tax_modifier = 0.05
-	prestige = 0.01
+	prestige = 0.02
 	allowed_num_of_buildings = 1
 	#Province scope
 	on_activation = {
@@ -453,8 +551,8 @@ geraneia = {
 			have_building = imperial_road
 		}
 	}
-	local_friendly_movement_speed = 0.33
-	local_hostile_movement_speed = 0.33
+	local_friendly_movement_speed = -0.33
+	local_hostile_movement_speed = -0.33
 	#Province scope
 	on_activation = {
 	
@@ -464,589 +562,17 @@ geraneia = {
 	}
 }
 
-mount_pindus = {
-	picture = "greek_religion_holy_site"
+pangaion_mines = {
+	picture = "gold_mine"
 	potential = {
 		always = yes
 	}
 
 	trigger = {
-		owner = {
-			OR = {
-					religion = roman_religion
-					religion = greek_religion
-					religion = etruscan_religion
-					religion = cybele
-			}
-		}
+		metalworking_lvl2 = 100 
 	}
-	monthly_splendor = 0.1
-	religious_conversion_resistance = 0.1
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-
-#Judea
-
-solomon_temple = {
-	picture = "jewish_temple"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-					religion = jewish
-		}
-	}
-	global_missionary_strength = 0.01
-	prestige = 0.01
-	missionaries = 1
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-
-#Asia
-
-cybele_relief = {
-	picture = "cybele_place"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-			OR = {
-					religion = roman_religion
-					religion = greek_religion
-					religion = egyptian_religion
-					religion = cybele
-					religion = luwian_religion
-				}
-		}
-	}
-
-	prestige = 0.01
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-
-khaldi_main_temple = {
-	picture = "ditsov_temple"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-			religion = armenian_religion
-			primary_culture = urartian
-		}
-	}
-	missionaries = 1
-	global_missionary_strength = 0.01
-	allowed_num_of_buildings = 1
-	prestige = 0.01
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-
-#Africa
-
-temple_of_eshmun_and_tanit = {
-	picture = "athen_modifier"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-			religion = punic_religion
-		}
-	}
-	local_tax_modifier = 0.05
-	allowed_num_of_buildings = 1
-	prestige = 0.01
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-
-
-#Thrace
-
-sarmizegetusa = {
-	picture = "thracian_temple"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-			OR = {
-					religion = dacian_religion
-					religion = thracian
-					religion = scythian_religion
-			}
-		}
-	}
-	missionaries = 1
-	allowed_num_of_buildings = 1
-	prestige = 0.01
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-shrine_of_derzelas = {
-	picture = "thracian_temple"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-			OR = {
-					religion = dacian_religion
-					religion = thracian
-					religion = scythian_religion
-			}
-		}
-	}
-	local_unrest = -1
-	prestige = 0.01
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-shrine_of_bendida = {
-	picture = "thracian_temple"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-			OR = {
-					religion = dacian_religion
-					religion = thracian
-					religion = scythian_religion
-			}
-		}
-	}
-	local_production_efficiency = 0.10
-	prestige = 0.01
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-
-perpetikon = {
-	picture = "thracian_temple"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-			OR = {
-					religion = dacian_religion
-					religion = thracian
-					religion = scythian_religion
-			}
-		}
-	}
-	land_morale = 0.025
-	prestige = 0.02
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-#Celtic
-
-nemausus_nemeton =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-vernemeton =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-midionemeton =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-
-nemetodurum =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-nemetobrigae =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-nemetacum  =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-the_gallisenae =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-aquae_arnemetrae =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-shrine_of_sequana =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}  
-
-stonehendge =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	missionary = 1
-	prestige = 0.05
-	tolerance_own = 1
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-isle_of_manaw =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
- 
-shrine_of_brigantia =  {
-	picture = "celtic_holy_place"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = celtic_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.25
-	same_culture_advisor_cost = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}  
-
-#Italy
-
-lucus_angitae =  {
-	picture = "roman_holy"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = roman_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.05
-	same_culture_advisor_cost = -0.025
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-lucus_feroniae =  {
-	picture = "roman_holy"
-	potential = {
-		always = yes
-	}
-
-	trigger =  {
-		owner = {		
-					religion = roman_religion
-				}
-	}
-	prestige = 0.01
-	tolerance_own = 0.05
-	same_culture_advisor_cost = -0.025
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-} 
-
-cumae_oracle = {
-	picture = "greek_religion_holy_site"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-			OR = {
-					religion = roman_religion
-					religion = greek_religion
-					religion = etruscan_religion
-					religion = cybele
-			}
-		}
-	}
-	land_morale = 0.025
-	prestige = 0.01
-	religious_conversion_resistance = 0.1
+	trade_goods_size = 0.5
+	allowed_num_of_buildings = 1	
 	#Province scope
 	on_activation = {
 	
@@ -1080,7 +606,7 @@ hut-ka-ptah = {
 		}
 	}
 
-	local_production_efficiency = 0.15
+	local_production_efficiency = 0.1
 	prestige = 0.01
 	#Province scope
 	on_activation = {
@@ -1234,7 +760,7 @@ theban_necropolis = {
 				}
 		}
 	}
-	prestige_decay = -0.005
+	prestige_decay = -0.01
 	#Province scope
 	on_activation = {
 	
@@ -1283,7 +809,7 @@ per_wadjet = {
 				}
 		}
 	}
-	defensiveness = 0.025
+	defensiveness = 0.02
 	#Province scope
 	on_activation = {
 	
@@ -1377,7 +903,7 @@ bubastis = {
 				}
 		}
 	}
-	local_unrest = -0.5
+	local_unrest = -1
 	stability_cost_modifier = -0.025
 	#Province scope
 	on_activation = {
@@ -1472,7 +998,7 @@ khemenu = {
 				}
 		}
 	}
-	local_institution_spread = 0.15
+	local_institution_spread = 0.1
 	#Province scope
 	on_activation = {
 	
@@ -1514,57 +1040,6 @@ abedju_necropolis = {
 	}
 }
 
-ammon_oracle = {
-	picture = "egypt_temple"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		owner = {
-			OR = {
-					religion = egyptian_religion
-					religion = greek_religion
-					religion = roman_religion
-					AND = {
-						religion_group = pagan_group
-						full_idea_group = syncrenism_ideas  
-					}
-				}
-		}
-	}
-	global_unrest = -1
-	stability_cost_modifier = -0.05
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
-####
-
-
-pangaion_mines = {
-	picture = "gold_mine"
-	potential = {
-		always = yes
-	}
-
-	trigger = {
-		metalworking_lvl2 = 100 
-	}
-	trade_goods_size = 0.5
-	allowed_num_of_buildings = 1	
-	#Province scope
-	on_activation = {
-	
-	}
-	on_deactivation = {
-	
-	}
-}
 timna_copper_mines = {
 	picture = "copper_mine"
 	potential = {

@@ -1,0 +1,77 @@
+
+sell_slaves = {
+	category = economy
+	alert_index = 22
+	alert_tooltip = sell_slaves_tt
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	is_visible = {
+		NOT = { has_country_modifier = slavery_abolished }
+	}
+	is_allowed = {
+			check_variable = { which = slaves value = 5000 }
+			is_at_war = no
+			NOT = { 
+				border_distance = {
+					who = FROM
+					distance = 250
+				}
+			}
+	}
+	on_accept = {
+		change_variable = { slaves = -5000 }
+		add_treasury = 10
+		hidden_effect = {	
+			FROM = { change_variable = { slaves = 5000 } 
+			add_treasury = -10
+			}
+		}
+	}
+	on_decline =
+	{
+	
+	}
+	ai_acceptance = { 
+		add_entry = {
+			name = BASE_REJECTION
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = DEVELOPMENT_OF_FROM
+			export_to_variable = {
+				which = ai_value
+				value = states_development
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = 1.0 }
+		}
+		add_entry = {
+			name = SLAVES_FROM
+			export_to_variable = {
+				which = ai_value
+				which = slaves
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -1.0 }
+		}
+	}
+	ai_will_do = {
+				check_variable = { which = var_slaves_pop_ratio value = 60 }
+				OR = {
+				
+					AND = {
+						FROM = { ai = yes }
+						FROM = { NOT = { check_variable = { which = var_slaves_pop_ratio value = 35 } } }
+					}
+					
+					AND = {
+						FROM = { ai = yes }
+						FROM = { NOT = { check_variable = { which = var_slaves_pop_ratio value = 20 } } }
+					}
+					
+				}
+		}
+}
