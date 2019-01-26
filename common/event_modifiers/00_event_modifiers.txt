@@ -1125,10 +1125,92 @@ athen = {
 	allowed_num_of_buildings = 1
 }
 
+acrocorinthos= {
+	picture = "athen_modifier"
+	local_defensiveness = 0.15
+	allowed_num_of_buildings = 1
+}
+
+cadmeia = {
+	picture = "athen_modifier"
+	local_defensiveness = 0.10
+	allowed_num_of_buildings = 1
+}
+
+gaza =  {
+	local_monthly_devastation = 0.05
+}
+
+pangaion_mines = {
+	picture = "gold_mine"
+	trade_goods_size = 0.2
+	allowed_num_of_buildings = 1	
+}
+
+thermopylae = {
+	picture = "kilikian_gate"
+	local_defensiveness = 0.1
+	local_hostile_movement_speed = -0.50
+	local_friendly_movement_speed = -0.25
+}
+
 gizeh = {
 	prestige = 0.1
 	picture = "gizeh_modifier"
 }
+
+themyskyra = {
+	prestige = 0.01
+}
+
+gordian_knot =  {
+	legitimacy = 0.2
+}
+
+gaza = {
+	picture = "egypt_temple"
+	local_monthly_devastation = 0.05
+}
+
+oppidum =  {
+	picture = "celtic_oppidum"
+	local_defensiveness = 0.1
+	allowed_num_of_buildings = 1
+} 
+
+castro =  {
+	picture = "castro"
+	local_defensiveness = 0.1
+	allowed_num_of_buildings = 1
+} 
+
+brention =  {
+	picture = "greek_trade_outpost"
+	province_trade_power_value = 5
+}  
+
+hipponion =  {
+	picture = "greek_trade_outpost"
+	province_trade_power_value = 2.5
+}  
+
+capitoline_hill =  {
+	picture = "athen_modifier"
+	local_defensiveness = 0.1
+	allowed_num_of_buildings = 1
+	fort_level = 1
+}
+
+timna_copper_mines = {
+	picture = "copper_mine"
+	trade_goods_size = 2
+}
+serabit_el_hadim = {
+	picture = "copper_mine"
+	trade_goods_size = 1
+	possible_buildings = 1
+}
+
 wonder_rhodos = {
 	picture = "wonder_rhodos"
 	prestige = 0.1
