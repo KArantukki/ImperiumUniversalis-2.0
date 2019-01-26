@@ -580,7 +580,7 @@ khaldi_main_temple = {
 	trigger = {
 		owner = {
 			religion = armenian_religion
-			culture =  urartian
+			primary_culture = urartian
 		}
 	}
 	missionaries = 1
