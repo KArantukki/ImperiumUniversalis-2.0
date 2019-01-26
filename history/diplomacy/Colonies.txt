@@ -163,3 +163,11 @@ alliance = {
 	second = MEG
 	start_date = 142.1.1
 }
+
+dependency = { 
+	subject_type = "vassal"
+	first = COR
+	second = EPM
+	start_date = 145.1.1
+	end_date = 225.1.1
+}
