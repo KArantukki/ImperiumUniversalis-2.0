@@ -21,6 +21,16 @@ religious_school = hellenic_type
 		adm = 3
 		mil = 3
 		}
+	heir = {
+		name = "Aeropus"
+		monarch_name = "Aeropus I"
+		dynasty = "Argead"
+		birth_date = 131.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
 }
 152.1.1 = {
 	monarch = {
