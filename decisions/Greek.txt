@@ -349,7 +349,6 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				area = thessalia_area
-				area = larisa_area
 				area = magnesia_area
 				}
 			NOT = { owned_by = ROOT }
@@ -362,7 +361,6 @@ country_decisions = {
 						all_owned_province = {
 							OR = {
 								area = thessalia_area
-								area = larisa_area
 								area = magnesia_area
 								}
 						}

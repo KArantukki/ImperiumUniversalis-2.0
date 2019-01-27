@@ -10,7 +10,6 @@ on_startup = {
 		random_country = {
 			limit = { 	ai = no 
 						NOT = { has_global_flag = game_start_flag }
-						has_game_started = no
 					}
 				country_event = {
 					id = startup.1

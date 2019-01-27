@@ -51,18 +51,18 @@ estate_privileged_city = {
 	
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
-		local_tax_modifier = 0.2
-		local_production_efficiency = 0.2
+		local_tax_modifier = 0.15
+		local_production_efficiency = 0.15
 		local_amount_of_banners = 0.5
 	}
 	province_modifier_neutral = {
-		local_tax_modifier = 0.2
-		local_production_efficiency = 0.2
+		local_tax_modifier = 0.15
+		local_production_efficiency = 0.15
 		local_amount_of_banners = 0.5
 	}	
 	province_modifier_angry = {
-		local_tax_modifier = 0.2
-		local_production_efficiency = 0.2
+		local_tax_modifier = 0.15
+		local_production_efficiency = 0.15
 		local_amount_of_banners = 0.5
 	}	
 	

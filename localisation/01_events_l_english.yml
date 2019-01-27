@@ -2008,7 +2008,7 @@
  religion_indian.12.d:0 "The teachings of the ascet Mahavira are spreading in our country. Many of his followers have gathered and founded a school within our realm. Based on the Sramananic traditions and philosophies, his followers seek for a spiritual awakening and many of them becoming ascets."
  religion_indian.12.a:0 "Interesting."
  slaves.1.t:0 "Profit From Slavery"
- slaves.1.d:0 "Every five years the country will get a certain amount of money from slavery. The amount of money is the depends on your monthly income and your amount of slaves.\n\nProfit from Slavery = (Slaves/100)*(MonthyIncome/100).\n\nAmount of Slaves: §Y[Root.slaves.GetValue]§!\nSlaves to Population Ratio: §Y[Root.var_slaves_pop_ratio.GetValue]%§!"
+ slaves.1.d:0 "Every five years the country will get a certain amount of money from slavery. The amount of money is the depends on your monthly income and your amount of slaves.\n\nProfit from Slavery = (Slaves/100)*(MonthyIncome/100).\n\nAmount of Slaves: §Y[Root.slaves.GetValue]§!\nSlaves to Population Ratio: §Y[Root.var_slaves_pop_ratio.GetValue]% §!"
  slaves.1.a:0 "You get an income of §Y[Root.var_slave_income.GetValue]§!."
  slaves.2.t:0 "The Sack Of $FROM$"
  slaves.2.d:0 "Our men have breached the walls and entered the city of $FROM$. The soldiers are storming into the city and are ready to kill and loot everyone and everything if we give the orders. We could order them to sack the city and plunder all the treasures, this would hurt our enemy and give us money, but also costs us resources since our soldiers need to search every house and building for loot."

@@ -718,7 +718,8 @@ paper = {
 		factor = 15
 		modifier = {
 			factor = 0
-			NOT = { region = egypt_region }
+			NOT = { region = lower_egypt_region }
+			NOT = { region = upper_egypt_region }
 		}
 	}
 }

@@ -868,6 +868,7 @@ country_event = {
 		NOT = { has_country_modifier = slavery_abolished }
 		check_variable = { which = var_slaves_pop_ratio value = 10 }
 		check_variable = { which = slaves value = 2500 }
+		num_of_cities = 4
 	}
 	
 	mean_time_to_happen = {

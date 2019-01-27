@@ -13,7 +13,6 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_global_flag = game_start_flag }
-		 has_game_started = no 
 	}
 	
 	mean_time_to_happen = {
