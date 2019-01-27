@@ -6,5 +6,5 @@ technology_group = afro_arabian
 primary_culture = nubian
 religion = east_african
 #religious_school = semitic_type
-capital = 2522
+capital = 827
 	

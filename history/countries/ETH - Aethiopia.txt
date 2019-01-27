@@ -6,5 +6,5 @@ technology_group = afro_arabian
 primary_culture = axumite
 religion = east_african
 #religious_school = semitic_type
-capital = 2532
+capital = 924
 	

@@ -197,7 +197,7 @@ country_event = {
 		declare_war_with_cb = {
 			who = BAB
 			casus_belli = cb_conquest
-			province = 2302
+			war_goal_province = 2302
 		}
 		hidden_effect = {
 			BAB = {
@@ -228,7 +228,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		
+		always = yes
 	}
 	
 	mean_time_to_happen = {

@@ -880,10 +880,13 @@ glas = {
 		modifier = {
 			factor = 0.1
 			OR = {
-				region = britannia_region 
+				region = britannia_inferior 
+				region = britannia_superior 
+				region = caledonia 
+				region = hibernia 
 				region = nubia_region 
 				region = sarmatia_region 
-				region = bactria_region 
+				region = baktria_region 
 			}
 		}
 		modifier = {
@@ -927,7 +930,8 @@ olibanum = {
 		factor = 10
 		modifier = {
 			factor = 0
-				NOT = { region = arabia_region }
+				NOT = { region = arabia_petrea_region }
+				NOT = { region = arabia_felix_region }
 				NOT = { region = nubia_region }
 		}
 	}
@@ -945,7 +949,8 @@ pearls = {
 		factor = 10
 		modifier = {
 			factor = 0
-				NOT = { region = arabia_region }
+				NOT = { region = arabia_petrea_region }
+				NOT = { region = arabia_felix_region }
 				NOT = { region = nubia_region }
 		}
 		modifier = {
@@ -968,7 +973,8 @@ exotic_animals = {
 		modifier = {
 			factor = 0
 			OR = {
-				NOT = { region = arabia_region }
+				NOT = { region = arabia_petrea_region }
+				NOT = { region = arabia_felix_region }
 				NOT = { region = nubia_region }
 				NOT = { region = mauretania_region }
 			}
@@ -997,10 +1003,13 @@ herbs = {
 		modifier = {
 			factor = 3.0
 			OR = {
-				region = britannia_region 
+				region = britannia_inferior 
+				region = britannia_superior 
+				region = caledonia 
+				region = hibernia 
 				region = nubia_region 
 				region = sarmatia_region 
-				region = bactria_region 
+				region = baktria_region
 			}
 		}
 	}

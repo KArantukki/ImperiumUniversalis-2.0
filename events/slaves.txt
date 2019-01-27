@@ -65,6 +65,10 @@ country_event = {
 			}
 		########################################################################
 	}
+	after = {
+		set_variable = { which = var_slave_income value = 0 }
+		set_variable = { which = var_slave_amount value = 0 }
+	}
 }
 ########################################################################################
 # Sack of City

@@ -239,7 +239,7 @@ country_event = {
 	}
 	# in the military
 	option = {
-		name = "estate_allies.5.a"
+		name = "estate_allies.5.b"
 			add_army_tradition = 10
 			add_estate_influence_modifier = {
 				estate = estate_allies

@@ -775,8 +775,8 @@ call_for_peace = {
 }
 
 war_exhaustion = {
-	devotion = -1
-	legitimacy = -1
+	devotion = -0.1
+	legitimacy = -0.1
 	global_unrest = 1
 	global_regiment_recruit_speed = 0.02
 	global_ship_recruit_speed = 0.02

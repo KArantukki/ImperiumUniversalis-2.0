@@ -1,4 +1,5 @@
 add_core = KUS
+add_core = MER
 owner = KUS
 controller = KUS
 culture = nubian

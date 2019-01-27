@@ -1162,11 +1162,6 @@ gordian_knot =  {
 	legitimacy = 0.2
 }
 
-gaza = {
-	picture = "egypt_temple"
-	local_monthly_devastation = 0.05
-}
-
 oppidum =  {
 	picture = "celtic_oppidum"
 	local_defensiveness = 0.1
@@ -1178,16 +1173,6 @@ castro =  {
 	local_defensiveness = 0.1
 	allowed_num_of_buildings = 1
 } 
-
-brention =  {
-	picture = "greek_trade_outpost"
-	province_trade_power_value = 5
-}  
-
-hipponion =  {
-	picture = "greek_trade_outpost"
-	province_trade_power_value = 2.5
-}  
 
 capitoline_hill =  {
 	picture = "athen_modifier"
