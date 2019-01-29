@@ -9,6 +9,8 @@ historical_friend = TAR
 capital = 933
 #religious_school = hellenic_type
 	
+historical_rival = ARG
+
 425.1.1 = {
 	primary_culture = greek
 }

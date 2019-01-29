@@ -135,10 +135,11 @@ country_event = {
 	picture = senat
 	
 	is_triggered_only = yes
+	
 	trigger = {
 		government = theocracy
 		NOT = { government = tribal }
-		NOT = { government = spartan_monarchy } 
+		NOT = { has_reform = spartan_monarchy_reform }
 	}
 	
 

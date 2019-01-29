@@ -571,6 +571,7 @@ estate_allies = {
 		
 		potential = {
 			always = yes
+			dip_tech = 5
 		}
 		trigger = {
 			NOT = {  has_disaster = social_war_disaster  }

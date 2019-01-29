@@ -10,8 +10,6 @@ base_production = 3
 base_manpower = 1
 trade_goods = fruits
 capital = ""
-small_harbor = yes
-gravel_road = yes
 is_city = yes
 
 discovered_by = roman

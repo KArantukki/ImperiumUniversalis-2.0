@@ -334,9 +334,11 @@ roman_missions_1 = {
 			}
 			army_size = 16
 			manpower_percentage = 0.8
+			army_tradition = 30
 		}
 		effect = {
 			add_army_professionalism = 0.05
+			add_army_tradition = 10
 			umbria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -358,6 +360,13 @@ roman_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			marsium_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	rom_conquer_umbria = {
@@ -368,10 +377,16 @@ roman_missions_1 = {
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			OR = {
 			area = umbria_area
+			area = marsium_area }
 		}
 		trigger = {
 			umbria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			marsium_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

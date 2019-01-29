@@ -1,0 +1,9 @@
+2.0.2
+- Sparta succesor event fixed
+- Babylon: Land to Media event fixed
+- Allies Estate: Demand ship interaction fixed
+- Button to diplo annex vassals is back again
+
+- Coinage Institution spread triggers reworked
+- Prestige for sending athlets to the olympic games changed
+- Added one commoner pop to Tarracianae 

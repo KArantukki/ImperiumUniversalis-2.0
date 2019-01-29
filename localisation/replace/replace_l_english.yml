@@ -881,7 +881,7 @@
  LIGHT_SHIP:0 "Trade Ship"
  GALLEY:0 "Small Warship"
  CANNOT_EXPLORE_NOT_ENOUGH_SHIPS:0 "You must have a total of at least 3 Trade- and Heavy Warships in this fleet to be able to explore with it."
- 
+ CANNONS:0 "Marines"
  
  noestate:0 "No Province Preveliges"
  ESTATE_TERRITORY_TOOLTIP:1 "$AMT|Y$ of $COUNTRY|Y$ have the $ESTATE|Y$ prevelige."

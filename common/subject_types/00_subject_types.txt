@@ -311,7 +311,7 @@ non_autonomous_vassal = {
 
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
-	can_be_annexed = no
+	can_be_annexed = yes
 	has_power_projection = no
 	gets_help_with_rebels = yes
 	can_fight_independence_war = yes

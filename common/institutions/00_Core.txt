@@ -313,9 +313,9 @@ coin_usage = {
 		}
 		modifier = {
 			scale = yes
-			factor = 1.0
+			factor = 2.5
 			potential = {
-				is_capital = yes
+				coin_usage = 1 
 				owner = { is_tribal = no }
 			}
 			custom_trigger_tooltip = {
