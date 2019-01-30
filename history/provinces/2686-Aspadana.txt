@@ -6,12 +6,12 @@ culture = medians
 religion = mitraism
 hre = no
 base_tax = 0
-base_production = 0
+base_production = 1
 base_manpower = 4
 trade_goods = horses
 capital = ""
 is_city = yes
-
+small_city_walls = yes
 #discovered_by = roman
 #discovered_by = greek
 #discovered_by = punic

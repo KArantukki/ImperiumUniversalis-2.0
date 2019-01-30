@@ -11,6 +11,7 @@ capital = "Phraaspa"
 culture = mannean
 religion = armenian_religion
 
+
 discovered_by = caucaso_anatolian
 discovered_by = iranian
 discovered_by = scythian

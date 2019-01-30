@@ -1,11 +1,11 @@
 add_core = SX2
-add_core = CAS
+add_core = MDI
 owner = SX2
 controller = SX2
 hre = no
 base_tax = 0
 base_production = 1
-base_manpower = 4
+base_manpower = 5
 trade_goods = horses
 capital = "Nakorzan"
 culture = scythian
