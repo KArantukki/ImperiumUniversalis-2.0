@@ -2212,13 +2212,12 @@ THR_greek_ideas = {
 }
 MDI_ideas = {
 	start = {
-		rival_border_fort_maintenance = -0.5
 		global_spy_defence = 0.25
+		land_forcelimit_modifier = 0.2
 	}
 
 	bonus = {
-		global_regiment_cost = -0.1
-		global_regiment_recruit_speed = -0.1
+		fire_damage = 0.1
 	}
 
 	trigger = {
@@ -2234,12 +2233,12 @@ MDI_ideas = {
 		cavalry_power = 0.1
 		cav_to_inf_ratio = 0.15
 	}
-	atropates_of_media = {
-		diplomatic_reputation = 2
-	}
 	zurvanism = {
 		institution_spread_from_true_faith = 0.2
 	}
+	atropates_of_media = {
+		diplomatic_reputation = 2
+	}	
 	inaccessible_mountains = {
 		defensiveness = 0.25
 	}
