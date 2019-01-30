@@ -571,6 +571,33 @@ khaldi_main_temple = {
 	}
 }
 
+mount_ararat = {
+	picture = "ditsov_temple"
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			religion = armenian_religion
+			OR = {
+				primary_culture = urartian
+				primary_culture = armenian
+			}
+		}
+	}
+	land_morale = 0.025
+	prestige = 0.01
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+}
+
+
 #Africa
 
 temple_of_eshmun_and_tanit = {
@@ -979,6 +1006,30 @@ shrine_of_brigantia =  {
 	
 	}
 }  
+
+nevet_nemeton =  {
+	picture = "celtic_holy_place"
+	potential = {
+		always = yes
+	}
+
+	trigger =  {
+		owner = {		
+					religion = celtic_religion
+				}
+	}
+	prestige = 0.01
+	tolerance_own = 0.25
+	same_culture_advisor_cost = -0.05
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+}  
+
 
 #Italy
 
@@ -1594,6 +1645,104 @@ serabit_el_hadim = {
 	}
 	trade_goods_size = 0.5
 	possible_buildings = 1	
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+}
+
+#germany
+
+irminsul =  {
+	picture = "germanic_holy_place"
+	potential = {
+		always = yes
+	}
+
+	trigger =  {
+		owner = {		
+					religion = germanic_religion
+				}
+	}
+	prestige = 0.02
+	tolerance_own = 0.25
+	same_culture_advisor_cost = -0.05
+	religious_conversion_resistance = 0.50
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+} 
+
+fjoturlundr =  {
+	picture = "germanic_holy_place"
+	potential = {
+		always = yes
+	}
+
+	trigger =  {
+		owner = {		
+					religion = germanic_religion
+				}
+	}
+	prestige = 0.02
+	tolerance_own = 0.25
+	same_culture_advisor_cost = -0.05
+	religious_conversion_resistance = 0.30
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+}
+
+nerthus_shrine =  {
+	picture = "germanic_holy_place"
+	potential = {
+		always = yes
+	}
+
+	trigger =  {
+		owner = {		
+					religion = germanic_religion
+				}
+	}
+	prestige = 0.02
+	tolerance_own = 0.25
+	same_culture_advisor_cost = -0.05
+	religious_conversion_resistance = 0.30
+	#Province scope
+	on_activation = {
+	
+	}
+	on_deactivation = {
+	
+	}
+}
+
+rugen_shrines =  {
+	picture = "germanic_holy_place"
+	potential = {
+		always = yes
+	}
+
+	trigger =  {
+		owner = {		
+					religion = germanic_religion
+				}
+	}
+	prestige = 0.02
+	tolerance_own = 0.25
+	same_culture_advisor_cost = -0.05
+	religious_conversion_resistance = 0.30
 	#Province scope
 	on_activation = {
 	
