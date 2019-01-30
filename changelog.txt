@@ -7,3 +7,12 @@
 - Coinage Institution spread triggers reworked
 - Prestige for sending athlets to the olympic games changed
 - Added one commoner pop to Tarracianae 
+
+
+Hirdmann:
+-added nevet forest, germanic shrines, mount_ararat to scripted_modifiers
+- added Median missions with pictures and modifiers
+- changed national ideas of Media
+- reduced developent of Elam a little to show its devastation after civil wars in Assyria
+- added few pops to empower Media
+- changes to median family branch
