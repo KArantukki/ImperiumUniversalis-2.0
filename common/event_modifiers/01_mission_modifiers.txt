@@ -269,3 +269,27 @@ united_epirus = {
 	global_manpower_modifier = 0.2
 	land_forcelimit_modifier = 0.2 
 }
+
+median_expansion = {
+	land_morale = 0.1
+	manpower_recovery_speed = 0.2
+}
+
+mdi_armoured_cavalry = {
+	cavalry_cost = 0.1
+	cavalry_power = 0.05
+}
+
+mdi_first_troop_separation = {
+	discipline = 0.05
+	global_regiment_cost = -0.1
+}
+
+mdi_scythian_tactics = {
+	cavalry_flanking = 0.25
+	cavalry_cost = -0.1
+	leader_land_fire = 1
+}
+mdi_benevolent_overlord = {
+	reduced_liberty_desire = 10
+}
