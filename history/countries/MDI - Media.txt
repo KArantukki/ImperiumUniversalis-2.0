@@ -19,27 +19,78 @@ historical_friend = BAB
 129.1.1 = {
 add_absolutism = 10
 add_stability = 1
+clear_scripted_personalities = yes
+add_ruler_personality = conqueror_personality
+add_ruler_personality = martial_educator_personality
 monarch = {
 		name = "Cyaxares"
 		dynasty = "of Media"
+		culture = median
+		religion = iranian_religion
 		birth_date = 115.1.1
 		death_date = 169.1.1
-		dip = 1
-		adm = 1
-		mil = 3
+		dip = 3
+		adm = 2
+		mil = 5
+		leader = {
+			name = "Cyaxares"
+			type = general
+			fire = 5
+			shock = 5
+			manuever = 4
+			siege = 3
+		}
+	
 	}
+	
+	leader = {
+		name = "Paruyr Skayordi"
+		type = general
+		fire = 3
+		shock = 4
+		manuever = 3
+		siege = 1
+	}
+	
 }
-169.1.1 = {
-add_ruler_personality = benevolent_personality
-monarch = {
+144.1.1 = {
+	heir = {
 		name = "Astyages"
+		monarch_name = "Astyages I"
 		dynasty = "of Media"
-		birth_date = 155.1.1
+		culture = median
+		religion = iranian_religion
+		claim = 95
+		birth_date = 144.1.1
 		death_date = 206.1.1
 		dip = 1
 		adm = 1
 		mil = 3
 	}
+}	
+169.1.1 = {
+add_ruler_personality = benevolent_personality
+monarch = {
+		name = "Astyages"
+		dynasty = "of Media"
+		birth_date = 144.1.1
+		death_date = 206.1.1
+		dip = 1
+		adm = 1
+		mil = 3
+	}
+	queen = {
+		country_of_origin = LYD
+		name = "Ariennis"
+		dynasty = "Mermnadid"
+		birth_date = 152.1.1
+		death_date = 200.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+
 leader = {
 		name = "Harpagus" 
 		type = general	
