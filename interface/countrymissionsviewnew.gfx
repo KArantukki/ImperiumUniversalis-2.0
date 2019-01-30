@@ -337,4 +337,63 @@ spriteTypes = {
 		name = "mission_peace"
 		texturefile = "gfx//interface//missions//mission_peace.dds"
 	}
-}
+	spriteType = {
+		name = "mission_media_rise"
+		texturefile = "gfx//interface//missions//mission_media_rise.dds"
+	}
+	spriteType = {
+		name = "mission_urartu_fall"
+		texturefile = "gfx//interface//missions//mission_urartu_fall.dds"
+	}
+	spriteType = {
+		name = "mde_median_spear"
+		texturefile = "gfx//interface//missions//mde_median_spear.dds"
+	}
+	spriteType = {
+		name = "mission_end_of_scythians"
+		texturefile = "gfx//interface//missions//mission_end_of_scythians.dds"
+	}
+	spriteType = {
+		name = "mission_persian_invasion"
+		texturefile = "gfx//interface//missions//mission_persian_invasion.dds"
+	}
+	spriteType = {
+		name = "eastern_expansion"
+		texturefile = "gfx//interface//missions//eastern_expansion.dds"
+	}
+	spriteType = {
+		name = "mission_pse_inf_go_east"
+		texturefile = "gfx//interface//missions//mission_pse_inf_go_east.dds"
+	}
+	spriteType = {
+		name = "mission_armoured_chariot"
+		texturefile = "gfx//interface//missions//mission_armoured_chariot.dds"
+	}
+	spriteType = {
+		name = "mission_hagmatana"
+		texturefile = "gfx//interface//missions//mission_hagmatana.dds"
+	}
+	spriteType = {
+		name = "mission_conquest_elam"
+		texturefile = "gfx//interface//missions//mission_conquest_elam.dds"
+	}
+	spriteType = {
+		name = "attack_west_pse"
+		texturefile = "gfx//interface//missions//attack_west_pse.dds"
+	}
+	spriteType = {
+		name = "mission_greeks"
+		texturefile = "gfx//interface//missions//mission_greeks.dds"
+	}
+	spriteType = {
+		name = "mission_lydia"
+		texturefile = "gfx//interface//missions//mission_lydia.dds"
+	}
+	spriteType = {
+		name = "pse_hellespont"
+		texturefile = "gfx//interface//missions//pse_hellespont.dds"
+	}
+	spriteType = {
+		name = "missions_chariot_attack"
+		texturefile = "gfx//interface//missions//missions_chariot_attack.dds"
+	}
