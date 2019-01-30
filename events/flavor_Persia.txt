@@ -30,7 +30,7 @@ country_event = {
 				name = "Scylax of Caryanda"
 				fire = 1
 				shock = 1
-				manuever = 4
+				manuever = 6
 				siege = 0
 			}
 	}
@@ -90,13 +90,21 @@ country_event = {
 		NOT = { has_country_flag = birth_of_kyros_flag }
 		NOT = {  started_in = 178.1.1  }
 		is_year = 170
-		NOT = { is_year = 185 }
+		NOT = { is_year = 190 }
 		has_heir = no 
 		has_regency = no 
 	}
 	
 	mean_time_to_happen = {
 		months = 16
+			modifier = {
+				factor = 0.75
+				ai = no
+			}
+			modifier = {
+				factor = 0.5
+				is_year = 178
+			}
 	}
 	
 	option = {
@@ -119,7 +127,7 @@ country_event = {
 	id = persia.7
 	title = "persia.7.t"
 	desc = "persia.7.d"
-	picture = birth
+	picture = ruler
 	fire_only_once = yes
 	
 	trigger = {
@@ -187,3 +195,477 @@ country_event = {
 			add_adm_power = 100
 	}
 }
+
+########################################################################################
+# Median-Persian War 1/3    - MDI (persia is no vassal)
+########################################################################################
+country_event = {
+	id = persia.10
+	title = "persia.10.t"
+	desc = "persia.10.d"
+	picture = rivercrossing
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MDI
+		NOT = { has_country_flag = attack_on_pse_flag ) 
+		total_development = 65
+		is_at_war = no
+		is_year = 195
+		NOT = {  started_in = 204.1.1  }
+		NOT = {  is_year = 225  }
+		OR = {
+			AND = {
+				NOT = { exists = ANH }
+				NOT = { exists = PRS }
+				is_neighbor_of = PSE 
+				PSE = {
+					is_subject = no
+					num_of_cities = 8
+				}
+			}
+			AND = {
+				NOT = { exists = PSE }
+				is_neighbor_of = ANH 
+				ANH = {
+					is_subject = no
+					num_of_cities = 8
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 72
+			modifier = {
+				factor = 0.5
+				PSE = { 
+					ADM = 5
+					DIP = 5
+					MIL = 5
+				}
+			}
+			modifier = {
+				factor = 0.5
+				ANH = { 
+					ADM = 5
+					DIP = 5
+					MIL = 5
+				}
+			}
+			modifier = {
+				factor = 0.5
+				is_year = 205
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { stability = 0 }
+			}
+			modifier = {
+				factor = 1.5
+				war_exhaustion = 2
+			}
+	}
+	
+	# Attack Persia
+	option = {
+		name = "persia.10.a"
+		ai_chance = { factor = 99 }
+			set_country_flag = attack_on_pse_flag
+			add_prestige = 5
+			if = {
+				limit = {
+					exists = PSE
+				}
+				add_casus_belli = {
+					target = PSE
+					type = cb_disloyal_vassal
+					months = 120
+				}
+				if = {
+					limit = { ai = yes }
+					declare_war_with_cb = {
+						who = PSE
+						casus_belli = cb_disloyal_vassal
+					}
+					hidden_effect = {
+						PSE = {
+							country_event = {
+								id = persia.12
+							}
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					exists = ANH
+				}
+				add_casus_belli = {
+					target = ANH
+					type = cb_disloyal_vassal
+					months = 120
+				}
+				if = {
+					limit = { ai = yes }
+					declare_war_with_cb = {
+						who = ANH
+						casus_belli = cb_disloyal_vassal
+					}
+					hidden_effect = {
+						ANH = {
+							country_event = {
+								id = persia.12
+							}
+						}
+					}
+				}
+			}
+	}
+	# dont Attack Persia
+	option = {
+		name = "persia.10.b"
+			add_prestige = -15
+			set_country_flag = attack_on_pse_flag
+	}
+}
+
+
+########################################################################################
+# Median-Persian War 2/3    - MDI (persia is vassal)
+########################################################################################
+country_event = {
+	id = persia.11
+	title = "persia.11.t"
+	desc = "persia.11.d"
+	picture = rivercrossing
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MDI
+		NOT = { has_country_flag = attack_on_pse_flag ) 
+		total_development = 65
+		is_at_war = no
+		is_year = 195
+		NOT = {  started_in = 204.1.1  }
+		NOT = {  is_year = 225  }
+		OR = {
+			AND = {
+				NOT = { exists = ANH }
+				NOT = { exists = PRS }
+				is_neighbor_of = PSE 
+				PSE = {
+					is_subject_of = ROOT
+					ADM = 5
+					DIP = 5
+					MIL = 5
+				}
+			}
+			AND = {
+				NOT = { exists = PSE }
+				is_neighbor_of = ANH 
+				ANH = {
+					is_subject_of = ROOT
+					ADM = 5
+					DIP = 5
+					MIL = 5
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+			modifier = {
+				factor = 0.5
+				is_year = 205
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { stability = 0 }
+			}
+			modifier = {
+				factor = 1.5
+				war_exhaustion = 2
+			}
+	}
+	
+	# Attack Persia
+	option = {
+		name = "persia.10.a"
+		ai_chance = { factor = 99 }
+			set_country_flag = attack_on_pse_flag
+			add_prestige = 5
+			if = {
+				limit = {
+					exists = PSE
+				}
+				add_casus_belli = {
+					target = PSE
+					type = cb_disloyal_vassal
+					months = 120
+				}
+				if = {
+					limit = { ai = yes }
+					declare_war_with_cb = {
+						who = PSE
+						casus_belli = cb_disloyal_vassal
+					}
+					hidden_effect = {
+						PSE = {
+							country_event = {
+								id = persia.12
+							}
+						}
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					exists = ANH
+				}
+				add_casus_belli = {
+					target = ANH
+					type = cb_disloyal_vassal
+					months = 120
+				}
+				if = {
+					limit = { ai = yes }
+					declare_war_with_cb = {
+						who = ANH
+						casus_belli = cb_disloyal_vassal
+					}
+					hidden_effect = {
+						ANH = {
+							country_event = {
+								id = persia.12
+							}
+						}
+					}
+				}
+			}
+	}
+	# dont Attack Persia
+	option = {
+		name = "persia.10.b"
+			set_country_flag = attack_on_pse_flag
+			add_prestige = -15
+	}
+}
+########################################################################################
+# Median-Persian War 3/3    - PSE/ANH 
+########################################################################################
+country_event = {
+	id = persia.12
+	title = "persia.12.t"
+	desc = "persia.12.d"
+	picture = generals
+	is_triggered_only = yes
+	
+	option = {
+		name = "persia.12.a"
+				add_yearly_manpower = 0.35
+				add_army_tradition = 5
+		}
+}
+
+########################################################################################
+# Median Army switches sides 1/3
+########################################################################################
+country_event = {
+	id = persia.13
+	title = "persia.13.t"
+	desc = "persia.13.d"
+	picture = mad_emperor
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MDI
+		NOT = { has_country_flag = median_army_switches_sides_flag }
+		OR = {
+			AND = {
+				NOT = {
+					war_score_against = {
+						who = PSE
+						value = 15
+					}
+				}
+				war_with = PSE 
+				PSE = { 
+					ADM = 5
+					DIP = 5
+					MIL = 5
+				}
+			}
+			AND = {
+				NOT = {
+					war_score_against = {
+						who = ANH
+						value = 15
+					}
+				}
+				war_with = ANH 
+				ANH = { 
+					ADM = 5
+					DIP = 5
+					MIL = 5
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+			modifier = {
+				factor = 2.0
+				ai = yes
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					war_score_against = {
+						who = ANH
+						value = -15
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					war_score_against = {
+						who = PSE
+						value = -15
+					}
+				}
+			}
+	}
+	
+	# oh no
+	option = {
+		name = "persia.13.a"
+				set_country_flag = median_army_switches_sides_flag
+				if = {
+					limit = { exists = ANH }
+						hidden_effect = {
+							ANH = {
+								country_event = {
+									id = persia.14
+								}
+							}
+						}
+					}
+				}
+				if = {
+					limit = { exists = PSE }
+						hidden_effect = {
+							PSE = {
+								country_event = {
+									id = persia.14
+								}
+							}
+						}
+					}
+				}
+			add_stability = -1
+			add_yearly_manpower = -1.5
+			add_army_tradition = -10
+			
+	}
+}
+########################################################################################
+# Median Army switches sides 2/3
+########################################################################################
+country_event = {
+	id = persia.14
+	title = "persia.14.t"
+	desc = "persia.14.d"
+	picture = mad_emperor
+	is_triggered_only = yes
+	
+	option = {
+		name = "persia.14.a"
+		ai_chance = { factor = 99 }
+				set_country_flag = median_ambition_flag
+				add_casus_belli = {
+					target = MDI
+					type = cb_mission_invasion
+					months = 60
+				}
+				add_yearly_manpower = 1.25
+				define_general = {
+						name = "Harpagus" 
+						fire = 3
+						shock = 6
+						manuever = 2
+						siege = 1
+				}
+		}
+	option = {
+		name = "persia.14.b"
+				add_yearly_manpower = 1.25
+				define_general = {
+						name = "Harpagus" 
+						fire = 3
+						shock = 6
+						manuever = 2
+						siege = 1
+				}
+		}
+}
+
+########################################################################################
+# Median Army switches sides 3/3
+########################################################################################
+country_event = {
+	id = persia.15
+	title = "persia.15.t"
+	desc = "persia.15.d"
+	picture = mad_emperor
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = PSE
+			tag = ANH
+		}
+			has_country_flag = median_ambition_flag
+			war_score_against = {
+				who = MDI
+				value = 20
+			}
+			MDI = {
+				ai = yes
+				capital_scope = {
+					controlled_by = ROOT
+				}
+			}	
+		army_size = MDI
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+			modifier = {
+				factor = 0.5
+					war_score_against = {
+						who = MDI
+						value = 50
+					}
+			}
+	}
+	
+	# take over Media
+	option = {
+		name = "persia.15.a"
+		inherit = MDI
+		add_stability = -1
+	}
+	# we better leave them 
+	option = {
+		name = "persia.15.b"
+		add_prestige = -10
+			
+	}
+}
+

@@ -36,6 +36,7 @@ writing_system = {
 	history = {
 		OR = {
 				owned_by = TTQ
+				owned_by = URT
 				culture_group = hellenic
 				culture_group = anatolian_group
 				culture_group = semitic

@@ -1,6 +1,6 @@
-add_core = KIL
-owner = KIL
-controller = KIL
+add_core = HUM
+owner = HUM
+controller = HUM
 culture = kilikian
 religion = luwian_religion
 hre = no

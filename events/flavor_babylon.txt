@@ -202,7 +202,7 @@ country_event = {
 		months = 2	
 	}
 	
-	# burn it down!
+	# 
 	option = {
 		name = "babylon.3.a"
 		set_global_flag = sagartia_to_media
@@ -210,49 +210,49 @@ country_event = {
 			factor = 99 
 		}
 		if = {
-			limit = { owns = 2481 }
+			limit = { owns_or_subject_of = 2481 }
 			2481 = {
 				cede_province = MDI
 				remove_core = ROOT
 			}
 		}
 		if = {
-			limit = { owns = 2484 }
+			limit = { owns_or_subject_of = 2484 }
 			2484 = {
 				cede_province = MDI
 				remove_core = ROOT
 			}
 		}
 		if = {
-			limit = { owns = 2486 }
+			limit = { owns_or_subject_of = 2486 }
 			2486 = {
 				cede_province = MDI
 				remove_core = ROOT
 			}
 		}
 		if = {
-			limit = { owns = 2485 }
+			limit = { owns_or_subject_of = 2485 }
 			2485 = {
 				cede_province = MDI
 				remove_core = ROOT
 			}
 		}
 		if = {
-			limit = { owns = 2493 }
+			limit = { owns_or_subject_of = 2493  }
 			2493 = {
 				cede_province = MDI
 				remove_core = ROOT
 			}
 		}
 		if = {
-			limit = { owns = 2693 }
+			limit = { owns_or_subject_of = 2693 }
 			2693 = {
 				cede_province = MDI
 				remove_core = ROOT
 			}
 		}
 		if = {
-			limit = { owns = 2692 }
+			limit = { owns_or_subject_of = 2692 }
 			2692 = {
 				cede_province = MDI
 				remove_core = ROOT

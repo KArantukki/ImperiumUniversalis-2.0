@@ -15,7 +15,7 @@ historical_rival = JUD
 	
 127.1.1 = {
 	add_treasury = -125
-	add_yearly_manpower = -1.0
+	add_yearly_manpower = -1.5
 	add_stability = -1
 	add_army_professionalism = 0.1
 	add_faction_influence = { faction = fac_monarch influence = 10 }
@@ -30,6 +30,7 @@ historical_rival = JUD
 		}
 }
 145.8.10 = {
+	add_ruler_personality = craven_personality
 	add_war_exhaustion = 5
 	monarch = {
 		name = "Ashur-uballit II"

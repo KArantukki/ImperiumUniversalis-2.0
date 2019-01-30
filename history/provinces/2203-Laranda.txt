@@ -1,8 +1,8 @@
 add_core = LYA
-add_core = LYD
-owner = LYD
-controller = LYD
-culture = lycaonian
+add_core = PRH
+owner = PRH
+controller = PRH
+culture = kilikian
 religion = luwian_religion
 hre = no
 base_tax = 0

@@ -3,7 +3,15 @@
 - Babylon: Land to Media event fixed
 - Allies Estate: Demand ship interaction fixed
 - Button to diplo annex vassals is back again
-
+- Fixed bug that causes crash when insulting others
 - Coinage Institution spread triggers reworked
 - Prestige for sending athlets to the olympic games changed
 - Added one commoner pop to Tarracianae 
+- Succesion Crisis triggers now under 80 legitimacy, and not 90
+- Urartu starts now with writing system
+- new events for Media and Persia 
+- new missions for Media
+- military settlements provide garrison size and no more fort level
+- Mount Geraneia modifier now gives -33% movementspeed and not +33%
+- Cilicia is now divides into two countries
+- new ideas for Cilicia

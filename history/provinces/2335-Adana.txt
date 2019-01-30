@@ -1,10 +1,10 @@
-add_core = KIL
-owner = KIL
-controller = KIL
+add_core = HUM
+owner = HUM
+controller = HUM
 culture = kilikian
 religion = luwian_religion
 hre = no
-base_tax = 0
+base_tax = 1
 base_production = 3
 base_manpower = 3
 trade_goods = fruits

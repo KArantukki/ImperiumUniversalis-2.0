@@ -1,7 +1,8 @@
 add_core = KPP
-owner = KPP
-controller = KPP
-culture = kappadokian
+add_core = HUM
+owner = HUM
+controller = HUM
+culture = kilikian
 religion = luwian_religion
 hre = no
 base_tax = 0

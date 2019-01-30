@@ -9,7 +9,7 @@ succession_crisis_disaster = {
 	
 	can_start = {
 			NOT = { months_of_ruling = 36 }
-			NOT = { legitimacy = 90 }
+			NOT = { legitimacy = 80 }
 		}
 	
 	
@@ -18,7 +18,7 @@ succession_crisis_disaster = {
 				NOT = { government = monarchy }
 				AND = {
 					NOT = { months_of_ruling = 36 }
-							legitimacy = 90
+							legitimacy = 80
 				}
 			}
 		}
@@ -56,48 +56,43 @@ succession_crisis_disaster = {
 		}
 		
 		modifier = {
-			factor = 45
+			factor = 40
 			NOT = { legitimacy = 10 }
 		}
 		modifier = {
-			factor = 40
+			factor = 35
 					legitimacy = 10
 			NOT = { legitimacy = 20 }
 		}
 		modifier = {
-			factor = 35
+			factor = 30
 					legitimacy = 20
 			NOT = { legitimacy = 30 }
 		}
 		modifier = {
-			factor = 30
+			factor = 25
 					legitimacy = 30
 			NOT = { legitimacy = 40 }
 		}
 		modifier = {
-			factor = 25
+			factor = 20
 					legitimacy = 40
 			NOT = { legitimacy = 50 }
 		}
 		modifier = {
-			factor = 20
+			factor = 15
 					legitimacy = 50
 			NOT = { legitimacy = 60 }
 		}
 		modifier = {
-			factor = 15
+			factor = 10
 					legitimacy = 60
 			NOT = { legitimacy = 70 }
 		}
 		modifier = {
-			factor = 10
+			factor = 5
 					legitimacy = 70
 			NOT = { legitimacy = 80 }
-		}
-		modifier = {
-			factor = 5
-					legitimacy = 80
-			NOT = { legitimacy = 90 }
 		}
 		
 		modifier = {
@@ -121,7 +116,7 @@ succession_crisis_disaster = {
 			AND = {
 				months_of_ruling = 36
 				stability = 1
-				legitimacy = 90
+				legitimacy = 80
 			}
 			NOT = { government = monarchy }
 		}
@@ -129,9 +124,10 @@ succession_crisis_disaster = {
 	
 
 	modifier = {	
-		global_unrest = 10
+		global_unrest = 5
 		stability_cost_modifier = 0.25
 		global_manpower_modifier = -0.5
+		fac_nobles_influence = 0.05
 	}	
 	
 	

@@ -15,7 +15,7 @@ capital = 735
 
 90.1.1 = {
 	add_treasury = -100 
-	add_yearly_manpower = -1.5
+	add_yearly_manpower = -1.7
 	add_army_professionalism = 0.1
 	add_absolutism = 10
 	add_faction_influence = { faction = fac_monarch influence = 30 }

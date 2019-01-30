@@ -17,8 +17,12 @@ tribe_mechanic = {
 
 tribal_republic_reform = {
 	potential = {
+		OR = {
 		has_reform = tribal_republic_reform
+		has_reform = permanent_senate
 		have_had_reform = tribal_republic_reform
+		have_had_reform = permanent_senate
+		}
 	}
 	icon = "tribal_republic_reform"
 	legacy_equivalent = tribal_federation

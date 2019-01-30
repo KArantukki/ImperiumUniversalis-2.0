@@ -1,7 +1,7 @@
 add_core = LYA
-add_core = LYD
-owner = LYD
-controller = LYD
+add_core = KPP
+owner = KPP
+controller = KPP
 culture = lycaonian
 religion = luwian_religion
 hre = no

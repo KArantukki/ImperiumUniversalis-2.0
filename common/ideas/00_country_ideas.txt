@@ -1,5 +1,47 @@
 
 
+KIL_ideas = {
+    #Traditions
+    start = {
+        land_morale = 0.1 
+		fort_maintenance_modifier = -0.25
+    }
+    #Ambitions
+    bonus = {
+		privateer_efficiency = 0.33
+    }
+ 
+	trigger = { 
+		OR = {
+			tag = KIL
+			tag = HUM
+			tag = PRH
+		}
+	}
+	free = yes
+  
+    multicultural_character = {
+       num_accepted_cultures = 2
+    }
+    rich_loamy_soil = {
+		production_efficiency = 0.1
+    }
+    cilician_gates_idea = {
+		trade_efficiency = 0.1
+    }
+    birthplace_of_typhon = {
+       prestige = 1
+    }
+    cilician_pirates_idea = {
+      may_perform_slave_raid = yes
+    }
+    battleground_of_the_diadochi = {
+		war_exhaustion = -0.1
+    }  
+    paul_the_apostle = {
+		missionaries = 1
+    }
+}
 THS_ideas = {
     #Traditions
     start = {

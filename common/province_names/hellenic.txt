@@ -170,3 +170,6 @@
 499 = "Durocortorion"
 37 = "Sipious"
 2316 = "Byblos"
+2204 = "Eirenopolis"
+2205 = "Syedra"
+2206 = "Kelenderis"

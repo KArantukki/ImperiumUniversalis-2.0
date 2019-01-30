@@ -1,6 +1,6 @@
-add_core = KIL
-owner = KIL
-controller = KIL
+add_core = PRH
+owner = PRH
+controller = PRH
 culture = doric
 religion = greek_religion
 hre = no

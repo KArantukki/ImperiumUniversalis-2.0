@@ -151,6 +151,7 @@ country_event = {
 		}
 		2302 = { owned_by = BAB }
 		2310 = { owned_by = BAB }
+		NOT = { has_country_flag = egypt_babylon_struggle_flag }
 	}
 	
 	mean_time_to_happen = {
@@ -194,6 +195,7 @@ country_event = {
 					}
 					add_claim = ROOT
 				}
+		set_country_flag = egypt_babylon_struggle_flag
 		declare_war_with_cb = {
 			who = BAB
 			casus_belli = cb_conquest
@@ -213,6 +215,7 @@ country_event = {
 		ai_chance = { 
 				factor = 50
 				}
+		set_country_flag = egypt_babylon_struggle_flag
 			add_prestige = -10
 			add_war_exhaustion = -2
 	}

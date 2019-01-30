@@ -3,7 +3,7 @@
 graphical_culture = hellenicgfx
 special_unit_culture = mesopotamian_special
 
-color = { 181 121 57 }
+color = { 37 88 107 }
 
 historical_idea_groups = {
 	raider_ideas

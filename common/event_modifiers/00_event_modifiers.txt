@@ -1210,6 +1210,12 @@ kilikian_gate = {
 	province_trade_power_modifier = 0.1
 }
 
+persian_gate = {
+	picture = "kilikian_gate"
+	local_friendly_movement_speed = -0.15
+	local_hostile_movement_speed = -0.3
+}
+
 carthagian_harbor = {
 	picture = "carthagian_harbor"
 	

@@ -328,3 +328,6 @@
 2316 = "Byblos"
 437 = "Pictavium"
 1136 = "Dyrrhachium"
+2204 = "Eirenopolis"
+2205 = "Syedra"
+2206 = "Celenderis"

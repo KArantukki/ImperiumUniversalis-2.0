@@ -21,7 +21,7 @@ small_army_camp = {
 	#make_obsolete = shrine
 	modifier = {
 		local_manpower = 1.0
-		fort_level = 1
+		garrison_size = 0.1 
 	}
 	ai_will_do = {
 		factor = 1.0
@@ -33,7 +33,7 @@ small_military_settlement = {
 	make_obsolete = small_army_camp
 	modifier = {
 		local_manpower = 2.0
-		fort_level = 4
+		garrison_size = 0.2 
 	}
 	ai_will_do = {
 		factor = 100
@@ -65,7 +65,7 @@ big_military_settlement = {
 	make_obsolete = small_military_settlement
 	modifier = {
 		local_manpower = 3.0
-		fort_level = 2
+		garrison_size = 0.3
 	}
 	ai_will_do = {
 		factor = 1.0
