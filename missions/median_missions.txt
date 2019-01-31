@@ -1,5 +1,5 @@
 
-pse_missions_1 = {
+mdi_missions_1 = {
 
 	slot = 1
 	generic = no
@@ -266,15 +266,15 @@ mdi_missions_2 = {
 					exists = yes
 				}
 			}
-			2407 = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			2408 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2400 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2407 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -657,7 +657,7 @@ mdi_missions_3 = {
 		}
 		effect = {
 				add_prestige = 20
-				2704 = {
+				2688 = {
 					add_base_tax = 1
 					add_Base_production = 2
 				}
