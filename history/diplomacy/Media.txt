@@ -34,3 +34,9 @@ dependency = {
 	start_date = 145.1.1
 	end_date = 167.1.1
 }
+alliance = {
+	first = MDI
+	second = BAB
+	start_date = 145.1.1
+	end_date = 191.1.1
+}
