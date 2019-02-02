@@ -4125,7 +4125,7 @@ PLS_ideas = {
 	}	
 	PLS6 = {
 		infantry_power = 0.05
-		attack_bonus_in_capital_terrain = yes				
+		artillery_power = 0.05				
 	}
 	PLS7 = {
 		sailor_maintenance_modifer = -0.25
