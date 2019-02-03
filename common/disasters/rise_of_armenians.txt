@@ -1,0 +1,129 @@
+rise_of_armenians = {
+	potential = {
+		tag = URT
+		NOT = { has_any_disaster = yes }
+		NOT = { has_country_flag = rise_of_armenians }
+		num_of_cities = 8
+		uses_religious_icons = yes 
+		NOT = { primary_culture = armenian }		
+	}
+
+	
+	
+	can_start = {
+		OR = {
+			at_war_with = MDI
+			URT = {
+				OR = {
+						ADM = 1
+						DIP = 1
+						MIL = 1
+					}
+			}
+		}			
+	}
+	
+	
+	can_stop = {
+			legitimacy = 99
+			at_peace = yes
+			OR = {
+				primary_culture = armenian
+				any_owned_province = {
+					NOT = {
+						culture = armenian
+					}
+				}
+			}
+		}
+		
+	
+	
+	progress = {
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 85 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 75 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy = 65 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { legitimacy = 55 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { stability = 1 }
+			}
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 0 }
+			}
+		modifier = {
+			factor = 2
+			NOT = { stability = -1 }
+			}
+		modifier = {
+			factor = 2.5
+			NOT = { stability = -2 }
+			}
+		#modifier = {
+		#	factor = 1
+		#	war_exaustion = 2
+		#}
+		modifier = {
+			factor = 20
+			defensive_war_with = MDI
+		}
+		modifier = {
+			factor = 20
+			defensive_war_with = PSE
+		}
+	}
+	
+	
+	
+	can_end = {
+		OR = {
+			tag = ARM
+			primary_culture = armenian
+			URT = {
+				OR = {
+					ADM = 5
+					MIL = 4
+					DIP = 4
+				}
+			}
+		}
+		AND = {
+			
+			legitimacy = 95
+		}
+	}
+
+	
+
+	modifier = {
+		stability_cost_modifier = 0.5
+		land_morale = -0.2
+		defensiveness = -0.25
+	}	
+	
+	
+	on_start = urartu.2
+	#on_end = urartu.3
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+		}
+	}
+}
+
