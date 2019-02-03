@@ -6,3 +6,39 @@ dependency = {
 	start_date = 145.1.1
 	end_date = 160.1.1
 }
+
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = EGY
+	second = JUD
+	start_date = 146.1.1
+	end_date = 148.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = BAB
+	second = JUD
+	start_date = 148.1.1
+	end_date = 154.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = BAB
+	second = JUD
+	start_date = 156.1.1
+	end_date = 165.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = EGY
+	second = PH2
+	start_date = 166.1.1
+	end_date = 179.1.1
+}
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = BAB
+	second = PH2
+	start_date = 179.1.1
+	end_date = 214.1.1
+}
