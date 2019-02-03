@@ -51,6 +51,61 @@ capital = 735
 		mil = 3
 	}
 }
+146.1.1 = {
+		monarch = {
+			name = "Necho II"
+			dynasty = "of Sais"
+			death_date = 158.1.1
+			dip = 3
+			adm = 5
+			mil = 3
+		}
+		heir = {
+			name = "Neferibre Psamtik II"
+			monarch_name = "Neferibre Psamtik II"
+			dynasty = "of Sais"
+			birth_date = 145.1.1
+			death_date = 160.1.1
+			claim = 95
+			adm = 3
+			dip = 3
+			mil = 4
+		}
+}	
+
+158.1.1 = {
+		monarch = {
+		name = "Neferibre Psamtik II"
+		dynasty = "of Sais"
+        death_date = 154.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+160.1.1 = {
+		heir = {
+			name = "Haaibre Wahibre"
+			monarch_name = "Haaibre Wahibre (Apries)"
+			dynasty = "of Sais"
+			birth_date = 160.1.1
+			death_date = 184.1.1
+			claim = 90
+			adm = 1
+			dip = 2
+			mil = 1
+		}
+}
+164.1.1 = {
+	monarch = {
+		name = "Haaibre Wahibre (Apries)"
+		dynasty = "of Sais"
+        death_date = 184.1.1
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
 184.1.1 = {
 	add_army_professionalism = 0.05
 	add_absolutism = 20
