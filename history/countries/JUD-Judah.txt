@@ -41,6 +41,80 @@ historical_rival = ISR
 		mil = 2
 	}
 }
+145.1.1 = {
+	monarch = {
+		name = "Jehoahaz"
+		dynasty = "of Judah"
+		birth_date = 122.1.1
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+	heir = {
+		name = "Jehoiakim"
+		monarch_name = "Jehoahaz"
+		dynasty = "of Judah"
+		birth_date = 112.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+145.3.1 = {
+	monarch = {
+		name = "Jehoiakim"
+		dynasty = "of Judah"
+		birth_date = 111.1.1
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+	heir = {
+		name = "Jeconiah"
+		monarch_name = "Jeconiah"
+		dynasty = "of Judah"
+		birth_date = 137.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+	queen = {
+        name = "Nehushta"
+        dynasty = "ben Achbor"
+		birth_date = 117.1.1
+        death_date = 160.1.1
+        female = yes
+        adm = 2
+        dip = 2
+        mil = 1
+    }
+	
+}
+155.12.9 = {
+	monarch = {
+		name = "Jeconiah"
+		dynasty = "of Judah"
+		birth_date = 137.1.1
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}
+156.3.16 = {
+	monarch = {
+		name = "Zedekiah"
+		dynasty = "of Judah"
+		birth_date = 135.1.1
+		death_date = 156.6.1 #not exactly, but was captured and died after
+		dip = 3
+		adm = 4
+		mil = 4
+	}
+]
+#156.6.1 = end of judah, babylonian captivity
+
 614.1.1 = {
 	monarch = {
 		name = "Simon Maccabeus"
