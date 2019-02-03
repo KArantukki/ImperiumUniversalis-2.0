@@ -4,12 +4,9 @@ graphical_culture = iraniangfx
 
 color = { 133 193 135 }
 
-revolutionary_colors = { 5  13  0 }
-
-
 historical_idea_groups = {
 	cavalry_ideas
-	agraculture_ideas
+	financial_ideas
 	caravan_trade_ideas
 	administrative_ideas
 	mercenary_ideas
@@ -23,39 +20,49 @@ historical_units = {
 }
 
 monarch_names = {
-	"Ptolemaeus #1" = 30
-	"Orontes #1" = 10
-	"Sames #1" = 1
-	"Mithridates #1" = 25
-	"Antiochus #1" = 20
-	"Arsames #6" = 70
-	"Yesfir #1" = -1
-	"Zareen #1" = -1
-	"Zhaleh #1" = -1
-	"Nahid #1" = -1
-	"Banu #1" = -1
-	"Esta #1" = -1
-	"Jaleh #1" = -1
-
-	"Yesfir #1" = -1
-	"Zareen #1" = -1
-	"Zhaleh #1" = -1
-	"Nahid #1" = -1
-	"Banu #1" = -1
-	"Esta #1" = -1
-	"Jaleh #1" = -1
+	# Armenian
+	"Orontes" = 50
+	"Artaxias" = 40
+	"Tigranes" = 30
+	"Artavasdes" = 20
+	"Artasyrus" = 20
+	"Vahagn" = 10
+	"Perdiccas" = 10
+	"Mithrenes" = 10
+	"Sames" = 10
+	"Abdissares" = 10
+	"Sanatruk" = 10
+	"Parthamasiris" = 10
+	"Khosrov" = 10
+	# Urartu
+	"Arame" = 10
+	"Argishti" = 10
+	"Ishpuini" = 10
+	"Lutipri" = 10
+	"Menua" = 10
+	"Sarduri #4" = 10
+	"Rusa #3" = 10
+	
+	
+	"Yesfir" = -1
+	"Zareen"  = -1
+	"Zhaleh" = -1
+	"Nahid" = -1
+	"Banu" = -1
+	"Esta" = -1
+	"Jaleh" = -1
 
 }
 
 leader_names = {
-			Orontes Tigranes Vahagn Hidarnes Ardashir Darius Mithranes Perdiccas Neoptolemus 
-			Sames Arsames Xerxes Abdisares Artaxias Tigranes Artavasdes Ariobarzanes Vonones 
-			Rhadamistus Tiridates Sanatruces Axidares Parthamasiris Khosrov Tigranes Arsaces 
-			Varasdates
+			"the Armenian" "of Armavir" "of Oromantide" "of Tigranocerbi" "the One-Eyed" "the Wise" "the Black" "the Older" "the Strong" "Raven" "the Eagle" "the Lion"
+			"Artashesoi" "Yervanduni" "of Sophene" "of Sophene" "of Sophene" "of Sophene" "of Sophene" 
+			"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
 }
 
 ship_names = {
-	
+	Khaldi Aramazd Artinis Selardi Saris Aramazd Anadatus Anahit Mihr Omanos Spandaramet Tiur Tsovinar Vahagn Astghik 
+	Barsamin Nane Shahapet Devs Aralez Nhang Piatek Vishap Ara Aram 
 }
 
 army_names = {

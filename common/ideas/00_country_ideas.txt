@@ -2561,7 +2561,7 @@ CRI_ideas = {
 		num_accepted_cultures = 1
 	}	
 	ancient_people = {	
-		prestige_decay = -0.1
+		prestige_decay = -0.01
 	}
 	major_trade_routes = {
 		 trade_efficiency = 0.1

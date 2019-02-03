@@ -46,7 +46,7 @@ country_decisions = {
 			change_tag = EPI
 				if = {
 					limit = { government = tribal }			
-					change_government = monarchy
+					change_government_via_reform = monarchy
 				}
 				add_government_reform = epirote_monarchy_reform
 				chaonia_area = {

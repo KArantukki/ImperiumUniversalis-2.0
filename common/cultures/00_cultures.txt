@@ -797,10 +797,9 @@ armenian_group = {
 	}
 	
 	male_names = {
-		Orontes Tigranes Vahagn Hidarnes Ardashir Darius Mithranes Perdiccas Neoptolemus 
-		Sames Arsames Xerxes Abdisares Artaxias Tigranes Artavasdes Ariobarzanes Vonones 
-		Rhadamistus Tiridates Sanatruces Axidares Parthamasiris Khosrov Tigranes Arsaces 
-		Varasdates
+	Orontes Artaxias Tigranes Artavasdes Artasyrus Vahagn Perdiccas
+	Mithrenes Sames Abdissares Sanatruk Parthamasiris Khosrov Arame Argishti
+	Ishpuini Lutipri Menua Sarduri Rusa
 	}
 	female_names = {
 		Iotapa Isias Antiochis Rodogune Erato Zenobia Ashkhen Pharantzem Zarmandukht

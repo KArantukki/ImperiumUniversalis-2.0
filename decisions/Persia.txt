@@ -113,6 +113,17 @@ country_decisions = {
 				culture_group = eastern_iranian_group
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2688	
+				province_id = 2682	
+				province_id = 2666	
+				province_id = 2705	
+				province_id = 2828	
+				province_id = 2835
+			}
+			NOT = { owned_by = ROOT }
+		}
 		allow = {
 			is_at_war =  no
 			is_subject = no
@@ -153,6 +164,70 @@ country_decisions = {
 				}
 			}
 		ai_importance = 50	
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	
+	 form_persia_nation = {
+		major = yes
+		potential = {
+			NOT = { TAG = SAP }
+			NOT = { exists = PSE }
+			NOT = { TAG = MDI }
+			primary_culture = persian
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = temisdia_area
+				area = rudiane_area
+				area = paraetacene_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_at_war =  no
+			is_subject = no
+			temisdia_area = { type = all owned_by = ROOT }
+			rudiane_area = { type = all owned_by = ROOT }
+			paraetacene_area = { type = all owned_by = ROOT }
+		}
+		effect = {
+			change_tag = PSE
+				persis_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = PSE
+				}
+			}
+		ai_importance = 5000	
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	
+	 introduce_median_administration = {
+		potential = {
+			TAG = PSE
+			has_country_flag = median_ambition_flag
+		}
+		provinces_to_highlight = {
+			province_id = 2688
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_at_war =  no
+			is_subject = no
+			owns_core_province = 2688
+		}
+		effect = {
+			add_absolutism = 5
+			add_adm_power = 50
+			change_government_via_reform = monarchy
+			add_government_reform = aristocratic_monarchy_reform
+			}
+		ai_importance = 5000	
 		ai_will_do = {
 			factor = 400
 		}
