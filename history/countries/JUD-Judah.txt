@@ -112,7 +112,7 @@ historical_rival = ISR
 		adm = 4
 		mil = 4
 	}
-]
+}
 #156.6.1 = end of judah, babylonian captivity
 
 614.1.1 = {
