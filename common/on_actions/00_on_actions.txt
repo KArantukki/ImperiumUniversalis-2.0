@@ -617,6 +617,10 @@ on_thri_yearly_pulse = {
 			100 = india.7
 			100 = india.8
 			
+			100 = babylon.5
+			100 = babylon.6
+			100 = babylon.7
+			
 			
 			600 = 0
 		

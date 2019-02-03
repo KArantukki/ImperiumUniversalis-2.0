@@ -637,8 +637,9 @@ tributary_state = {
 		NOT = {
 			is_subject_of_type = tributary_state
 		}
+		num_of_cities = 24
 		OR = {
-			government_rank = 4
+			government_rank = 3
 			is_emperor_of_china = yes
 		}
 	}

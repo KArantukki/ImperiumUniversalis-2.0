@@ -95,7 +95,11 @@ rome_buff = {
 rome_buff = {
 	potential = {
 		AI = yes
-		is_year = 196
+		is_year = 190
+		OR = {
+			NOT = { total_development = 250 }
+			NOT = { is_year = 250 }
+		}
 	}
 
 	trigger = {
@@ -112,7 +116,6 @@ rome_buff = {
 				}
 			}
 		}
-		NOT = { total_development = 300 }
 	}
 	leader_siege = 1
 	land_forcelimit_modifier = 0.33

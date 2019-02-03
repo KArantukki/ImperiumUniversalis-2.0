@@ -15,11 +15,9 @@ succession_crisis_disaster = {
 	
 	can_stop = {
 			OR = {
+				months_of_ruling = 36
 				NOT = { government = monarchy }
-				AND = {
-					NOT = { months_of_ruling = 36 }
-							legitimacy = 80
-				}
+				legitimacy = 80
 			}
 		}
 		
@@ -113,8 +111,8 @@ succession_crisis_disaster = {
 	
 	can_end = {
 		OR = {
+				months_of_ruling = 60
 			AND = {
-				months_of_ruling = 36
 				stability = 1
 				legitimacy = 80
 			}

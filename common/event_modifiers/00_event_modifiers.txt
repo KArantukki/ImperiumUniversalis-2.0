@@ -1,6 +1,27 @@
 
 vassal_action_happened = {  }
 
+gate_to_the_east_modifier = {
+	trade_value = 10
+	local_core_creation = 0.25 
+}
+
+more_power_for_mardukpriests = {
+	stability_cost_modifier = 0.1
+	max_absolutism = -5
+}
+
+marduk_priest_are_angered = {
+	global_unrest = 2
+	legitimacy = -0.5
+}
+
+land_to_marduk_priests = {
+	global_tax_modifier = -0.05 
+	production_efficiency = -0.05
+	global_autonomy = 0.05
+}
+
 greek_carian_mercs = {
 	global_regiment_cost = -0.1
 	mercenary_cost = -0.1

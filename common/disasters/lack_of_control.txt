@@ -84,7 +84,6 @@ lack_of_control = {
 		}
 		random_events = { 
 			1000 = 0
-			
 		}
 	}
 }

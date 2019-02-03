@@ -1,4 +1,11 @@
 ﻿l_english:
+ gate_to_the_east_modifier:0 "The Gate to the East"
+ land_to_marduk_priests:0 "Land grants for the Marduk priests"
+ land_to_marduk_priests_desc:0 "We have given large amount of lands to the Marduk priests."
+ more_power_for_mardukpriests:0 "More political power for the Marduk priest"
+ more_power_for_mardukpriests_desc:0 "We have given more political power to the Marduk priests."
+ marduk_priest_are_angered:0 "Marduk priests are angry"
+ marduk_priest_are_angered_desc:0 "We have angered the Marduk priests with our policy."
  persian_gate:0 "Persian Gates"
  festival_hold_modifier:0 "Festival Held"
  festival_hold_modifier_desc:0 "A huge festival was hosted here recently."

@@ -16,7 +16,8 @@ country_decisions = {
 		
 		effect = {
 				set_country_flag = sargonid_practice_flag
-				add_patriarch_authority = 0.2
+				add_patriarch_authority = 0.15
+				add_splendor = 50
 			}
 			
 		ai_importance = 5
@@ -74,6 +75,58 @@ country_decisions = {
 					duration = -1
 				}
 				add_adm_power = -50
+			}
+			
+		ai_importance = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	restore_old_temples_harran = {
+		potential = {
+			TAG = BAB
+			NOT = { has_country_flag = restore_old_temples_harran_flag }
+			owns = 2372
+		}
+		
+		allow = {
+			is_at_war =  no
+			treasury = 100
+			owns = 2372
+		}
+		
+		effect = {
+				set_country_flag = restore_old_temples_harran_flag
+				add_treasury = -100
+				add_patriarch_authority = 0.05
+				add_splendor = 25
+			}
+			
+		ai_importance = 5
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	restore_old_temples_sippar = {
+		potential = {
+			TAG = BAB
+			NOT = { has_country_flag = restore_old_temples_sippar_flag }
+			owns = 2499
+		}
+		
+		allow = {
+			is_at_war =  no
+			treasury = 100
+			owns = 2499
+		}
+		
+		effect = {
+				set_country_flag = restore_old_temples_sippar_flag
+				add_treasury = -100
+				add_patriarch_authority = 0.05
+				add_splendor = 25
 			}
 			
 		ai_importance = 5

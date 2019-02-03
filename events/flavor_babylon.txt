@@ -26,11 +26,11 @@ country_event = {
 		factor = 10 
 				modifier = {
 					factor = 2.0
-					owner = { treasury = 250 }
+					treasury = 250
 					}
 				modifier = {
 					factor = 5.0
-					owner = { treasury = 500 }
+					treasury = 500
 					}
 		}
 			add_treasury = -250
@@ -50,19 +50,19 @@ country_event = {
 		factor = 1 
 				modifier = {
 					factor = 2.0
-					owner = { num_of_loans = 1 }
+					num_of_loans = 1
 					}
 				modifier = {
 					factor = 5.0
-					owner = { num_of_loans = 2 }
+					num_of_loans = 2
 					}
 				modifier = {
 					factor = 25.0
-					owner = { num_of_loans = 5 }
+					num_of_loans = 3
 					}
 				modifier = {
 					factor = 50.0
-					owner = { num_of_loans = 10 }
+					num_of_loans = 4
 					}
 		}
 		2500 = { remove_province_modifier = gardens_of_babylon }
@@ -464,5 +464,228 @@ country_event = {
 				type = nationalist_rebels
 				}
 			}
+	}
+}
+########################################################################################
+# Marduk Priests demand more land
+########################################################################################
+country_event = {
+	id = babylon.5
+	title = "babylon.5.t"
+	desc = "babylon.5.d"
+	picture = religious
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = BAB
+		religion = mesopotamian_religion
+		has_any_disaster = no 
+		NOT = { has_country_modifier = land_to_marduk_priests }
+		NOT = { has_country_modifier = more_power_for_mardukpriests }
+		NOT = { has_country_modifier = marduk_priest_are_angered }
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+	}
+	
+	# Give them more land
+	option = {
+		name = "babylon.5.a"
+		ai_chance = { 
+		factor = 40
+				modifier = {
+					factor = 0.5
+					 average_autonomy_above_min = 20
+					}
+				modifier = {
+					factor = 0.0
+					 average_autonomy_above_min = 40
+					}
+		}
+		
+		add_country_modifier = {
+			name = land_to_marduk_priests
+			duration = 3650
+		}
+		add_patriarch_authority = 0.05
+	}
+	
+	# Give them political power
+	option = {
+		name = "babylon.5.b"
+		ai_chance = { 
+		factor = 20
+				modifier = {
+					factor = 2.5
+					average_autonomy_above_min = 30
+					}
+		}
+		
+		add_country_modifier = {
+			name = more_power_for_mardukpriests
+			duration = 1825
+		}
+		add_patriarch_authority = 0.1
+		add_absolutism = -3
+	}
+	
+	# Give them money
+	option = {
+		name = "babylon.5.c"
+		ai_chance = { 
+		factor = 20
+				modifier = {
+					factor = 2
+					years_of_income = 0.5
+					}
+				modifier = {
+					factor = 2
+					years_of_income = 1.0
+					}
+		}
+		
+		add_years_of_income = -0.4
+	}
+	
+	# Give them nothing
+	option = {
+		name = "babylon.5.e"
+		ai_chance = { 
+		factor = 20
+				modifier = {
+					factor = 2
+					NOT = { years_of_income = 0.4 }
+					}
+				modifier = {
+					factor = 2
+					average_autonomy_above_min = 30
+					}
+		}
+		
+		add_country_modifier = {
+			name = marduk_priest_are_angered
+			duration = 1825
+		}
+		add_patriarch_authority = -0.05
+		add_stability = -1
+	}
+}
+########################################################################################
+# people support Marduk priests
+########################################################################################
+country_event = {
+	id = babylon.6
+	title = "babylon.6.t"
+	desc = "babylon.6.d"
+	picture = religious
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = BAB
+		religion = mesopotamian_religion
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+		modifier = {
+			factor = 2.0
+			NOT = { patriarch_authority = 0.2 }
+		}
+	}
+	
+	#
+	option = {
+		name = "babylon.6.a"
+		
+		add_patriarch_authority = 0.025
+	}
+	
+}
+########################################################################################
+# Marduk priests loose power
+########################################################################################
+country_event = {
+	id = babylon.7
+	title = "babylon.7.t"
+	desc = "babylon.7.d"
+	picture = religious
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = BAB
+		religion = mesopotamian_religion
+	}
+	
+	mean_time_to_happen = {
+		days = 1	
+		modifier = {
+			factor = 2.0
+			patriarch_authority = 0.3
+		}
+	}
+	
+	# not our problem
+	option = {
+		name = "babylon.7.a"
+		add_patriarch_authority = -0.05
+	}
+	# it affects us all
+	option = {
+		name = "babylon.7.a"
+		add_stability = -1
+	}
+	
+}
+########################################################################################
+# rise of Assyrian Pretenders
+########################################################################################
+country_event = {
+	id = babylon.8
+	title = "babylon.8.t"
+	desc = "babylon.8.d"
+	picture = generals
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BAB
+		is_at_war = no
+		NOT = { exists = ASY }
+		NOT = { has_country_flag = assyrian_pretenders }
+		NOT = {  started_in = 185.1.1  }
+		num_of_owned_provinces_with = {
+			value = 8
+			OR = { 
+				area = assyria_area
+				culture = assyrian
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+	}
+	
+	# ok
+	option = {
+		name = "babylon.8.a"
+			set_country_flag = assyrian_pretenders
+			random_owned_province = {
+				limit = {
+					OR = {
+						area = assyria_area
+						culture = assyrian
+					}
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 4
+				}
+			}
+			add_stability =  -1
 	}
 }

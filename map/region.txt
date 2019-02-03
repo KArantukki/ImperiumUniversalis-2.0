@@ -992,3 +992,15 @@ mare_persicus_region = {
 	}
 }
 
+wasteland_atlantic_region = {
+	areas = {
+		northern_atlantic_ocean
+		southern_atlantic_ocean
+	}
+}
+
+indian_ocean_region = {
+	areas = {
+		indian_ocean
+	}
+}

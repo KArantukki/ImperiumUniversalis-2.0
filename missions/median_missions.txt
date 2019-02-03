@@ -637,7 +637,7 @@ mdi_missions_3 = {
 		completed_by = 200.1.1
 		required_missions = {  }
 		provinces_to_highlight = {
-			province_id = 2682
+			province_id = 2688
 		}
 		trigger = {
 				2688 = {
@@ -656,10 +656,10 @@ mdi_missions_3 = {
 				}
 		}
 		effect = {
-				add_prestige = 20
+				add_adm_power = 60
 				2688 = {
 					add_base_tax = 1
-					add_Base_production = 2
+					add_Base_production = 1
 				}
 		}
 	}
@@ -690,7 +690,7 @@ mdi_missions_3 = {
 				add_prestige = 10
 				2481 = {
 					add_base_tax = 1
-					add_Base_production = 2
+					add_Base_production = 1
 				}
 		}
 	}
@@ -963,15 +963,12 @@ mdi_missions_4 = {
 				add_prestige = 10
 				2694 = {
 					center_of_trade = 1
-					add_base_tax = 1
-					add_base_production = 1
 					change_culture = medians
-					change_religion = mitraism
+					change_religion = ROOT
 				}
 				2695 = {
-					add_base_production = 1
 					change_culture = medians
-					change_religion = mitraism
+					change_religion = ROOT
 				}
 		}
 	}
@@ -1107,9 +1104,10 @@ mdi_missions_5 = {
 			owned_by = ROOT
 		}
 		trigger = {
-					num_of_cavalry = 4
-					num_of_infantry = 4
-					num_of_artillery = 4
+					num_of_cavalry = 6
+					num_of_infantry = 6
+					num_of_artillery = 6
+					army_tradition = 20
 		}
 		effect = {
 				add_mil_power = 50
@@ -1132,7 +1130,7 @@ mdi_missions_5 = {
 			owned_by = ROOT
 		}
 		trigger = {
-					 army_size = 15
+					 army_size = 24
 					 army_size_percentage = 0.8
 		}
 		effect = {
@@ -1158,7 +1156,7 @@ mdi_missions_5 = {
 		trigger = {
 					mil_tech = 8
 					full_idea_group = cavalry_ideas
-					num_of_cavalry = 8					
+					num_of_cavalry = 12
 		}
 		effect = {
 				add_mil_power = 50

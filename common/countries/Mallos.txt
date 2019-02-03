@@ -3,7 +3,7 @@
 graphical_culture = hellenicgfx
 special_unit_culture = hellenic_alt1
 
-color = { 87 111 142 }
+color = { 117 141 172 }
 
 historical_idea_groups = {
 	infantry_ideas

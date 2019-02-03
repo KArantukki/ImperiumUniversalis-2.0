@@ -1901,3 +1901,14 @@ mare_india_west = {
 mare_india_east = {
 	1528 1529 1530 1531 1532 1533 1534 1535 1536 1537 1538 1545 1546 1547 1548 1549 1550
 }
+# Wasteland
+
+northern_atlantic_ocean = {
+	1635 1634 1633  
+}
+southern_atlantic_ocean = {
+	1632 1631 1651
+}
+indian_ocean = {
+	1636 1637 1638 1653
+}

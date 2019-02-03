@@ -15,3 +15,7 @@
 - Mount Geraneia modifier now gives -33% movementspeed and not +33%
 - Cilicia is now divides into two countries
 - new ideas for Cilicia
+- strong human neighbor buff for ai removed
+- fixed crash when having the disaster "lack of control"
+- new events and decisions for Babylon
+- proud military leaders policy values fixed
