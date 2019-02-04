@@ -22,7 +22,7 @@ capital = 735
 	monarch = {
 		name = "Psamtik I"
 		dynasty = "of Sais"
-        death_date = 146.1.1
+        death_date = 144.1.1
 		dip = 3
 		adm = 3
 		mil = 5
@@ -31,7 +31,7 @@ capital = 735
         name = "Mehytenweskhet"
         dynasty = "Harsiesid"
 		birth_date = 110.1.1
-        death_date = 146.1.1
+        death_date = 144.1.1
         female = yes
         adm = 3
         dip = 2
@@ -51,7 +51,7 @@ capital = 735
 		mil = 3
 	}
 }
-146.1.1 = {
+144.1.1 = {
 		monarch = {
 			name = "Necho II"
 			dynasty = "of Sais"
@@ -73,17 +73,17 @@ capital = 735
 		}
 }	
 
-158.1.1 = {
+159.1.1 = {
 		monarch = {
 		name = "Neferibre Psamtik II"
 		dynasty = "of Sais"
-        death_date = 154.1.1
+        death_date = 160.1.1
 		dip = 3
 		adm = 3
 		mil = 4
 	}
 }
-160.1.1 = {
+161.1.1 = {
 		heir = {
 			name = "Haaibre Wahibre"
 			monarch_name = "Haaibre Wahibre (Apries)"
@@ -96,7 +96,7 @@ capital = 735
 			mil = 1
 		}
 }
-164.1.1 = {
+165.1.1 = {
 	monarch = {
 		name = "Haaibre Wahibre (Apries)"
 		dynasty = "of Sais"
