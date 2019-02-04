@@ -181,7 +181,7 @@ country_decisions = {
 			OR = {
 				area = temisdia_area
 				area = rudiane_area
-				area = paraetacene_area
+				area = paraepaphitis_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -190,7 +190,7 @@ country_decisions = {
 			is_subject = no
 			temisdia_area = { type = all owned_by = ROOT }
 			rudiane_area = { type = all owned_by = ROOT }
-			paraetacene_area = { type = all owned_by = ROOT }
+			paraepaphitis_area = { type = all owned_by = ROOT }
 		}
 		effect = {
 			change_tag = PSE
@@ -211,6 +211,7 @@ country_decisions = {
 		potential = {
 			TAG = PSE
 			has_country_flag = median_ambition_flag
+			government = tribal
 		}
 		provinces_to_highlight = {
 			province_id = 2688
@@ -223,8 +224,8 @@ country_decisions = {
 		}
 		effect = {
 			add_absolutism = 5
-			add_adm_power = 50
-			change_government_via_reform = monarchy
+			add_stability = -1
+			change_government = monarchy
 			add_government_reform = aristocratic_monarchy_reform
 			}
 		ai_importance = 5000	

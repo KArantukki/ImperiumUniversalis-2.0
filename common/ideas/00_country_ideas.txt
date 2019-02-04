@@ -1276,12 +1276,12 @@ PER_ideas = {
 
 PSE_ideas = {
 	start = {
-		state_maintenance_modifier = -0.2
+		cavalry_cost = -0.1 
 		num_accepted_cultures = 2
 	}
 	
 	bonus = {
-		vassal_income = 0.5
+		tolerance_heathen = 2
 	}
 	
 	trigger = {
@@ -1294,11 +1294,14 @@ PSE_ideas = {
 	}
 	free = yes
 		
-	persian_satrapies = {
-		administrative_efficiency = 0.2
-	}	
 	armoured_horsemen = {
 		cavalry_power = 0.1
+	}
+	persian_satrapies = {
+		administrative_efficiency = 0.15
+	}	
+	the_immortals = {
+		reserves_organisation = 0.15
 	}
 	cultural_phase = {
 		promote_culture_cost = -0.5
@@ -1309,11 +1312,8 @@ PSE_ideas = {
 	pse_royal_road = {
 		envoy_travel_time = -0.25
 	}
-	the_immortals = {
-		reserves_organisation = 0.15
-	}
 	culture_of_truth = {	
-		diplomatic_reputation = 2
+		yearly_corruption = -0.05
 	}
 }
 
