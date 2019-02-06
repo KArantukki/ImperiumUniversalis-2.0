@@ -24,7 +24,7 @@ war_goal = {
 	add_defender = GZ2
 	add_defender = GZ3
 }
-199.1.1 = {	
+146.1.1 = {	
 	rem_attacker = BAB
 	rem_attacker = MDI
 	rem_attacker = SX2
