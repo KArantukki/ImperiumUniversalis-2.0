@@ -5,3 +5,22 @@ alliance = {
 	start_date = 145.1.1
 	end_date = 200.1.1
 }
+dependency = {
+	subject_type = "tributary_state"
+	first = PSE
+	second = ARM
+	start_date = 205.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PSE
+	second = SAG
+	start_date = 205.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PSE
+	second = PRT
+	start_date = 205.1.1
+}
