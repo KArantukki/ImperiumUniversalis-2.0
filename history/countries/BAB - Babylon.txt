@@ -43,6 +43,33 @@ historical_friend = MDI
 		mil = 2
 	}
 }
+149.1.1 = {	
+	monarch = {
+		name = "Nebuchadnezzar II"
+		dynasty = "of Chaldea"
+		birth_date = 120.1.1
+		death_date = 192.1.1
+		culture = chaldean
+		religion = mesopotamian_religion
+		dip = 2
+		adm = 4
+		mil = 2
+	}
+}
+
+192.1.1 = {
+	monarch = {
+		name = "Amel-Marduk"
+		dynasty = "of Chaldea"
+		birth_date = 150.1.1
+		death_date = 194.1.1
+		culture = chaldean
+		religion = mesopotamian_religion
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
 194.1.1 = {
 	clear_scripted_personalities = yes
 	add_ruler_personality = calm_personality

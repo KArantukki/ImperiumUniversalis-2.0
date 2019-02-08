@@ -6,20 +6,97 @@ technology_group = caucaso_anatolian
 primary_culture = armenian
 religion = armenian_religion
 #religious_school = semitic_type
-capital = 2413
+capital = 2391
 add_army_professionalism = 0.05
-
-193.1.1 = {
+165.1.1 = {
 	monarch = {
-		name = "Tigranes"
+		name = "Orontes I Sakavakyats"
 		dynasty = "Orontid"
-		death_date = 204.1.1
+		death_date = 193.1.1
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+	heir = {
+		name = "Tigranes"
+		monarch_name = "Tigranes I"
+		dynasty = "Orontid"
+		birth_date = 140.1.1
+		death_date = 219.1.1
 		dip = 3
 		adm = 3
 		mil = 4
 	}
 }
-417.1.1 = {
+193.1.1 = {
+	monarch = {
+		name = "Tigranes I"
+		dynasty = "Orontid"
+		birth_date = 140.1.1
+		death_date = 219.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+219.1.1 = {
+	monarch = {
+		name = "Hidarnes I"
+		dynasty = "Orontid"
+		birth_date = 180.1.1
+		death_date = 243.1.1
+		dip = 3
+		adm = 4
+		mil = 2
+	}
+}
+243.1.1 = {
+	monarch = {
+		name = "Hidarnes II"
+		dynasty = "Orontid"
+		birth_date = 230.1.1
+		death_date = 293.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+293.1.1 = {
+	capital = 2413
+	monarch = {
+		name = "Hidarnes III"
+		dynasty = "Orontid"
+		birth_date = 270.1.1
+		death_date = 323.1.1
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+}
+323.1.1  = {
+	monarch = {
+		name = "Ardashir"
+		dynasty = "Orontid"
+		birth_date = 303.1.1
+		death_date = 353.1.1
+		dip = 3
+		adm = 2
+		mil = 2
+	}
+}
+353.1.1 = {
+ monarch = {
+		name = "Orontes I"
+		dynasty = "Orontid"
+		birth_date = 330.1.1
+		death_date = 410.1.1
+		dip = 4
+		adm = 4
+		mil = 5
+	}
+ }
+410.1.1 = {
 	government = monarchy
 	add_government_reform = despotism_reform
 	add_army_professionalism = 0.2
@@ -94,7 +171,6 @@ add_army_professionalism = 0.05
 		mil = 3
 	}
 }
-587.1.1 = { capital = 1848 }
 594.1.1 = {
 	add_army_professionalism = 0.2
 	monarch = {
@@ -115,6 +191,7 @@ add_army_professionalism = 0.05
 	}
 }
 658.1.1 = {
+	capital = 2384
 	monarch = {
 		name = "Tigranes the Great"
 		dynasty = "Artaxiad"
