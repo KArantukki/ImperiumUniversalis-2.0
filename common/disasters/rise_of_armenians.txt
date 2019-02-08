@@ -12,26 +12,27 @@ rise_of_armenians = {
 	
 	can_start = {
 		OR = {
-			at_war_with = MDI
-			URT = {
-				OR = {
-						ADM = 1
-						DIP = 1
-						MIL = 1
-					}
-			}
-		}			
+			war_exhaustion = 2
+			NOT = { stability = 1 }
+			NOT = { legitimacy = 90 }
+		}
+		is_at_war = yes
+		
 	}
 	
 	
 	can_stop = {
-			legitimacy = 99
-			at_peace = yes
 			OR = {
+				AND = { 
+					legitimacy = 90
+					stability = 1
+					NOT = { war_exhaustion = 1 }
+					is_at_war = no
+				}
 				primary_culture = armenian
-				any_owned_province = {
-					NOT = {
-						culture = armenian
+				NOT = {
+					any_owned_province = {
+							culture = armenian
 					}
 				}
 			}
@@ -41,48 +42,52 @@ rise_of_armenians = {
 	
 	progress = {
 		modifier = {
-			factor = 0.5
+			factor = 1
+			NOT = { legitimacy = 95 }
+		}
+		modifier = {
+			factor = 2
 			NOT = { legitimacy = 85 }
 		}
 		modifier = {
-			factor = 1
+			factor = 3
 			NOT = { legitimacy = 75 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 4
 			NOT = { legitimacy = 65 }
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			NOT = { legitimacy = 55 }
 		}
 		modifier = {
-			factor = 0.25
+			factor = 5
 			NOT = { stability = 1 }
 			}
 		modifier = {
-			factor = 0.5
+			factor = 5
 			NOT = { stability = 0 }
 			}
 		modifier = {
-			factor = 2
+			factor = 5
 			NOT = { stability = -1 }
 			}
 		modifier = {
-			factor = 2.5
+			factor = 5
 			NOT = { stability = -2 }
 			}
-		#modifier = {
-		#	factor = 1
-		#	war_exaustion = 2
-		#}
 		modifier = {
-			factor = 20
-			defensive_war_with = MDI
+			factor = 5
+			war_exhaustion = 2
 		}
 		modifier = {
-			factor = 20
-			defensive_war_with = PSE
+			factor = 10
+			war_score = -1 
+		}
+		modifier = {
+			factor = 10
+			war_score = -25
 		}
 	}
 	
@@ -92,18 +97,14 @@ rise_of_armenians = {
 		OR = {
 			tag = ARM
 			primary_culture = armenian
-			URT = {
-				OR = {
-					ADM = 5
-					MIL = 4
-					DIP = 4
-				}
+			AND = { 
+				legitimacy = 90
+				stability = 1
+				NOT = { war_exhaustion = 1 }
+				is_at_war = no
 			}
 		}
-		AND = {
-			
-			legitimacy = 95
-		}
+		
 	}
 
 	

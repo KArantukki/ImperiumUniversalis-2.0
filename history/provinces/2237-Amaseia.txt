@@ -21,3 +21,14 @@ discovered_by = SX2
 #discovered_by = balkan
 #discovered_by = punic
 #discovered_by = central_asian
+
+165.1.1 = {
+	add_core = MDI
+	owner = MDI
+	controller = MDI
+}
+205.1.1 = {
+	add_core = PSE
+	owner = PSE
+	controller = PSE
+}

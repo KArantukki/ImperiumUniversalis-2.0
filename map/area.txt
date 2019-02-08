@@ -1,4 +1,4 @@
-test_area = { }
+test_area = {  }
 
 # Magna Graeicia
 sicilia_west = {

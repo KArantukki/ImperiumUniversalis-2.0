@@ -2240,6 +2240,7 @@ jewish_group = {
 	center_of_religion = 2277
 	harmonized_modifier = harmonized_jewish_group
 	jewish = {
+		hre_religion = yes
 		icon = 9
 		color = { 69 117 198 }
 		country = {

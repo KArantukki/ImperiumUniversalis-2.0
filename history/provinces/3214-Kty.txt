@@ -35,3 +35,19 @@ discovered_by = caucaso_anatolian
 #discovered_by = britannic
 #discovered_by = korean
 #discovered_by = african
+
+187.1.1 = {
+	add_core = EGY
+	owner = EGY
+	controller = EGY
+}
+229.1.1 = {
+	add_core = ZY2
+	owner = ZY2
+	controller = ZY2
+}
+244.1.1 = {
+	add_core = PSE
+	owner = PSE
+	controller = PSE
+}

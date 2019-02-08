@@ -2,6 +2,8 @@
 REB = "countries/Rebels.txt"
 PIR = "countries/Pirates.txt"
 NAT = "countries/Natives.txt"
+JMN = "countries/Jan Mayen.txt"
+SYN = "countries/Synthetics.txt"
 
 #china
 ICH	= "countries/China.txt"

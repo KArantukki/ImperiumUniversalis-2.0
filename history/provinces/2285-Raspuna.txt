@@ -33,3 +33,23 @@ discovered_by = caucaso_anatolian
 #discovered_by = britannic
 #discovered_by = korean
 #discovered_by = african
+
+146.1.1 = {
+	owner = PHI
+	controller = PHI
+}
+160.1.1 = {
+	add_core = EGY
+	owner = EGY
+	controller = EGY
+}
+180.1.1 = {
+	add_core = BAB
+	owner = BAB
+	controller = BAB
+}
+215.1.1 = {
+	add_core = PSE
+	owner = PSE
+	controller = PSE
+}

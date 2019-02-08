@@ -302,7 +302,7 @@ reform_to_republic = {
 	allow_normal_conversion = yes
 	effect = {
 		add_government_reform = citizens_republic_reform
-		change_government_via_reform = republic
+		change_government = republic
 		if = {
 			limit = {
 				OR = {  has_reform = iberian_society_reform 
@@ -325,7 +325,7 @@ reform_to_league = {
 	allow_normal_conversion = yes
 	effect = {
 		add_government_reform = league_reform
-		change_government_via_reform = republic
+		change_government = republic
 		lose_reforms = 4
 	}
 }
@@ -341,7 +341,7 @@ reform_to_monarchy = {
 	allow_normal_conversion = yes
 	effect = {
 		add_government_reform = aristocratic_monarchy_reform
-		change_government_via_reform = monarchy
+		change_government = monarchy
 		if = {
 			limit = {
 					has_reform = iberian_society_reform 

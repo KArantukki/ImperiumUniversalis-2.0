@@ -596,10 +596,10 @@ country_event = {
 				add_yearly_manpower = 1.25
 				define_general = {
 						name = "Harpagus" 
-						fire = 3
+						fire = 4
 						shock = 6
 						manuever = 2
-						siege = 1
+						siege = 3
 				}
 		}
 	option = {
@@ -607,10 +607,10 @@ country_event = {
 				add_yearly_manpower = 1.25
 				define_general = {
 						name = "Harpagus" 
-						fire = 3
+						fire = 4
 						shock = 6
 						manuever = 2
-						siege = 1
+						siege = 3
 				}
 		}
 }

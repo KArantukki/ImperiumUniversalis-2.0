@@ -19,3 +19,4 @@
 - fixed crash when having the disaster "lack of control"
 - new events and decisions for Babylon
 - proud military leaders policy values fixed
+- added decision to reform greek polis into other governments

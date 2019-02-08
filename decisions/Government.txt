@@ -249,5 +249,59 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	
+	polis_to_republic  = {
+		major = yes
+		potential = {
+			has_reform = greek_polis_reform
+			OR = {
+				has_country_modifier = polis_democracy_modifier
+				has_country_modifier = polis_oligarchy_modifier
+			}
+			has_dlc = "Dharma"
+		}
+		allow = {
+			is_at_war = no
+			has_any_disaster = no
+			adm_tech = 6
+			total_development = 32
+		}
+		effect = {
+			add_stability = -1
+			add_government_reform = citizens_republic_reform
+			set_government_rank = 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	polis_to_monarchy  = {
+		major = yes
+		potential = {
+			has_reform = greek_polis_reform
+			OR = {
+				has_country_modifier = polis_tyrannis_modifier
+				has_country_modifier = polis_oligarchy_modifier
+			}
+			has_dlc = "Dharma"
+		}
+		allow = {
+			is_at_war = no
+			has_any_disaster = no
+			adm_tech = 6
+			total_development = 32
+		}
+		effect = {
+			add_stability = -1
+			change_government = monarchy
+			add_government_reform = aristocratic_monarchy_reform
+			set_government_rank = 2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
 
