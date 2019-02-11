@@ -6357,7 +6357,7 @@ guiTypes = {
 			shortcut = "z"			
 			extra_shortcut = "ESCAPE"
 		}
-		
+	}	
 	windowType = {
 		name = "EnemyShieldWindow"
 		backGround=""

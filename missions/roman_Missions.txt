@@ -746,7 +746,10 @@ roman_missions_2 = {
 			army_size = 12
 		}
 		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
 			set_government_rank = 2
+			}
 			add_country_modifier = {
 				name = "roman_expansion_modifier"
 				duration = 9125 #25 years

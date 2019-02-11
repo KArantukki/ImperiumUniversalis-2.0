@@ -2,8 +2,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1323;1496;sea;927;1;1;1;1;CapeOfAfrica
 
 730;734;sea;1650;1;1;1;1;Nile
-229;734;sea;1650;1;1;1;1;Nile
-229;735;sea;1650;1;1;1;1;Nile
+729;734;sea;1650;1;1;1;1;Nile
+729;735;sea;1650;1;1;1;1;Nile
 731;735;sea;1650;1;1;1;1;Nile
 740;735;sea;1650;1;1;1;1;Nile
 739;735;sea;1650;1;1;1;1;Nile
@@ -417,4 +417,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 822;849;sea;850;-1;-1;-1;-1;Oasis
 722;715;sea;797;-1;-1;-1;-1;Oasis
 789;796;sea;800;-1;-1;-1;-1;Oasis
+
+1604;1472;canal;742;-1;-1;-1;-1;nile_canal
 -1;-1;;-1;-1;-1;-1;-1;-1;

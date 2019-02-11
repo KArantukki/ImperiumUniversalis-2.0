@@ -20,3 +20,16 @@
 - new events and decisions for Babylon
 - proud military leaders policy values fixed
 - added decision to reform greek polis into other governments
+
+2.0.3
+- strange HRE crash fixed
+- Kythera is now in a tradenode
+- Nile Canal bug fixed
+- Garrison Bug is fixed
+
+2.0.4
+- Roman Mission "More than just a city" doesnt demote you anymore if you are higher than rank 2
+- Fixed Athenian Mission "Fall of Megara"
+- Form Creta decision fixed
+- Egypt no longer got a Wormhole connection to spain
+- Scornful Insult no longer leads to crash

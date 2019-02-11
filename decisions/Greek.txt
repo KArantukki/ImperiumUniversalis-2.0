@@ -118,9 +118,9 @@ country_decisions = {
 				primary_culture = doric
 			}
 			NOT = { exists = KRT }
-			NOT = { TAG HEL }
-			NOT = { TAG CYC }
-			NOT = { TAG RHO }
+			NOT = { TAG = HEL }
+			NOT = { TAG = CYC }
+			NOT = { TAG = RHO }
 			OR = {
 			capital_scope = { area = knossos_area	}
 			capital_scope = { area = gortyn_area	}

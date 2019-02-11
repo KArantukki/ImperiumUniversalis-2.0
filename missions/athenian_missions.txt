@@ -20,9 +20,11 @@ ath_missions_expansion_1 = {
 		}
 		trigger = {
 			955 = {
-				owned_by = ROOT
-				owner = {
-					is_subject_of = ROOT 
+				OR = {
+					owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT 
+					}
 				}
 			}
 		}
