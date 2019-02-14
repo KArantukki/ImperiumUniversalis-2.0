@@ -47,7 +47,7 @@ military_missions = {
 		trigger = {
 			has_global_modifier_value = {
 				which = discipline
-				value = 1.1
+				value = 0.1
 			}
 			num_of_generals_with_traits = 1 
 		}

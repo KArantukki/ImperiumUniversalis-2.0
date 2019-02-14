@@ -28,6 +28,7 @@ western_africa_superregion = {
 	africa_region
 	lybia_region
 	mauretania_region
+	aethiopia_interior_region
 }
 
 

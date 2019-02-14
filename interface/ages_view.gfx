@@ -1,0 +1,300 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_age_base"
+		texturefile = "gfx/interface/ages/age_base.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_golden_age_banner"
+		texturefile = "gfx/interface/ages/golden_age_banner.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_golden_age_banner_tattered"
+		texturefile = "gfx/interface/ages/golden_age_banner_tattered.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_age_golden_age_button"
+		texturefile = "gfx/interface/ages/age_golden_age_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_1"
+		texturefile = "gfx/interface/ages/age_indicator_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_2"
+		texturefile = "gfx/interface/ages/age_indicator_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_3"
+		texturefile = "gfx/interface/ages/age_indicator_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_indicator_4"
+		texturefile = "gfx/interface/ages/age_indicator_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_of_empires"
+		texturefile = "gfx/interface/ages/age_of_empires.dds"
+	}
+
+	spriteType = {
+		name = "GFX_archaic_age"
+		texturefile = "gfx/interface/ages/archaic_age.dds"
+	}
+
+	spriteType = {
+		name = "GFX_classical_age"
+		texturefile = "gfx/interface/ages/classical_age.dds"
+	}
+
+	spriteType = {
+		name = "GFX_hellenistic_age"
+		texturefile = "gfx/interface/ages/hellenistic_age.dds"
+	}
+
+	spriteType = {
+		name = "GFX_late_hellenistic_age"
+		texturefile = "gfx/interface/ages/late_hellenistic_age.dds"
+	}
+
+	spriteType = {
+		name = "GFX_imperial_age"
+		texturefile = "gfx/interface/ages/imperial_age.dds"
+	}
+
+	spriteType = {
+		name = "GFX_early_migration_period"
+		texturefile = "gfx/interface/ages/early_migration_period.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_age_can_unlock"
+		texturefile = "gfx/interface/ages/age_can_unlock.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_age_cannot_unlock"
+		texturefile = "gfx/interface/ages/age_cannot_unlock.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_alert_bg"
+		texturefile = "gfx/interface/ages/age_alert_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_age_banner_overlay"
+		texturefile = "gfx/interface/ages/age_banner_overlay.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_age_button"
+		texturefile = "gfx/interface/ages/age_button.dds"
+		transparencecheck = yes
+	}	
+
+	spriteType = {
+		name = "GFX_brown_bg"
+		texturefile = "gfx/interface/ages/brown_bg.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_age_frame_addon"
+		texturefile = "gfx/interface/ages/age_frame_addon.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_age_s"
+		texturefile = "gfx/interface/ages/icon_age_s.dds"
+		noOfFrames = 7
+	}	
+
+	spriteType = {
+		name = "GFX_icon_age_l"
+		texturefile = "gfx/interface/ages/icon_age_l.dds"
+		noOfFrames = 7
+	}		
+	
+	spriteType = {
+		name = "GFX_icon_age_of_empires_g"
+		texturefile = "gfx/interface/ages/icon_age_of_empires_g.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_classical_age_g"
+		texturefile = "gfx/interface/ages/icon_classical_age_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_archaic_age_g"
+		texturefile = "gfx/interface/ages/icon_archaic_age_g.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_hellenistic_age_g"
+		texturefile = "gfx/interface/ages/icon_hellenistic_age_g.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_late_hellenistic_age_g"
+		texturefile = "gfx/interface/ages/icon_late_hellenistic_age_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_imperial_age_g"
+		texturefile = "gfx/interface/ages/icon_imperial_age_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_early_migration_period_g"
+		texturefile = "gfx/interface/ages/icon_early_migration_period_g.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_splendor_tiny"
+		texturefile = "gfx/interface/ages/icon_splendor_tiny.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_absolutism"
+		texturefile = "gfx/interface/icon_absolutism.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_icon_max_absolutism"
+		texturefile = "gfx/interface/icon_max_absolutism.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_icon_religious"
+		texturefile = "gfx/interface/icon_religious.dds"
+	}	
+	
+	
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_topbar_liberty_overlay_golden"
+		texturefile = "gfx/interface/ages/topbar_liberty_overlay_golden.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_age_frame_addon_golden"
+		texturefile = "gfx/interface/ages/age_frame_addon_golden.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_age_button_golden"
+		texturefile = "gfx/interface/ages/age_button_golden.dds"
+		transparencecheck = yes
+	}		
+	
+	spriteType = {
+		name = "GFX_topbar_bg_golden"
+		texturefile = "gfx/interface/ages/topbar_UL_golden.dds"
+		transparencecheck = yes
+	}	
+	
+	spriteType = {
+		name = "GFX_topbar_portrait_value_bg_golden"
+		texturefile = "gfx/interface/ages/topbar_portrait_value_bg_golden.dds"
+	}	
+	
+	
+	##############################
+	spriteType = {
+		name = "GFX_obj_olympic_winner"
+		texturefile = "gfx/interface/ages/obj_olympic_winner.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_great_power"
+		texturefile = "gfx/interface/ages/obj_great_power.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_legendary_ruler"
+		texturefile = "gfx/interface/ages/obj_legendary_ruler.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_exploration_of_the_world_west"
+		texturefile = "gfx/interface/ages/obj_exploration_of_the_world.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_exploration_of_the_world_east"
+		texturefile = "gfx/interface/ages/obj_exploration_of_the_world.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_extensive_country"
+		texturefile = "gfx/interface/ages/obj_extensive_country.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_unified_culture_group"
+		texturefile = "gfx/interface/ages/obj_unified_culture_group.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_advanced_horsebreeding"
+		texturefile = "gfx/interface/ages/obj_advanced_horsebreeding.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_coinage"
+		texturefile = "gfx/interface/ages/obj_coinage.dds"
+	}
+	##############################
+	spriteType = {
+		name = "GFX_ab_chariotry"
+		texturefile = "gfx/interface/ages/ab_chariotry.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_restless_conquerors"
+		texturefile = "gfx/interface/ages/ab_restless_conquerors.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_new_trade_routes"
+		texturefile = "gfx/interface/ages/ab_new_trade_routes.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_new_alliances"
+		texturefile = "gfx/interface/ages/ab_new_alliances.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_babylonian_empire"
+		texturefile = "gfx/interface/ages/ab_babylonian_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_ocean_goining_ships"
+		texturefile = "gfx/interface/ages/ab_ocean_goining_ships.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_median_horsemenship"
+		texturefile = "gfx/interface/ages/ab_median_horsemenship.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_lydian_coinage"
+		texturefile = "gfx/interface/ages/ab_lydian_coinage.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_unquestioned_overlordship"
+		texturefile = "gfx/interface/ages/ab_unquestioned_overlordship.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_stabilize_the_country"
+		texturefile = "gfx/interface/ages/ab_stabilize_the_country.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_scythian_fury"
+		texturefile = "gfx/interface/ages/ab_scythian_fury.dds"
+	}
+}
+	
+
+

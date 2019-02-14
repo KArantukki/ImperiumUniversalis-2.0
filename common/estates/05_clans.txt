@@ -19,11 +19,11 @@ estate_clans = {
 	
 	# If true, province can be granted to estate
 	province_trigger = {
-		
+		always = no
 	}
 	
 	# Min autonomy in estate provinces
-	start_territory_weight = 1
+	start_territory_weight = 0
 	min_autonomy = 25
 	autonomy_does_not_affect = land_forcelimit_modifier
 	autonomy_does_not_affect = local_sailors_modifier

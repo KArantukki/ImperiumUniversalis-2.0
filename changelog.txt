@@ -33,3 +33,7 @@
 - Form Creta decision fixed
 - Egypt no longer got a Wormhole connection to spain
 - Scornful Insult no longer leads to crash
+
+
+
+- 110% discipline is set to 10% in the generic missions

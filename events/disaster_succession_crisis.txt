@@ -107,7 +107,7 @@ country_event = {
 	}
 
 	immediate = {
-		
+		hidden_effect = { disband_rebels = pretender_rebels  }
 	}
 	
 	option = {
