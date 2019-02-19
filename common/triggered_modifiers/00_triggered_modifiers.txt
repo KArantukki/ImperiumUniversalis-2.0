@@ -101,8 +101,8 @@ controll_the_hellespont = {
 			is_subject = no	
 			owns_or_vassal_of = 1081
 			owns_or_vassal_of = 1082
-			owns_or_vassal_of = 2217
-			owns_or_vassal_of = 2218
+			owns_or_vassal_of = 2117
+			owns_or_vassal_of = 2118
 	}
 
 	trade_efficiency = 0.05	
@@ -112,7 +112,7 @@ controll_the_hellespont = {
 # Propontis
 ###########################################
 
-controll_the_hellespont = {
+controll_the_propontis = {
 	potential = {
 		OR = {
 			has_discovered = 1086
@@ -126,7 +126,7 @@ controll_the_hellespont = {
 			owns_or_vassal_of = 2151
 	}
 
-	trade_efficiency = 0.05	
+	trade_efficiency = 0.025	
 	global_tax_income = 4
 }
 ###########################################

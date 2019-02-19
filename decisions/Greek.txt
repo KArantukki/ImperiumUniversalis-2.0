@@ -53,6 +53,13 @@ country_decisions = {
 					limit = { government = republic	}
 					add_government_reform = league_reform
 				}
+				
+				if = {
+					limit = { NOT = { government = republic }	}
+					change_government = republic
+					add_government_reform = league_reform
+				}
+				
 				if = {
 					limit = { NOT = { government_rank = 4 } }
 					set_government_rank = 4

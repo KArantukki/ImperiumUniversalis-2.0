@@ -6,7 +6,7 @@ agriculture_lvl1 = {
 	penalty = 0.01
 	bonus = {
 		production_efficiency = 0.05
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.05
 	}
 	trade_company_efficiency = 0.0
 
@@ -418,7 +418,7 @@ agriculture_lvl3 = {
 agriculture_lvl4 = {
 	penalty = 0.01
 	bonus = {
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.05
 		production_efficiency = 0.05
 	}
 	trade_company_efficiency = 0.0
@@ -636,7 +636,7 @@ agriculture_lvl5 = {
 agriculture_lvl6 = {
 	penalty = 0.01
 	bonus = {
-		global_manpower_modifier = 0.1 
+		global_manpower_modifier = 0.05
 		production_efficiency = 0.05
 	}
 	trade_company_efficiency = 0.0

@@ -249,6 +249,98 @@ spriteTypes = {
 		name = "GFX_obj_coinage"
 		texturefile = "gfx/interface/ages/obj_coinage.dds"
 	}
+	spriteType = {
+		name = "GFX_obj_glorious_nation"
+		texturefile = "gfx/interface/ages/obj_glorious_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_embraced_workshops"
+		texturefile = "gfx/interface/ages/obj_embraced_workshops.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_zoroastrian_faith"
+		texturefile = "gfx/interface/ages/obj_zoroastrian_faith.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_total_control"
+		texturefile = "gfx/interface/ages/obj_total_control.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_growing_importance_of_trade"
+		texturefile = "gfx/interface/ages/obj_growing_importance_of_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_new_technologies"
+		texturefile = "gfx/interface/ages/obj_new_technologies.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_consolidation_of_customs"
+		texturefile = "gfx/interface/ages/obj_consolidation_of_customs.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_capable_army"
+		texturefile = "gfx/interface/ages/obj_capable_army.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_capable_fleet"
+		texturefile = "gfx/interface/ages/obj_capable_fleet.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_patron_of_the_philosophers"
+		texturefile = "gfx/interface/ages/obj_patron_of_the_philosophers.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_exemplary_government"
+		texturefile = "gfx/interface/ages/obj_exemplary_government.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_growing_maritime_trade"
+		texturefile = "gfx/interface/ages/obj_growing_maritime_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_important_trade_center"
+		texturefile = "gfx/interface/ages/obj_important_trade_center.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_high_morale"
+		texturefile = "gfx/interface/ages/obj_high_morale.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_large_treasure_chest"
+		texturefile = "gfx/interface/ages/obj_large_treasure_chest.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_establishing_a_monopoly"
+		texturefile = "gfx/interface/ages/obj_establishing_a_monopoly.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_subjects"
+		texturefile = "gfx/interface/ages/obj_subjects.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_wonders"
+		texturefile = "gfx/interface/ages/obj_wonders.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_experienced_army"
+		texturefile = "gfx/interface/ages/obj_experienced_army.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_large_empire"
+		texturefile = "gfx/interface/ages/obj_large_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_cultural_meltingpot"
+		texturefile = "gfx/interface/ages/obj_cultural_meltingpot.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_humiliate_rival"
+		texturefile = "gfx/interface/ages/obj_humiliate_rival.dds"
+	}
+	spriteType = {
+		name = "GFX_obj_great_capital"
+		texturefile = "gfx/interface/ages/obj_great_capital.dds"
+	}
 	##############################
 	spriteType = {
 		name = "GFX_ab_chariotry"
@@ -293,6 +385,130 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ab_scythian_fury"
 		texturefile = "gfx/interface/ages/ab_scythian_fury.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_promoting_reforms"
+		texturefile = "gfx/interface/ages/ab_promoting_reforms.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_new_army_structures"
+		texturefile = "gfx/interface/ages/ab_new_army_structures.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age_of_philosophers"
+		texturefile = "gfx/interface/ages/ab_age_of_philosophers.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_proud_military"
+		texturefile = "gfx/interface/ages/ab_proud_military.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_new_construction_techniques"
+		texturefile = "gfx/interface/ages/ab_new_construction_techniques.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_persian_tolerance"
+		texturefile = "gfx/interface/ages/ab_persian_tolerance.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_spartan_traditions"
+		texturefile = "gfx/interface/ages/ab_spartan_traditions.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_rise_of_buddhism"
+		texturefile = "gfx/interface/ages/ab_rise_of_buddhism.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_the_delian_league"
+		texturefile = "gfx/interface/ages/ab_the_delian_league.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_additional_taxes"
+		texturefile = "gfx/interface/ages/ab_additional_taxes.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_corinthian_triremes"
+		texturefile = "gfx/interface/ages/ab_corinthian_triremes.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_rise_of_macedon"
+		texturefile = "gfx/interface/ages/ab_rise_of_macedon.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_golden_age_of_greece"
+		texturefile = "gfx/interface/ages/ab_golden_age_of_greece.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_carthagian_thalassocracy"
+		texturefile = "gfx/interface/ages/ab_carthagian_thalassocracy.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_theban_hegemony"
+		texturefile = "gfx/interface/ages/ab_theban_hegemony.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_new_formations"
+		texturefile = "gfx/interface/ages/ab_new_formations.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_promote_the_artists"
+		texturefile = "gfx/interface/ages/ab_promote_the_artists.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_patronize_the_scientists"
+		texturefile = "gfx/interface/ages/ab_patronize_the_scientists.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_great_court"
+		texturefile = "gfx/interface/ages/ab_great_court.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_new_merchants"
+		texturefile = "gfx/interface/ages/ab_new_merchants.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_reformed_infantry_tactics"
+		texturefile = "gfx/interface/ages/ab_reformed_infantry_tactics.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_military_reforms"
+		texturefile = "gfx/interface/ages/ab_military_reforms.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_integration_of_foreign_cultures"
+		texturefile = "gfx/interface/ages/ab_integration_of_foreign_cultures.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_age_of_great_conquerors"
+		texturefile = "gfx/interface/ages/ab_age_of_great_conquerors.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_promote_the_mathematicians"
+		texturefile = "gfx/interface/ages/ab_promote_the_mathematicians.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_mercenary_warfare"
+		texturefile = "gfx/interface/ages/ab_mercenary_warfare.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_construction_of_a_great_fleet"
+		texturefile = "gfx/interface/ages/ab_construction_of_a_great_fleet.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_new_siege_engines"
+		texturefile = "gfx/interface/ages/ab_new_siege_engines.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_ashokas_edicts"
+		texturefile = "gfx/interface/ages/ab_ashokas_edicts.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_wars_of_the_diadochi"
+		texturefile = "gfx/interface/ages/ab_wars_of_the_diadochi.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_gaul_migration"
+		texturefile = "gfx/interface/ages/ab_gaul_migration.dds"
 	}
 }
 	

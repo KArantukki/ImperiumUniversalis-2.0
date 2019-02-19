@@ -208,7 +208,7 @@ country_event = {
 	
 	trigger = {
 		tag = MDI
-		NOT = { has_country_flag = attack_on_pse_flag ) 
+		NOT = { has_country_flag = attack_on_pse_flag } 
 		total_development = 65
 		is_at_war = no
 		is_year = 195
@@ -658,6 +658,11 @@ country_event = {
 	# take over Media
 	option = {
 		name = "persia.15.a"
+		hidden_effect = {
+			MDI = {
+				release_all_subjects = yes
+			}
+		}
 		inherit = MDI
 		add_stability = -1
 	}

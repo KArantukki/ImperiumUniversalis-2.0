@@ -37,3 +37,6 @@
 
 
 - 110% discipline is set to 10% in the generic missions
+- Controll of the Hellespont fixed
+- Manpower in General reduced
+- normal border conquest 2 fixed

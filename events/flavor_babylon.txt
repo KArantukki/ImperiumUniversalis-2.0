@@ -83,7 +83,7 @@ country_event = {
 	
 	trigger = {
 		TAG = BAB
-		NOT = { start_date = 145.8.11 }
+		NOT = { started_in = 145.8.11 }
 		NOT = { has_global_flag = nineveh_fall_flag }
 	}
 	

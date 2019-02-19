@@ -5,7 +5,7 @@ government_rank = 3
 technology_group = iranian
 primary_culture = persian
 religion = mitraism
-capital = 1967
+capital = 2683
 
 historical_rival = BAB
 historical_rival = LYD
@@ -52,7 +52,7 @@ queen = {
 224.1.1 = {
 	religion = zoroastrianism
 	clear_scripted_personalities = yes
-	capital = 1933
+	capital = 2666
 	add_accepted_culture = babylonian
 	add_accepted_culture = syriac
 	
@@ -66,7 +66,7 @@ monarch = {
 }
 232.1.1 = {
 		add_ruler_personality = legendary_leader_personality
-		capital = 1968
+		capital = 2500
 		
 			add_country_modifier = {
 				name = administration_reform_of_dareos

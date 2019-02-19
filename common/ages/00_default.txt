@@ -1,7 +1,7 @@
 
 ###############################
 #
-#	Age of Empires
+#	Age of Empires  612-522
 #
 ###############################
 age_of_empires = {
@@ -25,7 +25,7 @@ age_of_empires = {
 	
 		obj_great_power = {
 			allow = { always = yes }
-				NOT = { great_power_rank = 5 }
+				 is_great_power = yes 
 		}	
 	
 		obj_legendary_ruler = {
@@ -222,7 +222,7 @@ age_of_empires = {
 
 ###############################
 #
-#	Archaic Age
+#	Archaic Age 522-432
 #
 ###############################
 archaic_age = {
@@ -257,18 +257,256 @@ archaic_age = {
 				tooltip = won_3_olympic_game
 				has_country_flag = won_olympics_3_times
 			}
+		}	
+		
+		obj_glorious_nation = {
+			allow = { NOT = { culture_group = hellenic } }
+			num_of_cities = 12
+			prestige = 80
+		}
+		
+		obj_embraced_workshops = {
+			allow = { always = yes }
+				num_of_owned_provinces_with = {
+					value = 10
+					OR = {
+						has_building = craftsman
+						has_building = small_workshop
+						has_building = artisan_district
+					}
+				}
+		}
+		
+		obj_zoroastrian_faith = {
+			allow = { 
+				OR = {
+					culture_group = western_iranian
+					capital_scope = { superregion = iran_superregion } 
+				}
+			}
+				OR = {
+					religion = zurvanism
+					religion = zoroastrianism
+				}
+				2828 = {
+					OR = {
+						religion = zurvanism
+						religion = zoroastrianism
+					}
+				}
+				2876 = {
+					OR = {
+						religion = zurvanism
+						religion = zoroastrianism
+					}
+				}
+				2835 = {
+					OR = {
+						religion = zurvanism
+						religion = zoroastrianism
+					}
+				}
+				2682 = {
+					OR = {
+						religion = zurvanism
+						religion = zoroastrianism
+					}
+				}
+				2397 = {
+					OR = {
+						religion = zurvanism
+						religion = zoroastrianism
+					}
+				}
+				2702 = {
+					OR = {
+						religion = zurvanism
+						religion = zoroastrianism
+					}
+				}
+		}
+		
+		obj_total_control = {
+			allow = { 
+			NOT = { capital_scope = { superregion = iran_superregion } } 
+			NOT = { culture_group = western_iranian } 
+			}
+				num_of_states = 5
+				NOT = {  average_autonomy_above_min = 10  }
+		}
+		
+		obj_growing_importance_of_trade = {
+			allow = { 
+				always = yes
+			}
+				num_of_owned_provinces_with = {
+					value = 3
+					OR = {
+						province_has_center_of_trade_of_level = 1
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+					}
+				}
+		}
+		
+		obj_consolidation_of_customs = {
+			allow = { 
+				always = yes
+			}
+				full_idea_group = cerimonial_ideas
+				num_of_owned_provinces_with = {
+					value = 5
+					OR = {
+						has_building = small_temple
+						has_building = great_temple
+					}
+				}
+		}
+		
+		obj_capable_army = {
+			allow = { 
+				always = yes
+			}
+			army_size_percentage = 0.9
+			num_of_generals_with_traits = 1
+		}
+		
+		obj_capable_fleet = {
+			allow = { 
+				always = yes
+			}
+			num_of_heavy_ship = 16
+			num_of_admirals_with_traits = 1 
 		}
 		
 	}	
 
-	abilities = {
-		
+	abilities = {	
+	
+		ab_promoting_reforms = {
+			modifier = {
+				reform_progress_growth = 0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_new_army_structures = {
+			modifier = {
+				discipline = 0.05
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_age_of_philosophers = {
+			modifier = {
+				idea_cost = -0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_proud_military = {
+			modifier = {
+				army_tradition_decay = -0.1
+				navy_tradition_decay = -0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_new_construction_techniques = {
+			modifier = {
+				build_cost = -0.1 
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_additional_taxes = {
+			modifier = {
+				global_tax_modifier = 0.15 
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_persian_tolerance = {
+			allow = {
+				TAG = PSE
+			}
+			modifier = {
+				tolerance_heathen = 2
+				tolerance_heretic = 1
+			}
+			ai_will_do = {
+				factor = 50
+			}			
+		}
+	
+		ab_spartan_traditions = {
+			allow = {
+				TAG = SP1
+			}
+			modifier = {
+				army_tradition = 1
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+	
+		ab_the_delian_league = {
+			allow = {
+				TAG = ATH
+			}
+			modifier = {
+				naval_maintenance_modifier = -0.25
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+	
+		ab_corinthian_triremes = {
+			allow = {
+				TAG = COR
+			}
+			modifier = {
+				heavy_ship_power = 0.1
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+	
+		ab_rise_of_buddhism = {
+			allow = {
+				OR = {
+					culture_group = indian_group
+					culture_group = dravidian_group
+				}
+			}
+			modifier = {
+				global_heretic_missionary_strength = 0.02
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
 	}
 }
 
 ###############################
 #
-#	Classical  Age
+#	Classical  Age   432-332
 #
 ###############################
 classical_age = {
@@ -285,22 +523,223 @@ classical_age = {
 	}
 	
 	can_start = {
-		is_year = 210
+		is_year = 310
 	}
 	
 	
-	objectives = {	
+	objectives = {		
+		obj_patron_of_the_philosophers = {
+			allow = {
+				always = yes
+			}
+			full_idea_group = academy_ideas
+			advisor = philosopher_adv
+		}
+		
+		obj_exemplary_government = {
+			allow = {
+				always = yes
+			}
+			absolutism = 20
+		}
+		
+		obj_growing_maritime_trade = {
+			allow = {
+				always = yes
+			}
+			num_of_light_ship = 40
+		}
+		
+		obj_important_trade_center = {
+			allow = {
+				always = yes
+			}
+			any_owned_province = {
+					OR = {
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+					}
+					OR = {
+						has_building = medium_market
+						has_building = great_market
+					}
+			}
+		}
+		
+		obj_high_morale = {
+			allow = {
+				always = yes
+			}
+			 land_morale = 3.5
+		}
+		
+		obj_large_treasure_chest = {
+			allow = {
+				always = yes
+			}
+			years_of_income = 4.0
+			monthly_income = 40
+		}
+		
+		obj_establishing_a_monopoly = {
+			allow = {
+				always = yes
+			}
+			 num_of_trading_bonuses = 1 
+		}
 	}	
 
 	abilities = {
 	
+		ab_new_formations = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				reserves_organisation = 0.1 
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_reformed_infantry_tactics = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				infantry_power = 0.1 
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_promote_the_artists = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				prestige_decay = -0.01
+			}
+			effect = {
+				add_prestige = 50
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_patronize_the_scientists = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				embracement_cost = -0.5
+			}
+			effect = {
+				add_adm_power = 100
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_great_court = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				advisor_cost = -0.25
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_new_merchants = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				merchants = 1 
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_military_reforms = {
+			allow = {
+				always = yes
+			}
+			effect = {
+				add_mil_tech = 1 
+				add_army_professionalism = 0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	
+		ab_rise_of_macedon = {
+			allow = {
+				TAG = MAC
+			}
+			modifier = {
+				land_morale = 0.1
+				drill_decay_modifier = -0.25
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+	
+		ab_carthagian_thalassocracy = {
+			allow = {
+				TAG = CAR
+			}
+			modifier = {
+				navy_tradition = 1 
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+	
+		ab_theban_hegemony = {
+			allow = {
+				OR = {
+					TAG = THH
+					TAG = BOE
+				}
+			}
+			modifier = {
+				discipline = 0.05
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+	
+		ab_golden_age_of_greece = {
+			allow = {
+				culture_group = hellenic
+			}
+			modifier = {
+				all_power_cost = -0.025
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
 	}
 }
 
 
 ###############################
 #
-#	early Hellenistic Age
+#	early Hellenistic Age  332-212
 #
 ###############################
 hellenistic_age = {
@@ -320,17 +759,225 @@ hellenistic_age = {
 	}
 
 	objectives = {
+	
+		obj_subjects = {
+			allow = {
+				always = yes
+			}
+			num_of_subjects = 3
+		}
+	
+		obj_wonders = {
+			allow = {
+				always = yes
+			}
+			any_owned_province = {
+				OR = {
+					has_province_modifier = gizeh
+					has_province_modifier = wonder_rhodos
+					has_province_modifier = wonder_mausoleum
+					has_province_modifier = wonder_pharos
+					has_province_modifier = gardens_of_babylon
+					has_province_modifier = wonder_artemis_temple
+					has_province_modifier = wonder_zeus_olypmia
+				}
+			}
+		}
+	
+		obj_experienced_army = {
+			allow = {
+				always = yes
+			}
+			num_of_generals_with_traits = 2
+			army_tradition = 40
+		}
+	
+		obj_large_empire = {
+			allow = {
+				always = yes
+			}
+			 num_of_states = 20
+		}
+	
+		obj_cultural_meltingpot = {
+			allow = {
+				always = yes
+			}
+			full_idea_group = syncrenism_ideas
+			 num_accepted_cultures = 2
+		}
+	
+		obj_humiliate_rival = {
+			custom_trigger_tooltip = {
+				tooltip = obj_humiliate_rival_tooltip
+				has_country_flag = humiliated_rival
+			}
+		}
+	
+		obj_great_capital = {
+			capital_scope = {
+				OR = {
+					has_building = building_small_temple
+					has_building = building_great_temple
+				}
+				OR = {
+					has_building = building_big_townhall
+					has_building = building_government_palace
+					has_building = building_government_district
+				}
+				OR = {
+					has_building = building_small_bath
+					has_building = building_big_bath
+				}
+				OR = {
+					has_building = building_small_theater
+					has_building = building_big_theater
+					has_building = building_great_theater
+					has_building = building_huge_theater
+				}
+				OR = {
+					has_building = building_mathematician_academy
+					has_building = building_philosophers_academy
+					has_building = building_military_academy
+				}
+			}
+		}
+	
+		
+		
 	}	
 
 	abilities = {
-	
+		ab_integration_of_foreign_cultures = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				promote_culture_cost = -0.9
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_age_of_great_conquerors = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				monarch_military_power = 2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_promote_the_mathematicians = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				adm_tech_cost_modifier = -0.1 
+			}
+			effect = {
+				add_adm_power = 100
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_mercenary_warfare = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				mercenary_discipline = 0.05
+				mercenary_cost = -0.1 
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_construction_of_a_great_fleet = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				global_ship_cost = -0.15
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_new_siege_engines = {
+			allow = {
+				always = yes
+			}
+			modifier = {
+				siege_ability = 0.33
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_ashokas_edicts = {
+			allow = {
+				TAG = MAU
+			}
+			modifier = {
+				global_unrest = -2
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+		
+		ab_wars_of_the_diadochi = {
+			allow = {
+				OR = {
+					TAG = SEL
+					TAG = PTO
+					TAG = ANE
+					TAG = GBK
+				}
+			}
+			modifier = {
+				province_warscore_cost = -0.25
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+		
+		ab_gaul_migration = {
+			allow = {
+				OR = {
+					culture_group = gaulish_group
+					culture_group = eastern_celtic
+				}
+			}
+			rule = {
+				ignore_coring_distance = yes
+			}
+			modifier = {
+				core_creation = -0.2
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+		
 	}
 	
 }
 
 ###############################
 #
-#	late Hellenistic Age
+#	late Hellenistic Age  212-62
 #
 ###############################
 late_hellenistic_age = {
@@ -361,7 +1008,7 @@ late_hellenistic_age = {
 
 ###############################
 #
-#	imperial age
+#	imperial age  62bc -177
 #
 ###############################
 imperial_age = {
@@ -391,14 +1038,14 @@ imperial_age = {
 }
 ###############################
 #
-#	early migration period
+#	early migration period 177-
 #
 ###############################
 early_migration_period = {
-	start = 800
+	start = 930
 	
 	can_start = {
-		is_year = 790
+		is_year = 930
 	}
 	
 	religious_conflicts = yes

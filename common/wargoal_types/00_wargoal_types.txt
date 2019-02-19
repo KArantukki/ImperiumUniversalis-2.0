@@ -1217,7 +1217,8 @@ take_normal_border_2 = {
 	allowed_provinces = {
 		OR = {
 			owner = { NOT = { government = native } }
-			NOT = { has_terrain = steppe } }
+			base_production = 1
+			base_tax = 1	}
 		OR = {
 			any_neighbor_province = {
 				country_or_non_sovereign_subject_holds = ROOT

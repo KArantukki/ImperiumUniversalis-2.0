@@ -33,11 +33,6 @@ guiTypes = {
 			upsound = age_of_discovery
 
 			iconType = {
-				name ="frame"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 0 y = 7 }
-				}
-			iconType = {
 				name ="icon_age_of_empires"
 				spriteType = "GFX_icon_age_l"
 				position = { x= -15 y = 12 }
@@ -87,50 +82,45 @@ guiTypes = {
 			upsound = age_of_discovery
 
 			iconType = {
-				name ="frame"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 0 y = 7 }
-				}
-			iconType = {
 				name ="icon_age_of_empires"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 15 }
+				position = { x= -15 y = 12 }
 				frame = 1
 				}
 			iconType = {
 				name ="icon_archaic_age"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -33 y = 72 }
+				position = { x= -15 y = 62 }
 				frame = 2
 				}
 			iconType = {
 				name ="icon_classical_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 129 }
+				position = { x= -15 y = 112}
 				frame = 3
 				}
 			iconType = {
 				name ="icon_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 186 }
+				position = { x= 520 y = 12 }
 				frame = 4
 				}
 			iconType = {
 				name ="icon_late_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 243 }
+				position = { x= 520 y = 62 }
 				frame = 5
 				}
 			iconType = {
 				name ="icon_imperial_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 310 }
+				position = { x= 520 y = 112 }
 				frame = 6
 				}
 			iconType = {
 				name ="icon_early_migration_period"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 377 }
+				position = { x= 520 y = 162 }
 				frame = 7
 				}
 		}			
@@ -141,50 +131,45 @@ guiTypes = {
 			upsound = age_of_discovery
 
 			iconType = {
-				name ="frame"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 0 y = 7 }
-				}
-			iconType = {
 				name ="icon_age_of_empires"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 15 }
+				position = { x= -15 y = 12 }
 				frame = 1
 				}
 			iconType = {
 				name ="icon_archaic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 72 }
+				position = { x= -15 y = 62 }
 				frame = 2
 				}
 			iconType = {
 				name ="icon_classical_age"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -15 y = 129 }
+				position = { x= -15 y = 112}
 				frame = 3
 				}
 			iconType = {
 				name ="icon_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 186 }
+				position = { x= 520 y = 12 }
 				frame = 4
 				}
 			iconType = {
 				name ="icon_late_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 243 }
+				position = { x= 520 y = 62 }
 				frame = 5
 				}
 			iconType = {
 				name ="icon_imperial_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 310 }
+				position = { x= 520 y = 112 }
 				frame = 6
 				}
 			iconType = {
 				name ="icon_early_migration_period"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 377 }
+				position = { x= 520 y = 162 }
 				frame = 7
 				}
 
@@ -196,50 +181,45 @@ guiTypes = {
 			upsound = age_of_discovery
 
 			iconType = {
-				name ="frame"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 0 y = 7 }
-				}
-			iconType = {
 				name ="icon_age_of_empires"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 15 }
+				position = { x= -15 y = 12 }
 				frame = 1
 				}
 			iconType = {
 				name ="icon_archaic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 72 }
+				position = { x= -15 y = 62 }
 				frame = 2
 				}
 			iconType = {
 				name ="icon_classical_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 129 }
+				position = { x= -15 y = 112}
 				frame = 3
 				}
 			iconType = {
 				name ="icon_hellenistic_age"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -33 y = 186 }
+				position = { x= 520 y = 12 }
 				frame = 4
 				}
 			iconType = {
 				name ="icon_late_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 243 }
+				position = { x= 520 y = 62 }
 				frame = 5
 				}
 			iconType = {
 				name ="icon_imperial_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 310 }
+				position = { x= 520 y = 112 }
 				frame = 6
 				}
 			iconType = {
 				name ="icon_early_migration_period"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 377 }
+				position = { x= 520 y = 162 }
 				frame = 7
 				}
 		}	
@@ -250,50 +230,45 @@ guiTypes = {
 			upsound = age_of_discovery
 
 			iconType = {
-				name ="frame"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 0 y = 7 }
-				}
-			iconType = {
 				name ="icon_age_of_empires"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 15 }
+				position = { x= -15 y = 12 }
 				frame = 1
 				}
 			iconType = {
 				name ="icon_archaic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 72 }
+				position = { x= -15 y = 62 }
 				frame = 2
 				}
 			iconType = {
 				name ="icon_classical_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 129 }
+				position = { x= -15 y = 112}
 				frame = 3
 				}
 			iconType = {
 				name ="icon_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 186 }
+				position = { x= 520 y = 12 }
 				frame = 4
 				}
 			iconType = {
 				name ="icon_late_hellenistic_age"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -15 y = 243 }
+				position = { x= 520 y = 62 }
 				frame = 5
 				}
 			iconType = {
 				name ="icon_imperial_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 310 }
+				position = { x= 520 y = 112 }
 				frame = 6
 				}
 			iconType = {
 				name ="icon_early_migration_period"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 377 }
+				position = { x= 520 y = 162 }
 				frame = 7
 				}
 		}		
@@ -304,50 +279,45 @@ guiTypes = {
 			upsound = age_of_discovery
 
 			iconType = {
-				name ="frame"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 0 y = 7 }
-				}
-			iconType = {
 				name ="icon_age_of_empires"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 15 }
+				position = { x= -15 y = 12 }
 				frame = 1
 				}
 			iconType = {
 				name ="icon_archaic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 72 }
+				position = { x= -15 y = 62 }
 				frame = 2
 				}
 			iconType = {
 				name ="icon_classical_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 129 }
+				position = { x= -15 y = 112}
 				frame = 3
 				}
 			iconType = {
 				name ="icon_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 186 }
+				position = { x= 520 y = 12 }
 				frame = 4
 				}
 			iconType = {
 				name ="icon_late_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 243 }
+				position = { x= 520 y = 62 }
 				frame = 5
 				}
 			iconType = {
 				name ="icon_imperial_age"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -33 y = 310 }
+				position = { x= 520 y = 112 }
 				frame = 6
 				}
 			iconType = {
 				name ="icon_early_migration_period"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 377 }
+				position = { x= 520 y = 162 }
 				frame = 7
 				}
 		}	
@@ -358,50 +328,45 @@ guiTypes = {
 			upsound = age_of_discovery
 
 			iconType = {
-				name ="frame"
-				spriteType = "GFX_age_indicator_4"
-				position = { x= 0 y = 7 }
-				}
-			iconType = {
 				name ="icon_age_of_empires"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 15 }
+				position = { x= -15 y = 12 }
 				frame = 1
 				}
 			iconType = {
 				name ="icon_archaic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 72 }
+				position = { x= -15 y = 62 }
 				frame = 2
 				}
 			iconType = {
 				name ="icon_classical_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 129 }
+				position = { x= -15 y = 112}
 				frame = 3
 				}
 			iconType = {
 				name ="icon_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 186 }
+				position = { x= 520 y = 12 }
 				frame = 4
 				}
 			iconType = {
 				name ="icon_late_hellenistic_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 243 }
+				position = { x= 520 y = 62 }
 				frame = 5
 				}
 			iconType = {
 				name ="icon_imperial_age"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -33 y = 310 }
+				position = { x= 520 y = 112 }
 				frame = 6
 				}
 			iconType = {
 				name ="icon_early_migration_period"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -15 y = 377 }
+				position = { x= 520 y = 162 }
 				frame = 7
 				}
 		}		
