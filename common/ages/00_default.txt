@@ -817,28 +817,28 @@ hellenistic_age = {
 		obj_great_capital = {
 			capital_scope = {
 				OR = {
-					has_building = building_small_temple
-					has_building = building_great_temple
+					has_building = small_temple
+					has_building = great_temple
 				}
 				OR = {
-					has_building = building_big_townhall
-					has_building = building_government_palace
-					has_building = building_government_district
+					has_building = big_townhall
+					has_building = government_palace
+					has_building = government_district
 				}
 				OR = {
-					has_building = building_small_bath
-					has_building = building_big_bath
+					has_building = small_bath
+					has_building = big_bath
 				}
 				OR = {
-					has_building = building_small_theater
-					has_building = building_big_theater
-					has_building = building_great_theater
-					has_building = building_huge_theater
+					has_building = small_theater
+					has_building = big_theater
+					has_building = great_theater
+					has_building = huge_theater
 				}
 				OR = {
-					has_building = building_mathematician_academy
-					has_building = building_philosophers_academy
-					has_building = building_military_academy
+					has_building = mathematician_academy
+					has_building = philosophers_academy
+					has_building = military_academy
 				}
 			}
 		}
@@ -921,6 +921,30 @@ hellenistic_age = {
 			}
 			ai_will_do = {
 				factor = 10
+			}
+		}
+		
+		ab_roma_invicta = {
+			allow = {
+				TAG = ROM
+			}
+			modifier = {
+				land_morale = 0.15
+			}
+			ai_will_do = {
+				factor = 50
+			}
+		}
+		
+		ab_return_of_pyrrh os = {
+			allow = {
+				TAG = EPI
+			}
+			modifier = {
+				discipline = 0.05
+			}
+			ai_will_do = {
+				factor = 50
 			}
 		}
 		

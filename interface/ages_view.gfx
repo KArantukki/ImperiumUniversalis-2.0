@@ -510,6 +510,18 @@ spriteTypes = {
 		name = "GFX_ab_gaul_migration"
 		texturefile = "gfx/interface/ages/ab_gaul_migration.dds"
 	}
+	spriteType = {
+		name = "GFX_ab_roma_invicta"
+		texturefile = "gfx/interface/ages/ab_roma_invicta.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_odrysian_kingdom"
+		texturefile = "gfx/interface/ages/ab_odrysian_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_return_of_pyrrhos"
+		texturefile = "gfx/interface/ages/ab_return_of_pyrrhos.dds"
+	}
 }
 	
 
